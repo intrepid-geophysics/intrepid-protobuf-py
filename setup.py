@@ -1,16 +1,16 @@
-import setuptools
+from setuptools import setup, find_packages
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-setuptools.setup(
-    name="intrepid-protobuf", # Replace with your own username
-    version="0.0.1",
+setup(
+    name="intrepid-protobuf",
+    version="0.0.2",
     author="Difu Wang",
     author_email="difu@intrepid-geophysics.com",
     description="Protobuf bindings for Intrepid",
-    url="https://github.com/pypa/sampleproject",
-    packages=setuptools.find_packages(),
+    url="http://git.dfalocal/playground/intbta-4085.git",
+    packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
