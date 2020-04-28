@@ -14,8 +14,8 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-import jobs_pb2 as jobs__pb2
-import ssh_access_profile_pb2 as ssh__access__profile__pb2
+import intrepid.jobs_pb2 as jobs__pb2
+import intrepid.ssh_access_profile_pb2 as ssh__access__profile__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(

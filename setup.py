@@ -5,9 +5,9 @@ with open("README.md", "r") as fh:
 
 setup(
     name="intrepid-protobuf",
-    version="0.0.2",
-    author="Difu Wang",
-    author_email="difu@intrepid-geophysics.com",
+    version="0.0.3",
+    author="Intrepid Geophysics",
+    author_email="developers@intrepid-geophysics.com",
     description="Protobuf bindings for Intrepid",
     url="http://git.dfalocal/playground/intbta-4085.git",
     packages=find_packages(),
