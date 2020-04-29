@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="intrepid-protobuf",
-    version="0.0.4",
+    version="0.0.6",
     author="Intrepid Geophysics",
     author_email="developers@intrepid-geophysics.com",
     description="Protobuf bindings for Intrepid products",
