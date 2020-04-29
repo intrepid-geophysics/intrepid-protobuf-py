@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setup(
     name="intrepid-protobuf",
-    version="0.0.3",
+    version="0.0.4",
     author="Intrepid Geophysics",
     author_email="developers@intrepid-geophysics.com",
-    description="Protobuf bindings for Intrepid",
+    description="Protobuf bindings for Intrepid products",
     url="http://git.dfalocal/playground/intbta-4085.git",
     packages=find_packages(),
     classifiers=[
