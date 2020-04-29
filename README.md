@@ -1,12 +1,8 @@
 ## Build
-1. python setup.py sdist
+python setup.py sdist
 
-## Install
-1. From local package
-1.1 pip install --user intrepid-protobuf-0.0.3.tar.gz
+## Install and Upgrade
+pip install --upgrade git+ssh://git@github.com/intrepid-geophysics/intrepid-protobuf-py.git
 
 ## Uninstall
 pip uninstall intrepid-protobuf
-
-## Upgrade
-pip install --upgrade intrepid-protobuf-0.0.3.tar.gz
