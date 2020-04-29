@@ -17,7 +17,7 @@ def execute(batch, wd=Path(os.getcwd())):
     logging.info("CWD: %s", wd.as_uri())
     try:
         lines = batch.__str__()
-       logging.info("Task in executor:\n%s", lines)
+        logging.info("Task in executor:\n%s", lines)
         temp.writelines(lines)
     finally:
         temp.close()
