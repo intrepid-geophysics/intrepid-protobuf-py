@@ -10,7 +10,8 @@ setup(
     author_email="developers@intrepid-geophysics.com",
     description="Protobuf bindings for Intrepid products",
     url="http://git.dfalocal/playground/intbta-4085.git",
-    packages=find_packages(),
+    packages=find_packages(exclude=("tests",)),
+    include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
