@@ -8,7 +8,7 @@ With both Python 3+ and pip installed and located on system path, run the comman
 
 
 ## Install and Upgrade (Alternative)
-*We cannot guarantee or support all variations of Python environments, Intrepid Geophysics reccomends a Python installation from https://www.python.org/downloads/*
+*We cannot guarantee or support all variations of Python environments, Intrepid Geophysics recommends a Python installation from https://www.python.org/downloads/*
 
 Some users may have non-vanilla installation of Python such as Anaconda.
 In all cases you require that the Intrepid-protobuf library is installed to the correct environment, and this environment is accessible from the command window spawned by Intrepid.
