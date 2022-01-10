@@ -12,11 +12,11 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-import intrepid.commontaskmodel_pb2 as commontaskmodel__pb2
-import intrepid.geophysical_models_pb2 as geophysical__models__pb2
-import intrepid.filter_description_pb2 as filter__description__pb2
-import intrepid.intrepid_maps_pb2 as intrepid__maps__pb2
-import intrepid.display_list_pb2 as display__list__pb2
+import commontaskmodel_pb2 as commontaskmodel__pb2
+import geophysical_models_pb2 as geophysical__models__pb2
+import filter_description_pb2 as filter__description__pb2
+import intrepid_maps_pb2 as intrepid__maps__pb2
+import display_list_pb2 as display__list__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -25,7 +25,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto2',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x14intrepid_tasks.proto\x12\x08intrepid\x1a\x15\x63ommontaskmodel.proto\x1a\x18geophysical_models.proto\x1a\x18\x66ilter_description.proto\x1a\x13intrepid_maps.proto\x1a\x12\x64isplay_list.proto\"\xbf\x02\n\x10\x41sciiColumns_INT\x12\x1a\n\x0b\x46ixedLength\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x18\n\x0cRecordLength\x18\x02 \x01(\x05:\x02\x38\x30\x12\x16\n\x0bSkipRecords\x18\x03 \x01(\x05:\x01\x30\x12 \n\x11ReportDiagnostics\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bStopOnError\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x0b\n\x03\x44\x44\x46\x18\x06 \x01(\t\x12\x18\n\x10SkipIfStartsWith\x18\x07 \x01(\t\x12\x15\n\x07\x41SEGGDF\x18\n \x01(\x08:\x04true\x12\'\n\x18\x46orceBlankBetweenColumns\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x19\n\nSortByLine\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0e\x43ommaDelimiter\x18\r \x01(\x08:\x05\x66\x61lse\"\xc8\x01\n\x0e\x41sciiImage_INT\x12\x1a\n\x0b\x46ixedFormat\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x19\n\x0eLeadCharacters\x18\x02 \x01(\x05:\x01\x30\x12\x1a\n\x0fTrailCharacters\x18\x03 \x01(\x05:\x01\x30\x12\x1d\n\x12\x43haractersPerPixel\x18\x04 \x01(\x05:\x01\x30\x12\x16\n\x0bSkipRecords\x18\x05 \x01(\x05:\x01\x30\x12\x15\n\nData_Sense\x18\x06 \x01(\x05:\x01\x30\x12\x15\n\rNullCellvalue\x18\x07 \x01(\t\"\x92\x01\n\x0f\x42inaryImage_INT\x12\x16\n\x07PC_file\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x19\n\x0eLeadCharacters\x18\x02 \x01(\x05:\x01\x30\x12\x1a\n\x0fTrailCharacters\x18\x03 \x01(\x05:\x01\x30\x12\x19\n\x0eHeadCharacters\x18\x04 \x01(\x05:\x01\x30\x12\x15\n\rNullCellvalue\x18\x07 \x01(\t\"\x91\x01\n\x0e\x45ncomImage_INT\x12\x16\n\x07PC_file\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x19\n\x0eLeadCharacters\x18\x02 \x01(\x05:\x01\x30\x12\x1a\n\x0fTrailCharacters\x18\x03 \x01(\x05:\x01\x30\x12\x19\n\x0eHeadCharacters\x18\x04 \x01(\x05:\x01\x30\x12\x15\n\rNullCellvalue\x18\x07 \x01(\t\"Q\n\x10GeoTiffImage_INT\x12\x12\n\x07Minimum\x18\x01 \x01(\x01:\x01\x30\x12\x14\n\x07Maximum\x18\x03 \x01(\x01:\x03\x32\x35\x36\x12\x13\n\x0b\x43olourTable\x18\x07 \x01(\t\"D\n\x0cZmapGrid_INT\x12\x1d\n\x12\x43haractersPerPixel\x18\x02 \x01(\x05:\x01\x30\x12\x15\n\rNullCellvalue\x18\x07 \x01(\t\"\xac\n\n\x0eNetCDFGrid_INT\x12\x15\n\rNullCellvalue\x18\x07 \x01(\t\x12\x17\n\x08\x43hunking\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07\x44\x65\x66late\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x18\n\rDeflate_Level\x18\x02 \x01(\x05:\x01\x31\x12%\n\x0b\x43onventions\x18\x08 \x01(\t:\x10\x43\x46-1.6, ACDD-1.3\x12\x0c\n\x04uuid\x18\t \x01(\t\x12\r\n\x05title\x18\n \x01(\t\x12\x0e\n\x06source\x18\x0b \x01(\t\x12\x0f\n\x07summary\x18\x0c \x01(\t\x12g\n\x08keywords\x18\r \x01(\t:UTMI, magnetics, Australia, magnetism, airborne digital data, geophysical survey, grid\x12\x1a\n\x12keywords_volcabary\x18\x0e \x01(\t\x12\x18\n\x10processing_level\x18\x0f \x01(\t\x12\x0f\n\x07\x63omment\x18\x10 \x01(\t\x12 \n\x18standard_name_vocabulary\x18\x11 \x01(\t\x12\x17\n\x0fproduct_version\x18\x12 \x01(\t\x12\x14\n\x0c\x63reator_name\x18\x13 \x01(\t\x12\x15\n\rcreator_email\x18\x14 \x01(\t\x12\x13\n\x0b\x63reator_url\x18\x15 \x01(\t\x12\x14\n\x0c\x63reator_type\x18\x16 \x01(\t\x12\x1b\n\x13\x63reator_institution\x18\x17 \x01(\t\x12\x13\n\x0binstitution\x18\x18 \x01(\t\x12\x0f\n\x07project\x18\x19 \x01(\t\x12\x0f\n\x07program\x18\x1a \x01(\t\x12\x16\n\x0epublisher_name\x18\x1b \x01(\t\x12\x17\n\x0fpublisher_email\x18\x1c \x01(\t\x12\x15\n\rpublisher_url\x18\x1d \x01(\t\x12\x16\n\x0epublisher_type\x18\x1e \x01(\t\x12\x1d\n\x15publisher_institution\x18\x1f \x01(\t\x12\x1a\n\x12geospatial_lat_min\x18  \x01(\x01\x12\x1a\n\x12geospatial_lat_max\x18! \x01(\x01\x12\x1c\n\x14geospatial_lat_units\x18\" \x01(\t\x12!\n\x19geospatial_lat_resolution\x18# \x01(\x01\x12\x1a\n\x12geospatial_lon_min\x18$ \x01(\x01\x12\x1a\n\x12geospatial_lon_max\x18% \x01(\x01\x12\x1c\n\x14geospatial_lon_units\x18& \x01(\t\x12!\n\x19geospatial_lon_resolution\x18\' \x01(\x01\x12\x1b\n\x13time_coverage_start\x18( \x01(\t\x12\x19\n\x11time_coverage_end\x18) \x01(\t\x12\x14\n\x0c\x64\x61te_created\x18* \x01(\t\x12\x15\n\x07license\x18- \x01(\t:\x04None\x12H\n\x16Measurement_Attributes\x18\x32 \x01(\x0b\x32(.intrepid.ACDD_CF_Measurement_Attributes\x12M\n\x0cX_Attributes\x18\x33 \x01(\x0b\x32\x37.intrepid.Georeferencing_Coordinate_Variable_Attributes\x12M\n\x0cY_Attributes\x18\x34 \x01(\x0b\x32\x37.intrepid.Georeferencing_Coordinate_Variable_Attributes\"\xb1\x02\n\x1e\x41\x43\x44\x44_CF_Measurement_Attributes\x12\x11\n\tlong_name\x18\x01 \x01(\t\x12\x15\n\rstandard_name\x18\x02 \x01(\t\x12\r\n\x05units\x18\x03 \x01(\t\x12\x1d\n\x15\x63overage_content_type\x18\x04 \x01(\t\x12\x13\n\x0bvalid_range\x18\x05 \x03(\x01\x12\x13\n\x0b\x63oordinates\x18\x06 \x01(\t\x12\x14\n\x0cscale_factor\x18\x07 \x01(\x01\x12\x12\n\nadd_offset\x18\x08 \x01(\x01\x12\x12\n\n_FillValue\x18\t \x01(\x01\x12\x0f\n\x07\x63omment\x18\n \x01(\t\x12\x12\n\nflag_masks\x18\x0b \x03(\x05\x12\x15\n\rflag_meanings\x18\x0c \x01(\t\x12\x13\n\x0b\x66lag_values\x18\r \x03(\x05\"\xc2\x01\n-Georeferencing_Coordinate_Variable_Attributes\x12\x11\n\tlong_name\x18\x01 \x01(\t\x12\x15\n\rstandard_name\x18\x02 \x01(\t\x12\r\n\x05units\x18\x03 \x01(\t\x12\x0c\n\x04\x61xis\x18\x04 \x01(\t\x12\x12\n\n_FillValue\x18\x05 \x01(\x01\x12\x12\n\nvalidt_min\x18\x06 \x01(\x01\x12\x11\n\tvalid_max\x18\x07 \x01(\x01\x12\x0f\n\x07\x63omment\x18\x08 \x01(\t\"f\n\x0e\x41GSO_ARGUS_INT\x12\x16\n\x08\x44oReport\x18\x02 \x01(\x08:\x04true\x12\x15\n\nData_Style\x18\x03 \x01(\x05:\x01\x30\x12%\n\x0b\x42oundingBox\x18\x04 \x01(\x0b\x32\x10.ctm.BoundingBox\"\xee\x02\n\x0bPicodas_INT\x12\x1b\n\x0cKeepTraverse\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07KeepTie\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fKeepCalibration\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tKeepScrub\x18\x04 \x01(\x08:\x05\x66\x61lse\x12!\n\x04Keep\x18\x05 \x01(\x0b\x32\x13.ctm.RepeatedString\x12\x1f\n\x10\x43ompress_Spectra\x18\n \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rDo_ASCII_Dump\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rSpectra_ASCII\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x1b\n\rSpectra_Field\x18\r \x01(\t:\x04ISPD\x12#\n\rauxilary_file\x18\x0e \x01(\t:\x0cISPD_256.txt\x12\x17\n\x08LineInfo\x18\x0f \x01(\x08:\x05\x66\x61lse\x12\x15\n\rignore_fields\x18\x10 \x03(\t\"w\n\rARC_SHAPE_INT\x12\x1a\n\x0bOnePerGroup\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x07GroupBy\x18\x02 \x01(\x08:\x04true\x12\x18\n\nNonGroupBy\x18\x03 \x01(\x08:\x04true\x12\x19\n\nAsGeodetic\x18\x04 \x01(\x08:\x05\x66\x61lse\">\n\x0bMAPINFO_INT\x12\x15\n\x07GroupBy\x18\x02 \x01(\x08:\x04true\x12\x18\n\nNonGroupBy\x18\x03 \x01(\x08:\x04true\"\x9a\x02\n\x0cVOXELGEO_INT\x12\x11\n\x06XField\x18\x01 \x01(\t:\x01X\x12\x11\n\x06YField\x18\x02 \x01(\t:\x01Y\x12\x11\n\x06ZField\x18\x03 \x01(\t:\x01Z\x12\x1e\n\x0bSignalField\x18\x04 \x01(\t:\tLithology\x12\x0c\n\x04Xmin\x18\x05 \x01(\x01\x12\x0c\n\x04Xmax\x18\x06 \x01(\x01\x12\x11\n\tXcellsize\x18\x07 \x01(\x01\x12\x0c\n\x04Ymin\x18\x08 \x01(\x01\x12\x0c\n\x04Ymax\x18\t \x01(\x01\x12\x11\n\tYcellsize\x18\n \x01(\x01\x12\x0c\n\x04Zmin\x18\x0b \x01(\x01\x12\x0c\n\x04Zmax\x18\x0c \x01(\x01\x12\x11\n\tZcellsize\x18\r \x01(\x01\x12\x11\n\tSignalmin\x18\x0e \x01(\x01\x12\x11\n\tSignalmax\x18\x0f \x01(\x01\"\x95\x01\n\x13MapSignalToBand_INT\x12\x15\n\rStarting_Band\x18\x01 \x01(\x01\x12\x11\n\tIncrement\x18\x02 \x01(\x01\x12\x14\n\x0cNumber_Bands\x18\x03 \x01(\x05\x12\x19\n\nOutputNull\x18\x04 \x01(\x01:\x05-9999\x12\x10\n\x08\x41longBin\x18\x05 \x01(\x01\x12\x11\n\tAcrossBin\x18\x06 \x01(\x01\"\xb3\x02\n\x08SEGY_INT\x12\x1d\n\x0fSaveAsMultiBand\x18\x01 \x01(\x08:\x04true\x12\x16\n\x07\x46orce2D\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x08Revision\x18\x03 \x01(\x05:\x01\x30\x12\x1c\n\rExtra_Stanzas\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x0e\n\x06Signal\x18\x05 \x01(\t\x12\r\n\x05\x44\x65pth\x18\x06 \x01(\t\x12\x0b\n\x03\x43\x44P\x18\x07 \x01(\t\x12\x11\n\tShotPoint\x18\x08 \x01(\t\x12\x17\n\x0fHeader_Comments\x18\t \x03(\t\x12\x14\n\x0cOutputFormat\x18\n \x01(\x05\x12\x17\n\x0fSample_Interval\x18\x0b \x01(\x05\x12\x36\n\x0fMapSignalToBand\x18\x14 \x01(\x0b\x32\x1d.intrepid.MapSignalToBand_INT\"\xb9\x06\n\nImport_INT\x12\r\n\x05Input\x18\x01 \x02(\t\x12\x13\n\x0b\x46ormat_File\x18\x02 \x01(\t\x12\x0e\n\x06Output\x18\x03 \x02(\t\x12#\n\nReportFile\x18  \x01(\t:\x0fimport_data.rpt\x12.\n\x06\x46ormat\x18\x04 \x02(\x0e\x32\x1e.intrepid.GeophysicsFormatType\x12)\n\nprojection\x18\x05 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x41\n\x14\x43oordinateSystemType\x18\x06 \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12\x30\n\x0c\x41sciiColumns\x18\x07 \x01(\x0b\x32\x1a.intrepid.AsciiColumns_INT\x12,\n\nAsciiImage\x18\x08 \x01(\x0b\x32\x18.intrepid.AsciiImage_INT\x12.\n\x0b\x42inaryImage\x18\t \x01(\x0b\x32\x19.intrepid.BinaryImage_INT\x12,\n\nEncomImage\x18\n \x01(\x0b\x32\x18.intrepid.EncomImage_INT\x12(\n\x08ZmapGrid\x18\x0b \x01(\x0b\x32\x16.intrepid.ZmapGrid_INT\x12,\n\nAGSO_ARGUS\x18\x0c \x01(\x0b\x32\x18.intrepid.AGSO_ARGUS_INT\x12&\n\x07Picodas\x18\r \x01(\x0b\x32\x15.intrepid.Picodas_INT\x12\x30\n\x0cGeoTiffImage\x18\x0e \x01(\x0b\x32\x1a.intrepid.GeoTiffImage_INT\x12,\n\nNetCDFGrid\x18\x0f \x01(\x0b\x32\x18.intrepid.NetCDFGrid_INT\x12!\n\x13SaveSEGYAsMultiBand\x18\x14 \x01(\x08:\x04true\x12\x0c\n\x04POLY\x18\x15 \x01(\t\x12\x11\n\tAGSOcopy_\x18\x16 \x01(\t\x12\x16\n\x0e\x41gsoSelectFile\x18\x17 \x01(\t\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06import\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06import\"\x90\x01\n\x10ReportFormat_INT\x12\x11\n\x05width\x18\x01 \x01(\x05:\x02\x31\x30\x12\x13\n\x08\x64\x65\x63imals\x18\x02 \x01(\x05:\x01\x32\x12\x12\n\x04Null\x18\x03 \x01(\t:\x04\x39\x39\x39\x39\x12\r\n\x05\x46ield\x18\x05 \x01(\t\x12\x0f\n\x04\x62\x61nd\x18\x04 \x01(\x05:\x01\x31\x12 \n\x11scientific_format\x18\x06 \x01(\x08:\x05\x66\x61lse\"\xd6\x08\n\nExport_INT\x12\r\n\x05Input\x18\x01 \x02(\t\x12\x13\n\x0b\x46ormat_File\x18\x02 \x01(\t\x12.\n\nFormat_Out\x18\x1e \x03(\x0b\x32\x1a.intrepid.ReportFormat_INT\x12\x0e\n\x06Output\x18\x03 \x02(\t\x12#\n\nReportFile\x18  \x01(\t:\x0f\x65xport_data.rpt\x12.\n\x06\x46ormat\x18\x04 \x02(\x0e\x32\x1e.intrepid.GeophysicsFormatType\x12\x41\n\x14\x43oordinateSystemType\x18\x05 \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12\x30\n\x0c\x41sciiColumns\x18\x06 \x01(\x0b\x32\x1a.intrepid.AsciiColumns_INT\x12,\n\nAsciiImage\x18\x07 \x01(\x0b\x32\x18.intrepid.AsciiImage_INT\x12.\n\x0b\x42inaryImage\x18\x08 \x01(\x0b\x32\x19.intrepid.BinaryImage_INT\x12,\n\nEncomImage\x18\t \x01(\x0b\x32\x18.intrepid.EncomImage_INT\x12(\n\x08ZmapGrid\x18\n \x01(\x0b\x32\x16.intrepid.ZmapGrid_INT\x12,\n\nAGSO_ARGUS\x18\x0b \x01(\x0b\x32\x18.intrepid.AGSO_ARGUS_INT\x12&\n\x07Picodas\x18\x0c \x01(\x0b\x32\x15.intrepid.Picodas_INT\x12\x30\n\x0cGeoTiffImage\x18\r \x01(\x0b\x32\x1a.intrepid.GeoTiffImage_INT\x12 \n\x04SEGY\x18\x0e \x01(\x0b\x32\x12.intrepid.SEGY_INT\x12(\n\x08VoxelGEO\x18\x0f \x01(\x0b\x32\x16.intrepid.VOXELGEO_INT\x12)\n\x08\x41rcShape\x18\x10 \x01(\x0b\x32\x17.intrepid.ARC_SHAPE_INT\x12&\n\x07MapInfo\x18\x11 \x01(\x0b\x32\x15.intrepid.MAPINFO_INT\x12,\n\nNetCDFGrid\x18\x13 \x01(\x0b\x32\x18.intrepid.NetCDFGrid_INT\x12\x1b\n\x13\x43olourTable_GeoTiff\x18\x12 \x01(\t\x12\x0f\n\x07\x43olumns\x18\x14 \x03(\t\x12\r\n\x05Lines\x18\x15 \x03(\t\x12\x16\n\x08UseNulls\x18\x17 \x01(\x08:\x04true\x12\x17\n\tNullValue\x18\x18 \x01(\t:\x04null\x12\x15\n\tStartLine\x18\x19 \x01(\x01:\x02-1\x12\x13\n\x07\x45ndLine\x18\x1a \x01(\x01:\x02-1\x12\x1a\n\x0fOutputGridWidth\x18\x1b \x01(\x01:\x01\x38\x12\x1d\n\x12OutputGridDecimals\x18\x1c \x01(\x01:\x01\x32\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06\x65xport\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06\x65xport\"\xd3\x06\n\x19\x44\x61taBase_Manipulation_INT\x12\r\n\x05Input\x18\x01 \x01(\t\x12\x11\n\tReference\x18( \x01(\t\x12\x0e\n\x06Output\x18\x02 \x01(\t\x12\x11\n\tInputList\x18\x03 \x03(\t\x12\'\n\x06\x41\x63tion\x18\x04 \x01(\x0e\x32\x17.intrepid.DB_Operations\x12\x0e\n\x06\x46ields\x18\x1e \x03(\t\x12\x1a\n\x0fMax_Frequencies\x18\x1f \x01(\x05:\x01\x31\x12\x37\n\x11\x63ommand_line_args\x18\x05 \x01(\x0e\x32\x1c.intrepid.Command_Operations\x12\x0e\n\x06Script\x18\x14 \x01(\t\x12\x0c\n\x04\x41rgs\x18\x15 \x01(\t\x12\x14\n\x05Pause\x18\x16 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x0e\x46romLineNumber\x18\n \x01(\t\x12\x14\n\x0c\x46romFiducial\x18\x0b \x01(\t\x12\x14\n\x0cToLineNumber\x18\x0c \x01(\t\x12\x12\n\nToFiducial\x18\r \x01(\t\x12\x16\n\x0eMergeFromField\x18\x0e \x03(\t\x12\x14\n\x0cMergeToField\x18\x0f \x03(\t\x12\x14\n\tFidFactor\x18\x10 \x01(\x01:\x01\x31\x12\x11\n\tPrecision\x18\x32 \x01(\x01\x12\x17\n\x0f\x44uplicateFields\x18\x33 \x03(\t\x12)\n\nAlias_Code\x18> \x01(\x0e\x32\x0f.ctm.FieldAlias:\x04\x46\x41_X\x12\x14\n\x0c\x41lias_String\x18? \x01(\t\x12\x0f\n\x07myField\x18< \x01(\t\x12\x0f\n\x07myAlias\x18= \x01(\t\x12\x16\n\x0eIncludedFields\x18@ \x03(\t\x12&\n\rField_Aliases\x18\x41 \x03(\x0e\x32\x0f.ctm.FieldAlias\x12\'\n\x08Location\x18\x46 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x0f\n\x07Keyword\x18P \x01(\t\x12\r\n\x05\x42lock\x18Q \x01(\t\x12\r\n\x05Value\x18R \x01(\t\x12,\n\nReportFile\x18\xb6\x07 \x01(\t:\x17\x66manager_processing.rpt\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08\x66manager\x12\x1d\n\x0bGUIToolName\x18\x64 \x01(\t:\x08\x66manager\"\xb5\x01\n\x0e\x45\x64it_Delta_INT\x12,\n\x08\x45\x64itType\x18\x03 \x01(\x0e\x32\x1a.intrepid.PlanViewEditType\x12\x13\n\x0bLine_to_Cut\x18\x01 \x01(\x11\x12\x14\n\x0c\x43utFromPoint\x18\x02 \x01(\x11\x12\x14\n\x0cLine_to_Null\x18\x05 \x01(\x11\x12\x1a\n\x12\x46iducialStartPoint\x18\x06 \x01(\x11\x12\x18\n\x10\x46iducialEndPoint\x18\x07 \x01(\x11\"\xdc\x07\n\x13SurveyPlan_Edit_INT\x12\x0f\n\x07Input_X\x18\x01 \x01(\t\x12\x0f\n\x07Input_Y\x18\x02 \x01(\t\x12\x14\n\x0cInput_Signal\x18\x03 \x01(\t\x12\x11\n\tInput_Fid\x18\x04 \x01(\t\x12\x12\n\nInput_Line\x18\x06 \x01(\t\x12\x10\n\x08Output_X\x18\n \x01(\t\x12\x10\n\x08Output_Y\x18\x0b \x01(\t\x12\x1e\n\x16Output_ValidationField\x18\x0c \x01(\t\x12\x18\n\tShowALine\x18\x16 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x0fHighlightedLine\x18\x17 \x01(\x11\x12\x1e\n\x0fHasSignalColour\x18\x18 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eShowValidation\x18\x1b \x01(\x08:\x05\x66\x61lse\x12\x19\n\nOutOfRange\x18\x1c \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x12OutOfRangeDistance\x18\x1d \x01(\x01:\x03\x31\x30\x30\x12\x15\n\rOutOfRangeMin\x18\x1e \x01(\x01\x12\x15\n\rOutOfRangeMax\x18\x1f \x01(\x01\x12\x14\n\x05Nulls\x18& \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rOutOfSequence\x18\' \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08Gradient\x18( \x01(\x08:\x05\x66\x61lse\x12\"\n\x14GradientOverDistance\x18) \x01(\x01:\x04\x35\x30\x30\x30\x12\x18\n\x0bGradientMax\x18* \x01(\x01:\x03\x31\x30\x30\x12\x18\n\tDirection\x18\x32 \x01(\x08:\x05\x66\x61lse\x12!\n\x15\x44irectionMaxDeviation\x18\x33 \x01(\x01:\x02\x35\x30\x12#\n\x15\x44irectionOverDistance\x18\x34 \x01(\x01:\x04\x35\x30\x30\x30\x12\x1d\n\x0eShowLineLabels\x18> \x01(\x08:\x05\x66\x61lse\x12 \n\x11ShowLineDirection\x18? \x01(\x08:\x05\x66\x61lse\x12%\n\x16ShowSignalNoiseProfile\x18@ \x01(\x08:\x05\x66\x61lse\x12\x15\n\nWaveLength\x18\x45 \x01(\x01:\x01\x35\x12\x14\n\tTolerance\x18\x42 \x01(\x01:\x01\x30\x12\x1f\n\x13SignalVerticalScale\x18\x41 \x01(\x01:\x02\x35\x30\x12\x1d\n\x12SignalVerticalBase\x18\x43 \x01(\x01:\x01\x30\x12+\n\tEditDelta\x18< \x03(\x0b\x32\x18.intrepid.Edit_Delta_INT\x12\x1d\n\nReportFile\x18_ \x01(\t:\tfedit.rpt\x12\x1c\n\rBatchToolName\x18\x63 \x01(\t:\x05\x66\x65\x64it\x12\x1a\n\x0bGUIToolName\x18\x64 \x01(\t:\x05\x66\x65\x64it\"\x82\x02\n\x0bSignalTrace\x12\x10\n\x08SignalIn\x18\x01 \x01(\t\x12\x11\n\tSignalOut\x18\x02 \x01(\t\x12\x32\n\x04Type\x18\x03 \x01(\x0e\x32\x18.intrepid.NoiseTypes_INT:\nNoise_None\x12\x1e\n\x13SignalVerticalScale\x18\x05 \x01(\x01:\x01\x31\x12\x1d\n\x12SignalVerticalBase\x18\x06 \x01(\x01:\x01\x30\x12/\n\nParameters\x18\x14 \x01(\x0b\x32\x1b.intrepid.Input_Filters_INT\x12*\n\tEditDelta\x18\x12 \x03(\x0b\x32\x17.intrepid.Data_Replacer\"\x8a\x03\n\x11ProfileEditor_INT\x12*\n\x0bSignalField\x18\x01 \x03(\x0b\x32\x15.intrepid.SignalTrace\x12 \n\x15SignalHorizontalScale\x18\n \x01(\x01:\x01\x31\x12\x1f\n\x10ShowVerticalAxis\x18\x0b \x01(\x08:\x05\x66\x61lse\x12!\n\x12ShowHorizontalAxis\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x19\n\nShowPoints\x18\r \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bSuperimpose\x18\x0e \x01(\x08:\x05\x66\x61lse\x12\x34\n\x08\x45\x64itType\x18\x0f \x01(\x0e\x32\x17.intrepid.EditTypes_INT:\tEdit_None\x12\x1d\n\x0fImposeAutoScale\x18\x10 \x01(\x08:\x04true\x12\x1d\n\nReportFile\x18_ \x01(\t:\tpedit.rpt\x12\x1c\n\rBatchToolName\x18\x63 \x01(\t:\x05pedit\x12\x1a\n\x0bGUIToolName\x18\x64 \x01(\t:\x05pedit\"\xe1\x02\n\x11\x43lipLine_Edit_INT\x12\x11\n\tInputFile\x18\x01 \x01(\t\x12\t\n\x01X\x18\x02 \x01(\t\x12\t\n\x01Y\x18\x03 \x01(\t\x12\x10\n\x08LineType\x18\x04 \x01(\t\x12\x0f\n\x07Quality\x18\x05 \x01(\t\x12\x0c\n\x04Xout\x18\x06 \x01(\t\x12\x0c\n\x04Yout\x18\x07 \x01(\t\x12\x16\n\x0eKillCountField\x18\x08 \x01(\t\x12\x1d\n\x11MinimumSeparation\x18\n \x01(\x01:\x02\x31\x30\x12\x1c\n\x11MaximumSeparation\x18\x0b \x01(\x01:\x01\x30\x12!\n\x14MinimumSegmentLength\x18\x0c \x01(\x01:\x03\x31\x30\x30\x12+\n\nReportFile\x18_ \x01(\t:\x17\x43lipLine_processing.rpt\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08\x63lipline\x12\x1e\n\x0bGUIToolName\x18\x64 \x01(\t:\tjclipline\"\xce\x04\n\x13SpreadSheet_Actions\x12\x30\n\x04Type\x18\x01 \x02(\x0e\x32\x17.intrepid.OperationType:\tOpenField\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x0e\n\x04Save\x18\x03 \x01(\t:\x00\x12#\n\x05\x44type\x18\x04 \x01(\x0e\x32\r.ctm.DataType:\x05\x44T_R4\x12\x11\n\x05Width\x18\x05 \x01(\x05:\x02\x31\x30\x12\x16\n\x07GroupBy\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x11\n\x07Initial\x18\x07 \x01(\t:\x00\x12\x10\n\x05\x42\x61nds\x18\x08 \x01(\x05:\x01\x31\x12\x41\n\x14\x43oordinateSystemType\x18\t \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12\x1e\n\x0f\x43reateByFormula\x18\x15 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x0cMathsFormula\x18\x16 \x01(\t:\x00\x12\x15\n\x0bIfCondition\x18\n \x01(\t:\x00\x12\x14\n\nThenAction\x18\x0b \x01(\t:\x00\x12\x14\n\nElseAction\x18\x0c \x01(\t:\x00\x12\x15\n\tFromGroup\x18\r \x01(\x05:\x02-1\x12\x14\n\x08\x46romSamp\x18\x0e \x01(\x05:\x02-1\x12\x13\n\x07ToGroup\x18\x0f \x01(\x05:\x02-1\x12\x12\n\x06ToSamp\x18\x10 \x01(\x05:\x02-1\x12\x12\n\x08\x44\x65leteIf\x18\x11 \x01(\t:\x00\x12\x32\n\x0c\x64\x65leteAction\x18\x12 \x01(\x0e\x32\x16.intrepid.DeleteAction:\x04Rows\x12\x16\n\x0cSplitGroupIf\x18\x13 \x01(\t:\x00\"\xa7\x01\n\x0fSpreadSheet_INT\x12-\n\x06\x41\x63tion\x18\x01 \x03(\x0b\x32\x1d.intrepid.SpreadSheet_Actions\x12)\n\nReportFile\x18\x46 \x01(\t:\x15\x64\x62\x65\x64it_processing.rpt\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06\x64\x62\x65\x64it\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06\x64\x62\x65\x64it\"\xdc\x06\n\x15\x44\x61taset_Resampler_INT\x12\x1c\n\x14ReferenceGridDataset\x18\x01 \x01(\t\x12\x1c\n\x14ReferenceLineDataset\x18\x02 \x01(\t\x12\x1d\n\x15ReferencePointDataset\x18\x03 \x01(\t\x12\x1c\n\x14ReferenceSignalField\x18\x17 \x01(\t\x12\x1a\n\x12ProfilePathDataset\x18\x04 \x01(\t\x12\x1d\n\x15OutputProfilesDataset\x18\x0e \x01(\t\x12#\n\x1bOutputExtractedDatasetField\x18\x05 \x01(\t\x12\x36\n\x07RunType\x18\x06 \x02(\x0e\x32\x14.intrepid.DRRunTypes:\x0f\x45xtract_Profile\x12\x34\n\nTraceLayer\x18\x16 \x02(\x0e\x32\x16.intrepid.DRTraceLayer:\x08TL_TABLE\x12\x1b\n\rCorridorWidth\x18\x07 \x01(\x01:\x04\x31\x30\x30\x30\x12\x1e\n\x10SamplingInterval\x18\x08 \x01(\x01:\x04\x31\x30\x30\x30\x12\x16\n\x0b\x43urrentBand\x18\t \x01(\x05:\x01\x30\x12\x18\n\rNumberOfBands\x18\n \x01(\x05:\x01\x31\x12!\n\x0bProfileEnds\x18\x0b \x03(\x0b\x32\x0c.ctm.Point2d\x12\x13\n\x08Origin_X\x18\x0c \x01(\x01:\x01\x30\x12\x13\n\x08Origin_Y\x18\r \x01(\x01:\x01\x30\x12\x18\n\rLines_Azmiuth\x18\x0f \x01(\x01:\x01\x30\x12\x1f\n\x12TraverseSeparation\x18\x10 \x01(\x01:\x03\x32\x30\x30\x12\x1c\n\x11TraverseExtension\x18\x11 \x01(\x01:\x01\x30\x12\x17\n\x0bTraverseNum\x18\x12 \x01(\x05:\x02\x31\x30\x12\x1b\n\rTieSeparation\x18\x13 \x01(\x01:\x04\x31\x30\x30\x30\x12\x17\n\x0cTieExtension\x18\x14 \x01(\x01:\x01\x30\x12\x11\n\x06TieNum\x18\x15 \x01(\x05:\x01\x34\x12\x33\n\nReportFile\x18\x46 \x01(\t:\x1f\x64\x61tset_resampler_processing.rpt\x12(\n\rBatchToolName\x18\x63 \x01(\t:\x11\x64\x61taset_resampler\x12&\n\x0bGUIToolName\x18\x64 \x01(\t:\x11\x64\x61taset_resampler\"\xb9\x03\n\x12SurveyDistance_INT\x12\x10\n\x08\x44\x61taBase\x18\x01 \x02(\t\x12\x1a\n\x0bSelectLines\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0ePlotFlightPath\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x08\x41\x63\x63urate\x18\x04 \x01(\x08:\x04true\x12\x13\n\x08\x41ltitude\x18\x05 \x01(\x01:\x01\x30\x12\x1a\n\x0fMinSurveyNumber\x18\x06 \x01(\x05:\x01\x30\x12\x1f\n\x0fMaxSurveyNumber\x18\x07 \x01(\x05:\x06\x39\x39\x39\x39\x39\x39\x12\x1a\n\x0fMinFlightNumber\x18\x08 \x01(\x05:\x01\x30\x12\x1f\n\x0fMaxFlightNumber\x18\t \x01(\x05:\x06\x39\x39\x39\x39\x39\x39\x12\x15\n\rMinLineNumber\x18\n \x01(\t\x12\x15\n\rMaxLineNumber\x18\x0b \x01(\t\x12\x1d\n\x0f\x41llowPseudoFids\x18\x0c \x01(\x08:\x04true\x12(\n\nReportFile\x18\x46 \x01(\t:\x14survey_distances.rpt\x12\x1c\n\rBatchToolName\x18\x63 \x01(\t:\x05sdist\x12\x1a\n\x0bGUIToolName\x18\x64 \x01(\t:\x05sdist\"\x9f\x05\n\x12\x43lusterControl_INT\x12\x42\n\x10\x43lusterAlgorithm\x18\x01 \x01(\x0e\x32\x1b.intrepid.Cluster_Algorithm:\x0b\x41nisotropic\x12\x18\n\x0bPerDistance\x18\x02 \x01(\x01:\x03\x39\x30\x30\x12\x30\n$MaximumSeparationClusterToFirstPoint\x18\x03 \x01(\x01:\x02\x35\x30\x12(\n\x1b\x46\x61\x63tor_MaxRadius_Confidence\x18\x04 \x01(\x01:\x03\x31.2\x12 \n\x15Minimum_Number_Points\x18\x05 \x01(\x05:\x01\x35\x12\x1f\n\x14Location_Uncertainty\x18\x06 \x01(\x01:\x01\x31\x12$\n\x17Maximum_Recursion_Steps\x18\x07 \x01(\x05:\x03\x35\x30\x30\x12-\n!Frequency_Cluster_Forming_Reports\x18\x08 \x01(\x05:\x02\x31\x31\x12-\n\x1fPost_recursion_filtering_checks\x18\t \x01(\x08:\x04true\x12(\n\x1a\x43ull_cluster_uncertainties\x18\n \x01(\x08:\x04true\x12!\n\x13Restrict_Plate_Dips\x18\x0b \x01(\x08:\x04true\x12\x1b\n\x0fMaximumDipRange\x18\x0c \x01(\x05:\x02\x32\x30\x12M\n\x0c\x43lusterLevel\x18G \x01(\x0e\x32*.intrepid.ClusterControl_INT.Cluster_Level:\x0bsecondStage\"O\n\rCluster_Level\x12\r\n\tzeroStage\x10\x00\x12\x0e\n\nfirstStage\x10\x01\x12\x0f\n\x0bsecondStage\x10\x02\x12\x0e\n\nthirdStage\x10\x03\"\x93\x05\n\rView3D_Points\x12\x1c\n\x0eshow_3D_viewer\x18\x01 \x01(\x08:\x04true\x12\x1b\n\x0cproject_zmin\x18\x03 \x01(\x01:\x05-3000\x12\x19\n\x0cproject_zmax\x18\x04 \x01(\x01:\x03\x35\x30\x30\x12\"\n\x14show_original_points\x18\x05 \x01(\x08:\x04true\x12 \n\x12show_cluster_shape\x18\x06 \x01(\x08:\x04true\x12\'\n\x19show_original_signal_grid\x18\x08 \x01(\x08:\x04true\x12\x1b\n\rshow_DTM_grid\x18\t \x01(\x08:\x04true\x12)\n\x1ashow_Cluster_FormingStages\x18\n \x01(\x08:\x05\x66\x61lse\x12%\n\x16show_dip_calc_profiles\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\'\n\x18show_interface_foliation\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x33\n$show_average_2DStructureEigenvectors\x18\r \x01(\x08:\x05\x66\x61lse\x12&\n\x17write_vtk_clusterPoints\x18\x0e \x01(\x08:\x05\x66\x61lse\x12*\n\x15vtk_clusterPointsFile\x18\x0f \x01(\t:\x0b\x63luster.vtp\x12\x19\n\x0evertical_scale\x18\x10 \x01(\x01:\x01\x31\x12)\n\x1bshow_ImplicitFunction_Fault\x18\x11 \x01(\x08:\x04true\x12)\n\x1ashow_ImplicitFunction_Tilt\x18\x13 \x01(\x08:\x05\x66\x61lse\x12+\n\x1dMinimum_Fault_Vertical_Extent\x18\x12 \x01(\x01:\x04\x31\x30\x30\x30\"\xa8\x04\n\x10\x46TG_Fault3D_Calc\x12,\n\rInputGridName\x18\x01 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12$\n\x05\x64rape\x18\x04 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12-\n\x1f\x64isallow_poor_low_dip_estimates\x18\n \x01(\x08:\x04true\x12$\n\x18\x64\x65\x66\x61ult_low_dip_estimate\x18\x0b \x01(\x05:\x02\x34\x30\x12\x31\n\x05Units\x18( \x01(\x0e\x32\x17.intrepid.Gravity_Units:\tMILLIGALS\x12\x1c\n\rdump_dip_logs\x18) \x01(\x08:\x05\x66\x61lse\x12 \n\x10\x43ontact_Profiles\x18+ \x01(\t:\x06output\x12\x1b\n\x10Tyy_minimum_test\x18/ \x01(\x01:\x01\x32\x12\x33\n\'minimum_Total_Vertical_Plane_Derivative\x18\x30 \x01(\x01:\x02\x31\x30\x12 \n\x14Minimum_2D_Responses\x18\x31 \x01(\x05:\x02\x31\x31\x12)\n\x1b\x43orrect_For_FaultBlock_Tilt\x18\x32 \x01(\x08:\x04true\x12\x36\n\'capture_gravity_profiles_from_dip_calcs\x18< \x01(\x08:\x05\x66\x61lse\x12!\n\x12Trim_Faults_to_DTM\x18= \x01(\x08:\x05\x66\x61lse\"\xd7\x05\n\x13\x43lusterAnalysis_INT\x12\x10\n\x08\x44\x61taBase\x18\x01 \x02(\t\x12\x15\n\rOutputCluster\x18\x02 \x02(\t\x12,\n\rInputGridName\x18\x03 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12\x30\n\x11\x45levationGridName\x18\x04 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12<\n\x0b\x43lusterType\x18\x05 \x01(\x0e\x32\x1c.intrepid.ClusterDatasetType:\tGeneric3D\x12-\n\x07\x43luster\x18\x08 \x01(\x0b\x32\x1c.intrepid.ClusterControl_INT\x12%\n\x04view\x18\n \x01(\x0b\x32\x17.intrepid.View3D_Points\x12)\n\nProjection\x18\x0b \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x33\n\x0e\x44istance_Units\x18\r \x01(\x0e\x32\x13.ctm.Distance_Units:\x06meters\x12\x46\n\x19\x45levationCoordinateSystem\x18\x0e \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45NU\x12)\n\x06Subset\x18\x1e \x01(\x0b\x32\x19.intrepid.grid_subset_INT\x12.\n\ntensor_dip\x18# \x01(\x0b\x32\x1a.intrepid.FTG_Fault3D_Calc\x12\x13\n\x05\x64oLog\x18( \x01(\x08:\x04true\x12\x1f\n\x10Generated_By_GUI\x18\x32 \x01(\x08:\x05\x66\x61lse\x12&\n\nReportFile\x18) \x01(\t:\x12\x63luster_points.rpt\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07\x63luster\x12\"\n\x0bGUIToolName\x18\x64 \x01(\t:\rclusterAppGUI\"\xd0\x08\n\x10\x43onvolveGrid_INT\x12\r\n\x05Input\x18\x01 \x02(\t\x12\x0e\n\x06Output\x18\x03 \x02(\t\x12:\n\x04Type\x18\x04 \x01(\x0e\x32\x1c.intrepid.ConvolveFilterType:\x0e\x43onvolveKernel\x12@\n\rTensor_Option\x18\x05 \x01(\x0e\x32%.intrepid.TensorGridConvolveFiltering:\x02QC\x12+\n\x04norm\x18\x02 \x01(\x0e\x32\x18.intrepid.TensorNormCase:\x03one\x12\x12\n\nKernelName\x18\x06 \x01(\t\x12\x17\n\x08Residual\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10NormaliseWeights\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x43hopWeights\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bNullWeights\x18\n \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rOutputFloat32\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x13\n\x0b\x44\x65scription\x18\x14 \x01(\t\x12\x33\n\nKernelType\x18\x15 \x01(\x0e\x32\x1f.intrepid.ConvolveAlgorithmType\x12\x0f\n\x04Rows\x18\x16 \x01(\x05:\x01\x33\x12\x12\n\x07\x43olumns\x18\x17 \x01(\x05:\x01\x33\x12\x16\n\x0bScaleFactor\x18\x19 \x01(\x05:\x01\x30\x12\x0f\n\x07Weights\x18\x1a \x03(\x01\x12\x12\n\x06Window\x18\x1b \x01(\x05:\x02\x32\x31\x12\x15\n\nCNORM_Mean\x18\x1c \x01(\x01:\x01\x30\x12\x19\n\x0c\x43NORM_StdDev\x18\x1d \x01(\x01:\x03\x31\x30\x30\x12\x16\n\x0b\x43NORM_Alpha\x18\x1e \x01(\x01:\x01\x31\x12\x1c\n\rCNORM_MaxGain\x18\x1f \x01(\x01:\x05\x31\x30\x30\x30\x30\x12\x1e\n\x12Terrace_Iterations\x18  \x01(\x05:\x02\x39\x30\x12(\n\x1cTerrace_Percentage_Flattened\x18! \x01(\x05:\x02\x39\x35\x12!\n\x16Terrace_Minimum_Change\x18\" \x01(\x01:\x01\x32\x12\x1b\n\x10Tyy_minimum_test\x18/ \x01(\x01:\x01\x32\x12\x33\n\'minimum_Total_Vertical_Plane_Derivative\x18\x30 \x01(\x01:\x02\x31\x30\x12 \n\x14Minimum_2D_Responses\x18\x31 \x01(\x05:\x02\x31\x30\x12\x41\n\x14\x43oordinateSystemType\x18. \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12\x1f\n\x10Generated_By_GUI\x18\x33 \x01(\x08:\x05\x66\x61lse\x12*\n\nReportFile\x18\x46 \x01(\t:\x16\x63\x66ilter_processing.rpt\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07\x63\x66ilter\x12)\n\x0bGUIToolName\x18\x64 \x01(\t:\x14\x63onvolveFilterAppGUI\"\x89\x01\n\x17Marine_Filter_Parameter\x12<\n\nFilterType\x18\x01 \x01(\x0e\x32\x1c.intrepid.Marine_Filter_Type:\nFULLER_FIR\x12\x18\n\x0b\x46ilterWidth\x18\x02 \x01(\x05:\x03\x31\x32\x30\x12\x16\n\x0b\x46ilterSteps\x18\x03 \x01(\x05:\x01\x36\":\n\x0fSelection_Range\x12\x0c\n\x04\x46rom\x18\x01 \x01(\x01\x12\n\n\x02To\x18\x02 \x01(\x01\x12\r\n\x05Value\x18\x03 \x01(\x01\"\xd0\x02\n\rData_Replacer\x12\x0f\n\x07\x44\x61taSet\x18\x01 \x01(\t\x12\x11\n\tDataField\x18\x02 \x01(\t\x12\r\n\x05Group\x18\x03 \x01(\x05\x12\x0b\n\x03Row\x18\x04 \x01(\x05\x12(\n\x05Range\x18\x05 \x03(\x0b\x32\x19.intrepid.Selection_Range\x12\x33\n\tSelection\x18\t \x01(\x0e\x32 .intrepid.SelectionOperation_INT\x12\x16\n\x0b\x41\x64\x64\x43onstant\x18\n \x01(\x01:\x01\x30\x12\x17\n\x0c\x41\x64\x64SlopeLeft\x18\x0b \x01(\x01:\x01\x30\x12\x18\n\rAddSlopeRight\x18\x0c \x01(\x01:\x01\x30\x12\x1a\n\x0f\x41\x64\x64TriangleLeft\x18\r \x01(\x01:\x01\x30\x12\x1c\n\x11\x41\x64\x64TriangleMiddle\x18\x0e \x01(\x01:\x01\x30\x12\x1b\n\x10\x41\x64\x64TriangleRight\x18\x0f \x01(\x01:\x01\x30\"\x9b\x02\n\x1dGravity_Meter_Marine_Settings\x12\x1a\n\x0f\x42\x65\x61mScaleFactor\x18\x01 \x01(\x01:\x01\x31\x12\x11\n\x06\x41L_MON\x18\x02 \x01(\x01:\x01\x30\x12\x11\n\x06\x41X_MON\x18\x03 \x01(\x01:\x01\x30\x12\x12\n\x07\x41X2_MON\x18\x04 \x01(\x01:\x01\x30\x12\x12\n\x07VCC_MON\x18\x05 \x01(\x01:\x01\x30\x12\x11\n\x06VE_MON\x18\x06 \x01(\x01:\x01\x30\x12\x13\n\x08XACC_MON\x18\x07 \x01(\x01:\x01\x30\x12\x14\n\tXACC2_MON\x18\x08 \x01(\x01:\x01\x30\x12\x13\n\x08LACC_MON\x18\t \x01(\x01:\x01\x30\x12\x14\n\tLACC2_MON\x18\n \x01(\x01:\x01\x30\x12\'\n\x1cManufacturerGravityReference\x18\x0b \x01(\x01:\x01\x30\"\xd8\x01\n\x14Gravity_Meter_Config\x12\x11\n\tMeterName\x18\x01 \x02(\t\x12\x16\n\x0bScaleFactor\x18\x02 \x01(\x01:\x01\x31\x12\x16\n\x0e\x43ounterReading\x18\x03 \x03(\x01\x12\x1f\n\x17\x43onvertedCounterReading\x18\x04 \x03(\x01\x12\x1b\n\x13IntervalScaleFactor\x18\x05 \x03(\x01\x12?\n\x0eMarineSettings\x18\x06 \x01(\x0b\x32\'.intrepid.Gravity_Meter_Marine_Settings\"L\n\x13Gravity_Meter_Table\x12\x35\n\rGravity_Meter\x18\x01 \x03(\x0b\x32\x1e.intrepid.Gravity_Meter_Config\"\xc3\x02\n\x1b\x44\x65nsity_Material_Properties\x12\x1a\n\x0c\x44\x65nsity_Land\x18\x01 \x01(\x01:\x04\x32.67\x12$\n\x17\x44\x65nsity_Marine_Sediment\x18\x02 \x01(\x01:\x03\x32.2\x12\x1e\n\x13\x44\x65nsity_Fresh_Water\x18\x03 \x01(\x01:\x01\x31\x12!\n\x12\x44\x65nsity_Salt_Water\x18\x04 \x01(\x01:\x05\x31.027\x12\x1a\n\x0b\x44\x65nsity_Ice\x18\x05 \x01(\x01:\x05\x30.917\x12)\n\x1b\x44\x65nsity_LandMinusFreshWater\x18\x06 \x01(\x01:\x04\x31.67\x12\x33\n$Density_MarineSedimentMinusSaltWater\x18\x07 \x01(\x01:\x05\x31.173\x12#\n\x14\x44\x65nsity_LandMinusIce\x18\x08 \x01(\x01:\x05\x31.763\"\xa4\x04\n\x12Terrain_Correction\x12\x11\n\tCell_Size\x18\x01 \x01(\x01\x12\x16\n\x0bMax_Circles\x18\x02 \x01(\x05:\x01\x32\x12\x19\n\rRadius_Ring_1\x18\x03 \x01(\x05:\x02\x31\x36\x12\x19\n\rRadius_Ring_2\x18\x04 \x01(\x05:\x02\x33\x32\x12\x19\n\rRadius_Ring_3\x18\x05 \x01(\x05:\x02\x36\x34\x12\x1a\n\rRadius_Ring_4\x18\x06 \x01(\x05:\x03\x32\x35\x36\x12\x1b\n\rRadius_Ring_5\x18\x07 \x01(\x05:\x04\x31\x30\x32\x34\x12\x14\n\tBottom_RL\x18\x08 \x01(\x01:\x01\x30\x12.\n UseDTM_Elevations_At_Observation\x18\n \x01(\x08:\x04true\x12(\n\x19\x41\x64\x64_Obs_Elevations_To_DTM\x18\x0b \x01(\x08:\x05\x66\x61lse\x12+\n\x1cReport_Calculations_To_ASCII\x18\x0c \x01(\x08:\x05\x66\x61lse\x12.\n LocalInverseDistanceInterpolator\x18\r \x01(\x08:\x04true\x12!\n\x13UseSlopingTopPrisms\x18\x0e \x01(\x08:\x04true\x12%\n\x17ScalarTerrainCorrection\x18\x0f \x01(\x08:\x04true\x12&\n\x17TensorTerrainCorrection\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0fSub_Sample_Rate\x18\x12 \x01(\x05:\x01\x31\"\xae\n\n\x1fTerrain_Correction_QuadTree_INT\x12\x10\n\x08InputDTM\x18\x01 \x02(\t\x12\x0f\n\x07InputDB\x18\x02 \x01(\t\x12\x0e\n\x06InputX\x18\x03 \x01(\t\x12\x0e\n\x06InputY\x18\x04 \x01(\t\x12\x14\n\x0cInputGravity\x18\x05 \x01(\t\x12\x1c\n\x14InputGroundElevation\x18\x06 \x01(\t\x12\x1e\n\x16InputAircraftElevation\x18\x07 \x01(\t\x12\x13\n\x0bInputNValue\x18\x08 \x01(\t\x12\x18\n\x10InputGravityGrid\x18\t \x01(\t\x12\x1d\n\x15InputDrapeSurfaceGrid\x18\n \x01(\t\x12\x17\n\x0fInputNValueGrid\x18\x0b \x01(\t\x12\x1c\n\x14InputMaterialDensity\x18\x0c \x01(\t\x12\x43\n\tDTMMethod\x18\r \x01(\x0e\x32\x1e.intrepid.SignalResampleMethod:\x10MinimumCurvature\x12\x1f\n\x17OutputTerrainCorrection\x18\x0f \x01(\t\x12\x1e\n\x16OutputCorrectedGravity\x18\x10 \x01(\t\x12\x12\n\nReportFile\x18\x11 \x01(\t\x12\x34\n\x0cGravityDatum\x18\x14 \x01(\x0e\x32\x17.intrepid.Gravity_Datum:\x05WGS84\x12\x38\n\x0cGravityUnits\x18\x15 \x01(\x0e\x32\x17.intrepid.Gravity_Units:\tMILLIGALS\x12S\n\x1dGravityAcquisitionEnvironment\x18\x16 \x01(\x0e\x32\x1e.intrepid.Gravity_Terrain_Case:\x0cLAND_SURFACE\x12\x41\n\x14\x43oordinateSystemType\x18\x17 \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12>\n\x0fMaterialDensity\x18\x18 \x01(\x0b\x32%.intrepid.Density_Material_Properties\x12\'\n\x19\x44oScalarTerrainCorrection\x18\x1e \x01(\x08:\x04true\x12(\n\x19\x44oTensorTerrainCorrection\x18\x1f \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x14\x42ottom_RL_For_Tensor\x18  \x01(\x01:\x01\x30\x12\x14\n\tPrecision\x18! \x01(\x01:\x01\x31\x12\"\n\x13UseSlopingTopPrisms\x18\" \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0e\x41\x64\x61ptToTerrain\x18# \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cUseEllipsoid\x18$ \x01(\x08:\x05\x66\x61lse\x12.\n UseDTM_Elevations_At_Observation\x18% \x01(\x08:\x04true\x12\x1a\n\x0fSub_Sample_Rate\x18( \x01(\x05:\x01\x31\x12\x16\n\x0bNumber_CPUs\x18) \x01(\x05:\x01\x31\x12\x1f\n\x10\x44umpResampledDTM\x18* \x01(\x08:\x05\x66\x61lse\x12&\n\x17\x44umpCalculationSurfaces\x18+ \x01(\x08:\x05\x66\x61lse\x12*\n\x1f\x44umpGridsforEveryNthObservation\x18, \x01(\x05:\x01\x30\x12%\n\rBatchToolName\x18\x63 \x01(\t:\x0eterraincorrect\x12#\n\x0bGUIToolName\x18\x64 \x01(\t:\x0eterraincorrect\"\xaa\x02\n\x17\x41\x62solute_ReferenceTieIn\x12\x18\n\x10\x46ixedStationName\x18\x01 \x01(\t\x12 \n\x18SurveyTieInStationNumber\x18\x02 \x01(\t\x12\x31\n\tDatumType\x18\x03 \x01(\x0e\x32\x17.intrepid.Gravity_Datum:\x05WGS84\x12\x1c\n\x14\x41\x62soluteGravityValue\x18\x04 \x01(\x01\x12\x10\n\x08\x43omments\x18\x05 \x01(\t\x12\x16\n\tPrecision\x18\x06 \x01(\x01:\x03\x30.1\x12\x1e\n\x08Location\x18\x07 \x01(\x0b\x32\x0c.ctm.Point3d\x12\x38\n\x0cGravityUnits\x18\x08 \x01(\x0e\x32\x17.intrepid.Gravity_Units:\tMILLIGALS\"\xc1\t\n#Land_Loop_Reduction_Principal_Facts\x12\x14\n\x0cInputCG5Data\x18\x01 \x01(\t\x12\x16\n\x0eInputFieldData\x18\x02 \x03(\t\x12\x14\n\x0cInputGPSData\x18\x03 \x01(\t\x12\x18\n\x10InputControlData\x18\x04 \x01(\t\x12\x32\n\x07\x43ontrol\x18\t \x03(\x0b\x32!.intrepid.Absolute_ReferenceTieIn\x12\x14\n\x0cLoopDataBase\x18\x05 \x01(\t\x12\x18\n\x10\x41\x62soluteDataBase\x18\x06 \x01(\t\x12\x15\n\rStationNumber\x18\x07 \x01(\t\x12\x14\n\x0cInputENVFile\x18\x08 \x01(\t\x12G\n\x12StationCoordSource\x18\n \x01(\x0e\x32\x1c.intrepid.StationCoordSource:\rEXTERNAL_FILE\x12;\n\x17MeterReading_Date_Style\x18\x0b \x01(\x0e\x32\x10.ctm.date_styles:\x08YYYYMMDD\x12\x1f\n\x13Max_Loop_Iterations\x18Z \x01(\x05:\x02\x32\x30\x12\x1d\n\x0fMax_Loop_Change\x18[ \x01(\x01:\x04\x30.01\x12\x1d\n\x0fSortNodesInTime\x18\\ \x01(\x08:\x04true\x12(\n\x19\x41llowCloseTimeNodeRepeats\x18] \x01(\x08:\x05\x66\x61lse\x12L\n\tDriftType\x18^ \x01(\x0e\x32#.intrepid.Gravity_Meter_Drift_Model:\x14Long_Term_Polynomial\x12$\n\x15IgnoreInternalRepeats\x18_ \x01(\x08:\x05\x66\x61lse\x12&\n\x17SkipEarthTideCorrection\x18` \x01(\x08:\x05\x66\x61lse\x12\x13\n\x0bIgnoreNodes\x18\x61 \x03(\t\x12\x14\n\x0cSurveyNumber\x18\x64 \x03(\x05\x12,\n\rGPSProjection\x18\x65 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12 \n\x15Meter_Vertical_Offset\x18g \x01(\x01:\x01\x30\x12\x17\n\x0cScale_Factor\x18h \x01(\x01:\x01\x31\x12)\n\x1eTimeTolerance_StackingReadings\x18i \x01(\x01:\x01\x32\x12\x1c\n\tTerritory\x18\x14 \x01(\t:\tAustralia\x12<\n\x0e\x44istance_Units\x18\x15 \x01(\x0e\x32\x13.ctm.Distance_Units:\x0f\x64\x65\x63imal_degrees\x12=\n\x0eVertical_Units\x18\x16 \x01(\x0e\x32\x13.ctm.Vertical_Units:\x10meters_elevation\x12\x1d\n\x10Repeat_Tolerance\x18= \x01(\x01:\x03\x30.2\x12\x18\n\x0cMaximum_Tare\x18> \x01(\x01:\x02\x32\x30\x12\x1d\n\x0eVerbose_Report\x18! \x01(\x08:\x05\x66\x61lse\x12\'\n\x18\x43omplete_DataBase_Fields\x18\" \x01(\x08:\x05\x66\x61lse\x12%\n\x17\x44o_Drift_Correction_CG6\x18# \x01(\x08:\x04true\"\xc0\x04\n\x1aTraditional_Marine_Gravity\x12\x13\n\x0bMeterNumber\x18\x01 \x01(\t\x12\x17\n\nGravityLag\x18\x02 \x01(\x01:\x03\x33\x30\x30\x12\x15\n\nUTC_Offset\x18\x03 \x01(\x01:\x01\x30\x12\x1e\n\x10MaximumCurvature\x18\x04 \x01(\x01:\x04\x30.05\x12\x15\n\rAbsoluteValue\x18\x05 \x03(\x01\x12\x12\n\nStillValue\x18\x06 \x03(\x01\x12\x15\n\rStillDateTime\x18\x07 \x03(\x01\x12\x1a\n\x0fSampling_Period\x18\x08 \x01(\x01:\x01\x31\x12\x1a\n\x0eMonitorRepeats\x18\t \x01(\x05:\x02\x31\x30\x12\x1e\n\x11\x43urvatureTimeStep\x18\n \x01(\x05:\x03\x32\x34\x30\x12\x1a\n\x0fNumber_Monitors\x18\x0b \x01(\x05:\x01\x37\x12\x1a\n\x0cIgnoreEotvos\x18\x0c \x01(\x08:\x04true\x12\"\n\x13IgnoreDecorrelation\x18\r \x01(\x08:\x05\x66\x61lse\x12\x45\n\x07Process\x18\x0e \x01(\x0e\x32\'.intrepid.Marine_Gravity_Selection_Type:\x0bPROCESS_ALL\x12\x15\n\rSelectedLines\x18\x10 \x03(\x01\x12;\n\x10\x46ilterParameters\x18\x11 \x01(\x0b\x32!.intrepid.Marine_Filter_Parameter\x12,\n\x0bReplaceData\x18\x12 \x03(\x0b\x32\x17.intrepid.Data_Replacer\"\x94\n\n\x0bGravity_INT\x12<\n\x07RunType\x18\x01 \x02(\x0e\x32 .intrepid.Gravity_Process_Option:\tAGSOField\x12\x17\n\x0fGravityDatabase\x18\x02 \x01(\t\x12\x41\n\x0bTerrainType\x18\x03 \x01(\x0e\x32\x1e.intrepid.Gravity_Terrain_Case:\x0cLAND_SURFACE\x12\x1a\n\x0bUseBullardB\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cUseEllipsoid\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x0bLineBearing\x18\x08 \x01(\t\x12\x0c\n\x04\x44\x61te\x18\n \x01(\t\x12\x11\n\tTimeOfDay\x18\x0b \x01(\t\x12\x17\n\x0fObservedGravity\x18\x0c \x01(\t\x12\x18\n\x10StationElevation\x18\r \x01(\t\x12\x16\n\x0eMeterElevation\x18\x0e \x01(\t\x12\x0f\n\x07N_Value\x18\x0f \x01(\t\x12\x16\n\x0e\x44igitalTerrain\x18\x10 \x01(\t\x12\x10\n\x08Latitude\x18\x11 \x01(\t\x12\x11\n\tLongitude\x18\x12 \x01(\t\x12\x15\n\rCraftVelocity\x18\x13 \x01(\t\x12@\n\tReduction\x18Z \x01(\x0b\x32-.intrepid.Land_Loop_Reduction_Principal_Facts\x12\x16\n\x0eMasterDatabase\x18\x14 \x01(\t\x12\x1c\n\x14ObservedGravityWGS84\x18\x16 \x01(\t\x12\x18\n\x10\x43orrectedGravity\x18\x17 \x01(\t\x12\x17\n\x0fReconstructedCC\x18\x18 \x01(\t\x12\x15\n\rTensorGravity\x18\x19 \x01(\t\x12\x0f\n\x07\x46reeAir\x18\x1a \x01(\t\x12\x15\n\rSimpleBouguer\x18\x1b \x01(\t\x12\x1a\n\x12TheoreticalGravity\x18\x1c \x01(\t\x12\x19\n\x11TerrainCorrection\x18\x1d \x01(\t\x12\x0e\n\x06\x45otvos\x18\x1e \x01(\t\x12\x11\n\tEarthTide\x18\x1f \x01(\t\x12\x1c\n\x14ReconstructedGravity\x18  \x01(\t\x12\x34\n\x06Marine\x18# \x01(\x0b\x32$.intrepid.Traditional_Marine_Gravity\x12-\n\x07Terrain\x18\x32 \x01(\x0b\x32\x1c.intrepid.Terrain_Correction\x12\x39\n\nProperties\x18< \x01(\x0b\x32%.intrepid.Density_Material_Properties\x12\x37\n\x0bOutputUnits\x18( \x01(\x0e\x32\x17.intrepid.Gravity_Units:\tMILLIGALS\x12\x31\n\tDatumType\x18) \x01(\x0e\x32\x17.intrepid.Gravity_Datum:\x05WGS84\x12\x1a\n\x0bOutputDatum\x18* \x01(\t:\x05WGS84\x12\x41\n\x14\x43oordinateSystemType\x18, \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12*\n\nReportFile\x18\x46 \x01(\t:\x16gravity_processing.rpt\x12\x1e\n\rBatchToolName\x18G \x01(\t:\x07gravity\x12\x1c\n\x0bGUIToolName\x18\x64 \x01(\t:\x07gravity\x12\x15\n\nSavedStage\x18H \x01(\x05:\x01\x30\"\x96\x01\n\rVector_Fields\x12\x0f\n\x07Input_X\x18\x02 \x01(\t\x12\x0f\n\x07Input_Y\x18\x03 \x01(\t\x12\x0f\n\x07Input_Z\x18\x04 \x01(\t\x12\r\n\x05\x46ield\x18\x05 \x01(\t\x12\x43\n\x14\x43oordinateSystemType\x18\x06 \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x05LOCAL\"\xf7\x03\n\x12Input_Datasets_INT\x12\x15\n\rInput_Dataset\x18\x01 \x01(\t\x12\x0f\n\x07Input_X\x18\x02 \x01(\t\x12\x0f\n\x07Input_Y\x18\x03 \x01(\t\x12\x0c\n\x04\x44\x61ta\x18\x04 \x01(\t\x12*\n\tGradients\x18\x05 \x01(\x0b\x32\x17.intrepid.Vector_Fields\x12\x0f\n\x04\x42\x61nd\x18\x06 \x01(\x05:\x01\x31\x12\x42\n\x0cSurvey_Lines\x18\x07 \x01(\x0b\x32,.intrepid.Input_Datasets_INT.Survey_Lines_TT\x12\x17\n\x0fProcessingField\x18\x08 \x01(\t\x12I\n\x0fInput_Data_Type\x18\t \x01(\x0b\x32\x30.intrepid.Input_Datasets_INT.Input_Data_Type_INT\x1aW\n\x0fSurvey_Lines_TT\x12\x12\n\x07\x42\x65\x61ring\x18\x01 \x01(\x01:\x01\x30\x12!\n\x12Heading_Correction\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\r\n\x05\x46ield\x18\x03 \x01(\t\x1a\\\n\x13Input_Data_Type_INT\x12\x14\n\x04name\x18\x01 \x01(\t:\x06Vector\x12\x16\n\x05\x61long\x18\x02 \x01(\t:\x07LLgrad2\x12\x17\n\x06\x61\x63ross\x18\x03 \x01(\t:\x07XLgrad2\"\x9a\x01\n\x11PreProcessing_INT\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\"\n\x15Maximum_Anomaly_Width\x18\x02 \x01(\x01:\x03\x31\x30\x30\x12\x19\n\tTolerance\x18\x03 \x01(\x01:\x06\x30.0001\x12 \n\x12Use_Corrected_Data\x18\x04 \x01(\x08:\x04true\x12\x16\n\x0bWindow_Size\x18\x05 \x01(\x05:\x01\x32\"j\n\x11Vector_Subset_INT\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12!\n\x0cPolygon_Path\x18\x02 \x01(\t:\x0bsubset..DIR\x12$\n\x05outCS\x18\x03 \x01(\x0b\x32\x15.ctm.CoordinateSystem\"\xce\x01\n\rReference_INT\x12\x39\n\x04Type\x18\x01 \x01(\x0e\x32\x18.intrepid.Reference_Type:\x11\x41ligned_With_Grid\x12\x1f\n\x04Grid\x18\x02 \x01(\t:\x11ReferenceGrid.ers\x12\x12\n\x07\x41lign_X\x18\x03 \x01(\x01:\x01\x30\x12\x12\n\x07\x41lign_Y\x18\x04 \x01(\x01:\x01\x30\x12\x1c\n\x0f\x41lign_Longitude\x18\x05 \x01(\t:\x03\x30:0\x12\x1b\n\x0e\x41lign_Latitude\x18\x06 \x01(\t:\x03\x30:0\"T\n\nTiling_INT\x12\x17\n\x0bRow_Overlap\x18\x01 \x01(\x05:\x02\x31\x30\x12\x15\n\nStart_Tile\x18\x02 \x01(\x05:\x01\x31\x12\x16\n\x0b\x46inish_Tile\x18\x03 \x01(\x05:\x01\x31\"\xe6\x07\n\x13Gridding_Method_INT\x12/\n\x04Name\x18\x01 \x01(\x0e\x32\x15.intrepid.Method_Name:\nNeighbours\x12\x1e\n\x13\x45xtrapolation_Limit\x18\x02 \x01(\x05:\x01\x35\x12-\n\x10Orig_Pts_Dataset\x18\x03 \x01(\t:\x13OriginalPoints..DIR\x12?\n\x0f\x43\x65ll_Assignment\x18\x04 \x01(\x0e\x32\x1d.intrepid.Cell_Assignment_INT:\x07\x43losest\x12\x35\n\x0bWeight_Type\x18\x05 \x01(\x0e\x32\x19.intrepid.Weight_Type_INT:\x05Unity\x12\x1d\n\x0eSave_Triangles\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x16\n\nIterations\x18\x07 \x01(\x05:\x02\x32\x30\x12,\n\x1duse_Barycentric_Interpolation\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\x11Min_Scan_Distance\x18\x08 \x01(\x01:\x01\x30\x12\x1f\n\x11Max_Scan_Distance\x18\t \x01(\x01:\x04\x32\x30\x30\x30\x12\x35\n\x0bSpline_Type\x18\n \x01(\x0e\x32\x19.intrepid.Spline_Type_INT:\x05\x41kima\x12\x34\n%Spline_Gradient_Signal_Noise_Blending\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x19\n\x0eSpline_Tension\x18\x0c \x01(\x01:\x01\x31\x12\x1f\n\x14Spline_Bearing_Angle\x18\x17 \x01(\x01:\x01\x30\x12)\n\x1bSpline_Gradient_Noise_Level\x18\x18 \x01(\x01:\x04\x30.01\x12\'\n\x18\x64umpBiSplinePointDataset\x18\x14 \x01(\x08:\x05\x66\x61lse\x12\'\n\x18\x64umpGradientPointDataset\x18\x11 \x01(\x08:\x05\x66\x61lse\x12 \n\x10Minimum_Gradient\x18\x12 \x01(\x01:\x06\x30.0001\x12\x1c\n\x10Maximum_Gradient\x18\x13 \x01(\x01:\x02\x31\x30\x12#\n\x14\x64ump_original_values\x18\x16 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x11\x43oarse_Iterations\x18\r \x01(\x05:\x02\x31\x30\x12\x19\n\x11Reduction_Factors\x18\x0e \x03(\x05\x12$\n\x0b\x43oarse_Grid\x18\x0f \x01(\t:\x0f\x63oarse_grid.ers\x12 \n\x11\x64ump_COARSE_GRIDS\x18\x15 \x01(\x08:\x05\x66\x61lse\x12&\n\x17KDTREE_Tensor_Gradients\x18z \x01(\x08:\x05\x66\x61lse\"\xc0\x02\n\x15Minimum_Curvature_INT\x12\x17\n\nIterations\x18\x01 \x01(\x05:\x03\x31\x30\x30\x12\"\n\x14Honour_Original_Data\x18\x02 \x01(\x08:\x04true\x12\x1d\n\x0eHonour_2_Cells\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x0cMax_Residual\x18\x04 \x01(\x01:\x01\x30\x12\x12\n\x07Tension\x18\x05 \x01(\x01:\x01\x30\x12 \n\x11Relaxation_Factor\x18\x06 \x01(\x01:\x05\x31.375\x12)\n\x04size\x18\x07 \x01(\x0e\x32\x15.intrepid.Kernel_Size:\x04K5_5\x12Q\n\testimator\x18\x08 \x01(\x0e\x32&.intrepid.Local_Gradient_Estimator_INT:\x16LOCAL_ESTIMATOR_BRIGGS\"\x9c\x02\n\x13Grid_Refinement_INT\x12:\n\x11Minimum_Curvature\x18\x01 \x01(\x0b\x32\x1f.intrepid.Minimum_Curvature_INT\x12\x1d\n\x12Laplace_Iterations\x18\x02 \x01(\x05:\x01\x30\x12\x1f\n\x14Smoothing_Iterations\x18\x03 \x01(\x05:\x01\x32\x12\x19\n\nFill_Holes\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x44\n\rEdge_Clipping\x18\x05 \x01(\x0e\x32\x17.intrepid.Edge_Clipping:\x14\x45xtrapolation_limits\x12(\n\x0e\x43urvature_Grid\x18\x06 \x01(\t:\x10QualityCurve.ers\"\xa2\x05\n\x0fOutput_Grid_INT\x12*\n\tReference\x18\x01 \x01(\x0b\x32\x17.intrepid.Reference_INT\x12\x1f\n\x0bOutput_Grid\x18\x02 \x01(\t:\noutput.ers\x12)\n\nProjection\x18\x03 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12?\n\rTensorProduct\x18\x04 \x01(\x0e\x32\x17.ctm.TensorProduct_list:\x0fTENSOR_Complete\x12?\n\rVectorProduct\x18\x05 \x01(\x0e\x32\x17.ctm.VectorProduct_list:\x0f\x45NHANCED_SIGNAL\x12\x18\n\x0b\x43\x65ll_Size_X\x18\x06 \x01(\x01:\x03\x31\x30\x30\x12\x18\n\x0b\x43\x65ll_Size_Y\x18\x07 \x01(\x01:\x03\x31\x30\x30\x12\x13\n\x08Origin_X\x18\x08 \x01(\x01:\x01\x30\x12\x13\n\x08Origin_Y\x18\t \x01(\x01:\x01\x30\x12\x1d\n\x0e\x44MSCell_Size_X\x18\x1a \x01(\t:\x05\x30:0:9\x12\x1d\n\x0e\x44MSCell_Size_Y\x18\x1b \x01(\t:\x05\x30:0:9\x12\x18\n\x0b\x44MSOrigin_X\x18\x1c \x01(\t:\x03\x30:0\x12\x18\n\x0b\x44MSOrigin_Y\x18\x1d \x01(\t:\x03\x30:0\x12\x11\n\x04Rows\x18\n \x01(\x05:\x03\x31\x30\x30\x12\x14\n\x07\x43olumns\x18\x0b \x01(\x05:\x03\x31\x30\x30\x12\x10\n\x05\x42\x61nds\x18\x0c \x01(\x05:\x01\x31\x12\x13\n\tBand_Name\x18\r \x01(\t:\x00\x12\x0f\n\x04\x42\x61nd\x18\x0e \x01(\x05:\x01\x31\x12\x33\n\x08\x44\x61taType\x18\x0f \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12\x13\n\x08Rotation\x18\x10 \x01(\x01:\x01\x30\x12\x1a\n\nNull_Value\x18\x11 \x01(\x01:\x06-99999\"\xb4\x03\n\x0cGridding_INT\x12\x34\n\x0eInput_Datasets\x18\x01 \x03(\x0b\x32\x1c.intrepid.Input_Datasets_INT\x12\x32\n\rPreProcessing\x18\x02 \x01(\x0b\x32\x1b.intrepid.PreProcessing_INT\x12\x32\n\rVector_Subset\x18\x03 \x01(\x0b\x32\x1b.intrepid.Vector_Subset_INT\x12\x36\n\x0fGridding_Method\x18\x04 \x01(\x0b\x32\x1d.intrepid.Gridding_Method_INT\x12$\n\x06Tiling\x18\x05 \x01(\x0b\x32\x14.intrepid.Tiling_INT\x12\x36\n\x0fGrid_Refinement\x18\x06 \x01(\x0b\x32\x1d.intrepid.Grid_Refinement_INT\x12.\n\x0bOutput_Grid\x18\x07 \x01(\x0b\x32\x19.intrepid.Output_Grid_INT\x12 \n\rBatchToolName\x18\x63 \x01(\t:\tjGridding\x12\x1e\n\x0bGUIToolName\x18\x64 \x01(\t:\tjGridding\"\x9d\x07\n\nTrendQ_INT\x12\x34\n\x0eInput_Datasets\x18\x01 \x01(\x0b\x32\x1c.intrepid.Input_Datasets_INT\x12\x1f\n\x0bOutput_Grid\x18\x02 \x01(\t:\noutput.ers\x12)\n\nProjection\x18\x03 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x10\n\x05\x42\x61nds\x18\x0c \x01(\x05:\x01\x31\x12\x13\n\tBand_Name\x18\r \x01(\t:\x00\x12\x0f\n\x04\x42\x61nd\x18\x0e \x01(\x05:\x01\x31\x12\x33\n\x08\x44\x61taType\x18\x0f \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12\x11\n\x04MAGD\x18\x17 \x01(\x01:\x03\x31\x30\x30\x12%\n\x1aNumber_Difusion_Iterations\x18\x18 \x01(\x05:\x01\x35\x12$\n\x19SmallerAntiAliasingFilter\x18\x19 \x01(\x05:\x01\x37\x12\x0e\n\x03IXL\x18\x1a \x01(\x05:\x01\x30\x12=\n\x05\x43TEST\x18\x1b \x01(\x0e\x32\x1a.intrepid.TrustgridOptions:\x12\x44iffusive_Gridding\x12\x14\n\x06\x44XYMIN\x18\x1c \x01(\x01:\x04\x30.01\x12\x14\n\tDXYMIN_ta\x18\x1d \x01(\x01:\x01\x30\x12\x1b\n\x10\x41verageLineAngle\x18\x1e \x01(\x01:\x01\x30\x12(\n\x0c\x42ounding_Box\x18\x32 \x01(\x0b\x32\x12.ctm.BoundingBox2D\x12\x18\n\x0b\x43\x65ll_Size_X\x18\x06 \x01(\x01:\x03\x31\x30\x30\x12\x18\n\x0b\x43\x65ll_Size_Y\x18\x07 \x01(\x01:\x03\x31\x30\x30\x12\x1d\n\x12\x41veragingThreshold\x18$ \x01(\x01:\x01\x35\x12)\n\x1bUpperInterpolationThreshold\x18% \x01(\x01:\x04\x31\x30\x30\x30\x12\x1f\n\x11Max_Scan_Distance\x18\t \x01(\x01:\x04\x32\x30\x30\x30\x12\x11\n\x05\x43\x41NOM\x18\' \x01(\t:\x02  \x12\x18\n\x0cLength_UNITS\x18( \x01(\t:\x02m \x12\x19\n\x0cSignal_UNITS\x18) \x01(\t:\x03nT \x12\x14\n\x05IFILT\x18* \x01(\x08:\x05\x66\x61lse\x12%\n\x19Overall_Number_Iterations\x18+ \x01(\x05:\x02\x31\x30\x12\x1e\n\nReportFile\x18P \x01(\t:\ntrendQ.rpt\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06trendQ\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06trendQ\"I\n\x11GridReference_INT\x12\x10\n\x08\x43\x65llsize\x18\x01 \x01(\x01\x12\x10\n\x08x_origin\x18\x02 \x01(\x01\x12\x10\n\x08y_origin\x18\x03 \x01(\x01\"\xdb\x02\n\x18GridSurfaceAdjustOptions\x12\x1d\n\x0eRejectOutliers\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0c\x41llowDCshift\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0f\x44\x65greeZeroFirst\x18\x03 \x01(\x08:\x05\x66\x61lse\x12 \n\x11UseRowColAverages\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\x10WeightPointLimit\x18\x05 \x01(\x05:\x02\x31\x30\x12\x1f\n\x10ListCoefficients\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fPlotSurfaceFits\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x11\n\x06\x44\x65gree\x18\x08 \x01(\x05:\x01\x32\x12\x18\n\x0c\x44\x65gree1Limit\x18\t \x01(\x01:\x02\x32\x30\x12\x18\n\x0c\x44\x65greeNLimit\x18\n \x01(\x01:\x02\x39\x30\x12\x1b\n\x0f\x44ifferenceLimit\x18\x0b \x01(\x01:\x02\x39\x39\"\xe4\x02\n\x15GridFeatheringOptions\x12\x1a\n\x0c\x46inal3x3Pass\x18\x01 \x01(\x08:\x04true\x12!\n\x12TrimResampledGrids\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0c\x66ilterLength\x18\x03 \x01(\x01:\x04\x35\x30\x30\x30\x12\x17\n\x0c\x66ilterPasses\x18\x04 \x01(\x05:\x01\x36\x12!\n\x16\x46inalSmoothMaxResidual\x18\x05 \x01(\x01:\x01\x30\x12 \n\x15\x46inalSmoothIterations\x18\x06 \x01(\x05:\x01\x33\x12S\n\x0eProcessingMode\x18\x07 \x01(\x0e\x32/.intrepid.GridFeatheringOptions.Processing_Mode:\nSequential\"=\n\x0fProcessing_Mode\x12\x0e\n\nSequential\x10\x00\x12\x11\n\rMultithreaded\x10\x01\x12\x07\n\x03MPI\x10\x02\"\x81\x03\n\x19GridScaleAndAdjustOptions\x12\x1b\n\x0e\x42\x61seGridWeight\x18\x01 \x01(\x01:\x03\x32\x30\x30\x12\"\n\x16ScaleAndShiftDBgroupID\x18\x02 \x01(\x05:\x02-1\x12K\n\x07RunType\x18\x03 \x01(\x0e\x32\x30.intrepid.GridScaleAndAdjustOptions.LevelRunType:\x08Standard\x12Q\n\tAlgorithm\x18\x04 \x01(\x0e\x32\x32.intrepid.GridScaleAndAdjustOptions.LevelAlgorithm:\nStatistics\"A\n\x0cLevelRunType\x12\x0c\n\x08Standard\x10\x00\x12\x12\n\x0eSaveToDataBase\x10\x01\x12\x0f\n\x0bUseDataBase\x10\x02\"@\n\x0eLevelAlgorithm\x12\x0e\n\nStatistics\x10\x00\x12\x0c\n\x08\x44ownHill\x10\x01\x12\x10\n\x0cLeastSquares\x10\x02\"\xbd\n\n\rGridmerge_INT\x12\x16\n\x0eInputDirectory\x18\x01 \x03(\t\x12\x15\n\rPolygonWindow\x18\x02 \x01(\t\x12\x17\n\x0fReferenceZfield\x18\x03 \x01(\t\x12\x15\n\rReferenceGrid\x18\x04 \x01(\t\x12 \n\x18UncorrectedGridDirectory\x18\x05 \x01(\t\x12\x1e\n\x16\x43orrectedGridDirectory\x18\x06 \x01(\t\x12\x1f\n\x17OriginatingLineDatasets\x18\x07 \x01(\t\x12\x13\n\x0bInputXfield\x18\x08 \x01(\t\x12\x13\n\x0bInputYfield\x18\t \x01(\t\x12\x18\n\x10InputSignalfield\x18\n \x01(\t\x12\x12\n\nOutputGrid\x18\x0b \x01(\t\x12\x17\n\x0fOutputDirectory\x18\x0c \x01(\t\x12,\n\nReportFile\x18\r \x01(\t:\x18gridmerge_processing.rpt\x12\x1d\n\x15ShiftAndScaleDataBase\x18\x0e \x01(\t\x12\x19\n\x11OutputSignalfield\x18\x0f \x01(\t\x12\x0f\n\x04\x42\x61nd\x18\x14 \x01(\x05:\x01\x31\x12\x11\n\tBaseGrids\x18\x15 \x03(\t\x12\x17\n\x0fHighRankedGrids\x18\x16 \x03(\t\x12\x16\n\x0eLowRankedGrids\x18\x17 \x03(\t\x12\x37\n\tOperation\x18\x19 \x02(\x0e\x32\x1d.intrepid.GridMergeOperations:\x05Shift\x12Q\n\rInterpolation\x18\x1a \x01(\x0e\x32!.intrepid.GridInterpolationMethod:\x17Newton_4th_Order_INTERP\x12\x1a\n\x0bwizardStyle\x18! \x01(\x08:\x05\x66\x61lse\x12\x1c\n\radvancedMenus\x18\" \x01(\x08:\x05\x66\x61lse\x12.\n\tReference\x18\x1b \x01(\x0b\x32\x1b.intrepid.GridReference_INT\x12\x39\n\rSurfaceAdjust\x18\x1c \x01(\x0b\x32\".intrepid.GridSurfaceAdjustOptions\x12\x33\n\nFeathering\x18\x1d \x01(\x0b\x32\x1f.intrepid.GridFeatheringOptions\x12;\n\x0eScaleAndAdjust\x18\x1e \x01(\x0b\x32#.intrepid.GridScaleAndAdjustOptions\x12\x19\n\x0bMaxResidual\x18\x1f \x01(\x01:\x04\x30.05\x12\x17\n\nIterations\x18  \x01(\x05:\x03\x31\x30\x30\x12#\n\x14\x43\x61lculateScaleFactor\x18( \x01(\x08:\x05\x66\x61lse\x12\x18\n\rSurfaceDegree\x18) \x01(\x05:\x01\x32\x12\x1c\n\x0fMinOverlapLimit\x18- \x01(\x05:\x03\x35\x30\x30\x12\x1d\n\x0fMaxOverlapLimit\x18. \x01(\x05:\x04\x35\x30\x30\x30\x12@\n\ttrimUnits\x18/ \x01(\x0e\x32%.intrepid.Gridmerge_INT.GridTrimUnits:\x06Pixels\x12\x1a\n\x0ftrimWidthMetres\x18\x30 \x01(\x01:\x01\x31\x12\x1f\n\x03\x42ox\x18\x32 \x01(\x0b\x32\x12.ctm.BoundingBox2D\x12!\n\rBatchToolName\x18\xc7\x01 \x01(\t:\tgridmerge\x12\x1e\n\x0bGUIToolName\x18\x64 \x01(\t:\tgridmerge\"\'\n\rGridTrimUnits\x12\n\n\x06Pixels\x10\x00\x12\n\n\x06Metres\x10\x01\"b\n\x0eGrid_Subsample\x12\n\n\x02SS\x18\x01 \x01(\x05\x12\n\n\x02NS\x18\x02 \x01(\x05\x12\x0f\n\x04SINC\x18\x03 \x01(\x05:\x01\x32\x12\n\n\x02SL\x18\x04 \x01(\x05\x12\n\n\x02NL\x18\x05 \x01(\x05\x12\x0f\n\x04LINC\x18\x06 \x01(\x05:\x01\x32\"\xd4\n\n\x12GridOperations_INT\x12\r\n\x05Input\x18\x01 \x03(\t\x12\x11\n\tReference\x18\x02 \x01(\t\x12\x11\n\tCLIP_POLY\x18\x03 \x01(\t\x12\x0e\n\x06Output\x18\x04 \x01(\t\x12\x0f\n\x07Outline\x18\x05 \x01(\t\x12@\n\x06Method\x18\x06 \x01(\x0e\x32\x1e.intrepid.Grid_Operation_Tasks:\x10Newton_4th_Order\x12,\n\x04IGRF\x18\t \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x16\n\x0bNumber_CPUs\x18\n \x01(\x05:\x01\x31\x12\x33\n\x14OutputProjectionHint\x18\x0c \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\n\n\x02XX\x18\x14 \x01(\t\x12\n\n\x02XY\x18\x15 \x01(\t\x12\n\n\x02ZX\x18\x16 \x01(\t\x12\n\n\x02YY\x18\x17 \x01(\t\x12\n\n\x02YZ\x18\x18 \x01(\t\x12\n\n\x02ZZ\x18\x19 \x01(\t\x12\x0b\n\x03\x41UV\x18\x1a \x01(\t\x12\x0b\n\x03\x41NE\x18\x1b \x01(\t\x12\x0b\n\x03\x42UV\x18\x1c \x01(\t\x12\x0b\n\x03\x42NE\x18\x1d \x01(\t\x12&\n\x1aMaximum_Tensor_Trace_Error\x18\x1f \x01(\x01:\x02\x32\x30\x12;\n\x0fTensorOperation\x18\x1e \x01(\x0e\x32\x17.ctm.TensorProduct_list:\tTENSOR_ZZ\x12@\n\x0b\x46\x61lconQuery\x18  \x01(\x0e\x32\x1b.ctm.Falcon_Reading_Options:\x0e\x46\x41LCON_AVERAGE\x12\x41\n\x14\x43oordinateSystemType\x18\" \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12;\n\x0cRotateMethod\x18# \x01(\x0e\x32\x1e.intrepid.SignalResampleMethod:\x05\x43ubic\x12\x10\n\x08\x43\x65llsize\x18( \x01(\x01\x12\x16\n\x0eOutputRotation\x18) \x01(\x01\x12\x1e\n\x10TrimRotatedNulls\x18* \x01(\x08:\x04true\x12\x1a\n\x0bMaxResidual\x18+ \x01(\x01:\x05\x30.001\x12\x39\n\x0eOutputDataType\x18, \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12\x17\n\nIterations\x18- \x01(\x05:\x03\x31\x30\x30\x12+\n\tSubsample\x18. \x01(\x0b\x32\x18.intrepid.Grid_Subsample\x12$\n\x08Resample\x18\x32 \x01(\x0b\x32\x12.ctm.BoundingBox2D\x12#\n\x06region\x18\r \x01(\x0b\x32\x13.intrepid.XY_Region\x12\x12\n\x07GetBand\x18\x37 \x01(\x05:\x01\x31\x12\x0f\n\x07PutBand\x18\x38 \x01(\x05\x12\x10\n\x08\x42\x61ndName\x18\x46 \x01(\t\x12\x11\n\x06NBands\x18\x39 \x01(\x05:\x01\x31\x12\x18\n\rDetrendDegree\x18; \x01(\x05:\x01\x31\x12\x0c\n\x04Year\x18< \x01(\x05\x12\r\n\x05Month\x18= \x01(\x05\x12\x0b\n\x03\x44\x61y\x18> \x01(\x05\x12!\n\nCreateGrid\x18\x41 \x01(\x0b\x32\r.ctm.Grid_INT\x12\x18\n\x10required_profile\x18\x42 \x03(\x01\x12\x19\n\x0brow_profile\x18\x43 \x01(\x08:\x04true\x12\x0e\n\x06\x42locks\x18\x45 \x03(\t\x12\x1e\n\nReportFile\x18/ \x01(\t:\ngridop.rpt\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06gridop\x12!\n\x0bGUIToolName\x18\x64 \x01(\t:\x0cgridopAppGUI\"\x9c\x07\n\x0fLine_Filter_INT\x12\x12\n\nInputLines\x18\x01 \x01(\t\x12\x14\n\x0cSignal_Field\x18\x02 \x01(\t\x12\x11\n\tClearance\x18\x03 \x01(\t\x12\x12\n\nDrapeField\x18\x04 \x01(\t\x12\x1b\n\x13Output_Signal_Field\x18\x07 \x01(\t\x12\x16\n\x0eOutputSpectrum\x18\x08 \x01(\t\x12\x1a\n\x12OutputCoefficients\x18\t \x01(\t\x12\x13\n\x0bInputFilter\x18\n \x01(\t\x12\x31\n\x0f\x43ompositeFilter\x18\x0b \x01(\x0b\x32\x18.fdf.CompositeFilter_FDF\x12\x33\n\nWindowType\x18\x05 \x01(\x0e\x32\x16.fdf.GetWindowTypeList:\x07HANNING\x12*\n\x08Pad_Type\x18\x0c \x01(\x0e\x32\x0c.fdf.PadType:\nMIRROR_PAD\x12\x43\n\x13InterpolationMethod\x18\r \x01(\x0e\x32\x1e.intrepid.SignalResampleMethod:\x06Linear\x12\x41\n\rDetrendMethod\x18\x0e \x01(\x0e\x32\x18.intrepid.DetrendOptions:\x10LINEAR_ENDPOINTS\x12:\n\nSampleMode\x18\x0f \x01(\x0e\x32\x1c.intrepid.LineDataSampleMode:\x08XY_BASED\x12?\n\x0bprocessType\x18\x10 \x01(\x0e\x32\x1f.intrepid.DatabaseLineSelection:\tALL_LINES\x12\x17\n\x0fStartLineNumber\x18? \x01(\t\x12\x15\n\rEndLineNumber\x18@ \x01(\t\x12\x14\n\tNoOfLines\x18\x41 \x01(\x05:\x01\x30\x12\x15\n\rSelectedLines\x18\x42 \x03(\t\x12\x15\n\tFidFactor\x18\x11 \x01(\x01:\x02\x31\x30\x12\x1a\n\x0f\x46ixedSampleIncr\x18\x12 \x01(\x01:\x01\x30\x12\x18\n\x0cNumEndPoints\x18\x13 \x01(\x05:\x02\x31\x30\x12,\n\x0eOutputDataType\x18\x18 \x01(\x0e\x32\r.ctm.DataType:\x05\x44T_R4\x12#\n\nReportFile\x18. \x01(\t:\x0fline_filter.rpt\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07lfilter\x12\x1c\n\x0bGUIToolName\x18\x64 \x01(\t:\x07lfilter\"\xed\x01\n\x0fgrid_subset_INT\x12\x0e\n\x06XLower\x18\x01 \x01(\x01\x12\x0e\n\x06XUpper\x18\x02 \x01(\x01\x12\x0e\n\x06YLower\x18\x03 \x01(\x01\x12\x0e\n\x06YUpper\x18\x04 \x01(\x01\x12\'\n\x1a\x46\x46T_BorderPercentExpansion\x18\x05 \x01(\x01:\x03\x31\x32\x30\x12\"\n\x0eSubsetGridName\x18\x06 \x01(\t:\nsubset.ers\x12\"\n\x16NumberCellsForFFTPower\x18\x07 \x01(\x05:\x02\x33\x32\x12)\n\x1a\x41utoPowerSpectrumReporting\x18\x08 \x01(\x08:\x05\x66\x61lse\"\x90\x10\n\x18GridFourierFiltering_INT\x12\x15\n\rInputGridName\x18\x01 \x02(\t\x12\x39\n\x0bSignal_Type\x18\x02 \x01(\x0e\x32\x19.ctm.GeophysicsSignalType:\tMagnetism\x12)\n\x06Subset\x18\x03 \x01(\x0b\x32\x19.intrepid.grid_subset_INT\x12\x38\n\x0bRolloffType\x18\x04 \x01(\x0e\x32\x17.fdf.GetRolloffTypeList:\nNO_RollOff\x12\x35\n\nWindowType\x18\x05 \x01(\x0e\x32\x16.fdf.GetWindowTypeList:\tNO_Window\x12.\n\x08\x46illType\x18\x06 \x01(\x0e\x32\x14.fdf.GetFillTypeList:\x06\x41RTHUR\x12\x1d\n\x0e\x46illStopAtEdge\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x18\n\rDetrendDegree\x18\x07 \x01(\x05:\x01\x31\x12,\n\x04IGRF\x18\t \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x16\n\x0bNumber_CPUs\x18\n \x01(\x05:\x01\x31\x12+\n\x10\x46ilteredGridName\x18\x0b \x01(\t:\x11\x66iltered_grid.ers\x12$\n\x0b\x46\x66tGridName\x18\x0c \x01(\t:\x0f\x66\x66tGridName.ers\x12-\n\x11OutputFftGridName\x18\r \x01(\t:\x12OutfftGridName.ers\x12\x37\n\x1eInputRadialPowerSpectrumReport\x18\x0e \x01(\t:\x0finputRadial.rpt\x12\"\n\x17RadialPowerSpectrumBins\x18\x0f \x01(\x05:\x01\x30\x12\x39\n\x1fOutputRadialPowerSpectrumReport\x18\x10 \x01(\t:\x10outputRadial.rpt\x12(\n\x10WindowedGridName\x18\x11 \x01(\t:\x0ewindowGrid.ers\x12*\n\x10\x45xpandedGridName\x18\x12 \x01(\t:\x10\x65xpandedGrid.ers\x12,\n\x11\x41mplitudeGridName\x18\x13 \x01(\t:\x11\x61mplitudeGrid.ers\x12$\n\rPhaseGridName\x18\x14 \x01(\t:\rphaseGrid.ers\x12\x31\n\x13\x43oefficientGridName\x18\x15 \x01(\t:\x14\x63oefficientsGrid.ers\x12,\n\x11\x44\x65trendedGridName\x18\x16 \x01(\t:\x11\x64\x65trendedGrid.ers\x12\x0f\n\x04\x42\x61nd\x18\x17 \x01(\x05:\x01\x31\x12\x1a\n\x10Output_Band_Name\x18! \x01(\t:\x00\x12\x39\n\x0eOutputDataType\x18\x18 \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12*\n\x1bReApplyTrendAfterReverseFft\x18\x19 \x01(\x08:\x05\x66\x61lse\x12&\n\x18\x41pplyMaskAfterReverseFft\x18\x1a \x01(\x08:\x04true\x12\x19\n\x0bUseSymmetry\x18\x1b \x01(\x08:\x04true\x12\x35\n\rDiskUsageRule\x18\x1c \x01(\x0e\x32\x18.intrepid.diskUsageRules:\x04\x41UTO\x12\x31\n\x0f\x43ompositeFilter\x18\x1d \x01(\x0b\x32\x18.fdf.CompositeFilter_FDF\x12\x42\n\nspecial_op\x18\x1e \x01(\x0e\x32\'.intrepid.Special_GridFilter_Operations:\x05NO_OP\x12\x1b\n\x10HorizontalDegree\x18\" \x01(\x01:\x01\x31\x12%\n\x16ScaleTensorIntegration\x18% \x01(\x08:\x05\x66\x61lse\x12\'\n\x18LowPassFalconIntegration\x18& \x01(\x08:\x05\x66\x61lse\x12K\n\x15InputTensorComponents\x18( \x01(\x0e\x32\x1e.ctm.Tensor_Integration_Method:\x0cINT_XZ_YZ_ZZ\x12L\n\x17RequiredFalconTransform\x18) \x01(\x0e\x32 .ctm.Falcon_FFT_TRANSFORM_Option:\tFALCON_TZ\x12H\n\x13RequiredFalconQuery\x18* \x01(\x0e\x32\x1b.ctm.Falcon_Reading_Options:\x0e\x46\x41LCON_AVERAGE\x12\x42\n\x15InputGridCoordSysType\x18+ \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12\x43\n\x16OutputGridCoordSysType\x18, \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03NED\x12\x32\n\nTMIProduct\x18- \x01(\x0e\x32\x11.ctm.TMI_Products:\x0bTMItoVector\x12?\n\rTensorProduct\x18. \x01(\x0e\x32\x17.ctm.TensorProduct_list:\x0fTENSOR_Complete\x12#\n\nReportFile\x18\x62 \x01(\t:\x0fgrid_filter.rpt\x12\x1c\n\rBatchToolName\x18\x63 \x01(\t:\x05gfilt\x12\x1a\n\x0bGUIToolName\x18\x64 \x01(\t:\x05gfilt\"\xc7\t\n\rISOStatic_INT\x12\x15\n\rInputGridName\x18\x01 \x02(\t\x12\x19\n\x11\x44\x65pthMohoGridName\x18\x02 \x02(\t\x12)\n\x06subset\x18\x03 \x01(\x0b\x32\x19.intrepid.grid_subset_INT\x12\x38\n\x0bRolloffType\x18\x04 \x01(\x0e\x32\x17.fdf.GetRolloffTypeList:\nNO_RollOff\x12\x35\n\nWindowType\x18\x05 \x01(\x0e\x32\x16.fdf.GetWindowTypeList:\tNO_Window\x12.\n\x08\x46illType\x18\x06 \x01(\x0e\x32\x14.fdf.GetFillTypeList:\x06\x41RTHUR\x12*\n\x1bReApplyTrendAfterReverseFft\x18\x07 \x01(\x08:\x05\x66\x61lse\x12&\n\x18\x41pplyMaskAfterReverseFft\x18\x08 \x01(\x08:\x04true\x12$\n\x15SubtractFlatEarthRoot\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eSupplyMohoGrid\x18\n \x01(\x08:\x05\x66\x61lse\x12\'\n\x10\x46ilteredGridName\x18\x0b \x01(\t:\risostatic.ers\x12$\n\x0b\x46\x66tGridName\x18\x0c \x01(\t:\x0f\x66\x66tGridName.ers\x12-\n\x11OutputFftGridName\x18\r \x01(\t:\x12OutfftGridName.ers\x12\x37\n\x1eInputRadialPowerSpectrumReport\x18\x0e \x01(\t:\x0finputRadial.rpt\x12\x39\n\x1fOutputRadialPowerSpectrumReport\x18\x0f \x01(\t:\x10outputRadial.rpt\x12(\n\x10WindowedGridName\x18\x10 \x01(\t:\x0ewindowGrid.ers\x12*\n\x10\x45xpandedGridName\x18\x11 \x01(\t:\x10\x65xpandedGrid.ers\x12\x0f\n\x04\x42\x61nd\x18\x12 \x01(\x05:\x01\x31\x12\x39\n\x0eOutputDataType\x18\x13 \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12\x19\n\x0bUseSymmetry\x18\x14 \x01(\x08:\x04true\x12\x35\n\rDiskUsageRule\x18\x15 \x01(\x0e\x32\x18.intrepid.diskUsageRules:\x04\x41UTO\x12 \n\x14Sea_Level_Root_Depth\x18\x19 \x01(\x01:\x02\x33\x32\x12\x1b\n\rCrust_Density\x18\x1a \x01(\x01:\x04\x32.67\x12#\n\x16\x44\x65nsity_Contrast_Depth\x18\x1b \x01(\x01:\x03\x30.6\x12\x1c\n\rMax_Tolerance\x18\x1c \x01(\x01:\x05\x30.001\x12\x19\n\x0eMax_Iterations\x18\x1d \x01(\x05:\x01\x36\x12\x1d\n\rMaxBesselSize\x18\x1e \x01(\x05:\x06\x31\x35\x30\x30\x30\x30\x12+\n\nReportFile\x18\x62 \x01(\t:\x17IsostaticCorrection.rpt\x12 \n\rBatchToolName\x18\x63 \x01(\t:\tisostatic\x12.\n\x0bGUIToolName\x18\x64 \x01(\t:\x19IsostaticCorrectionAppGUI\"\x97\x03\n\x10GravityMerge_INT\x12\r\n\x05Input\x18\x01 \x01(\t\x12\x0e\n\x06Input2\x18\x02 \x01(\t\x12\x0e\n\x06Output\x18\x03 \x01(\t\x12\x11\n\tMergeWith\x18\x04 \x01(\t\x12\x0b\n\x03Key\x18\x05 \x01(\t\x12\x16\n\nStop_After\x18\x06 \x01(\x05:\x02-1\x12\x1c\n\rMergeLastOnly\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tTimeStamp\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x08ReportOn\x18\t \x03(\t\x12\x0f\n\x07GroupBy\x18\n \x03(\t\x12\x16\n\x0eMergeFromField\x18\x0e \x03(\t\x12\x14\n\x0cMergeToField\x18\x0f \x03(\t\x12&\n\rField_Aliases\x18\x41 \x03(\x0e\x32\x0f.ctm.FieldAlias\x12$\n\nReportFile\x18. \x01(\t:\x10GravityMerge.rpt\x12 \n\rBatchToolName\x18\x63 \x01(\t:\tgravmerge\x12#\n\x0bGUIToolName\x18\x64 \x01(\t:\x0ePointAppendApp\"\xea\x05\n\x0f\x44\x65\x63orrugate_INT\x12\x11\n\tInputGrid\x18\x01 \x02(\t\x12\x14\n\x0cInputPolygon\x18\x02 \x01(\t\x12\x12\n\nOutputGrid\x18\x03 \x01(\t\x12\x0f\n\x04\x42\x61nd\x18\x05 \x01(\x05:\x01\x31\x12=\n\x0eHighPassFilter\x18\x06 \x01(\x0e\x32\x18.intrepid.GridFilterType:\x0bNAUDYFULLER\x12\x1f\n\x11HighPassTolerance\x18\x07 \x01(\x01:\x04\x30.01\x12=\n\x14HighPassExtrapolator\x18\x08 \x01(\x0e\x32\x17.intrepid.ExtractorType:\x06MIRROR\x12?\n\rLowPassFilter\x18\t \x01(\x0e\x32\x18.intrepid.GridFilterType:\x0eSMOOTHEDFULLER\x12<\n\x13LowPassExtrapolator\x18\n \x01(\x0e\x32\x17.intrepid.ExtractorType:\x06MIRROR\x12\x1a\n\x0cStreakLength\x18\x0b \x01(\x01:\x04\x35\x30\x30\x30\x12\x19\n\x0bStreakWidth\x18\x0c \x01(\x01:\x04\x31\x36\x30\x30\x12\x1e\n\x11MinimumCorrection\x18\r \x01(\x01:\x03-30\x12\x1d\n\x11MaximumCorrection\x18\x0e \x01(\x01:\x02\x33\x30\x12=\n\x10\x44\x65\x63orrugateAlong\x18\x13 \x01(\x0e\x32\x1d.intrepid.Decorrugate_Request:\x04ROWS\x12\x1c\n\x0e\x43orrectionGrid\x18\x14 \x01(\x08:\x04true\x12\x39\n\x0bSignal_Type\x18\x15 \x01(\x0e\x32\x19.ctm.GeophysicsSignalType:\tMagnetism\x12#\n\nReportFile\x18. \x01(\t:\x0f\x64\x65\x63orrugate.rpt\x12\x1c\n\rBatchToolName\x18\x63 \x01(\t:\x05\x64\x65\x63or\x12\x1a\n\x0bGUIToolName\x18\x64 \x01(\t:\x05\x64\x65\x63or\"\xde\x05\n\x0eMicroLevel_INT\x12>\n\x0c\x46ilterMethod\x18\x01 \x01(\x0e\x32\x18.intrepid.GridFilterType:\x0eSMOOTHEDFULLER\x12M\n\x13InterpolationMethod\x18\x02 \x01(\x0e\x32\x1e.intrepid.SignalResampleMethod:\x10MinimumCurvature\x12\x1e\n\x10\x43utOffWavelength\x18\x03 \x01(\x01:\x04\x31\x30\x30\x30\x12\x1f\n\x10TaperCorrections\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x18\n\x0bTaperLength\x18\x05 \x01(\x01:\x03\x35\x30\x30\x12\x1e\n\x11MinimumCorrection\x18\x06 \x01(\x01:\x03-30\x12\x1d\n\x11MaximumCorrection\x18\x07 \x01(\x01:\x02\x33\x30\x12\x13\n\x08GridBand\x18\x08 \x01(\x05:\x01\x31\x12\x1b\n\x0fStrikeDirection\x18\t \x01(\x01:\x02\x39\x30\x12\x16\n\x07TestRun\x18\n \x01(\x08:\x05\x66\x61lse\x12\x1c\n\x0e\x43orrectionGrid\x18\x0b \x01(\x08:\x04true\x12!\n\x12IgnoreGridRotation\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x11\n\tInputGrid\x18\x0f \x02(\t\x12\x0b\n\x03XIN\x18\x10 \x01(\t\x12\x0b\n\x03YIN\x18\x11 \x01(\t\x12\x11\n\tSIGNAL_IN\x18\x12 \x01(\t\x12\x10\n\x08LineType\x18\x13 \x01(\t\x12\x12\n\nSIGNAL_OUT\x18\x14 \x01(\t\x12\x17\n\x0f\x43orrectionField\x18\x15 \x01(\t\x12\x39\n\x0bSignal_Type\x18\x16 \x01(\x0e\x32\x19.ctm.GeophysicsSignalType:\tMagnetism\x12\"\n\nReportFile\x18. \x01(\t:\x0emicrolevel.rpt\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06mlevel\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06mlevel\"\xde\x01\n\x15\x46lightReconstruct_INT\x12\x17\n\nFID_Factor\x18\x36 \x01(\x01:\x03\x30.1\x12$\n\x15\x45stimate_Flight_Stats\x18\x82\x01 \x01(\x08:\x04true\x12X\n\x19Reconstruct_Flight_Method\x18< \x01(\x0e\x32$.intrepid.Flight_Reconstruct_Methods:\x0f\x46light_Defaults\x12,\n\nDate_Style\x18= \x01(\x0e\x32\x10.ctm.date_styles:\x06YYMMDD\"k\n\x0e\x43ross_Over_INT\x12\x1e\n\x0fUse_XY_Accuracy\x18\x33 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0fGradient_Radius\x18\x34 \x01(\x01:\x02\x31\x30\x12\x1c\n\x14\x43ross_Over_Condition\x18\x35 \x01(\t\"\xa2\x01\n\x17\x44iurnal_Corrections_INT\x12\x0e\n\x06\x46light\x18\x14 \x01(\t\x12\x0b\n\x03\x46id\x18\x15 \x01(\t\x12\x0f\n\x07Reading\x18\x16 \x01(\t\x12\x0e\n\x06Julian\x18\x17 \x01(\t\x12\x10\n\x08Time_Lag\x18\x45 \x01(\x01\x12\x37\n\rDiurnal_Style\x18> \x01(\x0e\x32\x13.ctm.diurnal_styles:\x0bJULIAN_TIME\"\xbe\x02\n\x11Input_Filters_INT\x12.\n\x0cSignalFilter\x18\n \x01(\x0b\x32\x18.fdf.CompositeFilter_FDF\x12*\n\x07ZFilter\x18? \x01(\x0e\x32\x13.fdf.filter_methods:\x04NONE\x12$\n\x05ZPass\x18@ \x01(\x0e\x32\x0f.fdf.FilterPass:\x04Pass\x12\x17\n\x0bWindow_Size\x18\x41 \x01(\x05:\x02\x31\x31\x12\x15\n\x07Minimum\x18\x43 \x01(\x01:\x04-100\x12\x14\n\x07Maximum\x18\x44 \x01(\x01:\x03\x31\x30\x30\x12\x17\n\nWaveLength\x18\x45 \x01(\x01:\x03\x31\x30\x30\x12\x17\n\tTolerance\x18\x42 \x01(\x01:\x04\x30.01\x12\x19\n\nMultiPoint\x18H \x01(\x08:\x05\x66\x61lse\x12\x14\n\tFidFactor\x18I \x01(\x01:\x01\x31\"\xba\x01\n\x16Heading_Correction_INT\x12\x31\n\x13\x42\x65\x61ring_Corrections\x18\x46 \x01(\t:\x14\x30/0 90/0 180/0 270/0\x12\x1e\n\x16\x45stimate_Heading_Stats\x18G \x01(\x08\x12\x1a\n\x0cUseEstimates\x18H \x01(\x08:\x04true\x12\x17\n\x0f\x46lightDirection\x18I \x01(\x05\x12\x18\n\x0c\x41ngularRange\x18J \x01(\x05:\x02\x31\x30\"\x91\x02\n(GeomagneticReferenceField_Correction_INT\x12\x18\n\x10Sensor_Elevation\x18P \x01(\x01\x12\x0c\n\x04Year\x18Q \x01(\x05\x12\r\n\x05Month\x18R \x01(\x05\x12\x0b\n\x03\x44\x61y\x18S \x01(\x05\x12\x13\n\x0bInclination\x18T \x01(\x01\x12\x13\n\x0b\x44\x65\x63lination\x18U \x01(\x01\x12\r\n\x05\x46ield\x18V \x01(\x01\x12-\n\x07GrfType\x18W \x01(\x0e\x32\x16.intrepid.GrfModelType:\x04Igrf\x12\x1e\n\x16Recalculation_Interval\x18X \x01(\x01\x12\x19\n\x0bPrint_Epoch\x18Y \x01(\x05:\x04\x32\x30\x31\x35\"g\n\x12Loop_Levelling_INT\x12\x17\n\nMax_Change\x18_ \x01(\x01:\x03\x30.1\x12\x1b\n\x0eOverRelaxation\x18` \x01(\x01:\x03\x31.2\x12\x1b\n\x0eMax_Iterations\x18\x61 \x01(\x05:\x03\x31\x30\x30\"l\n\x18PiecewisePolynomials_INT\x12\x15\n\nPoly_Order\x18r \x01(\x05:\x01\x31\x12\x1c\n\x10Piecewise_Window\x18s \x01(\x05:\x02\x31\x31\x12\x1b\n\x10Smoothing_Length\x18t \x01(\x05:\x01\x33\"\xcd\x04\n\x16Tie_Line_Levelling_INT\x12!\n\x0bPolyTieList\x18\x02 \x01(\t:\x0c\x64\x65\x66\x61ult.parm\x12\x14\n\x0cPolyTieLines\x18\r \x03(\x01\x12\x43\n\x0cWeightMethod\x18\x03 \x01(\x0e\x32#.intrepid.PolyNomial_weight_methods:\x08Gradient\x12 \n\x11\x44istanceWeighting\x18\x04 \x01(\x08:\x05\x66\x61lse\x12$\n\x16Level_to_Principal_Tie\x18\x01 \x01(\x08:\x04true\x12\x34\n\x08Tie_line\x18\x05 \x01(\x0b\x32\".intrepid.PiecewisePolynomials_INT\x12%\n\x17\x44rift_Flights_onto_Ties\x18\x06 \x01(\x08:\x04true\x12\x32\n\x06\x46light\x18\x07 \x01(\x0b\x32\".intrepid.PiecewisePolynomials_INT\x12\'\n\x19\x44rift_Traverses_onto_Ties\x18\x08 \x01(\x08:\x04true\x12\x34\n\x08Traverse\x18\t \x01(\x0b\x32\".intrepid.PiecewisePolynomials_INT\x12\'\n\x19\x44rift_Ties_onto_Traverses\x18\n \x01(\x08:\x04true\x12\x38\n\x0cTie_Traverse\x18\x0b \x01(\x0b\x32\".intrepid.PiecewisePolynomials_INT\x12\x1a\n\x0fPoly_Iterations\x18\x0c \x01(\x05:\x01\x31\"x\n\x15\x46light_Correction_INT\x12\x17\n\x0f\x46lightDirection\x18I \x01(\x05\x12#\n\x15\x45stimate_Flight_Stats\x18J \x01(\x08:\x04true\x12!\n\x12\x41verageShiftAdjust\x18L \x01(\x08:\x05\x66\x61lse\"\xc7\x03\n\x1cTensorGradient_Levelling_INT\x12L\n\nAdjustment\x18y \x01(\x0e\x32\".intrepid.Tensor_Levelling_Methods:\x14\x45stimate_Error_Norms\x12\x1b\n\x0c\x46lightBiases\x18x \x01(\x08:\x05\x66\x61lse\x12\x19\n\nLineBiases\x18\x7f \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x10Stats_Iterations\x18\x0c \x01(\x05:\x01\x33\x12 \n\x11\x43\x61librationAdjust\x18K \x01(\x08:\x05\x66\x61lse\x12%\n\x18\x43\x61libration_Adjust_Limit\x18\r \x01(\x01:\x03\x30.8\x12\x35\n\x07\x46orcing\x18z \x01(\x0e\x32\x17.ctm.TensorProduct_list:\x0bTENSOR_Norm\x12\x14\n\x0cSurveyHeight\x18{ \x01(\x01\x12\x16\n\x0eSurveyLatitude\x18| \x01(\x01\x12+\n\x1fNumberSamples_EstimatePotential\x18} \x01(\x05:\x02\x32\x31\x12)\n\x1dNumberTensorAverageOffsetRuns\x18~ \x01(\x05:\x02\x33\x31\"\xa7\n\n\rLevelling_INT\x12\x34\n\x07runType\x18\x0f \x01(\x0e\x32\x1a.intrepid.LevellingProcess:\x07Heading\x12\x13\n\x0bInputSignal\x18\x01 \x02(\t\x12\x0e\n\x06InputX\x18\x02 \x02(\t\x12\x0e\n\x06InputY\x18\x03 \x02(\t\x12\x10\n\x08InputFid\x18\x04 \x01(\t\x12\x10\n\x08TYPEName\x18\x05 \x02(\t\x12\x11\n\tInputLine\x18\x06 \x02(\t\x12\x14\n\x0cInputFlights\x18\x07 \x01(\t\x12 \n\x18InputHeightAboveSpheroid\x18\x08 \x01(\t\x12(\n InputRequiredHeightAboveSpheroid\x18\t \x01(\t\x12\x11\n\tInputDate\x18\n \x01(\t\x12\x11\n\tInputTime\x18\x0b \x01(\t\x12\x12\n\nInputXover\x18\x0c \x01(\t\x12\x31\n\x0cInputFilters\x18\x14 \x01(\x0b\x32\x1b.intrepid.Input_Filters_INT\x12:\n\x11\x46lightReconstruct\x18\x19 \x01(\x0b\x32\x1f.intrepid.FlightReconstruct_INT\x12,\n\nCross_Over\x18\x1e \x01(\x0b\x32\x18.intrepid.Cross_Over_INT\x12\'\n\x1fParallaxCorrection_Cable_Length\x18\x32 \x01(\x01\x12<\n\x11\x44iurnalCorrection\x18\x33 \x01(\x0b\x32!.intrepid.Diurnal_Corrections_INT\x12;\n\x11HeadingCorrection\x18\x34 \x01(\x0b\x32 .intrepid.Heading_Correction_INT\x12\x39\n\x10\x46lightCorrection\x18\x35 \x01(\x0b\x32\x1f.intrepid.Flight_Correction_INT\x12I\n\rGrfCorrection\x18\x36 \x01(\x0b\x32\x32.intrepid.GeomagneticReferenceField_Correction_INT\x12 \n\x18LevelXYCorrection_Radius\x18\x37 \x01(\x01\x12\x34\n\x0eLoopCorrection\x18\x38 \x01(\x0b\x32\x1c.intrepid.Loop_Levelling_INT\x12>\n\x14PolynomialCorrection\x18\x39 \x01(\x0b\x32 .intrepid.Tie_Line_Levelling_INT\x12@\n\x10TensorCorrection\x18: \x01(\x0b\x32&.intrepid.TensorGradient_Levelling_INT\x12)\n\x1bMaximum_Akima_interpolation\x18\x31 \x01(\x01:\x04\x35\x30\x30\x30\x12\'\n\x1bMinimum_Akima_interpolation\x18\x30 \x01(\x01:\x02\x31\x30\x12 \n\x11Save_Changes_Only\x18\' \x01(\x08:\x05\x66\x61lse\x12\x14\n\x0cOutputSignal\x18( \x01(\t\x12\x0f\n\x07OutputX\x18) \x01(\t\x12\x0f\n\x07OutputY\x18* \x01(\t\x12\x13\n\x0bOutputXover\x18- \x01(\t\x12\x10\n\x08TensorQC\x18/ \x01(\t\x12!\n\nReportFile\x18. \x01(\t:\rlevelling.rpt\x12 \n\rBatchToolName\x18\xc7\x01 \x01(\t:\x08newlevel\x12\x1d\n\x0bGUIToolName\x18\x64 \x01(\t:\x08newlevel\"\x84\n\n\x13MarineLevelling_INT\x12(\n\x07RunType\x18\x14 \x02(\x0e\x32\x17.intrepid.MarineRunType\x12\x0f\n\x07\x44\x61taset\x18\x01 \x02(\t\x12\x13\n\x0bInputSignal\x18\x02 \x02(\t\x12\x14\n\x0cOtherDataset\x18\x03 \x01(\t\x12\x18\n\x10OtherInputSignal\x18\x04 \x01(\t\x12\x12\n\nInputXover\x18\x05 \x01(\t\x12\x13\n\x0bOutputXover\x18\x06 \x01(\t\x12\x14\n\x0cOutputSignal\x18\x07 \x01(\t\x12\x18\n\x10Output_New_Xover\x18\x08 \x01(\t\x12$\n\nReportFile\x18\t \x01(\t:\x10marine_level.rpt\x12\x0f\n\x07OutputX\x18\n \x01(\t\x12\x0f\n\x07OutputY\x18\x0b \x01(\t\x12\x18\n\x10InputSignalArray\x18\r \x03(\t\x12\x1d\n\x15OtherInputSignalArray\x18\x0e \x03(\t\x12\x19\n\x11OutputSignalArray\x18\x0f \x03(\t\x12,\n\x0bReplaceData\x18\x12 \x03(\x0b\x32\x17.intrepid.Data_Replacer\x12\x16\n\x08\x42yCruise\x18m \x01(\x08:\x04true\x12!\n\x12PopulationAnalysis\x18n \x01(\x08:\x05\x66\x61lse\x12$\n\x16SaveEmptyGroupsInXover\x18o \x01(\x08:\x04true\x12$\n\x15\x44oPseudoFidsAsRecords\x18p \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x12RejectXoverPercent\x18_ \x01(\x01\x12\x1d\n\x15RejectXoverCorrection\x18` \x01(\x01\x12\x1c\n\x14\x43ross_Over_Condition\x18\x35 \x01(\t\x12(\n DuplicateCrossOver_Fid_Tolerance\x18\x61 \x01(\x01\x12\x1e\n\x16MaximumPointSeparation\x18\x62 \x01(\x01\x12\x1f\n\x17MaximumInterpolationGap\x18\x63 \x01(\x01\x12#\n\x1bMinimumAngleBetweenSegments\x18\x64 \x01(\x01\x12\x16\n\x0eMaximumXYShift\x18\x65 \x01(\x01\x12\x1c\n\x14Misclosure_Threshold\x18\x66 \x01(\x01\x12!\n\x12ReferenceNavIsGood\x18g \x01(\x08:\x05\x66\x61lse\x12@\n\x14PiecewisePolynomials\x18q \x01(\x0b\x32\".intrepid.PiecewisePolynomials_INT\x12\x1a\n\x0fPoly_Iterations\x18u \x01(\x05:\x01\x31\x12\x1a\n\x0fPoly_Min_Points\x18v \x01(\x05:\x01\x33\x12\x19\n\rConvolveWidth\x18w \x01(\x05:\x02\x31\x31\x12\x1e\n\x10\x44istanceWeighted\x18x \x01(\x08:\x04true\x12\x43\n\x0cWeightMethod\x18y \x01(\x0e\x32#.intrepid.PolyNomial_weight_methods:\x08Gradient\x12\x18\n\rSurface_Order\x18z \x01(\x05:\x01\x31\x12\x1b\n\x0c\x44oBathymetry\x18{ \x01(\x08:\x05\x66\x61lse\x12#\n\rBatchToolName\x18\xc7\x01 \x01(\t:\x0bmarinelevel\x12+\n\x0bGUIToolName\x18\xc8\x01 \x01(\t:\x15MarineLevellingAppGUI\"\xf3\x03\n\x14Trend_Management_INT\x12\x41\n\nStrikeCode\x18\x01 \x01(\x0e\x32\x1b.intrepid.StrikeTypeOptions:\x10ST_PERPENDICULAR\x12\x32\n\rShallowFilter\x18\x03 \x01(\t:\x1bnaudyShallowTrendFilter.fdf\x12,\n\nDeepFilter\x18\x04 \x01(\t:\x18naudyDeepTrendFilter.fdf\x12\x34\n\x0eVeryDeepFilter\x18\x05 \x01(\t:\x1cnaudyVeryDeepTrendFilter.fdf\x12\x1b\n\x10ShallowTolerance\x18\n \x01(\x01:\x01\x31\x12\x18\n\rDeepTolerance\x18\x0b \x01(\x01:\x01\x32\x12\x1e\n\x11VeryDeepTolerance\x18\x0c \x01(\x01:\x03\x30.5\x12\x14\n\tAlongLine\x18\r \x01(\x01:\x01\x33\x12\x17\n\nAcrossLine\x18\x0e \x01(\x01:\x03\x33.5\x12)\n\x1dMaximumConnectAngleDifference\x18\x12 \x01(\x01:\x02\x32\x35\x12\x15\n\nBodyStrike\x18\x0f \x01(\x01:\x01\x30\x12 \n\x18ReportAverageLineSpacing\x18\x10 \x01(\x01\x12\x16\n\x0b\x46ilterDepth\x18\x11 \x01(\x05:\x01\x32\"\xbb\x04\n\x13Worm_Management_INT\x12/\n$Geomodeller_minimum_number_hot_spots\x18\x01 \x01(\x05:\x01\x33\x12\"\n\x14\x43reate3D_DykeLinears\x18\x02 \x01(\x08:\x04true\x12!\n\x13\x46orceNormalPolarity\x18\x03 \x01(\x08:\x04true\x12\x1a\n\x0b\x42\x65stFitting\x18\x04 \x01(\x08:\x05\x66\x61lse\x12!\n\x15\x42\x65stFittingRMSPercent\x18\x05 \x01(\x05:\x02\x35\x30\x12\x45\n\x1bRequiredMagnetization_Worms\x18\x06 \x01(\x0e\x32\x17.intrepid.eMagWormsType:\x07MAG_ALL\x12\x19\n\nMakeFinite\x18\x07 \x01(\x08:\x05\x66\x61lse\x12*\n\x11OutputGeomodeller\x18\n \x01(\t:\x0fnaudy_dykes.csv\x12#\n\x14\x43reate3D_ForwardTask\x18\x0b \x01(\x08:\x05\x66\x61lse\x12+\n\x0f\x46orwardTaskFile\x18\x0c \x01(\t:\x12naudy_3Ddykes.task\x12&\n\x17useInfiniteThinFormulae\x18\r \x01(\x08:\x05\x66\x61lse\x12,\n\x1d\x43reateExplicitObservationTask\x18\x0e \x01(\x08:\x05\x66\x61lse\x12\x37\n\x18\x45xplicitObservationsTask\x18\x0f \x01(\t:\x15\x45xplicit_3Ddykes.task\"\xcb\x05\n\x0cMake3D_Dykes\x12$\n\x18\x64iscretization_intervals\x18\x02 \x01(\x05:\x02\x34\x30\x12\x1b\n\x0cproject_zmin\x18\x03 \x01(\x01:\x05-3000\x12\x19\n\x0cproject_zmax\x18\x04 \x01(\x01:\x03\x35\x30\x30\x12\x18\n\rsubsample_dtm\x18\x05 \x01(\x05:\x01\x31\x12\x1a\n\x0b\x64o_skeleton\x18\x06 \x01(\x08:\x05\x66\x61lse\x12%\n\x16\x64o_decimate_with_depth\x18\x07 \x01(\x08:\x05\x66\x61lse\x12!\n\x15\x64\x65pth_thinning_factor\x18\x08 \x01(\x05:\x02\x31\x32\x12!\n\x12\x63\x61lculate_thickess\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x10\x64o_limited_dykes\x18\n \x01(\x08:\x04true\x12\x1e\n\x10\x64o_dyke_dtm_clip\x18\x0b \x01(\x08:\x04true\x12\x1c\n\rdump_dyke_XML\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x1e\n\rDyke_Surfaces\x18\r \x01(\t:\x07output/\x12$\n\x05\x64rape\x18\x0e \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12(\n\televation\x18\x0f \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12\x15\n\tthickness\x18\x18 \x01(\x01:\x02\x31\x30\x12\x1c\n\x11minimum_thickness\x18\x19 \x01(\x01:\x01\x31\x12$\n\x17minimum_vertical_extent\x18\x1a \x01(\x01:\x03\x35\x30\x30\x12\x41\n\x13\x63\x61lculation_product\x18\x1b \x01(\x0e\x32\x19.ctm.GeophysicsSignalType:\tMagnetism\x12/\n\x12\x63omputed_grid_name\x18\x1c \x01(\t:\x13\x63\x61lculated_dyke.ers\x12\x1d\n\x11\x66orward_cell_size\x18\x1d \x01(\x01:\x02\x32\x30\"\xff\x02\n\x0cView3D_Dykes\x12\x1d\n\x0eshow_3D_viewer\x18\x01 \x01(\x08:\x05\x66\x61lse\x12!\n\x12show_limited_dykes\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\'\n\x19show_original_signal_grid\x18\x03 \x01(\x08:\x04true\x12\x1c\n\rshow_DTM_grid\x18\x04 \x01(\x08:\x05\x66\x61lse\x12(\n\x1ashow_simple_dyke_hot_spots\x18\x05 \x01(\x08:\x04true\x12&\n\x18show_all_naudy_solutions\x18\x06 \x01(\x08:\x04true\x12&\n\x18show_survey_flight_lines\x18\x07 \x01(\x08:\x04true\x12\x19\n\x0evertical_scale\x18\x08 \x01(\x01:\x01\x31\x12%\n\x06signal\x18\t \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12*\n\x1dMinimum_Fault_Vertical_Extent\x18\x12 \x01(\x01:\x03\x35\x30\x30\"\xcb\x02\n\x11Naudy_Observation\x12\x11\n\tBody_Name\x18\x01 \x02(\t\x12\x1e\n\x08location\x18\x02 \x02(\x0b\x32\x0c.ctm.Point3d\x12,\n\x04type\x18\x03 \x01(\x0e\x32\x15.ctm.GeologyObsType3D:\x07\x44yke_3D\x12\x14\n\tThickness\x18\x04 \x01(\x01:\x01\x31\x12\x13\n\x06Height\x18\x05 \x01(\x01:\x03\x31\x30\x30\x12\x13\n\x06Length\x18\x06 \x01(\x01:\x03\x31\x30\x30\x12\x11\n\x06Strike\x18\x07 \x01(\x01:\x01\x30\x12\x0f\n\x03\x44ip\x18\x08 \x01(\x01:\x02\x39\x30\x12\x19\n\x0eSusceptibility\x18\t \x01(\x01:\x01\x30\x12\x15\n\nSimilarity\x18\n \x01(\x01:\x01\x35\x12\x15\n\tRMS_ERROR\x18\x0b \x01(\x01:\x02-1\x12\x13\n\x0bInclination\x18\x0c \x01(\x01\x12\x13\n\x0b\x44\x65\x63lination\x18\r \x01(\x01\"\xfe\r\n\x17Naudy_AutoModelling_INT\x12\x12\n\nInputLines\x18\x01 \x02(\t\x12\x12\n\nInputModel\x18\x02 \x01(\t\x12\x13\n\x0bInputSignal\x18\x04 \x02(\t\x12\x16\n\x0eInputClearance\x18\x05 \x01(\t\x12\x18\n\x10OutputNaudyModel\x18\x06 \x01(\t\x12\x14\n\x0cOutputTrends\x18\x07 \x01(\t\x12\x18\n\x10OutputTrendWorms\x18\x08 \x01(\t\x12$\n\nReportFile\x18\t \x01(\t:\x10naudy_depths.rpt\x12:\n\nSampleMode\x18\x0b \x01(\x0e\x32\x1c.intrepid.LineDataSampleMode:\x08XY_BASED\x12;\n\x07tmiType\x18\x0c \x01(\x0e\x32\x1f.intrepid.SurveyAcquisitionType:\t_AIRBORNE\x12=\n\rFieldDataType\x18\r \x01(\x0e\x32\x1d.intrepid.SurveyFieldDataType:\x07_NORMAL\x12\x35\n\rMagneticField\x18\x14 \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x17\n\x08\x41utoIGRF\x18\x16 \x01(\x08:\x05\x66\x61lse\x12\x18\n\x0bLineSpacing\x18\x1f \x01(\x01:\x03\x32\x30\x30\x12?\n\x0bprocessType\x18> \x01(\x0e\x32\x1f.intrepid.DatabaseLineSelection:\tALL_LINES\x12\x17\n\x0fStartLineNumber\x18? \x01(\t\x12\x15\n\rEndLineNumber\x18@ \x01(\t\x12\x14\n\tNoOfLines\x18\x41 \x01(\x05:\x01\x30\x12\x15\n\rSelectedLines\x18\x42 \x03(\t\x12\x16\n\nStartDepth\x18\x19 \x01(\x01:\x02\x35\x30\x12\x16\n\x08\x45ndDepth\x18\x1a \x01(\x01:\x04\x35\x30\x30\x30\x12\x1b\n\x0e\x44\x65pthIncrement\x18\x17 \x01(\x01:\x03\x31.2\x12\x19\n\x0cWindowFactor\x18\x1b \x01(\x01:\x03\x31.5\x12\x1d\n\x12MinAmplitudeCutoff\x18\x1c \x01(\x01:\x01\x31\x12 \n\x12MaxAmplitudeCutoff\x18\x1d \x01(\x01:\x04\x31\x30\x30\x30\x12N\n\x12\x43\x61lculateDipMethod\x18# \x01(\x0e\x32\x1e.intrepid.DipCalculateStrategy:\x12Use_Calculated_Dip\x12K\n\x11\x44ipAcceptStrategy\x18+ \x01(\x0e\x32\x1d.intrepid.Dip_Accept_Strategy:\x11\x41\x63\x63\x65pt_Everything\x12\x17\n\x08\x44ipRange\x18! \x01(\x08:\x05\x66\x61lse\x12\x18\n\nWidthRange\x18\" \x01(\x08:\x04true\x12\'\n\x18UseFinerVerticalSampling\x18$ \x01(\x08:\x05\x66\x61lse\x12\x35\n\x08\x42odyType\x18% \x01(\x0e\x32\x1d.intrepid.Auto_ModelBody_Type:\x04\x44yke\x12 \n\x11\x41llowNegativeSusc\x18( \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0c\x41lwaysInvert\x18) \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x13MaxInvertIterations\x18/ \x01(\x05:\x01\x35\x12&\n\x1bMaximumBodySimilarityToKeep\x18\x30 \x01(\x01:\x01\x33\x12\x1e\n\x0fRemoveClearance\x18\x31 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10\x46orceOntoProfile\x18. \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0e\x44umpSimilarity\x18- \x01(\x08:\x05\x66\x61lse\x12.\n\x07\x63luster\x18\x32 \x01(\x0b\x32\x1d.intrepid.Worm_Management_INT\x12(\n\x08surfaces\x18\x33 \x01(\x0b\x32\x16.intrepid.Make3D_Dykes\x12$\n\x04view\x18\x34 \x01(\x0b\x32\x16.intrepid.View3D_Dykes\x12.\n\x06Trends\x18< \x01(\x0b\x32\x1e.intrepid.Trend_Management_INT\x12\'\n\x19Solve_Remanence_Direction\x18\x46 \x01(\x08:\x04true\x12\'\n\x1bTensor_Inversion_Iterations\x18G \x01(\x05:\x02\x31\x35\x12 \n\x11tensor_errorFloor\x18H \x01(\x01:\x05\x30.002\x12>\n\x11\x46ieldCoordSysType\x18I \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03NED\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06naudyd\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06naudyd\"\xab\x08\n\x0f\x45ulerSolver_INT\x12\x43\n\rEquationCombo\x18\x01 \x01(\x0e\x32\x1e.intrepid.EulerEquationOptions:\x0cHilbert_Only\x12\x1a\n\x0fStructuralIndex\x18\x02 \x01(\x01:\x01\x31\x12\x16\n\x0bLateralSize\x18\x03 \x01(\x05:\x01\x37\x12\x38\n\x0bRolloffType\x18\x04 \x01(\x0e\x32\x17.fdf.GetRolloffTypeList:\nNO_RollOff\x12\x35\n\nWindowType\x18\x05 \x01(\x0e\x32\x16.fdf.GetWindowTypeList:\tNO_Window\x12.\n\x08\x46illType\x18\x06 \x01(\x0e\x32\x14.fdf.GetFillTypeList:\x06\x41RTHUR\x12\x1d\n\x0e\x46illStopAtEdge\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x18\n\rDetrendDegree\x18\x07 \x01(\x05:\x01\x31\x12)\n\x1aMinimum_Gradient_Threshold\x18\x0e \x01(\x01:\x05\x31\x65-06\x12+\n\x10\x46ilteredGridName\x18\x0b \x01(\t:\x11\x66iltered_grid.ers\x12$\n\x0b\x46\x66tGridName\x18\x0c \x01(\t:\x0f\x66\x66tGridName.ers\x12-\n\x11OutputFftGridName\x18\r \x01(\t:\x12OutfftGridName.ers\x12(\n\x10WindowedGridName\x18\x10 \x01(\t:\x0ewindowGrid.ers\x12*\n\x10\x45xpandedGridName\x18\x11 \x01(\t:\x10\x65xpandedGrid.ers\x12\x19\n\x0bUseSymmetry\x18\x14 \x01(\x08:\x04true\x12\x39\n\x0eOutputDataType\x18\x16 \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12\x39\n\x0b\x46\x46TDataType\x18\x17 \x01(\x0e\x32\x12.ctm.GridDataTypes:\x10IEEE4ByteComplex\x12\x35\n\rDiskUsageRule\x18\x18 \x01(\x0e\x32\x18.intrepid.diskUsageRules:\x04\x41UTO\x12\x41\n\x14\x43oordinateSystemType\x18\" \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12 \n\x11\x44oReductionToPole\x18\x1b \x01(\x08:\x05\x66\x61lse\x12,\n\x04IGRF\x18\t \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x16\n\x0bNumber_CPUs\x18\n \x01(\x05:\x01\x31\x12\x1e\n\x0fSaveDerivatives\x18\x1c \x01(\x08:\x05\x66\x61lse\x12/\n\x1bSaveDerivativeDirectoryName\x18\x1d \x01(\t:\nSavedGrids\"\xa1\x05\n\rEulerSort_INT\x12\x1c\n\x11LowerGoodnessClip\x18\x02 \x01(\x01:\x01\x30\x12\x1c\n\x11UpperGoodnessClip\x18\x03 \x01(\x01:\x01\x31\x12&\n\x18LowerStructuralIndexClip\x18\x04 \x01(\x01:\x04-0.5\x12%\n\x18UpperStructuralIndexClip\x18\x05 \x01(\x01:\x03\x34.5\x12%\n\x18StructuralIndexErrorClip\x18\x06 \x01(\x01:\x03\x30.2\x12\x17\n\x0cMinimumDepth\x18\x07 \x01(\x01:\x01\x30\x12\x1a\n\x0cMaximumDepth\x18\x08 \x01(\x01:\x04\x35\x30\x30\x30\x12!\n\x15MinimumObservationDip\x18\t \x01(\x01:\x02\x32\x30\x12#\n\x16Maximum_Absolute_Alpha\x18\n \x01(\x01:\x03\x31\x30\x30\x12+\n\x17MaximumSingularityRatio\x18\x0b \x01(\x01:\n1000000000\x12+\n\x1eMaximum_Percentage_Depth_Error\x18\x12 \x01(\x05:\x03\x39\x30\x30\x12\x1f\n\x10\x42inning_Analysis\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x14NumberVerticalLayers\x18\r \x01(\x05:\x01\x35\x12\x1c\n\x0f\x44\x65pthMultiplier\x18\x0e \x01(\x01:\x03\x31.4\x12\x1b\n\tXYBinEast\x18\x0f \x01(\x01:\x08\x31\x30\x30\x30\x30\x30\x30\x30\x12\x1c\n\nXYBinNorth\x18\x10 \x01(\x01:\x08\x31\x30\x30\x30\x30\x30\x30\x30\x12\x1c\n\x0eMask_Solutions\x18\x11 \x01(\x08:\x04true\x12\x1f\n\x10\x43luster_Analysis\x18\x13 \x01(\x08:\x05\x66\x61lse\x12-\n\x07\x43luster\x18\x15 \x01(\x0b\x32\x1c.intrepid.ClusterControl_INT\"\xe7\x02\n\x10View3D_Solutions\x12\x1c\n\x0eshow_3D_viewer\x18\x01 \x01(\x08:\x04true\x12\x1b\n\x0cproject_zmin\x18\x03 \x01(\x01:\x05-3000\x12\x19\n\x0cproject_zmax\x18\x04 \x01(\x01:\x03\x35\x30\x30\x12\"\n\x14show_original_points\x18\x05 \x01(\x08:\x04true\x12 \n\x12show_cluster_shape\x18\x06 \x01(\x08:\x04true\x12\'\n\x19show_original_signal_grid\x18\x08 \x01(\x08:\x04true\x12\x1b\n\rshow_DTM_grid\x18\t \x01(\x08:\x04true\x12)\n\x1ashow_Cluster_FormingStages\x18\n \x01(\x08:\x05\x66\x61lse\x12\x19\n\x0evertical_scale\x18\x0e \x01(\x01:\x01\x31\x12+\n\x1dMinimum_Fault_Vertical_Extent\x18\x12 \x01(\x01:\x04\x31\x30\x30\x30\"\xc2\x05\n\x16\x45ulerDeconvolution_INT\x12,\n\rInputGridName\x18\x01 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12\x30\n\x11\x45levationGridName\x18\x02 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12\x1d\n\x15InputRawSolutionsName\x18\x0e \x01(\t\x12)\n\x06Subset\x18\x03 \x01(\x0b\x32\x19.intrepid.grid_subset_INT\x12\x12\n\nKnownDepth\x18\x04 \x01(\t\x12\x14\n\x0cKnownGravity\x18\x05 \x01(\t\x12\x1f\n\x17Solutions_Opt_Directory\x18\x06 \x01(\t\x12)\n\x06Solver\x18\x08 \x01(\x0b\x32\x19.intrepid.EulerSolver_INT\x12%\n\x04Sort\x18\x0b \x01(\x0b\x32\x17.intrepid.EulerSort_INT\x12(\n\x04view\x18\x0c \x01(\x0b\x32\x1a.intrepid.View3D_Solutions\x12%\n\x0fRequired_Points\x18\x0f \x03(\x0b\x32\x0c.ctm.Point3d\x12;\n\x0b\x45xportTypes\x18\x14 \x01(\x0e\x32\x1c.intrepid.EulerOutputOptions:\x08\x44\x61tabase\x12#\n\x06Output\x18\r \x01(\t:\x13\x65ulerOutputPts..DIR\x12\x1d\n\nReportFile\x18\t \x01(\t:\teuler.rpt\x12\"\n\x07\x43luster\x18\n \x01(\t:\x11\x65ulerCluster..DIR\x12\x18\n\tDump_VRML\x18\x11 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08\x44ump_VTK\x18\x12 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rBatchToolName\x18\x63 \x01(\t:\x05\x65uler\x12\x1a\n\x0bGUIToolName\x18\x64 \x01(\t:\x05\x65uler\"\xb1\x04\n\x0fSplitCruise_INT\x12\r\n\x05Input\x18\x01 \x02(\t\x12\x0b\n\x03ZIN\x18\x02 \x01(\t\x12\x0e\n\x06Output\x18\x03 \x01(\t\x12\r\n\x05Turns\x18\x04 \x01(\t\x12<\n\tAlgorithm\x18\x0c \x01(\x0e\x32\x1d.intrepid.Splitting_Algorithm:\nTrendAngle\x12\x1f\n\x13SharpAngleTolerance\x18\x05 \x01(\x01:\x02\x35\x30\x12\x1f\n\x13TrendAngleTolerance\x18\x06 \x01(\x01:\x02\x34\x35\x12\"\n\x16TrendDistanceInSamples\x18\x07 \x01(\x05:\x02\x31\x30\x12#\n\x18MinimumSamplesBeforeDrop\x18\x08 \x01(\x05:\x01\x30\x12+\n\x1dMaximumDistanceBetweenSamples\x18\t \x01(\x01:\x04\x32\x30\x30\x30\x12$\n\x15Preserve_All_Raw_Data\x18\n \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10SplitOnNullsOnly\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x17\n\x0fNormalTolerance\x18\r \x01(\x01\x12\x1c\n\x14MinimumSegmentLength\x18\x0e \x01(\x01\x12#\n\nReportFile\x18\x13 \x01(\t:\x0fsplitcruise.rpt\x12\"\n\rBatchToolName\x18\x63 \x01(\t:\x0bsplitcruise\x12&\n\x0bGUIToolName\x18\x64 \x01(\t:\x11MarineSplitAppGUI\"\x1f\n\x07XY_Pair\x12\t\n\x01X\x18\x01 \x02(\x01\x12\t\n\x01Y\x18\x02 \x02(\x01\"`\n\tXY_Region\x12!\n\x06points\x18\x01 \x03(\x0b\x32\x11.intrepid.XY_Pair\x12\x30\n\x11Region_Projection\x18\x15 \x01(\x0b\x32\x15.ctm.CoordinateSystem\"\xc7\x04\n\nSubset_INT\x12\n\n\x02IN\x18\x01 \x01(\t\x12\x0c\n\x04GRID\x18\x02 \x01(\t\x12\x0c\n\x04POLY\x18\x03 \x01(\t\x12\x0e\n\x06\x42locks\x18\x45 \x03(\t\x12\x0b\n\x03OUT\x18\x05 \x01(\t\x12\x12\n\nReportFile\x18\x06 \x01(\t\x12\x11\n\tCLIP_POLY\x18\n \x01(\t\x12\x1f\n\x03\x42ox\x18\x0b \x01(\x0b\x32\x12.ctm.BoundingBox2D\x12\"\n\x06GeoBox\x18\x0e \x01(\x0b\x32\x12.ctm.GeodeticBox2D\x12\x31\n\x0crotatableBox\x18\x0c \x01(\x0b\x32\x1b.ctm.RotatableBoundingBox2D\x12#\n\x06region\x18\r \x01(\x0b\x32\x13.intrepid.XY_Region\x12\x0f\n\x07\x43olumns\x18\x10 \x03(\t\x12\x1d\n\x12Output_Subsampling\x18\x0f \x01(\x05:\x01\x31\x12\x14\n\x06Shrink\x18\x12 \x01(\x08:\x04true\x12\x18\n\nSplitLines\x18\x13 \x01(\x08:\x04true\x12\x16\n\x07\x45xclude\x18\x14 \x01(\x08:\x05\x66\x61lse\x12-\n\x0e\x42ox_Projection\x18\x15 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x33\n\x14OutputProjectionHint\x18\x16 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x18\n\x10Search_Condition\x18\x1e \x01(\t\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06subset\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06subset\"\xd2\x01\n\x0c\x45nergyWindow\x12\r\n\x05start\x18\x01 \x02(\x01\x12\x0b\n\x03\x65nd\x18\x02 \x02(\x01\x12\x1d\n\x15\x63orrect_peak_location\x18\x03 \x01(\x01\x12\x1c\n\x11raw_peak_location\x18\x04 \x01(\x01:\x01\x30\x12\x0f\n\x04step\x18\x05 \x01(\x01:\x01\x31\x12\x0c\n\x04name\x18\x06 \x01(\t\x12\x1e\n\x05\x61lias\x18\x07 \x01(\x0e\x32\x0f.ctm.FieldAlias\x12*\n\x05units\x18\x08 \x01(\x0e\x32\x16.intrepid.Window_Units:\x03MeV\"\xa5\x01\n\x0cGammaWindows\x12\x31\n\x11\x43\x61librationWindow\x18\" \x03(\x0b\x32\x16.intrepid.EnergyWindow\x12.\n\x0eStandardWindow\x18\x65 \x03(\x0b\x32\x16.intrepid.EnergyWindow\x12\x32\n\x12RadonUraniumWindow\x18k \x03(\x0b\x32\x16.intrepid.EnergyWindow\"\xd9\x01\n\x12RadonConstants_INT\x12\x10\n\x02\x43\x31\x18\x01 \x01(\x01:\x04\x31.95\x12\x1c\n\x11\x43\x31_HeightGradient\x18\x02 \x01(\x01:\x01\x30\x12\x10\n\x02\x43\x32\x18\x03 \x01(\x01:\x04\x30.71\x12\x1c\n\x11\x43\x32_HeightGradient\x18\x04 \x01(\x01:\x01\x30\x12\x12\n\x02\x43\x33\x18\x05 \x01(\x01:\x06\x30.0268\x12\x1c\n\x11\x43\x33_HeightGradient\x18\x06 \x01(\x01:\x01\x30\x12\x13\n\x02\x43\x34\x18\x07 \x01(\x01:\x07-0.0179\x12\x1c\n\x11\x43\x34_HeightGradient\x18\x08 \x01(\x01:\x01\x30\"\x89\x08\n\x1dRequestedSpectraProcesses_INT\x12\x17\n\x08\x44\x65\x61\x64Time\x18\x16 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tPCAsmooth\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tCalibrate\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0f\x43\x61librateByLine\x18\x1e \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10\x43\x61librateByBunch\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0f\x45\x66\x66\x65\x63tiveHeight\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cRemoveCosmic\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eRemoveAircraft\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bRemoveRadon\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10GenerateChannels\x18\x08 \x01(\x08:\x05\x66\x61lse\x12!\n\x12GenerateLowUranium\x18\t \x01(\x08:\x05\x66\x61lse\x12%\n\x16GenerateEstimatedRadon\x18\n \x01(\x08:\x05\x66\x61lse\x12\'\n\x18GenerateEstimatedCaesium\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fNormaliseCosmic\x18\x0c \x01(\x08:\x05\x66\x61lse\x12!\n\x12UseSpectraLiveTime\x18\x1c \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10UseFixedDeadTime\x18\x1b \x01(\x08:\x05\x66\x61lse\x12#\n\x14SaveFullSpectraField\x18\r \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07SavePCA\x18\x1a \x01(\x08:\x05\x66\x61lse\x12#\n\x14GenerateRadonSpectra\x18\x0e \x01(\x08:\x05\x66\x61lse\x12$\n\x15GenerateGroundSpectra\x18\x0f \x01(\x08:\x05\x66\x61lse\x12$\n\x15GenerateCosmicSpectra\x18\x10 \x01(\x08:\x05\x66\x61lse\x12(\n\x19GenerateIntegratedSpectra\x18\x11 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cNASVDrestart\x18\x12 \x01(\x08:\x05\x66\x61lse\x12$\n\x15\x42oost_Signal_to_Noise\x18\x14 \x01(\x08:\x05\x66\x61lse\x12*\n\x1b\x41\x64\x64_Synthetic_Spectra_NASVD\x18\x15 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cnotLT_IGNORE\x18\x17 \x01(\x08:\x05\x66\x61lse\x12H\n\x0e\x41\x64justStrategy\x18\x18 \x01(\x0e\x32%.intrepid.SpectralNoiseAdjustStrategy:\tBY_FLIGHT\x12<\n\x0cGammaMeasure\x18\x19 \x01(\x0e\x32\x16.ctm.GammaMeasures_3DE:\x0e\x43ounts_per_bin\"\xfe\x17\n\x0cRadio256_INT\x12\x19\n\x11\x44\x61taBaseDirectory\x18\x01 \x02(\t\x12#\n\x11InputSpectraField\x18\x02 \x01(\t:\x08SPECTRUM\x12\x1e\n\x0cLineTypeName\x18\x03 \x01(\t:\x08GS_LType\x12*\n\nReportFile\x18\x04 \x01(\t:\x16Spectra_processing.rpt\x12\x1b\n\x0b\x43osmicField\x18\x05 \x01(\t:\x06\x63osmic\x12\x1f\n\rLiveTimeField\x18\x06 \x01(\t:\x08livetime\x12\"\n\x0e\x43learanceField\x18\x82\x01 \x01(\t:\tclearance\x12 \n\rPressureField\x18\x83\x01 \x01(\t:\x08pressure\x12&\n\x10TemperatureField\x18\x84\x01 \x01(\t:\x0btemperature\x12O\n\x15\x45nergyCalibrationFile\x18\x07 \x01(\t:0/config/calibration_spectra/dfa_default.asc_data\x12\x1d\n\x15\x43osmicCalibrationFile\x18\x08 \x01(\t\x12\x1c\n\x14RadonCalibrationFile\x18\t \x01(\t\x12#\n\x15HonourIgnoreLinesFlag\x18\n \x01(\x08:\x04true\x12\x1d\n\x12\x44\x61taSampleInterval\x18\x0b \x01(\x01:\x01\x31\x12H\n\ninstrument\x18\x0c \x01(\x0e\x32$.intrepid.Manufacturer_GammaDetector:\x0eSCINTREX_GR820\x12\x18\n\tPCAsmooth\x18\x14 \x01(\x08:\x05\x66\x61lse\x12?\n\x05NASVD\x18\x15 \x01(\x0e\x32%.intrepid.SpectralNoiseAdjustStrategy:\tBY_FLIGHT\x12$\n\x15\x42oost_Signal_to_Noise\x18\x17 \x01(\x08:\x05\x66\x61lse\x12*\n\x1b\x41\x64\x64_Synthetic_Spectra_NASVD\x18\x18 \x01(\x08:\x05\x66\x61lse\x12\x19\n\nuse_lapack\x18\x19 \x01(\x08:\x05\x66\x61lse\x12&\n\x1bNumberOfPrincipalComponents\x18\x1a \x01(\x05:\x01\x38\x12*\n\x1cMinimumNumberOfSamplesForPCA\x18\x1b \x01(\x05:\x04\x35\x30\x30\x30\x12\x18\n\x0bLastChannel\x18\x1c \x01(\x05:\x03\x32\x35\x34\x12\x18\n\x0c\x46irstChannel\x18\x1d \x01(\x05:\x02\x31\x30\x12Q\n\x0f\x45nergyCalibrate\x18\x1e \x01(\x0e\x32!.intrepid.EnergyCalibrateStratgey:\x15\x45\x43S_IntegrationPeriod\x12\x1c\n\x11LowSpectrumEnergy\x18\x1f \x01(\x01:\x01\x30\x12\x1d\n\x12HighSpectrumEnergy\x18  \x01(\x01:\x01\x33\x12\x1e\n\x11IntegrationPeriod\x18! \x01(\x01:\x03\x34\x30\x30\x12\x31\n\x11\x43\x61librationWindow\x18\" \x03(\x0b\x32\x16.intrepid.EnergyWindow\x12 \n\x11\x41\x64justForDeadTime\x18( \x01(\x08:\x05\x66\x61lse\x12!\n\x13UseMeasuredLiveTime\x18) \x01(\x08:\x04true\x12\x1d\n\x0fLiveTimeMaximum\x18* \x01(\x01:\x04\x31\x30\x30\x30\x12\x1a\n\x0fLiveTimeMinimum\x18+ \x01(\x01:\x01\x31\x12\x1c\n\x0fLiveTimeDefault\x18, \x01(\x01:\x03\x39\x35\x30\x12\'\n\x18LiveTimeConversionFactor\x18- \x01(\x01:\x05\x30.001\x12\x1f\n\x10UseFixedDeadTime\x18. \x01(\x08:\x05\x66\x61lse\x12\"\n\x14\x46ixedSpectraDeadTime\x18/ \x01(\x01:\x04\x32.51\x12\x1a\n\x0eSystemDeadTime\x18\x30 \x01(\x01:\x02\x31\x31\x12\x1e\n\x0f\x45\x66\x66\x65\x63tiveHeight\x18\x32 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cRemoveCosmic\x18\x33 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x12MaximumCosmicCount\x18\x34 \x01(\x01:\x03\x31\x38\x30\x12\x1d\n\x12MinimumCosmicCount\x18\x35 \x01(\x01:\x01\x31\x12\x1f\n\x12\x44\x65\x66\x61ultCosmicCount\x18\x36 \x01(\x01:\x03\x31\x32\x30\x12\x1d\n\x0fNormaliseCosmic\x18\x37 \x01(\x08:\x04true\x12\x1d\n\x0eRemoveAircraft\x18< \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bRemoveRadon\x18\x46 \x01(\x08:\x05\x66\x61lse\x12\x34\n\x0eRadonConstants\x18G \x01(\x0b\x32\x1c.intrepid.RadonConstants_INT\x12%\n\x19ReferenceTerrainClearance\x18O \x01(\x01:\x02\x38\x30\x12)\n\x19\x61lphaGroundStrippingRatio\x18Z \x01(\x01:\x06\x30.2403\x12)\n\x18\x61lphaSlopeStrippingRatio\x18[ \x01(\x01:\x07\x30.00049\x12(\n\x18\x62\x65taGroundStrippingRatio\x18\\ \x01(\x01:\x06\x30.4074\x12(\n\x17\x62\x65taSlopeStrippingRatio\x18] \x01(\x01:\x07\x30.00065\x12)\n\x19gammaGroundStrippingRatio\x18^ \x01(\x01:\x06\x30.7129\x12)\n\x18gammaSlopeStrippingRatio\x18_ \x01(\x01:\x07\x30.00069\x12(\n\x18reverse_a_StrippingRatio\x18` \x01(\x01:\x06\x30.0292\x12#\n\x18reverse_b_StrippingRatio\x18\x61 \x01(\x01:\x01\x30\x12#\n\x18reverse_g_StrippingRatio\x18\x62 \x01(\x01:\x01\x30\x12&\n\x18GenerateStandardChannels\x18\x64 \x01(\x08:\x04true\x12.\n\x0eStandardWindow\x18\x65 \x03(\x0b\x32\x16.intrepid.EnergyWindow\x12\x1f\n\x10OutputTotalCount\x18\x66 \x01(\t:\x05outTC\x12\x1d\n\x0fOutputPotassium\x18g \x01(\t:\x04outK\x12\x1c\n\rOutputThorium\x18h \x01(\t:\x05outTh\x12\x1b\n\rOutputUranium\x18i \x01(\t:\x04outU\x12!\n\x12GenerateLowUranium\x18j \x01(\x08:\x05\x66\x61lse\x12\x32\n\x12RadonUraniumWindow\x18k \x03(\x0b\x32\x16.intrepid.EnergyWindow\x12!\n\x10OutputLowUranium\x18l \x01(\t:\x07outLowU\x12%\n\x16GenerateEstimatedRadon\x18m \x01(\x08:\x05\x66\x61lse\x12)\n\x14OutputEstimatedRadon\x18n \x01(\t:\x0boutEstRadon\x12(\n\x10OutputCaesium137\x18\x8d\x01 \x01(\t:\routCaesium137\x12+\n\x1bGenerateEstimatedCaesium137\x18\x8e\x01 \x01(\x08:\x05\x66\x61lse\x12<\n\x0cGammaMeasure\x18o \x01(\x0e\x32\x16.ctm.GammaMeasures_3DE:\x0e\x43ounts_per_bin\x12&\n\x17SaveMultiChannelSpectra\x18p \x01(\x08:\x05\x66\x61lse\x12\'\n\x12OutputSpectraField\x18q \x01(\t:\x0boutSpectrum\x12\x16\n\x07SavePCA\x18r \x01(\x08:\x05\x66\x61lse\x12$\n\x15GenerateCosmicSpectra\x18x \x01(\x08:\x05\x66\x61lse\x12(\n\x19GenerateIntegratedSpectra\x18y \x01(\x08:\x05\x66\x61lse\x12#\n\x14GenerateRadonSpectra\x18z \x01(\x08:\x05\x66\x61lse\x12$\n\x15GenerateGroundSpectra\x18{ \x01(\x08:\x05\x66\x61lse\x12\x1f\n\rBatchToolName\x18\xc7\x01 \x01(\t:\x07mrad256\x12\x1d\n\x0bGUIToolName\x18\xc8\x01 \x01(\t:\x07mrad256\"\x9a\x03\n\x18MaximumNoiseFraction_INT\x12\x0e\n\x06\x46light\x18\x01 \x02(\t\x12\x19\n\x11InputSpectraField\x18\x02 \x02(\t\x12\x1a\n\x12OutputSpectraField\x18\x03 \x01(\t\x12*\n\nReportFile\x18\x04 \x01(\t:\x16Spectra_processing.rpt\x12\x14\n\x0cOutputPCcomp\x18\x05 \x01(\t\x12\x15\n\nNumberOfPC\x18\x07 \x01(\x05:\x01\x38\x12\x18\n\x0bLastChannel\x18\x08 \x01(\x05:\x03\x32\x35\x34\x12\x18\n\x0c\x46irstChannel\x18\t \x01(\x05:\x02\x31\x32\x12\x16\n\x07save_PC\x18\x14 \x01(\x08:\x05\x66\x61lse\x12\"\n\x13\x66orceLineProcessing\x18\x15 \x01(\x08:\x05\x66\x61lse\x12\x32\n\nSignalType\x18\x16 \x02(\x0e\x32\x17.intrepid.MNFSignalType:\x05GAMMA\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06mnf256\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06mnf256\"\xe5\x03\n(RequestedStandard_4Channel_Processes_INT\x12\"\n\x13\x46ourChannelDeadTime\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10UseFixedDeadTime\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\"\n\x13UseRecordedLiveTime\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eUpwardDeadTime\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0e\x43osmicDeadTime\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10\x43osmicBackground\x18\x06 \x01(\x08:\x05\x66\x61lse\x12!\n\x12\x41ircraftBackground\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fRadonBackground\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10\x43omptonStripping\x18\t \x01(\x08:\x05\x66\x61lse\x12 \n\x11HeightAttenuation\x18\n \x01(\x08:\x05\x66\x61lse\x12(\n\x19UseTerrainClearanceLimits\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rClipByHeights\x18\x0c \x01(\x08:\x05\x66\x61lse\x12#\n\x14GroundConcentrations\x18\r \x01(\x08:\x05\x66\x61lse\"i\n(RequestedStandard_4Channel_DeadTimes_INT\x12\x10\n\x02TC\x18\x01 \x01(\x01:\x04\x32\x35.1\x12\x14\n\x06\x63osmic\x18\x02 \x01(\x01:\x04\x32\x35.1\x12\x15\n\x07upwardU\x18\x03 \x01(\x01:\x04\x32\x35.1\"r\n\"Requested_4Channel_Backgrounds_INT\x12\r\n\x02TC\x18\x01 \x01(\x01:\x01\x30\x12\x0c\n\x01K\x18\x02 \x01(\x01:\x01\x30\x12\x0c\n\x01U\x18\x03 \x01(\x01:\x01\x30\x12\r\n\x02Th\x18\x04 \x01(\x01:\x01\x30\x12\x12\n\x07upwardU\x18\x05 \x01(\x01:\x01\x30\"\xe2\x01\n\'Requested_4Channel_RadonBackgrounds_INT\x12\x12\n\x02\x41\x31\x18\x01 \x01(\x01:\x06\x30.0339\x12\x12\n\x02\x41\x32\x18\x02 \x01(\x01:\x06\x30.0027\x12\x11\n\x03\x41tc\x18\x03 \x01(\x01:\x04\x31\x35.7\x12\x10\n\x03\x42tc\x18\x04 \x01(\x01:\x03\x30.3\x12\x10\n\x02\x41k\x18\x05 \x01(\x01:\x04\x30.88\x12\x10\n\x02\x42k\x18\x06 \x01(\x01:\x04\x30.02\x12\x10\n\x02\x41u\x18\x07 \x01(\x01:\x04\x30.17\x12\r\n\x02\x42u\x18\x08 \x01(\x01:\x01\x30\x12\x12\n\x03\x41th\x18\t \x01(\x01:\x05\x30.086\x12\x11\n\x03\x42th\x18\n \x01(\x01:\x04\x30.03\"\x93\x02\n&Requested_4Channel_StrippingRatios_INT\x12\x1a\n\x0c\x61lpha_ground\x18\x01 \x01(\x01:\x04\x30.25\x12\x19\n\x08\x64htAlpha\x18\x02 \x01(\x01:\x07\x30.00049\x12\x18\n\x0b\x62\x65ta_ground\x18\x03 \x01(\x01:\x03\x30.4\x12\x18\n\x07\x64htBeta\x18\x04 \x01(\x01:\x07\x30.00065\x12\x1a\n\x0cgamma_ground\x18\x05 \x01(\x01:\x04\x30.81\x12\x19\n\x08\x64htGamma\x18\x06 \x01(\x01:\x07\x30.00069\x12\x17\n\treverse_a\x18\x07 \x01(\x01:\x04\x30.06\x12\x14\n\treverse_b\x18\x08 \x01(\x01:\x01\x30\x12\x18\n\treverse_g\x18\t \x01(\x01:\x05\x30.003\"\xbf\x01\n(Requested_4Channel_HeightAttenuation_INT\x12%\n\x15TotalCountAttenuation\x18\x01 \x01(\x01:\x06\x30.0067\x12$\n\x14PotassiumAttenuation\x18\x02 \x01(\x01:\x06\x30.0082\x12\"\n\x12UraniumAttenuation\x18\x03 \x01(\x01:\x06\x30.0084\x12\"\n\x12ThoriumAttenuation\x18\x04 \x01(\x01:\x06\x30.0066\"\x89\x01\n$Requested_4Channel_Sensitivities_INT\x12\x17\n\x0c\x63psPerTCdose\x18\x01 \x01(\x01:\x01\x31\x12\x19\n\x0e\x63psPerKpercent\x18\x02 \x01(\x01:\x01\x31\x12\x15\n\ncpsPerUppm\x18\x03 \x01(\x01:\x01\x31\x12\x16\n\x0b\x63psPerThppm\x18\x04 \x01(\x01:\x01\x31\"\xa3\x01\n#Requested_4Channel_HeightLimits_INT\x12\x18\n\rMinimumHeight\x18\x01 \x01(\x01:\x01\x35\x12\x1a\n\rMaximumHeight\x18\x02 \x01(\x01:\x03\x33\x30\x30\x12\x19\n\rNominalHeight\x18\x03 \x01(\x01:\x02\x38\x30\x12+\n\x1cNullOutputsWhenOutsideLimits\x18\x04 \x01(\x08:\x05\x66\x61lse\"\xea\x08\n\x12GammaRayAdjust_INT\x12)\n\nReportFile\x18\x01 \x01(\t:\x15gamadj_processing.rpt\x12\x10\n\x08LineType\x18\x02 \x01(\t\x12\x12\n\nTotalCount\x18\x03 \x01(\t\x12\x11\n\tPotassium\x18\x04 \x01(\t\x12\x0f\n\x07Uranium\x18\x05 \x01(\t\x12\x0f\n\x07Thorium\x18\x06 \x01(\t\x12\x14\n\x0c\x44\x61taBaseName\x18\x07 \x01(\t\x12\x1f\n\x14\x44\x61taSamplingInterval\x18\x08 \x01(\x01:\x01\x31\x12\x17\n\x0fInputTotalCount\x18\t \x01(\t\x12\x16\n\x0eInputPotassium\x18\n \x01(\t\x12\x14\n\x0cInputUranium\x18\x0b \x01(\t\x12\x14\n\x0cInputThorium\x18\x0c \x01(\t\x12\x16\n\x0eInputClearance\x18\r \x01(\t\x12\x13\n\x0bInputCosmic\x18\x0e \x01(\t\x12\x1a\n\x12InputUpwardUranium\x18\x0f \x01(\t\x12\x15\n\rInputLiveTime\x18\x10 \x01(\t\x12\x43\n\x07process\x18\x11 \x01(\x0b\x32\x32.intrepid.RequestedStandard_4Channel_Processes_INT\x12\x45\n\tdeadtimes\x18\x12 \x01(\x0b\x32\x32.intrepid.RequestedStandard_4Channel_DeadTimes_INT\x12G\n\x11\x43osmicBackGrounds\x18\x13 \x01(\x0b\x32,.intrepid.Requested_4Channel_Backgrounds_INT\x12I\n\x13\x41ircraftBackGrounds\x18\x14 \x01(\x0b\x32,.intrepid.Requested_4Channel_Backgrounds_INT\x12W\n\x1cUpwardCrystalRadonCorrection\x18\x15 \x01(\x0b\x32\x31.intrepid.Requested_4Channel_RadonBackgrounds_INT\x12J\n\x10\x43omptonStripping\x18\x16 \x01(\x0b\x32\x30.intrepid.Requested_4Channel_StrippingRatios_INT\x12M\n\x11HeightAttenuation\x18\x17 \x01(\x0b\x32\x32.intrepid.Requested_4Channel_HeightAttenuation_INT\x12\x43\n\x0cHeightLimits\x18\x18 \x01(\x0b\x32-.intrepid.Requested_4Channel_HeightLimits_INT\x12\x45\n\rSensitivities\x18\x19 \x01(\x0b\x32..intrepid.Requested_4Channel_Sensitivities_INT\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06gamadj\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06gamadj\"\xd3\x02\n\x15Uranium_Levelling_INT\x12\x1b\n\x13InputPotassiumField\x18\x01 \x01(\t\x12\x19\n\x11InputUraniumField\x18\x02 \x01(\t\x12\x19\n\x11InputThoriumField\x18\x03 \x01(\t\x12\x1a\n\x12OutputUraniumField\x18\x04 \x01(\t\x12)\n\nReportFile\x18\x05 \x01(\t:\x15Uranium_Levelling.rpt\x12 \n\x12Thorium_Regression\x18\x06 \x01(\x08:\x04true\x12\"\n\x14Potassium_Regression\x18\x07 \x01(\x08:\x04true\x12\x1d\n\x0fView_Statistics\x18\x08 \x01(\x08:\x04true\x12\x1c\n\rTest_Run_Only\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06ulevel\"\x84\x02\n\x14GammaRaySurveyQC_INT\x12\x18\n\tPeakDrift\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\'\n\x18PeakDriftEnergyCalByLine\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x34\n%PeakDriftEnergyCalByIntegrationPeriod\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x11IntegrationPeriod\x18\x04 \x01(\x05:\x03\x34\x30\x30\x12\x1d\n\x0ePeakResolution\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tFlagNulls\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x46lagAllZero\x18\x07 \x01(\x08:\x05\x66\x61lse\"\xc4\x01\n\x1bGammaRayStrippingRatios_INT\x12\x1c\n\rUpwardCrystal\x18\x01 \x01(\x08:\x05\x66\x61lse\x12#\n\x14PerformSpectralRatio\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x38\n\x13SpectralRatioMethod\x18\x03 \x01(\x0e\x32\x1b.intrepid.SpectralRatio_INT\x12(\n\x19\x43osmic_AircraftBackground\x18\x04 \x01(\x08:\x05\x66\x61lse\"\xf8\x01\n\x1cGammaRaySpectrumCreation_INT\x12 \n\x11\x43reateCalibration\x18\x01 \x01(\x08:\x05\x66\x61lse\x12/\n Cosmic_AircraftBackgroundSpectra\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x05Radon\x18\x03 \x01(\x08:\x05\x66\x61lse\x12T\n\x16RadonCalibrationMethod\x18\x04 \x01(\x0e\x32$.intrepid.RadonCalibrationMethod_INT:\x0e\x46romSurveyData\x12\x19\n\nIntegrated\x18\x06 \x01(\x08:\x05\x66\x61lse\"\xbd\x05\n\x12\x43\x61librateGamma_INT\x12\x14\n\x0c\x44\x61taBaseName\x18\x01 \x01(\t\x12\x19\n\x11InputSpectrumName\x18\x02 \x01(\t\x12\x17\n\x0fInputCosmicName\x18\x03 \x01(\t\x12\x19\n\x0eSampleInterval\x18\x04 \x01(\x01:\x01\x31\x12\x1c\n\x0fIntegrationTime\x18\x13 \x01(\x01:\x03\x34\x30\x30\x12 \n\x18InputCalibrationFileName\x18\x05 \x01(\t\x12!\n\x19OutputCalibrationFileName\x18\x06 \x01(\t\x12(\n\x19\x44isplayCalibrationSpectra\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fSeparateDisplay\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\"\n\x13SuperimposedDisplay\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eQualityControl\x18\n \x01(\x08:\x05\x66\x61lse\x12\x38\n\x10GammaRaySurveyQC\x18\x0b \x01(\x0b\x32\x1e.intrepid.GammaRaySurveyQC_INT\x12H\n\x18GammaRaySpectrumCreation\x18\x0c \x01(\x0b\x32&.intrepid.GammaRaySpectrumCreation_INT\x12\x1f\n\x10\x43omputeConstants\x18\r \x01(\x08:\x05\x66\x61lse\x12\x46\n\x17GammaRayStrippingRatios\x18\x0e \x01(\x0b\x32%.intrepid.GammaRayStrippingRatios_INT\x12)\n\nReportFile\x18\x14 \x01(\t:\x15\x43\x61librateGammaRay.rpt\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06\x63\x61l256\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06\x63\x61l256\"C\n\x14MeasuredGridList_INT\x12+\n\x0cObservedGrid\x18\x01 \x03(\x0b\x32\x15.ctm.MeasuredGrid_INT\"\xa8\x01\n\x1bTriangulatedSurfaceDyke_INT\x12\x10\n\x08\x46ileName\x18\x03 \x02(\t\x12\x1b\n\x0cSkeletonized\x18\x18 \x01(\x08:\x05\x66\x61lse\x12%\n\x1aSurface_Notional_Thickness\x18\x1a \x01(\x01:\x01\x31\x12\x15\n\x07\x44\x65nsity\x18\x06 \x01(\x01:\x04\x32.67\x12\x1c\n\x0eSusceptibility\x18\x07 \x01(\x01:\x04\x30.01\"w\n\x14TetrahedraVolume_INT\x12\x10\n\x08\x46ileName\x18\x03 \x02(\t\x12\x0f\n\x07\x44\x65nsity\x18\x06 \x03(\x01\x12\x16\n\x0eSusceptibility\x18\x07 \x03(\x01\x12$\n\x15\x43omputeExternalFacets\x18\x08 \x01(\x08:\x05\x66\x61lse\"\xef\x08\n\x19\x46orwardModelFromDykes_INT\x12?\n\tAlgorithm\x18\x01 \x01(\x0e\x32\x18.intrepid.Dyke_Algorithm:\x12ListOfSimplePrisms\x12\x16\n\x0eInputDykesName\x18\x02 \x01(\t\x12\x12\n\nInputField\x18\x03 \x01(\t\x12?\n\x10SurfaceTriangles\x18\x04 \x03(\x0b\x32%.intrepid.TriangulatedSurfaceDyke_INT\x12\x1d\n\x05worms\x18\x05 \x03(\x0b\x32\x0e.geophy.cModel\x12\x15\n\rInputGridName\x18\" \x01(\t\x12\x18\n\x10\x43omputedGridName\x18\x1e \x01(\t\x12\x1c\n\x14\x64rape_elevation_grid\x18\x06 \x01(\t\x12\x19\n\x11ObservationHeight\x18\x07 \x01(\x01\x12\x35\n\x07product\x18\x08 \x02(\x0e\x32\x19.ctm.GeophysicsSignalType:\tMagnetism\x12,\n\x04IGRF\x18\t \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12!\n\x13SetReferenceDensity\x18\x0c \x01(\x01:\x04\x32.67\x12%\n\x1aSetReferenceSusceptibility\x18\r \x01(\x01:\x01\x30\x12\x38\n\x06method\x18\x14 \x01(\x0e\x32\x18.ctm.ComputationalMethod:\x0e\x44yke_Skeletons\x12/\n SubtractForwardModelFromObserved\x18# \x01(\x08:\x05\x66\x61lse\x12\x16\n\tGrid_Size\x18\x1f \x01(\x01:\x03\x31\x30\x30\x12$\n\nProjectBox\x18  \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x43\n\x16OutputGridCoordSysType\x18! \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12-\n\x0eProjectionHint\x18\x13 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12;\n\ndyke_style\x18\x15 \x01(\x0e\x32\x14.intrepid.Dyke_Style:\x11\x44S_SKELETON_SHEET\x12\x1b\n\x13\x41verage_Dyke_Length\x18\x10 \x01(\x01\x12\x19\n\x11max_search_radius\x18\x33 \x01(\x01\x12\x1d\n\x12TopographySampling\x18\x11 \x01(\x05:\x01\x31\x12#\n\x15include_border_effect\x18\x12 \x01(\x08:\x04true\x12\x0b\n\x03log\x18( \x01(\t\x12!\n\nReportFile\x18) \x01(\t:\rgrid_dyke.rpt\x12\x1f\n\x10Generated_By_GUI\x18\x32 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06MTdyke\x12&\n\x0bGUIToolName\x18\x64 \x01(\t:\x11\x66orwardDykeAppGUI\"\xaf\x08\n\x1c\x46orwardModelFromSurfaces_INT\x12\x18\n\x10InputSurfaceName\x18\x01 \x01(\t\x12\x12\n\nInputField\x18\x02 \x01(\t\x12\x32\n\nTetrahedra\x18\x15 \x01(\x0b\x32\x1e.intrepid.TetrahedraVolume_INT\x12?\n\x10SurfaceTriangles\x18\x03 \x03(\x0b\x32%.intrepid.TriangulatedSurfaceDyke_INT\x12\x1e\n\x06\x66\x61\x63\x65ts\x18\x04 \x03(\x0b\x32\x0e.geophy.cModel\x12\x15\n\rInputGridName\x18\" \x01(\t\x12\x18\n\x10\x43omputedGridName\x18\r \x01(\t\x12\x1c\n\x14\x64rape_elevation_grid\x18\x05 \x01(\t\x12\x19\n\x11ObservationHeight\x18\x06 \x01(\x01\x12\x36\n\x07product\x18\t \x02(\x0e\x32\x19.ctm.GeophysicsSignalType:\nGravimetry\x12,\n\x04IGRF\x18\n \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12!\n\x13SetReferenceDensity\x18\x0b \x01(\x01:\x04\x32.67\x12%\n\x1aSetReferenceSusceptibility\x18\x16 \x01(\x01:\x01\x30\x12\x30\n\x06method\x18\x0c \x01(\x0e\x32\x18.ctm.ComputationalMethod:\x06\x46\x61\x63\x65ts\x12/\n SubtractForwardModelFromObserved\x18# \x01(\x08:\x05\x66\x61lse\x12\x16\n\tGrid_Size\x18\x0e \x01(\x01:\x03\x31\x30\x30\x12$\n\nProjectBox\x18\x1e \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x43\n\x16OutputGridCoordSysType\x18\x0f \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12-\n\x0eProjectionHint\x18\x13 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x1c\n\x06\x61nchor\x18\x1f \x01(\x0b\x32\x0c.ctm.Point3d\x12\x1c\n\x11\x42ody_Scale_Factor\x18! \x01(\x01:\x01\x31\x12\x1d\n\x12TopographySampling\x18\x10 \x01(\x05:\x01\x31\x12#\n\x15include_border_effect\x18\x11 \x01(\x08:\x04true\x12\x0b\n\x03log\x18\x14 \x01(\t\x12)\n\nReportFile\x18  \x01(\t:\x15grid_geology_body.rpt\x12\x1f\n\x10Generated_By_GUI\x18\x32 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rBatchToolName\x18\x63 \x01(\t:\x05MTvol\x12&\n\x0bGUIToolName\x18\x64 \x01(\t:\x11\x66orwardDykeAppGUI\"\xdd\x03\n\x1d\x46orwardModelFromLayerCake_INT\x12*\n\x0bTopGridName\x18\x01 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12-\n\x0e\x42ottomGridName\x18\x02 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12\x14\n\x0cOutputSignal\x18\x03 \x01(\t\x12 \n\x11Mirror_Topography\x18\x04 \x01(\x08:\x05\x66\x61lse\x12!\n\x13SetReferenceDensity\x18\x05 \x01(\x01:\x04\x32.67\x12\x1c\n\x11ObservationHeight\x18\x06 \x01(\x01:\x01\x30\x12/\n\nDepthUnits\x18\x07 \x01(\x0e\x32\x13.ctm.Distance_Units:\x06meters\x12\x1a\n\x0eWindowHalfSize\x18\x08 \x01(\x05:\x02\x35\x30\x12#\n\nReportFile\x18  \x01(\t:\x0flayer_model.rpt\x12\x1f\n\x10Generated_By_GUI\x18\x32 \x01(\x08:\x05\x66\x61lse\x12\"\n\rBatchToolName\x18\x63 \x01(\t:\x0blayer_model\x12\x31\n\x0bGUIToolName\x18\x64 \x01(\t:\x1c\x46orwardModelLayerCakeAppGUII\"I\n\x0fScaleOption_INT\x12\x14\n\x05\x64oLog\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x0f\n\x07minClip\x18\x02 \x01(\x01\x12\x0f\n\x07maxClip\x18\x03 \x01(\x01\"\xff\x01\n\x11MakeHistogram_INT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0b\n\x03run\x18\x02 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x03 \x01(\t\x12\r\n\x05voxet\x18\x04 \x02(\t\x12\x17\n\x0flithology_field\x18\x05 \x02(\t\x12\x16\n\x0eproperty_field\x18\x06 \x02(\t\x12\x16\n\x0enumber_of_bins\x18\x07 \x02(\x05\x12*\n\x07Scaling\x18\x08 \x02(\x0b\x32\x19.intrepid.ScaleOption_INT\x12\x0e\n\x06report\x18\t \x02(\t\x12\x0b\n\x03log\x18\x11 \x01(\t\x12\x1c\n\rBatchToolName\x18\x63 \x01(\t:\x05histo\">\n\x12Grid_Reference_INT\x12\x13\n\x08X_Origin\x18\x0e \x01(\x01:\x01\x30\x12\x13\n\x08Y_Origin\x18\x0f \x01(\x01:\x01\x30\"\xd2\x03\n\x18ProjectionConversion_INT\x12\x14\n\x0cInputDataset\x18\x01 \x01(\t\x12\x0b\n\x03XIN\x18\x02 \x01(\t\x12\x0b\n\x03YIN\x18\x03 \x01(\t\x12\x0b\n\x03ZIN\x18\x04 \x01(\t\x12\x0c\n\x04XOUT\x18\x05 \x01(\t\x12\x0c\n\x04YOUT\x18\x06 \x01(\t\x12\x0c\n\x04ZOUT\x18\x07 \x01(\t\x12\x15\n\rOutputDataset\x18\x08 \x01(\t\x12/\n\x10OutputProjection\x18\x0b \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x1a\n\x0eOutputCellSize\x18\x0c \x01(\x01:\x02\x35\x30\x12\x16\n\x0bOutputAngle\x18\r \x01(\x01:\x01\x30\x12\x33\n\rGridReference\x18\x0e \x01(\x0b\x32\x1c.intrepid.Grid_Reference_INT\x12=\n\x0eResampleMethod\x18\x12 \x01(\x0e\x32\x1e.intrepid.SignalResampleMethod:\x05\x43ubic\x12\x1e\n\x10UpdateSurveyInfo\x18\x13 \x01(\x08:\x04true\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08projconv\x12\x1e\n\x0bGUIToolName\x18\x64 \x01(\t:\tjprojconv\"\xa9\x02\n\rPoint_Picking\x12>\n\x06Method\x18\x01 \x01(\x0e\x32\'.intrepid.MultiScaleEdgeDetectionMethod:\x05\x43\x61nny\x12\x1e\n\x0fMinimum_Anomaly\x18\x02 \x01(\x01:\x05\x35\x65-05\x12)\n\rPoint_Dataset\x18\x03 \x01(\t:\x12output/points..DIR\x12O\n\x10\x41mplitude_Option\x18\x04 \x01(\x0e\x32$.intrepid.HorizontalDerivativeMethod:\x0fTotalHorizontal\x12\x1d\n\x12MaximumSignalValue\x18\x05 \x01(\x01:\x01\x30\x12\x1d\n\x12MinimumSignalValue\x18\x06 \x01(\x01:\x01\x30\"\x9e\x02\n\x0fWorm_Processing\x12#\n\x18Maximum_Point_Separation\x18\x01 \x01(\x01:\x01\x32\x12\'\n\x0cWorm_Dataset\x18\x02 \x01(\t:\x11output/worms..DIR\x12\x1d\n\x12Worm_Min_Nr_Points\x18\x03 \x01(\x05:\x01\x33\x12!\n\nWorm_Image\x18\x04 \x01(\t:\rwormImage.tif\x12\x1f\n\x10\x44\x65pth_Estimation\x18\x05 \x01(\x08:\x05\x66\x61lse\x12-\n Euler_Minimum_Gradient_Amplitude\x18\x06 \x01(\x01:\x03\x30.1\x12+\n\x05style\x18\x07 \x01(\x0e\x32\x17.intrepid.CONTACT_STYLE:\x03\x41LL\"\x94\x01\n\x0fLine_Processing\x12-\n\x1fMaximum_Straight_Line_Deviation\x18\x01 \x01(\x01:\x04\x38\x30\x30\x30\x12%\n\x19Minimum_Points_For_Linear\x18\x02 \x01(\x05:\x02\x31\x35\x12+\n\x0eLinear_Dataset\x18\x03 \x01(\t:\x13output/linears..DIR\"\x88\x08\n\x12\x46\x61ult3D_Processing\x12-\n\x1fMaximum_Straight_Line_Deviation\x18\x01 \x01(\x01:\x04\x38\x30\x30\x30\x12 \n\x15Minimum_Points_For_3D\x18\x02 \x01(\x05:\x01\x37\x12*\n\x0f\x43ontact_Dataset\x18\x03 \x01(\t:\x11output/contacts3d\x12$\n\x05\x64rape\x18\x04 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12 \n\x12subsample_contacts\x18\x05 \x01(\x08:\x04true\x12*\n\x1eReject_Strike_Divergence_Angle\x18\x06 \x01(\x05:\x02\x34\x35\x12+\n\x05style\x18\x07 \x01(\x0e\x32\x17.intrepid.CONTACT_STYLE:\x03\x41LL\x12&\n\x1bMinimum_Continuation_Levels\x18\x08 \x01(\x05:\x01\x32\x12!\n\x16\x44ip_Estimates_per100km\x18\t \x01(\x05:\x01\x32\x12-\n\x1f\x64isallow_poor_low_dip_estimates\x18\n \x01(\x08:\x04true\x12$\n\x18\x64\x65\x66\x61ult_low_dip_estimate\x18\x0b \x01(\x05:\x02\x34\x30\x12\x31\n\x05Units\x18( \x01(\x0e\x32\x17.intrepid.Gravity_Units:\tMILLIGALS\x12\x1c\n\rdump_dip_logs\x18) \x01(\x08:\x05\x66\x61lse\x12\x38\n\rorigin_method\x18* \x01(\x0e\x32\x16.intrepid.FAULT_ORIGIN:\tFROM_WORM\x12\x1a\n\x0f\x46\x61ult_Thickness\x18, \x01(\x01:\x01\x30\x12\x1c\n\x11\x46\x61ult_Block_Depth\x18- \x01(\x01:\x01\x30\x12 \n\x10\x43ontact_Profiles\x18+ \x01(\t:\x06output\x12\x18\n\rsubsample_dtm\x18. \x01(\x05:\x01\x31\x12\x1b\n\x10Tyy_minimum_test\x18/ \x01(\x01:\x01\x32\x12\x33\n\'minimum_Total_Vertical_Plane_Derivative\x18\x30 \x01(\x01:\x02\x31\x30\x12 \n\x14Minimum_2D_Responses\x18\x31 \x01(\x05:\x02\x31\x31\x12)\n\x1b\x43orrect_For_FaultBlock_Tilt\x18\x32 \x01(\x08:\x04true\x12\x36\n\'capture_gravity_profiles_from_dip_calcs\x18< \x01(\x08:\x05\x66\x61lse\x12/\n$intersecting_worms_margin_multiplier\x18= \x01(\x05:\x01\x32\x12+\n\x1dMinimum_Fault_Vertical_Extent\x18> \x01(\x01:\x04\x31\x30\x30\x30\"\xe8\x04\n\rView3D_Faults\x12\x1d\n\x0eshow_3D_viewer\x18\x01 \x01(\x08:\x05\x66\x61lse\x12$\n\x18\x64iscretization_intervals\x18\x02 \x01(\x05:\x02\x34\x30\x12\x1b\n\x0cproject_zmin\x18\x03 \x01(\x01:\x05-3000\x12\x19\n\x0cproject_zmax\x18\x04 \x01(\x01:\x03\x35\x30\x30\x12!\n\x13show_limited_faults\x18\x05 \x01(\x08:\x04true\x12\x31\n#show_limited_fault_ellipsoid_bounds\x18\x06 \x01(\x08:\x04true\x12%\n\x16show_fault_unit_normal\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\'\n\x19show_original_signal_grid\x18\x08 \x01(\x08:\x04true\x12\x1b\n\rshow_DTM_grid\x18\t \x01(\x08:\x04true\x12 \n\x12trim_faults_to_DTM\x18\n \x01(\x08:\x04true\x12\x18\n\nshow_worms\x18\x0b \x01(\x08:\x04true\x12\'\n\x18show_interface_foliation\x18\x0c \x01(\x08:\x05\x66\x61lse\x12 \n\x11write_3D_surfaces\x18\r \x01(\x08:\x05\x66\x61lse\x12\x19\n\x0evertical_scale\x18\x0e \x01(\x01:\x01\x31\x12%\n\x16show_dip_calc_profiles\x18\x0f \x01(\x08:\x05\x66\x61lse\x12!\n\x12show_FormingStages\x18\x10 \x01(\x08:\x05\x66\x61lse\x12+\n\x1dMinimum_Fault_Vertical_Extent\x18\x12 \x01(\x01:\x04\x31\x30\x30\x30\"H\n\nRarify_INT\x12\x17\n\x0cMinimum_Rows\x18\x01 \x01(\x05:\x01\x38\x12!\n\x14Height_Mesh_Multiple\x18\x02 \x01(\x05:\x03\x31\x30\x30\"\xc5\x04\n\x15Pre_FFT_Transform_INT\x12\"\n\rFFT_Grid_Path\x18\x01 \x01(\t:\x0b\x66\x66tGrid.ers\x12\x17\n\nFFT_Border\x18\x02 \x01(\x01:\x03\x31\x32\x30\x12(\n\x10WindowedGridName\x18\x10 \x01(\t:\x0ewindowGrid.ers\x12*\n\x10\x45xpandedGridName\x18\x11 \x01(\t:\x10\x65xpandedGrid.ers\x12\x0f\n\x04\x42\x61nd\x18\x15 \x01(\x05:\x01\x31\x12\x39\n\x0b\x46\x46TDataType\x18\x16 \x01(\x0e\x32\x12.ctm.GridDataTypes:\x10IEEE4ByteComplex\x12)\n\x06Subset\x18\x03 \x01(\x0b\x32\x19.intrepid.grid_subset_INT\x12<\n\x0bRolloffType\x18\x04 \x01(\x0e\x32\x17.fdf.GetRolloffTypeList:\x0e\x43osine_RollOff\x12\x35\n\nWindowType\x18\x05 \x01(\x0e\x32\x16.fdf.GetWindowTypeList:\tNO_Window\x12.\n\x08\x46illType\x18\x06 \x01(\x0e\x32\x14.fdf.GetFillTypeList:\x06\x41RTHUR\x12\x1d\n\x0e\x46illStopAtEdge\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x18\n\rDetrendDegree\x18\x07 \x01(\x05:\x01\x30\x12,\n\x04IGRF\x18\t \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x16\n\x0bNumber_CPUs\x18\n \x01(\x05:\x01\x31\"\xc6\x01\n\x10Output_Grids_INT\x12!\n\x0b\x46older_Path\x18\x01 \x01(\t:\x0coutput/grids\x12\"\n\nTHD_Prefix\x18\x02 \x01(\t:\x0etotal_hz_deriv\x12\x1a\n\tXD_Prefix\x18\x03 \x01(\t:\x07x_deriv\x12\x1a\n\tYD_Prefix\x18\x04 \x01(\t:\x07y_deriv\x12\x33\n\x08\x44\x61taType\x18\x05 \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\"\x88\x01\n\x16\x43ontinuation_Grids_INT\x12#\n\rOutput_Folder\x18\x01 \x01(\t:\x0coutput/grids\x12\x14\n\x06Prefix\x18\x02 \x01(\t:\x04\x63ont\x12\x33\n\x08\x44\x61taType\x18\x03 \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\"w\n\x19Pseudo_Gravity_Filter_INT\x12\"\n\x15\x43ontinuation_Distance\x18\x01 \x01(\x01:\x03\x31\x30\x30\x12\x1b\n\x0e\x43ontrast_Ratio\x18\x02 \x01(\x01:\x03\x30.1\x12\x19\n\x0e\x46ield_Strength\x18\x03 \x01(\x01:\x01\x30\"\xad\x03\n UpwardContinuation_Filtering_INT\x12$\n\x06Rarify\x18\x01 \x01(\x0b\x32\x14.intrepid.Rarify_INT\x12:\n\x11Pre_FFT_Transform\x18\x02 \x01(\x0b\x32\x1f.intrepid.Pre_FFT_Transform_INT\x12\x30\n\x0cOutput_Grids\x18\x03 \x01(\x0b\x32\x1a.intrepid.Output_Grids_INT\x12<\n\x12\x43ontinuation_Grids\x18\x04 \x01(\x0b\x32 .intrepid.Continuation_Grids_INT\x12\x42\n\x15Pseudo_Gravity_Filter\x18\x05 \x01(\x0b\x32#.intrepid.Pseudo_Gravity_Filter_INT\x12,\n\x04IGRF\x18\x07 \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x1a\n\x0bPerform_RTP\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x19\n\nPerform_VD\x18\t \x01(\x08:\x05\x66\x61lse\x12\x0e\n\x06Levels\x18\n \x03(\x01\"\xbd\x05\n\x18Supplementry_Outputs_INT\x12\x30\n\x13\x41scii_Point_Dataset\x18\x01 \x01(\t:\x13output/asciiPts.wrm\x12\x31\n\x12\x41scii_Worm_Dataset\x18\x02 \x01(\t:\x15output/asciiWorms.str\x12\x31\n\x12\x41scii_Line_Dataset\x18\x03 \x01(\t:\x15output/asciiLines.lin\x12\x36\n\x16\x41rcShape_Point_Dataset\x18\x04 \x01(\t:\x16output/arcshapePts.shp\x12\x37\n\x15\x41rcShape_Worm_Dataset\x18\x05 \x01(\t:\x18output/arcshapeWorms.shp\x12\x34\n\x15MapInfo_Point_Dataset\x18\x07 \x01(\t:\x15output/mapInfoPts.mif\x12\x35\n\x14MapInfo_Worm_Dataset\x18\x08 \x01(\t:\x17output/mapInfoWorms.mif\x12\x35\n\x14MapInfo_Line_Dataset\x18\t \x01(\t:\x17output/mapInfoLines.mif\x12\x30\n\x13GoCad_Point_Dataset\x18\n \x01(\t:\x13output/gocadPts.cad\x12\x30\n\x12GoCad_Worm_Dataset\x18\x0b \x01(\t:\x14output/gocadWorms.pl\x12.\n\x12Vrml_Point_Dataset\x18\r \x01(\t:\x12output/vrmlPts.wrl\x12/\n\x11Vrml_Worm_Dataset\x18\x0e \x01(\t:\x14output/vrmlWorms.wrl\x12/\n\x11Vrml_Line_Dataset\x18\x0f \x01(\t:\x14output/vrmlLines.wrl\"\x88\x05\n\tWormE_INT\x12,\n\rInputGridName\x18\x01 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12\x30\n\x11\x45levationGridName\x18\x02 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12)\n\x06Subset\x18\x03 \x01(\x0b\x32\x19.intrepid.grid_subset_INT\x12&\n\x05point\x18\x04 \x01(\x0b\x32\x17.intrepid.Point_Picking\x12\'\n\x04worm\x18\x05 \x01(\x0b\x32\x19.intrepid.Worm_Processing\x12*\n\x07linears\x18\x06 \x01(\x0b\x32\x19.intrepid.Line_Processing\x12.\n\x08surfaces\x18\x07 \x01(\x0b\x32\x1c.intrepid.Fault3D_Processing\x12@\n\x0cUC_Filtering\x18\x08 \x01(\x0b\x32*.intrepid.UpwardContinuation_Filtering_INT\x12@\n\x14Supplementry_Outputs\x18\t \x01(\x0b\x32\".intrepid.Supplementry_Outputs_INT\x12%\n\x04view\x18\n \x01(\x0b\x32\x17.intrepid.View3D_Faults\x12\x33\n\x0e\x44istance_Units\x18\r \x01(\x0e\x32\x13.ctm.Distance_Units:\x06meters\x12(\n\nReportFile\x18  \x01(\t:\x14wormE_processing.rpt\x12\x1d\n\rBatchToolName\x18\xc7\x01 \x01(\t:\x05worme\x12\x1a\n\x0bGUIToolName\x18\x64 \x01(\t:\x05worme\"\xea\x02\n\x10WienerFilter_INT\x12\x1e\n\nSaveKernel\x18\x01 \x01(\t:\nwiener.ker\x12\x1e\n\x05Specs\x18\x02 \x02(\x0b\x32\x0f.fdf.Wiener_FDF\x12+\n\x04Mode\x18\x03 \x01(\x0e\x32\x10.fdf.Wiener_Mode:\x0bRT_MAGNETIC\x12#\n\x15SaveCrossCorrelations\x18\x05 \x01(\x08:\x04true\x12\x1b\n\x0cSaveFiltered\x18\x07 \x01(\x08:\x05\x66\x61lse\x12 \n\x11SaveProgressGrids\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eSaveDebugGrids\x18\t \x01(\x08:\x05\x66\x61lse\x12)\n\nReportFile\x18  \x01(\t:\x15wiener_processing.rpt\x12\x1e\n\rBatchToolName\x18\xc7\x01 \x01(\t:\x06wiener\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06wiener\"\xfc\x01\n\x11MapCompExport_INT\x12\x0f\n\x07mapfile\x18\x01 \x01(\t\x12\x0b\n\x03map\x18\x02 \x01(\t\x12\x13\n\x0b\x63ontextfile\x18\x03 \x01(\t\x12\x0f\n\x07\x63ontext\x18\x04 \x01(\t\x12/\n\x06\x66ormat\x18\x05 \x01(\x0e\x32\x1a.intrepid_maps.Devices_MAP:\x03\x65ps\x12\x12\n\noutputfile\x18\x06 \x01(\t\x12\r\n\x05Input\x18\n \x01(\t\x12\x0e\n\x06Output\x18\x0b \x01(\t\x12 \n\rBatchToolName\x18\xc7\x01 \x01(\t:\x08mapprint\x12\x1d\n\x0bGUIToolName\x18\x64 \x01(\t:\x08mapprint\"\xde\x05\n\x0cHARDCOPY_INT\x12#\n\x07NewPlot\x18\x01 \x01(\x0b\x32\x12.dlist.NewPlot_INT\x12\"\n\x06\x45xtent\x18\x02 \x01(\x0b\x32\x12.dlist.Extents_INT\x12\x1f\n\x03Map\x18\x03 \x01(\x0b\x32\x12.dlist.MapPlot_INT\x12\x15\n\rSunAngleDrape\x18\x05 \x01(\t\x12\x14\n\x0cPseudoColour\x18\x06 \x01(\t\x12\x0b\n\x03Red\x18\x07 \x01(\t\x12\r\n\x05Green\x18\x08 \x01(\t\x12\x0c\n\x04\x42lue\x18\t \x01(\t\x12\x38\n\x17ImageHistogramOperation\x18\n \x01(\x0e\x32\r.dlist.HistOp:\x08histNone\x12O\n\x15Grid_Interpolate_Type\x18\x0c \x01(\x0e\x32\x1c.dlist.Grid_Interpolate_Type:\x12INTREPID_NEWTON4TH\x12\'\n\tImageWork\x18\x12 \x03(\x0b\x32\x14.dlist.ImageWork_INT\x12#\n\x06region\x18\r \x01(\x0b\x32\x13.intrepid.XY_Region\x12\x0e\n\x06Output\x18\x0b \x01(\t\x12%\n\x08LineWork\x18\x0e \x01(\x0b\x32\x13.dlist.LineWork_INT\x12\'\n\tPointWork\x18\x0f \x01(\x0b\x32\x14.dlist.PointWork_INT\x12%\n\x08PolyWork\x18\x10 \x01(\x0b\x32\x13.dlist.PolyWork_INT\x12%\n\x08TickWork\x18\x11 \x01(\x0b\x32\x13.dlist.TickWork_INT\x12\x1f\n\x05Title\x18\x13 \x01(\x0b\x32\x10.dlist.Title_INT\x12(\n\nReportFile\x18  \x01(\t:\x14image_processing.rpt\x12\x1e\n\rBatchToolName\x18\xc7\x01 \x01(\t:\x06visual\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06visual\"\x95\x11\n\x0cIntrepidTask\x12$\n\x06Import\x18\x01 \x01(\x0b\x32\x14.intrepid.Import_INT\x12&\n\x08\x45xportDB\x18\x02 \x01(\x0b\x32\x14.intrepid.Export_INT\x12$\n\x06Subset\x18\x03 \x01(\x0b\x32\x14.intrepid.Subset_INT\x12,\n\x06GridOp\x18\x04 \x01(\x0b\x32\x1c.intrepid.GridOperations_INT\x12\x34\n\x08ProjConv\x18\x05 \x01(\x0b\x32\".intrepid.ProjectionConversion_INT\x12)\n\x06\x64\x62\x65\x64it\x18\x06 \x01(\x0b\x32\x19.intrepid.SpreadSheet_INT\x12:\n\x11\x44\x61taset_Resampler\x18\x07 \x01(\x0b\x32\x1f.intrepid.Dataset_Resampler_INT\x12\x34\n\x0eSurveyDistance\x18\x08 \x01(\x0b\x32\x1c.intrepid.SurveyDistance_INT\x12\x38\n\x0b\x46ileManager\x18\t \x01(\x0b\x32#.intrepid.DataBase_Manipulation_INT\x12\x36\n\x0f\x43lusterAnalysis\x18\n \x01(\x0b\x32\x1d.intrepid.ClusterAnalysis_INT\x12,\n\x05\x46\x65\x64it\x18\x0b \x01(\x0b\x32\x1d.intrepid.SurveyPlan_Edit_INT\x12-\n\x08\x43lipLine\x18\x0c \x01(\x0b\x32\x1b.intrepid.ClipLine_Edit_INT\x12\x30\n\x0bProfileEdit\x18\r \x01(\x0b\x32\x1b.intrepid.ProfileEditor_INT\x12,\n\x08\x43onvolve\x18\x0f \x01(\x0b\x32\x1a.intrepid.ConvolveGrid_INT\x12\x36\n\nGridFilter\x18\x10 \x01(\x0b\x32\".intrepid.GridFourierFiltering_INT\x12.\n\x0b\x44\x65\x63orrugate\x18\x11 \x01(\x0b\x32\x19.intrepid.Decorrugate_INT\x12,\n\nMicroLevel\x18\x12 \x01(\x0b\x32\x18.intrepid.MicroLevel_INT\x12-\n\nLineFilter\x18\x13 \x01(\x0b\x32\x19.intrepid.Line_Filter_INT\x12\x30\n\x0cWienerFilter\x18\x0e \x01(\x0b\x32\x1a.intrepid.WienerFilter_INT\x12(\n\x08Gridding\x18\x19 \x01(\x0b\x32\x16.intrepid.Gridding_INT\x12*\n\tGridmerge\x18\x1a \x01(\x0b\x32\x17.intrepid.Gridmerge_INT\x12$\n\x06TrendQ\x18\x1b \x01(\x0b\x32\x14.intrepid.TrendQ_INT\x12&\n\x07Gravity\x18\x1e \x01(\x0b\x32\x15.intrepid.Gravity_INT\x12N\n\x1bTerrain_Correction_QuadTree\x18\x1f \x01(\x0b\x32).intrepid.Terrain_Correction_QuadTree_INT\x12*\n\tisostatic\x18  \x01(\x0b\x32\x17.intrepid.ISOStatic_INT\x12*\n\tLevelling\x18! \x01(\x0b\x32\x17.intrepid.Levelling_INT\x12\x32\n\x0bMarineLevel\x18\" \x01(\x0b\x32\x1d.intrepid.MarineLevelling_INT\x12.\n\x0bSplitCruise\x18# \x01(\x0b\x32\x19.intrepid.SplitCruise_INT\x12\x30\n\x0cGravityMerge\x18$ \x01(\x0b\x32\x1a.intrepid.GravityMerge_INT\x12(\n\x08Radio256\x18\x14 \x01(\x0b\x32\x16.intrepid.Radio256_INT\x12@\n\x14MaximumNoiseFraction\x18\x15 \x01(\x0b\x32\".intrepid.MaximumNoiseFraction_INT\x12,\n\x06GamAdj\x18\x16 \x01(\x0b\x32\x1c.intrepid.GammaRayAdjust_INT\x12\x39\n\x10UraniumLevelling\x18\x17 \x01(\x0b\x32\x1f.intrepid.Uranium_Levelling_INT\x12\x34\n\x0e\x43\x61librateGamma\x18\x18 \x01(\x0b\x32\x1c.intrepid.CalibrateGamma_INT\x12\x30\n\x05Naudy\x18( \x01(\x0b\x32!.intrepid.Naudy_AutoModelling_INT\x12\x32\n\rMakeHistogram\x18G \x01(\x0b\x32\x1b.intrepid.MakeHistogram_INT\x12\"\n\x05WormE\x18I \x01(\x0b\x32\x13.intrepid.WormE_INT\x12/\n\x05\x45uler\x18J \x01(\x0b\x32 .intrepid.EulerDeconvolution_INT\x12\x42\n\x15\x46orwardModelFromDykes\x18T \x01(\x0b\x32#.intrepid.ForwardModelFromDykes_INT\x12H\n\x18\x46orwardModelFromSurfaces\x18U \x01(\x0b\x32&.intrepid.ForwardModelFromSurfaces_INT\x12J\n\x19\x46orwardModelFromLayerCake\x18V \x01(\x0b\x32\'.intrepid.ForwardModelFromLayerCake_INT\x12\x32\n\rMapCompExport\x18W \x01(\x0b\x32\x1b.intrepid.MapCompExport_INT\x12&\n\x06Visual\x18X \x01(\x0b\x32\x16.intrepid.HARDCOPY_INT\x12\x0c\n\x03log\x18\xff\x01 \x01(\t*\xda\x05\n\x14GeophysicsFormatType\x12\r\n\tAGSOARGUS\x10\x00\x12\x13\n\x0f\x41GSOARGUSBINARY\x10\x01\x12\r\n\tAGSOBASOS\x10\x02\x12\x0b\n\x07\x41GSORAF\x10\x03\x12\x12\n\x0e\x41GSOGRIDBINARY\x10\x04\x12\x0c\n\x08\x41RCSHAPE\x10\x05\x12\x10\n\x0c\x41SCIILINEXYZ\x10\x06\x12\t\n\x05\x41SEGY\x10\x07\x12\x0b\n\x07\x41SEGGDF\x10\x08\x12\x10\n\x0c\x41SCIICOLUMNS\x10\t\x12\x0e\n\nASCIIIMAGE\x10\n\x12\x11\n\rASCIIIMAGEXYZ\x10\x0b\x12\x10\n\x0c\x41SCIIPRINTER\x10\x0c\x12\x0f\n\x0b\x42INARYIMAGE\x10\r\x12\x0e\n\nENCOMIMAGE\x10\x0e\x12\x0c\n\x08\x41GSOGRID\x10\x0f\x12\x0b\n\x07\x41SEGGXF\x10\x10\x12\r\n\tECSGRDUTE\x10\x11\x12\x0f\n\x0b\x45\x43SGRIDFILE\x10\x12\x12\t\n\x05GIPSI\x10\x13\x12\x0b\n\x07GEOSOFT\x10\x14\x12\x0e\n\nGEOSOFT_DB\x10\x15\x12\x0e\n\nGEOSOFTINT\x10\x16\x12\x0b\n\x07GEOTIFF\x10\x17\x12\n\n\x06GEOPAK\x10\x18\x12\t\n\x05GR820\x10\x19\x12\x0e\n\nECSGPCBASE\x10\x1a\x12\x0b\n\x07LCTGRID\x10\x1b\x12\x0b\n\x07MAPINFO\x10\x1c\x12\x08\n\x04MOSS\x10\x1d\x12\x0e\n\nNETCDFGRID\x10\x1e\x12\x0e\n\nNETHDFGRID\x10+\x12\x16\n\x12NETCDFGRID_UNKNOWN\x10,\x12\r\n\tNETCDFXYZ\x10\x1f\x12\x10\n\x0cNEWCRESTLINE\x10 \x12\x11\n\rNEWCRESTIMAGE\x10!\x12\x0b\n\x07PICODAS\x10\"\x12\x0e\n\nPICODAS_V2\x10#\x12\x0b\n\x07USGSDEM\x10$\x12\r\n\tUSGSIMAGE\x10%\x12\x0c\n\x08VOXELGEO\x10&\x12\r\n\tZMAPIMAGE\x10\'\x12\x07\n\x03KML\x10(\x12\x10\n\x0c\x41RCASCIIGRID\x10)\x12\x0e\n\nUNSELECTED\x10*\x12\r\n\tMAXFORMAT\x10-\x12\x07\n\x03\x43SV\x10.*\xf6\x02\n\rDB_Operations\x12\n\n\x06\x41ppend\x10\x00\x12\x08\n\x04\x43opy\x10\x01\x12\x14\n\x10\x45\x64itGeoReference\x10\x03\x12\x0c\n\x08\x45\x64itMeta\x10\x04\x12\x12\n\x0e\x45\x64itSurveyInfo\x10\x05\x12\x0b\n\x07\x43ommand\x10\x06\x12\n\n\x06\x44\x65lete\x10\x07\x12\x0f\n\x0bInterpolate\x10\x08\x12\n\n\x06Rename\x10\t\x12\x14\n\x10RemoveDuplicates\x10\n\x12\t\n\x05Spawn\x10\x0b\x12\x12\n\x0eLineStatistics\x10\x0c\x12\x13\n\x0fShortStatistics\x10\r\x12\x0e\n\nStatistics\x10\x0e\x12\t\n\x05tTest\x10\x0f\x12\r\n\tCopyTable\x10\x14\x12\x0c\n\x08\x43opyGrid\x10\x15\x12\x0f\n\x0b\x43opySurface\x10\x16\x12\x10\n\x0c\x43opyMeshGrid\x10\x17\x12\r\n\tCopyVoxet\x10\x18\x12\x0f\n\x0bVolumeStats\x10\x19\x12\x11\n\rShowThumbNail\x10\x1a\x12\t\n\x05rmDir\x10\x1b*\xce\x01\n\x12\x43ommand_Operations\x12\x08\n\x04Long\x10\x01\x12\t\n\x05Short\x10\x02\x12\n\n\x06LStats\x10\x03\x12\x0b\n\x07GroupBy\x10\x04\x12\t\n\x05Index\x10\x05\x12\x08\n\x04Meta\x10\x06\x12\x08\n\x04\x44ump\x10\x07\x12\x10\n\x0cSpatialIndex\x10\x08\x12\x0b\n\x07\x43ompare\x10\t\x12\x10\n\x0c\x46uzzyCompare\x10\n\x12\x0b\n\x07\x45xtents\x10\x0b\x12\x08\n\x04Test\x10\x0c\x12\n\n\x06Volume\x10\r\x12\n\n\x06StdOut\x10\x0e\x12\x0b\n\x07QSubmit\x10\x0f*/\n\x10PlanViewEditType\x12\n\n\x06\x43utEnd\x10\x00\x12\x0f\n\x0bNullSegment\x10\x01*\x89\x02\n\x0eNoiseTypes_INT\x12\x0e\n\nNoise_None\x10\x00\x12\x0f\n\x0bNoise_Diff4\x10\x01\x12\x0f\n\x0bNoise_Range\x10\x02\x12\x0f\n\x0bNoise_Naudy\x10\x03\x12\x12\n\x0eNoise_Gradient\x10\x04\x12\x14\n\x10Noise_Quadrature\x10\x05\x12\x0f\n\x0bNoise_Phase\x10\x06\x12\x12\n\x0eNoise_Phillips\x10\x07\x12\x13\n\x0fNoise_LaCosteRC\x10\x08\x12\x1b\n\x17Noise_LaCoste_Curvature\x10\t\x12\x19\n\x15Noise_LocalMeanTensor\x10\n\x12\x18\n\x14Noise_FullerBandPass\x10\x0b*\xf1\x01\n\rEditTypes_INT\x12\r\n\tEdit_None\x10\x00\x12\x0c\n\x08\x45\x64it_Cut\x10\x01\x12\x14\n\x10\x45\x64it_Interpolate\x10\x02\x12\x10\n\x0c\x45\x64it_Cut_All\x10\x03\x12\x18\n\x14\x45\x64it_Interpolate_All\x10\x04\x12\x0c\n\x08\x45\x64it_Set\x10\x05\x12\x15\n\x11\x45\x64it_Add_Constant\x10\x06\x12\x12\n\x0e\x45\x64it_Add_Slope\x10\x07\x12\x15\n\x11\x45\x64it_Add_Triangle\x10\x08\x12\r\n\tEdit_Step\x10\t\x12\x13\n\x0f\x43ut_Alternative\x10\n\x12\r\n\tEdit_Clip\x10\x0b*)\n\x0cInterpMethod\x12\x0b\n\x07I_AKIMA\x10\x00\x12\x0c\n\x08I_LINEAR\x10\x01*3\n\rApplySearchTo\x12\x0b\n\x07S_POINT\x10\x00\x12\n\n\x06S_LINE\x10\x01\x12\t\n\x05S_ALL\x10\x02*\x80\x01\n\rOperationType\x12\r\n\tOpenField\x10\x00\x12\x0f\n\x0b\x43reateField\x10\x01\x12\x0b\n\x07Replace\x10\x02\x12\x0f\n\x0b\x44\x65leteField\x10\x03\x12\x15\n\x11\x43onditionalDelete\x10\x04\x12\x0e\n\nSplitGroup\x10\x05\x12\n\n\x06SaveAs\x10\x06*$\n\x0c\x44\x65leteAction\x12\x08\n\x04Rows\x10\x00\x12\n\n\x06Groups\x10\x01*;\n\nDRRunTypes\x12\x13\n\x0f\x45xtract_Profile\x10\x00\x12\x18\n\x14\x45ndPoints_To_Dataset\x10\x01*V\n\x0c\x44RTraceLayer\x12\x10\n\x0cTL_ARBITRARY\x10\x01\x12\x0c\n\x08TL_TABLE\x10\x02\x12\x11\n\rTL_FLIGHTPLAN\x10\x03\x12\x13\n\x0fTL_TABLE_POINTS\x10\x04*v\n\x11\x43luster_Algorithm\x12\x10\n\x0cNoClustering\x10\x00\x12\x11\n\rIsoClustering\x10\x01\x12\x14\n\x10HorizontalFusion\x10\x02\x12\x15\n\x11ResplitClustering\x10\x03\x12\x0f\n\x0b\x41nisotropic\x10\x04*l\n\x12\x43lusterDatasetType\x12\r\n\tGeneric2D\x10\x00\x12\r\n\tGeneric3D\x10\x01\x12\x12\n\x0e\x45ulerSolutions\x10\x02\x12\x13\n\x0fTensor_2DFaults\x10\x03\x12\x0f\n\x0bUnit_Vector\x10\x04*\\\n\x15\x43onvolveAlgorithmType\x12\x16\n\x12UserDefinedKernels\x10\x01\x12\x11\n\rPresetKernels\x10\x02\x12\x18\n\x14TensorGridOperations\x10\x03*\x81\x01\n\x12\x43onvolveFilterType\x12\x12\n\x0e\x43onvolveKernel\x10\x00\x12\n\n\x06Median\x10\x01\x12\x07\n\x03\x41GC\x10\x02\x12\t\n\x05\x43NORM\x10\x03\x12\x0b\n\x07TERRACE\x10\x04\x12\r\n\tCurvature\x10\x05\x12\r\n\tTensor_QC\x10\x06\x12\x0c\n\x08Gaussian\x10\x07*\xf0\x01\n\x1bTensorGridConvolveFiltering\x12\x06\n\x02QC\x10\x00\x12\r\n\tPotential\x10\x01\x12\x16\n\x12Smoothed_Potential\x10\x02\x12\x14\n\x10Potential_StdDev\x10\x03\x12\x11\n\rFourierCoeffs\x10\x04\x12\x11\n\rFourierErrors\x10\x05\x12\x16\n\x12SmoothedComponents\x10\x06\x12\x1b\n\x17Grid_Vertical_Component\x10\x07\x12\x17\n\x13Solve_2DEigenSystem\x10\x08\x12\x18\n\x14\x46robinius_Norm_Error\x10\t*,\n\x0eTensorNormCase\x12\x08\n\x04zero\x10\x00\x12\x07\n\x03one\x10\x01\x12\x07\n\x03two\x10\x02*\x88\x06\n\x16Gravity_Process_Option\x12\r\n\tAGSOField\x10\x00\x12\x0c\n\x08\x41GSOLoop\x10\x01\x12\x11\n\rSCINTREXField\x10\x02\x12\x10\n\x0cSCINTREXLoop\x10\x03\x12\x16\n\x12SCINTREX_CALIBRATE\x10\x04\x12\x0c\n\x08\x43G5Field\x10\x05\x12\x0b\n\x07\x44umpCG5\x10\x06\x12\x0c\n\x08\x43G6Field\x10!\x12\x0b\n\x07\x44umpCG6\x10\x07\x12\r\n\tMGS6Field\x10\x08\x12\x11\n\rAIRSEAIIField\x10\t\x12\x0c\n\x08\x46REE_AIR\x10\n\x12\x14\n\x10REVERSE_FREE_AIR\x10\x0b\x12\x12\n\x0eSIMPLE_BOUGUER\x10\x0c\x12\x1a\n\x16REVERSE_SIMPLE_BOUGUER\x10\r\x12\r\n\tBULLARD_B\x10\x0e\x12\x15\n\x11REVERSE_BULLARD_B\x10\x0f\x12\x0f\n\x0b\x43\x41LC_EOTVOS\x10\x10\x12\x12\n\x0eREVERSE_EOTVOS\x10\x11\x12\x0f\n\x0bTHEORETICAL\x10\x12\x12\r\n\tEarthTide\x10\x13\x12\x0b\n\x07TERRAIN\x10\x14\x12\x0b\n\x07TOWGS84\x10\x15\x12\x12\n\x0ePOTSDAM_IGSN71\x10\x16\x12#\n\x1fSTABILIZED_PLATFORM_CALIBRATION\x10\x17\x12\"\n\x1eSTABILIZED_PLATFORM_CORRECTION\x10\x18\x12#\n\x1fSTABILIZED_PLATFORM_RECONSTRUCT\x10\x19\x12)\n%STABILIZED_PLATFORM_CALIBRATE_CORRECT\x10\x1a\x12&\n\"STABILIZED_PLATFORM_RECONSTRUCT_CC\x10\x1b\x12\x17\n\x13\x43ONVERT_BELL_TENSOR\x10\x1c\x12\x16\n\x12INVERT_BELL_TENSOR\x10\x1d\x12&\n\"STABILIZED_MICROG_LACOSTE_AIRSEAII\x10\x1e\x12\"\n\x1eSTABILIZED_MICROG_LACOSTE_MGS6\x10\x1f\x12\x11\n\rAGSOCalibrate\x10 *b\n\x19Gravity_Meter_Drift_Model\x12\x15\n\x11Short_Term_Linear\x10\x00\x12\x14\n\x10Long_Term_Linear\x10\x01\x12\x18\n\x14Long_Term_Polynomial\x10\x02*a\n\rGravity_Units\x12\x0b\n\x07NO_UNIT\x10\x00\x12\r\n\tMILLIGALS\x10\x01\x12\x13\n\x0fMICROMETER_SEC2\x10\x02\x12\r\n\tMICROGALS\x10\x03\x12\x10\n\x0c\x45OTVOS_UNITS\x10\x04*\x8e\x01\n\rGravity_Datum\x12\x0b\n\x07POTSDAM\x10\x00\x12\n\n\x06IGSN71\x10\x01\x12\x0c\n\x08ISOGAL80\x10\x02\x12\t\n\x05WGS84\x10\x03\x12\x0f\n\x0bIGSN71_AGSO\x10\x04\x12\x08\n\x04GA07\x10\x05\x12\x14\n\x10\x41\x42SOLUTE_GRAVITY\x10\x06\x12\n\n\x06\x41\x41GD07\x10\x07\x12\x0e\n\nLAST_DATUM\x10\x08*\xf9\x03\n\x14Gravity_Terrain_Case\x12\x10\n\x0cLAND_SURFACE\x10\x00\x12\x13\n\x0fLAND_SUBSURFACE\x10\x01\x12\x11\n\rOCEAN_SURFACE\x10\x02\x12\x13\n\x0fOCEAN_SUBMERGED\x10\x03\x12\x19\n\x15LAKE_SURFACE_ABOVE_SL\x10\x04\x12\x18\n\x14LAKE_BOTTOM_ABOVE_SL\x10\x05\x12\x18\n\x14LAKE_BOTTOM_BELOW_SL\x10\x06\x12#\n\x1fLAKE_SURFACE_ABOVE_SL_BOT_BELOW\x10\x07\x12\x19\n\x15LAKE_SURFACE_BELOW_SL\x10\x08\x12 \n\x1cLAKE_BOTTOM_SURFACE_BELOW_SL\x10\t\x12\x1b\n\x17ICE_CAP_BOTTOM_BELOW_SL\x10\n\x12\x1b\n\x17ICE_CAP_BOTTOM_ABOVE_SL\x10\x0b\x12\x16\n\x12\x41IRBORNE_OVER_LAND\x10\x0c\x12\x15\n\x11\x41IRBORNE_OVER_SEA\x10\r\x12%\n!AIRBORNE_OVER_ICE_BOTTOM_BELOW_SL\x10\x0e\x12%\n!AIRBORNE_OVER_ICE_BOTTOM_ABOVE_SL\x10\x0f\x12\x14\n\x10LAND_OCEAN_MIXED\x10\x10\x12\x14\n\x10OCEAN_LAND_MIXED\x10\x11*K\n\x1dMarine_Gravity_Selection_Type\x12\x0f\n\x0bPROCESS_ALL\x10\x00\x12\x19\n\x15MARINE_LINE_SELECTION\x10\x01*D\n\x12Marine_Filter_Type\x12\x12\n\x0e\x45XACT_BLACKMAN\x10\x00\x12\x0e\n\nFULLER_FIR\x10\x01\x12\n\n\x06RC_IIR\x10\x02*Z\n\x12StationCoordSource\x12\x11\n\rEXTERNAL_FILE\x10\x00\x12\x17\n\x13INTERNAL_FIELDS_GPS\x10\x01\x12\x18\n\x14INTERNAL_FIELDS_USER\x10\x02*\xbf\x01\n\x16SelectionOperation_INT\x12\x12\n\x0eSelection_None\x10\x00\x12\x11\n\rSelection_Set\x10\x01\x12\x12\n\x0eSelection_Null\x10\x02\x12\x19\n\x15Selection_Interpolate\x10\x03\x12\x1a\n\x16Selection_Add_Constant\x10\x04\x12\x17\n\x13Selection_Add_Slope\x10\x05\x12\x1a\n\x16Selection_Add_Triangle\x10\x06*H\n\x0eReference_Type\x12\x0b\n\x07Same_As\x10\x00\x12\x15\n\x11\x41ligned_With_Grid\x10\x01\x12\x12\n\x0e\x41ligned_Origin\x10\x02*+\n\x0bKernel_Size\x12\x08\n\x04K3_3\x10\x03\x12\x08\n\x04K5_5\x10\x05\x12\x08\n\x04K7_7\x10\x07*a\n\rEdge_Clipping\x12\x18\n\x14\x45xtrapolation_limits\x10\x00\x12\x18\n\x14Original_data_limits\x10\x01\x12\x1c\n\x18Strict_Extrapolate_Cells\x10\x02*O\n\x0bMethod_Name\x12\x0e\n\nNeighbours\x10\x00\x12\r\n\tBoxFilter\x10\x01\x12\x0c\n\x08\x42iSpline\x10\x02\x12\x13\n\x0fVariableDensity\x10\x03*~\n\x13\x43\x65ll_Assignment_INT\x12\x0b\n\x07\x43losest\x10\x00\x12\t\n\x05\x46irst\x10\x01\x12\x08\n\x04Last\x10\x02\x12\x0b\n\x07\x41verage\x10\x03\x12\t\n\x05\x43ount\x10\x04\x12\x0b\n\x07Minimum\x10\x05\x12\x0b\n\x07Maximum\x10\x06\x12\x07\n\x03Sum\x10\x07\x12\n\n\x06Latest\x10\x08*<\n\x0fWeight_Type_INT\x12\t\n\x05Unity\x10\x00\x12\r\n\tMagnitude\x10\x01\x12\x0f\n\x0bSquare_Root\x10\x02*C\n\x0fSpline_Type_INT\x12\x0b\n\x07\x42iCubic\x10\x00\x12\t\n\x05\x41kima\x10\x01\x12\x0b\n\x07Tension\x10\x02\x12\x0b\n\x07\x42iSLERP\x10\x03*v\n\x1cLocal_Gradient_Estimator_INT\x12\x1a\n\x16LOCAL_ESTIMATOR_BRIGGS\x10\x00\x12\x1c\n\x18LOCAL_ESTIMATOR_MODIFIED\x10\x01\x12\x1c\n\x18LOCAL_ESTIMATOR_OBSERVED\x10\x02*\xc4\x01\n\x10TrustgridOptions\x12\x16\n\x12\x44iffusive_Gridding\x10\x00\x12\x0e\n\nAkima_Only\x10\x01\x12\x19\n\x15Trustgrid_Akima_Blend\x10\x02\x12\x15\n\x11Strike_Directions\x10\x03\x12\x17\n\x13\x46inal_X_derivatives\x10\x04\x12\x17\n\x13\x46inal_Y_derivatives\x10\x05\x12$\n Final_Maximum_X_or_Y_derivatives\x10\x06*\xb4\x02\n\x13GridMergeOperations\x12\x12\n\x0eResample_GRIDS\x10\x00\x12\t\n\x05Shift\x10\x01\x12\t\n\x05Scale\x10\x02\x12\x12\n\x0eScaleThenShift\x10\x03\x12\x11\n\rScaleAndShift\x10\x04\x12\x11\n\rSurfaceAdjust\x10\x05\x12\t\n\x05Merge\x10\x06\x12\x0b\n\x07\x46\x65\x61ther\x10\x07\x12\x11\n\rFeather_Merge\x10\x08\x12\r\n\tCondition\x10\t\x12\x10\n\x0c\x42oundaryView\x10\n\x12\x15\n\x11\x41\x64justToReference\x10\x0b\x12\x12\n\x0e\x41\x64justLineData\x10\x0c\x12\x12\n\x0e\x41\x64justGridData\x10\r\x12\x08\n\x04Trim\x10\x0e\x12\x0f\n\x0bTrimOverlap\x10\x0f\x12\x13\n\x0fTiltToReference\x10\x10*\xa0\x01\n\x17GridInterpolationMethod\x12\x17\n\x13\x43ubic_Spline_INTERP\x10\x00\x12\x1b\n\x17Newton_4th_Order_INTERP\x10\x01\x12\x1c\n\x18Minimum_curvature_INTERP\x10\x02\x12\x1f\n\x1bLinear_Interpolation_INTERP\x10\x03\x12\x10\n\x0c\x41kima_INTERP\x10\x04*\xe8\x02\n\x14Grid_Operation_Tasks\x12\x10\n\x0c\x43ubic_Spline\x10\x00\x12\x14\n\x10Newton_4th_Order\x10\x01\x12\x15\n\x11Minimum_curvature\x10\x02\x12\r\n\tSmoothing\x10\x03\x12\n\n\x06Rotate\x10\x04\x12\r\n\tSubSample\x10\x05\x12\x0b\n\x07GetBand\x10\x06\x12\x0b\n\x07PutBand\x10\x07\x12\x0c\n\x08\x43ubic_OP\x10\x08\x12\x13\n\x0f\x43hangePrecision\x10\t\x12\x10\n\x0c\x44ump_Dataset\x10\n\x12\x0c\n\x08MakeSame\x10\x0b\x12\x0b\n\x07\x44\x65trend\x10\x0c\x12\x0f\n\x0bGeoMagnetic\x10\r\x12\x0c\n\x08Resample\x10\x0e\x12\x0b\n\x07Outline\x10\x0f\x12\x0e\n\nDifference\x10\x10\x12\x14\n\x10ManipulateTensor\x10\x11\x12\x15\n\x11\x44ump_Dataset_Cols\x10\x12\x12\x14\n\x10\x43reate_Null_Grid\x10\x13*G\n\x0e\x44\x65trendOptions\x12\x0c\n\x08\x44\x43_SHIFT\x10\x00\x12\x14\n\x10LINEAR_ENDPOINTS\x10\x01\x12\x11\n\rLEAST_SQUARES\x10\x03*<\n\x0e\x64iskUsageRules\x12\x08\n\x04\x41UTO\x10\x00\x12\x10\n\x0c\x46ORCE_MEMORY\x10\x01\x12\x0e\n\nFORCE_DISK\x10\x02*\xd6\x01\n\x1dSpecial_GridFilter_Operations\x12\t\n\x05NO_OP\x10\x01\x12\x12\n\x0e\x41nalyticSignal\x10\x02\x12\r\n\tTiltAngle\x10\x03\x12\x1c\n\x18TotalHorizontalTiltAngle\x10\x04\x12\x18\n\x14HorizontalDerivative\x10\x05\x12\x15\n\x11TensorIntegration\x10\x06\x12\x13\n\x0f\x46\x61lconTransform\x10\x07\x12\x11\n\rTMI_Transform\x10\x08\x12\x10\n\x0cGz_Transform\x10\t*,\n\x13\x44\x65\x63orrugate_Request\x12\x08\n\x04ROWS\x10\x00\x12\x0b\n\x07\x43OLUMNS\x10\x01*V\n\x0eGridFilterType\x12\n\n\x06\x46ULLER\x10\x00\x12\t\n\x05NAUDY\x10\x01\x12\x0f\n\x0bNAUDYFULLER\x10\x02\x12\x12\n\x0eSMOOTHEDFULLER\x10\x03\x12\x08\n\x04NONE\x10\x04*.\n\rExtractorType\x12\n\n\x06MIRROR\x10\x00\x12\x11\n\rFLIPPEDMIRROR\x10\x01*X\n\x1a\x46light_Reconstruct_Methods\x12\x13\n\x0f\x46light_Defaults\x10\x63\x12\x0c\n\x08\x44\x61te_Fid\x10\x00\x12\x0e\n\nJulian_Fid\x10\x01\x12\x07\n\x03\x46id\x10\x02*R\n\x19PolyNomial_weight_methods\x12\x0c\n\x08Gradient\x10\x00\x12\x08\n\x04Sqrt\x10\x01\x12\t\n\x05\x45qual\x10\x02\x12\x12\n\x0eInverse_Signal\x10\x03*9\n\x0cGrfModelType\x12\x08\n\x04\x41grf\x10\x00\x12\x08\n\x04Igrf\x10\x01\x12\n\n\x06Manual\x10\x02\x12\t\n\x05Iusgs\x10\x03*\x88\x01\n\x10LevellingProcess\x12\x0b\n\x07Heading\x10\x00\x12\x0c\n\x08Parallax\x10\x01\x12\x0b\n\x07\x44iurnal\x10\x02\x12\x07\n\x03Grf\x10\x03\x12\x0e\n\nPolynomial\x10\x04\x12\x0b\n\x07LevelXY\x10\x05\x12\x08\n\x04Loop\x10\x06\x12\x10\n\x0cTensor_Level\x10\x07\x12\n\n\x06\x46light\x10\x08*\xf3\x01\n\x18Tensor_Levelling_Methods\x12\x14\n\x10RemoveEarthModel\x10\x00\x12\x11\n\rAddEarthModel\x10\x01\x12\x17\n\x13RemoveSurveyAverage\x10\x02\x12\x17\n\x13\x46lightAverageAdjust\x10\x03\x12\x15\n\x11RemoveLineAverage\x10\x04\x12\x16\n\x12\x41ltitudeCorrection\x10\x05\x12\x1b\n\x17Profile_Adjust_Altitude\x10\x06\x12\x18\n\x14\x45stimate_Error_Norms\x10\x07\x12\x16\n\x12Vertical_Component\x10\x08*\xb3\x01\n\rMarineRunType\x12\r\n\tLevelLoop\x10\x00\x12\x0b\n\x07LevelDC\x10\x01\x12\x0e\n\nLevelDrape\x10\x02\x12\x10\n\x0cLevelLinesDC\x10\x03\x12\x10\n\x0cLevelSurface\x10\x04\x12\x19\n\x15LevelPolynomialMarine\x10\x05\x12\x13\n\x0fLevelPolynomial\x10\x06\x12\x14\n\x10\x43\x61rterCorrection\x10\x07\x12\x0c\n\x08MLevelXY\x10\x08*T\n\x12LineDataSampleMode\x12\x0c\n\x08XY_BASED\x10\x00\x12\r\n\tFID_BASED\x10\x01\x12\x0e\n\nFIXED_MODE\x10\x02\x12\x11\n\rGEODETIC_MODE\x10\x03*[\n\x15\x44\x61tabaseLineSelection\x12\x0f\n\x0bSINGLE_LINE\x10\x00\x12\x0e\n\nLINE_RANGE\x10\x01\x12\x12\n\x0eLINE_SELECTION\x10\x02\x12\r\n\tALL_LINES\x10\x03*9\n\x13\x41uto_ModelBody_Type\x12\x08\n\x04Step\x10\x02\x12\x0e\n\nStringBody\x10\x01\x12\x08\n\x04\x44yke\x10\x03*R\n\x11StrikeTypeOptions\x12\x14\n\x10ST_PERPENDICULAR\x10\x00\x12\x0b\n\x07ST_USER\x10\x01\x12\r\n\tST_TRENDS\x10\x02\x12\x0b\n\x07ST_CALC\x10\x03*L\n\reMagWormsType\x12\x0b\n\x07MAG_ALL\x10\x00\x12\x0e\n\nMAG_NORMAL\x10\x01\x12\x10\n\x0cMAG_REMANENT\x10\x02\x12\x0c\n\x08MAG_RING\x10\x03*H\n\x13SurveyFieldDataType\x12\x0b\n\x07_NORMAL\x10\x00\x12\r\n\t_GRADIENT\x10\x01\x12\x15\n\x11_GRAVITY_GRADIENT\x10\x02*@\n\x15SurveyAcquisitionType\x12\r\n\t_AIRBORNE\x10\x00\x12\x0b\n\x07_GROUND\x10\x01\x12\x0b\n\x07_MARINE\x10\x02*W\n\x13\x44ip_Accept_Strategy\x12\x15\n\x11\x41\x63\x63\x65pt_Everything\x10\x01\x12\x13\n\x0fReject_Bad_Dips\x10\x02\x12\x14\n\x10\x41\x64just_Poor_Dips\x10\x03*W\n\x14\x44ipCalculateStrategy\x12\x13\n\x0f\x41lways_Vertical\x10\x01\x12\x16\n\x12Use_Calculated_Dip\x10\x02\x12\x12\n\x0e\x42\x65st_Dip_Value\x10\x03*\x8c\x02\n\x14\x45ulerEquationOptions\x12\x0b\n\x07\x43lassic\x10\x00\x12\x10\n\x0cHilbert_Only\x10\x01\x12\x11\n\rAll3_Fixed_SI\x10\x02\x12\x19\n\x15\x41ll3_For_Contact_Case\x10\x03\x12\t\n\x05No_SI\x10\x04\x12\x15\n\x11Hilbert_Then_NOSI\x10\x05\x12\x0f\n\x0bKnown_Depth\x10\x06\x12\x0e\n\nLocated_XY\x10\x07\x12\r\n\tTensor_Tz\x10\x08\x12\x1c\n\x18Tensor_Gravity_Estimator\x10\t\x12\x1a\n\x16\x46irstBalanced_Gradient\x10\n\x12\x1b\n\x17SecondBalanced_Gradient\x10\x0b*4\n\x12\x45ulerOutputOptions\x12\x0c\n\x08\x44\x61tabase\x10\x00\x12\x07\n\x03XYZ\x10\x01\x12\x07\n\x03\x44XF\x10\x02*9\n\x13Splitting_Algorithm\x12\x0e\n\nTrendAngle\x10\x00\x12\x12\n\x0e\x44ouglasPeucker\x10\x01*\x92\x01\n\x0bSpectraSize\x12\x19\n\x0cUNKNOWN_SIZE\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x0f\n\nNASVD_SIZE\x10\xf6\x01\x12\x12\n\rINTREPID_SIZE\x10\x82\x02\x12\x0e\n\tAGSO_SIZE\x10\xa2\x02\x12\x11\n\x0cGENERIC_SIZE\x10\x80\x02\x12\x10\n\x0b\x44OUBLE_SIZE\x10\x80\x04\x12\x0e\n\tQUAD_SIZE\x10\x80\x08*\x9d\x01\n\rSpectraFormat\x12\x10\n\x0c\x41GSO_SPECTRA\x10\x00\x12\x14\n\x10INTREPID_SPECTRA\x10\x01\x12\x11\n\rGENERIC_RADIO\x10\x02\x12\x11\n\rNASVD_SPECTRA\x10\x03\x12\x10\n\x0c\x44OUBLE_RADIO\x10\x04\x12\x0e\n\nQUAD_RADIO\x10\x05\x12\x1c\n\x0fUNKNOWN_SPECTRA\x10\x9d\xff\xff\xff\xff\xff\xff\xff\xff\x01*[\n\x1aManufacturer_GammaDetector\x12\x12\n\x0eSCINTREX_GR820\x10\x00\x12\x10\n\x0cPICODAS_SPEC\x10\x01\x12\x17\n\x13RADIATION_SOLUTIONS\x10\x02*B\n\x14GammaDetector_Volume\x12\x0c\n\x08litres_8\x10\x00\x12\r\n\tlitres_16\x10\x01\x12\r\n\tlitres_32\x10\x02*\x9d\x02\n\x1bSpectralNoiseAdjustStrategy\x12\x14\n\x10\x42Y_PSEUDO_FLIGHT\x10\x00\x12\r\n\tBY_FLIGHT\x10\x01\x12\r\n\tBY_SURVEY\x10\x02\x12\x31\n-BY_CONSTRUCT_FROM_PRINCIPAL_COMPONENTS_FLIGHT\x10\x03\x12\x38\n4BY_CONSTRUCT_FROM_PRINCIPAL_COMPONENTS_PSEUDO_FLIGHT\x10\x04\x12\x31\n-BY_CONSTRUCT_FROM_PRINCIPAL_COMPONENTS_SURVEY\x10\x05\x12*\n&BY_CONSTRUCT_FROM_PRINCIPAL_COMPONENTS\x10\x06*P\n\x17\x45nergyCalibrateStratgey\x12\x0c\n\x08\x45\x43S_LINE\x10\x00\x12\x19\n\x15\x45\x43S_IntegrationPeriod\x10\x01\x12\x0c\n\x08\x45\x43S_SKIP\x10\x02*+\n\x0cWindow_Units\x12\x12\n\x0e\x43hannel_Number\x10\x00\x12\x07\n\x03MeV\x10\x01*#\n\rMNFSignalType\x12\t\n\x05GAMMA\x10\x00\x12\x07\n\x03\x41\x45M\x10\x01*1\n\x11SpectralRatio_INT\x12\r\n\tMinty1997\x10\x00\x12\r\n\tMinty1991\x10\x01*B\n\x1aRadonCalibrationMethod_INT\x12\x10\n\x0c\x46romTestData\x10\x00\x12\x12\n\x0e\x46romSurveyData\x10\x01*Q\n\nDyke_Style\x12\x10\n\x0c\x44S_TRIANGLES\x10\x00\x12\x15\n\x11\x44S_SKELETON_SHEET\x10\x01\x12\x0c\n\x08\x44S_PRISM\x10\x02\x12\x0c\n\x08\x44S_PIPES\x10\x03*]\n\x0e\x44yke_Algorithm\x12\x15\n\x11UseDatabaseSource\x10\x00\x12\x1c\n\x18TriangulatedSurfaceModel\x10\x01\x12\x16\n\x12ListOfSimplePrisms\x10\x02*@\n\x0c\x43olourScheme\x12\x14\n\x10LithologyColours\x10\x00\x12\x0b\n\x07\x43olours\x10\x01\x12\r\n\tGreyScale\x10\x02*\xec\x02\n StatisticalFieldWithinStatsVoxet\x12\x0f\n\x0b\x43hangeCount\x10\x00\x12\x0f\n\x0bMeanDensity\x10\x01\x12\x11\n\rStdDevDensity\x10\x02\x12\x16\n\x12MeanSusceptibility\x10\x03\x12\x18\n\x14StdDevSusceptibility\x10\x04\x12\x15\n\x11MeanRemanenceEast\x10\x05\x12\x17\n\x13StdDevRemanenceEast\x10\x06\x12\x16\n\x12MeanRemanenceNorth\x10\x07\x12\x18\n\x14StdDevRemanenceNorth\x10\x08\x12\x13\n\x0fMeanRemanenceUp\x10\t\x12\x15\n\x11StdDevRemanenceUp\x10\n\x12\x10\n\x0cMostProbable\x10\x0b\x12\x1b\n\x17MostProbableThresholded\x10\x0c\x12\x12\n\x0eProb_AboveTopo\x10\r\x12\x10\n\x0cMeanHeatFlow\x10\x0e*o\n\x14SignalResampleMethod\x12\n\n\x06Linear\x10\x00\x12\x14\n\x10MinimumCurvature\x10\x01\x12\x13\n\x0fInverseDistance\x10\x02\x12\t\n\x05\x43ubic\x10\x03\x12\x15\n\x11Nearest_Neighbour\x10\x04*_\n\x1dMultiScaleEdgeDetectionMethod\x12\x0b\n\x07\x42lakely\x10\x00\x12\t\n\x05\x43\x61nny\x10\x01\x12\n\n\x06TopHat\x10\x02\x12\x1a\n\x16Zero_Vertical_Gradient\x10\x03*I\n\x1aHorizontalDerivativeMethod\x12\x13\n\x0fTotalHorizontal\x10\x00\x12\x16\n\x12\x43urvatureAmplitude\x10\x01*0\n\rCONTACT_STYLE\x12\x07\n\x03\x41LL\x10\x00\x12\x0b\n\x07LINEARS\x10\x01\x12\t\n\x05\x43URVY\x10\x02*K\n\x0c\x46\x41ULT_ORIGIN\x12\r\n\tFROM_WORM\x10\x00\x12\x16\n\x12\x46ROM_UPWARDS_CURVE\x10\x01\x12\x14\n\x10\x46ROM_DERIVATIVES\x10\x02'
+  serialized_pb=b'\n\x14intrepid_tasks.proto\x12\x08intrepid\x1a\x15\x63ommontaskmodel.proto\x1a\x18geophysical_models.proto\x1a\x18\x66ilter_description.proto\x1a\x13intrepid_maps.proto\x1a\x12\x64isplay_list.proto\"\xbf\x02\n\x10\x41sciiColumns_INT\x12\x1a\n\x0b\x46ixedLength\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x18\n\x0cRecordLength\x18\x02 \x01(\x05:\x02\x38\x30\x12\x16\n\x0bSkipRecords\x18\x03 \x01(\x05:\x01\x30\x12 \n\x11ReportDiagnostics\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bStopOnError\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x0b\n\x03\x44\x44\x46\x18\x06 \x01(\t\x12\x18\n\x10SkipIfStartsWith\x18\x07 \x01(\t\x12\x15\n\x07\x41SEGGDF\x18\n \x01(\x08:\x04true\x12\'\n\x18\x46orceBlankBetweenColumns\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x19\n\nSortByLine\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0e\x43ommaDelimiter\x18\r \x01(\x08:\x05\x66\x61lse\"\xc8\x01\n\x0e\x41sciiImage_INT\x12\x1a\n\x0b\x46ixedFormat\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x19\n\x0eLeadCharacters\x18\x02 \x01(\x05:\x01\x30\x12\x1a\n\x0fTrailCharacters\x18\x03 \x01(\x05:\x01\x30\x12\x1d\n\x12\x43haractersPerPixel\x18\x04 \x01(\x05:\x01\x30\x12\x16\n\x0bSkipRecords\x18\x05 \x01(\x05:\x01\x30\x12\x15\n\nData_Sense\x18\x06 \x01(\x05:\x01\x30\x12\x15\n\rNullCellvalue\x18\x07 \x01(\t\"\x92\x01\n\x0f\x42inaryImage_INT\x12\x16\n\x07PC_file\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x19\n\x0eLeadCharacters\x18\x02 \x01(\x05:\x01\x30\x12\x1a\n\x0fTrailCharacters\x18\x03 \x01(\x05:\x01\x30\x12\x19\n\x0eHeadCharacters\x18\x04 \x01(\x05:\x01\x30\x12\x15\n\rNullCellvalue\x18\x07 \x01(\t\"\x91\x01\n\x0e\x45ncomImage_INT\x12\x16\n\x07PC_file\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x19\n\x0eLeadCharacters\x18\x02 \x01(\x05:\x01\x30\x12\x1a\n\x0fTrailCharacters\x18\x03 \x01(\x05:\x01\x30\x12\x19\n\x0eHeadCharacters\x18\x04 \x01(\x05:\x01\x30\x12\x15\n\rNullCellvalue\x18\x07 \x01(\t\"Q\n\x10GeoTiffImage_INT\x12\x12\n\x07Minimum\x18\x01 \x01(\x01:\x01\x30\x12\x14\n\x07Maximum\x18\x03 \x01(\x01:\x03\x32\x35\x36\x12\x13\n\x0b\x43olourTable\x18\x07 \x01(\t\"D\n\x0cZmapGrid_INT\x12\x1d\n\x12\x43haractersPerPixel\x18\x02 \x01(\x05:\x01\x30\x12\x15\n\rNullCellvalue\x18\x07 \x01(\t\"\xac\n\n\x0eNetCDFGrid_INT\x12\x15\n\rNullCellvalue\x18\x07 \x01(\t\x12\x17\n\x08\x43hunking\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07\x44\x65\x66late\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x18\n\rDeflate_Level\x18\x02 \x01(\x05:\x01\x31\x12%\n\x0b\x43onventions\x18\x08 \x01(\t:\x10\x43\x46-1.6, ACDD-1.3\x12\x0c\n\x04uuid\x18\t \x01(\t\x12\r\n\x05title\x18\n \x01(\t\x12\x0e\n\x06source\x18\x0b \x01(\t\x12\x0f\n\x07summary\x18\x0c \x01(\t\x12g\n\x08keywords\x18\r \x01(\t:UTMI, magnetics, Australia, magnetism, airborne digital data, geophysical survey, grid\x12\x1a\n\x12keywords_volcabary\x18\x0e \x01(\t\x12\x18\n\x10processing_level\x18\x0f \x01(\t\x12\x0f\n\x07\x63omment\x18\x10 \x01(\t\x12 \n\x18standard_name_vocabulary\x18\x11 \x01(\t\x12\x17\n\x0fproduct_version\x18\x12 \x01(\t\x12\x14\n\x0c\x63reator_name\x18\x13 \x01(\t\x12\x15\n\rcreator_email\x18\x14 \x01(\t\x12\x13\n\x0b\x63reator_url\x18\x15 \x01(\t\x12\x14\n\x0c\x63reator_type\x18\x16 \x01(\t\x12\x1b\n\x13\x63reator_institution\x18\x17 \x01(\t\x12\x13\n\x0binstitution\x18\x18 \x01(\t\x12\x0f\n\x07project\x18\x19 \x01(\t\x12\x0f\n\x07program\x18\x1a \x01(\t\x12\x16\n\x0epublisher_name\x18\x1b \x01(\t\x12\x17\n\x0fpublisher_email\x18\x1c \x01(\t\x12\x15\n\rpublisher_url\x18\x1d \x01(\t\x12\x16\n\x0epublisher_type\x18\x1e \x01(\t\x12\x1d\n\x15publisher_institution\x18\x1f \x01(\t\x12\x1a\n\x12geospatial_lat_min\x18  \x01(\x01\x12\x1a\n\x12geospatial_lat_max\x18! \x01(\x01\x12\x1c\n\x14geospatial_lat_units\x18\" \x01(\t\x12!\n\x19geospatial_lat_resolution\x18# \x01(\x01\x12\x1a\n\x12geospatial_lon_min\x18$ \x01(\x01\x12\x1a\n\x12geospatial_lon_max\x18% \x01(\x01\x12\x1c\n\x14geospatial_lon_units\x18& \x01(\t\x12!\n\x19geospatial_lon_resolution\x18\' \x01(\x01\x12\x1b\n\x13time_coverage_start\x18( \x01(\t\x12\x19\n\x11time_coverage_end\x18) \x01(\t\x12\x14\n\x0c\x64\x61te_created\x18* \x01(\t\x12\x15\n\x07license\x18- \x01(\t:\x04None\x12H\n\x16Measurement_Attributes\x18\x32 \x01(\x0b\x32(.intrepid.ACDD_CF_Measurement_Attributes\x12M\n\x0cX_Attributes\x18\x33 \x01(\x0b\x32\x37.intrepid.Georeferencing_Coordinate_Variable_Attributes\x12M\n\x0cY_Attributes\x18\x34 \x01(\x0b\x32\x37.intrepid.Georeferencing_Coordinate_Variable_Attributes\"\xb1\x02\n\x1e\x41\x43\x44\x44_CF_Measurement_Attributes\x12\x11\n\tlong_name\x18\x01 \x01(\t\x12\x15\n\rstandard_name\x18\x02 \x01(\t\x12\r\n\x05units\x18\x03 \x01(\t\x12\x1d\n\x15\x63overage_content_type\x18\x04 \x01(\t\x12\x13\n\x0bvalid_range\x18\x05 \x03(\x01\x12\x13\n\x0b\x63oordinates\x18\x06 \x01(\t\x12\x14\n\x0cscale_factor\x18\x07 \x01(\x01\x12\x12\n\nadd_offset\x18\x08 \x01(\x01\x12\x12\n\n_FillValue\x18\t \x01(\x01\x12\x0f\n\x07\x63omment\x18\n \x01(\t\x12\x12\n\nflag_masks\x18\x0b \x03(\x05\x12\x15\n\rflag_meanings\x18\x0c \x01(\t\x12\x13\n\x0b\x66lag_values\x18\r \x03(\x05\"\xc2\x01\n-Georeferencing_Coordinate_Variable_Attributes\x12\x11\n\tlong_name\x18\x01 \x01(\t\x12\x15\n\rstandard_name\x18\x02 \x01(\t\x12\r\n\x05units\x18\x03 \x01(\t\x12\x0c\n\x04\x61xis\x18\x04 \x01(\t\x12\x12\n\n_FillValue\x18\x05 \x01(\x01\x12\x12\n\nvalidt_min\x18\x06 \x01(\x01\x12\x11\n\tvalid_max\x18\x07 \x01(\x01\x12\x0f\n\x07\x63omment\x18\x08 \x01(\t\"f\n\x0e\x41GSO_ARGUS_INT\x12\x16\n\x08\x44oReport\x18\x02 \x01(\x08:\x04true\x12\x15\n\nData_Style\x18\x03 \x01(\x05:\x01\x30\x12%\n\x0b\x42oundingBox\x18\x04 \x01(\x0b\x32\x10.ctm.BoundingBox\"\xee\x02\n\x0bPicodas_INT\x12\x1b\n\x0cKeepTraverse\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07KeepTie\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fKeepCalibration\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tKeepScrub\x18\x04 \x01(\x08:\x05\x66\x61lse\x12!\n\x04Keep\x18\x05 \x01(\x0b\x32\x13.ctm.RepeatedString\x12\x1f\n\x10\x43ompress_Spectra\x18\n \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rDo_ASCII_Dump\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rSpectra_ASCII\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x1b\n\rSpectra_Field\x18\r \x01(\t:\x04ISPD\x12#\n\rauxilary_file\x18\x0e \x01(\t:\x0cISPD_256.txt\x12\x17\n\x08LineInfo\x18\x0f \x01(\x08:\x05\x66\x61lse\x12\x15\n\rignore_fields\x18\x10 \x03(\t\"w\n\rARC_SHAPE_INT\x12\x1a\n\x0bOnePerGroup\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x07GroupBy\x18\x02 \x01(\x08:\x04true\x12\x18\n\nNonGroupBy\x18\x03 \x01(\x08:\x04true\x12\x19\n\nAsGeodetic\x18\x04 \x01(\x08:\x05\x66\x61lse\">\n\x0bMAPINFO_INT\x12\x15\n\x07GroupBy\x18\x02 \x01(\x08:\x04true\x12\x18\n\nNonGroupBy\x18\x03 \x01(\x08:\x04true\"\x9a\x02\n\x0cVOXELGEO_INT\x12\x11\n\x06XField\x18\x01 \x01(\t:\x01X\x12\x11\n\x06YField\x18\x02 \x01(\t:\x01Y\x12\x11\n\x06ZField\x18\x03 \x01(\t:\x01Z\x12\x1e\n\x0bSignalField\x18\x04 \x01(\t:\tLithology\x12\x0c\n\x04Xmin\x18\x05 \x01(\x01\x12\x0c\n\x04Xmax\x18\x06 \x01(\x01\x12\x11\n\tXcellsize\x18\x07 \x01(\x01\x12\x0c\n\x04Ymin\x18\x08 \x01(\x01\x12\x0c\n\x04Ymax\x18\t \x01(\x01\x12\x11\n\tYcellsize\x18\n \x01(\x01\x12\x0c\n\x04Zmin\x18\x0b \x01(\x01\x12\x0c\n\x04Zmax\x18\x0c \x01(\x01\x12\x11\n\tZcellsize\x18\r \x01(\x01\x12\x11\n\tSignalmin\x18\x0e \x01(\x01\x12\x11\n\tSignalmax\x18\x0f \x01(\x01\"\x95\x01\n\x13MapSignalToBand_INT\x12\x15\n\rStarting_Band\x18\x01 \x01(\x01\x12\x11\n\tIncrement\x18\x02 \x01(\x01\x12\x14\n\x0cNumber_Bands\x18\x03 \x01(\x05\x12\x19\n\nOutputNull\x18\x04 \x01(\x01:\x05-9999\x12\x10\n\x08\x41longBin\x18\x05 \x01(\x01\x12\x11\n\tAcrossBin\x18\x06 \x01(\x01\"\xb3\x02\n\x08SEGY_INT\x12\x1d\n\x0fSaveAsMultiBand\x18\x01 \x01(\x08:\x04true\x12\x16\n\x07\x46orce2D\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x08Revision\x18\x03 \x01(\x05:\x01\x30\x12\x1c\n\rExtra_Stanzas\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x0e\n\x06Signal\x18\x05 \x01(\t\x12\r\n\x05\x44\x65pth\x18\x06 \x01(\t\x12\x0b\n\x03\x43\x44P\x18\x07 \x01(\t\x12\x11\n\tShotPoint\x18\x08 \x01(\t\x12\x17\n\x0fHeader_Comments\x18\t \x03(\t\x12\x14\n\x0cOutputFormat\x18\n \x01(\x05\x12\x17\n\x0fSample_Interval\x18\x0b \x01(\x05\x12\x36\n\x0fMapSignalToBand\x18\x14 \x01(\x0b\x32\x1d.intrepid.MapSignalToBand_INT\"\xb9\x06\n\nImport_INT\x12\r\n\x05Input\x18\x01 \x02(\t\x12\x13\n\x0b\x46ormat_File\x18\x02 \x01(\t\x12\x0e\n\x06Output\x18\x03 \x02(\t\x12#\n\nReportFile\x18  \x01(\t:\x0fimport_data.rpt\x12.\n\x06\x46ormat\x18\x04 \x02(\x0e\x32\x1e.intrepid.GeophysicsFormatType\x12)\n\nprojection\x18\x05 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x41\n\x14\x43oordinateSystemType\x18\x06 \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12\x30\n\x0c\x41sciiColumns\x18\x07 \x01(\x0b\x32\x1a.intrepid.AsciiColumns_INT\x12,\n\nAsciiImage\x18\x08 \x01(\x0b\x32\x18.intrepid.AsciiImage_INT\x12.\n\x0b\x42inaryImage\x18\t \x01(\x0b\x32\x19.intrepid.BinaryImage_INT\x12,\n\nEncomImage\x18\n \x01(\x0b\x32\x18.intrepid.EncomImage_INT\x12(\n\x08ZmapGrid\x18\x0b \x01(\x0b\x32\x16.intrepid.ZmapGrid_INT\x12,\n\nAGSO_ARGUS\x18\x0c \x01(\x0b\x32\x18.intrepid.AGSO_ARGUS_INT\x12&\n\x07Picodas\x18\r \x01(\x0b\x32\x15.intrepid.Picodas_INT\x12\x30\n\x0cGeoTiffImage\x18\x0e \x01(\x0b\x32\x1a.intrepid.GeoTiffImage_INT\x12,\n\nNetCDFGrid\x18\x0f \x01(\x0b\x32\x18.intrepid.NetCDFGrid_INT\x12!\n\x13SaveSEGYAsMultiBand\x18\x14 \x01(\x08:\x04true\x12\x0c\n\x04POLY\x18\x15 \x01(\t\x12\x11\n\tAGSOcopy_\x18\x16 \x01(\t\x12\x16\n\x0e\x41gsoSelectFile\x18\x17 \x01(\t\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06import\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06import\"\x90\x01\n\x10ReportFormat_INT\x12\x11\n\x05width\x18\x01 \x01(\x05:\x02\x31\x30\x12\x13\n\x08\x64\x65\x63imals\x18\x02 \x01(\x05:\x01\x32\x12\x12\n\x04Null\x18\x03 \x01(\t:\x04\x39\x39\x39\x39\x12\r\n\x05\x46ield\x18\x05 \x01(\t\x12\x0f\n\x04\x62\x61nd\x18\x04 \x01(\x05:\x01\x31\x12 \n\x11scientific_format\x18\x06 \x01(\x08:\x05\x66\x61lse\"\xa4\x08\n\nExport_INT\x12\r\n\x05Input\x18\x01 \x02(\t\x12\x13\n\x0b\x46ormat_File\x18\x02 \x01(\t\x12.\n\nFormat_Out\x18\x1e \x03(\x0b\x32\x1a.intrepid.ReportFormat_INT\x12\x0e\n\x06Output\x18\x03 \x02(\t\x12#\n\nReportFile\x18  \x01(\t:\x0f\x65xport_data.rpt\x12.\n\x06\x46ormat\x18\x04 \x02(\x0e\x32\x1e.intrepid.GeophysicsFormatType\x12\x41\n\x14\x43oordinateSystemType\x18\x05 \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12\x30\n\x0c\x41sciiColumns\x18\x06 \x01(\x0b\x32\x1a.intrepid.AsciiColumns_INT\x12,\n\nAsciiImage\x18\x07 \x01(\x0b\x32\x18.intrepid.AsciiImage_INT\x12.\n\x0b\x42inaryImage\x18\x08 \x01(\x0b\x32\x19.intrepid.BinaryImage_INT\x12,\n\nEncomImage\x18\t \x01(\x0b\x32\x18.intrepid.EncomImage_INT\x12(\n\x08ZmapGrid\x18\n \x01(\x0b\x32\x16.intrepid.ZmapGrid_INT\x12,\n\nAGSO_ARGUS\x18\x0b \x01(\x0b\x32\x18.intrepid.AGSO_ARGUS_INT\x12&\n\x07Picodas\x18\x0c \x01(\x0b\x32\x15.intrepid.Picodas_INT\x12 \n\x04SEGY\x18\x0e \x01(\x0b\x32\x12.intrepid.SEGY_INT\x12(\n\x08VoxelGEO\x18\x0f \x01(\x0b\x32\x16.intrepid.VOXELGEO_INT\x12)\n\x08\x41rcShape\x18\x10 \x01(\x0b\x32\x17.intrepid.ARC_SHAPE_INT\x12&\n\x07MapInfo\x18\x11 \x01(\x0b\x32\x15.intrepid.MAPINFO_INT\x12,\n\nNetCDFGrid\x18\x13 \x01(\x0b\x32\x18.intrepid.NetCDFGrid_INT\x12\x1b\n\x13\x43olourTable_GeoTiff\x18\x12 \x01(\t\x12\x0f\n\x07\x43olumns\x18\x14 \x03(\t\x12\r\n\x05Lines\x18\x15 \x03(\t\x12\x16\n\x08UseNulls\x18\x17 \x01(\x08:\x04true\x12\x17\n\tNullValue\x18\x18 \x01(\t:\x04null\x12\x15\n\tStartLine\x18\x19 \x01(\x01:\x02-1\x12\x13\n\x07\x45ndLine\x18\x1a \x01(\x01:\x02-1\x12\x1a\n\x0fOutputGridWidth\x18\x1b \x01(\x01:\x01\x38\x12\x1d\n\x12OutputGridDecimals\x18\x1c \x01(\x01:\x01\x32\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06\x65xport\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06\x65xport\"\xf9\x06\n\x19\x44\x61taBase_Manipulation_INT\x12\r\n\x05Input\x18\x01 \x01(\t\x12\x11\n\tReference\x18( \x01(\t\x12\x0e\n\x06Output\x18\x02 \x01(\t\x12\x11\n\tInputList\x18\x03 \x03(\t\x12\'\n\x06\x41\x63tion\x18\x04 \x01(\x0e\x32\x17.intrepid.DB_Operations\x12\x0e\n\x06\x46ields\x18\x1e \x03(\t\x12\x1a\n\x0fMax_Frequencies\x18\x1f \x01(\x05:\x01\x31\x12\x37\n\x11\x63ommand_line_args\x18\x05 \x01(\x0e\x32\x1c.intrepid.Command_Operations\x12\x0e\n\x06Script\x18\x14 \x01(\t\x12\x0c\n\x04\x41rgs\x18\x15 \x01(\t\x12\x14\n\x05Pause\x18\x16 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x0e\x46romLineNumber\x18\n \x01(\t\x12\x14\n\x0c\x46romFiducial\x18\x0b \x01(\t\x12\x12\n\nFromJulian\x18\x11 \x01(\t\x12\x14\n\x0cToLineNumber\x18\x0c \x01(\t\x12\x12\n\nToFiducial\x18\r \x01(\t\x12\x10\n\x08ToJulian\x18\x12 \x01(\t\x12\x16\n\x0eMergeFromField\x18\x0e \x03(\t\x12\x14\n\x0cMergeToField\x18\x0f \x03(\t\x12\x14\n\tFidFactor\x18\x10 \x01(\x01:\x01\x31\x12\x11\n\tPrecision\x18\x32 \x01(\x01\x12\x17\n\x0f\x44uplicateFields\x18\x33 \x03(\t\x12)\n\nAlias_Code\x18> \x01(\x0e\x32\x0f.ctm.FieldAlias:\x04\x46\x41_X\x12\x14\n\x0c\x41lias_String\x18? \x01(\t\x12\x0f\n\x07myField\x18< \x01(\t\x12\x0f\n\x07myAlias\x18= \x01(\t\x12\x16\n\x0eIncludedFields\x18@ \x03(\t\x12&\n\rField_Aliases\x18\x41 \x03(\x0e\x32\x0f.ctm.FieldAlias\x12\'\n\x08Location\x18\x46 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x0f\n\x07Keyword\x18P \x01(\t\x12\r\n\x05\x42lock\x18Q \x01(\t\x12\r\n\x05Value\x18R \x01(\t\x12,\n\nReportFile\x18\xb6\x07 \x01(\t:\x17\x66manager_processing.rpt\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08\x66manager\x12\x1d\n\x0bGUIToolName\x18\x64 \x01(\t:\x08\x66manager\"\xb5\x01\n\x0e\x45\x64it_Delta_INT\x12,\n\x08\x45\x64itType\x18\x03 \x01(\x0e\x32\x1a.intrepid.PlanViewEditType\x12\x13\n\x0bLine_to_Cut\x18\x01 \x01(\x11\x12\x14\n\x0c\x43utFromPoint\x18\x02 \x01(\x11\x12\x14\n\x0cLine_to_Null\x18\x05 \x01(\x11\x12\x1a\n\x12\x46iducialStartPoint\x18\x06 \x01(\x11\x12\x18\n\x10\x46iducialEndPoint\x18\x07 \x01(\x11\"\xdc\x07\n\x13SurveyPlan_Edit_INT\x12\x0f\n\x07Input_X\x18\x01 \x01(\t\x12\x0f\n\x07Input_Y\x18\x02 \x01(\t\x12\x14\n\x0cInput_Signal\x18\x03 \x01(\t\x12\x11\n\tInput_Fid\x18\x04 \x01(\t\x12\x12\n\nInput_Line\x18\x06 \x01(\t\x12\x10\n\x08Output_X\x18\n \x01(\t\x12\x10\n\x08Output_Y\x18\x0b \x01(\t\x12\x1e\n\x16Output_ValidationField\x18\x0c \x01(\t\x12\x18\n\tShowALine\x18\x16 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x0fHighlightedLine\x18\x17 \x01(\x11\x12\x1e\n\x0fHasSignalColour\x18\x18 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eShowValidation\x18\x1b \x01(\x08:\x05\x66\x61lse\x12\x19\n\nOutOfRange\x18\x1c \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x12OutOfRangeDistance\x18\x1d \x01(\x01:\x03\x31\x30\x30\x12\x15\n\rOutOfRangeMin\x18\x1e \x01(\x01\x12\x15\n\rOutOfRangeMax\x18\x1f \x01(\x01\x12\x14\n\x05Nulls\x18& \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rOutOfSequence\x18\' \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08Gradient\x18( \x01(\x08:\x05\x66\x61lse\x12\"\n\x14GradientOverDistance\x18) \x01(\x01:\x04\x35\x30\x30\x30\x12\x18\n\x0bGradientMax\x18* \x01(\x01:\x03\x31\x30\x30\x12\x18\n\tDirection\x18\x32 \x01(\x08:\x05\x66\x61lse\x12!\n\x15\x44irectionMaxDeviation\x18\x33 \x01(\x01:\x02\x35\x30\x12#\n\x15\x44irectionOverDistance\x18\x34 \x01(\x01:\x04\x35\x30\x30\x30\x12\x1d\n\x0eShowLineLabels\x18> \x01(\x08:\x05\x66\x61lse\x12 \n\x11ShowLineDirection\x18? \x01(\x08:\x05\x66\x61lse\x12%\n\x16ShowSignalNoiseProfile\x18@ \x01(\x08:\x05\x66\x61lse\x12\x15\n\nWaveLength\x18\x45 \x01(\x01:\x01\x35\x12\x14\n\tTolerance\x18\x42 \x01(\x01:\x01\x30\x12\x1f\n\x13SignalVerticalScale\x18\x41 \x01(\x01:\x02\x35\x30\x12\x1d\n\x12SignalVerticalBase\x18\x43 \x01(\x01:\x01\x30\x12+\n\tEditDelta\x18< \x03(\x0b\x32\x18.intrepid.Edit_Delta_INT\x12\x1d\n\nReportFile\x18_ \x01(\t:\tfedit.rpt\x12\x1c\n\rBatchToolName\x18\x63 \x01(\t:\x05\x66\x65\x64it\x12\x1a\n\x0bGUIToolName\x18\x64 \x01(\t:\x05\x66\x65\x64it\"\x82\x02\n\x0bSignalTrace\x12\x10\n\x08SignalIn\x18\x01 \x01(\t\x12\x11\n\tSignalOut\x18\x02 \x01(\t\x12\x32\n\x04Type\x18\x03 \x01(\x0e\x32\x18.intrepid.NoiseTypes_INT:\nNoise_None\x12\x1e\n\x13SignalVerticalScale\x18\x05 \x01(\x01:\x01\x31\x12\x1d\n\x12SignalVerticalBase\x18\x06 \x01(\x01:\x01\x30\x12/\n\nParameters\x18\x14 \x01(\x0b\x32\x1b.intrepid.Input_Filters_INT\x12*\n\tEditDelta\x18\x12 \x03(\x0b\x32\x17.intrepid.Data_Replacer\"\xbe\x03\n\x11ProfileEditor_INT\x12*\n\x0bSignalField\x18\x01 \x03(\x0b\x32\x15.intrepid.SignalTrace\x12 \n\x15SignalHorizontalScale\x18\n \x01(\x01:\x01\x31\x12\x1f\n\x10ShowVerticalAxis\x18\x0b \x01(\x08:\x05\x66\x61lse\x12!\n\x12ShowHorizontalAxis\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x19\n\nShowPoints\x18\r \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bSuperimpose\x18\x0e \x01(\x08:\x05\x66\x61lse\x12\x34\n\x08\x45\x64itType\x18\x0f \x01(\x0e\x32\x17.intrepid.EditTypes_INT:\tEdit_None\x12\x1d\n\x0fImposeAutoScale\x18\x10 \x01(\x08:\x04true\x12\x32\n\nSearchType\x18\x11 \x01(\x0e\x32\x16.intrepid.SearchTypePE:\x06S_Find\x12\x1d\n\nReportFile\x18_ \x01(\t:\tpedit.rpt\x12\x1c\n\rBatchToolName\x18\x63 \x01(\t:\x05pedit\x12\x1a\n\x0bGUIToolName\x18\x64 \x01(\t:\x05pedit\"\xe1\x02\n\x11\x43lipLine_Edit_INT\x12\x11\n\tInputFile\x18\x01 \x01(\t\x12\t\n\x01X\x18\x02 \x01(\t\x12\t\n\x01Y\x18\x03 \x01(\t\x12\x10\n\x08LineType\x18\x04 \x01(\t\x12\x0f\n\x07Quality\x18\x05 \x01(\t\x12\x0c\n\x04Xout\x18\x06 \x01(\t\x12\x0c\n\x04Yout\x18\x07 \x01(\t\x12\x16\n\x0eKillCountField\x18\x08 \x01(\t\x12\x1d\n\x11MinimumSeparation\x18\n \x01(\x01:\x02\x31\x30\x12\x1c\n\x11MaximumSeparation\x18\x0b \x01(\x01:\x01\x30\x12!\n\x14MinimumSegmentLength\x18\x0c \x01(\x01:\x03\x31\x30\x30\x12+\n\nReportFile\x18_ \x01(\t:\x17\x43lipLine_processing.rpt\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08\x63lipline\x12\x1e\n\x0bGUIToolName\x18\x64 \x01(\t:\tjclipline\"\xe0\x04\n\x13SpreadSheet_Actions\x12\x30\n\x04Type\x18\x01 \x02(\x0e\x32\x17.intrepid.OperationType:\tOpenField\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x0e\n\x04Save\x18\x03 \x01(\t:\x00\x12#\n\x05\x44type\x18\x04 \x01(\x0e\x32\r.ctm.DataType:\x05\x44T_R4\x12\x11\n\x05Width\x18\x05 \x01(\x05:\x02\x31\x30\x12\x16\n\x07GroupBy\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x11\n\x07Initial\x18\x07 \x01(\t:\x00\x12\x10\n\x05\x42\x61nds\x18\x08 \x01(\x05:\x01\x31\x12\x41\n\x14\x43oordinateSystemType\x18\t \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12\x1e\n\x0f\x43reateByFormula\x18\x15 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x0cMathsFormula\x18\x16 \x01(\t:\x00\x12\x15\n\x0bIfCondition\x18\n \x01(\t:\x00\x12\x14\n\nThenAction\x18\x0b \x01(\t:\x00\x12\x14\n\nElseAction\x18\x0c \x01(\t:\x00\x12\x15\n\tFromGroup\x18\r \x01(\x05:\x02-1\x12\x14\n\x08\x46romSamp\x18\x0e \x01(\x05:\x02-1\x12\x13\n\x07ToGroup\x18\x0f \x01(\x05:\x02-1\x12\x12\n\x06ToSamp\x18\x10 \x01(\x05:\x02-1\x12\x12\n\x08\x44\x65leteIf\x18\x11 \x01(\t:\x00\x12\x32\n\x0c\x64\x65leteAction\x18\x12 \x01(\x0e\x32\x16.intrepid.DeleteAction:\x04Rows\x12\x16\n\x0cSplitGroupIf\x18\x13 \x01(\t:\x00\x12\x10\n\x08SortKeys\x18\x14 \x03(\t\"\xa7\x01\n\x0fSpreadSheet_INT\x12-\n\x06\x41\x63tion\x18\x01 \x03(\x0b\x32\x1d.intrepid.SpreadSheet_Actions\x12)\n\nReportFile\x18\x46 \x01(\t:\x15\x64\x62\x65\x64it_processing.rpt\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06\x64\x62\x65\x64it\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06\x64\x62\x65\x64it\"\xdc\x06\n\x15\x44\x61taset_Resampler_INT\x12\x1c\n\x14ReferenceGridDataset\x18\x01 \x01(\t\x12\x1c\n\x14ReferenceLineDataset\x18\x02 \x01(\t\x12\x1d\n\x15ReferencePointDataset\x18\x03 \x01(\t\x12\x1c\n\x14ReferenceSignalField\x18\x17 \x01(\t\x12\x1a\n\x12ProfilePathDataset\x18\x04 \x01(\t\x12\x1d\n\x15OutputProfilesDataset\x18\x0e \x01(\t\x12#\n\x1bOutputExtractedDatasetField\x18\x05 \x01(\t\x12\x36\n\x07RunType\x18\x06 \x02(\x0e\x32\x14.intrepid.DRRunTypes:\x0f\x45xtract_Profile\x12\x34\n\nTraceLayer\x18\x16 \x02(\x0e\x32\x16.intrepid.DRTraceLayer:\x08TL_TABLE\x12\x1b\n\rCorridorWidth\x18\x07 \x01(\x01:\x04\x31\x30\x30\x30\x12\x1e\n\x10SamplingInterval\x18\x08 \x01(\x01:\x04\x31\x30\x30\x30\x12\x16\n\x0b\x43urrentBand\x18\t \x01(\x05:\x01\x30\x12\x18\n\rNumberOfBands\x18\n \x01(\x05:\x01\x31\x12!\n\x0bProfileEnds\x18\x0b \x03(\x0b\x32\x0c.ctm.Point2d\x12\x13\n\x08Origin_X\x18\x0c \x01(\x01:\x01\x30\x12\x13\n\x08Origin_Y\x18\r \x01(\x01:\x01\x30\x12\x18\n\rLines_Azmiuth\x18\x0f \x01(\x01:\x01\x30\x12\x1f\n\x12TraverseSeparation\x18\x10 \x01(\x01:\x03\x32\x30\x30\x12\x1c\n\x11TraverseExtension\x18\x11 \x01(\x01:\x01\x30\x12\x17\n\x0bTraverseNum\x18\x12 \x01(\x05:\x02\x31\x30\x12\x1b\n\rTieSeparation\x18\x13 \x01(\x01:\x04\x31\x30\x30\x30\x12\x17\n\x0cTieExtension\x18\x14 \x01(\x01:\x01\x30\x12\x11\n\x06TieNum\x18\x15 \x01(\x05:\x01\x34\x12\x33\n\nReportFile\x18\x46 \x01(\t:\x1f\x64\x61tset_resampler_processing.rpt\x12(\n\rBatchToolName\x18\x63 \x01(\t:\x11\x64\x61taset_resampler\x12&\n\x0bGUIToolName\x18\x64 \x01(\t:\x11\x64\x61taset_resampler\"\xca\x04\n\x12SurveyDistance_INT\x12\x10\n\x08\x44\x61taBase\x18\x01 \x02(\t\x12\x1a\n\x0bSelectLines\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0ePlotFlightPath\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x08\x41\x63\x63urate\x18\x04 \x01(\x08:\x04true\x12 \n\x11ShowLineDirection\x18\x0e \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fShowLineNumbers\x18\x0f \x01(\x08:\x05\x66\x61lse\x12\x13\n\x08\x41ltitude\x18\x05 \x01(\x01:\x01\x30\x12\x1a\n\x0fMinSurveyNumber\x18\x06 \x01(\x05:\x01\x30\x12\x1f\n\x0fMaxSurveyNumber\x18\x07 \x01(\x05:\x06\x39\x39\x39\x39\x39\x39\x12\x1a\n\x0fMinFlightNumber\x18\x08 \x01(\x05:\x01\x30\x12\x1f\n\x0fMaxFlightNumber\x18\t \x01(\x05:\x06\x39\x39\x39\x39\x39\x39\x12\x15\n\rMinLineNumber\x18\n \x01(\t\x12\x15\n\rMaxLineNumber\x18\x0b \x01(\t\x12\x1d\n\x0f\x41llowPseudoFids\x18\x0c \x01(\x08:\x04true\x12\'\n\x18Gather_HeadingStatistics\x18\x1a \x01(\x08:\x05\x66\x61lse\x12$\n\x0bSignalField\x18\x18 \x01(\t:\x0fmag_tieLevelled\x12(\n\nReportFile\x18\x46 \x01(\t:\x14survey_distances.rpt\x12\x1c\n\rBatchToolName\x18\x63 \x01(\t:\x05sdist\x12\x1a\n\x0bGUIToolName\x18\x64 \x01(\t:\x05sdist\"\xc1\x05\n\x12\x43lusterControl_INT\x12\x42\n\x10\x43lusterAlgorithm\x18\x01 \x01(\x0e\x32\x1b.intrepid.Cluster_Algorithm:\x0b\x41nisotropic\x12\x18\n\x0bPerDistance\x18\x02 \x01(\x01:\x03\x39\x30\x30\x12\x30\n$MaximumSeparationClusterToFirstPoint\x18\x03 \x01(\x01:\x02\x35\x30\x12(\n\x1b\x46\x61\x63tor_MaxRadius_Confidence\x18\x04 \x01(\x01:\x03\x31.2\x12 \n\x15Minimum_Number_Points\x18\x05 \x01(\x05:\x01\x35\x12\x1f\n\x14Location_Uncertainty\x18\x06 \x01(\x01:\x01\x31\x12$\n\x17Maximum_Recursion_Steps\x18\x07 \x01(\x05:\x03\x35\x30\x30\x12-\n!Frequency_Cluster_Forming_Reports\x18\x08 \x01(\x05:\x02\x31\x31\x12-\n\x1fPost_recursion_filtering_checks\x18\t \x01(\x08:\x04true\x12(\n\x1a\x43ull_cluster_uncertainties\x18\n \x01(\x08:\x04true\x12!\n\x13Restrict_Plate_Dips\x18\x0b \x01(\x08:\x04true\x12\x1b\n\x0fMaximumDipRange\x18\x0c \x01(\x05:\x02\x32\x30\x12M\n\x0c\x43lusterLevel\x18G \x01(\x0e\x32*.intrepid.ClusterControl_INT.Cluster_Level:\x0bsecondStage\x12 \n\x11TreatAsConvexHull\x18\r \x01(\x08:\x05\x66\x61lse\"O\n\rCluster_Level\x12\r\n\tzeroStage\x10\x00\x12\x0e\n\nfirstStage\x10\x01\x12\x0f\n\x0bsecondStage\x10\x02\x12\x0e\n\nthirdStage\x10\x03\"\x93\x05\n\rView3D_Points\x12\x1c\n\x0eshow_3D_viewer\x18\x01 \x01(\x08:\x04true\x12\x1b\n\x0cproject_zmin\x18\x03 \x01(\x01:\x05-3000\x12\x19\n\x0cproject_zmax\x18\x04 \x01(\x01:\x03\x35\x30\x30\x12\"\n\x14show_original_points\x18\x05 \x01(\x08:\x04true\x12 \n\x12show_cluster_shape\x18\x06 \x01(\x08:\x04true\x12\'\n\x19show_original_signal_grid\x18\x08 \x01(\x08:\x04true\x12\x1b\n\rshow_DTM_grid\x18\t \x01(\x08:\x04true\x12)\n\x1ashow_Cluster_FormingStages\x18\n \x01(\x08:\x05\x66\x61lse\x12%\n\x16show_dip_calc_profiles\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\'\n\x18show_interface_foliation\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x33\n$show_average_2DStructureEigenvectors\x18\r \x01(\x08:\x05\x66\x61lse\x12&\n\x17write_vtk_clusterPoints\x18\x0e \x01(\x08:\x05\x66\x61lse\x12*\n\x15vtk_clusterPointsFile\x18\x0f \x01(\t:\x0b\x63luster.vtp\x12\x19\n\x0evertical_scale\x18\x10 \x01(\x01:\x01\x31\x12)\n\x1bshow_ImplicitFunction_Fault\x18\x11 \x01(\x08:\x04true\x12)\n\x1ashow_ImplicitFunction_Tilt\x18\x13 \x01(\x08:\x05\x66\x61lse\x12+\n\x1dMinimum_Fault_Vertical_Extent\x18\x12 \x01(\x01:\x04\x31\x30\x30\x30\"\xa8\x04\n\x10\x46TG_Fault3D_Calc\x12,\n\rInputGridName\x18\x01 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12$\n\x05\x64rape\x18\x04 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12-\n\x1f\x64isallow_poor_low_dip_estimates\x18\n \x01(\x08:\x04true\x12$\n\x18\x64\x65\x66\x61ult_low_dip_estimate\x18\x0b \x01(\x05:\x02\x34\x30\x12\x31\n\x05Units\x18( \x01(\x0e\x32\x17.intrepid.Gravity_Units:\tMILLIGALS\x12\x1c\n\rdump_dip_logs\x18) \x01(\x08:\x05\x66\x61lse\x12 \n\x10\x43ontact_Profiles\x18+ \x01(\t:\x06output\x12\x1b\n\x10Tyy_minimum_test\x18/ \x01(\x01:\x01\x32\x12\x33\n\'minimum_Total_Vertical_Plane_Derivative\x18\x30 \x01(\x01:\x02\x31\x30\x12 \n\x14Minimum_2D_Responses\x18\x31 \x01(\x05:\x02\x31\x31\x12)\n\x1b\x43orrect_For_FaultBlock_Tilt\x18\x32 \x01(\x08:\x04true\x12\x36\n\'capture_gravity_profiles_from_dip_calcs\x18< \x01(\x08:\x05\x66\x61lse\x12!\n\x12Trim_Faults_to_DTM\x18= \x01(\x08:\x05\x66\x61lse\"\xd7\x05\n\x13\x43lusterAnalysis_INT\x12\x10\n\x08\x44\x61taBase\x18\x01 \x02(\t\x12\x15\n\rOutputCluster\x18\x02 \x02(\t\x12,\n\rInputGridName\x18\x03 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12\x30\n\x11\x45levationGridName\x18\x04 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12<\n\x0b\x43lusterType\x18\x05 \x01(\x0e\x32\x1c.intrepid.ClusterDatasetType:\tGeneric3D\x12-\n\x07\x43luster\x18\x08 \x01(\x0b\x32\x1c.intrepid.ClusterControl_INT\x12%\n\x04view\x18\n \x01(\x0b\x32\x17.intrepid.View3D_Points\x12)\n\nProjection\x18\x0b \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x33\n\x0e\x44istance_Units\x18\r \x01(\x0e\x32\x13.ctm.Distance_Units:\x06meters\x12\x46\n\x19\x45levationCoordinateSystem\x18\x0e \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45NU\x12)\n\x06Subset\x18\x1e \x01(\x0b\x32\x19.intrepid.grid_subset_INT\x12.\n\ntensor_dip\x18# \x01(\x0b\x32\x1a.intrepid.FTG_Fault3D_Calc\x12\x13\n\x05\x64oLog\x18( \x01(\x08:\x04true\x12\x1f\n\x10Generated_By_GUI\x18\x32 \x01(\x08:\x05\x66\x61lse\x12&\n\nReportFile\x18) \x01(\t:\x12\x63luster_points.rpt\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07\x63luster\x12\"\n\x0bGUIToolName\x18\x64 \x01(\t:\rclusterAppGUI\"\xd9\t\n\x10\x43onvolveGrid_INT\x12\r\n\x05Input\x18\x01 \x02(\t\x12\x0e\n\x06Output\x18\x03 \x02(\t\x12:\n\x04Type\x18\x04 \x01(\x0e\x32\x1c.intrepid.ConvolveFilterType:\x0e\x43onvolveKernel\x12@\n\rTensor_Option\x18\x05 \x01(\x0e\x32%.intrepid.TensorGridConvolveFiltering:\x02QC\x12+\n\x04norm\x18\x02 \x01(\x0e\x32\x18.intrepid.TensorNormCase:\x03one\x12\x12\n\nKernelName\x18\x06 \x01(\t\x12\x17\n\x08Residual\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10NormaliseWeights\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x43hopWeights\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bNullWeights\x18\n \x01(\x08:\x05\x66\x61lse\x12\x39\n\x0eOutputDataType\x18\x0b \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12\x13\n\x0b\x44\x65scription\x18\x14 \x01(\t\x12\x33\n\nKernelType\x18\x15 \x01(\x0e\x32\x1f.intrepid.ConvolveAlgorithmType\x12\x0f\n\x04Rows\x18\x16 \x01(\x05:\x01\x33\x12\x12\n\x07\x43olumns\x18\x17 \x01(\x05:\x01\x33\x12\x16\n\x0bScaleFactor\x18\x19 \x01(\x05:\x01\x30\x12\x0f\n\x07Weights\x18\x1a \x03(\x01\x12\x12\n\x06Window\x18\x1b \x01(\x05:\x02\x32\x31\x12\x15\n\nCNORM_Mean\x18\x1c \x01(\x01:\x01\x30\x12\x19\n\x0c\x43NORM_StdDev\x18\x1d \x01(\x01:\x03\x31\x30\x30\x12\x16\n\x0b\x43NORM_Alpha\x18\x1e \x01(\x01:\x01\x31\x12\x1c\n\rCNORM_MaxGain\x18\x1f \x01(\x01:\x05\x31\x30\x30\x30\x30\x12\x1e\n\x12Terrace_Iterations\x18  \x01(\x05:\x02\x39\x30\x12(\n\x1cTerrace_Percentage_Flattened\x18! \x01(\x05:\x02\x39\x35\x12!\n\x16Terrace_Minimum_Change\x18\" \x01(\x01:\x01\x32\x12\x1b\n\x10Tyy_minimum_test\x18/ \x01(\x01:\x01\x32\x12\x33\n\'minimum_Total_Vertical_Plane_Derivative\x18\x30 \x01(\x01:\x02\x31\x30\x12 \n\x14Minimum_2D_Responses\x18\x31 \x01(\x05:\x02\x31\x30\x12\x41\n\x14\x43oordinateSystemType\x18. \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12\x1a\n\x0f\x44\x65rivativeOrder\x18\x32 \x01(\x05:\x01\x33\x12\x15\n\nKernelSize\x18\x33 \x01(\x05:\x01\x33\x12\x1d\n\x12\x43ontinuationFactor\x18\x34 \x01(\x01:\x01\x31\x12\x18\n\tHilbert1D\x18\x35 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10Generated_By_GUI\x18\x45 \x01(\x08:\x05\x66\x61lse\x12*\n\nReportFile\x18\x46 \x01(\t:\x16\x63\x66ilter_processing.rpt\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07\x63\x66ilter\x12)\n\x0bGUIToolName\x18\x64 \x01(\t:\x14\x63onvolveFilterAppGUI\"\x89\x01\n\x17Marine_Filter_Parameter\x12<\n\nFilterType\x18\x01 \x01(\x0e\x32\x1c.intrepid.Marine_Filter_Type:\nFULLER_FIR\x12\x18\n\x0b\x46ilterWidth\x18\x02 \x01(\x05:\x03\x31\x32\x30\x12\x16\n\x0b\x46ilterSteps\x18\x03 \x01(\x05:\x01\x36\":\n\x0fSelection_Range\x12\x0c\n\x04\x46rom\x18\x01 \x01(\x01\x12\n\n\x02To\x18\x02 \x01(\x01\x12\r\n\x05Value\x18\x03 \x01(\x01\"\xa9\x03\n\rData_Replacer\x12\x0f\n\x07\x44\x61taSet\x18\x01 \x01(\t\x12\x11\n\tDataField\x18\x02 \x01(\t\x12\r\n\x05Group\x18\x03 \x01(\x05\x12\x0b\n\x03Row\x18\x04 \x01(\x05\x12\r\n\x05Value\x18\x11 \x01(\x01\x12(\n\x05Range\x18\x05 \x03(\x0b\x32\x19.intrepid.Selection_Range\x12\x38\n\x0cPE_selection\x18\x10 \x01(\x0e\x32\x17.intrepid.EditTypes_INT:\tEdit_None\x12\x43\n\tSelection\x18\t \x01(\x0e\x32 .intrepid.SelectionOperation_INT:\x0eSelection_None\x12\x16\n\x0b\x41\x64\x64\x43onstant\x18\n \x01(\x01:\x01\x30\x12\x17\n\x0c\x41\x64\x64SlopeLeft\x18\x0b \x01(\x01:\x01\x30\x12\x18\n\rAddSlopeRight\x18\x0c \x01(\x01:\x01\x30\x12\x1a\n\x0f\x41\x64\x64TriangleLeft\x18\r \x01(\x01:\x01\x30\x12\x1c\n\x11\x41\x64\x64TriangleMiddle\x18\x0e \x01(\x01:\x01\x30\x12\x1b\n\x10\x41\x64\x64TriangleRight\x18\x0f \x01(\x01:\x01\x30\"\x9b\x02\n\x1dGravity_Meter_Marine_Settings\x12\x1a\n\x0f\x42\x65\x61mScaleFactor\x18\x01 \x01(\x01:\x01\x31\x12\x11\n\x06\x41L_MON\x18\x02 \x01(\x01:\x01\x30\x12\x11\n\x06\x41X_MON\x18\x03 \x01(\x01:\x01\x30\x12\x12\n\x07\x41X2_MON\x18\x04 \x01(\x01:\x01\x30\x12\x12\n\x07VCC_MON\x18\x05 \x01(\x01:\x01\x30\x12\x11\n\x06VE_MON\x18\x06 \x01(\x01:\x01\x30\x12\x13\n\x08XACC_MON\x18\x07 \x01(\x01:\x01\x30\x12\x14\n\tXACC2_MON\x18\x08 \x01(\x01:\x01\x30\x12\x13\n\x08LACC_MON\x18\t \x01(\x01:\x01\x30\x12\x14\n\tLACC2_MON\x18\n \x01(\x01:\x01\x30\x12\'\n\x1cManufacturerGravityReference\x18\x0b \x01(\x01:\x01\x30\"\xd8\x01\n\x14Gravity_Meter_Config\x12\x11\n\tMeterName\x18\x01 \x02(\t\x12\x16\n\x0bScaleFactor\x18\x02 \x01(\x01:\x01\x31\x12\x16\n\x0e\x43ounterReading\x18\x03 \x03(\x01\x12\x1f\n\x17\x43onvertedCounterReading\x18\x04 \x03(\x01\x12\x1b\n\x13IntervalScaleFactor\x18\x05 \x03(\x01\x12?\n\x0eMarineSettings\x18\x06 \x01(\x0b\x32\'.intrepid.Gravity_Meter_Marine_Settings\"L\n\x13Gravity_Meter_Table\x12\x35\n\rGravity_Meter\x18\x01 \x03(\x0b\x32\x1e.intrepid.Gravity_Meter_Config\"\xc3\x02\n\x1b\x44\x65nsity_Material_Properties\x12\x1a\n\x0c\x44\x65nsity_Land\x18\x01 \x01(\x01:\x04\x32.67\x12$\n\x17\x44\x65nsity_Marine_Sediment\x18\x02 \x01(\x01:\x03\x32.2\x12\x1e\n\x13\x44\x65nsity_Fresh_Water\x18\x03 \x01(\x01:\x01\x31\x12!\n\x12\x44\x65nsity_Salt_Water\x18\x04 \x01(\x01:\x05\x31.027\x12\x1a\n\x0b\x44\x65nsity_Ice\x18\x05 \x01(\x01:\x05\x30.917\x12)\n\x1b\x44\x65nsity_LandMinusFreshWater\x18\x06 \x01(\x01:\x04\x31.67\x12\x33\n$Density_MarineSedimentMinusSaltWater\x18\x07 \x01(\x01:\x05\x31.173\x12#\n\x14\x44\x65nsity_LandMinusIce\x18\x08 \x01(\x01:\x05\x31.763\"\xce\x0c\n\x16Terrain_Correction_INT\x12\x10\n\x08InputDTM\x18\x01 \x01(\t\x12\x0f\n\x07InputDB\x18\x02 \x01(\t\x12\x0e\n\x06InputX\x18\x03 \x01(\t\x12\x0e\n\x06InputY\x18\x04 \x01(\t\x12\x14\n\x0cInputGravity\x18\x05 \x01(\t\x12\x1c\n\x14InputGroundElevation\x18\x06 \x01(\t\x12\x1e\n\x16InputAircraftElevation\x18\x07 \x01(\t\x12\x13\n\x0bInputNValue\x18\x08 \x01(\t\x12\x18\n\x10InputGravityGrid\x18\t \x01(\t\x12\x1d\n\x15InputDrapeSurfaceGrid\x18\n \x01(\t\x12\x17\n\x0fInputNValueGrid\x18\x0b \x01(\t\x12\x1c\n\x14InputMaterialDensity\x18\x0c \x01(\t\x12\x42\n\tDTMMethod\x18\r \x01(\x0e\x32\x1e.intrepid.SignalResampleMethod:\x0fInverseDistance\x12\x1f\n\x17OutputTerrainCorrection\x18\x0f \x01(\t\x12\x1e\n\x16OutputCorrectedGravity\x18\x10 \x01(\t\x12\x12\n\nReportFile\x18\x11 \x01(\t\x12\x34\n\x0cGravityDatum\x18\x14 \x01(\x0e\x32\x17.intrepid.Gravity_Datum:\x05WGS84\x12\x38\n\x0cGravityUnits\x18\x15 \x01(\x0e\x32\x17.intrepid.Gravity_Units:\tMILLIGALS\x12S\n\x1dGravityAcquisitionEnvironment\x18\x16 \x01(\x0e\x32\x1e.intrepid.Gravity_Terrain_Case:\x0cLAND_SURFACE\x12\x41\n\x14\x43oordinateSystemType\x18\x17 \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12>\n\x0fMaterialDensity\x18\x18 \x01(\x0b\x32%.intrepid.Density_Material_Properties\x12\'\n\x19\x44oScalarTerrainCorrection\x18\x19 \x01(\x08:\x04true\x12(\n\x19\x44oTensorTerrainCorrection\x18\x1a \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x14\x42ottom_RL_For_Tensor\x18\x1b \x01(\x01:\x01\x30\x12.\n UseDTM_Elevations_At_Observation\x18\x1c \x01(\x08:\x04true\x12!\n\x13UseSlopingTopPrisms\x18\x1d \x01(\x08:\x04true\x12\x1a\n\x0fSub_Sample_Rate\x18\x1e \x01(\x05:\x01\x31\x12\x1b\n\x0cUseEllipsoid\x18\x1f \x01(\x08:\x05\x66\x61lse\x12\x16\n\x0bNumber_CPUs\x18  \x01(\x05:\x01\x31\x12\x39\n\talgorithm\x18( \x01(\x0e\x32&.intrepid.Terrain_Correction_Algorithm\x12\x14\n\tPrecision\x18\x32 \x01(\x01:\x01\x31\x12\x1d\n\x0e\x41\x64\x61ptToTerrain\x18\x33 \x01(\x08:\x05\x66\x61lse\x12\x11\n\tCell_Size\x18P \x01(\x01\x12\x16\n\x0bMax_Circles\x18Q \x01(\x05:\x01\x32\x12\x19\n\rRadius_Ring_1\x18R \x01(\x05:\x02\x31\x36\x12\x19\n\rRadius_Ring_2\x18S \x01(\x05:\x02\x33\x32\x12\x19\n\rRadius_Ring_3\x18T \x01(\x05:\x02\x36\x34\x12\x1a\n\rRadius_Ring_4\x18U \x01(\x05:\x03\x32\x35\x36\x12\x1b\n\rRadius_Ring_5\x18V \x01(\x05:\x04\x31\x30\x32\x34\x12(\n\x19\x41\x64\x64_Obs_Elevations_To_DTM\x18W \x01(\x08:\x05\x66\x61lse\x12+\n\x1cReport_Calculations_To_ASCII\x18X \x01(\x08:\x05\x66\x61lse\x12.\n LocalInverseDistanceInterpolator\x18Y \x01(\x08:\x04true\x12\x1f\n\x10\x44umpResampledDTM\x18n \x01(\x08:\x05\x66\x61lse\x12&\n\x17\x44umpCalculationSurfaces\x18o \x01(\x08:\x05\x66\x61lse\x12*\n\x1f\x44umpGridsforEveryNthObservation\x18p \x01(\x05:\x01\x30\"\xaa\x02\n\x17\x41\x62solute_ReferenceTieIn\x12\x18\n\x10\x46ixedStationName\x18\x01 \x01(\t\x12 \n\x18SurveyTieInStationNumber\x18\x02 \x01(\t\x12\x31\n\tDatumType\x18\x03 \x01(\x0e\x32\x17.intrepid.Gravity_Datum:\x05WGS84\x12\x1c\n\x14\x41\x62soluteGravityValue\x18\x04 \x01(\x01\x12\x10\n\x08\x43omments\x18\x05 \x01(\t\x12\x16\n\tPrecision\x18\x06 \x01(\x01:\x03\x30.1\x12\x1e\n\x08Location\x18\x07 \x01(\x0b\x32\x0c.ctm.Point3d\x12\x38\n\x0cGravityUnits\x18\x08 \x01(\x0e\x32\x17.intrepid.Gravity_Units:\tMILLIGALS\"\xc1\t\n#Land_Loop_Reduction_Principal_Facts\x12\x14\n\x0cInputCG5Data\x18\x01 \x01(\t\x12\x16\n\x0eInputFieldData\x18\x02 \x03(\t\x12\x14\n\x0cInputGPSData\x18\x03 \x01(\t\x12\x18\n\x10InputControlData\x18\x04 \x01(\t\x12\x32\n\x07\x43ontrol\x18\t \x03(\x0b\x32!.intrepid.Absolute_ReferenceTieIn\x12\x14\n\x0cLoopDataBase\x18\x05 \x01(\t\x12\x18\n\x10\x41\x62soluteDataBase\x18\x06 \x01(\t\x12\x15\n\rStationNumber\x18\x07 \x01(\t\x12\x14\n\x0cInputENVFile\x18\x08 \x01(\t\x12G\n\x12StationCoordSource\x18\n \x01(\x0e\x32\x1c.intrepid.StationCoordSource:\rEXTERNAL_FILE\x12;\n\x17MeterReading_Date_Style\x18\x0b \x01(\x0e\x32\x10.ctm.date_styles:\x08YYYYMMDD\x12\x1f\n\x13Max_Loop_Iterations\x18Z \x01(\x05:\x02\x32\x30\x12\x1d\n\x0fMax_Loop_Change\x18[ \x01(\x01:\x04\x30.01\x12\x1d\n\x0fSortNodesInTime\x18\\ \x01(\x08:\x04true\x12(\n\x19\x41llowCloseTimeNodeRepeats\x18] \x01(\x08:\x05\x66\x61lse\x12L\n\tDriftType\x18^ \x01(\x0e\x32#.intrepid.Gravity_Meter_Drift_Model:\x14Long_Term_Polynomial\x12$\n\x15IgnoreInternalRepeats\x18_ \x01(\x08:\x05\x66\x61lse\x12&\n\x17SkipEarthTideCorrection\x18` \x01(\x08:\x05\x66\x61lse\x12\x13\n\x0bIgnoreNodes\x18\x61 \x03(\t\x12\x14\n\x0cSurveyNumber\x18\x64 \x03(\x05\x12,\n\rGPSProjection\x18\x65 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12 \n\x15Meter_Vertical_Offset\x18g \x01(\x01:\x01\x30\x12\x17\n\x0cScale_Factor\x18h \x01(\x01:\x01\x31\x12)\n\x1eTimeTolerance_StackingReadings\x18i \x01(\x01:\x01\x32\x12\x1c\n\tTerritory\x18\x14 \x01(\t:\tAustralia\x12<\n\x0e\x44istance_Units\x18\x15 \x01(\x0e\x32\x13.ctm.Distance_Units:\x0f\x64\x65\x63imal_degrees\x12=\n\x0eVertical_Units\x18\x16 \x01(\x0e\x32\x13.ctm.Vertical_Units:\x10meters_elevation\x12\x1d\n\x10Repeat_Tolerance\x18= \x01(\x01:\x03\x30.2\x12\x18\n\x0cMaximum_Tare\x18> \x01(\x01:\x02\x32\x30\x12\x1d\n\x0eVerbose_Report\x18! \x01(\x08:\x05\x66\x61lse\x12\'\n\x18\x43omplete_DataBase_Fields\x18\" \x01(\x08:\x05\x66\x61lse\x12%\n\x17\x44o_Drift_Correction_CG6\x18# \x01(\x08:\x04true\"\xb9\x05\n\x1aTraditional_Marine_Gravity\x12\x13\n\x0bMeterNumber\x18\x01 \x01(\t\x12\x17\n\nGravityLag\x18\x02 \x01(\x01:\x03\x33\x30\x30\x12\x15\n\nUTC_Offset\x18\x03 \x01(\x01:\x01\x30\x12\x1e\n\x10MaximumCurvature\x18\x04 \x01(\x01:\x04\x30.05\x12\x15\n\rAbsoluteValue\x18\x05 \x03(\x01\x12\x12\n\nStillValue\x18\x06 \x03(\x01\x12\x15\n\rStillDateTime\x18\x07 \x03(\x01\x12\x1a\n\x0fSampling_Period\x18\x08 \x01(\x01:\x01\x31\x12\x1a\n\x0eMonitorRepeats\x18\t \x01(\x05:\x02\x31\x30\x12\x1e\n\x11\x43urvatureTimeStep\x18\n \x01(\x05:\x03\x32\x34\x30\x12\x1a\n\x0fNumber_Monitors\x18\x0b \x01(\x05:\x01\x37\x12\x1a\n\x0cIgnoreEotvos\x18\x0c \x01(\x08:\x04true\x12\"\n\x13IgnoreDecorrelation\x18\r \x01(\x08:\x05\x66\x61lse\x12\x45\n\x07Process\x18\x0e \x01(\x0e\x32\'.intrepid.Marine_Gravity_Selection_Type:\x0bPROCESS_ALL\x12\x15\n\rSelectedLines\x18\x10 \x03(\x01\x12;\n\x10\x46ilterParameters\x18\x11 \x01(\x0b\x32!.intrepid.Marine_Filter_Parameter\x12,\n\x0bReplaceData\x18\x12 \x03(\x0b\x32\x17.intrepid.Data_Replacer\x12\x1c\n\x14ReferenceLineDataset\x18\x14 \x01(\t\x12&\n\x17\x41ssignDesignLineNumbers\x18\x16 \x01(\x08:\x05\x66\x61lse\x12\x0f\n\x07xOrigin\x18\x1b \x01(\x01\x12\x0f\n\x07yOrigin\x18\x1c \x01(\x01\x12\x0f\n\x07\x62\x65\x61ring\x18\x1d \x01(\x01\"\x98\n\n\x0bGravity_INT\x12<\n\x07RunType\x18\x01 \x02(\x0e\x32 .intrepid.Gravity_Process_Option:\tAGSOField\x12\x17\n\x0fGravityDatabase\x18\x02 \x01(\t\x12\x41\n\x0bTerrainType\x18\x03 \x01(\x0e\x32\x1e.intrepid.Gravity_Terrain_Case:\x0cLAND_SURFACE\x12\x1a\n\x0bUseBullardB\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cUseEllipsoid\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x0bLineBearing\x18\x08 \x01(\t\x12\x0c\n\x04\x44\x61te\x18\n \x01(\t\x12\x11\n\tTimeOfDay\x18\x0b \x01(\t\x12\x17\n\x0fObservedGravity\x18\x0c \x01(\t\x12\x18\n\x10StationElevation\x18\r \x01(\t\x12\x16\n\x0eMeterElevation\x18\x0e \x01(\t\x12\x0f\n\x07N_Value\x18\x0f \x01(\t\x12\x16\n\x0e\x44igitalTerrain\x18\x10 \x01(\t\x12\x10\n\x08Latitude\x18\x11 \x01(\t\x12\x11\n\tLongitude\x18\x12 \x01(\t\x12\x15\n\rCraftVelocity\x18\x13 \x01(\t\x12@\n\tReduction\x18Z \x01(\x0b\x32-.intrepid.Land_Loop_Reduction_Principal_Facts\x12\x16\n\x0eMasterDatabase\x18\x14 \x01(\t\x12\x1c\n\x14ObservedGravityWGS84\x18\x16 \x01(\t\x12\x18\n\x10\x43orrectedGravity\x18\x17 \x01(\t\x12\x17\n\x0fReconstructedCC\x18\x18 \x01(\t\x12\x15\n\rTensorGravity\x18\x19 \x01(\t\x12\x0f\n\x07\x46reeAir\x18\x1a \x01(\t\x12\x15\n\rSimpleBouguer\x18\x1b \x01(\t\x12\x1a\n\x12TheoreticalGravity\x18\x1c \x01(\t\x12\x19\n\x11TerrainCorrection\x18\x1d \x01(\t\x12\x0e\n\x06\x45otvos\x18\x1e \x01(\t\x12\x11\n\tEarthTide\x18\x1f \x01(\t\x12\x1c\n\x14ReconstructedGravity\x18  \x01(\t\x12\x34\n\x06Marine\x18# \x01(\x0b\x32$.intrepid.Traditional_Marine_Gravity\x12\x31\n\x07Terrain\x18\x32 \x01(\x0b\x32 .intrepid.Terrain_Correction_INT\x12\x39\n\nProperties\x18< \x01(\x0b\x32%.intrepid.Density_Material_Properties\x12\x37\n\x0bOutputUnits\x18( \x01(\x0e\x32\x17.intrepid.Gravity_Units:\tMILLIGALS\x12\x31\n\tDatumType\x18) \x01(\x0e\x32\x17.intrepid.Gravity_Datum:\x05WGS84\x12\x1a\n\x0bOutputDatum\x18* \x01(\t:\x05WGS84\x12\x41\n\x14\x43oordinateSystemType\x18, \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12*\n\nReportFile\x18\x46 \x01(\t:\x16gravity_processing.rpt\x12\x1e\n\rBatchToolName\x18G \x01(\t:\x07gravity\x12\x1c\n\x0bGUIToolName\x18\x64 \x01(\t:\x07gravity\x12\x15\n\nSavedStage\x18H \x01(\x05:\x01\x30\"\x96\x01\n\rVector_Fields\x12\x0f\n\x07Input_X\x18\x02 \x01(\t\x12\x0f\n\x07Input_Y\x18\x03 \x01(\t\x12\x0f\n\x07Input_Z\x18\x04 \x01(\t\x12\r\n\x05\x46ield\x18\x05 \x01(\t\x12\x43\n\x14\x43oordinateSystemType\x18\x06 \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x05LOCAL\"\xf7\x03\n\x12Input_Datasets_INT\x12\x15\n\rInput_Dataset\x18\x01 \x01(\t\x12\x0f\n\x07Input_X\x18\x02 \x01(\t\x12\x0f\n\x07Input_Y\x18\x03 \x01(\t\x12\x0c\n\x04\x44\x61ta\x18\x04 \x01(\t\x12*\n\tGradients\x18\x05 \x01(\x0b\x32\x17.intrepid.Vector_Fields\x12\x0f\n\x04\x42\x61nd\x18\x06 \x01(\x05:\x01\x31\x12\x42\n\x0cSurvey_Lines\x18\x07 \x01(\x0b\x32,.intrepid.Input_Datasets_INT.Survey_Lines_TT\x12\x17\n\x0fProcessingField\x18\x08 \x01(\t\x12I\n\x0fInput_Data_Type\x18\t \x01(\x0b\x32\x30.intrepid.Input_Datasets_INT.Input_Data_Type_INT\x1aW\n\x0fSurvey_Lines_TT\x12\x12\n\x07\x42\x65\x61ring\x18\x01 \x01(\x01:\x01\x30\x12!\n\x12Heading_Correction\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\r\n\x05\x46ield\x18\x03 \x01(\t\x1a\\\n\x13Input_Data_Type_INT\x12\x14\n\x04name\x18\x01 \x01(\t:\x06Vector\x12\x16\n\x05\x61long\x18\x02 \x01(\t:\x07LLgrad2\x12\x17\n\x06\x61\x63ross\x18\x03 \x01(\t:\x07XLgrad2\"\x9a\x01\n\x11PreProcessing_INT\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\"\n\x15Maximum_Anomaly_Width\x18\x02 \x01(\x01:\x03\x31\x30\x30\x12\x19\n\tTolerance\x18\x03 \x01(\x01:\x06\x30.0001\x12 \n\x12Use_Corrected_Data\x18\x04 \x01(\x08:\x04true\x12\x16\n\x0bWindow_Size\x18\x05 \x01(\x05:\x01\x32\"j\n\x11Vector_Subset_INT\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12!\n\x0cPolygon_Path\x18\x02 \x01(\t:\x0bsubset..DIR\x12$\n\x05outCS\x18\x03 \x01(\x0b\x32\x15.ctm.CoordinateSystem\"\xce\x01\n\rReference_INT\x12\x39\n\x04Type\x18\x01 \x01(\x0e\x32\x18.intrepid.Reference_Type:\x11\x41ligned_With_Grid\x12\x1f\n\x04Grid\x18\x02 \x01(\t:\x11ReferenceGrid.ers\x12\x12\n\x07\x41lign_X\x18\x03 \x01(\x01:\x01\x30\x12\x12\n\x07\x41lign_Y\x18\x04 \x01(\x01:\x01\x30\x12\x1c\n\x0f\x41lign_Longitude\x18\x05 \x01(\t:\x03\x30:0\x12\x1b\n\x0e\x41lign_Latitude\x18\x06 \x01(\t:\x03\x30:0\"T\n\nTiling_INT\x12\x17\n\x0bRow_Overlap\x18\x01 \x01(\x05:\x02\x31\x30\x12\x15\n\nStart_Tile\x18\x02 \x01(\x05:\x01\x31\x12\x16\n\x0b\x46inish_Tile\x18\x03 \x01(\x05:\x01\x31\"\xe6\x07\n\x13Gridding_Method_INT\x12/\n\x04Name\x18\x01 \x01(\x0e\x32\x15.intrepid.Method_Name:\nNeighbours\x12\x1e\n\x13\x45xtrapolation_Limit\x18\x02 \x01(\x05:\x01\x35\x12-\n\x10Orig_Pts_Dataset\x18\x03 \x01(\t:\x13OriginalPoints..DIR\x12?\n\x0f\x43\x65ll_Assignment\x18\x04 \x01(\x0e\x32\x1d.intrepid.Cell_Assignment_INT:\x07\x43losest\x12\x35\n\x0bWeight_Type\x18\x05 \x01(\x0e\x32\x19.intrepid.Weight_Type_INT:\x05Unity\x12\x1d\n\x0eSave_Triangles\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x16\n\nIterations\x18\x07 \x01(\x05:\x02\x32\x30\x12,\n\x1duse_Barycentric_Interpolation\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\x11Min_Scan_Distance\x18\x08 \x01(\x01:\x01\x30\x12\x1f\n\x11Max_Scan_Distance\x18\t \x01(\x01:\x04\x32\x30\x30\x30\x12\x35\n\x0bSpline_Type\x18\n \x01(\x0e\x32\x19.intrepid.Spline_Type_INT:\x05\x41kima\x12\x34\n%Spline_Gradient_Signal_Noise_Blending\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x19\n\x0eSpline_Tension\x18\x0c \x01(\x01:\x01\x31\x12\x1f\n\x14Spline_Bearing_Angle\x18\x17 \x01(\x01:\x01\x30\x12)\n\x1bSpline_Gradient_Noise_Level\x18\x18 \x01(\x01:\x04\x30.01\x12\'\n\x18\x64umpBiSplinePointDataset\x18\x14 \x01(\x08:\x05\x66\x61lse\x12\'\n\x18\x64umpGradientPointDataset\x18\x11 \x01(\x08:\x05\x66\x61lse\x12 \n\x10Minimum_Gradient\x18\x12 \x01(\x01:\x06\x30.0001\x12\x1c\n\x10Maximum_Gradient\x18\x13 \x01(\x01:\x02\x31\x30\x12#\n\x14\x64ump_original_values\x18\x16 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x11\x43oarse_Iterations\x18\r \x01(\x05:\x02\x31\x30\x12\x19\n\x11Reduction_Factors\x18\x0e \x03(\x05\x12$\n\x0b\x43oarse_Grid\x18\x0f \x01(\t:\x0f\x63oarse_grid.ers\x12 \n\x11\x64ump_COARSE_GRIDS\x18\x15 \x01(\x08:\x05\x66\x61lse\x12&\n\x17KDTREE_Tensor_Gradients\x18z \x01(\x08:\x05\x66\x61lse\"\xc0\x02\n\x15Minimum_Curvature_INT\x12\x17\n\nIterations\x18\x01 \x01(\x05:\x03\x31\x30\x30\x12\"\n\x14Honour_Original_Data\x18\x02 \x01(\x08:\x04true\x12\x1d\n\x0eHonour_2_Cells\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x0cMax_Residual\x18\x04 \x01(\x01:\x01\x30\x12\x12\n\x07Tension\x18\x05 \x01(\x01:\x01\x30\x12 \n\x11Relaxation_Factor\x18\x06 \x01(\x01:\x05\x31.375\x12)\n\x04size\x18\x07 \x01(\x0e\x32\x15.intrepid.Kernel_Size:\x04K5_5\x12Q\n\testimator\x18\x08 \x01(\x0e\x32&.intrepid.Local_Gradient_Estimator_INT:\x16LOCAL_ESTIMATOR_BRIGGS\"\x9c\x02\n\x13Grid_Refinement_INT\x12:\n\x11Minimum_Curvature\x18\x01 \x01(\x0b\x32\x1f.intrepid.Minimum_Curvature_INT\x12\x1d\n\x12Laplace_Iterations\x18\x02 \x01(\x05:\x01\x30\x12\x1f\n\x14Smoothing_Iterations\x18\x03 \x01(\x05:\x01\x32\x12\x19\n\nFill_Holes\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x44\n\rEdge_Clipping\x18\x05 \x01(\x0e\x32\x17.intrepid.Edge_Clipping:\x14\x45xtrapolation_limits\x12(\n\x0e\x43urvature_Grid\x18\x06 \x01(\t:\x10QualityCurve.ers\"\xa2\x05\n\x0fOutput_Grid_INT\x12*\n\tReference\x18\x01 \x01(\x0b\x32\x17.intrepid.Reference_INT\x12\x1f\n\x0bOutput_Grid\x18\x02 \x01(\t:\noutput.ers\x12)\n\nProjection\x18\x03 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12?\n\rTensorProduct\x18\x04 \x01(\x0e\x32\x17.ctm.TensorProduct_list:\x0fTENSOR_Complete\x12?\n\rVectorProduct\x18\x05 \x01(\x0e\x32\x17.ctm.VectorProduct_list:\x0f\x45NHANCED_SIGNAL\x12\x18\n\x0b\x43\x65ll_Size_X\x18\x06 \x01(\x01:\x03\x31\x30\x30\x12\x18\n\x0b\x43\x65ll_Size_Y\x18\x07 \x01(\x01:\x03\x31\x30\x30\x12\x13\n\x08Origin_X\x18\x08 \x01(\x01:\x01\x30\x12\x13\n\x08Origin_Y\x18\t \x01(\x01:\x01\x30\x12\x1d\n\x0e\x44MSCell_Size_X\x18\x1a \x01(\t:\x05\x30:0:9\x12\x1d\n\x0e\x44MSCell_Size_Y\x18\x1b \x01(\t:\x05\x30:0:9\x12\x18\n\x0b\x44MSOrigin_X\x18\x1c \x01(\t:\x03\x30:0\x12\x18\n\x0b\x44MSOrigin_Y\x18\x1d \x01(\t:\x03\x30:0\x12\x11\n\x04Rows\x18\n \x01(\x05:\x03\x31\x30\x30\x12\x14\n\x07\x43olumns\x18\x0b \x01(\x05:\x03\x31\x30\x30\x12\x10\n\x05\x42\x61nds\x18\x0c \x01(\x05:\x01\x31\x12\x13\n\tBand_Name\x18\r \x01(\t:\x00\x12\x0f\n\x04\x42\x61nd\x18\x0e \x01(\x05:\x01\x31\x12\x33\n\x08\x44\x61taType\x18\x0f \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12\x13\n\x08Rotation\x18\x10 \x01(\x01:\x01\x30\x12\x1a\n\nNull_Value\x18\x11 \x01(\x01:\x06-99999\"\xb4\x03\n\x0cGridding_INT\x12\x34\n\x0eInput_Datasets\x18\x01 \x03(\x0b\x32\x1c.intrepid.Input_Datasets_INT\x12\x32\n\rPreProcessing\x18\x02 \x01(\x0b\x32\x1b.intrepid.PreProcessing_INT\x12\x32\n\rVector_Subset\x18\x03 \x01(\x0b\x32\x1b.intrepid.Vector_Subset_INT\x12\x36\n\x0fGridding_Method\x18\x04 \x01(\x0b\x32\x1d.intrepid.Gridding_Method_INT\x12$\n\x06Tiling\x18\x05 \x01(\x0b\x32\x14.intrepid.Tiling_INT\x12\x36\n\x0fGrid_Refinement\x18\x06 \x01(\x0b\x32\x1d.intrepid.Grid_Refinement_INT\x12.\n\x0bOutput_Grid\x18\x07 \x01(\x0b\x32\x19.intrepid.Output_Grid_INT\x12 \n\rBatchToolName\x18\x63 \x01(\t:\tjGridding\x12\x1e\n\x0bGUIToolName\x18\x64 \x01(\t:\tjGridding\"\xce\x06\n\nTrendQ_INT\x12\x34\n\x0eInput_Datasets\x18\x01 \x01(\x0b\x32\x1c.intrepid.Input_Datasets_INT\x12\x1f\n\x0bOutput_Grid\x18\x02 \x01(\t:\noutput.ers\x12\x33\n\x08\x44\x61taType\x18\x0f \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12%\n\x1aNumber_Difusion_Iterations\x18\x18 \x01(\x05:\x01\x35\x12$\n\x19SmallerAntiAliasingFilter\x18\x19 \x01(\x05:\x01\x37\x12\x0e\n\x03IXL\x18\x1a \x01(\x05:\x01\x30\x12=\n\x05\x43TEST\x18\x1b \x01(\x0e\x32\x1a.intrepid.TrustgridOptions:\x12\x44iffusive_Gridding\x12\x14\n\x06\x44XYMIN\x18\x1c \x01(\x01:\x04\x30.01\x12\x14\n\tDXYMIN_ta\x18\x1d \x01(\x01:\x01\x30\x12\x18\n\x0b\x43\x65ll_Size_X\x18\x06 \x01(\x01:\x03\x31\x30\x30\x12\x18\n\x0b\x43\x65ll_Size_Y\x18\x07 \x01(\x01:\x03\x31\x30\x30\x12(\n\x0c\x42ounding_Box\x18\x32 \x01(\x0b\x32\x12.ctm.BoundingBox2D\x12\x1d\n\x12\x41veragingThreshold\x18$ \x01(\x01:\x01\x35\x12)\n\x1bUpperInterpolationThreshold\x18% \x01(\x01:\x04\x31\x30\x30\x30\x12\x1f\n\x11Max_Scan_Distance\x18\t \x01(\x01:\x04\x32\x30\x30\x30\x12\x11\n\x05\x43\x41NOM\x18\' \x01(\t:\x02  \x12\x18\n\x0cLength_UNITS\x18( \x01(\t:\x02m \x12\x14\n\x05IFILT\x18* \x01(\x08:\x05\x66\x61lse\x12%\n\x19Overall_Number_Iterations\x18+ \x01(\x05:\x02\x31\x30\x12-\n\"Minimum_Curvature_Recursion_Levels\x18, \x01(\x05:\x01\x34\x12.\n\tReference\x18/ \x01(\x0b\x32\x1b.intrepid.GridReference_INT\x12\x1e\n\nReportFile\x18P \x01(\t:\ntrendQ.rpt\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06trendQ\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06trendQ\"I\n\x11GridReference_INT\x12\x10\n\x08\x43\x65llsize\x18\x01 \x01(\x01\x12\x10\n\x08x_origin\x18\x02 \x01(\x01\x12\x10\n\x08y_origin\x18\x03 \x01(\x01\"\xdb\x02\n\x18GridSurfaceAdjustOptions\x12\x1d\n\x0eRejectOutliers\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0c\x41llowDCshift\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0f\x44\x65greeZeroFirst\x18\x03 \x01(\x08:\x05\x66\x61lse\x12 \n\x11UseRowColAverages\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\x10WeightPointLimit\x18\x05 \x01(\x05:\x02\x31\x30\x12\x1f\n\x10ListCoefficients\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fPlotSurfaceFits\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x11\n\x06\x44\x65gree\x18\x08 \x01(\x05:\x01\x32\x12\x18\n\x0c\x44\x65gree1Limit\x18\t \x01(\x01:\x02\x32\x30\x12\x18\n\x0c\x44\x65greeNLimit\x18\n \x01(\x01:\x02\x39\x30\x12\x1b\n\x0f\x44ifferenceLimit\x18\x0b \x01(\x01:\x02\x39\x39\"\xe4\x02\n\x15GridFeatheringOptions\x12\x1a\n\x0c\x46inal3x3Pass\x18\x01 \x01(\x08:\x04true\x12!\n\x12TrimResampledGrids\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0c\x66ilterLength\x18\x03 \x01(\x01:\x04\x35\x30\x30\x30\x12\x17\n\x0c\x66ilterPasses\x18\x04 \x01(\x05:\x01\x36\x12!\n\x16\x46inalSmoothMaxResidual\x18\x05 \x01(\x01:\x01\x30\x12 \n\x15\x46inalSmoothIterations\x18\x06 \x01(\x05:\x01\x33\x12S\n\x0eProcessingMode\x18\x07 \x01(\x0e\x32/.intrepid.GridFeatheringOptions.Processing_Mode:\nSequential\"=\n\x0fProcessing_Mode\x12\x0e\n\nSequential\x10\x00\x12\x11\n\rMultithreaded\x10\x01\x12\x07\n\x03MPI\x10\x02\"\x81\x03\n\x19GridScaleAndAdjustOptions\x12\x1b\n\x0e\x42\x61seGridWeight\x18\x01 \x01(\x01:\x03\x32\x30\x30\x12\"\n\x16ScaleAndShiftDBgroupID\x18\x02 \x01(\x05:\x02-1\x12K\n\x07RunType\x18\x03 \x01(\x0e\x32\x30.intrepid.GridScaleAndAdjustOptions.LevelRunType:\x08Standard\x12Q\n\tAlgorithm\x18\x04 \x01(\x0e\x32\x32.intrepid.GridScaleAndAdjustOptions.LevelAlgorithm:\nStatistics\"A\n\x0cLevelRunType\x12\x0c\n\x08Standard\x10\x00\x12\x12\n\x0eSaveToDataBase\x10\x01\x12\x0f\n\x0bUseDataBase\x10\x02\"@\n\x0eLevelAlgorithm\x12\x0e\n\nStatistics\x10\x00\x12\x0c\n\x08\x44ownHill\x10\x01\x12\x10\n\x0cLeastSquares\x10\x02\"\xbd\n\n\rGridmerge_INT\x12\x16\n\x0eInputDirectory\x18\x01 \x03(\t\x12\x15\n\rPolygonWindow\x18\x02 \x01(\t\x12\x17\n\x0fReferenceZfield\x18\x03 \x01(\t\x12\x15\n\rReferenceGrid\x18\x04 \x01(\t\x12 \n\x18UncorrectedGridDirectory\x18\x05 \x01(\t\x12\x1e\n\x16\x43orrectedGridDirectory\x18\x06 \x01(\t\x12\x1f\n\x17OriginatingLineDatasets\x18\x07 \x01(\t\x12\x13\n\x0bInputXfield\x18\x08 \x01(\t\x12\x13\n\x0bInputYfield\x18\t \x01(\t\x12\x18\n\x10InputSignalfield\x18\n \x01(\t\x12\x12\n\nOutputGrid\x18\x0b \x01(\t\x12\x17\n\x0fOutputDirectory\x18\x0c \x01(\t\x12,\n\nReportFile\x18\r \x01(\t:\x18gridmerge_processing.rpt\x12\x1d\n\x15ShiftAndScaleDataBase\x18\x0e \x01(\t\x12\x19\n\x11OutputSignalfield\x18\x0f \x01(\t\x12\x0f\n\x04\x42\x61nd\x18\x14 \x01(\x05:\x01\x31\x12\x11\n\tBaseGrids\x18\x15 \x03(\t\x12\x17\n\x0fHighRankedGrids\x18\x16 \x03(\t\x12\x16\n\x0eLowRankedGrids\x18\x17 \x03(\t\x12\x37\n\tOperation\x18\x19 \x02(\x0e\x32\x1d.intrepid.GridMergeOperations:\x05Shift\x12Q\n\rInterpolation\x18\x1a \x01(\x0e\x32!.intrepid.GridInterpolationMethod:\x17Newton_4th_Order_INTERP\x12\x1a\n\x0bwizardStyle\x18! \x01(\x08:\x05\x66\x61lse\x12\x1c\n\radvancedMenus\x18\" \x01(\x08:\x05\x66\x61lse\x12.\n\tReference\x18\x1b \x01(\x0b\x32\x1b.intrepid.GridReference_INT\x12\x39\n\rSurfaceAdjust\x18\x1c \x01(\x0b\x32\".intrepid.GridSurfaceAdjustOptions\x12\x33\n\nFeathering\x18\x1d \x01(\x0b\x32\x1f.intrepid.GridFeatheringOptions\x12;\n\x0eScaleAndAdjust\x18\x1e \x01(\x0b\x32#.intrepid.GridScaleAndAdjustOptions\x12\x19\n\x0bMaxResidual\x18\x1f \x01(\x01:\x04\x30.05\x12\x17\n\nIterations\x18  \x01(\x05:\x03\x31\x30\x30\x12#\n\x14\x43\x61lculateScaleFactor\x18( \x01(\x08:\x05\x66\x61lse\x12\x18\n\rSurfaceDegree\x18) \x01(\x05:\x01\x32\x12\x1c\n\x0fMinOverlapLimit\x18- \x01(\x05:\x03\x35\x30\x30\x12\x1d\n\x0fMaxOverlapLimit\x18. \x01(\x05:\x04\x35\x30\x30\x30\x12@\n\ttrimUnits\x18/ \x01(\x0e\x32%.intrepid.Gridmerge_INT.GridTrimUnits:\x06Pixels\x12\x1a\n\x0ftrimWidthMetres\x18\x30 \x01(\x01:\x01\x31\x12\x1f\n\x03\x42ox\x18\x32 \x01(\x0b\x32\x12.ctm.BoundingBox2D\x12!\n\rBatchToolName\x18\xc7\x01 \x01(\t:\tgridmerge\x12\x1e\n\x0bGUIToolName\x18\x64 \x01(\t:\tgridmerge\"\'\n\rGridTrimUnits\x12\n\n\x06Pixels\x10\x00\x12\n\n\x06Metres\x10\x01\"b\n\x0eGrid_Subsample\x12\n\n\x02SS\x18\x01 \x01(\x05\x12\n\n\x02NS\x18\x02 \x01(\x05\x12\x0f\n\x04SINC\x18\x03 \x01(\x05:\x01\x32\x12\n\n\x02SL\x18\x04 \x01(\x05\x12\n\n\x02NL\x18\x05 \x01(\x05\x12\x0f\n\x04LINC\x18\x06 \x01(\x05:\x01\x32\"\x98\x0c\n\x12GridOperations_INT\x12\r\n\x05Input\x18\x01 \x03(\t\x12\x11\n\tReference\x18\x02 \x01(\t\x12\x11\n\tCLIP_POLY\x18\x03 \x01(\t\x12\x0e\n\x06Output\x18\x04 \x01(\t\x12\x0f\n\x07Outline\x18\x05 \x01(\t\x12@\n\x06Method\x18\x06 \x01(\x0e\x32\x1e.intrepid.Grid_Operation_Tasks:\x10Newton_4th_Order\x12,\n\x04IGRF\x18\t \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x16\n\x0bNumber_CPUs\x18\n \x01(\x05:\x01\x31\x12\x33\n\x14OutputProjectionHint\x18\x0c \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\n\n\x02XX\x18\x14 \x01(\t\x12\n\n\x02XY\x18\x15 \x01(\t\x12\n\n\x02ZX\x18\x16 \x01(\t\x12\n\n\x02YY\x18\x17 \x01(\t\x12\n\n\x02YZ\x18\x18 \x01(\t\x12\n\n\x02ZZ\x18\x19 \x01(\t\x12\x0b\n\x03\x41UV\x18\x1a \x01(\t\x12\x0b\n\x03\x41NE\x18\x1b \x01(\t\x12\x0b\n\x03\x42UV\x18\x1c \x01(\t\x12\x0b\n\x03\x42NE\x18\x1d \x01(\t\x12&\n\x1aMaximum_Tensor_Trace_Error\x18\x1f \x01(\x01:\x02\x32\x30\x12;\n\x0fTensorOperation\x18\x1e \x01(\x0e\x32\x17.ctm.TensorProduct_list:\tTENSOR_ZZ\x12@\n\x0b\x46\x61lconQuery\x18  \x01(\x0e\x32\x1b.ctm.Falcon_Reading_Options:\x0e\x46\x41LCON_AVERAGE\x12\x41\n\x14\x43oordinateSystemType\x18\" \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12;\n\x0cRotateMethod\x18# \x01(\x0e\x32\x1e.intrepid.SignalResampleMethod:\x05\x43ubic\x12\x10\n\x08\x43\x65llsize\x18( \x01(\x01\x12\x16\n\x0eOutputRotation\x18) \x01(\x01\x12\x1e\n\x10TrimRotatedNulls\x18* \x01(\x08:\x04true\x12\x1a\n\x0bMaxResidual\x18+ \x01(\x01:\x05\x30.001\x12\x39\n\x0eOutputDataType\x18, \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12\x17\n\nIterations\x18- \x01(\x05:\x03\x31\x30\x30\x12+\n\tSubsample\x18. \x01(\x0b\x32\x18.intrepid.Grid_Subsample\x12$\n\x08Resample\x18\x32 \x01(\x0b\x32\x12.ctm.BoundingBox2D\x12#\n\x06region\x18\r \x01(\x0b\x32\x13.intrepid.XY_Region\x12\x12\n\x07GetBand\x18\x37 \x01(\x05:\x01\x31\x12\x0f\n\x07PutBand\x18\x38 \x01(\x05\x12\x10\n\x08\x42\x61ndName\x18\x46 \x01(\t\x12\x11\n\x06NBands\x18\x39 \x01(\x05:\x01\x31\x12\x18\n\rDetrendDegree\x18; \x01(\x05:\x01\x31\x12\x0c\n\x04Year\x18< \x01(\x05\x12\r\n\x05Month\x18= \x01(\x05\x12\x0b\n\x03\x44\x61y\x18> \x01(\x05\x12!\n\nCreateGrid\x18\x41 \x01(\x0b\x32\r.ctm.Grid_INT\x12\x18\n\x10required_profile\x18\x42 \x03(\x01\x12\x19\n\x0brow_profile\x18\x43 \x01(\x08:\x04true\x12\x11\n\toriginLat\x18M \x01(\x01\x12\x11\n\toriginLng\x18G \x01(\x01\x12\x12\n\x04step\x18N \x01(\x01:\x04\x30.05\x12\x18\n\x10\x61ngleOfTransects\x18H \x01(\x01\x12\x1c\n\x11numberOfTransects\x18I \x01(\x05:\x01\x31\x12\x1c\n\x11lengthOfTransects\x18J \x01(\x05:\x01\x31\x12\x1a\n\rOverlapFactor\x18K \x01(\x01:\x03\x31.5\x12\x16\n\x0eProjected_GRID\x18L \x01(\t\x12\x0e\n\x06\x42locks\x18\x45 \x03(\t\x12\x1e\n\nReportFile\x18/ \x01(\t:\ngridop.rpt\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06gridop\x12!\n\x0bGUIToolName\x18\x64 \x01(\t:\x0cgridopAppGUI\"\x9c\x07\n\x0fLine_Filter_INT\x12\x12\n\nInputLines\x18\x01 \x01(\t\x12\x14\n\x0cSignal_Field\x18\x02 \x01(\t\x12\x11\n\tClearance\x18\x03 \x01(\t\x12\x12\n\nDrapeField\x18\x04 \x01(\t\x12\x1b\n\x13Output_Signal_Field\x18\x07 \x01(\t\x12\x16\n\x0eOutputSpectrum\x18\x08 \x01(\t\x12\x1a\n\x12OutputCoefficients\x18\t \x01(\t\x12\x13\n\x0bInputFilter\x18\n \x01(\t\x12\x31\n\x0f\x43ompositeFilter\x18\x0b \x01(\x0b\x32\x18.fdf.CompositeFilter_FDF\x12\x33\n\nWindowType\x18\x05 \x01(\x0e\x32\x16.fdf.GetWindowTypeList:\x07HANNING\x12*\n\x08Pad_Type\x18\x0c \x01(\x0e\x32\x0c.fdf.PadType:\nMIRROR_PAD\x12\x43\n\x13InterpolationMethod\x18\r \x01(\x0e\x32\x1e.intrepid.SignalResampleMethod:\x06Linear\x12\x41\n\rDetrendMethod\x18\x0e \x01(\x0e\x32\x18.intrepid.DetrendOptions:\x10LINEAR_ENDPOINTS\x12:\n\nSampleMode\x18\x0f \x01(\x0e\x32\x1c.intrepid.LineDataSampleMode:\x08XY_BASED\x12?\n\x0bprocessType\x18\x10 \x01(\x0e\x32\x1f.intrepid.DatabaseLineSelection:\tALL_LINES\x12\x17\n\x0fStartLineNumber\x18? \x01(\t\x12\x15\n\rEndLineNumber\x18@ \x01(\t\x12\x14\n\tNoOfLines\x18\x41 \x01(\x05:\x01\x30\x12\x15\n\rSelectedLines\x18\x42 \x03(\t\x12\x15\n\tFidFactor\x18\x11 \x01(\x01:\x02\x31\x30\x12\x1a\n\x0f\x46ixedSampleIncr\x18\x12 \x01(\x01:\x01\x30\x12\x18\n\x0cNumEndPoints\x18\x13 \x01(\x05:\x02\x31\x30\x12,\n\x0eOutputDataType\x18\x18 \x01(\x0e\x32\r.ctm.DataType:\x05\x44T_R4\x12#\n\nReportFile\x18. \x01(\t:\x0fline_filter.rpt\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07lfilter\x12\x1c\n\x0bGUIToolName\x18\x64 \x01(\t:\x07lfilter\"\xed\x01\n\x0fgrid_subset_INT\x12\x0e\n\x06XLower\x18\x01 \x01(\x01\x12\x0e\n\x06XUpper\x18\x02 \x01(\x01\x12\x0e\n\x06YLower\x18\x03 \x01(\x01\x12\x0e\n\x06YUpper\x18\x04 \x01(\x01\x12\'\n\x1a\x46\x46T_BorderPercentExpansion\x18\x05 \x01(\x01:\x03\x31\x32\x30\x12\"\n\x0eSubsetGridName\x18\x06 \x01(\t:\nsubset.ers\x12\"\n\x16NumberCellsForFFTPower\x18\x07 \x01(\x05:\x02\x33\x32\x12)\n\x1a\x41utoPowerSpectrumReporting\x18\x08 \x01(\x08:\x05\x66\x61lse\"\xb1\x10\n\x18GridFourierFiltering_INT\x12\x15\n\rInputGridName\x18\x01 \x02(\t\x12\x39\n\x0bSignal_Type\x18\x02 \x01(\x0e\x32\x19.ctm.GeophysicsSignalType:\tMagnetism\x12)\n\x06Subset\x18\x03 \x01(\x0b\x32\x19.intrepid.grid_subset_INT\x12\x38\n\x0bRolloffType\x18\x04 \x01(\x0e\x32\x17.fdf.GetRolloffTypeList:\nNO_RollOff\x12\x35\n\nWindowType\x18\x05 \x01(\x0e\x32\x16.fdf.GetWindowTypeList:\tNO_Window\x12.\n\x08\x46illType\x18\x06 \x01(\x0e\x32\x14.fdf.GetFillTypeList:\x06\x41RTHUR\x12\x1d\n\x0e\x46illStopAtEdge\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x18\n\rDetrendDegree\x18\x07 \x01(\x05:\x01\x31\x12,\n\x04IGRF\x18\t \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x16\n\x0bNumber_CPUs\x18\n \x01(\x05:\x01\x31\x12+\n\x10\x46ilteredGridName\x18\x0b \x01(\t:\x11\x66iltered_grid.ers\x12$\n\x0b\x46\x66tGridName\x18\x0c \x01(\t:\x0f\x66\x66tGridName.ers\x12-\n\x11OutputFftGridName\x18\r \x01(\t:\x12OutfftGridName.ers\x12\x37\n\x1eInputRadialPowerSpectrumReport\x18\x0e \x01(\t:\x0finputRadial.rpt\x12\"\n\x17RadialPowerSpectrumBins\x18\x0f \x01(\x05:\x01\x30\x12\x39\n\x1fOutputRadialPowerSpectrumReport\x18\x10 \x01(\t:\x10outputRadial.rpt\x12(\n\x10WindowedGridName\x18\x11 \x01(\t:\x0ewindowGrid.ers\x12*\n\x10\x45xpandedGridName\x18\x12 \x01(\t:\x10\x65xpandedGrid.ers\x12,\n\x11\x41mplitudeGridName\x18\x13 \x01(\t:\x11\x61mplitudeGrid.ers\x12$\n\rPhaseGridName\x18\x14 \x01(\t:\rphaseGrid.ers\x12\x31\n\x13\x43oefficientGridName\x18\x15 \x01(\t:\x14\x63oefficientsGrid.ers\x12,\n\x11\x44\x65trendedGridName\x18\x16 \x01(\t:\x11\x64\x65trendedGrid.ers\x12\x0f\n\x04\x42\x61nd\x18\x17 \x01(\x05:\x01\x31\x12\x1a\n\x10Output_Band_Name\x18! \x01(\t:\x00\x12\x39\n\x0eOutputDataType\x18\x18 \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12*\n\x1bReApplyTrendAfterReverseFft\x18\x19 \x01(\x08:\x05\x66\x61lse\x12&\n\x18\x41pplyMaskAfterReverseFft\x18\x1a \x01(\x08:\x04true\x12\x19\n\x0bUseSymmetry\x18\x1b \x01(\x08:\x04true\x12\x35\n\rDiskUsageRule\x18\x1c \x01(\x0e\x32\x18.intrepid.diskUsageRules:\x04\x41UTO\x12\x31\n\x0f\x43ompositeFilter\x18\x1d \x01(\x0b\x32\x18.fdf.CompositeFilter_FDF\x12\x42\n\nspecial_op\x18\x1e \x01(\x0e\x32\'.intrepid.Special_GridFilter_Operations:\x05NO_OP\x12\x1b\n\x10HorizontalDegree\x18\" \x01(\x01:\x01\x31\x12\x1f\n\x10Make_HilbertPair\x18# \x01(\x08:\x05\x66\x61lse\x12%\n\x16ScaleTensorIntegration\x18% \x01(\x08:\x05\x66\x61lse\x12\'\n\x18LowPassFalconIntegration\x18& \x01(\x08:\x05\x66\x61lse\x12K\n\x15InputTensorComponents\x18( \x01(\x0e\x32\x1e.ctm.Tensor_Integration_Method:\x0cINT_XZ_YZ_ZZ\x12L\n\x17RequiredFalconTransform\x18) \x01(\x0e\x32 .ctm.Falcon_FFT_TRANSFORM_Option:\tFALCON_TZ\x12H\n\x13RequiredFalconQuery\x18* \x01(\x0e\x32\x1b.ctm.Falcon_Reading_Options:\x0e\x46\x41LCON_AVERAGE\x12\x42\n\x15InputGridCoordSysType\x18+ \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12\x43\n\x16OutputGridCoordSysType\x18, \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03NED\x12\x32\n\nTMIProduct\x18- \x01(\x0e\x32\x11.ctm.TMI_Products:\x0bTMItoVector\x12?\n\rTensorProduct\x18. \x01(\x0e\x32\x17.ctm.TensorProduct_list:\x0fTENSOR_Complete\x12#\n\nReportFile\x18\x62 \x01(\t:\x0fgrid_filter.rpt\x12\x1c\n\rBatchToolName\x18\x63 \x01(\t:\x05gfilt\x12\x1a\n\x0bGUIToolName\x18\x64 \x01(\t:\x05gfilt\"\xd0\n\n\rISOStatic_INT\x12\x15\n\rInputGridName\x18\x01 \x02(\t\x12\x19\n\x11\x44\x65pthMohoGridName\x18\x02 \x02(\t\x12)\n\x06subset\x18\x03 \x01(\x0b\x32\x19.intrepid.grid_subset_INT\x12\x38\n\x0bRolloffType\x18\x04 \x01(\x0e\x32\x17.fdf.GetRolloffTypeList:\nNO_RollOff\x12\x35\n\nWindowType\x18\x05 \x01(\x0e\x32\x16.fdf.GetWindowTypeList:\tNO_Window\x12.\n\x08\x46illType\x18\x06 \x01(\x0e\x32\x14.fdf.GetFillTypeList:\x06\x41RTHUR\x12*\n\x1bReApplyTrendAfterReverseFft\x18\x07 \x01(\x08:\x05\x66\x61lse\x12&\n\x18\x41pplyMaskAfterReverseFft\x18\x08 \x01(\x08:\x04true\x12$\n\x15SubtractFlatEarthRoot\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eSupplyMohoGrid\x18\n \x01(\x08:\x05\x66\x61lse\x12\'\n\x10\x46ilteredGridName\x18\x0b \x01(\t:\risostatic.ers\x12$\n\x0b\x46\x66tGridName\x18\x0c \x01(\t:\x0f\x66\x66tGridName.ers\x12-\n\x11OutputFftGridName\x18\r \x01(\t:\x12OutfftGridName.ers\x12\x37\n\x1eInputRadialPowerSpectrumReport\x18\x0e \x01(\t:\x0finputRadial.rpt\x12\x39\n\x1fOutputRadialPowerSpectrumReport\x18\x0f \x01(\t:\x10outputRadial.rpt\x12(\n\x10WindowedGridName\x18\x10 \x01(\t:\x0ewindowGrid.ers\x12*\n\x10\x45xpandedGridName\x18\x11 \x01(\t:\x10\x65xpandedGrid.ers\x12\x0f\n\x04\x42\x61nd\x18\x12 \x01(\x05:\x01\x31\x12\x39\n\x0eOutputDataType\x18\x13 \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12\x19\n\x0bUseSymmetry\x18\x14 \x01(\x08:\x04true\x12\x35\n\rDiskUsageRule\x18\x15 \x01(\x0e\x32\x18.intrepid.diskUsageRules:\x04\x41UTO\x12 \n\x14Sea_Level_Root_Depth\x18\x19 \x01(\x01:\x02\x33\x32\x12\x1b\n\rCrust_Density\x18\x1a \x01(\x01:\x04\x32.67\x12#\n\x16\x44\x65nsity_Contrast_Depth\x18\x1b \x01(\x01:\x03\x30.6\x12\x1c\n\rMax_Tolerance\x18\x1c \x01(\x01:\x05\x30.001\x12\x1a\n\x0eMax_Iterations\x18\x1d \x01(\x05:\x02\x31\x30\x12\x1d\n\rMaxBesselSize\x18\x1e \x01(\x05:\x06\x31\x35\x30\x30\x30\x30\x12 \n\x11Sea_Water_Density\x18\x1f \x01(\x01:\x05\x31.027\x12*\n\x16Gravitational_Constant\x18  \x01(\x01:\n6.6743e-11\x12\x38\n\x0cGravityUnits\x18! \x01(\x0e\x32\x17.intrepid.Gravity_Units:\tMILLIGALS\x12+\n\nReportFile\x18\x62 \x01(\t:\x17IsostaticCorrection.rpt\x12 \n\rBatchToolName\x18\x63 \x01(\t:\tisostatic\x12.\n\x0bGUIToolName\x18\x64 \x01(\t:\x19IsostaticCorrectionAppGUI\"\xd5\x03\n\x10GravityMerge_INT\x12\r\n\x05Input\x18\x01 \x01(\t\x12\x0e\n\x06Input2\x18\x02 \x01(\t\x12\x11\n\tMergeWith\x18\x04 \x01(\t\x12\x0b\n\x03Key\x18\x05 \x01(\t\x12\x16\n\nStop_After\x18\x06 \x01(\x05:\x02-1\x12\x1c\n\rMergeLastOnly\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tTimeStamp\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x08ReportOn\x18\t \x03(\t\x12\x0f\n\x07GroupBy\x18\n \x03(\t\x12\x16\n\x0eMergeFromField\x18\x0e \x03(\t\x12\x14\n\x0cMergeToField\x18\x0f \x03(\t\x12G\n\x0bMergeAction\x18\x10 \x01(\x0e\x32$.intrepid.DuplicateHandlingBehaviour:\x0c\x41ppendPoints\x12&\n\rField_Aliases\x18\x14 \x03(\x0e\x32\x0f.ctm.FieldAlias\x12$\n\nReportFile\x18. \x01(\t:\x10GravityMerge.rpt\x12 \n\rBatchToolName\x18\x63 \x01(\t:\tgravmerge\x12(\n\x0bGUIToolName\x18\x64 \x01(\t:\x13PointCleverMergeApp\"\xea\x05\n\x0f\x44\x65\x63orrugate_INT\x12\x11\n\tInputGrid\x18\x01 \x02(\t\x12\x14\n\x0cInputPolygon\x18\x02 \x01(\t\x12\x12\n\nOutputGrid\x18\x03 \x01(\t\x12\x0f\n\x04\x42\x61nd\x18\x05 \x01(\x05:\x01\x31\x12=\n\x0eHighPassFilter\x18\x06 \x01(\x0e\x32\x18.intrepid.GridFilterType:\x0bNAUDYFULLER\x12\x1f\n\x11HighPassTolerance\x18\x07 \x01(\x01:\x04\x30.01\x12=\n\x14HighPassExtrapolator\x18\x08 \x01(\x0e\x32\x17.intrepid.ExtractorType:\x06MIRROR\x12?\n\rLowPassFilter\x18\t \x01(\x0e\x32\x18.intrepid.GridFilterType:\x0eSMOOTHEDFULLER\x12<\n\x13LowPassExtrapolator\x18\n \x01(\x0e\x32\x17.intrepid.ExtractorType:\x06MIRROR\x12\x1a\n\x0cStreakLength\x18\x0b \x01(\x01:\x04\x35\x30\x30\x30\x12\x19\n\x0bStreakWidth\x18\x0c \x01(\x01:\x04\x31\x36\x30\x30\x12\x1e\n\x11MinimumCorrection\x18\r \x01(\x01:\x03-30\x12\x1d\n\x11MaximumCorrection\x18\x0e \x01(\x01:\x02\x33\x30\x12=\n\x10\x44\x65\x63orrugateAlong\x18\x13 \x01(\x0e\x32\x1d.intrepid.Decorrugate_Request:\x04ROWS\x12\x1c\n\x0e\x43orrectionGrid\x18\x14 \x01(\x08:\x04true\x12\x39\n\x0bSignal_Type\x18\x15 \x01(\x0e\x32\x19.ctm.GeophysicsSignalType:\tMagnetism\x12#\n\nReportFile\x18. \x01(\t:\x0f\x64\x65\x63orrugate.rpt\x12\x1c\n\rBatchToolName\x18\x63 \x01(\t:\x05\x64\x65\x63or\x12\x1a\n\x0bGUIToolName\x18\x64 \x01(\t:\x05\x64\x65\x63or\"\xde\x05\n\x0eMicroLevel_INT\x12>\n\x0c\x46ilterMethod\x18\x01 \x01(\x0e\x32\x18.intrepid.GridFilterType:\x0eSMOOTHEDFULLER\x12M\n\x13InterpolationMethod\x18\x02 \x01(\x0e\x32\x1e.intrepid.SignalResampleMethod:\x10MinimumCurvature\x12\x1e\n\x10\x43utOffWavelength\x18\x03 \x01(\x01:\x04\x31\x30\x30\x30\x12\x1f\n\x10TaperCorrections\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x18\n\x0bTaperLength\x18\x05 \x01(\x01:\x03\x35\x30\x30\x12\x1e\n\x11MinimumCorrection\x18\x06 \x01(\x01:\x03-30\x12\x1d\n\x11MaximumCorrection\x18\x07 \x01(\x01:\x02\x33\x30\x12\x13\n\x08GridBand\x18\x08 \x01(\x05:\x01\x31\x12\x1b\n\x0fStrikeDirection\x18\t \x01(\x01:\x02\x39\x30\x12\x16\n\x07TestRun\x18\n \x01(\x08:\x05\x66\x61lse\x12\x1c\n\x0e\x43orrectionGrid\x18\x0b \x01(\x08:\x04true\x12!\n\x12IgnoreGridRotation\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x11\n\tInputGrid\x18\x0f \x02(\t\x12\x0b\n\x03XIN\x18\x10 \x01(\t\x12\x0b\n\x03YIN\x18\x11 \x01(\t\x12\x11\n\tSIGNAL_IN\x18\x12 \x01(\t\x12\x10\n\x08LineType\x18\x13 \x01(\t\x12\x12\n\nSIGNAL_OUT\x18\x14 \x01(\t\x12\x17\n\x0f\x43orrectionField\x18\x15 \x01(\t\x12\x39\n\x0bSignal_Type\x18\x16 \x01(\x0e\x32\x19.ctm.GeophysicsSignalType:\tMagnetism\x12\"\n\nReportFile\x18. \x01(\t:\x0emicrolevel.rpt\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06mlevel\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06mlevel\"\xde\x01\n\x15\x46lightReconstruct_INT\x12\x17\n\nFID_Factor\x18\x36 \x01(\x01:\x03\x30.1\x12$\n\x15\x45stimate_Flight_Stats\x18\x82\x01 \x01(\x08:\x04true\x12X\n\x19Reconstruct_Flight_Method\x18< \x01(\x0e\x32$.intrepid.Flight_Reconstruct_Methods:\x0f\x46light_Defaults\x12,\n\nDate_Style\x18= \x01(\x0e\x32\x10.ctm.date_styles:\x06YYMMDD\"k\n\x0e\x43ross_Over_INT\x12\x1e\n\x0fUse_XY_Accuracy\x18\x33 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0fGradient_Radius\x18\x34 \x01(\x01:\x02\x31\x30\x12\x1c\n\x14\x43ross_Over_Condition\x18\x35 \x01(\t\"\xa5\x01\n\x17\x44iurnal_Corrections_INT\x12\x0e\n\x06\x46light\x18\x14 \x01(\t\x12\x0b\n\x03\x46id\x18\x15 \x01(\t\x12\x0f\n\x07Reading\x18\x16 \x01(\t\x12\x0e\n\x06Julian\x18\x17 \x01(\t\x12\x13\n\x08Time_Lag\x18\x45 \x01(\x01:\x01\x30\x12\x37\n\rDiurnal_Style\x18> \x01(\x0e\x32\x13.ctm.diurnal_styles:\x0bJULIAN_TIME\"\xbe\x02\n\x11Input_Filters_INT\x12.\n\x0cSignalFilter\x18\n \x01(\x0b\x32\x18.fdf.CompositeFilter_FDF\x12*\n\x07ZFilter\x18? \x01(\x0e\x32\x13.fdf.filter_methods:\x04NONE\x12$\n\x05ZPass\x18@ \x01(\x0e\x32\x0f.fdf.FilterPass:\x04Pass\x12\x17\n\x0bWindow_Size\x18\x41 \x01(\x05:\x02\x31\x31\x12\x15\n\x07Minimum\x18\x43 \x01(\x01:\x04-100\x12\x14\n\x07Maximum\x18\x44 \x01(\x01:\x03\x31\x30\x30\x12\x17\n\nWaveLength\x18\x45 \x01(\x01:\x03\x31\x30\x30\x12\x17\n\tTolerance\x18\x42 \x01(\x01:\x04\x30.01\x12\x19\n\nMultiPoint\x18H \x01(\x08:\x05\x66\x61lse\x12\x14\n\tFidFactor\x18I \x01(\x01:\x01\x31\"\xba\x01\n\x16Heading_Correction_INT\x12\x31\n\x13\x42\x65\x61ring_Corrections\x18\x46 \x01(\t:\x14\x30/0 90/0 180/0 270/0\x12\x1e\n\x16\x45stimate_Heading_Stats\x18G \x01(\x08\x12\x1a\n\x0cUseEstimates\x18H \x01(\x08:\x04true\x12\x17\n\x0f\x46lightDirection\x18I \x01(\x05\x12\x18\n\x0c\x41ngularRange\x18J \x01(\x05:\x02\x31\x30\"\x91\x02\n(GeomagneticReferenceField_Correction_INT\x12\x18\n\x10Sensor_Elevation\x18P \x01(\x01\x12\x0c\n\x04Year\x18Q \x01(\x05\x12\r\n\x05Month\x18R \x01(\x05\x12\x0b\n\x03\x44\x61y\x18S \x01(\x05\x12\x13\n\x0bInclination\x18T \x01(\x01\x12\x13\n\x0b\x44\x65\x63lination\x18U \x01(\x01\x12\r\n\x05\x46ield\x18V \x01(\x01\x12-\n\x07GrfType\x18W \x01(\x0e\x32\x16.intrepid.GrfModelType:\x04Igrf\x12\x1e\n\x16Recalculation_Interval\x18X \x01(\x01\x12\x19\n\x0bPrint_Epoch\x18Y \x01(\x05:\x04\x32\x30\x31\x35\"g\n\x12Loop_Levelling_INT\x12\x17\n\nMax_Change\x18_ \x01(\x01:\x03\x30.1\x12\x1b\n\x0eOverRelaxation\x18` \x01(\x01:\x03\x31.2\x12\x1b\n\x0eMax_Iterations\x18\x61 \x01(\x05:\x03\x31\x30\x30\"l\n\x18PiecewisePolynomials_INT\x12\x15\n\nPoly_Order\x18r \x01(\x05:\x01\x31\x12\x1c\n\x10Piecewise_Window\x18s \x01(\x05:\x02\x31\x31\x12\x1b\n\x10Smoothing_Length\x18t \x01(\x05:\x01\x33\"\xcd\x04\n\x16Tie_Line_Levelling_INT\x12!\n\x0bPolyTieList\x18\x02 \x01(\t:\x0c\x64\x65\x66\x61ult.parm\x12\x14\n\x0cPolyTieLines\x18\r \x03(\x01\x12\x43\n\x0cWeightMethod\x18\x03 \x01(\x0e\x32#.intrepid.PolyNomial_weight_methods:\x08Gradient\x12 \n\x11\x44istanceWeighting\x18\x04 \x01(\x08:\x05\x66\x61lse\x12$\n\x16Level_to_Principal_Tie\x18\x01 \x01(\x08:\x04true\x12\x34\n\x08Tie_line\x18\x05 \x01(\x0b\x32\".intrepid.PiecewisePolynomials_INT\x12%\n\x17\x44rift_Flights_onto_Ties\x18\x06 \x01(\x08:\x04true\x12\x32\n\x06\x46light\x18\x07 \x01(\x0b\x32\".intrepid.PiecewisePolynomials_INT\x12\'\n\x19\x44rift_Traverses_onto_Ties\x18\x08 \x01(\x08:\x04true\x12\x34\n\x08Traverse\x18\t \x01(\x0b\x32\".intrepid.PiecewisePolynomials_INT\x12\'\n\x19\x44rift_Ties_onto_Traverses\x18\n \x01(\x08:\x04true\x12\x38\n\x0cTie_Traverse\x18\x0b \x01(\x0b\x32\".intrepid.PiecewisePolynomials_INT\x12\x1a\n\x0fPoly_Iterations\x18\x0c \x01(\x05:\x01\x31\"x\n\x15\x46light_Correction_INT\x12\x17\n\x0f\x46lightDirection\x18I \x01(\x05\x12#\n\x15\x45stimate_Flight_Stats\x18J \x01(\x08:\x04true\x12!\n\x12\x41verageShiftAdjust\x18L \x01(\x08:\x05\x66\x61lse\"\xc7\x03\n\x1cTensorGradient_Levelling_INT\x12L\n\nAdjustment\x18y \x01(\x0e\x32\".intrepid.Tensor_Levelling_Methods:\x14\x45stimate_Error_Norms\x12\x1b\n\x0c\x46lightBiases\x18x \x01(\x08:\x05\x66\x61lse\x12\x19\n\nLineBiases\x18\x7f \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x10Stats_Iterations\x18\x0c \x01(\x05:\x01\x33\x12 \n\x11\x43\x61librationAdjust\x18K \x01(\x08:\x05\x66\x61lse\x12%\n\x18\x43\x61libration_Adjust_Limit\x18\r \x01(\x01:\x03\x30.8\x12\x35\n\x07\x46orcing\x18z \x01(\x0e\x32\x17.ctm.TensorProduct_list:\x0bTENSOR_Norm\x12\x14\n\x0cSurveyHeight\x18{ \x01(\x01\x12\x16\n\x0eSurveyLatitude\x18| \x01(\x01\x12+\n\x1fNumberSamples_EstimatePotential\x18} \x01(\x05:\x02\x32\x31\x12)\n\x1dNumberTensorAverageOffsetRuns\x18~ \x01(\x05:\x02\x33\x31\"\xa7\n\n\rLevelling_INT\x12\x34\n\x07runType\x18\x0f \x01(\x0e\x32\x1a.intrepid.LevellingProcess:\x07Heading\x12\x13\n\x0bInputSignal\x18\x01 \x02(\t\x12\x0e\n\x06InputX\x18\x02 \x02(\t\x12\x0e\n\x06InputY\x18\x03 \x02(\t\x12\x10\n\x08InputFid\x18\x04 \x01(\t\x12\x10\n\x08TYPEName\x18\x05 \x02(\t\x12\x11\n\tInputLine\x18\x06 \x02(\t\x12\x14\n\x0cInputFlights\x18\x07 \x01(\t\x12 \n\x18InputHeightAboveSpheroid\x18\x08 \x01(\t\x12(\n InputRequiredHeightAboveSpheroid\x18\t \x01(\t\x12\x11\n\tInputDate\x18\n \x01(\t\x12\x11\n\tInputTime\x18\x0b \x01(\t\x12\x12\n\nInputXover\x18\x0c \x01(\t\x12\x31\n\x0cInputFilters\x18\x14 \x01(\x0b\x32\x1b.intrepid.Input_Filters_INT\x12:\n\x11\x46lightReconstruct\x18\x19 \x01(\x0b\x32\x1f.intrepid.FlightReconstruct_INT\x12,\n\nCross_Over\x18\x1e \x01(\x0b\x32\x18.intrepid.Cross_Over_INT\x12\'\n\x1fParallaxCorrection_Cable_Length\x18\x32 \x01(\x01\x12<\n\x11\x44iurnalCorrection\x18\x33 \x01(\x0b\x32!.intrepid.Diurnal_Corrections_INT\x12;\n\x11HeadingCorrection\x18\x34 \x01(\x0b\x32 .intrepid.Heading_Correction_INT\x12\x39\n\x10\x46lightCorrection\x18\x35 \x01(\x0b\x32\x1f.intrepid.Flight_Correction_INT\x12I\n\rGrfCorrection\x18\x36 \x01(\x0b\x32\x32.intrepid.GeomagneticReferenceField_Correction_INT\x12 \n\x18LevelXYCorrection_Radius\x18\x37 \x01(\x01\x12\x34\n\x0eLoopCorrection\x18\x38 \x01(\x0b\x32\x1c.intrepid.Loop_Levelling_INT\x12>\n\x14PolynomialCorrection\x18\x39 \x01(\x0b\x32 .intrepid.Tie_Line_Levelling_INT\x12@\n\x10TensorCorrection\x18: \x01(\x0b\x32&.intrepid.TensorGradient_Levelling_INT\x12)\n\x1bMaximum_Akima_interpolation\x18\x31 \x01(\x01:\x04\x35\x30\x30\x30\x12\'\n\x1bMinimum_Akima_interpolation\x18\x30 \x01(\x01:\x02\x31\x30\x12 \n\x11Save_Changes_Only\x18\' \x01(\x08:\x05\x66\x61lse\x12\x14\n\x0cOutputSignal\x18( \x01(\t\x12\x0f\n\x07OutputX\x18) \x01(\t\x12\x0f\n\x07OutputY\x18* \x01(\t\x12\x13\n\x0bOutputXover\x18- \x01(\t\x12\x10\n\x08TensorQC\x18/ \x01(\t\x12!\n\nReportFile\x18. \x01(\t:\rlevelling.rpt\x12 \n\rBatchToolName\x18\xc7\x01 \x01(\t:\x08newlevel\x12\x1d\n\x0bGUIToolName\x18\x64 \x01(\t:\x08newlevel\"\x84\n\n\x13MarineLevelling_INT\x12(\n\x07RunType\x18\x14 \x02(\x0e\x32\x17.intrepid.MarineRunType\x12\x0f\n\x07\x44\x61taset\x18\x01 \x02(\t\x12\x13\n\x0bInputSignal\x18\x02 \x02(\t\x12\x14\n\x0cOtherDataset\x18\x03 \x01(\t\x12\x18\n\x10OtherInputSignal\x18\x04 \x01(\t\x12\x12\n\nInputXover\x18\x05 \x01(\t\x12\x13\n\x0bOutputXover\x18\x06 \x01(\t\x12\x14\n\x0cOutputSignal\x18\x07 \x01(\t\x12\x18\n\x10Output_New_Xover\x18\x08 \x01(\t\x12$\n\nReportFile\x18\t \x01(\t:\x10marine_level.rpt\x12\x0f\n\x07OutputX\x18\n \x01(\t\x12\x0f\n\x07OutputY\x18\x0b \x01(\t\x12\x18\n\x10InputSignalArray\x18\r \x03(\t\x12\x1d\n\x15OtherInputSignalArray\x18\x0e \x03(\t\x12\x19\n\x11OutputSignalArray\x18\x0f \x03(\t\x12,\n\x0bReplaceData\x18\x12 \x03(\x0b\x32\x17.intrepid.Data_Replacer\x12\x16\n\x08\x42yCruise\x18m \x01(\x08:\x04true\x12!\n\x12PopulationAnalysis\x18n \x01(\x08:\x05\x66\x61lse\x12$\n\x16SaveEmptyGroupsInXover\x18o \x01(\x08:\x04true\x12$\n\x15\x44oPseudoFidsAsRecords\x18p \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x12RejectXoverPercent\x18_ \x01(\x01\x12\x1d\n\x15RejectXoverCorrection\x18` \x01(\x01\x12\x1c\n\x14\x43ross_Over_Condition\x18\x35 \x01(\t\x12(\n DuplicateCrossOver_Fid_Tolerance\x18\x61 \x01(\x01\x12\x1e\n\x16MaximumPointSeparation\x18\x62 \x01(\x01\x12\x1f\n\x17MaximumInterpolationGap\x18\x63 \x01(\x01\x12#\n\x1bMinimumAngleBetweenSegments\x18\x64 \x01(\x01\x12\x16\n\x0eMaximumXYShift\x18\x65 \x01(\x01\x12\x1c\n\x14Misclosure_Threshold\x18\x66 \x01(\x01\x12!\n\x12ReferenceNavIsGood\x18g \x01(\x08:\x05\x66\x61lse\x12@\n\x14PiecewisePolynomials\x18q \x01(\x0b\x32\".intrepid.PiecewisePolynomials_INT\x12\x1a\n\x0fPoly_Iterations\x18u \x01(\x05:\x01\x31\x12\x1a\n\x0fPoly_Min_Points\x18v \x01(\x05:\x01\x33\x12\x19\n\rConvolveWidth\x18w \x01(\x05:\x02\x31\x31\x12\x1e\n\x10\x44istanceWeighted\x18x \x01(\x08:\x04true\x12\x43\n\x0cWeightMethod\x18y \x01(\x0e\x32#.intrepid.PolyNomial_weight_methods:\x08Gradient\x12\x18\n\rSurface_Order\x18z \x01(\x05:\x01\x31\x12\x1b\n\x0c\x44oBathymetry\x18{ \x01(\x08:\x05\x66\x61lse\x12#\n\rBatchToolName\x18\xc7\x01 \x01(\t:\x0bmarinelevel\x12+\n\x0bGUIToolName\x18\xc8\x01 \x01(\t:\x15MarineLevellingAppGUI\"\xf3\x03\n\x14Trend_Management_INT\x12\x41\n\nStrikeCode\x18\x01 \x01(\x0e\x32\x1b.intrepid.StrikeTypeOptions:\x10ST_PERPENDICULAR\x12\x32\n\rShallowFilter\x18\x03 \x01(\t:\x1bnaudyShallowTrendFilter.fdf\x12,\n\nDeepFilter\x18\x04 \x01(\t:\x18naudyDeepTrendFilter.fdf\x12\x34\n\x0eVeryDeepFilter\x18\x05 \x01(\t:\x1cnaudyVeryDeepTrendFilter.fdf\x12\x1b\n\x10ShallowTolerance\x18\n \x01(\x01:\x01\x31\x12\x18\n\rDeepTolerance\x18\x0b \x01(\x01:\x01\x32\x12\x1e\n\x11VeryDeepTolerance\x18\x0c \x01(\x01:\x03\x30.5\x12\x14\n\tAlongLine\x18\r \x01(\x01:\x01\x33\x12\x17\n\nAcrossLine\x18\x0e \x01(\x01:\x03\x33.5\x12)\n\x1dMaximumConnectAngleDifference\x18\x12 \x01(\x01:\x02\x32\x35\x12\x15\n\nBodyStrike\x18\x0f \x01(\x01:\x01\x30\x12 \n\x18ReportAverageLineSpacing\x18\x10 \x01(\x01\x12\x16\n\x0b\x46ilterDepth\x18\x11 \x01(\x05:\x01\x32\"\xee\x04\n\x13Worm_Management_INT\x12)\n\x1e\x41rgus_minimum_number_hot_spots\x18\x01 \x01(\x05:\x01\x33\x12\"\n\x14\x43reate3D_DykeLinears\x18\x02 \x01(\x08:\x04true\x12!\n\x13\x46orceNormalPolarity\x18\x03 \x01(\x08:\x04true\x12\x1a\n\x0b\x42\x65stFitting\x18\x04 \x01(\x08:\x05\x66\x61lse\x12!\n\x15\x42\x65stFittingRMSPercent\x18\x05 \x01(\x05:\x02\x35\x30\x12\x45\n\x1bRequiredMagnetization_Worms\x18\x06 \x01(\x0e\x32\x17.intrepid.eMagWormsType:\x07MAG_ALL\x12\x19\n\nMakeFinite\x18\x07 \x01(\x08:\x05\x66\x61lse\x12$\n\x0bOutputArgus\x18\n \x01(\t:\x0fnaudy_dykes.csv\x12\x16\n\x08OutputDB\x18\x41 \x01(\x08:\x04true\x12&\n\x0cOutputDBName\x18\x42 \x01(\t:\x10\x64ykeFoliationsDB\x12#\n\x14\x43reate3D_ForwardTask\x18\x0b \x01(\x08:\x05\x66\x61lse\x12+\n\x0f\x46orwardTaskFile\x18\x0c \x01(\t:\x12naudy_3Ddykes.task\x12&\n\x17useInfiniteThinFormulae\x18\r \x01(\x08:\x05\x66\x61lse\x12,\n\x1d\x43reateExplicitObservationTask\x18\x0e \x01(\x08:\x05\x66\x61lse\x12\x36\n\x1a\x41rgus_DykeObservationsTask\x18\x0f \x01(\t:\x12\x41rgus_3Ddykes.task\"\xcc\x05\n\x0cMake3D_Dykes\x12$\n\x18\x64iscretization_intervals\x18\x02 \x01(\x05:\x02\x34\x30\x12\x1b\n\x0cproject_zmin\x18\x03 \x01(\x01:\x05-3000\x12\x19\n\x0cproject_zmax\x18\x04 \x01(\x01:\x03\x35\x30\x30\x12\x18\n\rsubsample_dtm\x18\x05 \x01(\x05:\x01\x31\x12\x1a\n\x0b\x64o_skeleton\x18\x06 \x01(\x08:\x05\x66\x61lse\x12%\n\x16\x64o_decimate_with_depth\x18\x07 \x01(\x08:\x05\x66\x61lse\x12!\n\x15\x64\x65pth_thinning_factor\x18\x08 \x01(\x05:\x02\x31\x32\x12!\n\x12\x63\x61lculate_thickess\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x10\x64o_limited_dykes\x18\n \x01(\x08:\x04true\x12\x1e\n\x10\x64o_dyke_dtm_clip\x18\x0b \x01(\x08:\x04true\x12\x1d\n\x0ewrite_dyke_VTK\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x1e\n\rDyke_Surfaces\x18\r \x01(\t:\x07output/\x12$\n\x05\x64rape\x18\x0e \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12(\n\televation\x18\x0f \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12\x15\n\tthickness\x18\x18 \x01(\x01:\x02\x31\x30\x12\x1c\n\x11minimum_thickness\x18\x19 \x01(\x01:\x01\x31\x12$\n\x17minimum_vertical_extent\x18\x1a \x01(\x01:\x03\x35\x30\x30\x12\x41\n\x13\x63\x61lculation_product\x18\x1b \x01(\x0e\x32\x19.ctm.GeophysicsSignalType:\tMagnetism\x12/\n\x12\x63omputed_grid_name\x18\x1c \x01(\t:\x13\x63\x61lculated_dyke.ers\x12\x1d\n\x11\x66orward_cell_size\x18\x1d \x01(\x01:\x02\x32\x30\"\xff\x02\n\x0cView3D_Dykes\x12\x1d\n\x0eshow_3D_viewer\x18\x01 \x01(\x08:\x05\x66\x61lse\x12!\n\x12show_limited_dykes\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\'\n\x19show_original_signal_grid\x18\x03 \x01(\x08:\x04true\x12\x1c\n\rshow_DTM_grid\x18\x04 \x01(\x08:\x05\x66\x61lse\x12(\n\x1ashow_simple_dyke_hot_spots\x18\x05 \x01(\x08:\x04true\x12&\n\x18show_all_naudy_solutions\x18\x06 \x01(\x08:\x04true\x12&\n\x18show_survey_flight_lines\x18\x07 \x01(\x08:\x04true\x12\x19\n\x0evertical_scale\x18\x08 \x01(\x01:\x01\x31\x12%\n\x06signal\x18\t \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12*\n\x1dMinimum_Fault_Vertical_Extent\x18\x12 \x01(\x01:\x03\x35\x30\x30\"\xcb\x02\n\x11Naudy_Observation\x12\x11\n\tBody_Name\x18\x01 \x02(\t\x12\x1e\n\x08location\x18\x02 \x02(\x0b\x32\x0c.ctm.Point3d\x12,\n\x04type\x18\x03 \x01(\x0e\x32\x15.ctm.GeologyObsType3D:\x07\x44yke_3D\x12\x14\n\tThickness\x18\x04 \x01(\x01:\x01\x31\x12\x13\n\x06Height\x18\x05 \x01(\x01:\x03\x31\x30\x30\x12\x13\n\x06Length\x18\x06 \x01(\x01:\x03\x31\x30\x30\x12\x11\n\x06Strike\x18\x07 \x01(\x01:\x01\x30\x12\x0f\n\x03\x44ip\x18\x08 \x01(\x01:\x02\x39\x30\x12\x19\n\x0eSusceptibility\x18\t \x01(\x01:\x01\x30\x12\x15\n\nSimilarity\x18\n \x01(\x01:\x01\x35\x12\x15\n\tRMS_ERROR\x18\x0b \x01(\x01:\x02-1\x12\x13\n\x0bInclination\x18\x0c \x01(\x01\x12\x13\n\x0b\x44\x65\x63lination\x18\r \x01(\x01\"\x9e\x0e\n\x17Naudy_AutoModelling_INT\x12\x12\n\nInputLines\x18\x01 \x02(\t\x12\x12\n\nInputModel\x18\x02 \x01(\t\x12\x13\n\x0bInputSignal\x18\x04 \x02(\t\x12\x16\n\x0eInputClearance\x18\x05 \x01(\t\x12\x18\n\x10OutputNaudyModel\x18\x06 \x01(\t\x12\x14\n\x0cOutputTrends\x18\x07 \x01(\t\x12\x18\n\x10OutputTrendWorms\x18\x08 \x01(\t\x12$\n\nReportFile\x18\t \x01(\t:\x10naudy_depths.rpt\x12:\n\nSampleMode\x18\x0b \x01(\x0e\x32\x1c.intrepid.LineDataSampleMode:\x08XY_BASED\x12;\n\x07tmiType\x18\x0c \x01(\x0e\x32\x1f.intrepid.SurveyAcquisitionType:\t_AIRBORNE\x12=\n\rFieldDataType\x18\r \x01(\x0e\x32\x1d.intrepid.SurveyFieldDataType:\x07_NORMAL\x12\x35\n\rMagneticField\x18\x14 \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x17\n\x08\x41utoIGRF\x18\x16 \x01(\x08:\x05\x66\x61lse\x12\x18\n\x0bLineSpacing\x18\x1f \x01(\x01:\x03\x32\x30\x30\x12?\n\x0bprocessType\x18> \x01(\x0e\x32\x1f.intrepid.DatabaseLineSelection:\tALL_LINES\x12\x17\n\x0fStartLineNumber\x18? \x01(\t\x12\x15\n\rEndLineNumber\x18@ \x01(\t\x12\x14\n\tNoOfLines\x18\x41 \x01(\x05:\x01\x30\x12\x15\n\rSelectedLines\x18\x42 \x03(\t\x12\x16\n\nStartDepth\x18\x19 \x01(\x01:\x02\x35\x30\x12\x16\n\x08\x45ndDepth\x18\x1a \x01(\x01:\x04\x35\x30\x30\x30\x12\x1b\n\x0e\x44\x65pthIncrement\x18\x17 \x01(\x01:\x03\x31.2\x12\x19\n\x0cWindowFactor\x18\x1b \x01(\x01:\x03\x31.5\x12\x1d\n\x12MinAmplitudeCutoff\x18\x1c \x01(\x01:\x01\x31\x12 \n\x12MaxAmplitudeCutoff\x18\x1d \x01(\x01:\x04\x31\x30\x30\x30\x12N\n\x12\x43\x61lculateDipMethod\x18# \x01(\x0e\x32\x1e.intrepid.DipCalculateStrategy:\x12Use_Calculated_Dip\x12K\n\x11\x44ipAcceptStrategy\x18+ \x01(\x0e\x32\x1d.intrepid.Dip_Accept_Strategy:\x11\x41\x63\x63\x65pt_Everything\x12\x1e\n\x11Maximum_Thickness\x18\x1e \x01(\x01:\x03\x38\x30\x30\x12\x17\n\x08\x44ipRange\x18! \x01(\x08:\x05\x66\x61lse\x12\x18\n\nWidthRange\x18\" \x01(\x08:\x04true\x12\'\n\x18UseFinerVerticalSampling\x18$ \x01(\x08:\x05\x66\x61lse\x12\x35\n\x08\x42odyType\x18% \x01(\x0e\x32\x1d.intrepid.Auto_ModelBody_Type:\x04\x44yke\x12 \n\x11\x41llowNegativeSusc\x18( \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0c\x41lwaysInvert\x18) \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x13MaxInvertIterations\x18/ \x01(\x05:\x01\x35\x12&\n\x1bMaximumBodySimilarityToKeep\x18\x30 \x01(\x01:\x01\x33\x12\x1e\n\x0fRemoveClearance\x18\x31 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10\x46orceOntoProfile\x18. \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0e\x44umpSimilarity\x18- \x01(\x08:\x05\x66\x61lse\x12.\n\x07\x63luster\x18\x32 \x01(\x0b\x32\x1d.intrepid.Worm_Management_INT\x12(\n\x08surfaces\x18\x33 \x01(\x0b\x32\x16.intrepid.Make3D_Dykes\x12$\n\x04view\x18\x34 \x01(\x0b\x32\x16.intrepid.View3D_Dykes\x12.\n\x06Trends\x18< \x01(\x0b\x32\x1e.intrepid.Trend_Management_INT\x12\'\n\x19Solve_Remanence_Direction\x18\x46 \x01(\x08:\x04true\x12\'\n\x1bTensor_Inversion_Iterations\x18G \x01(\x05:\x02\x31\x35\x12 \n\x11tensor_errorFloor\x18H \x01(\x01:\x05\x30.002\x12>\n\x11\x46ieldCoordSysType\x18I \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03NED\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06naudyd\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06naudyd\"\xab\x08\n\x0f\x45ulerSolver_INT\x12\x43\n\rEquationCombo\x18\x01 \x01(\x0e\x32\x1e.intrepid.EulerEquationOptions:\x0cHilbert_Only\x12\x1a\n\x0fStructuralIndex\x18\x02 \x01(\x01:\x01\x31\x12\x16\n\x0bLateralSize\x18\x03 \x01(\x05:\x01\x37\x12\x38\n\x0bRolloffType\x18\x04 \x01(\x0e\x32\x17.fdf.GetRolloffTypeList:\nNO_RollOff\x12\x35\n\nWindowType\x18\x05 \x01(\x0e\x32\x16.fdf.GetWindowTypeList:\tNO_Window\x12.\n\x08\x46illType\x18\x06 \x01(\x0e\x32\x14.fdf.GetFillTypeList:\x06\x41RTHUR\x12\x1d\n\x0e\x46illStopAtEdge\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x18\n\rDetrendDegree\x18\x07 \x01(\x05:\x01\x31\x12)\n\x1aMinimum_Gradient_Threshold\x18\x0e \x01(\x01:\x05\x31\x65-06\x12+\n\x10\x46ilteredGridName\x18\x0b \x01(\t:\x11\x66iltered_grid.ers\x12$\n\x0b\x46\x66tGridName\x18\x0c \x01(\t:\x0f\x66\x66tGridName.ers\x12-\n\x11OutputFftGridName\x18\r \x01(\t:\x12OutfftGridName.ers\x12(\n\x10WindowedGridName\x18\x10 \x01(\t:\x0ewindowGrid.ers\x12*\n\x10\x45xpandedGridName\x18\x11 \x01(\t:\x10\x65xpandedGrid.ers\x12\x19\n\x0bUseSymmetry\x18\x14 \x01(\x08:\x04true\x12\x39\n\x0eOutputDataType\x18\x16 \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12\x39\n\x0b\x46\x46TDataType\x18\x17 \x01(\x0e\x32\x12.ctm.GridDataTypes:\x10IEEE4ByteComplex\x12\x35\n\rDiskUsageRule\x18\x18 \x01(\x0e\x32\x18.intrepid.diskUsageRules:\x04\x41UTO\x12\x41\n\x14\x43oordinateSystemType\x18\" \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12 \n\x11\x44oReductionToPole\x18\x1b \x01(\x08:\x05\x66\x61lse\x12,\n\x04IGRF\x18\t \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x16\n\x0bNumber_CPUs\x18\n \x01(\x05:\x01\x31\x12\x1e\n\x0fSaveDerivatives\x18\x1c \x01(\x08:\x05\x66\x61lse\x12/\n\x1bSaveDerivativeDirectoryName\x18\x1d \x01(\t:\nSavedGrids\"\xa1\x05\n\rEulerSort_INT\x12\x1c\n\x11LowerGoodnessClip\x18\x02 \x01(\x01:\x01\x30\x12\x1c\n\x11UpperGoodnessClip\x18\x03 \x01(\x01:\x01\x31\x12&\n\x18LowerStructuralIndexClip\x18\x04 \x01(\x01:\x04-0.5\x12%\n\x18UpperStructuralIndexClip\x18\x05 \x01(\x01:\x03\x34.5\x12%\n\x18StructuralIndexErrorClip\x18\x06 \x01(\x01:\x03\x30.2\x12\x17\n\x0cMinimumDepth\x18\x07 \x01(\x01:\x01\x30\x12\x1a\n\x0cMaximumDepth\x18\x08 \x01(\x01:\x04\x35\x30\x30\x30\x12!\n\x15MinimumObservationDip\x18\t \x01(\x01:\x02\x32\x30\x12#\n\x16Maximum_Absolute_Alpha\x18\n \x01(\x01:\x03\x31\x30\x30\x12+\n\x17MaximumSingularityRatio\x18\x0b \x01(\x01:\n1000000000\x12+\n\x1eMaximum_Percentage_Depth_Error\x18\x12 \x01(\x05:\x03\x39\x30\x30\x12\x1f\n\x10\x42inning_Analysis\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x14NumberVerticalLayers\x18\r \x01(\x05:\x01\x35\x12\x1c\n\x0f\x44\x65pthMultiplier\x18\x0e \x01(\x01:\x03\x31.4\x12\x1b\n\tXYBinEast\x18\x0f \x01(\x01:\x08\x31\x30\x30\x30\x30\x30\x30\x30\x12\x1c\n\nXYBinNorth\x18\x10 \x01(\x01:\x08\x31\x30\x30\x30\x30\x30\x30\x30\x12\x1c\n\x0eMask_Solutions\x18\x11 \x01(\x08:\x04true\x12\x1f\n\x10\x43luster_Analysis\x18\x13 \x01(\x08:\x05\x66\x61lse\x12-\n\x07\x43luster\x18\x15 \x01(\x0b\x32\x1c.intrepid.ClusterControl_INT\"\xe7\x02\n\x10View3D_Solutions\x12\x1c\n\x0eshow_3D_viewer\x18\x01 \x01(\x08:\x04true\x12\x1b\n\x0cproject_zmin\x18\x03 \x01(\x01:\x05-3000\x12\x19\n\x0cproject_zmax\x18\x04 \x01(\x01:\x03\x35\x30\x30\x12\"\n\x14show_original_points\x18\x05 \x01(\x08:\x04true\x12 \n\x12show_cluster_shape\x18\x06 \x01(\x08:\x04true\x12\'\n\x19show_original_signal_grid\x18\x08 \x01(\x08:\x04true\x12\x1b\n\rshow_DTM_grid\x18\t \x01(\x08:\x04true\x12)\n\x1ashow_Cluster_FormingStages\x18\n \x01(\x08:\x05\x66\x61lse\x12\x19\n\x0evertical_scale\x18\x0e \x01(\x01:\x01\x31\x12+\n\x1dMinimum_Fault_Vertical_Extent\x18\x12 \x01(\x01:\x04\x31\x30\x30\x30\"\xc2\x05\n\x16\x45ulerDeconvolution_INT\x12,\n\rInputGridName\x18\x01 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12\x30\n\x11\x45levationGridName\x18\x02 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12\x1d\n\x15InputRawSolutionsName\x18\x0e \x01(\t\x12)\n\x06Subset\x18\x03 \x01(\x0b\x32\x19.intrepid.grid_subset_INT\x12\x12\n\nKnownDepth\x18\x04 \x01(\t\x12\x14\n\x0cKnownGravity\x18\x05 \x01(\t\x12\x1f\n\x17Solutions_Opt_Directory\x18\x06 \x01(\t\x12)\n\x06Solver\x18\x08 \x01(\x0b\x32\x19.intrepid.EulerSolver_INT\x12%\n\x04Sort\x18\x0b \x01(\x0b\x32\x17.intrepid.EulerSort_INT\x12(\n\x04view\x18\x0c \x01(\x0b\x32\x1a.intrepid.View3D_Solutions\x12%\n\x0fRequired_Points\x18\x0f \x03(\x0b\x32\x0c.ctm.Point3d\x12;\n\x0b\x45xportTypes\x18\x14 \x01(\x0e\x32\x1c.intrepid.EulerOutputOptions:\x08\x44\x61tabase\x12#\n\x06Output\x18\r \x01(\t:\x13\x65ulerOutputPts..DIR\x12\x1d\n\nReportFile\x18\t \x01(\t:\teuler.rpt\x12\"\n\x07\x43luster\x18\n \x01(\t:\x11\x65ulerCluster..DIR\x12\x18\n\tDump_VRML\x18\x11 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08\x44ump_VTK\x18\x12 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rBatchToolName\x18\x63 \x01(\t:\x05\x65uler\x12\x1a\n\x0bGUIToolName\x18\x64 \x01(\t:\x05\x65uler\"\xc6\x04\n\x0fSplitCruise_INT\x12\r\n\x05Input\x18\x01 \x02(\t\x12\x0b\n\x03ZIN\x18\x02 \x01(\t\x12\x0e\n\x06Output\x18\x03 \x01(\t\x12\r\n\x05Turns\x18\x04 \x01(\t\x12<\n\tAlgorithm\x18\x0c \x01(\x0e\x32\x1d.intrepid.Splitting_Algorithm:\nTrendAngle\x12\x1f\n\x13SharpAngleTolerance\x18\x05 \x01(\x01:\x02\x35\x30\x12\x1f\n\x13TrendAngleTolerance\x18\x06 \x01(\x01:\x02\x34\x35\x12\"\n\x16TrendDistanceInSamples\x18\x07 \x01(\x05:\x02\x31\x30\x12#\n\x18MinimumSamplesBeforeDrop\x18\x08 \x01(\x05:\x01\x30\x12+\n\x1dMaximumDistanceBetweenSamples\x18\t \x01(\x01:\x04\x32\x30\x30\x30\x12$\n\x15Preserve_All_Raw_Data\x18\n \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10SplitOnNullsOnly\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x13\n\x0blineNumbers\x18\x0f \x03(\x05\x12\x17\n\x0fNormalTolerance\x18\r \x01(\x01\x12\x1c\n\x14MinimumSegmentLength\x18\x0e \x01(\x01\x12#\n\nReportFile\x18\x13 \x01(\t:\x0fsplitcruise.rpt\x12\"\n\rBatchToolName\x18\x63 \x01(\t:\x0bsplitcruise\x12&\n\x0bGUIToolName\x18\x64 \x01(\t:\x11MarineSplitAppGUI\"\x1f\n\x07XY_Pair\x12\t\n\x01X\x18\x01 \x02(\x01\x12\t\n\x01Y\x18\x02 \x02(\x01\"`\n\tXY_Region\x12!\n\x06points\x18\x01 \x03(\x0b\x32\x11.intrepid.XY_Pair\x12\x30\n\x11Region_Projection\x18\x15 \x01(\x0b\x32\x15.ctm.CoordinateSystem\"\x8b\x06\n\nSubset_INT\x12\n\n\x02IN\x18\x01 \x01(\t\x12\x0c\n\x04GRID\x18\x02 \x01(\t\x12\x0c\n\x04POLY\x18\x03 \x01(\t\x12\x0e\n\x06\x42locks\x18\x45 \x03(\t\x12\x0b\n\x03OUT\x18\x05 \x01(\t\x12\x12\n\nReportFile\x18\x06 \x01(\t\x12\x11\n\tCLIP_POLY\x18\n \x01(\t\x12\x1f\n\x03\x42ox\x18\x0b \x01(\x0b\x32\x12.ctm.BoundingBox2D\x12\"\n\x06GeoBox\x18\x0e \x01(\x0b\x32\x12.ctm.GeodeticBox2D\x12\x31\n\x0crotatableBox\x18\x0c \x01(\x0b\x32\x1b.ctm.RotatableBoundingBox2D\x12#\n\x06region\x18\r \x01(\x0b\x32\x13.intrepid.XY_Region\x12\x0f\n\x07\x43olumns\x18\x10 \x03(\t\x12\x1d\n\x12Output_Subsampling\x18\x0f \x01(\x05:\x01\x31\x12\x14\n\x06Shrink\x18\x12 \x01(\x08:\x04true\x12\x18\n\nSplitLines\x18\x13 \x01(\x08:\x04true\x12\x16\n\x07\x45xclude\x18\x14 \x01(\x08:\x05\x66\x61lse\x12-\n\x0e\x42ox_Projection\x18\x15 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x11\n\toriginLat\x18< \x01(\x01\x12\x11\n\toriginLng\x18= \x01(\x01\x12\x12\n\x04step\x18\x1c \x01(\x01:\x04\x30.05\x12\x18\n\x10\x61ngleOfTransects\x18> \x01(\x01\x12\x1c\n\x11numberOfTransects\x18? \x01(\x05:\x01\x31\x12\x1c\n\x11lengthOfTransects\x18@ \x01(\x05:\x01\x31\x12\x1a\n\rOverlapFactor\x18\x41 \x01(\x01:\x03\x31.5\x12\x16\n\x0eProjected_GRID\x18\x42 \x01(\t\x12\x33\n\x14OutputProjectionHint\x18\x16 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x18\n\x10Search_Condition\x18\x1e \x01(\t\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06subset\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06subset\"\xd2\x01\n\x0c\x45nergyWindow\x12\r\n\x05start\x18\x01 \x02(\x01\x12\x0b\n\x03\x65nd\x18\x02 \x02(\x01\x12\x1d\n\x15\x63orrect_peak_location\x18\x03 \x01(\x01\x12\x1c\n\x11raw_peak_location\x18\x04 \x01(\x01:\x01\x30\x12\x0f\n\x04step\x18\x05 \x01(\x01:\x01\x31\x12\x0c\n\x04name\x18\x06 \x01(\t\x12\x1e\n\x05\x61lias\x18\x07 \x01(\x0e\x32\x0f.ctm.FieldAlias\x12*\n\x05units\x18\x08 \x01(\x0e\x32\x16.intrepid.Window_Units:\x03MeV\"\xa5\x01\n\x0cGammaWindows\x12\x31\n\x11\x43\x61librationWindow\x18\" \x03(\x0b\x32\x16.intrepid.EnergyWindow\x12.\n\x0eStandardWindow\x18\x65 \x03(\x0b\x32\x16.intrepid.EnergyWindow\x12\x32\n\x12RadonUraniumWindow\x18k \x03(\x0b\x32\x16.intrepid.EnergyWindow\"\xd9\x01\n\x12RadonConstants_INT\x12\x10\n\x02\x43\x31\x18\x01 \x01(\x01:\x04\x31.95\x12\x1c\n\x11\x43\x31_HeightGradient\x18\x02 \x01(\x01:\x01\x30\x12\x10\n\x02\x43\x32\x18\x03 \x01(\x01:\x04\x30.71\x12\x1c\n\x11\x43\x32_HeightGradient\x18\x04 \x01(\x01:\x01\x30\x12\x12\n\x02\x43\x33\x18\x05 \x01(\x01:\x06\x30.0268\x12\x1c\n\x11\x43\x33_HeightGradient\x18\x06 \x01(\x01:\x01\x30\x12\x13\n\x02\x43\x34\x18\x07 \x01(\x01:\x07-0.0179\x12\x1c\n\x11\x43\x34_HeightGradient\x18\x08 \x01(\x01:\x01\x30\"\x89\x08\n\x1dRequestedSpectraProcesses_INT\x12\x17\n\x08\x44\x65\x61\x64Time\x18\x16 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tPCAsmooth\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tCalibrate\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0f\x43\x61librateByLine\x18\x1e \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10\x43\x61librateByBunch\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0f\x45\x66\x66\x65\x63tiveHeight\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cRemoveCosmic\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eRemoveAircraft\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bRemoveRadon\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10GenerateChannels\x18\x08 \x01(\x08:\x05\x66\x61lse\x12!\n\x12GenerateLowUranium\x18\t \x01(\x08:\x05\x66\x61lse\x12%\n\x16GenerateEstimatedRadon\x18\n \x01(\x08:\x05\x66\x61lse\x12\'\n\x18GenerateEstimatedCaesium\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fNormaliseCosmic\x18\x0c \x01(\x08:\x05\x66\x61lse\x12!\n\x12UseSpectraLiveTime\x18\x1c \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10UseFixedDeadTime\x18\x1b \x01(\x08:\x05\x66\x61lse\x12#\n\x14SaveFullSpectraField\x18\r \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07SavePCA\x18\x1a \x01(\x08:\x05\x66\x61lse\x12#\n\x14GenerateRadonSpectra\x18\x0e \x01(\x08:\x05\x66\x61lse\x12$\n\x15GenerateGroundSpectra\x18\x0f \x01(\x08:\x05\x66\x61lse\x12$\n\x15GenerateCosmicSpectra\x18\x10 \x01(\x08:\x05\x66\x61lse\x12(\n\x19GenerateIntegratedSpectra\x18\x11 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cNASVDrestart\x18\x12 \x01(\x08:\x05\x66\x61lse\x12$\n\x15\x42oost_Signal_to_Noise\x18\x14 \x01(\x08:\x05\x66\x61lse\x12*\n\x1b\x41\x64\x64_Synthetic_Spectra_NASVD\x18\x15 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cnotLT_IGNORE\x18\x17 \x01(\x08:\x05\x66\x61lse\x12H\n\x0e\x41\x64justStrategy\x18\x18 \x01(\x0e\x32%.intrepid.SpectralNoiseAdjustStrategy:\tBY_FLIGHT\x12<\n\x0cGammaMeasure\x18\x19 \x01(\x0e\x32\x16.ctm.GammaMeasures_3DE:\x0e\x43ounts_per_bin\"\xfe\x17\n\x0cRadio256_INT\x12\x19\n\x11\x44\x61taBaseDirectory\x18\x01 \x02(\t\x12#\n\x11InputSpectraField\x18\x02 \x01(\t:\x08SPECTRUM\x12\x1e\n\x0cLineTypeName\x18\x03 \x01(\t:\x08GS_LType\x12*\n\nReportFile\x18\x04 \x01(\t:\x16Spectra_processing.rpt\x12\x1b\n\x0b\x43osmicField\x18\x05 \x01(\t:\x06\x63osmic\x12\x1f\n\rLiveTimeField\x18\x06 \x01(\t:\x08livetime\x12\"\n\x0e\x43learanceField\x18\x82\x01 \x01(\t:\tclearance\x12 \n\rPressureField\x18\x83\x01 \x01(\t:\x08pressure\x12&\n\x10TemperatureField\x18\x84\x01 \x01(\t:\x0btemperature\x12O\n\x15\x45nergyCalibrationFile\x18\x07 \x01(\t:0/config/calibration_spectra/dfa_default.asc_data\x12\x1d\n\x15\x43osmicCalibrationFile\x18\x08 \x01(\t\x12\x1c\n\x14RadonCalibrationFile\x18\t \x01(\t\x12#\n\x15HonourIgnoreLinesFlag\x18\n \x01(\x08:\x04true\x12\x1d\n\x12\x44\x61taSampleInterval\x18\x0b \x01(\x01:\x01\x31\x12H\n\ninstrument\x18\x0c \x01(\x0e\x32$.intrepid.Manufacturer_GammaDetector:\x0eSCINTREX_GR820\x12\x18\n\tPCAsmooth\x18\x14 \x01(\x08:\x05\x66\x61lse\x12?\n\x05NASVD\x18\x15 \x01(\x0e\x32%.intrepid.SpectralNoiseAdjustStrategy:\tBY_FLIGHT\x12$\n\x15\x42oost_Signal_to_Noise\x18\x17 \x01(\x08:\x05\x66\x61lse\x12*\n\x1b\x41\x64\x64_Synthetic_Spectra_NASVD\x18\x18 \x01(\x08:\x05\x66\x61lse\x12\x19\n\nuse_lapack\x18\x19 \x01(\x08:\x05\x66\x61lse\x12&\n\x1bNumberOfPrincipalComponents\x18\x1a \x01(\x05:\x01\x38\x12*\n\x1cMinimumNumberOfSamplesForPCA\x18\x1b \x01(\x05:\x04\x35\x30\x30\x30\x12\x18\n\x0bLastChannel\x18\x1c \x01(\x05:\x03\x32\x35\x34\x12\x18\n\x0c\x46irstChannel\x18\x1d \x01(\x05:\x02\x31\x30\x12Q\n\x0f\x45nergyCalibrate\x18\x1e \x01(\x0e\x32!.intrepid.EnergyCalibrateStratgey:\x15\x45\x43S_IntegrationPeriod\x12\x1c\n\x11LowSpectrumEnergy\x18\x1f \x01(\x01:\x01\x30\x12\x1d\n\x12HighSpectrumEnergy\x18  \x01(\x01:\x01\x33\x12\x1e\n\x11IntegrationPeriod\x18! \x01(\x01:\x03\x34\x30\x30\x12\x31\n\x11\x43\x61librationWindow\x18\" \x03(\x0b\x32\x16.intrepid.EnergyWindow\x12 \n\x11\x41\x64justForDeadTime\x18( \x01(\x08:\x05\x66\x61lse\x12!\n\x13UseMeasuredLiveTime\x18) \x01(\x08:\x04true\x12\x1d\n\x0fLiveTimeMaximum\x18* \x01(\x01:\x04\x31\x30\x30\x30\x12\x1a\n\x0fLiveTimeMinimum\x18+ \x01(\x01:\x01\x31\x12\x1c\n\x0fLiveTimeDefault\x18, \x01(\x01:\x03\x39\x35\x30\x12\'\n\x18LiveTimeConversionFactor\x18- \x01(\x01:\x05\x30.001\x12\x1f\n\x10UseFixedDeadTime\x18. \x01(\x08:\x05\x66\x61lse\x12\"\n\x14\x46ixedSpectraDeadTime\x18/ \x01(\x01:\x04\x32.51\x12\x1a\n\x0eSystemDeadTime\x18\x30 \x01(\x01:\x02\x31\x31\x12\x1e\n\x0f\x45\x66\x66\x65\x63tiveHeight\x18\x32 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cRemoveCosmic\x18\x33 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x12MaximumCosmicCount\x18\x34 \x01(\x01:\x03\x31\x38\x30\x12\x1d\n\x12MinimumCosmicCount\x18\x35 \x01(\x01:\x01\x31\x12\x1f\n\x12\x44\x65\x66\x61ultCosmicCount\x18\x36 \x01(\x01:\x03\x31\x32\x30\x12\x1d\n\x0fNormaliseCosmic\x18\x37 \x01(\x08:\x04true\x12\x1d\n\x0eRemoveAircraft\x18< \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bRemoveRadon\x18\x46 \x01(\x08:\x05\x66\x61lse\x12\x34\n\x0eRadonConstants\x18G \x01(\x0b\x32\x1c.intrepid.RadonConstants_INT\x12%\n\x19ReferenceTerrainClearance\x18O \x01(\x01:\x02\x38\x30\x12)\n\x19\x61lphaGroundStrippingRatio\x18Z \x01(\x01:\x06\x30.2403\x12)\n\x18\x61lphaSlopeStrippingRatio\x18[ \x01(\x01:\x07\x30.00049\x12(\n\x18\x62\x65taGroundStrippingRatio\x18\\ \x01(\x01:\x06\x30.4074\x12(\n\x17\x62\x65taSlopeStrippingRatio\x18] \x01(\x01:\x07\x30.00065\x12)\n\x19gammaGroundStrippingRatio\x18^ \x01(\x01:\x06\x30.7129\x12)\n\x18gammaSlopeStrippingRatio\x18_ \x01(\x01:\x07\x30.00069\x12(\n\x18reverse_a_StrippingRatio\x18` \x01(\x01:\x06\x30.0292\x12#\n\x18reverse_b_StrippingRatio\x18\x61 \x01(\x01:\x01\x30\x12#\n\x18reverse_g_StrippingRatio\x18\x62 \x01(\x01:\x01\x30\x12&\n\x18GenerateStandardChannels\x18\x64 \x01(\x08:\x04true\x12.\n\x0eStandardWindow\x18\x65 \x03(\x0b\x32\x16.intrepid.EnergyWindow\x12\x1f\n\x10OutputTotalCount\x18\x66 \x01(\t:\x05outTC\x12\x1d\n\x0fOutputPotassium\x18g \x01(\t:\x04outK\x12\x1c\n\rOutputThorium\x18h \x01(\t:\x05outTh\x12\x1b\n\rOutputUranium\x18i \x01(\t:\x04outU\x12!\n\x12GenerateLowUranium\x18j \x01(\x08:\x05\x66\x61lse\x12\x32\n\x12RadonUraniumWindow\x18k \x03(\x0b\x32\x16.intrepid.EnergyWindow\x12!\n\x10OutputLowUranium\x18l \x01(\t:\x07outLowU\x12%\n\x16GenerateEstimatedRadon\x18m \x01(\x08:\x05\x66\x61lse\x12)\n\x14OutputEstimatedRadon\x18n \x01(\t:\x0boutEstRadon\x12(\n\x10OutputCaesium137\x18\x8d\x01 \x01(\t:\routCaesium137\x12+\n\x1bGenerateEstimatedCaesium137\x18\x8e\x01 \x01(\x08:\x05\x66\x61lse\x12<\n\x0cGammaMeasure\x18o \x01(\x0e\x32\x16.ctm.GammaMeasures_3DE:\x0e\x43ounts_per_bin\x12&\n\x17SaveMultiChannelSpectra\x18p \x01(\x08:\x05\x66\x61lse\x12\'\n\x12OutputSpectraField\x18q \x01(\t:\x0boutSpectrum\x12\x16\n\x07SavePCA\x18r \x01(\x08:\x05\x66\x61lse\x12$\n\x15GenerateCosmicSpectra\x18x \x01(\x08:\x05\x66\x61lse\x12(\n\x19GenerateIntegratedSpectra\x18y \x01(\x08:\x05\x66\x61lse\x12#\n\x14GenerateRadonSpectra\x18z \x01(\x08:\x05\x66\x61lse\x12$\n\x15GenerateGroundSpectra\x18{ \x01(\x08:\x05\x66\x61lse\x12\x1f\n\rBatchToolName\x18\xc7\x01 \x01(\t:\x07mrad256\x12\x1d\n\x0bGUIToolName\x18\xc8\x01 \x01(\t:\x07mrad256\"\x9a\x03\n\x18MaximumNoiseFraction_INT\x12\x0e\n\x06\x46light\x18\x01 \x02(\t\x12\x19\n\x11InputSpectraField\x18\x02 \x02(\t\x12\x1a\n\x12OutputSpectraField\x18\x03 \x01(\t\x12*\n\nReportFile\x18\x04 \x01(\t:\x16Spectra_processing.rpt\x12\x14\n\x0cOutputPCcomp\x18\x05 \x01(\t\x12\x15\n\nNumberOfPC\x18\x07 \x01(\x05:\x01\x38\x12\x18\n\x0bLastChannel\x18\x08 \x01(\x05:\x03\x32\x35\x34\x12\x18\n\x0c\x46irstChannel\x18\t \x01(\x05:\x02\x31\x32\x12\x16\n\x07save_PC\x18\x14 \x01(\x08:\x05\x66\x61lse\x12\"\n\x13\x66orceLineProcessing\x18\x15 \x01(\x08:\x05\x66\x61lse\x12\x32\n\nSignalType\x18\x16 \x02(\x0e\x32\x17.intrepid.MNFSignalType:\x05GAMMA\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06mnf256\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06mnf256\"\xe5\x03\n(RequestedStandard_4Channel_Processes_INT\x12\"\n\x13\x46ourChannelDeadTime\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10UseFixedDeadTime\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\"\n\x13UseRecordedLiveTime\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eUpwardDeadTime\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0e\x43osmicDeadTime\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10\x43osmicBackground\x18\x06 \x01(\x08:\x05\x66\x61lse\x12!\n\x12\x41ircraftBackground\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fRadonBackground\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10\x43omptonStripping\x18\t \x01(\x08:\x05\x66\x61lse\x12 \n\x11HeightAttenuation\x18\n \x01(\x08:\x05\x66\x61lse\x12(\n\x19UseTerrainClearanceLimits\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rClipByHeights\x18\x0c \x01(\x08:\x05\x66\x61lse\x12#\n\x14GroundConcentrations\x18\r \x01(\x08:\x05\x66\x61lse\"i\n(RequestedStandard_4Channel_DeadTimes_INT\x12\x10\n\x02TC\x18\x01 \x01(\x01:\x04\x32\x35.1\x12\x14\n\x06\x63osmic\x18\x02 \x01(\x01:\x04\x32\x35.1\x12\x15\n\x07upwardU\x18\x03 \x01(\x01:\x04\x32\x35.1\"r\n\"Requested_4Channel_Backgrounds_INT\x12\r\n\x02TC\x18\x01 \x01(\x01:\x01\x30\x12\x0c\n\x01K\x18\x02 \x01(\x01:\x01\x30\x12\x0c\n\x01U\x18\x03 \x01(\x01:\x01\x30\x12\r\n\x02Th\x18\x04 \x01(\x01:\x01\x30\x12\x12\n\x07upwardU\x18\x05 \x01(\x01:\x01\x30\"\xe2\x01\n\'Requested_4Channel_RadonBackgrounds_INT\x12\x12\n\x02\x41\x31\x18\x01 \x01(\x01:\x06\x30.0339\x12\x12\n\x02\x41\x32\x18\x02 \x01(\x01:\x06\x30.0027\x12\x11\n\x03\x41tc\x18\x03 \x01(\x01:\x04\x31\x35.7\x12\x10\n\x03\x42tc\x18\x04 \x01(\x01:\x03\x30.3\x12\x10\n\x02\x41k\x18\x05 \x01(\x01:\x04\x30.88\x12\x10\n\x02\x42k\x18\x06 \x01(\x01:\x04\x30.02\x12\x10\n\x02\x41u\x18\x07 \x01(\x01:\x04\x30.17\x12\r\n\x02\x42u\x18\x08 \x01(\x01:\x01\x30\x12\x12\n\x03\x41th\x18\t \x01(\x01:\x05\x30.086\x12\x11\n\x03\x42th\x18\n \x01(\x01:\x04\x30.03\"\x93\x02\n&Requested_4Channel_StrippingRatios_INT\x12\x1a\n\x0c\x61lpha_ground\x18\x01 \x01(\x01:\x04\x30.25\x12\x19\n\x08\x64htAlpha\x18\x02 \x01(\x01:\x07\x30.00049\x12\x18\n\x0b\x62\x65ta_ground\x18\x03 \x01(\x01:\x03\x30.4\x12\x18\n\x07\x64htBeta\x18\x04 \x01(\x01:\x07\x30.00065\x12\x1a\n\x0cgamma_ground\x18\x05 \x01(\x01:\x04\x30.81\x12\x19\n\x08\x64htGamma\x18\x06 \x01(\x01:\x07\x30.00069\x12\x17\n\treverse_a\x18\x07 \x01(\x01:\x04\x30.06\x12\x14\n\treverse_b\x18\x08 \x01(\x01:\x01\x30\x12\x18\n\treverse_g\x18\t \x01(\x01:\x05\x30.003\"\xbf\x01\n(Requested_4Channel_HeightAttenuation_INT\x12%\n\x15TotalCountAttenuation\x18\x01 \x01(\x01:\x06\x30.0067\x12$\n\x14PotassiumAttenuation\x18\x02 \x01(\x01:\x06\x30.0082\x12\"\n\x12UraniumAttenuation\x18\x03 \x01(\x01:\x06\x30.0084\x12\"\n\x12ThoriumAttenuation\x18\x04 \x01(\x01:\x06\x30.0066\"\x89\x01\n$Requested_4Channel_Sensitivities_INT\x12\x17\n\x0c\x63psPerTCdose\x18\x01 \x01(\x01:\x01\x31\x12\x19\n\x0e\x63psPerKpercent\x18\x02 \x01(\x01:\x01\x31\x12\x15\n\ncpsPerUppm\x18\x03 \x01(\x01:\x01\x31\x12\x16\n\x0b\x63psPerThppm\x18\x04 \x01(\x01:\x01\x31\"\xa3\x01\n#Requested_4Channel_HeightLimits_INT\x12\x18\n\rMinimumHeight\x18\x01 \x01(\x01:\x01\x35\x12\x1a\n\rMaximumHeight\x18\x02 \x01(\x01:\x03\x33\x30\x30\x12\x19\n\rNominalHeight\x18\x03 \x01(\x01:\x02\x38\x30\x12+\n\x1cNullOutputsWhenOutsideLimits\x18\x04 \x01(\x08:\x05\x66\x61lse\"\xea\x08\n\x12GammaRayAdjust_INT\x12)\n\nReportFile\x18\x01 \x01(\t:\x15gamadj_processing.rpt\x12\x10\n\x08LineType\x18\x02 \x01(\t\x12\x12\n\nTotalCount\x18\x03 \x01(\t\x12\x11\n\tPotassium\x18\x04 \x01(\t\x12\x0f\n\x07Uranium\x18\x05 \x01(\t\x12\x0f\n\x07Thorium\x18\x06 \x01(\t\x12\x14\n\x0c\x44\x61taBaseName\x18\x07 \x01(\t\x12\x1f\n\x14\x44\x61taSamplingInterval\x18\x08 \x01(\x01:\x01\x31\x12\x17\n\x0fInputTotalCount\x18\t \x01(\t\x12\x16\n\x0eInputPotassium\x18\n \x01(\t\x12\x14\n\x0cInputUranium\x18\x0b \x01(\t\x12\x14\n\x0cInputThorium\x18\x0c \x01(\t\x12\x16\n\x0eInputClearance\x18\r \x01(\t\x12\x13\n\x0bInputCosmic\x18\x0e \x01(\t\x12\x1a\n\x12InputUpwardUranium\x18\x0f \x01(\t\x12\x15\n\rInputLiveTime\x18\x10 \x01(\t\x12\x43\n\x07process\x18\x11 \x01(\x0b\x32\x32.intrepid.RequestedStandard_4Channel_Processes_INT\x12\x45\n\tdeadtimes\x18\x12 \x01(\x0b\x32\x32.intrepid.RequestedStandard_4Channel_DeadTimes_INT\x12G\n\x11\x43osmicBackGrounds\x18\x13 \x01(\x0b\x32,.intrepid.Requested_4Channel_Backgrounds_INT\x12I\n\x13\x41ircraftBackGrounds\x18\x14 \x01(\x0b\x32,.intrepid.Requested_4Channel_Backgrounds_INT\x12W\n\x1cUpwardCrystalRadonCorrection\x18\x15 \x01(\x0b\x32\x31.intrepid.Requested_4Channel_RadonBackgrounds_INT\x12J\n\x10\x43omptonStripping\x18\x16 \x01(\x0b\x32\x30.intrepid.Requested_4Channel_StrippingRatios_INT\x12M\n\x11HeightAttenuation\x18\x17 \x01(\x0b\x32\x32.intrepid.Requested_4Channel_HeightAttenuation_INT\x12\x43\n\x0cHeightLimits\x18\x18 \x01(\x0b\x32-.intrepid.Requested_4Channel_HeightLimits_INT\x12\x45\n\rSensitivities\x18\x19 \x01(\x0b\x32..intrepid.Requested_4Channel_Sensitivities_INT\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06gamadj\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06gamadj\"\xd3\x02\n\x15Uranium_Levelling_INT\x12\x1b\n\x13InputPotassiumField\x18\x01 \x01(\t\x12\x19\n\x11InputUraniumField\x18\x02 \x01(\t\x12\x19\n\x11InputThoriumField\x18\x03 \x01(\t\x12\x1a\n\x12OutputUraniumField\x18\x04 \x01(\t\x12)\n\nReportFile\x18\x05 \x01(\t:\x15Uranium_Levelling.rpt\x12 \n\x12Thorium_Regression\x18\x06 \x01(\x08:\x04true\x12\"\n\x14Potassium_Regression\x18\x07 \x01(\x08:\x04true\x12\x1d\n\x0fView_Statistics\x18\x08 \x01(\x08:\x04true\x12\x1c\n\rTest_Run_Only\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06ulevel\"\x84\x02\n\x14GammaRaySurveyQC_INT\x12\x18\n\tPeakDrift\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\'\n\x18PeakDriftEnergyCalByLine\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x34\n%PeakDriftEnergyCalByIntegrationPeriod\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x11IntegrationPeriod\x18\x04 \x01(\x05:\x03\x34\x30\x30\x12\x1d\n\x0ePeakResolution\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tFlagNulls\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x46lagAllZero\x18\x07 \x01(\x08:\x05\x66\x61lse\"\xc4\x01\n\x1bGammaRayStrippingRatios_INT\x12\x1c\n\rUpwardCrystal\x18\x01 \x01(\x08:\x05\x66\x61lse\x12#\n\x14PerformSpectralRatio\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x38\n\x13SpectralRatioMethod\x18\x03 \x01(\x0e\x32\x1b.intrepid.SpectralRatio_INT\x12(\n\x19\x43osmic_AircraftBackground\x18\x04 \x01(\x08:\x05\x66\x61lse\"\xf8\x01\n\x1cGammaRaySpectrumCreation_INT\x12 \n\x11\x43reateCalibration\x18\x01 \x01(\x08:\x05\x66\x61lse\x12/\n Cosmic_AircraftBackgroundSpectra\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x05Radon\x18\x03 \x01(\x08:\x05\x66\x61lse\x12T\n\x16RadonCalibrationMethod\x18\x04 \x01(\x0e\x32$.intrepid.RadonCalibrationMethod_INT:\x0e\x46romSurveyData\x12\x19\n\nIntegrated\x18\x06 \x01(\x08:\x05\x66\x61lse\"\xbd\x05\n\x12\x43\x61librateGamma_INT\x12\x14\n\x0c\x44\x61taBaseName\x18\x01 \x01(\t\x12\x19\n\x11InputSpectrumName\x18\x02 \x01(\t\x12\x17\n\x0fInputCosmicName\x18\x03 \x01(\t\x12\x19\n\x0eSampleInterval\x18\x04 \x01(\x01:\x01\x31\x12\x1c\n\x0fIntegrationTime\x18\x13 \x01(\x01:\x03\x34\x30\x30\x12 \n\x18InputCalibrationFileName\x18\x05 \x01(\t\x12!\n\x19OutputCalibrationFileName\x18\x06 \x01(\t\x12(\n\x19\x44isplayCalibrationSpectra\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fSeparateDisplay\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\"\n\x13SuperimposedDisplay\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eQualityControl\x18\n \x01(\x08:\x05\x66\x61lse\x12\x38\n\x10GammaRaySurveyQC\x18\x0b \x01(\x0b\x32\x1e.intrepid.GammaRaySurveyQC_INT\x12H\n\x18GammaRaySpectrumCreation\x18\x0c \x01(\x0b\x32&.intrepid.GammaRaySpectrumCreation_INT\x12\x1f\n\x10\x43omputeConstants\x18\r \x01(\x08:\x05\x66\x61lse\x12\x46\n\x17GammaRayStrippingRatios\x18\x0e \x01(\x0b\x32%.intrepid.GammaRayStrippingRatios_INT\x12)\n\nReportFile\x18\x14 \x01(\t:\x15\x43\x61librateGammaRay.rpt\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06\x63\x61l256\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06\x63\x61l256\"C\n\x14MeasuredGridList_INT\x12+\n\x0cObservedGrid\x18\x01 \x03(\x0b\x32\x15.ctm.MeasuredGrid_INT\"\xa8\x01\n\x1bTriangulatedSurfaceDyke_INT\x12\x10\n\x08\x46ileName\x18\x03 \x02(\t\x12\x1b\n\x0cSkeletonized\x18\x18 \x01(\x08:\x05\x66\x61lse\x12%\n\x1aSurface_Notional_Thickness\x18\x1a \x01(\x01:\x01\x31\x12\x15\n\x07\x44\x65nsity\x18\x06 \x01(\x01:\x04\x32.67\x12\x1c\n\x0eSusceptibility\x18\x07 \x01(\x01:\x04\x30.01\"w\n\x14TetrahedraVolume_INT\x12\x10\n\x08\x46ileName\x18\x03 \x02(\t\x12\x0f\n\x07\x44\x65nsity\x18\x06 \x03(\x01\x12\x16\n\x0eSusceptibility\x18\x07 \x03(\x01\x12$\n\x15\x43omputeExternalFacets\x18\x08 \x01(\x08:\x05\x66\x61lse\"\xef\x08\n\x19\x46orwardModelFromDykes_INT\x12?\n\tAlgorithm\x18\x01 \x01(\x0e\x32\x18.intrepid.Dyke_Algorithm:\x12ListOfSimplePrisms\x12\x16\n\x0eInputDykesName\x18\x02 \x01(\t\x12\x12\n\nInputField\x18\x03 \x01(\t\x12?\n\x10SurfaceTriangles\x18\x04 \x03(\x0b\x32%.intrepid.TriangulatedSurfaceDyke_INT\x12\x1d\n\x05worms\x18\x05 \x03(\x0b\x32\x0e.geophy.cModel\x12\x15\n\rInputGridName\x18\" \x01(\t\x12\x18\n\x10\x43omputedGridName\x18\x1e \x01(\t\x12\x1c\n\x14\x64rape_elevation_grid\x18\x06 \x01(\t\x12\x19\n\x11ObservationHeight\x18\x07 \x01(\x01\x12\x35\n\x07product\x18\x08 \x02(\x0e\x32\x19.ctm.GeophysicsSignalType:\tMagnetism\x12,\n\x04IGRF\x18\t \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12!\n\x13SetReferenceDensity\x18\x0c \x01(\x01:\x04\x32.67\x12%\n\x1aSetReferenceSusceptibility\x18\r \x01(\x01:\x01\x30\x12\x38\n\x06method\x18\x14 \x01(\x0e\x32\x18.ctm.ComputationalMethod:\x0e\x44yke_Skeletons\x12/\n SubtractForwardModelFromObserved\x18# \x01(\x08:\x05\x66\x61lse\x12\x16\n\tGrid_Size\x18\x1f \x01(\x01:\x03\x31\x30\x30\x12$\n\nProjectBox\x18  \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x43\n\x16OutputGridCoordSysType\x18! \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12-\n\x0eProjectionHint\x18\x13 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12;\n\ndyke_style\x18\x15 \x01(\x0e\x32\x14.intrepid.Dyke_Style:\x11\x44S_SKELETON_SHEET\x12\x1b\n\x13\x41verage_Dyke_Length\x18\x10 \x01(\x01\x12\x19\n\x11max_search_radius\x18\x33 \x01(\x01\x12\x1d\n\x12TopographySampling\x18\x11 \x01(\x05:\x01\x31\x12#\n\x15include_border_effect\x18\x12 \x01(\x08:\x04true\x12\x0b\n\x03log\x18( \x01(\t\x12!\n\nReportFile\x18) \x01(\t:\rgrid_dyke.rpt\x12\x1f\n\x10Generated_By_GUI\x18\x32 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06MTdyke\x12&\n\x0bGUIToolName\x18\x64 \x01(\t:\x11\x66orwardDykeAppGUI\"\xaf\x08\n\x1c\x46orwardModelFromSurfaces_INT\x12\x18\n\x10InputSurfaceName\x18\x01 \x01(\t\x12\x12\n\nInputField\x18\x02 \x01(\t\x12\x32\n\nTetrahedra\x18\x15 \x01(\x0b\x32\x1e.intrepid.TetrahedraVolume_INT\x12?\n\x10SurfaceTriangles\x18\x03 \x03(\x0b\x32%.intrepid.TriangulatedSurfaceDyke_INT\x12\x1e\n\x06\x66\x61\x63\x65ts\x18\x04 \x03(\x0b\x32\x0e.geophy.cModel\x12\x15\n\rInputGridName\x18\" \x01(\t\x12\x18\n\x10\x43omputedGridName\x18\r \x01(\t\x12\x1c\n\x14\x64rape_elevation_grid\x18\x05 \x01(\t\x12\x19\n\x11ObservationHeight\x18\x06 \x01(\x01\x12\x36\n\x07product\x18\t \x02(\x0e\x32\x19.ctm.GeophysicsSignalType:\nGravimetry\x12,\n\x04IGRF\x18\n \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12!\n\x13SetReferenceDensity\x18\x0b \x01(\x01:\x04\x32.67\x12%\n\x1aSetReferenceSusceptibility\x18\x16 \x01(\x01:\x01\x30\x12\x30\n\x06method\x18\x0c \x01(\x0e\x32\x18.ctm.ComputationalMethod:\x06\x46\x61\x63\x65ts\x12/\n SubtractForwardModelFromObserved\x18# \x01(\x08:\x05\x66\x61lse\x12\x16\n\tGrid_Size\x18\x0e \x01(\x01:\x03\x31\x30\x30\x12$\n\nProjectBox\x18\x1e \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x43\n\x16OutputGridCoordSysType\x18\x0f \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12-\n\x0eProjectionHint\x18\x13 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x1c\n\x06\x61nchor\x18\x1f \x01(\x0b\x32\x0c.ctm.Point3d\x12\x1c\n\x11\x42ody_Scale_Factor\x18! \x01(\x01:\x01\x31\x12\x1d\n\x12TopographySampling\x18\x10 \x01(\x05:\x01\x31\x12#\n\x15include_border_effect\x18\x11 \x01(\x08:\x04true\x12\x0b\n\x03log\x18\x14 \x01(\t\x12)\n\nReportFile\x18  \x01(\t:\x15grid_geology_body.rpt\x12\x1f\n\x10Generated_By_GUI\x18\x32 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rBatchToolName\x18\x63 \x01(\t:\x05MTvol\x12&\n\x0bGUIToolName\x18\x64 \x01(\t:\x11\x66orwardDykeAppGUI\"\xdd\x03\n\x1d\x46orwardModelFromLayerCake_INT\x12*\n\x0bTopGridName\x18\x01 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12-\n\x0e\x42ottomGridName\x18\x02 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12\x14\n\x0cOutputSignal\x18\x03 \x01(\t\x12 \n\x11Mirror_Topography\x18\x04 \x01(\x08:\x05\x66\x61lse\x12!\n\x13SetReferenceDensity\x18\x05 \x01(\x01:\x04\x32.67\x12\x1c\n\x11ObservationHeight\x18\x06 \x01(\x01:\x01\x30\x12/\n\nDepthUnits\x18\x07 \x01(\x0e\x32\x13.ctm.Distance_Units:\x06meters\x12\x1a\n\x0eWindowHalfSize\x18\x08 \x01(\x05:\x02\x35\x30\x12#\n\nReportFile\x18  \x01(\t:\x0flayer_model.rpt\x12\x1f\n\x10Generated_By_GUI\x18\x32 \x01(\x08:\x05\x66\x61lse\x12\"\n\rBatchToolName\x18\x63 \x01(\t:\x0blayer_model\x12\x31\n\x0bGUIToolName\x18\x64 \x01(\t:\x1c\x46orwardModelLayerCakeAppGUII\"I\n\x0fScaleOption_INT\x12\x14\n\x05\x64oLog\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x0f\n\x07minClip\x18\x02 \x01(\x01\x12\x0f\n\x07maxClip\x18\x03 \x01(\x01\"\xff\x01\n\x11MakeHistogram_INT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0b\n\x03run\x18\x02 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x03 \x01(\t\x12\r\n\x05voxet\x18\x04 \x02(\t\x12\x17\n\x0flithology_field\x18\x05 \x02(\t\x12\x16\n\x0eproperty_field\x18\x06 \x02(\t\x12\x16\n\x0enumber_of_bins\x18\x07 \x02(\x05\x12*\n\x07Scaling\x18\x08 \x02(\x0b\x32\x19.intrepid.ScaleOption_INT\x12\x0e\n\x06report\x18\t \x02(\t\x12\x0b\n\x03log\x18\x11 \x01(\t\x12\x1c\n\rBatchToolName\x18\x63 \x01(\t:\x05histo\">\n\x12Grid_Reference_INT\x12\x13\n\x08X_Origin\x18\x0e \x01(\x01:\x01\x30\x12\x13\n\x08Y_Origin\x18\x0f \x01(\x01:\x01\x30\"\xba\x03\n\x18ProjectionConversion_INT\x12\x14\n\x0cInputDataset\x18\x01 \x01(\t\x12\x0b\n\x03XIN\x18\x02 \x01(\t\x12\x0b\n\x03YIN\x18\x03 \x01(\t\x12\x0b\n\x03ZIN\x18\x04 \x01(\t\x12\x0c\n\x04XOUT\x18\x05 \x01(\t\x12\x0c\n\x04YOUT\x18\x06 \x01(\t\x12\x0c\n\x04ZOUT\x18\x07 \x01(\t\x12\x15\n\rOutputDataset\x18\x08 \x01(\t\x12/\n\x10OutputProjection\x18\x0b \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x1a\n\x0eOutputCellSize\x18\x0c \x01(\x01:\x02\x35\x30\x12\x33\n\rGridReference\x18\x0e \x01(\x0b\x32\x1c.intrepid.Grid_Reference_INT\x12=\n\x0eResampleMethod\x18\x12 \x01(\x0e\x32\x1e.intrepid.SignalResampleMethod:\x05\x43ubic\x12\x1e\n\x10UpdateSurveyInfo\x18\x13 \x01(\x08:\x04true\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08projconv\x12\x1e\n\x0bGUIToolName\x18\x64 \x01(\t:\tjprojconv\"\xfb\x02\n\rPoint_Picking\x12>\n\x06Method\x18\x01 \x01(\x0e\x32\'.intrepid.MultiScaleEdgeDetectionMethod:\x05\x43\x61nny\x12\x1e\n\x0fMinimum_Anomaly\x18\x02 \x01(\x01:\x05\x35\x65-05\x12)\n\rPoint_Dataset\x18\x03 \x01(\t:\x12output/points..DIR\x12O\n\x10\x41mplitude_Option\x18\x04 \x01(\x0e\x32$.intrepid.HorizontalDerivativeMethod:\x0fTotalHorizontal\x12\x1d\n\x12MaximumSignalValue\x18\x05 \x01(\x01:\x01\x30\x12\x1d\n\x12MinimumSignalValue\x18\x06 \x01(\x01:\x01\x30\x12\'\n\x18\x46ilterMinimumSignalValue\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\'\n\x18\x46ilterMaximumSignalValue\x18\x08 \x01(\x08:\x05\x66\x61lse\"\x9e\x02\n\x0fWorm_Processing\x12#\n\x18Maximum_Point_Separation\x18\x01 \x01(\x01:\x01\x32\x12\'\n\x0cWorm_Dataset\x18\x02 \x01(\t:\x11output/worms..DIR\x12\x1d\n\x12Worm_Min_Nr_Points\x18\x03 \x01(\x05:\x01\x33\x12!\n\nWorm_Image\x18\x04 \x01(\t:\rwormImage.tif\x12\x1f\n\x10\x44\x65pth_Estimation\x18\x05 \x01(\x08:\x05\x66\x61lse\x12-\n Euler_Minimum_Gradient_Amplitude\x18\x06 \x01(\x01:\x03\x30.1\x12+\n\x05style\x18\x07 \x01(\x0e\x32\x17.intrepid.CONTACT_STYLE:\x03\x41LL\"\x94\x01\n\x0fLine_Processing\x12-\n\x1fMaximum_Straight_Line_Deviation\x18\x01 \x01(\x01:\x04\x38\x30\x30\x30\x12%\n\x19Minimum_Points_For_Linear\x18\x02 \x01(\x05:\x02\x31\x35\x12+\n\x0eLinear_Dataset\x18\x03 \x01(\t:\x13output/linears..DIR\"\xeb\x08\n\x12\x46\x61ult3D_Processing\x12-\n\x1fMaximum_Straight_Line_Deviation\x18\x01 \x01(\x01:\x04\x38\x30\x30\x30\x12 \n\x15Minimum_Points_For_3D\x18\x02 \x01(\x05:\x01\x37\x12*\n\x0f\x43ontact_Dataset\x18\x03 \x01(\t:\x11output/contacts3d\x12$\n\x05\x64rape\x18\x04 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12 \n\x12subsample_contacts\x18\x05 \x01(\x08:\x04true\x12*\n\x1eReject_Strike_Divergence_Angle\x18\x06 \x01(\x05:\x02\x34\x35\x12+\n\x05style\x18\x07 \x01(\x0e\x32\x17.intrepid.CONTACT_STYLE:\x03\x41LL\x12&\n\x1bMinimum_Continuation_Levels\x18\x08 \x01(\x05:\x01\x32\x12!\n\x16\x44ip_Estimates_per100km\x18\t \x01(\x05:\x01\x32\x12-\n\x1f\x64isallow_poor_low_dip_estimates\x18\n \x01(\x08:\x04true\x12$\n\x18\x64\x65\x66\x61ult_low_dip_estimate\x18\x0b \x01(\x05:\x02\x34\x30\x12\x31\n\x05Units\x18( \x01(\x0e\x32\x17.intrepid.Gravity_Units:\tMILLIGALS\x12\x1c\n\rdump_dip_logs\x18) \x01(\x08:\x05\x66\x61lse\x12\x38\n\rorigin_method\x18* \x01(\x0e\x32\x16.intrepid.FAULT_ORIGIN:\tFROM_WORM\x12\x1a\n\x0f\x46\x61ult_Thickness\x18, \x01(\x01:\x01\x30\x12\x1c\n\x11\x46\x61ult_Block_Depth\x18- \x01(\x01:\x01\x30\x12\x18\n\rsubsample_dtm\x18. \x01(\x05:\x01\x31\x12\x1b\n\x10Tyy_minimum_test\x18/ \x01(\x01:\x01\x32\x12\x33\n\'minimum_Total_Vertical_Plane_Derivative\x18\x30 \x01(\x01:\x02\x31\x30\x12 \n\x14Minimum_2D_Responses\x18\x31 \x01(\x05:\x02\x31\x31\x12)\n\x1b\x43orrect_For_FaultBlock_Tilt\x18\x32 \x01(\x08:\x04true\x12\x36\n\'capture_gravity_profiles_from_dip_calcs\x18< \x01(\x08:\x05\x66\x61lse\x12%\n\x16SetWriteVTKDipProfiles\x18? \x01(\x08:\x05\x66\x61lse\x12/\n$intersecting_worms_margin_multiplier\x18= \x01(\x05:\x01\x32\x12+\n\x1dMinimum_Fault_Vertical_Extent\x18> \x01(\x01:\x04\x31\x30\x30\x30\x12\x16\n\x08OutputDB\x18\x41 \x01(\x08:\x04true\x12 \n\x10\x43ontact_Profiles\x18+ \x01(\t:\x06output\x12\"\n\x0cOutputDBName\x18\x42 \x01(\t:\x0c\x46oliationsDB\"\xe8\x04\n\rView3D_Faults\x12\x1d\n\x0eshow_3D_viewer\x18\x01 \x01(\x08:\x05\x66\x61lse\x12$\n\x18\x64iscretization_intervals\x18\x02 \x01(\x05:\x02\x34\x30\x12\x1b\n\x0cproject_zmin\x18\x03 \x01(\x01:\x05-3000\x12\x19\n\x0cproject_zmax\x18\x04 \x01(\x01:\x03\x35\x30\x30\x12!\n\x13show_limited_faults\x18\x05 \x01(\x08:\x04true\x12\x31\n#show_limited_fault_ellipsoid_bounds\x18\x06 \x01(\x08:\x04true\x12%\n\x16show_fault_unit_normal\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\'\n\x19show_original_signal_grid\x18\x08 \x01(\x08:\x04true\x12\x1b\n\rshow_DTM_grid\x18\t \x01(\x08:\x04true\x12 \n\x12trim_faults_to_DTM\x18\n \x01(\x08:\x04true\x12\x18\n\nshow_worms\x18\x0b \x01(\x08:\x04true\x12\'\n\x18show_interface_foliation\x18\x0c \x01(\x08:\x05\x66\x61lse\x12 \n\x11write_3D_surfaces\x18\r \x01(\x08:\x05\x66\x61lse\x12\x19\n\x0evertical_scale\x18\x0e \x01(\x01:\x01\x31\x12%\n\x16show_dip_calc_profiles\x18\x0f \x01(\x08:\x05\x66\x61lse\x12!\n\x12show_FormingStages\x18\x10 \x01(\x08:\x05\x66\x61lse\x12+\n\x1dMinimum_Fault_Vertical_Extent\x18\x12 \x01(\x01:\x04\x31\x30\x30\x30\"H\n\nRarify_INT\x12\x17\n\x0cMinimum_Rows\x18\x01 \x01(\x05:\x01\x38\x12!\n\x14Height_Mesh_Multiple\x18\x02 \x01(\x05:\x03\x31\x30\x30\"\xc5\x04\n\x15Pre_FFT_Transform_INT\x12\"\n\rFFT_Grid_Path\x18\x01 \x01(\t:\x0b\x66\x66tGrid.ers\x12\x17\n\nFFT_Border\x18\x02 \x01(\x01:\x03\x31\x32\x30\x12(\n\x10WindowedGridName\x18\x10 \x01(\t:\x0ewindowGrid.ers\x12*\n\x10\x45xpandedGridName\x18\x11 \x01(\t:\x10\x65xpandedGrid.ers\x12\x0f\n\x04\x42\x61nd\x18\x15 \x01(\x05:\x01\x31\x12\x39\n\x0b\x46\x46TDataType\x18\x16 \x01(\x0e\x32\x12.ctm.GridDataTypes:\x10IEEE4ByteComplex\x12)\n\x06Subset\x18\x03 \x01(\x0b\x32\x19.intrepid.grid_subset_INT\x12<\n\x0bRolloffType\x18\x04 \x01(\x0e\x32\x17.fdf.GetRolloffTypeList:\x0e\x43osine_RollOff\x12\x35\n\nWindowType\x18\x05 \x01(\x0e\x32\x16.fdf.GetWindowTypeList:\tNO_Window\x12.\n\x08\x46illType\x18\x06 \x01(\x0e\x32\x14.fdf.GetFillTypeList:\x06\x41RTHUR\x12\x1d\n\x0e\x46illStopAtEdge\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x18\n\rDetrendDegree\x18\x07 \x01(\x05:\x01\x30\x12,\n\x04IGRF\x18\t \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x16\n\x0bNumber_CPUs\x18\n \x01(\x05:\x01\x31\"\xc6\x01\n\x10Output_Grids_INT\x12!\n\x0b\x46older_Path\x18\x01 \x01(\t:\x0coutput/grids\x12\"\n\nTHD_Prefix\x18\x02 \x01(\t:\x0etotal_hz_deriv\x12\x1a\n\tXD_Prefix\x18\x03 \x01(\t:\x07x_deriv\x12\x1a\n\tYD_Prefix\x18\x04 \x01(\t:\x07y_deriv\x12\x33\n\x08\x44\x61taType\x18\x05 \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\"\x88\x01\n\x16\x43ontinuation_Grids_INT\x12#\n\rOutput_Folder\x18\x01 \x01(\t:\x0coutput/grids\x12\x14\n\x06Prefix\x18\x02 \x01(\t:\x04\x63ont\x12\x33\n\x08\x44\x61taType\x18\x03 \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\"w\n\x19Pseudo_Gravity_Filter_INT\x12\"\n\x15\x43ontinuation_Distance\x18\x01 \x01(\x01:\x03\x31\x30\x30\x12\x1b\n\x0e\x43ontrast_Ratio\x18\x02 \x01(\x01:\x03\x30.1\x12\x19\n\x0e\x46ield_Strength\x18\x03 \x01(\x01:\x01\x30\"\xad\x03\n UpwardContinuation_Filtering_INT\x12$\n\x06Rarify\x18\x01 \x01(\x0b\x32\x14.intrepid.Rarify_INT\x12:\n\x11Pre_FFT_Transform\x18\x02 \x01(\x0b\x32\x1f.intrepid.Pre_FFT_Transform_INT\x12\x30\n\x0cOutput_Grids\x18\x03 \x01(\x0b\x32\x1a.intrepid.Output_Grids_INT\x12<\n\x12\x43ontinuation_Grids\x18\x04 \x01(\x0b\x32 .intrepid.Continuation_Grids_INT\x12\x42\n\x15Pseudo_Gravity_Filter\x18\x05 \x01(\x0b\x32#.intrepid.Pseudo_Gravity_Filter_INT\x12,\n\x04IGRF\x18\x07 \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x1a\n\x0bPerform_RTP\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x19\n\nPerform_VD\x18\t \x01(\x08:\x05\x66\x61lse\x12\x0e\n\x06Levels\x18\n \x03(\x01\"\xab\x04\n\x18Supplementry_Outputs_INT\x12\x30\n\x13\x41scii_Point_Dataset\x18\x01 \x01(\t:\x13output/asciiPts.wrm\x12\x31\n\x12\x41scii_Worm_Dataset\x18\x02 \x01(\t:\x15output/asciiWorms.str\x12\x31\n\x12\x41scii_Line_Dataset\x18\x03 \x01(\t:\x15output/asciiLines.lin\x12\x36\n\x16\x41rcShape_Point_Dataset\x18\x04 \x01(\t:\x16output/arcshapePts.shp\x12\x37\n\x15\x41rcShape_Worm_Dataset\x18\x05 \x01(\t:\x18output/arcshapeWorms.shp\x12\x34\n\x15MapInfo_Point_Dataset\x18\x07 \x01(\t:\x15output/mapInfoPts.mif\x12\x35\n\x14MapInfo_Worm_Dataset\x18\x08 \x01(\t:\x17output/mapInfoWorms.mif\x12\x35\n\x14MapInfo_Line_Dataset\x18\t \x01(\t:\x17output/mapInfoLines.mif\x12\x30\n\x13GoCad_Point_Dataset\x18\n \x01(\t:\x13output/gocadPts.cad\x12\x30\n\x12GoCad_Worm_Dataset\x18\x0b \x01(\t:\x14output/gocadWorms.pl\"\x88\x05\n\tWormE_INT\x12,\n\rInputGridName\x18\x01 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12\x30\n\x11\x45levationGridName\x18\x02 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12)\n\x06Subset\x18\x03 \x01(\x0b\x32\x19.intrepid.grid_subset_INT\x12&\n\x05point\x18\x04 \x01(\x0b\x32\x17.intrepid.Point_Picking\x12\'\n\x04worm\x18\x05 \x01(\x0b\x32\x19.intrepid.Worm_Processing\x12*\n\x07linears\x18\x06 \x01(\x0b\x32\x19.intrepid.Line_Processing\x12.\n\x08surfaces\x18\x07 \x01(\x0b\x32\x1c.intrepid.Fault3D_Processing\x12@\n\x0cUC_Filtering\x18\x08 \x01(\x0b\x32*.intrepid.UpwardContinuation_Filtering_INT\x12@\n\x14Supplementry_Outputs\x18\t \x01(\x0b\x32\".intrepid.Supplementry_Outputs_INT\x12%\n\x04view\x18\n \x01(\x0b\x32\x17.intrepid.View3D_Faults\x12\x33\n\x0e\x44istance_Units\x18\r \x01(\x0e\x32\x13.ctm.Distance_Units:\x06meters\x12(\n\nReportFile\x18  \x01(\t:\x14wormE_processing.rpt\x12\x1d\n\rBatchToolName\x18\xc7\x01 \x01(\t:\x05worme\x12\x1a\n\x0bGUIToolName\x18\x64 \x01(\t:\x05worme\"\xea\x02\n\x10WienerFilter_INT\x12\x1e\n\nSaveKernel\x18\x01 \x01(\t:\nwiener.ker\x12\x1e\n\x05Specs\x18\x02 \x02(\x0b\x32\x0f.fdf.Wiener_FDF\x12+\n\x04Mode\x18\x03 \x01(\x0e\x32\x10.fdf.Wiener_Mode:\x0bRT_MAGNETIC\x12#\n\x15SaveCrossCorrelations\x18\x05 \x01(\x08:\x04true\x12\x1b\n\x0cSaveFiltered\x18\x07 \x01(\x08:\x05\x66\x61lse\x12 \n\x11SaveProgressGrids\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eSaveDebugGrids\x18\t \x01(\x08:\x05\x66\x61lse\x12)\n\nReportFile\x18  \x01(\t:\x15wiener_processing.rpt\x12\x1e\n\rBatchToolName\x18\xc7\x01 \x01(\t:\x06wiener\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06wiener\"\xfc\x01\n\x11MapCompExport_INT\x12\x0f\n\x07mapfile\x18\x01 \x01(\t\x12\x0b\n\x03map\x18\x02 \x01(\t\x12\x13\n\x0b\x63ontextfile\x18\x03 \x01(\t\x12\x0f\n\x07\x63ontext\x18\x04 \x01(\t\x12/\n\x06\x66ormat\x18\x05 \x01(\x0e\x32\x1a.intrepid_maps.Devices_MAP:\x03\x65ps\x12\x12\n\noutputfile\x18\x06 \x01(\t\x12\r\n\x05Input\x18\n \x01(\t\x12\x0e\n\x06Output\x18\x0b \x01(\t\x12 \n\rBatchToolName\x18\xc7\x01 \x01(\t:\x08mapprint\x12\x1d\n\x0bGUIToolName\x18\x64 \x01(\t:\x08mapprint\"\xde\x05\n\x0cHARDCOPY_INT\x12#\n\x07NewPlot\x18\x01 \x01(\x0b\x32\x12.dlist.NewPlot_INT\x12\"\n\x06\x45xtent\x18\x02 \x01(\x0b\x32\x12.dlist.Extents_INT\x12\x1f\n\x03Map\x18\x03 \x01(\x0b\x32\x12.dlist.MapPlot_INT\x12\x15\n\rSunAngleDrape\x18\x05 \x01(\t\x12\x14\n\x0cPseudoColour\x18\x06 \x01(\t\x12\x0b\n\x03Red\x18\x07 \x01(\t\x12\r\n\x05Green\x18\x08 \x01(\t\x12\x0c\n\x04\x42lue\x18\t \x01(\t\x12\x38\n\x17ImageHistogramOperation\x18\n \x01(\x0e\x32\r.dlist.HistOp:\x08histNone\x12O\n\x15Grid_Interpolate_Type\x18\x0c \x01(\x0e\x32\x1c.dlist.Grid_Interpolate_Type:\x12INTREPID_NEWTON4TH\x12\'\n\tImageWork\x18\x12 \x03(\x0b\x32\x14.dlist.ImageWork_INT\x12#\n\x06region\x18\r \x01(\x0b\x32\x13.intrepid.XY_Region\x12\x0e\n\x06Output\x18\x0b \x01(\t\x12%\n\x08LineWork\x18\x0e \x01(\x0b\x32\x13.dlist.LineWork_INT\x12\'\n\tPointWork\x18\x0f \x01(\x0b\x32\x14.dlist.PointWork_INT\x12%\n\x08PolyWork\x18\x10 \x01(\x0b\x32\x13.dlist.PolyWork_INT\x12%\n\x08TickWork\x18\x11 \x01(\x0b\x32\x13.dlist.TickWork_INT\x12\x1f\n\x05Title\x18\x13 \x01(\x0b\x32\x10.dlist.Title_INT\x12(\n\nReportFile\x18  \x01(\t:\x14image_processing.rpt\x12\x1e\n\rBatchToolName\x18\xc7\x01 \x01(\t:\x06visual\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06visual\"\xf2\x01\n\x0eRarifyLine_INT\x12\x14\n\x0cInputDataset\x18\x01 \x02(\t\x12\x15\n\rOutputDataset\x18\x02 \x01(\t\x12\x1c\n\x0eInputFrequency\x18\x03 \x01(\x01:\x04\x31\x30\x30\x30\x12\x1b\n\x0fOutputFrequency\x18\x04 \x01(\x01:\x02\x32\x35\x12\x1c\n\x10\x44\x65\x63imationFactor\x18\x05 \x01(\x01:\x02\x31\x30\x12\x1e\n\nReportFile\x18\x62 \x01(\t:\nrarify.rpt\x12\x1d\n\rBatchToolName\x18\x63 \x01(\t:\x06rarify\x12\x1b\n\x0bGUIToolName\x18\x64 \x01(\t:\x06rarify\"\xad\x11\n\x0cIntrepidTask\x12$\n\x06Import\x18\x01 \x01(\x0b\x32\x14.intrepid.Import_INT\x12&\n\x08\x45xportDB\x18\x02 \x01(\x0b\x32\x14.intrepid.Export_INT\x12$\n\x06Subset\x18\x03 \x01(\x0b\x32\x14.intrepid.Subset_INT\x12,\n\x06GridOp\x18\x04 \x01(\x0b\x32\x1c.intrepid.GridOperations_INT\x12\x34\n\x08ProjConv\x18\x05 \x01(\x0b\x32\".intrepid.ProjectionConversion_INT\x12)\n\x06\x64\x62\x65\x64it\x18\x06 \x01(\x0b\x32\x19.intrepid.SpreadSheet_INT\x12:\n\x11\x44\x61taset_Resampler\x18\x07 \x01(\x0b\x32\x1f.intrepid.Dataset_Resampler_INT\x12\x34\n\x0eSurveyDistance\x18\x08 \x01(\x0b\x32\x1c.intrepid.SurveyDistance_INT\x12\x38\n\x0b\x46ileManager\x18\t \x01(\x0b\x32#.intrepid.DataBase_Manipulation_INT\x12\x36\n\x0f\x43lusterAnalysis\x18\n \x01(\x0b\x32\x1d.intrepid.ClusterAnalysis_INT\x12,\n\x05\x46\x65\x64it\x18\x0b \x01(\x0b\x32\x1d.intrepid.SurveyPlan_Edit_INT\x12-\n\x08\x43lipLine\x18\x0c \x01(\x0b\x32\x1b.intrepid.ClipLine_Edit_INT\x12\x30\n\x0bProfileEdit\x18\r \x01(\x0b\x32\x1b.intrepid.ProfileEditor_INT\x12,\n\x08\x43onvolve\x18\x0f \x01(\x0b\x32\x1a.intrepid.ConvolveGrid_INT\x12\x36\n\nGridFilter\x18\x10 \x01(\x0b\x32\".intrepid.GridFourierFiltering_INT\x12.\n\x0b\x44\x65\x63orrugate\x18\x11 \x01(\x0b\x32\x19.intrepid.Decorrugate_INT\x12,\n\nMicroLevel\x18\x12 \x01(\x0b\x32\x18.intrepid.MicroLevel_INT\x12-\n\nLineFilter\x18\x13 \x01(\x0b\x32\x19.intrepid.Line_Filter_INT\x12\x30\n\x0cWienerFilter\x18\x0e \x01(\x0b\x32\x1a.intrepid.WienerFilter_INT\x12(\n\x08Gridding\x18\x19 \x01(\x0b\x32\x16.intrepid.Gridding_INT\x12*\n\tGridmerge\x18\x1a \x01(\x0b\x32\x17.intrepid.Gridmerge_INT\x12$\n\x06TrendQ\x18\x1b \x01(\x0b\x32\x14.intrepid.TrendQ_INT\x12&\n\x07Gravity\x18\x1e \x01(\x0b\x32\x15.intrepid.Gravity_INT\x12<\n\x12Terrain_Correction\x18\x1f \x01(\x0b\x32 .intrepid.Terrain_Correction_INT\x12*\n\tisostatic\x18  \x01(\x0b\x32\x17.intrepid.ISOStatic_INT\x12*\n\tLevelling\x18! \x01(\x0b\x32\x17.intrepid.Levelling_INT\x12\x32\n\x0bMarineLevel\x18\" \x01(\x0b\x32\x1d.intrepid.MarineLevelling_INT\x12.\n\x0bSplitCruise\x18# \x01(\x0b\x32\x19.intrepid.SplitCruise_INT\x12\x30\n\x0cGravityMerge\x18$ \x01(\x0b\x32\x1a.intrepid.GravityMerge_INT\x12(\n\x08Radio256\x18\x14 \x01(\x0b\x32\x16.intrepid.Radio256_INT\x12@\n\x14MaximumNoiseFraction\x18\x15 \x01(\x0b\x32\".intrepid.MaximumNoiseFraction_INT\x12,\n\x06GamAdj\x18\x16 \x01(\x0b\x32\x1c.intrepid.GammaRayAdjust_INT\x12\x39\n\x10UraniumLevelling\x18\x17 \x01(\x0b\x32\x1f.intrepid.Uranium_Levelling_INT\x12\x34\n\x0e\x43\x61librateGamma\x18\x18 \x01(\x0b\x32\x1c.intrepid.CalibrateGamma_INT\x12\x30\n\x05Naudy\x18( \x01(\x0b\x32!.intrepid.Naudy_AutoModelling_INT\x12\x32\n\rMakeHistogram\x18G \x01(\x0b\x32\x1b.intrepid.MakeHistogram_INT\x12\"\n\x05WormE\x18I \x01(\x0b\x32\x13.intrepid.WormE_INT\x12/\n\x05\x45uler\x18J \x01(\x0b\x32 .intrepid.EulerDeconvolution_INT\x12\x42\n\x15\x46orwardModelFromDykes\x18T \x01(\x0b\x32#.intrepid.ForwardModelFromDykes_INT\x12H\n\x18\x46orwardModelFromSurfaces\x18U \x01(\x0b\x32&.intrepid.ForwardModelFromSurfaces_INT\x12J\n\x19\x46orwardModelFromLayerCake\x18V \x01(\x0b\x32\'.intrepid.ForwardModelFromLayerCake_INT\x12\x32\n\rMapCompExport\x18W \x01(\x0b\x32\x1b.intrepid.MapCompExport_INT\x12&\n\x06Visual\x18X \x01(\x0b\x32\x16.intrepid.HARDCOPY_INT\x12(\n\x06Rarify\x18Y \x01(\x0b\x32\x18.intrepid.RarifyLine_INT\x12\x0c\n\x03log\x18\xff\x01 \x01(\t*\xcf\x05\n\x14GeophysicsFormatType\x12\r\n\tAGSOARGUS\x10\x00\x12\x13\n\x0f\x41GSOARGUSBINARY\x10\x01\x12\r\n\tAGSOBASOS\x10\x02\x12\x0b\n\x07\x41GSORAF\x10\x03\x12\x12\n\x0e\x41GSOGRIDBINARY\x10\x04\x12\x0c\n\x08\x41RCSHAPE\x10\x05\x12\x10\n\x0c\x41SCIILINEXYZ\x10\x06\x12\t\n\x05\x41SEGY\x10\x07\x12\x0b\n\x07\x41SEGGDF\x10\x08\x12\x10\n\x0c\x41SCIICOLUMNS\x10\t\x12\x0e\n\nASCIIIMAGE\x10\n\x12\x11\n\rASCIIIMAGEXYZ\x10\x0b\x12\x10\n\x0c\x41SCIIPRINTER\x10\x0c\x12\x0f\n\x0b\x42INARYIMAGE\x10\r\x12\x0e\n\nENCOMIMAGE\x10\x0e\x12\x0c\n\x08\x41GSOGRID\x10\x0f\x12\x0b\n\x07\x41SEGGXF\x10\x10\x12\r\n\tECSGRDUTE\x10\x11\x12\x0f\n\x0b\x45\x43SGRIDFILE\x10\x12\x12\t\n\x05GIPSI\x10\x13\x12\x0b\n\x07GEOSOFT\x10\x14\x12\x0e\n\nGEOSOFT_DB\x10\x15\x12\x0e\n\nGEOSOFTINT\x10\x16\x12\x0b\n\x07GEOTIFF\x10\x17\x12\n\n\x06GEOPAK\x10\x18\x12\x0e\n\nECSGPCBASE\x10\x1a\x12\x0b\n\x07LCTGRID\x10\x1b\x12\x0b\n\x07MAPINFO\x10\x1c\x12\x08\n\x04MOSS\x10\x1d\x12\x0e\n\nNETCDFGRID\x10\x1e\x12\x0e\n\nNETHDFGRID\x10+\x12\x16\n\x12NETCDFGRID_UNKNOWN\x10,\x12\r\n\tNETCDFXYZ\x10\x1f\x12\x10\n\x0cNEWCRESTLINE\x10 \x12\x11\n\rNEWCRESTIMAGE\x10!\x12\x0b\n\x07PICODAS\x10\"\x12\x0e\n\nPICODAS_V2\x10#\x12\x0b\n\x07USGSDEM\x10$\x12\r\n\tUSGSIMAGE\x10%\x12\x0c\n\x08VOXELGEO\x10&\x12\r\n\tZMAPIMAGE\x10\'\x12\x07\n\x03KML\x10(\x12\x10\n\x0c\x41RCASCIIGRID\x10)\x12\x0e\n\nUNSELECTED\x10*\x12\r\n\tMAXFORMAT\x10-\x12\x07\n\x03\x43SV\x10.*\xf6\x02\n\rDB_Operations\x12\n\n\x06\x41ppend\x10\x00\x12\x08\n\x04\x43opy\x10\x01\x12\x14\n\x10\x45\x64itGeoReference\x10\x03\x12\x0c\n\x08\x45\x64itMeta\x10\x04\x12\x12\n\x0e\x45\x64itSurveyInfo\x10\x05\x12\x0b\n\x07\x43ommand\x10\x06\x12\n\n\x06\x44\x65lete\x10\x07\x12\x0f\n\x0bInterpolate\x10\x08\x12\n\n\x06Rename\x10\t\x12\x14\n\x10RemoveDuplicates\x10\n\x12\t\n\x05Spawn\x10\x0b\x12\x12\n\x0eLineStatistics\x10\x0c\x12\x13\n\x0fShortStatistics\x10\r\x12\x0e\n\nStatistics\x10\x0e\x12\t\n\x05tTest\x10\x0f\x12\r\n\tCopyTable\x10\x14\x12\x0c\n\x08\x43opyGrid\x10\x15\x12\x0f\n\x0b\x43opySurface\x10\x16\x12\x10\n\x0c\x43opyMeshGrid\x10\x17\x12\r\n\tCopyVoxet\x10\x18\x12\x0f\n\x0bVolumeStats\x10\x19\x12\x11\n\rShowThumbNail\x10\x1a\x12\t\n\x05rmDir\x10\x1b*\xce\x01\n\x12\x43ommand_Operations\x12\x08\n\x04Long\x10\x01\x12\t\n\x05Short\x10\x02\x12\n\n\x06LStats\x10\x03\x12\x0b\n\x07GroupBy\x10\x04\x12\t\n\x05Index\x10\x05\x12\x08\n\x04Meta\x10\x06\x12\x08\n\x04\x44ump\x10\x07\x12\x10\n\x0cSpatialIndex\x10\x08\x12\x0b\n\x07\x43ompare\x10\t\x12\x10\n\x0c\x46uzzyCompare\x10\n\x12\x0b\n\x07\x45xtents\x10\x0b\x12\x08\n\x04Test\x10\x0c\x12\n\n\x06Volume\x10\r\x12\n\n\x06StdOut\x10\x0e\x12\x0b\n\x07QSubmit\x10\x0f*/\n\x10PlanViewEditType\x12\n\n\x06\x43utEnd\x10\x00\x12\x0f\n\x0bNullSegment\x10\x01*\xce\x01\n\x0eNoiseTypes_INT\x12\x0e\n\nNoise_None\x10\x00\x12\x0f\n\x0bNoise_Diff4\x10\x01\x12\x0f\n\x0bNoise_Range\x10\x02\x12\x0f\n\x0bNoise_Naudy\x10\x03\x12\x12\n\x0eNoise_Gradient\x10\x04\x12\x13\n\x0fNoise_LaCosteRC\x10\x08\x12\x1b\n\x17Noise_LaCoste_Curvature\x10\t\x12\x19\n\x15Noise_LocalMeanTensor\x10\n\x12\x18\n\x14Noise_FullerBandPass\x10\x0b*\xf1\x01\n\rEditTypes_INT\x12\r\n\tEdit_None\x10\x00\x12\x0c\n\x08\x45\x64it_Cut\x10\x01\x12\x14\n\x10\x45\x64it_Interpolate\x10\x02\x12\x10\n\x0c\x45\x64it_Cut_All\x10\x03\x12\x18\n\x14\x45\x64it_Interpolate_All\x10\x04\x12\x0c\n\x08\x45\x64it_Set\x10\x05\x12\x15\n\x11\x45\x64it_Add_Constant\x10\x06\x12\x12\n\x0e\x45\x64it_Add_Slope\x10\x07\x12\x15\n\x11\x45\x64it_Add_Triangle\x10\x08\x12\r\n\tEdit_Step\x10\t\x12\x13\n\x0f\x43ut_Alternative\x10\n\x12\r\n\tEdit_Clip\x10\x0b*)\n\x0cInterpMethod\x12\x0b\n\x07I_AKIMA\x10\x00\x12\x0c\n\x08I_LINEAR\x10\x01*C\n\x0cSearchTypePE\x12\n\n\x06S_Find\x10\x00\x12\x10\n\x0cS_Range_Clip\x10\x01\x12\x15\n\x11S_Step_Correction\x10\x02*3\n\rApplySearchTo\x12\x0b\n\x07S_POINT\x10\x00\x12\n\n\x06S_LINE\x10\x01\x12\t\n\x05S_ALL\x10\x02*\x90\x01\n\rOperationType\x12\r\n\tOpenField\x10\x00\x12\x0f\n\x0b\x43reateField\x10\x01\x12\x0b\n\x07Replace\x10\x02\x12\x0f\n\x0b\x44\x65leteField\x10\x03\x12\x15\n\x11\x43onditionalDelete\x10\x04\x12\x0e\n\nSplitGroup\x10\x05\x12\n\n\x06SaveAs\x10\x06\x12\x0e\n\nSortGroups\x10\x07*$\n\x0c\x44\x65leteAction\x12\x08\n\x04Rows\x10\x00\x12\n\n\x06Groups\x10\x01*;\n\nDRRunTypes\x12\x13\n\x0f\x45xtract_Profile\x10\x00\x12\x18\n\x14\x45ndPoints_To_Dataset\x10\x01*V\n\x0c\x44RTraceLayer\x12\x10\n\x0cTL_ARBITRARY\x10\x01\x12\x0c\n\x08TL_TABLE\x10\x02\x12\x11\n\rTL_FLIGHTPLAN\x10\x03\x12\x13\n\x0fTL_TABLE_POINTS\x10\x04*v\n\x11\x43luster_Algorithm\x12\x10\n\x0cNoClustering\x10\x00\x12\x11\n\rIsoClustering\x10\x01\x12\x14\n\x10HorizontalFusion\x10\x02\x12\x15\n\x11ResplitClustering\x10\x03\x12\x0f\n\x0b\x41nisotropic\x10\x04*l\n\x12\x43lusterDatasetType\x12\r\n\tGeneric2D\x10\x00\x12\r\n\tGeneric3D\x10\x01\x12\x12\n\x0e\x45ulerSolutions\x10\x02\x12\x13\n\x0fTensor_2DFaults\x10\x03\x12\x0f\n\x0bUnit_Vector\x10\x04*\\\n\x15\x43onvolveAlgorithmType\x12\x16\n\x12UserDefinedKernels\x10\x01\x12\x11\n\rPresetKernels\x10\x02\x12\x18\n\x14TensorGridOperations\x10\x03*\x8d\x01\n\x12\x43onvolveFilterType\x12\x12\n\x0e\x43onvolveKernel\x10\x00\x12\n\n\x06Median\x10\x01\x12\x07\n\x03\x41GC\x10\x02\x12\t\n\x05\x43NORM\x10\x03\x12\x0b\n\x07TERRACE\x10\x04\x12\r\n\tCurvature\x10\x05\x12\r\n\tTensor_QC\x10\x06\x12\x0c\n\x08Gaussian\x10\x07\x12\n\n\x06\x43\x61uchy\x10\x08*\xf0\x01\n\x1bTensorGridConvolveFiltering\x12\x06\n\x02QC\x10\x00\x12\r\n\tPotential\x10\x01\x12\x16\n\x12Smoothed_Potential\x10\x02\x12\x14\n\x10Potential_StdDev\x10\x03\x12\x11\n\rFourierCoeffs\x10\x04\x12\x11\n\rFourierErrors\x10\x05\x12\x16\n\x12SmoothedComponents\x10\x06\x12\x1b\n\x17Grid_Vertical_Component\x10\x07\x12\x17\n\x13Solve_2DEigenSystem\x10\x08\x12\x18\n\x14\x46robenius_Norm_Error\x10\t*,\n\x0eTensorNormCase\x12\x08\n\x04zero\x10\x00\x12\x07\n\x03one\x10\x01\x12\x07\n\x03two\x10\x02*\x97\x06\n\x16Gravity_Process_Option\x12\r\n\tAGSOField\x10\x00\x12\x0c\n\x08\x41GSOLoop\x10\x01\x12\x11\n\rSCINTREXField\x10\x02\x12\x10\n\x0cSCINTREXLoop\x10\x03\x12\x16\n\x12SCINTREX_CALIBRATE\x10\x04\x12\x0c\n\x08\x43G5Field\x10\x05\x12\x0b\n\x07\x44umpCG5\x10\x06\x12\x0c\n\x08\x43G6Field\x10!\x12\x0b\n\x07\x44umpCG6\x10\x07\x12\r\n\tMGS6Field\x10\x08\x12\x11\n\rAIRSEAIIField\x10\t\x12\r\n\tAT1MField\x10\"\x12\x0c\n\x08\x46REE_AIR\x10\n\x12\x14\n\x10REVERSE_FREE_AIR\x10\x0b\x12\x12\n\x0eSIMPLE_BOUGUER\x10\x0c\x12\x1a\n\x16REVERSE_SIMPLE_BOUGUER\x10\r\x12\r\n\tBULLARD_B\x10\x0e\x12\x15\n\x11REVERSE_BULLARD_B\x10\x0f\x12\x0f\n\x0b\x43\x41LC_EOTVOS\x10\x10\x12\x12\n\x0eREVERSE_EOTVOS\x10\x11\x12\x0f\n\x0bTHEORETICAL\x10\x12\x12\r\n\tEarthTide\x10\x13\x12\x0b\n\x07TERRAIN\x10\x14\x12\x0b\n\x07TOWGS84\x10\x15\x12\x12\n\x0ePOTSDAM_IGSN71\x10\x16\x12#\n\x1fSTABILIZED_PLATFORM_CALIBRATION\x10\x17\x12\"\n\x1eSTABILIZED_PLATFORM_CORRECTION\x10\x18\x12#\n\x1fSTABILIZED_PLATFORM_RECONSTRUCT\x10\x19\x12)\n%STABILIZED_PLATFORM_CALIBRATE_CORRECT\x10\x1a\x12&\n\"STABILIZED_PLATFORM_RECONSTRUCT_CC\x10\x1b\x12\x17\n\x13\x43ONVERT_BELL_TENSOR\x10\x1c\x12\x16\n\x12INVERT_BELL_TENSOR\x10\x1d\x12&\n\"STABILIZED_MICROG_LACOSTE_AIRSEAII\x10\x1e\x12\"\n\x1eSTABILIZED_MICROG_LACOSTE_MGS6\x10\x1f\x12\x11\n\rAGSOCalibrate\x10 *b\n\x19Gravity_Meter_Drift_Model\x12\x15\n\x11Short_Term_Linear\x10\x00\x12\x14\n\x10Long_Term_Linear\x10\x01\x12\x18\n\x14Long_Term_Polynomial\x10\x02*a\n\rGravity_Units\x12\x0b\n\x07NO_UNIT\x10\x00\x12\r\n\tMILLIGALS\x10\x01\x12\x13\n\x0fMICROMETER_SEC2\x10\x02\x12\r\n\tMICROGALS\x10\x03\x12\x10\n\x0c\x45OTVOS_UNITS\x10\x04*\x8e\x01\n\rGravity_Datum\x12\x0b\n\x07POTSDAM\x10\x00\x12\n\n\x06IGSN71\x10\x01\x12\x0c\n\x08ISOGAL80\x10\x02\x12\t\n\x05WGS84\x10\x03\x12\x0f\n\x0bIGSN71_AGSO\x10\x04\x12\x08\n\x04GA07\x10\x05\x12\x14\n\x10\x41\x42SOLUTE_GRAVITY\x10\x06\x12\n\n\x06\x41\x41GD07\x10\x07\x12\x0e\n\nLAST_DATUM\x10\x08*\xf9\x03\n\x14Gravity_Terrain_Case\x12\x10\n\x0cLAND_SURFACE\x10\x00\x12\x13\n\x0fLAND_SUBSURFACE\x10\x01\x12\x11\n\rOCEAN_SURFACE\x10\x02\x12\x13\n\x0fOCEAN_SUBMERGED\x10\x03\x12\x19\n\x15LAKE_SURFACE_ABOVE_SL\x10\x04\x12\x18\n\x14LAKE_BOTTOM_ABOVE_SL\x10\x05\x12\x18\n\x14LAKE_BOTTOM_BELOW_SL\x10\x06\x12#\n\x1fLAKE_SURFACE_ABOVE_SL_BOT_BELOW\x10\x07\x12\x19\n\x15LAKE_SURFACE_BELOW_SL\x10\x08\x12 \n\x1cLAKE_BOTTOM_SURFACE_BELOW_SL\x10\t\x12\x1b\n\x17ICE_CAP_BOTTOM_BELOW_SL\x10\n\x12\x1b\n\x17ICE_CAP_BOTTOM_ABOVE_SL\x10\x0b\x12\x16\n\x12\x41IRBORNE_OVER_LAND\x10\x0c\x12\x15\n\x11\x41IRBORNE_OVER_SEA\x10\r\x12%\n!AIRBORNE_OVER_ICE_BOTTOM_BELOW_SL\x10\x0e\x12%\n!AIRBORNE_OVER_ICE_BOTTOM_ABOVE_SL\x10\x0f\x12\x14\n\x10LAND_OCEAN_MIXED\x10\x10\x12\x14\n\x10OCEAN_LAND_MIXED\x10\x11*K\n\x1dMarine_Gravity_Selection_Type\x12\x0f\n\x0bPROCESS_ALL\x10\x00\x12\x19\n\x15MARINE_LINE_SELECTION\x10\x01*D\n\x12Marine_Filter_Type\x12\x12\n\x0e\x45XACT_BLACKMAN\x10\x00\x12\x0e\n\nFULLER_FIR\x10\x01\x12\n\n\x06RC_IIR\x10\x02*Z\n\x12StationCoordSource\x12\x11\n\rEXTERNAL_FILE\x10\x00\x12\x17\n\x13INTERNAL_FIELDS_GPS\x10\x01\x12\x18\n\x14INTERNAL_FIELDS_USER\x10\x02*\xbf\x01\n\x16SelectionOperation_INT\x12\x12\n\x0eSelection_None\x10\x00\x12\x11\n\rSelection_Set\x10\x01\x12\x12\n\x0eSelection_Null\x10\x02\x12\x19\n\x15Selection_Interpolate\x10\x03\x12\x1a\n\x16Selection_Add_Constant\x10\x04\x12\x17\n\x13Selection_Add_Slope\x10\x05\x12\x1a\n\x16Selection_Add_Triangle\x10\x06*6\n\x1cTerrain_Correction_Algorithm\x12\x0c\n\x08QuadTree\x10\x00\x12\x08\n\x04Ring\x10\x01*H\n\x0eReference_Type\x12\x0b\n\x07Same_As\x10\x00\x12\x15\n\x11\x41ligned_With_Grid\x10\x01\x12\x12\n\x0e\x41ligned_Origin\x10\x02*+\n\x0bKernel_Size\x12\x08\n\x04K3_3\x10\x03\x12\x08\n\x04K5_5\x10\x05\x12\x08\n\x04K7_7\x10\x07*a\n\rEdge_Clipping\x12\x18\n\x14\x45xtrapolation_limits\x10\x00\x12\x18\n\x14Original_data_limits\x10\x01\x12\x1c\n\x18Strict_Extrapolate_Cells\x10\x02*O\n\x0bMethod_Name\x12\x0e\n\nNeighbours\x10\x00\x12\r\n\tBoxFilter\x10\x01\x12\x0c\n\x08\x42iSpline\x10\x02\x12\x13\n\x0fVariableDensity\x10\x03*~\n\x13\x43\x65ll_Assignment_INT\x12\x0b\n\x07\x43losest\x10\x00\x12\t\n\x05\x46irst\x10\x01\x12\x08\n\x04Last\x10\x02\x12\x0b\n\x07\x41verage\x10\x03\x12\t\n\x05\x43ount\x10\x04\x12\x0b\n\x07Minimum\x10\x05\x12\x0b\n\x07Maximum\x10\x06\x12\x07\n\x03Sum\x10\x07\x12\n\n\x06Latest\x10\x08*<\n\x0fWeight_Type_INT\x12\t\n\x05Unity\x10\x00\x12\r\n\tMagnitude\x10\x01\x12\x0f\n\x0bSquare_Root\x10\x02*C\n\x0fSpline_Type_INT\x12\x0b\n\x07\x42iCubic\x10\x00\x12\t\n\x05\x41kima\x10\x01\x12\x0b\n\x07Tension\x10\x02\x12\x0b\n\x07\x42iSLERP\x10\x03*v\n\x1cLocal_Gradient_Estimator_INT\x12\x1a\n\x16LOCAL_ESTIMATOR_BRIGGS\x10\x00\x12\x1c\n\x18LOCAL_ESTIMATOR_MODIFIED\x10\x01\x12\x1c\n\x18LOCAL_ESTIMATOR_OBSERVED\x10\x02*\xc4\x01\n\x10TrustgridOptions\x12\x16\n\x12\x44iffusive_Gridding\x10\x00\x12\x0e\n\nAkima_Only\x10\x01\x12\x19\n\x15Trustgrid_Akima_Blend\x10\x02\x12\x15\n\x11Strike_Directions\x10\x03\x12\x17\n\x13\x46inal_X_derivatives\x10\x04\x12\x17\n\x13\x46inal_Y_derivatives\x10\x05\x12$\n Final_Maximum_X_or_Y_derivatives\x10\x06*\xb4\x02\n\x13GridMergeOperations\x12\x12\n\x0eResample_GRIDS\x10\x00\x12\t\n\x05Shift\x10\x01\x12\t\n\x05Scale\x10\x02\x12\x12\n\x0eScaleThenShift\x10\x03\x12\x11\n\rScaleAndShift\x10\x04\x12\x11\n\rSurfaceAdjust\x10\x05\x12\t\n\x05Merge\x10\x06\x12\x0b\n\x07\x46\x65\x61ther\x10\x07\x12\x11\n\rFeather_Merge\x10\x08\x12\r\n\tCondition\x10\t\x12\x10\n\x0c\x42oundaryView\x10\n\x12\x15\n\x11\x41\x64justToReference\x10\x0b\x12\x12\n\x0e\x41\x64justLineData\x10\x0c\x12\x12\n\x0e\x41\x64justGridData\x10\r\x12\x08\n\x04Trim\x10\x0e\x12\x0f\n\x0bTrimOverlap\x10\x0f\x12\x13\n\x0fTiltToReference\x10\x10*\xa0\x01\n\x17GridInterpolationMethod\x12\x17\n\x13\x43ubic_Spline_INTERP\x10\x00\x12\x1b\n\x17Newton_4th_Order_INTERP\x10\x01\x12\x1c\n\x18Minimum_curvature_INTERP\x10\x02\x12\x1f\n\x1bLinear_Interpolation_INTERP\x10\x03\x12\x10\n\x0c\x41kima_INTERP\x10\x04*\xe8\x02\n\x14Grid_Operation_Tasks\x12\x10\n\x0c\x43ubic_Spline\x10\x00\x12\x14\n\x10Newton_4th_Order\x10\x01\x12\x15\n\x11Minimum_curvature\x10\x02\x12\r\n\tSmoothing\x10\x03\x12\n\n\x06Rotate\x10\x04\x12\r\n\tSubSample\x10\x05\x12\x0b\n\x07GetBand\x10\x06\x12\x0b\n\x07PutBand\x10\x07\x12\x0c\n\x08\x43ubic_OP\x10\x08\x12\x13\n\x0f\x43hangePrecision\x10\t\x12\x10\n\x0c\x44ump_Dataset\x10\n\x12\x0c\n\x08MakeSame\x10\x0b\x12\x0b\n\x07\x44\x65trend\x10\x0c\x12\x0f\n\x0bGeoMagnetic\x10\r\x12\x0c\n\x08Resample\x10\x0e\x12\x0b\n\x07Outline\x10\x0f\x12\x0e\n\nDifference\x10\x10\x12\x14\n\x10ManipulateTensor\x10\x11\x12\x15\n\x11\x44ump_Dataset_Cols\x10\x12\x12\x14\n\x10\x43reate_Null_Grid\x10\x13*G\n\x0e\x44\x65trendOptions\x12\x0c\n\x08\x44\x43_SHIFT\x10\x00\x12\x14\n\x10LINEAR_ENDPOINTS\x10\x01\x12\x11\n\rLEAST_SQUARES\x10\x03*<\n\x0e\x64iskUsageRules\x12\x08\n\x04\x41UTO\x10\x00\x12\x10\n\x0c\x46ORCE_MEMORY\x10\x01\x12\x0e\n\nFORCE_DISK\x10\x02*\xd6\x01\n\x1dSpecial_GridFilter_Operations\x12\t\n\x05NO_OP\x10\x01\x12\x12\n\x0e\x41nalyticSignal\x10\x02\x12\r\n\tTiltAngle\x10\x03\x12\x1c\n\x18TotalHorizontalTiltAngle\x10\x04\x12\x18\n\x14HorizontalDerivative\x10\x05\x12\x15\n\x11TensorIntegration\x10\x06\x12\x13\n\x0f\x46\x61lconTransform\x10\x07\x12\x11\n\rTMI_Transform\x10\x08\x12\x10\n\x0cGz_Transform\x10\t*R\n\x1a\x44uplicateHandlingBehaviour\x12\x10\n\x0c\x41ppendPoints\x10\x00\x12\x11\n\rReplacePoints\x10\x01\x12\x0f\n\x0bReportError\x10\x02*,\n\x13\x44\x65\x63orrugate_Request\x12\x08\n\x04ROWS\x10\x00\x12\x0b\n\x07\x43OLUMNS\x10\x01*V\n\x0eGridFilterType\x12\n\n\x06\x46ULLER\x10\x00\x12\t\n\x05NAUDY\x10\x01\x12\x0f\n\x0bNAUDYFULLER\x10\x02\x12\x12\n\x0eSMOOTHEDFULLER\x10\x03\x12\x08\n\x04NONE\x10\x04*.\n\rExtractorType\x12\n\n\x06MIRROR\x10\x00\x12\x11\n\rFLIPPEDMIRROR\x10\x01*X\n\x1a\x46light_Reconstruct_Methods\x12\x13\n\x0f\x46light_Defaults\x10\x63\x12\x0c\n\x08\x44\x61te_Fid\x10\x00\x12\x0e\n\nJulian_Fid\x10\x01\x12\x07\n\x03\x46id\x10\x02*R\n\x19PolyNomial_weight_methods\x12\x0c\n\x08Gradient\x10\x00\x12\x08\n\x04Sqrt\x10\x01\x12\t\n\x05\x45qual\x10\x02\x12\x12\n\x0eInverse_Signal\x10\x03*9\n\x0cGrfModelType\x12\x08\n\x04\x41grf\x10\x00\x12\x08\n\x04Igrf\x10\x01\x12\n\n\x06Manual\x10\x02\x12\t\n\x05Iusgs\x10\x03*\x88\x01\n\x10LevellingProcess\x12\x0b\n\x07Heading\x10\x00\x12\x0c\n\x08Parallax\x10\x01\x12\x0b\n\x07\x44iurnal\x10\x02\x12\x07\n\x03Grf\x10\x03\x12\x0e\n\nPolynomial\x10\x04\x12\x0b\n\x07LevelXY\x10\x05\x12\x08\n\x04Loop\x10\x06\x12\x10\n\x0cTensor_Level\x10\x07\x12\n\n\x06\x46light\x10\x08*\x8f\x02\n\x18Tensor_Levelling_Methods\x12\x14\n\x10RemoveEarthModel\x10\x00\x12\x11\n\rAddEarthModel\x10\x01\x12\x17\n\x13RemoveSurveyAverage\x10\x02\x12\x17\n\x13\x46lightAverageAdjust\x10\x03\x12\x15\n\x11RemoveLineAverage\x10\x04\x12\x1a\n\x16LineAltitudeCorrection\x10\x05\x12#\n\x1f\x43lusterPointsAltitudeCorrection\x10\x06\x12\x18\n\x14\x45stimate_Error_Norms\x10\x08\x12\x16\n\x12Vertical_Component\x10\t\x12\x0e\n\nDO_NOTHING\x10\x63*\xb3\x01\n\rMarineRunType\x12\r\n\tLevelLoop\x10\x00\x12\x0b\n\x07LevelDC\x10\x01\x12\x0e\n\nLevelDrape\x10\x02\x12\x10\n\x0cLevelLinesDC\x10\x03\x12\x10\n\x0cLevelSurface\x10\x04\x12\x19\n\x15LevelPolynomialMarine\x10\x05\x12\x13\n\x0fLevelPolynomial\x10\x06\x12\x14\n\x10\x43\x61rterCorrection\x10\x07\x12\x0c\n\x08MLevelXY\x10\x08*T\n\x12LineDataSampleMode\x12\x0c\n\x08XY_BASED\x10\x00\x12\r\n\tFID_BASED\x10\x01\x12\x0e\n\nFIXED_MODE\x10\x02\x12\x11\n\rGEODETIC_MODE\x10\x03*[\n\x15\x44\x61tabaseLineSelection\x12\x0f\n\x0bSINGLE_LINE\x10\x00\x12\x0e\n\nLINE_RANGE\x10\x01\x12\x12\n\x0eLINE_SELECTION\x10\x02\x12\r\n\tALL_LINES\x10\x03*9\n\x13\x41uto_ModelBody_Type\x12\x08\n\x04Step\x10\x02\x12\x0e\n\nStringBody\x10\x01\x12\x08\n\x04\x44yke\x10\x03*R\n\x11StrikeTypeOptions\x12\x14\n\x10ST_PERPENDICULAR\x10\x00\x12\x0b\n\x07ST_USER\x10\x01\x12\r\n\tST_TRENDS\x10\x02\x12\x0b\n\x07ST_CALC\x10\x03*L\n\reMagWormsType\x12\x0b\n\x07MAG_ALL\x10\x00\x12\x0e\n\nMAG_NORMAL\x10\x01\x12\x10\n\x0cMAG_REMANENT\x10\x02\x12\x0c\n\x08MAG_RING\x10\x03*H\n\x13SurveyFieldDataType\x12\x0b\n\x07_NORMAL\x10\x00\x12\r\n\t_GRADIENT\x10\x01\x12\x15\n\x11_GRAVITY_GRADIENT\x10\x02*@\n\x15SurveyAcquisitionType\x12\r\n\t_AIRBORNE\x10\x00\x12\x0b\n\x07_GROUND\x10\x01\x12\x0b\n\x07_MARINE\x10\x02*W\n\x13\x44ip_Accept_Strategy\x12\x15\n\x11\x41\x63\x63\x65pt_Everything\x10\x01\x12\x13\n\x0fReject_Bad_Dips\x10\x02\x12\x14\n\x10\x41\x64just_Poor_Dips\x10\x03*W\n\x14\x44ipCalculateStrategy\x12\x13\n\x0f\x41lways_Vertical\x10\x01\x12\x16\n\x12Use_Calculated_Dip\x10\x02\x12\x12\n\x0e\x42\x65st_Dip_Value\x10\x03*\x8c\x02\n\x14\x45ulerEquationOptions\x12\x0b\n\x07\x43lassic\x10\x00\x12\x10\n\x0cHilbert_Only\x10\x01\x12\x11\n\rAll3_Fixed_SI\x10\x02\x12\x19\n\x15\x41ll3_For_Contact_Case\x10\x03\x12\t\n\x05No_SI\x10\x04\x12\x15\n\x11Hilbert_Then_NOSI\x10\x05\x12\x0f\n\x0bKnown_Depth\x10\x06\x12\x0e\n\nLocated_XY\x10\x07\x12\r\n\tTensor_Tz\x10\x08\x12\x1c\n\x18Tensor_Gravity_Estimator\x10\t\x12\x1a\n\x16\x46irstBalanced_Gradient\x10\n\x12\x1b\n\x17SecondBalanced_Gradient\x10\x0b*4\n\x12\x45ulerOutputOptions\x12\x0c\n\x08\x44\x61tabase\x10\x00\x12\x07\n\x03XYZ\x10\x01\x12\x07\n\x03\x44XF\x10\x02*9\n\x13Splitting_Algorithm\x12\x0e\n\nTrendAngle\x10\x00\x12\x12\n\x0e\x44ouglasPeucker\x10\x01*\x92\x01\n\x0bSpectraSize\x12\x19\n\x0cUNKNOWN_SIZE\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x0f\n\nNASVD_SIZE\x10\xf6\x01\x12\x12\n\rINTREPID_SIZE\x10\x82\x02\x12\x0e\n\tAGSO_SIZE\x10\xa2\x02\x12\x11\n\x0cGENERIC_SIZE\x10\x80\x02\x12\x10\n\x0b\x44OUBLE_SIZE\x10\x80\x04\x12\x0e\n\tQUAD_SIZE\x10\x80\x08*\x9d\x01\n\rSpectraFormat\x12\x10\n\x0c\x41GSO_SPECTRA\x10\x00\x12\x14\n\x10INTREPID_SPECTRA\x10\x01\x12\x11\n\rGENERIC_RADIO\x10\x02\x12\x11\n\rNASVD_SPECTRA\x10\x03\x12\x10\n\x0c\x44OUBLE_RADIO\x10\x04\x12\x0e\n\nQUAD_RADIO\x10\x05\x12\x1c\n\x0fUNKNOWN_SPECTRA\x10\x9d\xff\xff\xff\xff\xff\xff\xff\xff\x01*[\n\x1aManufacturer_GammaDetector\x12\x12\n\x0eSCINTREX_GR820\x10\x00\x12\x10\n\x0cPICODAS_SPEC\x10\x01\x12\x17\n\x13RADIATION_SOLUTIONS\x10\x02*B\n\x14GammaDetector_Volume\x12\x0c\n\x08litres_8\x10\x00\x12\r\n\tlitres_16\x10\x01\x12\r\n\tlitres_32\x10\x02*\x9d\x02\n\x1bSpectralNoiseAdjustStrategy\x12\x14\n\x10\x42Y_PSEUDO_FLIGHT\x10\x00\x12\r\n\tBY_FLIGHT\x10\x01\x12\r\n\tBY_SURVEY\x10\x02\x12\x31\n-BY_CONSTRUCT_FROM_PRINCIPAL_COMPONENTS_FLIGHT\x10\x03\x12\x38\n4BY_CONSTRUCT_FROM_PRINCIPAL_COMPONENTS_PSEUDO_FLIGHT\x10\x04\x12\x31\n-BY_CONSTRUCT_FROM_PRINCIPAL_COMPONENTS_SURVEY\x10\x05\x12*\n&BY_CONSTRUCT_FROM_PRINCIPAL_COMPONENTS\x10\x06*P\n\x17\x45nergyCalibrateStratgey\x12\x0c\n\x08\x45\x43S_LINE\x10\x00\x12\x19\n\x15\x45\x43S_IntegrationPeriod\x10\x01\x12\x0c\n\x08\x45\x43S_SKIP\x10\x02*+\n\x0cWindow_Units\x12\x12\n\x0e\x43hannel_Number\x10\x00\x12\x07\n\x03MeV\x10\x01*#\n\rMNFSignalType\x12\t\n\x05GAMMA\x10\x00\x12\x07\n\x03\x41\x45M\x10\x01*1\n\x11SpectralRatio_INT\x12\r\n\tMinty1997\x10\x00\x12\r\n\tMinty1991\x10\x01*B\n\x1aRadonCalibrationMethod_INT\x12\x10\n\x0c\x46romTestData\x10\x00\x12\x12\n\x0e\x46romSurveyData\x10\x01*Q\n\nDyke_Style\x12\x10\n\x0c\x44S_TRIANGLES\x10\x00\x12\x15\n\x11\x44S_SKELETON_SHEET\x10\x01\x12\x0c\n\x08\x44S_PRISM\x10\x02\x12\x0c\n\x08\x44S_PIPES\x10\x03*]\n\x0e\x44yke_Algorithm\x12\x15\n\x11UseDatabaseSource\x10\x00\x12\x1c\n\x18TriangulatedSurfaceModel\x10\x01\x12\x16\n\x12ListOfSimplePrisms\x10\x02*@\n\x0c\x43olourScheme\x12\x14\n\x10LithologyColours\x10\x00\x12\x0b\n\x07\x43olours\x10\x01\x12\r\n\tGreyScale\x10\x02*\xec\x02\n StatisticalFieldWithinStatsVoxet\x12\x0f\n\x0b\x43hangeCount\x10\x00\x12\x0f\n\x0bMeanDensity\x10\x01\x12\x11\n\rStdDevDensity\x10\x02\x12\x16\n\x12MeanSusceptibility\x10\x03\x12\x18\n\x14StdDevSusceptibility\x10\x04\x12\x15\n\x11MeanRemanenceEast\x10\x05\x12\x17\n\x13StdDevRemanenceEast\x10\x06\x12\x16\n\x12MeanRemanenceNorth\x10\x07\x12\x18\n\x14StdDevRemanenceNorth\x10\x08\x12\x13\n\x0fMeanRemanenceUp\x10\t\x12\x15\n\x11StdDevRemanenceUp\x10\n\x12\x10\n\x0cMostProbable\x10\x0b\x12\x1b\n\x17MostProbableThresholded\x10\x0c\x12\x12\n\x0eProb_AboveTopo\x10\r\x12\x10\n\x0cMeanHeatFlow\x10\x0e*o\n\x14SignalResampleMethod\x12\n\n\x06Linear\x10\x00\x12\x14\n\x10MinimumCurvature\x10\x01\x12\x13\n\x0fInverseDistance\x10\x02\x12\t\n\x05\x43ubic\x10\x03\x12\x15\n\x11Nearest_Neighbour\x10\x04*_\n\x1dMultiScaleEdgeDetectionMethod\x12\x0b\n\x07\x42lakely\x10\x00\x12\t\n\x05\x43\x61nny\x10\x01\x12\n\n\x06TopHat\x10\x02\x12\x1a\n\x16Zero_Vertical_Gradient\x10\x03*I\n\x1aHorizontalDerivativeMethod\x12\x13\n\x0fTotalHorizontal\x10\x00\x12\x16\n\x12\x43urvatureAmplitude\x10\x01*0\n\rCONTACT_STYLE\x12\x07\n\x03\x41LL\x10\x00\x12\x0b\n\x07LINEARS\x10\x01\x12\t\n\x05\x43URVY\x10\x02*K\n\x0c\x46\x41ULT_ORIGIN\x12\r\n\tFROM_WORM\x10\x00\x12\x16\n\x12\x46ROM_UPWARDS_CURVE\x10\x01\x12\x14\n\x10\x46ROM_DERIVATIVES\x10\x02'
   ,
   dependencies=[commontaskmodel__pb2.DESCRIPTOR,geophysical__models__pb2.DESCRIPTOR,filter__description__pb2.DESCRIPTOR,intrepid__maps__pb2.DESCRIPTOR,display__list__pb2.DESCRIPTOR,])
 
@@ -162,120 +162,115 @@ _GEOPHYSICSFORMATTYPE = _descriptor.EnumDescriptor(
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='GR820', index=25, number=25,
+      name='ECSGPCBASE', index=25, number=26,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='ECSGPCBASE', index=26, number=26,
+      name='LCTGRID', index=26, number=27,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='LCTGRID', index=27, number=27,
+      name='MAPINFO', index=27, number=28,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='MAPINFO', index=28, number=28,
+      name='MOSS', index=28, number=29,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='MOSS', index=29, number=29,
+      name='NETCDFGRID', index=29, number=30,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='NETCDFGRID', index=30, number=30,
+      name='NETHDFGRID', index=30, number=43,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='NETHDFGRID', index=31, number=43,
+      name='NETCDFGRID_UNKNOWN', index=31, number=44,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='NETCDFGRID_UNKNOWN', index=32, number=44,
+      name='NETCDFXYZ', index=32, number=31,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='NETCDFXYZ', index=33, number=31,
+      name='NEWCRESTLINE', index=33, number=32,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='NEWCRESTLINE', index=34, number=32,
+      name='NEWCRESTIMAGE', index=34, number=33,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='NEWCRESTIMAGE', index=35, number=33,
+      name='PICODAS', index=35, number=34,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='PICODAS', index=36, number=34,
+      name='PICODAS_V2', index=36, number=35,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='PICODAS_V2', index=37, number=35,
+      name='USGSDEM', index=37, number=36,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='USGSDEM', index=38, number=36,
+      name='USGSIMAGE', index=38, number=37,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='USGSIMAGE', index=39, number=37,
+      name='VOXELGEO', index=39, number=38,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='VOXELGEO', index=40, number=38,
+      name='ZMAPIMAGE', index=40, number=39,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='ZMAPIMAGE', index=41, number=39,
+      name='KML', index=41, number=40,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='KML', index=42, number=40,
+      name='ARCASCIIGRID', index=42, number=41,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='ARCASCIIGRID', index=43, number=41,
+      name='UNSELECTED', index=43, number=42,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='UNSELECTED', index=44, number=42,
+      name='MAXFORMAT', index=44, number=45,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='MAXFORMAT', index=45, number=45,
-      serialized_options=None,
-      type=None,
-      create_key=_descriptor._internal_create_key),
-    _descriptor.EnumValueDescriptor(
-      name='CSV', index=46, number=46,
+      name='CSV', index=45, number=46,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=73431,
-  serialized_end=74161,
+  serialized_start=74689,
+  serialized_end=75408,
 )
 _sym_db.RegisterEnumDescriptor(_GEOPHYSICSFORMATTYPE)
 
@@ -405,8 +400,8 @@ _DB_OPERATIONS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=74164,
-  serialized_end=74538,
+  serialized_start=75411,
+  serialized_end=75785,
 )
 _sym_db.RegisterEnumDescriptor(_DB_OPERATIONS)
 
@@ -496,8 +491,8 @@ _COMMAND_OPERATIONS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=74541,
-  serialized_end=74747,
+  serialized_start=75788,
+  serialized_end=75994,
 )
 _sym_db.RegisterEnumDescriptor(_COMMAND_OPERATIONS)
 
@@ -522,8 +517,8 @@ _PLANVIEWEDITTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=74749,
-  serialized_end=74796,
+  serialized_start=75996,
+  serialized_end=76043,
 )
 _sym_db.RegisterEnumDescriptor(_PLANVIEWEDITTYPE)
 
@@ -561,45 +556,30 @@ _NOISETYPES_INT = _descriptor.EnumDescriptor(
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='Noise_Quadrature', index=5, number=5,
+      name='Noise_LaCosteRC', index=5, number=8,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='Noise_Phase', index=6, number=6,
+      name='Noise_LaCoste_Curvature', index=6, number=9,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='Noise_Phillips', index=7, number=7,
+      name='Noise_LocalMeanTensor', index=7, number=10,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='Noise_LaCosteRC', index=8, number=8,
-      serialized_options=None,
-      type=None,
-      create_key=_descriptor._internal_create_key),
-    _descriptor.EnumValueDescriptor(
-      name='Noise_LaCoste_Curvature', index=9, number=9,
-      serialized_options=None,
-      type=None,
-      create_key=_descriptor._internal_create_key),
-    _descriptor.EnumValueDescriptor(
-      name='Noise_LocalMeanTensor', index=10, number=10,
-      serialized_options=None,
-      type=None,
-      create_key=_descriptor._internal_create_key),
-    _descriptor.EnumValueDescriptor(
-      name='Noise_FullerBandPass', index=11, number=11,
+      name='Noise_FullerBandPass', index=8, number=11,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=74799,
-  serialized_end=75064,
+  serialized_start=76046,
+  serialized_end=76252,
 )
 _sym_db.RegisterEnumDescriptor(_NOISETYPES_INT)
 
@@ -674,8 +654,8 @@ _EDITTYPES_INT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=75067,
-  serialized_end=75308,
+  serialized_start=76255,
+  serialized_end=76496,
 )
 _sym_db.RegisterEnumDescriptor(_EDITTYPES_INT)
 
@@ -700,12 +680,43 @@ _INTERPMETHOD = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=75310,
-  serialized_end=75351,
+  serialized_start=76498,
+  serialized_end=76539,
 )
 _sym_db.RegisterEnumDescriptor(_INTERPMETHOD)
 
 InterpMethod = enum_type_wrapper.EnumTypeWrapper(_INTERPMETHOD)
+_SEARCHTYPEPE = _descriptor.EnumDescriptor(
+  name='SearchTypePE',
+  full_name='intrepid.SearchTypePE',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='S_Find', index=0, number=0,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='S_Range_Clip', index=1, number=1,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='S_Step_Correction', index=2, number=2,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=76541,
+  serialized_end=76608,
+)
+_sym_db.RegisterEnumDescriptor(_SEARCHTYPEPE)
+
+SearchTypePE = enum_type_wrapper.EnumTypeWrapper(_SEARCHTYPEPE)
 _APPLYSEARCHTO = _descriptor.EnumDescriptor(
   name='ApplySearchTo',
   full_name='intrepid.ApplySearchTo',
@@ -731,8 +742,8 @@ _APPLYSEARCHTO = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=75353,
-  serialized_end=75404,
+  serialized_start=76610,
+  serialized_end=76661,
 )
 _sym_db.RegisterEnumDescriptor(_APPLYSEARCHTO)
 
@@ -779,11 +790,16 @@ _OPERATIONTYPE = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='SortGroups', index=7, number=7,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=75407,
-  serialized_end=75535,
+  serialized_start=76664,
+  serialized_end=76808,
 )
 _sym_db.RegisterEnumDescriptor(_OPERATIONTYPE)
 
@@ -808,8 +824,8 @@ _DELETEACTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=75537,
-  serialized_end=75573,
+  serialized_start=76810,
+  serialized_end=76846,
 )
 _sym_db.RegisterEnumDescriptor(_DELETEACTION)
 
@@ -834,8 +850,8 @@ _DRRUNTYPES = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=75575,
-  serialized_end=75634,
+  serialized_start=76848,
+  serialized_end=76907,
 )
 _sym_db.RegisterEnumDescriptor(_DRRUNTYPES)
 
@@ -870,8 +886,8 @@ _DRTRACELAYER = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=75636,
-  serialized_end=75722,
+  serialized_start=76909,
+  serialized_end=76995,
 )
 _sym_db.RegisterEnumDescriptor(_DRTRACELAYER)
 
@@ -911,8 +927,8 @@ _CLUSTER_ALGORITHM = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=75724,
-  serialized_end=75842,
+  serialized_start=76997,
+  serialized_end=77115,
 )
 _sym_db.RegisterEnumDescriptor(_CLUSTER_ALGORITHM)
 
@@ -952,8 +968,8 @@ _CLUSTERDATASETTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=75844,
-  serialized_end=75952,
+  serialized_start=77117,
+  serialized_end=77225,
 )
 _sym_db.RegisterEnumDescriptor(_CLUSTERDATASETTYPE)
 
@@ -983,8 +999,8 @@ _CONVOLVEALGORITHMTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=75954,
-  serialized_end=76046,
+  serialized_start=77227,
+  serialized_end=77319,
 )
 _sym_db.RegisterEnumDescriptor(_CONVOLVEALGORITHMTYPE)
 
@@ -1036,11 +1052,16 @@ _CONVOLVEFILTERTYPE = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='Cauchy', index=8, number=8,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=76049,
-  serialized_end=76178,
+  serialized_start=77322,
+  serialized_end=77463,
 )
 _sym_db.RegisterEnumDescriptor(_CONVOLVEFILTERTYPE)
 
@@ -1098,15 +1119,15 @@ _TENSORGRIDCONVOLVEFILTERING = _descriptor.EnumDescriptor(
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='Frobinius_Norm_Error', index=9, number=9,
+      name='Frobenius_Norm_Error', index=9, number=9,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=76181,
-  serialized_end=76421,
+  serialized_start=77466,
+  serialized_end=77706,
 )
 _sym_db.RegisterEnumDescriptor(_TENSORGRIDCONVOLVEFILTERING)
 
@@ -1136,8 +1157,8 @@ _TENSORNORMCASE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=76423,
-  serialized_end=76467,
+  serialized_start=77708,
+  serialized_end=77752,
 )
 _sym_db.RegisterEnumDescriptor(_TENSORNORMCASE)
 
@@ -1205,125 +1226,130 @@ _GRAVITY_PROCESS_OPTION = _descriptor.EnumDescriptor(
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FREE_AIR', index=11, number=10,
+      name='AT1MField', index=11, number=34,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='REVERSE_FREE_AIR', index=12, number=11,
+      name='FREE_AIR', index=12, number=10,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='SIMPLE_BOUGUER', index=13, number=12,
+      name='REVERSE_FREE_AIR', index=13, number=11,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='REVERSE_SIMPLE_BOUGUER', index=14, number=13,
+      name='SIMPLE_BOUGUER', index=14, number=12,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='BULLARD_B', index=15, number=14,
+      name='REVERSE_SIMPLE_BOUGUER', index=15, number=13,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='REVERSE_BULLARD_B', index=16, number=15,
+      name='BULLARD_B', index=16, number=14,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CALC_EOTVOS', index=17, number=16,
+      name='REVERSE_BULLARD_B', index=17, number=15,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='REVERSE_EOTVOS', index=18, number=17,
+      name='CALC_EOTVOS', index=18, number=16,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='THEORETICAL', index=19, number=18,
+      name='REVERSE_EOTVOS', index=19, number=17,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='EarthTide', index=20, number=19,
+      name='THEORETICAL', index=20, number=18,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TERRAIN', index=21, number=20,
+      name='EarthTide', index=21, number=19,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TOWGS84', index=22, number=21,
+      name='TERRAIN', index=22, number=20,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='POTSDAM_IGSN71', index=23, number=22,
+      name='TOWGS84', index=23, number=21,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='STABILIZED_PLATFORM_CALIBRATION', index=24, number=23,
+      name='POTSDAM_IGSN71', index=24, number=22,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='STABILIZED_PLATFORM_CORRECTION', index=25, number=24,
+      name='STABILIZED_PLATFORM_CALIBRATION', index=25, number=23,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='STABILIZED_PLATFORM_RECONSTRUCT', index=26, number=25,
+      name='STABILIZED_PLATFORM_CORRECTION', index=26, number=24,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='STABILIZED_PLATFORM_CALIBRATE_CORRECT', index=27, number=26,
+      name='STABILIZED_PLATFORM_RECONSTRUCT', index=27, number=25,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='STABILIZED_PLATFORM_RECONSTRUCT_CC', index=28, number=27,
+      name='STABILIZED_PLATFORM_CALIBRATE_CORRECT', index=28, number=26,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CONVERT_BELL_TENSOR', index=29, number=28,
+      name='STABILIZED_PLATFORM_RECONSTRUCT_CC', index=29, number=27,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='INVERT_BELL_TENSOR', index=30, number=29,
+      name='CONVERT_BELL_TENSOR', index=30, number=28,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='STABILIZED_MICROG_LACOSTE_AIRSEAII', index=31, number=30,
+      name='INVERT_BELL_TENSOR', index=31, number=29,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='STABILIZED_MICROG_LACOSTE_MGS6', index=32, number=31,
+      name='STABILIZED_MICROG_LACOSTE_AIRSEAII', index=32, number=30,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='AGSOCalibrate', index=33, number=32,
+      name='STABILIZED_MICROG_LACOSTE_MGS6', index=33, number=31,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='AGSOCalibrate', index=34, number=32,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=76470,
-  serialized_end=77246,
+  serialized_start=77755,
+  serialized_end=78546,
 )
 _sym_db.RegisterEnumDescriptor(_GRAVITY_PROCESS_OPTION)
 
@@ -1353,8 +1379,8 @@ _GRAVITY_METER_DRIFT_MODEL = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=77248,
-  serialized_end=77346,
+  serialized_start=78548,
+  serialized_end=78646,
 )
 _sym_db.RegisterEnumDescriptor(_GRAVITY_METER_DRIFT_MODEL)
 
@@ -1394,8 +1420,8 @@ _GRAVITY_UNITS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=77348,
-  serialized_end=77445,
+  serialized_start=78648,
+  serialized_end=78745,
 )
 _sym_db.RegisterEnumDescriptor(_GRAVITY_UNITS)
 
@@ -1455,8 +1481,8 @@ _GRAVITY_DATUM = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=77448,
-  serialized_end=77590,
+  serialized_start=78748,
+  serialized_end=78890,
 )
 _sym_db.RegisterEnumDescriptor(_GRAVITY_DATUM)
 
@@ -1561,8 +1587,8 @@ _GRAVITY_TERRAIN_CASE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=77593,
-  serialized_end=78098,
+  serialized_start=78893,
+  serialized_end=79398,
 )
 _sym_db.RegisterEnumDescriptor(_GRAVITY_TERRAIN_CASE)
 
@@ -1587,8 +1613,8 @@ _MARINE_GRAVITY_SELECTION_TYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=78100,
-  serialized_end=78175,
+  serialized_start=79400,
+  serialized_end=79475,
 )
 _sym_db.RegisterEnumDescriptor(_MARINE_GRAVITY_SELECTION_TYPE)
 
@@ -1618,8 +1644,8 @@ _MARINE_FILTER_TYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=78177,
-  serialized_end=78245,
+  serialized_start=79477,
+  serialized_end=79545,
 )
 _sym_db.RegisterEnumDescriptor(_MARINE_FILTER_TYPE)
 
@@ -1649,8 +1675,8 @@ _STATIONCOORDSOURCE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=78247,
-  serialized_end=78337,
+  serialized_start=79547,
+  serialized_end=79637,
 )
 _sym_db.RegisterEnumDescriptor(_STATIONCOORDSOURCE)
 
@@ -1700,12 +1726,38 @@ _SELECTIONOPERATION_INT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=78340,
-  serialized_end=78531,
+  serialized_start=79640,
+  serialized_end=79831,
 )
 _sym_db.RegisterEnumDescriptor(_SELECTIONOPERATION_INT)
 
 SelectionOperation_INT = enum_type_wrapper.EnumTypeWrapper(_SELECTIONOPERATION_INT)
+_TERRAIN_CORRECTION_ALGORITHM = _descriptor.EnumDescriptor(
+  name='Terrain_Correction_Algorithm',
+  full_name='intrepid.Terrain_Correction_Algorithm',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='QuadTree', index=0, number=0,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='Ring', index=1, number=1,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=79833,
+  serialized_end=79887,
+)
+_sym_db.RegisterEnumDescriptor(_TERRAIN_CORRECTION_ALGORITHM)
+
+Terrain_Correction_Algorithm = enum_type_wrapper.EnumTypeWrapper(_TERRAIN_CORRECTION_ALGORITHM)
 _REFERENCE_TYPE = _descriptor.EnumDescriptor(
   name='Reference_Type',
   full_name='intrepid.Reference_Type',
@@ -1731,8 +1783,8 @@ _REFERENCE_TYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=78533,
-  serialized_end=78605,
+  serialized_start=79889,
+  serialized_end=79961,
 )
 _sym_db.RegisterEnumDescriptor(_REFERENCE_TYPE)
 
@@ -1762,8 +1814,8 @@ _KERNEL_SIZE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=78607,
-  serialized_end=78650,
+  serialized_start=79963,
+  serialized_end=80006,
 )
 _sym_db.RegisterEnumDescriptor(_KERNEL_SIZE)
 
@@ -1793,8 +1845,8 @@ _EDGE_CLIPPING = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=78652,
-  serialized_end=78749,
+  serialized_start=80008,
+  serialized_end=80105,
 )
 _sym_db.RegisterEnumDescriptor(_EDGE_CLIPPING)
 
@@ -1829,8 +1881,8 @@ _METHOD_NAME = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=78751,
-  serialized_end=78830,
+  serialized_start=80107,
+  serialized_end=80186,
 )
 _sym_db.RegisterEnumDescriptor(_METHOD_NAME)
 
@@ -1890,8 +1942,8 @@ _CELL_ASSIGNMENT_INT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=78832,
-  serialized_end=78958,
+  serialized_start=80188,
+  serialized_end=80314,
 )
 _sym_db.RegisterEnumDescriptor(_CELL_ASSIGNMENT_INT)
 
@@ -1921,8 +1973,8 @@ _WEIGHT_TYPE_INT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=78960,
-  serialized_end=79020,
+  serialized_start=80316,
+  serialized_end=80376,
 )
 _sym_db.RegisterEnumDescriptor(_WEIGHT_TYPE_INT)
 
@@ -1957,8 +2009,8 @@ _SPLINE_TYPE_INT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=79022,
-  serialized_end=79089,
+  serialized_start=80378,
+  serialized_end=80445,
 )
 _sym_db.RegisterEnumDescriptor(_SPLINE_TYPE_INT)
 
@@ -1988,8 +2040,8 @@ _LOCAL_GRADIENT_ESTIMATOR_INT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=79091,
-  serialized_end=79209,
+  serialized_start=80447,
+  serialized_end=80565,
 )
 _sym_db.RegisterEnumDescriptor(_LOCAL_GRADIENT_ESTIMATOR_INT)
 
@@ -2039,8 +2091,8 @@ _TRUSTGRIDOPTIONS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=79212,
-  serialized_end=79408,
+  serialized_start=80568,
+  serialized_end=80764,
 )
 _sym_db.RegisterEnumDescriptor(_TRUSTGRIDOPTIONS)
 
@@ -2140,8 +2192,8 @@ _GRIDMERGEOPERATIONS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=79411,
-  serialized_end=79719,
+  serialized_start=80767,
+  serialized_end=81075,
 )
 _sym_db.RegisterEnumDescriptor(_GRIDMERGEOPERATIONS)
 
@@ -2181,8 +2233,8 @@ _GRIDINTERPOLATIONMETHOD = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=79722,
-  serialized_end=79882,
+  serialized_start=81078,
+  serialized_end=81238,
 )
 _sym_db.RegisterEnumDescriptor(_GRIDINTERPOLATIONMETHOD)
 
@@ -2297,8 +2349,8 @@ _GRID_OPERATION_TASKS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=79885,
-  serialized_end=80245,
+  serialized_start=81241,
+  serialized_end=81601,
 )
 _sym_db.RegisterEnumDescriptor(_GRID_OPERATION_TASKS)
 
@@ -2328,8 +2380,8 @@ _DETRENDOPTIONS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=80247,
-  serialized_end=80318,
+  serialized_start=81603,
+  serialized_end=81674,
 )
 _sym_db.RegisterEnumDescriptor(_DETRENDOPTIONS)
 
@@ -2359,8 +2411,8 @@ _DISKUSAGERULES = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=80320,
-  serialized_end=80380,
+  serialized_start=81676,
+  serialized_end=81736,
 )
 _sym_db.RegisterEnumDescriptor(_DISKUSAGERULES)
 
@@ -2420,12 +2472,43 @@ _SPECIAL_GRIDFILTER_OPERATIONS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=80383,
-  serialized_end=80597,
+  serialized_start=81739,
+  serialized_end=81953,
 )
 _sym_db.RegisterEnumDescriptor(_SPECIAL_GRIDFILTER_OPERATIONS)
 
 Special_GridFilter_Operations = enum_type_wrapper.EnumTypeWrapper(_SPECIAL_GRIDFILTER_OPERATIONS)
+_DUPLICATEHANDLINGBEHAVIOUR = _descriptor.EnumDescriptor(
+  name='DuplicateHandlingBehaviour',
+  full_name='intrepid.DuplicateHandlingBehaviour',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='AppendPoints', index=0, number=0,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='ReplacePoints', index=1, number=1,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='ReportError', index=2, number=2,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=81955,
+  serialized_end=82037,
+)
+_sym_db.RegisterEnumDescriptor(_DUPLICATEHANDLINGBEHAVIOUR)
+
+DuplicateHandlingBehaviour = enum_type_wrapper.EnumTypeWrapper(_DUPLICATEHANDLINGBEHAVIOUR)
 _DECORRUGATE_REQUEST = _descriptor.EnumDescriptor(
   name='Decorrugate_Request',
   full_name='intrepid.Decorrugate_Request',
@@ -2446,8 +2529,8 @@ _DECORRUGATE_REQUEST = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=80599,
-  serialized_end=80643,
+  serialized_start=82039,
+  serialized_end=82083,
 )
 _sym_db.RegisterEnumDescriptor(_DECORRUGATE_REQUEST)
 
@@ -2487,8 +2570,8 @@ _GRIDFILTERTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=80645,
-  serialized_end=80731,
+  serialized_start=82085,
+  serialized_end=82171,
 )
 _sym_db.RegisterEnumDescriptor(_GRIDFILTERTYPE)
 
@@ -2513,8 +2596,8 @@ _EXTRACTORTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=80733,
-  serialized_end=80779,
+  serialized_start=82173,
+  serialized_end=82219,
 )
 _sym_db.RegisterEnumDescriptor(_EXTRACTORTYPE)
 
@@ -2549,8 +2632,8 @@ _FLIGHT_RECONSTRUCT_METHODS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=80781,
-  serialized_end=80869,
+  serialized_start=82221,
+  serialized_end=82309,
 )
 _sym_db.RegisterEnumDescriptor(_FLIGHT_RECONSTRUCT_METHODS)
 
@@ -2585,8 +2668,8 @@ _POLYNOMIAL_WEIGHT_METHODS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=80871,
-  serialized_end=80953,
+  serialized_start=82311,
+  serialized_end=82393,
 )
 _sym_db.RegisterEnumDescriptor(_POLYNOMIAL_WEIGHT_METHODS)
 
@@ -2621,8 +2704,8 @@ _GRFMODELTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=80955,
-  serialized_end=81012,
+  serialized_start=82395,
+  serialized_end=82452,
 )
 _sym_db.RegisterEnumDescriptor(_GRFMODELTYPE)
 
@@ -2682,8 +2765,8 @@ _LEVELLINGPROCESS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=81015,
-  serialized_end=81151,
+  serialized_start=82455,
+  serialized_end=82591,
 )
 _sym_db.RegisterEnumDescriptor(_LEVELLINGPROCESS)
 
@@ -2721,30 +2804,35 @@ _TENSOR_LEVELLING_METHODS = _descriptor.EnumDescriptor(
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='AltitudeCorrection', index=5, number=5,
+      name='LineAltitudeCorrection', index=5, number=5,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='Profile_Adjust_Altitude', index=6, number=6,
+      name='ClusterPointsAltitudeCorrection', index=6, number=6,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='Estimate_Error_Norms', index=7, number=7,
+      name='Estimate_Error_Norms', index=7, number=8,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='Vertical_Component', index=8, number=8,
+      name='Vertical_Component', index=8, number=9,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='DO_NOTHING', index=9, number=99,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=81154,
-  serialized_end=81397,
+  serialized_start=82594,
+  serialized_end=82865,
 )
 _sym_db.RegisterEnumDescriptor(_TENSOR_LEVELLING_METHODS)
 
@@ -2804,8 +2892,8 @@ _MARINERUNTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=81400,
-  serialized_end=81579,
+  serialized_start=82868,
+  serialized_end=83047,
 )
 _sym_db.RegisterEnumDescriptor(_MARINERUNTYPE)
 
@@ -2840,8 +2928,8 @@ _LINEDATASAMPLEMODE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=81581,
-  serialized_end=81665,
+  serialized_start=83049,
+  serialized_end=83133,
 )
 _sym_db.RegisterEnumDescriptor(_LINEDATASAMPLEMODE)
 
@@ -2876,8 +2964,8 @@ _DATABASELINESELECTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=81667,
-  serialized_end=81758,
+  serialized_start=83135,
+  serialized_end=83226,
 )
 _sym_db.RegisterEnumDescriptor(_DATABASELINESELECTION)
 
@@ -2907,8 +2995,8 @@ _AUTO_MODELBODY_TYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=81760,
-  serialized_end=81817,
+  serialized_start=83228,
+  serialized_end=83285,
 )
 _sym_db.RegisterEnumDescriptor(_AUTO_MODELBODY_TYPE)
 
@@ -2943,8 +3031,8 @@ _STRIKETYPEOPTIONS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=81819,
-  serialized_end=81901,
+  serialized_start=83287,
+  serialized_end=83369,
 )
 _sym_db.RegisterEnumDescriptor(_STRIKETYPEOPTIONS)
 
@@ -2979,8 +3067,8 @@ _EMAGWORMSTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=81903,
-  serialized_end=81979,
+  serialized_start=83371,
+  serialized_end=83447,
 )
 _sym_db.RegisterEnumDescriptor(_EMAGWORMSTYPE)
 
@@ -3010,8 +3098,8 @@ _SURVEYFIELDDATATYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=81981,
-  serialized_end=82053,
+  serialized_start=83449,
+  serialized_end=83521,
 )
 _sym_db.RegisterEnumDescriptor(_SURVEYFIELDDATATYPE)
 
@@ -3041,8 +3129,8 @@ _SURVEYACQUISITIONTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=82055,
-  serialized_end=82119,
+  serialized_start=83523,
+  serialized_end=83587,
 )
 _sym_db.RegisterEnumDescriptor(_SURVEYACQUISITIONTYPE)
 
@@ -3072,8 +3160,8 @@ _DIP_ACCEPT_STRATEGY = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=82121,
-  serialized_end=82208,
+  serialized_start=83589,
+  serialized_end=83676,
 )
 _sym_db.RegisterEnumDescriptor(_DIP_ACCEPT_STRATEGY)
 
@@ -3103,8 +3191,8 @@ _DIPCALCULATESTRATEGY = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=82210,
-  serialized_end=82297,
+  serialized_start=83678,
+  serialized_end=83765,
 )
 _sym_db.RegisterEnumDescriptor(_DIPCALCULATESTRATEGY)
 
@@ -3179,8 +3267,8 @@ _EULEREQUATIONOPTIONS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=82300,
-  serialized_end=82568,
+  serialized_start=83768,
+  serialized_end=84036,
 )
 _sym_db.RegisterEnumDescriptor(_EULEREQUATIONOPTIONS)
 
@@ -3210,8 +3298,8 @@ _EULEROUTPUTOPTIONS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=82570,
-  serialized_end=82622,
+  serialized_start=84038,
+  serialized_end=84090,
 )
 _sym_db.RegisterEnumDescriptor(_EULEROUTPUTOPTIONS)
 
@@ -3236,8 +3324,8 @@ _SPLITTING_ALGORITHM = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=82624,
-  serialized_end=82681,
+  serialized_start=84092,
+  serialized_end=84149,
 )
 _sym_db.RegisterEnumDescriptor(_SPLITTING_ALGORITHM)
 
@@ -3287,8 +3375,8 @@ _SPECTRASIZE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=82684,
-  serialized_end=82830,
+  serialized_start=84152,
+  serialized_end=84298,
 )
 _sym_db.RegisterEnumDescriptor(_SPECTRASIZE)
 
@@ -3338,8 +3426,8 @@ _SPECTRAFORMAT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=82833,
-  serialized_end=82990,
+  serialized_start=84301,
+  serialized_end=84458,
 )
 _sym_db.RegisterEnumDescriptor(_SPECTRAFORMAT)
 
@@ -3369,8 +3457,8 @@ _MANUFACTURER_GAMMADETECTOR = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=82992,
-  serialized_end=83083,
+  serialized_start=84460,
+  serialized_end=84551,
 )
 _sym_db.RegisterEnumDescriptor(_MANUFACTURER_GAMMADETECTOR)
 
@@ -3400,8 +3488,8 @@ _GAMMADETECTOR_VOLUME = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=83085,
-  serialized_end=83151,
+  serialized_start=84553,
+  serialized_end=84619,
 )
 _sym_db.RegisterEnumDescriptor(_GAMMADETECTOR_VOLUME)
 
@@ -3451,8 +3539,8 @@ _SPECTRALNOISEADJUSTSTRATEGY = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=83154,
-  serialized_end=83439,
+  serialized_start=84622,
+  serialized_end=84907,
 )
 _sym_db.RegisterEnumDescriptor(_SPECTRALNOISEADJUSTSTRATEGY)
 
@@ -3482,8 +3570,8 @@ _ENERGYCALIBRATESTRATGEY = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=83441,
-  serialized_end=83521,
+  serialized_start=84909,
+  serialized_end=84989,
 )
 _sym_db.RegisterEnumDescriptor(_ENERGYCALIBRATESTRATGEY)
 
@@ -3508,8 +3596,8 @@ _WINDOW_UNITS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=83523,
-  serialized_end=83566,
+  serialized_start=84991,
+  serialized_end=85034,
 )
 _sym_db.RegisterEnumDescriptor(_WINDOW_UNITS)
 
@@ -3534,8 +3622,8 @@ _MNFSIGNALTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=83568,
-  serialized_end=83603,
+  serialized_start=85036,
+  serialized_end=85071,
 )
 _sym_db.RegisterEnumDescriptor(_MNFSIGNALTYPE)
 
@@ -3560,8 +3648,8 @@ _SPECTRALRATIO_INT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=83605,
-  serialized_end=83654,
+  serialized_start=85073,
+  serialized_end=85122,
 )
 _sym_db.RegisterEnumDescriptor(_SPECTRALRATIO_INT)
 
@@ -3586,8 +3674,8 @@ _RADONCALIBRATIONMETHOD_INT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=83656,
-  serialized_end=83722,
+  serialized_start=85124,
+  serialized_end=85190,
 )
 _sym_db.RegisterEnumDescriptor(_RADONCALIBRATIONMETHOD_INT)
 
@@ -3622,8 +3710,8 @@ _DYKE_STYLE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=83724,
-  serialized_end=83805,
+  serialized_start=85192,
+  serialized_end=85273,
 )
 _sym_db.RegisterEnumDescriptor(_DYKE_STYLE)
 
@@ -3653,8 +3741,8 @@ _DYKE_ALGORITHM = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=83807,
-  serialized_end=83900,
+  serialized_start=85275,
+  serialized_end=85368,
 )
 _sym_db.RegisterEnumDescriptor(_DYKE_ALGORITHM)
 
@@ -3684,8 +3772,8 @@ _COLOURSCHEME = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=83902,
-  serialized_end=83966,
+  serialized_start=85370,
+  serialized_end=85434,
 )
 _sym_db.RegisterEnumDescriptor(_COLOURSCHEME)
 
@@ -3775,8 +3863,8 @@ _STATISTICALFIELDWITHINSTATSVOXET = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=83969,
-  serialized_end=84333,
+  serialized_start=85437,
+  serialized_end=85801,
 )
 _sym_db.RegisterEnumDescriptor(_STATISTICALFIELDWITHINSTATSVOXET)
 
@@ -3816,8 +3904,8 @@ _SIGNALRESAMPLEMETHOD = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=84335,
-  serialized_end=84446,
+  serialized_start=85803,
+  serialized_end=85914,
 )
 _sym_db.RegisterEnumDescriptor(_SIGNALRESAMPLEMETHOD)
 
@@ -3852,8 +3940,8 @@ _MULTISCALEEDGEDETECTIONMETHOD = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=84448,
-  serialized_end=84543,
+  serialized_start=85916,
+  serialized_end=86011,
 )
 _sym_db.RegisterEnumDescriptor(_MULTISCALEEDGEDETECTIONMETHOD)
 
@@ -3878,8 +3966,8 @@ _HORIZONTALDERIVATIVEMETHOD = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=84545,
-  serialized_end=84618,
+  serialized_start=86013,
+  serialized_end=86086,
 )
 _sym_db.RegisterEnumDescriptor(_HORIZONTALDERIVATIVEMETHOD)
 
@@ -3909,8 +3997,8 @@ _CONTACT_STYLE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=84620,
-  serialized_end=84668,
+  serialized_start=86088,
+  serialized_end=86136,
 )
 _sym_db.RegisterEnumDescriptor(_CONTACT_STYLE)
 
@@ -3940,8 +4028,8 @@ _FAULT_ORIGIN = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=84670,
-  serialized_end=84745,
+  serialized_start=86138,
+  serialized_end=86213,
 )
 _sym_db.RegisterEnumDescriptor(_FAULT_ORIGIN)
 
@@ -3971,7 +4059,6 @@ GEOSOFT_DB = 21
 GEOSOFTINT = 22
 GEOTIFF = 23
 GEOPAK = 24
-GR820 = 25
 ECSGPCBASE = 26
 LCTGRID = 27
 MAPINFO = 28
@@ -4038,9 +4125,6 @@ Noise_Diff4 = 1
 Noise_Range = 2
 Noise_Naudy = 3
 Noise_Gradient = 4
-Noise_Quadrature = 5
-Noise_Phase = 6
-Noise_Phillips = 7
 Noise_LaCosteRC = 8
 Noise_LaCoste_Curvature = 9
 Noise_LocalMeanTensor = 10
@@ -4059,6 +4143,9 @@ Cut_Alternative = 10
 Edit_Clip = 11
 I_AKIMA = 0
 I_LINEAR = 1
+S_Find = 0
+S_Range_Clip = 1
+S_Step_Correction = 2
 S_POINT = 0
 S_LINE = 1
 S_ALL = 2
@@ -4069,6 +4156,7 @@ DeleteField = 3
 ConditionalDelete = 4
 SplitGroup = 5
 SaveAs = 6
+SortGroups = 7
 Rows = 0
 Groups = 1
 Extract_Profile = 0
@@ -4098,6 +4186,7 @@ TERRACE = 4
 Curvature = 5
 Tensor_QC = 6
 Gaussian = 7
+Cauchy = 8
 QC = 0
 Potential = 1
 Smoothed_Potential = 2
@@ -4107,7 +4196,7 @@ FourierErrors = 5
 SmoothedComponents = 6
 Grid_Vertical_Component = 7
 Solve_2DEigenSystem = 8
-Frobinius_Norm_Error = 9
+Frobenius_Norm_Error = 9
 zero = 0
 one = 1
 two = 2
@@ -4122,6 +4211,7 @@ CG6Field = 33
 DumpCG6 = 7
 MGS6Field = 8
 AIRSEAIIField = 9
+AT1MField = 34
 FREE_AIR = 10
 REVERSE_FREE_AIR = 11
 SIMPLE_BOUGUER = 12
@@ -4195,6 +4285,8 @@ Selection_Interpolate = 3
 Selection_Add_Constant = 4
 Selection_Add_Slope = 5
 Selection_Add_Triangle = 6
+QuadTree = 0
+Ring = 1
 Same_As = 0
 Aligned_With_Grid = 1
 Aligned_Origin = 2
@@ -4291,6 +4383,9 @@ TensorIntegration = 6
 FalconTransform = 7
 TMI_Transform = 8
 Gz_Transform = 9
+AppendPoints = 0
+ReplacePoints = 1
+ReportError = 2
 ROWS = 0
 COLUMNS = 1
 FULLER = 0
@@ -4326,10 +4421,11 @@ AddEarthModel = 1
 RemoveSurveyAverage = 2
 FlightAverageAdjust = 3
 RemoveLineAverage = 4
-AltitudeCorrection = 5
-Profile_Adjust_Altitude = 6
-Estimate_Error_Norms = 7
-Vertical_Component = 8
+LineAltitudeCorrection = 5
+ClusterPointsAltitudeCorrection = 6
+Estimate_Error_Norms = 8
+Vertical_Component = 9
+DO_NOTHING = 99
 LevelLoop = 0
 LevelDC = 1
 LevelDrape = 2
@@ -4499,8 +4595,8 @@ _CLUSTERCONTROL_INT_CLUSTER_LEVEL = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12156,
-  serialized_end=12235,
+  serialized_start=12393,
+  serialized_end=12472,
 )
 _sym_db.RegisterEnumDescriptor(_CLUSTERCONTROL_INT_CLUSTER_LEVEL)
 
@@ -4529,8 +4625,8 @@ _GRIDFEATHERINGOPTIONS_PROCESSING_MODE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=27617,
-  serialized_end=27678,
+  serialized_start=27863,
+  serialized_end=27924,
 )
 _sym_db.RegisterEnumDescriptor(_GRIDFEATHERINGOPTIONS_PROCESSING_MODE)
 
@@ -4559,8 +4655,8 @@ _GRIDSCALEANDADJUSTOPTIONS_LEVELRUNTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=27935,
-  serialized_end=28000,
+  serialized_start=28181,
+  serialized_end=28246,
 )
 _sym_db.RegisterEnumDescriptor(_GRIDSCALEANDADJUSTOPTIONS_LEVELRUNTYPE)
 
@@ -4589,8 +4685,8 @@ _GRIDSCALEANDADJUSTOPTIONS_LEVELALGORITHM = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=28002,
-  serialized_end=28066,
+  serialized_start=28248,
+  serialized_end=28312,
 )
 _sym_db.RegisterEnumDescriptor(_GRIDSCALEANDADJUSTOPTIONS_LEVELALGORITHM)
 
@@ -4614,8 +4710,8 @@ _GRIDMERGE_INT_GRIDTRIMUNITS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=29371,
-  serialized_end=29410,
+  serialized_start=29617,
+  serialized_end=29656,
 )
 _sym_db.RegisterEnumDescriptor(_GRIDMERGE_INT_GRIDTRIMUNITS)
 
@@ -6430,119 +6526,112 @@ _EXPORT_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GeoTiffImage', full_name='intrepid.Export_INT.GeoTiffImage', index=14,
-      number=13, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='SEGY', full_name='intrepid.Export_INT.SEGY', index=15,
+      name='SEGY', full_name='intrepid.Export_INT.SEGY', index=14,
       number=14, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='VoxelGEO', full_name='intrepid.Export_INT.VoxelGEO', index=16,
+      name='VoxelGEO', full_name='intrepid.Export_INT.VoxelGEO', index=15,
       number=15, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ArcShape', full_name='intrepid.Export_INT.ArcShape', index=17,
+      name='ArcShape', full_name='intrepid.Export_INT.ArcShape', index=16,
       number=16, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MapInfo', full_name='intrepid.Export_INT.MapInfo', index=18,
+      name='MapInfo', full_name='intrepid.Export_INT.MapInfo', index=17,
       number=17, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='NetCDFGrid', full_name='intrepid.Export_INT.NetCDFGrid', index=19,
+      name='NetCDFGrid', full_name='intrepid.Export_INT.NetCDFGrid', index=18,
       number=19, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ColourTable_GeoTiff', full_name='intrepid.Export_INT.ColourTable_GeoTiff', index=20,
+      name='ColourTable_GeoTiff', full_name='intrepid.Export_INT.ColourTable_GeoTiff', index=19,
       number=18, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Columns', full_name='intrepid.Export_INT.Columns', index=21,
+      name='Columns', full_name='intrepid.Export_INT.Columns', index=20,
       number=20, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Lines', full_name='intrepid.Export_INT.Lines', index=22,
+      name='Lines', full_name='intrepid.Export_INT.Lines', index=21,
       number=21, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='UseNulls', full_name='intrepid.Export_INT.UseNulls', index=23,
+      name='UseNulls', full_name='intrepid.Export_INT.UseNulls', index=22,
       number=23, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=True,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='NullValue', full_name='intrepid.Export_INT.NullValue', index=24,
+      name='NullValue', full_name='intrepid.Export_INT.NullValue', index=23,
       number=24, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"null".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='StartLine', full_name='intrepid.Export_INT.StartLine', index=25,
+      name='StartLine', full_name='intrepid.Export_INT.StartLine', index=24,
       number=25, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(-1),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='EndLine', full_name='intrepid.Export_INT.EndLine', index=26,
+      name='EndLine', full_name='intrepid.Export_INT.EndLine', index=25,
       number=26, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(-1),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='OutputGridWidth', full_name='intrepid.Export_INT.OutputGridWidth', index=27,
+      name='OutputGridWidth', full_name='intrepid.Export_INT.OutputGridWidth', index=26,
       number=27, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(8),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='OutputGridDecimals', full_name='intrepid.Export_INT.OutputGridDecimals', index=28,
+      name='OutputGridDecimals', full_name='intrepid.Export_INT.OutputGridDecimals', index=27,
       number=28, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(2),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='BatchToolName', full_name='intrepid.Export_INT.BatchToolName', index=29,
+      name='BatchToolName', full_name='intrepid.Export_INT.BatchToolName', index=28,
       number=99, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"export".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GUIToolName', full_name='intrepid.Export_INT.GUIToolName', index=30,
+      name='GUIToolName', full_name='intrepid.Export_INT.GUIToolName', index=29,
       number=100, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"export".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -6561,7 +6650,7 @@ _EXPORT_INT = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=5338,
-  serialized_end=6448,
+  serialized_end=6398,
 )
 
 
@@ -6665,140 +6754,154 @@ _DATABASE_MANIPULATION_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ToLineNumber', full_name='intrepid.DataBase_Manipulation_INT.ToLineNumber', index=13,
+      name='FromJulian', full_name='intrepid.DataBase_Manipulation_INT.FromJulian', index=13,
+      number=17, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ToLineNumber', full_name='intrepid.DataBase_Manipulation_INT.ToLineNumber', index=14,
       number=12, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ToFiducial', full_name='intrepid.DataBase_Manipulation_INT.ToFiducial', index=14,
+      name='ToFiducial', full_name='intrepid.DataBase_Manipulation_INT.ToFiducial', index=15,
       number=13, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MergeFromField', full_name='intrepid.DataBase_Manipulation_INT.MergeFromField', index=15,
+      name='ToJulian', full_name='intrepid.DataBase_Manipulation_INT.ToJulian', index=16,
+      number=18, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='MergeFromField', full_name='intrepid.DataBase_Manipulation_INT.MergeFromField', index=17,
       number=14, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MergeToField', full_name='intrepid.DataBase_Manipulation_INT.MergeToField', index=16,
+      name='MergeToField', full_name='intrepid.DataBase_Manipulation_INT.MergeToField', index=18,
       number=15, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='FidFactor', full_name='intrepid.DataBase_Manipulation_INT.FidFactor', index=17,
+      name='FidFactor', full_name='intrepid.DataBase_Manipulation_INT.FidFactor', index=19,
       number=16, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(1),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Precision', full_name='intrepid.DataBase_Manipulation_INT.Precision', index=18,
+      name='Precision', full_name='intrepid.DataBase_Manipulation_INT.Precision', index=20,
       number=50, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='DuplicateFields', full_name='intrepid.DataBase_Manipulation_INT.DuplicateFields', index=19,
+      name='DuplicateFields', full_name='intrepid.DataBase_Manipulation_INT.DuplicateFields', index=21,
       number=51, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Alias_Code', full_name='intrepid.DataBase_Manipulation_INT.Alias_Code', index=20,
+      name='Alias_Code', full_name='intrepid.DataBase_Manipulation_INT.Alias_Code', index=22,
       number=62, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=13,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Alias_String', full_name='intrepid.DataBase_Manipulation_INT.Alias_String', index=21,
+      name='Alias_String', full_name='intrepid.DataBase_Manipulation_INT.Alias_String', index=23,
       number=63, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='myField', full_name='intrepid.DataBase_Manipulation_INT.myField', index=22,
+      name='myField', full_name='intrepid.DataBase_Manipulation_INT.myField', index=24,
       number=60, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='myAlias', full_name='intrepid.DataBase_Manipulation_INT.myAlias', index=23,
+      name='myAlias', full_name='intrepid.DataBase_Manipulation_INT.myAlias', index=25,
       number=61, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='IncludedFields', full_name='intrepid.DataBase_Manipulation_INT.IncludedFields', index=24,
+      name='IncludedFields', full_name='intrepid.DataBase_Manipulation_INT.IncludedFields', index=26,
       number=64, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Field_Aliases', full_name='intrepid.DataBase_Manipulation_INT.Field_Aliases', index=25,
+      name='Field_Aliases', full_name='intrepid.DataBase_Manipulation_INT.Field_Aliases', index=27,
       number=65, type=14, cpp_type=8, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Location', full_name='intrepid.DataBase_Manipulation_INT.Location', index=26,
+      name='Location', full_name='intrepid.DataBase_Manipulation_INT.Location', index=28,
       number=70, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Keyword', full_name='intrepid.DataBase_Manipulation_INT.Keyword', index=27,
+      name='Keyword', full_name='intrepid.DataBase_Manipulation_INT.Keyword', index=29,
       number=80, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Block', full_name='intrepid.DataBase_Manipulation_INT.Block', index=28,
+      name='Block', full_name='intrepid.DataBase_Manipulation_INT.Block', index=30,
       number=81, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Value', full_name='intrepid.DataBase_Manipulation_INT.Value', index=29,
+      name='Value', full_name='intrepid.DataBase_Manipulation_INT.Value', index=31,
       number=82, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ReportFile', full_name='intrepid.DataBase_Manipulation_INT.ReportFile', index=30,
+      name='ReportFile', full_name='intrepid.DataBase_Manipulation_INT.ReportFile', index=32,
       number=950, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"fmanager_processing.rpt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='BatchToolName', full_name='intrepid.DataBase_Manipulation_INT.BatchToolName', index=31,
+      name='BatchToolName', full_name='intrepid.DataBase_Manipulation_INT.BatchToolName', index=33,
       number=99, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"fmanager".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GUIToolName', full_name='intrepid.DataBase_Manipulation_INT.GUIToolName', index=32,
+      name='GUIToolName', full_name='intrepid.DataBase_Manipulation_INT.GUIToolName', index=34,
       number=100, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"fmanager".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -6816,8 +6919,8 @@ _DATABASE_MANIPULATION_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6451,
-  serialized_end=7302,
+  serialized_start=6401,
+  serialized_end=7290,
 )
 
 
@@ -6883,8 +6986,8 @@ _EDIT_DELTA_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7305,
-  serialized_end=7486,
+  serialized_start=7293,
+  serialized_end=7474,
 )
 
 
@@ -7153,8 +7256,8 @@ _SURVEYPLAN_EDIT_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7489,
-  serialized_end=8477,
+  serialized_start=7477,
+  serialized_end=8465,
 )
 
 
@@ -7227,8 +7330,8 @@ _SIGNALTRACE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8480,
-  serialized_end=8738,
+  serialized_start=8468,
+  serialized_end=8726,
 )
 
 
@@ -7297,21 +7400,28 @@ _PROFILEEDITOR_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ReportFile', full_name='intrepid.ProfileEditor_INT.ReportFile', index=8,
+      name='SearchType', full_name='intrepid.ProfileEditor_INT.SearchType', index=8,
+      number=17, type=14, cpp_type=8, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ReportFile', full_name='intrepid.ProfileEditor_INT.ReportFile', index=9,
       number=95, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"pedit.rpt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='BatchToolName', full_name='intrepid.ProfileEditor_INT.BatchToolName', index=9,
+      name='BatchToolName', full_name='intrepid.ProfileEditor_INT.BatchToolName', index=10,
       number=99, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"pedit".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GUIToolName', full_name='intrepid.ProfileEditor_INT.GUIToolName', index=10,
+      name='GUIToolName', full_name='intrepid.ProfileEditor_INT.GUIToolName', index=11,
       number=100, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"pedit".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -7329,8 +7439,8 @@ _PROFILEEDITOR_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8741,
-  serialized_end=9135,
+  serialized_start=8729,
+  serialized_end=9175,
 )
 
 
@@ -7452,8 +7562,8 @@ _CLIPLINE_EDIT_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9138,
-  serialized_end=9491,
+  serialized_start=9178,
+  serialized_end=9531,
 )
 
 
@@ -7612,6 +7722,13 @@ _SPREADSHEET_ACTIONS = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='SortKeys', full_name='intrepid.SpreadSheet_Actions.SortKeys', index=21,
+      number=20, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -7624,8 +7741,8 @@ _SPREADSHEET_ACTIONS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9494,
-  serialized_end=10084,
+  serialized_start=9534,
+  serialized_end=10142,
 )
 
 
@@ -7677,8 +7794,8 @@ _SPREADSHEET_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10087,
-  serialized_end=10254,
+  serialized_start=10145,
+  serialized_end=10312,
 )
 
 
@@ -7884,8 +8001,8 @@ _DATASET_RESAMPLER_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10257,
-  serialized_end=11117,
+  serialized_start=10315,
+  serialized_end=11175,
 )
 
 
@@ -7926,77 +8043,105 @@ _SURVEYDISTANCE_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Altitude', full_name='intrepid.SurveyDistance_INT.Altitude', index=4,
+      name='ShowLineDirection', full_name='intrepid.SurveyDistance_INT.ShowLineDirection', index=4,
+      number=14, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ShowLineNumbers', full_name='intrepid.SurveyDistance_INT.ShowLineNumbers', index=5,
+      number=15, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Altitude', full_name='intrepid.SurveyDistance_INT.Altitude', index=6,
       number=5, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MinSurveyNumber', full_name='intrepid.SurveyDistance_INT.MinSurveyNumber', index=5,
+      name='MinSurveyNumber', full_name='intrepid.SurveyDistance_INT.MinSurveyNumber', index=7,
       number=6, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MaxSurveyNumber', full_name='intrepid.SurveyDistance_INT.MaxSurveyNumber', index=6,
+      name='MaxSurveyNumber', full_name='intrepid.SurveyDistance_INT.MaxSurveyNumber', index=8,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=999999,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MinFlightNumber', full_name='intrepid.SurveyDistance_INT.MinFlightNumber', index=7,
+      name='MinFlightNumber', full_name='intrepid.SurveyDistance_INT.MinFlightNumber', index=9,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MaxFlightNumber', full_name='intrepid.SurveyDistance_INT.MaxFlightNumber', index=8,
+      name='MaxFlightNumber', full_name='intrepid.SurveyDistance_INT.MaxFlightNumber', index=10,
       number=9, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=999999,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MinLineNumber', full_name='intrepid.SurveyDistance_INT.MinLineNumber', index=9,
+      name='MinLineNumber', full_name='intrepid.SurveyDistance_INT.MinLineNumber', index=11,
       number=10, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MaxLineNumber', full_name='intrepid.SurveyDistance_INT.MaxLineNumber', index=10,
+      name='MaxLineNumber', full_name='intrepid.SurveyDistance_INT.MaxLineNumber', index=12,
       number=11, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='AllowPseudoFids', full_name='intrepid.SurveyDistance_INT.AllowPseudoFids', index=11,
+      name='AllowPseudoFids', full_name='intrepid.SurveyDistance_INT.AllowPseudoFids', index=13,
       number=12, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=True,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ReportFile', full_name='intrepid.SurveyDistance_INT.ReportFile', index=12,
+      name='Gather_HeadingStatistics', full_name='intrepid.SurveyDistance_INT.Gather_HeadingStatistics', index=14,
+      number=26, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='SignalField', full_name='intrepid.SurveyDistance_INT.SignalField', index=15,
+      number=24, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=b"mag_tieLevelled".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ReportFile', full_name='intrepid.SurveyDistance_INT.ReportFile', index=16,
       number=70, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"survey_distances.rpt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='BatchToolName', full_name='intrepid.SurveyDistance_INT.BatchToolName', index=13,
+      name='BatchToolName', full_name='intrepid.SurveyDistance_INT.BatchToolName', index=17,
       number=99, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"sdist".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GUIToolName', full_name='intrepid.SurveyDistance_INT.GUIToolName', index=14,
+      name='GUIToolName', full_name='intrepid.SurveyDistance_INT.GUIToolName', index=18,
       number=100, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"sdist".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -8014,8 +8159,8 @@ _SURVEYDISTANCE_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=11120,
-  serialized_end=11561,
+  serialized_start=11178,
+  serialized_end=11764,
 )
 
 
@@ -8118,6 +8263,13 @@ _CLUSTERCONTROL_INT = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='TreatAsConvexHull', full_name='intrepid.ClusterControl_INT.TreatAsConvexHull', index=13,
+      number=13, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -8131,8 +8283,8 @@ _CLUSTERCONTROL_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=11564,
-  serialized_end=12235,
+  serialized_start=11767,
+  serialized_end=12472,
 )
 
 
@@ -8275,8 +8427,8 @@ _VIEW3D_POINTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12238,
-  serialized_end=12897,
+  serialized_start=12475,
+  serialized_end=13134,
 )
 
 
@@ -8391,8 +8543,8 @@ _FTG_FAULT3D_CALC = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12900,
-  serialized_end=13452,
+  serialized_start=13137,
+  serialized_end=13689,
 )
 
 
@@ -8535,8 +8687,8 @@ _CLUSTERANALYSIS_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13455,
-  serialized_end=14182,
+  serialized_start=13692,
+  serialized_end=14419,
 )
 
 
@@ -8619,9 +8771,9 @@ _CONVOLVEGRID_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='OutputFloat32', full_name='intrepid.ConvolveGrid_INT.OutputFloat32', index=10,
-      number=11, type=8, cpp_type=7, label=1,
-      has_default_value=True, default_value=False,
+      name='OutputDataType', full_name='intrepid.ConvolveGrid_INT.OutputDataType', index=10,
+      number=11, type=14, cpp_type=8, label=1,
+      has_default_value=True, default_value=3,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -8752,28 +8904,56 @@ _CONVOLVEGRID_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Generated_By_GUI', full_name='intrepid.ConvolveGrid_INT.Generated_By_GUI', index=29,
-      number=51, type=8, cpp_type=7, label=1,
+      name='DerivativeOrder', full_name='intrepid.ConvolveGrid_INT.DerivativeOrder', index=29,
+      number=50, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=3,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='KernelSize', full_name='intrepid.ConvolveGrid_INT.KernelSize', index=30,
+      number=51, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=3,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ContinuationFactor', full_name='intrepid.ConvolveGrid_INT.ContinuationFactor', index=31,
+      number=52, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(1),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Hilbert1D', full_name='intrepid.ConvolveGrid_INT.Hilbert1D', index=32,
+      number=53, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ReportFile', full_name='intrepid.ConvolveGrid_INT.ReportFile', index=30,
+      name='Generated_By_GUI', full_name='intrepid.ConvolveGrid_INT.Generated_By_GUI', index=33,
+      number=69, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ReportFile', full_name='intrepid.ConvolveGrid_INT.ReportFile', index=34,
       number=70, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"cfilter_processing.rpt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='BatchToolName', full_name='intrepid.ConvolveGrid_INT.BatchToolName', index=31,
+      name='BatchToolName', full_name='intrepid.ConvolveGrid_INT.BatchToolName', index=35,
       number=99, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"cfilter".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GUIToolName', full_name='intrepid.ConvolveGrid_INT.GUIToolName', index=32,
+      name='GUIToolName', full_name='intrepid.ConvolveGrid_INT.GUIToolName', index=36,
       number=100, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"convolveFilterAppGUI".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -8791,8 +8971,8 @@ _CONVOLVEGRID_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14185,
-  serialized_end=15289,
+  serialized_start=14422,
+  serialized_end=15663,
 )
 
 
@@ -8837,8 +9017,8 @@ _MARINE_FILTER_PARAMETER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15292,
-  serialized_end=15429,
+  serialized_start=15666,
+  serialized_end=15803,
 )
 
 
@@ -8883,8 +9063,8 @@ _SELECTION_RANGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15431,
-  serialized_end=15489,
+  serialized_start=15805,
+  serialized_end=15863,
 )
 
 
@@ -8925,56 +9105,70 @@ _DATA_REPLACER = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Range', full_name='intrepid.Data_Replacer.Range', index=4,
+      name='Value', full_name='intrepid.Data_Replacer.Value', index=4,
+      number=17, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Range', full_name='intrepid.Data_Replacer.Range', index=5,
       number=5, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Selection', full_name='intrepid.Data_Replacer.Selection', index=5,
-      number=9, type=14, cpp_type=8, label=1,
-      has_default_value=False, default_value=0,
+      name='PE_selection', full_name='intrepid.Data_Replacer.PE_selection', index=6,
+      number=16, type=14, cpp_type=8, label=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='AddConstant', full_name='intrepid.Data_Replacer.AddConstant', index=6,
+      name='Selection', full_name='intrepid.Data_Replacer.Selection', index=7,
+      number=9, type=14, cpp_type=8, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='AddConstant', full_name='intrepid.Data_Replacer.AddConstant', index=8,
       number=10, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='AddSlopeLeft', full_name='intrepid.Data_Replacer.AddSlopeLeft', index=7,
+      name='AddSlopeLeft', full_name='intrepid.Data_Replacer.AddSlopeLeft', index=9,
       number=11, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='AddSlopeRight', full_name='intrepid.Data_Replacer.AddSlopeRight', index=8,
+      name='AddSlopeRight', full_name='intrepid.Data_Replacer.AddSlopeRight', index=10,
       number=12, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='AddTriangleLeft', full_name='intrepid.Data_Replacer.AddTriangleLeft', index=9,
+      name='AddTriangleLeft', full_name='intrepid.Data_Replacer.AddTriangleLeft', index=11,
       number=13, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='AddTriangleMiddle', full_name='intrepid.Data_Replacer.AddTriangleMiddle', index=10,
+      name='AddTriangleMiddle', full_name='intrepid.Data_Replacer.AddTriangleMiddle', index=12,
       number=14, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='AddTriangleRight', full_name='intrepid.Data_Replacer.AddTriangleRight', index=11,
+      name='AddTriangleRight', full_name='intrepid.Data_Replacer.AddTriangleRight', index=13,
       number=15, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
@@ -8992,8 +9186,8 @@ _DATA_REPLACER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15492,
-  serialized_end=15828,
+  serialized_start=15866,
+  serialized_end=16291,
 )
 
 
@@ -9094,8 +9288,8 @@ _GRAVITY_METER_MARINE_SETTINGS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15831,
-  serialized_end=16114,
+  serialized_start=16294,
+  serialized_end=16577,
 )
 
 
@@ -9161,8 +9355,8 @@ _GRAVITY_METER_CONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16117,
-  serialized_end=16333,
+  serialized_start=16580,
+  serialized_end=16796,
 )
 
 
@@ -9193,8 +9387,8 @@ _GRAVITY_METER_TABLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16335,
-  serialized_end=16411,
+  serialized_start=16798,
+  serialized_end=16874,
 )
 
 
@@ -9274,405 +9468,331 @@ _DENSITY_MATERIAL_PROPERTIES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16414,
-  serialized_end=16737,
+  serialized_start=16877,
+  serialized_end=17200,
 )
 
 
-_TERRAIN_CORRECTION = _descriptor.Descriptor(
-  name='Terrain_Correction',
-  full_name='intrepid.Terrain_Correction',
+_TERRAIN_CORRECTION_INT = _descriptor.Descriptor(
+  name='Terrain_Correction_INT',
+  full_name='intrepid.Terrain_Correction_INT',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Cell_Size', full_name='intrepid.Terrain_Correction.Cell_Size', index=0,
-      number=1, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Max_Circles', full_name='intrepid.Terrain_Correction.Max_Circles', index=1,
-      number=2, type=5, cpp_type=1, label=1,
-      has_default_value=True, default_value=2,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Radius_Ring_1', full_name='intrepid.Terrain_Correction.Radius_Ring_1', index=2,
-      number=3, type=5, cpp_type=1, label=1,
-      has_default_value=True, default_value=16,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Radius_Ring_2', full_name='intrepid.Terrain_Correction.Radius_Ring_2', index=3,
-      number=4, type=5, cpp_type=1, label=1,
-      has_default_value=True, default_value=32,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Radius_Ring_3', full_name='intrepid.Terrain_Correction.Radius_Ring_3', index=4,
-      number=5, type=5, cpp_type=1, label=1,
-      has_default_value=True, default_value=64,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Radius_Ring_4', full_name='intrepid.Terrain_Correction.Radius_Ring_4', index=5,
-      number=6, type=5, cpp_type=1, label=1,
-      has_default_value=True, default_value=256,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Radius_Ring_5', full_name='intrepid.Terrain_Correction.Radius_Ring_5', index=6,
-      number=7, type=5, cpp_type=1, label=1,
-      has_default_value=True, default_value=1024,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Bottom_RL', full_name='intrepid.Terrain_Correction.Bottom_RL', index=7,
-      number=8, type=1, cpp_type=5, label=1,
-      has_default_value=True, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='UseDTM_Elevations_At_Observation', full_name='intrepid.Terrain_Correction.UseDTM_Elevations_At_Observation', index=8,
-      number=10, type=8, cpp_type=7, label=1,
-      has_default_value=True, default_value=True,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Add_Obs_Elevations_To_DTM', full_name='intrepid.Terrain_Correction.Add_Obs_Elevations_To_DTM', index=9,
-      number=11, type=8, cpp_type=7, label=1,
-      has_default_value=True, default_value=False,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Report_Calculations_To_ASCII', full_name='intrepid.Terrain_Correction.Report_Calculations_To_ASCII', index=10,
-      number=12, type=8, cpp_type=7, label=1,
-      has_default_value=True, default_value=False,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='LocalInverseDistanceInterpolator', full_name='intrepid.Terrain_Correction.LocalInverseDistanceInterpolator', index=11,
-      number=13, type=8, cpp_type=7, label=1,
-      has_default_value=True, default_value=True,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='UseSlopingTopPrisms', full_name='intrepid.Terrain_Correction.UseSlopingTopPrisms', index=12,
-      number=14, type=8, cpp_type=7, label=1,
-      has_default_value=True, default_value=True,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='ScalarTerrainCorrection', full_name='intrepid.Terrain_Correction.ScalarTerrainCorrection', index=13,
-      number=15, type=8, cpp_type=7, label=1,
-      has_default_value=True, default_value=True,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='TensorTerrainCorrection', full_name='intrepid.Terrain_Correction.TensorTerrainCorrection', index=14,
-      number=16, type=8, cpp_type=7, label=1,
-      has_default_value=True, default_value=False,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Sub_Sample_Rate', full_name='intrepid.Terrain_Correction.Sub_Sample_Rate', index=15,
-      number=18, type=5, cpp_type=1, label=1,
-      has_default_value=True, default_value=1,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto2',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=16740,
-  serialized_end=17288,
-)
-
-
-_TERRAIN_CORRECTION_QUADTREE_INT = _descriptor.Descriptor(
-  name='Terrain_Correction_QuadTree_INT',
-  full_name='intrepid.Terrain_Correction_QuadTree_INT',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  create_key=_descriptor._internal_create_key,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='InputDTM', full_name='intrepid.Terrain_Correction_QuadTree_INT.InputDTM', index=0,
-      number=1, type=9, cpp_type=9, label=2,
+      name='InputDTM', full_name='intrepid.Terrain_Correction_INT.InputDTM', index=0,
+      number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='InputDB', full_name='intrepid.Terrain_Correction_QuadTree_INT.InputDB', index=1,
+      name='InputDB', full_name='intrepid.Terrain_Correction_INT.InputDB', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='InputX', full_name='intrepid.Terrain_Correction_QuadTree_INT.InputX', index=2,
+      name='InputX', full_name='intrepid.Terrain_Correction_INT.InputX', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='InputY', full_name='intrepid.Terrain_Correction_QuadTree_INT.InputY', index=3,
+      name='InputY', full_name='intrepid.Terrain_Correction_INT.InputY', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='InputGravity', full_name='intrepid.Terrain_Correction_QuadTree_INT.InputGravity', index=4,
+      name='InputGravity', full_name='intrepid.Terrain_Correction_INT.InputGravity', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='InputGroundElevation', full_name='intrepid.Terrain_Correction_QuadTree_INT.InputGroundElevation', index=5,
+      name='InputGroundElevation', full_name='intrepid.Terrain_Correction_INT.InputGroundElevation', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='InputAircraftElevation', full_name='intrepid.Terrain_Correction_QuadTree_INT.InputAircraftElevation', index=6,
+      name='InputAircraftElevation', full_name='intrepid.Terrain_Correction_INT.InputAircraftElevation', index=6,
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='InputNValue', full_name='intrepid.Terrain_Correction_QuadTree_INT.InputNValue', index=7,
+      name='InputNValue', full_name='intrepid.Terrain_Correction_INT.InputNValue', index=7,
       number=8, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='InputGravityGrid', full_name='intrepid.Terrain_Correction_QuadTree_INT.InputGravityGrid', index=8,
+      name='InputGravityGrid', full_name='intrepid.Terrain_Correction_INT.InputGravityGrid', index=8,
       number=9, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='InputDrapeSurfaceGrid', full_name='intrepid.Terrain_Correction_QuadTree_INT.InputDrapeSurfaceGrid', index=9,
+      name='InputDrapeSurfaceGrid', full_name='intrepid.Terrain_Correction_INT.InputDrapeSurfaceGrid', index=9,
       number=10, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='InputNValueGrid', full_name='intrepid.Terrain_Correction_QuadTree_INT.InputNValueGrid', index=10,
+      name='InputNValueGrid', full_name='intrepid.Terrain_Correction_INT.InputNValueGrid', index=10,
       number=11, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='InputMaterialDensity', full_name='intrepid.Terrain_Correction_QuadTree_INT.InputMaterialDensity', index=11,
+      name='InputMaterialDensity', full_name='intrepid.Terrain_Correction_INT.InputMaterialDensity', index=11,
       number=12, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='DTMMethod', full_name='intrepid.Terrain_Correction_QuadTree_INT.DTMMethod', index=12,
+      name='DTMMethod', full_name='intrepid.Terrain_Correction_INT.DTMMethod', index=12,
       number=13, type=14, cpp_type=8, label=1,
-      has_default_value=True, default_value=1,
+      has_default_value=True, default_value=2,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='OutputTerrainCorrection', full_name='intrepid.Terrain_Correction_QuadTree_INT.OutputTerrainCorrection', index=13,
+      name='OutputTerrainCorrection', full_name='intrepid.Terrain_Correction_INT.OutputTerrainCorrection', index=13,
       number=15, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='OutputCorrectedGravity', full_name='intrepid.Terrain_Correction_QuadTree_INT.OutputCorrectedGravity', index=14,
+      name='OutputCorrectedGravity', full_name='intrepid.Terrain_Correction_INT.OutputCorrectedGravity', index=14,
       number=16, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ReportFile', full_name='intrepid.Terrain_Correction_QuadTree_INT.ReportFile', index=15,
+      name='ReportFile', full_name='intrepid.Terrain_Correction_INT.ReportFile', index=15,
       number=17, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GravityDatum', full_name='intrepid.Terrain_Correction_QuadTree_INT.GravityDatum', index=16,
+      name='GravityDatum', full_name='intrepid.Terrain_Correction_INT.GravityDatum', index=16,
       number=20, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=3,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GravityUnits', full_name='intrepid.Terrain_Correction_QuadTree_INT.GravityUnits', index=17,
+      name='GravityUnits', full_name='intrepid.Terrain_Correction_INT.GravityUnits', index=17,
       number=21, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GravityAcquisitionEnvironment', full_name='intrepid.Terrain_Correction_QuadTree_INT.GravityAcquisitionEnvironment', index=18,
+      name='GravityAcquisitionEnvironment', full_name='intrepid.Terrain_Correction_INT.GravityAcquisitionEnvironment', index=18,
       number=22, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='CoordinateSystemType', full_name='intrepid.Terrain_Correction_QuadTree_INT.CoordinateSystemType', index=19,
+      name='CoordinateSystemType', full_name='intrepid.Terrain_Correction_INT.CoordinateSystemType', index=19,
       number=23, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=2,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MaterialDensity', full_name='intrepid.Terrain_Correction_QuadTree_INT.MaterialDensity', index=20,
+      name='MaterialDensity', full_name='intrepid.Terrain_Correction_INT.MaterialDensity', index=20,
       number=24, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='DoScalarTerrainCorrection', full_name='intrepid.Terrain_Correction_QuadTree_INT.DoScalarTerrainCorrection', index=21,
-      number=30, type=8, cpp_type=7, label=1,
+      name='DoScalarTerrainCorrection', full_name='intrepid.Terrain_Correction_INT.DoScalarTerrainCorrection', index=21,
+      number=25, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=True,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='DoTensorTerrainCorrection', full_name='intrepid.Terrain_Correction_QuadTree_INT.DoTensorTerrainCorrection', index=22,
+      name='DoTensorTerrainCorrection', full_name='intrepid.Terrain_Correction_INT.DoTensorTerrainCorrection', index=22,
+      number=26, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Bottom_RL_For_Tensor', full_name='intrepid.Terrain_Correction_INT.Bottom_RL_For_Tensor', index=23,
+      number=27, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='UseDTM_Elevations_At_Observation', full_name='intrepid.Terrain_Correction_INT.UseDTM_Elevations_At_Observation', index=24,
+      number=28, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=True,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='UseSlopingTopPrisms', full_name='intrepid.Terrain_Correction_INT.UseSlopingTopPrisms', index=25,
+      number=29, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=True,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Sub_Sample_Rate', full_name='intrepid.Terrain_Correction_INT.Sub_Sample_Rate', index=26,
+      number=30, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=1,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='UseEllipsoid', full_name='intrepid.Terrain_Correction_INT.UseEllipsoid', index=27,
       number=31, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Bottom_RL_For_Tensor', full_name='intrepid.Terrain_Correction_QuadTree_INT.Bottom_RL_For_Tensor', index=23,
-      number=32, type=1, cpp_type=5, label=1,
-      has_default_value=True, default_value=float(0),
+      name='Number_CPUs', full_name='intrepid.Terrain_Correction_INT.Number_CPUs', index=28,
+      number=32, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Precision', full_name='intrepid.Terrain_Correction_QuadTree_INT.Precision', index=24,
-      number=33, type=1, cpp_type=5, label=1,
+      name='algorithm', full_name='intrepid.Terrain_Correction_INT.algorithm', index=29,
+      number=40, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Precision', full_name='intrepid.Terrain_Correction_INT.Precision', index=30,
+      number=50, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(1),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='UseSlopingTopPrisms', full_name='intrepid.Terrain_Correction_QuadTree_INT.UseSlopingTopPrisms', index=25,
-      number=34, type=8, cpp_type=7, label=1,
+      name='AdaptToTerrain', full_name='intrepid.Terrain_Correction_INT.AdaptToTerrain', index=31,
+      number=51, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='AdaptToTerrain', full_name='intrepid.Terrain_Correction_QuadTree_INT.AdaptToTerrain', index=26,
-      number=35, type=8, cpp_type=7, label=1,
+      name='Cell_Size', full_name='intrepid.Terrain_Correction_INT.Cell_Size', index=32,
+      number=80, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Max_Circles', full_name='intrepid.Terrain_Correction_INT.Max_Circles', index=33,
+      number=81, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=2,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Radius_Ring_1', full_name='intrepid.Terrain_Correction_INT.Radius_Ring_1', index=34,
+      number=82, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=16,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Radius_Ring_2', full_name='intrepid.Terrain_Correction_INT.Radius_Ring_2', index=35,
+      number=83, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=32,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Radius_Ring_3', full_name='intrepid.Terrain_Correction_INT.Radius_Ring_3', index=36,
+      number=84, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=64,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Radius_Ring_4', full_name='intrepid.Terrain_Correction_INT.Radius_Ring_4', index=37,
+      number=85, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=256,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Radius_Ring_5', full_name='intrepid.Terrain_Correction_INT.Radius_Ring_5', index=38,
+      number=86, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=1024,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Add_Obs_Elevations_To_DTM', full_name='intrepid.Terrain_Correction_INT.Add_Obs_Elevations_To_DTM', index=39,
+      number=87, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='UseEllipsoid', full_name='intrepid.Terrain_Correction_QuadTree_INT.UseEllipsoid', index=27,
-      number=36, type=8, cpp_type=7, label=1,
+      name='Report_Calculations_To_ASCII', full_name='intrepid.Terrain_Correction_INT.Report_Calculations_To_ASCII', index=40,
+      number=88, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='UseDTM_Elevations_At_Observation', full_name='intrepid.Terrain_Correction_QuadTree_INT.UseDTM_Elevations_At_Observation', index=28,
-      number=37, type=8, cpp_type=7, label=1,
+      name='LocalInverseDistanceInterpolator', full_name='intrepid.Terrain_Correction_INT.LocalInverseDistanceInterpolator', index=41,
+      number=89, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=True,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Sub_Sample_Rate', full_name='intrepid.Terrain_Correction_QuadTree_INT.Sub_Sample_Rate', index=29,
-      number=40, type=5, cpp_type=1, label=1,
-      has_default_value=True, default_value=1,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Number_CPUs', full_name='intrepid.Terrain_Correction_QuadTree_INT.Number_CPUs', index=30,
-      number=41, type=5, cpp_type=1, label=1,
-      has_default_value=True, default_value=1,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='DumpResampledDTM', full_name='intrepid.Terrain_Correction_QuadTree_INT.DumpResampledDTM', index=31,
-      number=42, type=8, cpp_type=7, label=1,
+      name='DumpResampledDTM', full_name='intrepid.Terrain_Correction_INT.DumpResampledDTM', index=42,
+      number=110, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='DumpCalculationSurfaces', full_name='intrepid.Terrain_Correction_QuadTree_INT.DumpCalculationSurfaces', index=32,
-      number=43, type=8, cpp_type=7, label=1,
+      name='DumpCalculationSurfaces', full_name='intrepid.Terrain_Correction_INT.DumpCalculationSurfaces', index=43,
+      number=111, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='DumpGridsforEveryNthObservation', full_name='intrepid.Terrain_Correction_QuadTree_INT.DumpGridsforEveryNthObservation', index=33,
-      number=44, type=5, cpp_type=1, label=1,
+      name='DumpGridsforEveryNthObservation', full_name='intrepid.Terrain_Correction_INT.DumpGridsforEveryNthObservation', index=44,
+      number=112, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='BatchToolName', full_name='intrepid.Terrain_Correction_QuadTree_INT.BatchToolName', index=34,
-      number=99, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=b"terraincorrect".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='GUIToolName', full_name='intrepid.Terrain_Correction_QuadTree_INT.GUIToolName', index=35,
-      number=100, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=b"terraincorrect".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -9688,8 +9808,8 @@ _TERRAIN_CORRECTION_QUADTREE_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17291,
-  serialized_end=18617,
+  serialized_start=17203,
+  serialized_end=18817,
 )
 
 
@@ -9769,8 +9889,8 @@ _ABSOLUTE_REFERENCETIEIN = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18620,
-  serialized_end=18918,
+  serialized_start=18820,
+  serialized_end=19118,
 )
 
 
@@ -10018,8 +10138,8 @@ _LAND_LOOP_REDUCTION_PRINCIPAL_FACTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18921,
-  serialized_end=20138,
+  serialized_start=19121,
+  serialized_end=20338,
 )
 
 
@@ -10150,6 +10270,41 @@ _TRADITIONAL_MARINE_GRAVITY = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ReferenceLineDataset', full_name='intrepid.Traditional_Marine_Gravity.ReferenceLineDataset', index=17,
+      number=20, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='AssignDesignLineNumbers', full_name='intrepid.Traditional_Marine_Gravity.AssignDesignLineNumbers', index=18,
+      number=22, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='xOrigin', full_name='intrepid.Traditional_Marine_Gravity.xOrigin', index=19,
+      number=27, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='yOrigin', full_name='intrepid.Traditional_Marine_Gravity.yOrigin', index=20,
+      number=28, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='bearing', full_name='intrepid.Traditional_Marine_Gravity.bearing', index=21,
+      number=29, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -10162,8 +10317,8 @@ _TRADITIONAL_MARINE_GRAVITY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=20141,
-  serialized_end=20717,
+  serialized_start=20341,
+  serialized_end=21038,
 )
 
 
@@ -10467,8 +10622,8 @@ _GRAVITY_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=20720,
-  serialized_end=22020,
+  serialized_start=21041,
+  serialized_end=22345,
 )
 
 
@@ -10527,8 +10682,8 @@ _VECTOR_FIELDS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=22023,
-  serialized_end=22173,
+  serialized_start=22348,
+  serialized_end=22498,
 )
 
 
@@ -10573,8 +10728,8 @@ _INPUT_DATASETS_INT_SURVEY_LINES_TT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=22498,
-  serialized_end=22585,
+  serialized_start=22823,
+  serialized_end=22910,
 )
 
 _INPUT_DATASETS_INT_INPUT_DATA_TYPE_INT = _descriptor.Descriptor(
@@ -10618,8 +10773,8 @@ _INPUT_DATASETS_INT_INPUT_DATA_TYPE_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=22587,
-  serialized_end=22679,
+  serialized_start=22912,
+  serialized_end=23004,
 )
 
 _INPUT_DATASETS_INT = _descriptor.Descriptor(
@@ -10705,8 +10860,8 @@ _INPUT_DATASETS_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=22176,
-  serialized_end=22679,
+  serialized_start=22501,
+  serialized_end=23004,
 )
 
 
@@ -10765,8 +10920,8 @@ _PREPROCESSING_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=22682,
-  serialized_end=22836,
+  serialized_start=23007,
+  serialized_end=23161,
 )
 
 
@@ -10811,8 +10966,8 @@ _VECTOR_SUBSET_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=22838,
-  serialized_end=22944,
+  serialized_start=23163,
+  serialized_end=23269,
 )
 
 
@@ -10878,8 +11033,8 @@ _REFERENCE_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=22947,
-  serialized_end=23153,
+  serialized_start=23272,
+  serialized_end=23478,
 )
 
 
@@ -10924,8 +11079,8 @@ _TILING_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=23155,
-  serialized_end=23239,
+  serialized_start=23480,
+  serialized_end=23564,
 )
 
 
@@ -11124,8 +11279,8 @@ _GRIDDING_METHOD_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=23242,
-  serialized_end=24240,
+  serialized_start=23567,
+  serialized_end=24565,
 )
 
 
@@ -11205,8 +11360,8 @@ _MINIMUM_CURVATURE_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=24243,
-  serialized_end=24563,
+  serialized_start=24568,
+  serialized_end=24888,
 )
 
 
@@ -11272,8 +11427,8 @@ _GRID_REFINEMENT_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=24566,
-  serialized_end=24850,
+  serialized_start=24891,
+  serialized_end=25175,
 )
 
 
@@ -11444,8 +11599,8 @@ _OUTPUT_GRID_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=24853,
-  serialized_end=25527,
+  serialized_start=25178,
+  serialized_end=25852,
 )
 
 
@@ -11532,8 +11687,8 @@ _GRIDDING_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=25530,
-  serialized_end=25966,
+  serialized_start=25855,
+  serialized_end=26291,
 )
 
 
@@ -11560,189 +11715,154 @@ _TRENDQ_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Projection', full_name='intrepid.TrendQ_INT.Projection', index=2,
-      number=3, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Bands', full_name='intrepid.TrendQ_INT.Bands', index=3,
-      number=12, type=5, cpp_type=1, label=1,
-      has_default_value=True, default_value=1,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Band_Name', full_name='intrepid.TrendQ_INT.Band_Name', index=4,
-      number=13, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Band', full_name='intrepid.TrendQ_INT.Band', index=5,
-      number=14, type=5, cpp_type=1, label=1,
-      has_default_value=True, default_value=1,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='DataType', full_name='intrepid.TrendQ_INT.DataType', index=6,
+      name='DataType', full_name='intrepid.TrendQ_INT.DataType', index=2,
       number=15, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=3,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MAGD', full_name='intrepid.TrendQ_INT.MAGD', index=7,
-      number=23, type=1, cpp_type=5, label=1,
-      has_default_value=True, default_value=float(100),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Number_Difusion_Iterations', full_name='intrepid.TrendQ_INT.Number_Difusion_Iterations', index=8,
+      name='Number_Difusion_Iterations', full_name='intrepid.TrendQ_INT.Number_Difusion_Iterations', index=3,
       number=24, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=5,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='SmallerAntiAliasingFilter', full_name='intrepid.TrendQ_INT.SmallerAntiAliasingFilter', index=9,
+      name='SmallerAntiAliasingFilter', full_name='intrepid.TrendQ_INT.SmallerAntiAliasingFilter', index=4,
       number=25, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=7,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='IXL', full_name='intrepid.TrendQ_INT.IXL', index=10,
+      name='IXL', full_name='intrepid.TrendQ_INT.IXL', index=5,
       number=26, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='CTEST', full_name='intrepid.TrendQ_INT.CTEST', index=11,
+      name='CTEST', full_name='intrepid.TrendQ_INT.CTEST', index=6,
       number=27, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='DXYMIN', full_name='intrepid.TrendQ_INT.DXYMIN', index=12,
+      name='DXYMIN', full_name='intrepid.TrendQ_INT.DXYMIN', index=7,
       number=28, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(0.01),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='DXYMIN_ta', full_name='intrepid.TrendQ_INT.DXYMIN_ta', index=13,
+      name='DXYMIN_ta', full_name='intrepid.TrendQ_INT.DXYMIN_ta', index=8,
       number=29, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='AverageLineAngle', full_name='intrepid.TrendQ_INT.AverageLineAngle', index=14,
-      number=30, type=1, cpp_type=5, label=1,
-      has_default_value=True, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Bounding_Box', full_name='intrepid.TrendQ_INT.Bounding_Box', index=15,
-      number=50, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Cell_Size_X', full_name='intrepid.TrendQ_INT.Cell_Size_X', index=16,
+      name='Cell_Size_X', full_name='intrepid.TrendQ_INT.Cell_Size_X', index=9,
       number=6, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(100),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Cell_Size_Y', full_name='intrepid.TrendQ_INT.Cell_Size_Y', index=17,
+      name='Cell_Size_Y', full_name='intrepid.TrendQ_INT.Cell_Size_Y', index=10,
       number=7, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(100),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='AveragingThreshold', full_name='intrepid.TrendQ_INT.AveragingThreshold', index=18,
+      name='Bounding_Box', full_name='intrepid.TrendQ_INT.Bounding_Box', index=11,
+      number=50, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='AveragingThreshold', full_name='intrepid.TrendQ_INT.AveragingThreshold', index=12,
       number=36, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(5),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='UpperInterpolationThreshold', full_name='intrepid.TrendQ_INT.UpperInterpolationThreshold', index=19,
+      name='UpperInterpolationThreshold', full_name='intrepid.TrendQ_INT.UpperInterpolationThreshold', index=13,
       number=37, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(1000),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Max_Scan_Distance', full_name='intrepid.TrendQ_INT.Max_Scan_Distance', index=20,
+      name='Max_Scan_Distance', full_name='intrepid.TrendQ_INT.Max_Scan_Distance', index=14,
       number=9, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(2000),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='CANOM', full_name='intrepid.TrendQ_INT.CANOM', index=21,
+      name='CANOM', full_name='intrepid.TrendQ_INT.CANOM', index=15,
       number=39, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"  ".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Length_UNITS', full_name='intrepid.TrendQ_INT.Length_UNITS', index=22,
+      name='Length_UNITS', full_name='intrepid.TrendQ_INT.Length_UNITS', index=16,
       number=40, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"m ".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Signal_UNITS', full_name='intrepid.TrendQ_INT.Signal_UNITS', index=23,
-      number=41, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=b"nT ".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='IFILT', full_name='intrepid.TrendQ_INT.IFILT', index=24,
+      name='IFILT', full_name='intrepid.TrendQ_INT.IFILT', index=17,
       number=42, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Overall_Number_Iterations', full_name='intrepid.TrendQ_INT.Overall_Number_Iterations', index=25,
+      name='Overall_Number_Iterations', full_name='intrepid.TrendQ_INT.Overall_Number_Iterations', index=18,
       number=43, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=10,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ReportFile', full_name='intrepid.TrendQ_INT.ReportFile', index=26,
+      name='Minimum_Curvature_Recursion_Levels', full_name='intrepid.TrendQ_INT.Minimum_Curvature_Recursion_Levels', index=19,
+      number=44, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=4,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Reference', full_name='intrepid.TrendQ_INT.Reference', index=20,
+      number=47, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ReportFile', full_name='intrepid.TrendQ_INT.ReportFile', index=21,
       number=80, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"trendQ.rpt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='BatchToolName', full_name='intrepid.TrendQ_INT.BatchToolName', index=27,
+      name='BatchToolName', full_name='intrepid.TrendQ_INT.BatchToolName', index=22,
       number=99, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"trendQ".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GUIToolName', full_name='intrepid.TrendQ_INT.GUIToolName', index=28,
+      name='GUIToolName', full_name='intrepid.TrendQ_INT.GUIToolName', index=23,
       number=100, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"trendQ".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -11760,8 +11880,8 @@ _TRENDQ_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=25969,
-  serialized_end=26894,
+  serialized_start=26294,
+  serialized_end=27140,
 )
 
 
@@ -11806,8 +11926,8 @@ _GRIDREFERENCE_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=26896,
-  serialized_end=26969,
+  serialized_start=27142,
+  serialized_end=27215,
 )
 
 
@@ -11908,8 +12028,8 @@ _GRIDSURFACEADJUSTOPTIONS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=26972,
-  serialized_end=27319,
+  serialized_start=27218,
+  serialized_end=27565,
 )
 
 
@@ -11983,8 +12103,8 @@ _GRIDFEATHERINGOPTIONS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=27322,
-  serialized_end=27678,
+  serialized_start=27568,
+  serialized_end=27924,
 )
 
 
@@ -12038,8 +12158,8 @@ _GRIDSCALEANDADJUSTOPTIONS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=27681,
-  serialized_end=28066,
+  serialized_start=27927,
+  serialized_end=28312,
 )
 
 
@@ -12330,8 +12450,8 @@ _GRIDMERGE_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=28069,
-  serialized_end=29410,
+  serialized_start=28315,
+  serialized_end=29656,
 )
 
 
@@ -12397,8 +12517,8 @@ _GRID_SUBSAMPLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=29412,
-  serialized_end=29510,
+  serialized_start=29658,
+  serialized_end=29756,
 )
 
 
@@ -12719,28 +12839,84 @@ _GRIDOPERATIONS_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Blocks', full_name='intrepid.GridOperations_INT.Blocks', index=44,
+      name='originLat', full_name='intrepid.GridOperations_INT.originLat', index=44,
+      number=77, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='originLng', full_name='intrepid.GridOperations_INT.originLng', index=45,
+      number=71, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='step', full_name='intrepid.GridOperations_INT.step', index=46,
+      number=78, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(0.05),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='angleOfTransects', full_name='intrepid.GridOperations_INT.angleOfTransects', index=47,
+      number=72, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='numberOfTransects', full_name='intrepid.GridOperations_INT.numberOfTransects', index=48,
+      number=73, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=1,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='lengthOfTransects', full_name='intrepid.GridOperations_INT.lengthOfTransects', index=49,
+      number=74, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=1,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='OverlapFactor', full_name='intrepid.GridOperations_INT.OverlapFactor', index=50,
+      number=75, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(1.5),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Projected_GRID', full_name='intrepid.GridOperations_INT.Projected_GRID', index=51,
+      number=76, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Blocks', full_name='intrepid.GridOperations_INT.Blocks', index=52,
       number=69, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ReportFile', full_name='intrepid.GridOperations_INT.ReportFile', index=45,
+      name='ReportFile', full_name='intrepid.GridOperations_INT.ReportFile', index=53,
       number=47, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"gridop.rpt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='BatchToolName', full_name='intrepid.GridOperations_INT.BatchToolName', index=46,
+      name='BatchToolName', full_name='intrepid.GridOperations_INT.BatchToolName', index=54,
       number=99, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"gridop".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GUIToolName', full_name='intrepid.GridOperations_INT.GUIToolName', index=47,
+      name='GUIToolName', full_name='intrepid.GridOperations_INT.GUIToolName', index=55,
       number=100, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"gridopAppGUI".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -12758,8 +12934,8 @@ _GRIDOPERATIONS_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=29513,
-  serialized_end=30877,
+  serialized_start=29759,
+  serialized_end=31319,
 )
 
 
@@ -12965,8 +13141,8 @@ _LINE_FILTER_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=30880,
-  serialized_end=31804,
+  serialized_start=31322,
+  serialized_end=32246,
 )
 
 
@@ -13046,8 +13222,8 @@ _GRID_SUBSET_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=31807,
-  serialized_end=32044,
+  serialized_start=32249,
+  serialized_end=32486,
 )
 
 
@@ -13284,84 +13460,91 @@ _GRIDFOURIERFILTERING_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ScaleTensorIntegration', full_name='intrepid.GridFourierFiltering_INT.ScaleTensorIntegration', index=32,
+      name='Make_HilbertPair', full_name='intrepid.GridFourierFiltering_INT.Make_HilbertPair', index=32,
+      number=35, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ScaleTensorIntegration', full_name='intrepid.GridFourierFiltering_INT.ScaleTensorIntegration', index=33,
       number=37, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='LowPassFalconIntegration', full_name='intrepid.GridFourierFiltering_INT.LowPassFalconIntegration', index=33,
+      name='LowPassFalconIntegration', full_name='intrepid.GridFourierFiltering_INT.LowPassFalconIntegration', index=34,
       number=38, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='InputTensorComponents', full_name='intrepid.GridFourierFiltering_INT.InputTensorComponents', index=34,
+      name='InputTensorComponents', full_name='intrepid.GridFourierFiltering_INT.InputTensorComponents', index=35,
       number=40, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='RequiredFalconTransform', full_name='intrepid.GridFourierFiltering_INT.RequiredFalconTransform', index=35,
+      name='RequiredFalconTransform', full_name='intrepid.GridFourierFiltering_INT.RequiredFalconTransform', index=36,
       number=41, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=7,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='RequiredFalconQuery', full_name='intrepid.GridFourierFiltering_INT.RequiredFalconQuery', index=36,
+      name='RequiredFalconQuery', full_name='intrepid.GridFourierFiltering_INT.RequiredFalconQuery', index=37,
       number=42, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=2,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='InputGridCoordSysType', full_name='intrepid.GridFourierFiltering_INT.InputGridCoordSysType', index=37,
+      name='InputGridCoordSysType', full_name='intrepid.GridFourierFiltering_INT.InputGridCoordSysType', index=38,
       number=43, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=2,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='OutputGridCoordSysType', full_name='intrepid.GridFourierFiltering_INT.OutputGridCoordSysType', index=38,
+      name='OutputGridCoordSysType', full_name='intrepid.GridFourierFiltering_INT.OutputGridCoordSysType', index=39,
       number=44, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='TMIProduct', full_name='intrepid.GridFourierFiltering_INT.TMIProduct', index=39,
+      name='TMIProduct', full_name='intrepid.GridFourierFiltering_INT.TMIProduct', index=40,
       number=45, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=11,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='TensorProduct', full_name='intrepid.GridFourierFiltering_INT.TensorProduct', index=40,
+      name='TensorProduct', full_name='intrepid.GridFourierFiltering_INT.TensorProduct', index=41,
       number=46, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=33,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ReportFile', full_name='intrepid.GridFourierFiltering_INT.ReportFile', index=41,
+      name='ReportFile', full_name='intrepid.GridFourierFiltering_INT.ReportFile', index=42,
       number=98, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"grid_filter.rpt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='BatchToolName', full_name='intrepid.GridFourierFiltering_INT.BatchToolName', index=42,
+      name='BatchToolName', full_name='intrepid.GridFourierFiltering_INT.BatchToolName', index=43,
       number=99, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"gfilt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GUIToolName', full_name='intrepid.GridFourierFiltering_INT.GUIToolName', index=43,
+      name='GUIToolName', full_name='intrepid.GridFourierFiltering_INT.GUIToolName', index=44,
       number=100, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"gfilt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -13379,8 +13562,8 @@ _GRIDFOURIERFILTERING_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=32047,
-  serialized_end=34111,
+  serialized_start=32489,
+  serialized_end=34586,
 )
 
 
@@ -13570,7 +13753,7 @@ _ISOSTATIC_INT = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='Max_Iterations', full_name='intrepid.ISOStatic_INT.Max_Iterations', index=25,
       number=29, type=5, cpp_type=1, label=1,
-      has_default_value=True, default_value=6,
+      has_default_value=True, default_value=10,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -13582,21 +13765,42 @@ _ISOSTATIC_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ReportFile', full_name='intrepid.ISOStatic_INT.ReportFile', index=27,
+      name='Sea_Water_Density', full_name='intrepid.ISOStatic_INT.Sea_Water_Density', index=27,
+      number=31, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(1.027),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Gravitational_Constant', full_name='intrepid.ISOStatic_INT.Gravitational_Constant', index=28,
+      number=32, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(6.6743e-11),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='GravityUnits', full_name='intrepid.ISOStatic_INT.GravityUnits', index=29,
+      number=33, type=14, cpp_type=8, label=1,
+      has_default_value=True, default_value=1,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ReportFile', full_name='intrepid.ISOStatic_INT.ReportFile', index=30,
       number=98, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"IsostaticCorrection.rpt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='BatchToolName', full_name='intrepid.ISOStatic_INT.BatchToolName', index=28,
+      name='BatchToolName', full_name='intrepid.ISOStatic_INT.BatchToolName', index=31,
       number=99, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"isostatic".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GUIToolName', full_name='intrepid.ISOStatic_INT.GUIToolName', index=29,
+      name='GUIToolName', full_name='intrepid.ISOStatic_INT.GUIToolName', index=32,
       number=100, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"IsostaticCorrectionAppGUI".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -13614,8 +13818,8 @@ _ISOSTATIC_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=34114,
-  serialized_end=35337,
+  serialized_start=34589,
+  serialized_end=35949,
 )
 
 
@@ -13642,78 +13846,78 @@ _GRAVITYMERGE_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Output', full_name='intrepid.GravityMerge_INT.Output', index=2,
-      number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='MergeWith', full_name='intrepid.GravityMerge_INT.MergeWith', index=3,
+      name='MergeWith', full_name='intrepid.GravityMerge_INT.MergeWith', index=2,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Key', full_name='intrepid.GravityMerge_INT.Key', index=4,
+      name='Key', full_name='intrepid.GravityMerge_INT.Key', index=3,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Stop_After', full_name='intrepid.GravityMerge_INT.Stop_After', index=5,
+      name='Stop_After', full_name='intrepid.GravityMerge_INT.Stop_After', index=4,
       number=6, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=-1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MergeLastOnly', full_name='intrepid.GravityMerge_INT.MergeLastOnly', index=6,
+      name='MergeLastOnly', full_name='intrepid.GravityMerge_INT.MergeLastOnly', index=5,
       number=7, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='TimeStamp', full_name='intrepid.GravityMerge_INT.TimeStamp', index=7,
+      name='TimeStamp', full_name='intrepid.GravityMerge_INT.TimeStamp', index=6,
       number=8, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ReportOn', full_name='intrepid.GravityMerge_INT.ReportOn', index=8,
+      name='ReportOn', full_name='intrepid.GravityMerge_INT.ReportOn', index=7,
       number=9, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GroupBy', full_name='intrepid.GravityMerge_INT.GroupBy', index=9,
+      name='GroupBy', full_name='intrepid.GravityMerge_INT.GroupBy', index=8,
       number=10, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MergeFromField', full_name='intrepid.GravityMerge_INT.MergeFromField', index=10,
+      name='MergeFromField', full_name='intrepid.GravityMerge_INT.MergeFromField', index=9,
       number=14, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MergeToField', full_name='intrepid.GravityMerge_INT.MergeToField', index=11,
+      name='MergeToField', full_name='intrepid.GravityMerge_INT.MergeToField', index=10,
       number=15, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
+      name='MergeAction', full_name='intrepid.GravityMerge_INT.MergeAction', index=11,
+      number=16, type=14, cpp_type=8, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
       name='Field_Aliases', full_name='intrepid.GravityMerge_INT.Field_Aliases', index=12,
-      number=65, type=14, cpp_type=8, label=3,
+      number=20, type=14, cpp_type=8, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -13735,7 +13939,7 @@ _GRAVITYMERGE_INT = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='GUIToolName', full_name='intrepid.GravityMerge_INT.GUIToolName', index=15,
       number=100, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=b"PointAppendApp".decode('utf-8'),
+      has_default_value=True, default_value=b"PointCleverMergeApp".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -13751,8 +13955,8 @@ _GRAVITYMERGE_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=35340,
-  serialized_end=35747,
+  serialized_start=35952,
+  serialized_end=36421,
 )
 
 
@@ -13909,8 +14113,8 @@ _DECORRUGATE_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=35750,
-  serialized_end=36496,
+  serialized_start=36424,
+  serialized_end=37170,
 )
 
 
@@ -14095,8 +14299,8 @@ _MICROLEVEL_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=36499,
-  serialized_end=37233,
+  serialized_start=37173,
+  serialized_end=37907,
 )
 
 
@@ -14148,8 +14352,8 @@ _FLIGHTRECONSTRUCT_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=37236,
-  serialized_end=37458,
+  serialized_start=37910,
+  serialized_end=38132,
 )
 
 
@@ -14194,8 +14398,8 @@ _CROSS_OVER_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=37460,
-  serialized_end=37567,
+  serialized_start=38134,
+  serialized_end=38241,
 )
 
 
@@ -14238,7 +14442,7 @@ _DIURNAL_CORRECTIONS_INT = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='Time_Lag', full_name='intrepid.Diurnal_Corrections_INT.Time_Lag', index=4,
       number=69, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -14261,8 +14465,8 @@ _DIURNAL_CORRECTIONS_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=37570,
-  serialized_end=37732,
+  serialized_start=38244,
+  serialized_end=38409,
 )
 
 
@@ -14356,8 +14560,8 @@ _INPUT_FILTERS_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=37735,
-  serialized_end=38053,
+  serialized_start=38412,
+  serialized_end=38730,
 )
 
 
@@ -14416,8 +14620,8 @@ _HEADING_CORRECTION_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=38056,
-  serialized_end=38242,
+  serialized_start=38733,
+  serialized_end=38919,
 )
 
 
@@ -14511,8 +14715,8 @@ _GEOMAGNETICREFERENCEFIELD_CORRECTION_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=38245,
-  serialized_end=38518,
+  serialized_start=38922,
+  serialized_end=39195,
 )
 
 
@@ -14557,8 +14761,8 @@ _LOOP_LEVELLING_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=38520,
-  serialized_end=38623,
+  serialized_start=39197,
+  serialized_end=39300,
 )
 
 
@@ -14603,8 +14807,8 @@ _PIECEWISEPOLYNOMIALS_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=38625,
-  serialized_end=38733,
+  serialized_start=39302,
+  serialized_end=39410,
 )
 
 
@@ -14719,8 +14923,8 @@ _TIE_LINE_LEVELLING_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=38736,
-  serialized_end=39325,
+  serialized_start=39413,
+  serialized_end=40002,
 )
 
 
@@ -14765,8 +14969,8 @@ _FLIGHT_CORRECTION_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=39327,
-  serialized_end=39447,
+  serialized_start=40004,
+  serialized_end=40124,
 )
 
 
@@ -14781,7 +14985,7 @@ _TENSORGRADIENT_LEVELLING_INT = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='Adjustment', full_name='intrepid.TensorGradient_Levelling_INT.Adjustment', index=0,
       number=121, type=14, cpp_type=8, label=1,
-      has_default_value=True, default_value=7,
+      has_default_value=True, default_value=8,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -14867,8 +15071,8 @@ _TENSORGRADIENT_LEVELLING_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=39450,
-  serialized_end=39905,
+  serialized_start=40127,
+  serialized_end=40582,
 )
 
 
@@ -15144,8 +15348,8 @@ _LEVELLING_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=39908,
-  serialized_end=41227,
+  serialized_start=40585,
+  serialized_end=41904,
 )
 
 
@@ -15449,8 +15653,8 @@ _MARINELEVELLING_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=41230,
-  serialized_end=42514,
+  serialized_start=41907,
+  serialized_end=43191,
 )
 
 
@@ -15565,8 +15769,8 @@ _TREND_MANAGEMENT_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=42517,
-  serialized_end=43016,
+  serialized_start=43194,
+  serialized_end=43693,
 )
 
 
@@ -15579,7 +15783,7 @@ _WORM_MANAGEMENT_INT = _descriptor.Descriptor(
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Geomodeller_minimum_number_hot_spots', full_name='intrepid.Worm_Management_INT.Geomodeller_minimum_number_hot_spots', index=0,
+      name='Argus_minimum_number_hot_spots', full_name='intrepid.Worm_Management_INT.Argus_minimum_number_hot_spots', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=3,
       message_type=None, enum_type=None, containing_type=None,
@@ -15628,44 +15832,58 @@ _WORM_MANAGEMENT_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='OutputGeomodeller', full_name='intrepid.Worm_Management_INT.OutputGeomodeller', index=7,
+      name='OutputArgus', full_name='intrepid.Worm_Management_INT.OutputArgus', index=7,
       number=10, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"naudy_dykes.csv".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Create3D_ForwardTask', full_name='intrepid.Worm_Management_INT.Create3D_ForwardTask', index=8,
+      name='OutputDB', full_name='intrepid.Worm_Management_INT.OutputDB', index=8,
+      number=65, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=True,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='OutputDBName', full_name='intrepid.Worm_Management_INT.OutputDBName', index=9,
+      number=66, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=b"dykeFoliationsDB".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Create3D_ForwardTask', full_name='intrepid.Worm_Management_INT.Create3D_ForwardTask', index=10,
       number=11, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ForwardTaskFile', full_name='intrepid.Worm_Management_INT.ForwardTaskFile', index=9,
+      name='ForwardTaskFile', full_name='intrepid.Worm_Management_INT.ForwardTaskFile', index=11,
       number=12, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"naudy_3Ddykes.task".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='useInfiniteThinFormulae', full_name='intrepid.Worm_Management_INT.useInfiniteThinFormulae', index=10,
+      name='useInfiniteThinFormulae', full_name='intrepid.Worm_Management_INT.useInfiniteThinFormulae', index=12,
       number=13, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='CreateExplicitObservationTask', full_name='intrepid.Worm_Management_INT.CreateExplicitObservationTask', index=11,
+      name='CreateExplicitObservationTask', full_name='intrepid.Worm_Management_INT.CreateExplicitObservationTask', index=13,
       number=14, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ExplicitObservationsTask', full_name='intrepid.Worm_Management_INT.ExplicitObservationsTask', index=12,
+      name='Argus_DykeObservationsTask', full_name='intrepid.Worm_Management_INT.Argus_DykeObservationsTask', index=14,
       number=15, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=b"Explicit_3Ddykes.task".decode('utf-8'),
+      has_default_value=True, default_value=b"Argus_3Ddykes.task".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -15681,8 +15899,8 @@ _WORM_MANAGEMENT_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=43019,
-  serialized_end=43590,
+  serialized_start=43696,
+  serialized_end=44318,
 )
 
 
@@ -15765,7 +15983,7 @@ _MAKE3D_DYKES = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='dump_dyke_XML', full_name='intrepid.Make3D_Dykes.dump_dyke_XML', index=10,
+      name='write_dyke_VTK', full_name='intrepid.Make3D_Dykes.write_dyke_VTK', index=10,
       number=12, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -15846,8 +16064,8 @@ _MAKE3D_DYKES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=43593,
-  serialized_end=44308,
+  serialized_start=44321,
+  serialized_end=45037,
 )
 
 
@@ -15941,8 +16159,8 @@ _VIEW3D_DYKES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=44311,
-  serialized_end=44694,
+  serialized_start=45040,
+  serialized_end=45423,
 )
 
 
@@ -16057,8 +16275,8 @@ _NAUDY_OBSERVATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=44697,
-  serialized_end=45028,
+  serialized_start=45426,
+  serialized_end=45757,
 )
 
 
@@ -16260,147 +16478,154 @@ _NAUDY_AUTOMODELLING_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='DipRange', full_name='intrepid.Naudy_AutoModelling_INT.DipRange', index=27,
+      name='Maximum_Thickness', full_name='intrepid.Naudy_AutoModelling_INT.Maximum_Thickness', index=27,
+      number=30, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(800),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='DipRange', full_name='intrepid.Naudy_AutoModelling_INT.DipRange', index=28,
       number=33, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='WidthRange', full_name='intrepid.Naudy_AutoModelling_INT.WidthRange', index=28,
+      name='WidthRange', full_name='intrepid.Naudy_AutoModelling_INT.WidthRange', index=29,
       number=34, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=True,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='UseFinerVerticalSampling', full_name='intrepid.Naudy_AutoModelling_INT.UseFinerVerticalSampling', index=29,
+      name='UseFinerVerticalSampling', full_name='intrepid.Naudy_AutoModelling_INT.UseFinerVerticalSampling', index=30,
       number=36, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='BodyType', full_name='intrepid.Naudy_AutoModelling_INT.BodyType', index=30,
+      name='BodyType', full_name='intrepid.Naudy_AutoModelling_INT.BodyType', index=31,
       number=37, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=3,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='AllowNegativeSusc', full_name='intrepid.Naudy_AutoModelling_INT.AllowNegativeSusc', index=31,
+      name='AllowNegativeSusc', full_name='intrepid.Naudy_AutoModelling_INT.AllowNegativeSusc', index=32,
       number=40, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='AlwaysInvert', full_name='intrepid.Naudy_AutoModelling_INT.AlwaysInvert', index=32,
+      name='AlwaysInvert', full_name='intrepid.Naudy_AutoModelling_INT.AlwaysInvert', index=33,
       number=41, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MaxInvertIterations', full_name='intrepid.Naudy_AutoModelling_INT.MaxInvertIterations', index=33,
+      name='MaxInvertIterations', full_name='intrepid.Naudy_AutoModelling_INT.MaxInvertIterations', index=34,
       number=47, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=5,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MaximumBodySimilarityToKeep', full_name='intrepid.Naudy_AutoModelling_INT.MaximumBodySimilarityToKeep', index=34,
+      name='MaximumBodySimilarityToKeep', full_name='intrepid.Naudy_AutoModelling_INT.MaximumBodySimilarityToKeep', index=35,
       number=48, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(3),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='RemoveClearance', full_name='intrepid.Naudy_AutoModelling_INT.RemoveClearance', index=35,
+      name='RemoveClearance', full_name='intrepid.Naudy_AutoModelling_INT.RemoveClearance', index=36,
       number=49, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ForceOntoProfile', full_name='intrepid.Naudy_AutoModelling_INT.ForceOntoProfile', index=36,
+      name='ForceOntoProfile', full_name='intrepid.Naudy_AutoModelling_INT.ForceOntoProfile', index=37,
       number=46, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='DumpSimilarity', full_name='intrepid.Naudy_AutoModelling_INT.DumpSimilarity', index=37,
+      name='DumpSimilarity', full_name='intrepid.Naudy_AutoModelling_INT.DumpSimilarity', index=38,
       number=45, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='cluster', full_name='intrepid.Naudy_AutoModelling_INT.cluster', index=38,
+      name='cluster', full_name='intrepid.Naudy_AutoModelling_INT.cluster', index=39,
       number=50, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='surfaces', full_name='intrepid.Naudy_AutoModelling_INT.surfaces', index=39,
+      name='surfaces', full_name='intrepid.Naudy_AutoModelling_INT.surfaces', index=40,
       number=51, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='view', full_name='intrepid.Naudy_AutoModelling_INT.view', index=40,
+      name='view', full_name='intrepid.Naudy_AutoModelling_INT.view', index=41,
       number=52, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Trends', full_name='intrepid.Naudy_AutoModelling_INT.Trends', index=41,
+      name='Trends', full_name='intrepid.Naudy_AutoModelling_INT.Trends', index=42,
       number=60, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Solve_Remanence_Direction', full_name='intrepid.Naudy_AutoModelling_INT.Solve_Remanence_Direction', index=42,
+      name='Solve_Remanence_Direction', full_name='intrepid.Naudy_AutoModelling_INT.Solve_Remanence_Direction', index=43,
       number=70, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=True,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Tensor_Inversion_Iterations', full_name='intrepid.Naudy_AutoModelling_INT.Tensor_Inversion_Iterations', index=43,
+      name='Tensor_Inversion_Iterations', full_name='intrepid.Naudy_AutoModelling_INT.Tensor_Inversion_Iterations', index=44,
       number=71, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=15,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='tensor_errorFloor', full_name='intrepid.Naudy_AutoModelling_INT.tensor_errorFloor', index=44,
+      name='tensor_errorFloor', full_name='intrepid.Naudy_AutoModelling_INT.tensor_errorFloor', index=45,
       number=72, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(0.002),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='FieldCoordSysType', full_name='intrepid.Naudy_AutoModelling_INT.FieldCoordSysType', index=45,
+      name='FieldCoordSysType', full_name='intrepid.Naudy_AutoModelling_INT.FieldCoordSysType', index=46,
       number=73, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='BatchToolName', full_name='intrepid.Naudy_AutoModelling_INT.BatchToolName', index=46,
+      name='BatchToolName', full_name='intrepid.Naudy_AutoModelling_INT.BatchToolName', index=47,
       number=99, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"naudyd".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GUIToolName', full_name='intrepid.Naudy_AutoModelling_INT.GUIToolName', index=47,
+      name='GUIToolName', full_name='intrepid.Naudy_AutoModelling_INT.GUIToolName', index=48,
       number=100, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"naudyd".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -16418,8 +16643,8 @@ _NAUDY_AUTOMODELLING_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=45031,
-  serialized_end=46821,
+  serialized_start=45760,
+  serialized_end=47582,
 )
 
 
@@ -16611,8 +16836,8 @@ _EULERSOLVER_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=46824,
-  serialized_end=47891,
+  serialized_start=47585,
+  serialized_end=48652,
 )
 
 
@@ -16769,8 +16994,8 @@ _EULERSORT_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=47894,
-  serialized_end=48567,
+  serialized_start=48655,
+  serialized_end=49328,
 )
 
 
@@ -16864,8 +17089,8 @@ _VIEW3D_SOLUTIONS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=48570,
-  serialized_end=48929,
+  serialized_start=49331,
+  serialized_end=49690,
 )
 
 
@@ -17022,8 +17247,8 @@ _EULERDECONVOLUTION_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=48932,
-  serialized_end=49638,
+  serialized_start=49693,
+  serialized_end=50399,
 )
 
 
@@ -17120,35 +17345,42 @@ _SPLITCRUISE_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='NormalTolerance', full_name='intrepid.SplitCruise_INT.NormalTolerance', index=12,
+      name='lineNumbers', full_name='intrepid.SplitCruise_INT.lineNumbers', index=12,
+      number=15, type=5, cpp_type=1, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='NormalTolerance', full_name='intrepid.SplitCruise_INT.NormalTolerance', index=13,
       number=13, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MinimumSegmentLength', full_name='intrepid.SplitCruise_INT.MinimumSegmentLength', index=13,
+      name='MinimumSegmentLength', full_name='intrepid.SplitCruise_INT.MinimumSegmentLength', index=14,
       number=14, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ReportFile', full_name='intrepid.SplitCruise_INT.ReportFile', index=14,
+      name='ReportFile', full_name='intrepid.SplitCruise_INT.ReportFile', index=15,
       number=19, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"splitcruise.rpt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='BatchToolName', full_name='intrepid.SplitCruise_INT.BatchToolName', index=15,
+      name='BatchToolName', full_name='intrepid.SplitCruise_INT.BatchToolName', index=16,
       number=99, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"splitcruise".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GUIToolName', full_name='intrepid.SplitCruise_INT.GUIToolName', index=16,
+      name='GUIToolName', full_name='intrepid.SplitCruise_INT.GUIToolName', index=17,
       number=100, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"MarineSplitAppGUI".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -17166,8 +17398,8 @@ _SPLITCRUISE_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=49641,
-  serialized_end=50202,
+  serialized_start=50402,
+  serialized_end=50984,
 )
 
 
@@ -17205,8 +17437,8 @@ _XY_PAIR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=50204,
-  serialized_end=50235,
+  serialized_start=50986,
+  serialized_end=51017,
 )
 
 
@@ -17244,8 +17476,8 @@ _XY_REGION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=50237,
-  serialized_end=50333,
+  serialized_start=51019,
+  serialized_end=51115,
 )
 
 
@@ -17377,28 +17609,84 @@ _SUBSET_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='OutputProjectionHint', full_name='intrepid.Subset_INT.OutputProjectionHint', index=17,
+      name='originLat', full_name='intrepid.Subset_INT.originLat', index=17,
+      number=60, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='originLng', full_name='intrepid.Subset_INT.originLng', index=18,
+      number=61, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='step', full_name='intrepid.Subset_INT.step', index=19,
+      number=28, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(0.05),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='angleOfTransects', full_name='intrepid.Subset_INT.angleOfTransects', index=20,
+      number=62, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='numberOfTransects', full_name='intrepid.Subset_INT.numberOfTransects', index=21,
+      number=63, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=1,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='lengthOfTransects', full_name='intrepid.Subset_INT.lengthOfTransects', index=22,
+      number=64, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=1,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='OverlapFactor', full_name='intrepid.Subset_INT.OverlapFactor', index=23,
+      number=65, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(1.5),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Projected_GRID', full_name='intrepid.Subset_INT.Projected_GRID', index=24,
+      number=66, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='OutputProjectionHint', full_name='intrepid.Subset_INT.OutputProjectionHint', index=25,
       number=22, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Search_Condition', full_name='intrepid.Subset_INT.Search_Condition', index=18,
+      name='Search_Condition', full_name='intrepid.Subset_INT.Search_Condition', index=26,
       number=30, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='BatchToolName', full_name='intrepid.Subset_INT.BatchToolName', index=19,
+      name='BatchToolName', full_name='intrepid.Subset_INT.BatchToolName', index=27,
       number=99, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"subset".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GUIToolName', full_name='intrepid.Subset_INT.GUIToolName', index=20,
+      name='GUIToolName', full_name='intrepid.Subset_INT.GUIToolName', index=28,
       number=100, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"subset".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -17416,8 +17704,8 @@ _SUBSET_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=50336,
-  serialized_end=50919,
+  serialized_start=51118,
+  serialized_end=51897,
 )
 
 
@@ -17497,8 +17785,8 @@ _ENERGYWINDOW = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=50922,
-  serialized_end=51132,
+  serialized_start=51900,
+  serialized_end=52110,
 )
 
 
@@ -17543,8 +17831,8 @@ _GAMMAWINDOWS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=51135,
-  serialized_end=51300,
+  serialized_start=52113,
+  serialized_end=52278,
 )
 
 
@@ -17624,8 +17912,8 @@ _RADONCONSTANTS_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=51303,
-  serialized_end=51520,
+  serialized_start=52281,
+  serialized_end=52498,
 )
 
 
@@ -17845,8 +18133,8 @@ _REQUESTEDSPECTRAPROCESSES_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=51523,
-  serialized_end=52556,
+  serialized_start=52501,
+  serialized_end=53534,
 )
 
 
@@ -18430,8 +18718,8 @@ _RADIO256_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=52559,
-  serialized_end=55629,
+  serialized_start=53537,
+  serialized_end=56607,
 )
 
 
@@ -18546,8 +18834,8 @@ _MAXIMUMNOISEFRACTION_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=55632,
-  serialized_end=56042,
+  serialized_start=56610,
+  serialized_end=57020,
 )
 
 
@@ -18662,8 +18950,8 @@ _REQUESTEDSTANDARD_4CHANNEL_PROCESSES_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=56045,
-  serialized_end=56530,
+  serialized_start=57023,
+  serialized_end=57508,
 )
 
 
@@ -18708,8 +18996,8 @@ _REQUESTEDSTANDARD_4CHANNEL_DEADTIMES_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=56532,
-  serialized_end=56637,
+  serialized_start=57510,
+  serialized_end=57615,
 )
 
 
@@ -18768,8 +19056,8 @@ _REQUESTED_4CHANNEL_BACKGROUNDS_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=56639,
-  serialized_end=56753,
+  serialized_start=57617,
+  serialized_end=57731,
 )
 
 
@@ -18863,8 +19151,8 @@ _REQUESTED_4CHANNEL_RADONBACKGROUNDS_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=56756,
-  serialized_end=56982,
+  serialized_start=57734,
+  serialized_end=57960,
 )
 
 
@@ -18951,8 +19239,8 @@ _REQUESTED_4CHANNEL_STRIPPINGRATIOS_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=56985,
-  serialized_end=57260,
+  serialized_start=57963,
+  serialized_end=58238,
 )
 
 
@@ -19004,8 +19292,8 @@ _REQUESTED_4CHANNEL_HEIGHTATTENUATION_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=57263,
-  serialized_end=57454,
+  serialized_start=58241,
+  serialized_end=58432,
 )
 
 
@@ -19057,8 +19345,8 @@ _REQUESTED_4CHANNEL_SENSITIVITIES_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=57457,
-  serialized_end=57594,
+  serialized_start=58435,
+  serialized_end=58572,
 )
 
 
@@ -19110,8 +19398,8 @@ _REQUESTED_4CHANNEL_HEIGHTLIMITS_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=57597,
-  serialized_end=57760,
+  serialized_start=58575,
+  serialized_end=58738,
 )
 
 
@@ -19324,8 +19612,8 @@ _GAMMARAYADJUST_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=57763,
-  serialized_end=58893,
+  serialized_start=58741,
+  serialized_end=59871,
 )
 
 
@@ -19419,8 +19707,8 @@ _URANIUM_LEVELLING_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=58896,
-  serialized_end=59235,
+  serialized_start=59874,
+  serialized_end=60213,
 )
 
 
@@ -19493,8 +19781,8 @@ _GAMMARAYSURVEYQC_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=59238,
-  serialized_end=59498,
+  serialized_start=60216,
+  serialized_end=60476,
 )
 
 
@@ -19546,8 +19834,8 @@ _GAMMARAYSTRIPPINGRATIOS_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=59501,
-  serialized_end=59697,
+  serialized_start=60479,
+  serialized_end=60675,
 )
 
 
@@ -19606,8 +19894,8 @@ _GAMMARAYSPECTRUMCREATION_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=59700,
-  serialized_end=59948,
+  serialized_start=60678,
+  serialized_end=60926,
 )
 
 
@@ -19757,8 +20045,8 @@ _CALIBRATEGAMMA_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=59951,
-  serialized_end=60652,
+  serialized_start=60929,
+  serialized_end=61630,
 )
 
 
@@ -19789,8 +20077,8 @@ _MEASUREDGRIDLIST_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=60654,
-  serialized_end=60721,
+  serialized_start=61632,
+  serialized_end=61699,
 )
 
 
@@ -19849,8 +20137,8 @@ _TRIANGULATEDSURFACEDYKE_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=60724,
-  serialized_end=60892,
+  serialized_start=61702,
+  serialized_end=61870,
 )
 
 
@@ -19902,8 +20190,8 @@ _TETRAHEDRAVOLUME_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=60894,
-  serialized_end=61013,
+  serialized_start=61872,
+  serialized_end=61991,
 )
 
 
@@ -20130,8 +20418,8 @@ _FORWARDMODELFROMDYKES_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=61016,
-  serialized_end=62151,
+  serialized_start=61994,
+  serialized_end=63129,
 )
 
 
@@ -20351,8 +20639,8 @@ _FORWARDMODELFROMSURFACES_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=62154,
-  serialized_end=63225,
+  serialized_start=63132,
+  serialized_end=64203,
 )
 
 
@@ -20460,8 +20748,8 @@ _FORWARDMODELFROMLAYERCAKE_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=63228,
-  serialized_end=63705,
+  serialized_start=64206,
+  serialized_end=64683,
 )
 
 
@@ -20506,8 +20794,8 @@ _SCALEOPTION_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=63707,
-  serialized_end=63780,
+  serialized_start=64685,
+  serialized_end=64758,
 )
 
 
@@ -20608,8 +20896,8 @@ _MAKEHISTOGRAM_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=63783,
-  serialized_end=64038,
+  serialized_start=64761,
+  serialized_end=65016,
 )
 
 
@@ -20647,8 +20935,8 @@ _GRID_REFERENCE_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=64040,
-  serialized_end=64102,
+  serialized_start=65018,
+  serialized_end=65080,
 )
 
 
@@ -20731,42 +21019,35 @@ _PROJECTIONCONVERSION_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='OutputAngle', full_name='intrepid.ProjectionConversion_INT.OutputAngle', index=10,
-      number=13, type=1, cpp_type=5, label=1,
-      has_default_value=True, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='GridReference', full_name='intrepid.ProjectionConversion_INT.GridReference', index=11,
+      name='GridReference', full_name='intrepid.ProjectionConversion_INT.GridReference', index=10,
       number=14, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ResampleMethod', full_name='intrepid.ProjectionConversion_INT.ResampleMethod', index=12,
+      name='ResampleMethod', full_name='intrepid.ProjectionConversion_INT.ResampleMethod', index=11,
       number=18, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=3,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='UpdateSurveyInfo', full_name='intrepid.ProjectionConversion_INT.UpdateSurveyInfo', index=13,
+      name='UpdateSurveyInfo', full_name='intrepid.ProjectionConversion_INT.UpdateSurveyInfo', index=12,
       number=19, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=True,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='BatchToolName', full_name='intrepid.ProjectionConversion_INT.BatchToolName', index=14,
+      name='BatchToolName', full_name='intrepid.ProjectionConversion_INT.BatchToolName', index=13,
       number=99, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"projconv".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GUIToolName', full_name='intrepid.ProjectionConversion_INT.GUIToolName', index=15,
+      name='GUIToolName', full_name='intrepid.ProjectionConversion_INT.GUIToolName', index=14,
       number=100, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"jprojconv".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -20784,8 +21065,8 @@ _PROJECTIONCONVERSION_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=64105,
-  serialized_end=64571,
+  serialized_start=65083,
+  serialized_end=65525,
 )
 
 
@@ -20839,6 +21120,20 @@ _POINT_PICKING = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='FilterMinimumSignalValue', full_name='intrepid.Point_Picking.FilterMinimumSignalValue', index=6,
+      number=7, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='FilterMaximumSignalValue', full_name='intrepid.Point_Picking.FilterMaximumSignalValue', index=7,
+      number=8, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -20851,8 +21146,8 @@ _POINT_PICKING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=64574,
-  serialized_end=64871,
+  serialized_start=65528,
+  serialized_end=65907,
 )
 
 
@@ -20925,8 +21220,8 @@ _WORM_PROCESSING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=64874,
-  serialized_end=65160,
+  serialized_start=65910,
+  serialized_end=66196,
 )
 
 
@@ -20971,8 +21266,8 @@ _LINE_PROCESSING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=65163,
-  serialized_end=65311,
+  serialized_start=66199,
+  serialized_end=66347,
 )
 
 
@@ -21097,50 +21392,50 @@ _FAULT3D_PROCESSING = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Contact_Profiles', full_name='intrepid.Fault3D_Processing.Contact_Profiles', index=16,
-      number=43, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=b"output".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='subsample_dtm', full_name='intrepid.Fault3D_Processing.subsample_dtm', index=17,
+      name='subsample_dtm', full_name='intrepid.Fault3D_Processing.subsample_dtm', index=16,
       number=46, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Tyy_minimum_test', full_name='intrepid.Fault3D_Processing.Tyy_minimum_test', index=18,
+      name='Tyy_minimum_test', full_name='intrepid.Fault3D_Processing.Tyy_minimum_test', index=17,
       number=47, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(2),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='minimum_Total_Vertical_Plane_Derivative', full_name='intrepid.Fault3D_Processing.minimum_Total_Vertical_Plane_Derivative', index=19,
+      name='minimum_Total_Vertical_Plane_Derivative', full_name='intrepid.Fault3D_Processing.minimum_Total_Vertical_Plane_Derivative', index=18,
       number=48, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(10),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Minimum_2D_Responses', full_name='intrepid.Fault3D_Processing.Minimum_2D_Responses', index=20,
+      name='Minimum_2D_Responses', full_name='intrepid.Fault3D_Processing.Minimum_2D_Responses', index=19,
       number=49, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=11,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Correct_For_FaultBlock_Tilt', full_name='intrepid.Fault3D_Processing.Correct_For_FaultBlock_Tilt', index=21,
+      name='Correct_For_FaultBlock_Tilt', full_name='intrepid.Fault3D_Processing.Correct_For_FaultBlock_Tilt', index=20,
       number=50, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=True,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='capture_gravity_profiles_from_dip_calcs', full_name='intrepid.Fault3D_Processing.capture_gravity_profiles_from_dip_calcs', index=22,
+      name='capture_gravity_profiles_from_dip_calcs', full_name='intrepid.Fault3D_Processing.capture_gravity_profiles_from_dip_calcs', index=21,
       number=60, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='SetWriteVTKDipProfiles', full_name='intrepid.Fault3D_Processing.SetWriteVTKDipProfiles', index=22,
+      number=63, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -21159,6 +21454,27 @@ _FAULT3D_PROCESSING = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='OutputDB', full_name='intrepid.Fault3D_Processing.OutputDB', index=25,
+      number=65, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=True,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Contact_Profiles', full_name='intrepid.Fault3D_Processing.Contact_Profiles', index=26,
+      number=43, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=b"output".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='OutputDBName', full_name='intrepid.Fault3D_Processing.OutputDBName', index=27,
+      number=66, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=b"FoliationsDB".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -21171,8 +21487,8 @@ _FAULT3D_PROCESSING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=65314,
-  serialized_end=66346,
+  serialized_start=66350,
+  serialized_end=67481,
 )
 
 
@@ -21315,8 +21631,8 @@ _VIEW3D_FAULTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=66349,
-  serialized_end=66965,
+  serialized_start=67484,
+  serialized_end=68100,
 )
 
 
@@ -21354,8 +21670,8 @@ _RARIFY_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=66967,
-  serialized_end=67039,
+  serialized_start=68102,
+  serialized_end=68174,
 )
 
 
@@ -21477,8 +21793,8 @@ _PRE_FFT_TRANSFORM_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=67042,
-  serialized_end=67623,
+  serialized_start=68177,
+  serialized_end=68758,
 )
 
 
@@ -21537,8 +21853,8 @@ _OUTPUT_GRIDS_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=67626,
-  serialized_end=67824,
+  serialized_start=68761,
+  serialized_end=68959,
 )
 
 
@@ -21583,8 +21899,8 @@ _CONTINUATION_GRIDS_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=67827,
-  serialized_end=67963,
+  serialized_start=68962,
+  serialized_end=69098,
 )
 
 
@@ -21629,8 +21945,8 @@ _PSEUDO_GRAVITY_FILTER_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=67965,
-  serialized_end=68084,
+  serialized_start=69100,
+  serialized_end=69219,
 )
 
 
@@ -21717,8 +22033,8 @@ _UPWARDCONTINUATION_FILTERING_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=68087,
-  serialized_end=68516,
+  serialized_start=69222,
+  serialized_end=69651,
 )
 
 
@@ -21800,27 +22116,6 @@ _SUPPLEMENTRY_OUTPUTS_INT = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Vrml_Point_Dataset', full_name='intrepid.Supplementry_Outputs_INT.Vrml_Point_Dataset', index=10,
-      number=13, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=b"output/vrmlPts.wrl".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Vrml_Worm_Dataset', full_name='intrepid.Supplementry_Outputs_INT.Vrml_Worm_Dataset', index=11,
-      number=14, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=b"output/vrmlWorms.wrl".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='Vrml_Line_Dataset', full_name='intrepid.Supplementry_Outputs_INT.Vrml_Line_Dataset', index=12,
-      number=15, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=b"output/vrmlLines.wrl".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -21833,8 +22128,8 @@ _SUPPLEMENTRY_OUTPUTS_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=68519,
-  serialized_end=69220,
+  serialized_start=69654,
+  serialized_end=70209,
 )
 
 
@@ -21956,8 +22251,8 @@ _WORME_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=69223,
-  serialized_end=69871,
+  serialized_start=70212,
+  serialized_end=70860,
 )
 
 
@@ -22051,8 +22346,8 @@ _WIENERFILTER_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=69874,
-  serialized_end=70236,
+  serialized_start=70863,
+  serialized_end=71225,
 )
 
 
@@ -22146,8 +22441,8 @@ _MAPCOMPEXPORT_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=70239,
-  serialized_end=70491,
+  serialized_start=71228,
+  serialized_end=71480,
 )
 
 
@@ -22318,8 +22613,89 @@ _HARDCOPY_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=70494,
-  serialized_end=71228,
+  serialized_start=71483,
+  serialized_end=72217,
+)
+
+
+_RARIFYLINE_INT = _descriptor.Descriptor(
+  name='RarifyLine_INT',
+  full_name='intrepid.RarifyLine_INT',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='InputDataset', full_name='intrepid.RarifyLine_INT.InputDataset', index=0,
+      number=1, type=9, cpp_type=9, label=2,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='OutputDataset', full_name='intrepid.RarifyLine_INT.OutputDataset', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='InputFrequency', full_name='intrepid.RarifyLine_INT.InputFrequency', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(1000),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='OutputFrequency', full_name='intrepid.RarifyLine_INT.OutputFrequency', index=3,
+      number=4, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(25),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='DecimationFactor', full_name='intrepid.RarifyLine_INT.DecimationFactor', index=4,
+      number=5, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(10),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ReportFile', full_name='intrepid.RarifyLine_INT.ReportFile', index=5,
+      number=98, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=b"rarify.rpt".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='BatchToolName', full_name='intrepid.RarifyLine_INT.BatchToolName', index=6,
+      number=99, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=b"rarify".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='GUIToolName', full_name='intrepid.RarifyLine_INT.GUIToolName', index=7,
+      number=100, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=b"rarify".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=72220,
+  serialized_end=72462,
 )
 
 
@@ -22493,7 +22869,7 @@ _INTREPIDTASK = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Terrain_Correction_QuadTree', full_name='intrepid.IntrepidTask.Terrain_Correction_QuadTree', index=23,
+      name='Terrain_Correction', full_name='intrepid.IntrepidTask.Terrain_Correction', index=23,
       number=31, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -22633,7 +23009,14 @@ _INTREPIDTASK = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='log', full_name='intrepid.IntrepidTask.log', index=43,
+      name='Rarify', full_name='intrepid.IntrepidTask.Rarify', index=43,
+      number=89, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='log', full_name='intrepid.IntrepidTask.log', index=44,
       number=255, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -22651,8 +23034,8 @@ _INTREPIDTASK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=71231,
-  serialized_end=73428,
+  serialized_start=72465,
+  serialized_end=74686,
 )
 
 _NETCDFGRID_INT.fields_by_name['Measurement_Attributes'].message_type = _ACDD_CF_MEASUREMENT_ATTRIBUTES
@@ -22683,7 +23066,6 @@ _EXPORT_INT.fields_by_name['EncomImage'].message_type = _ENCOMIMAGE_INT
 _EXPORT_INT.fields_by_name['ZmapGrid'].message_type = _ZMAPGRID_INT
 _EXPORT_INT.fields_by_name['AGSO_ARGUS'].message_type = _AGSO_ARGUS_INT
 _EXPORT_INT.fields_by_name['Picodas'].message_type = _PICODAS_INT
-_EXPORT_INT.fields_by_name['GeoTiffImage'].message_type = _GEOTIFFIMAGE_INT
 _EXPORT_INT.fields_by_name['SEGY'].message_type = _SEGY_INT
 _EXPORT_INT.fields_by_name['VoxelGEO'].message_type = _VOXELGEO_INT
 _EXPORT_INT.fields_by_name['ArcShape'].message_type = _ARC_SHAPE_INT
@@ -22701,6 +23083,7 @@ _SIGNALTRACE.fields_by_name['Parameters'].message_type = _INPUT_FILTERS_INT
 _SIGNALTRACE.fields_by_name['EditDelta'].message_type = _DATA_REPLACER
 _PROFILEEDITOR_INT.fields_by_name['SignalField'].message_type = _SIGNALTRACE
 _PROFILEEDITOR_INT.fields_by_name['EditType'].enum_type = _EDITTYPES_INT
+_PROFILEEDITOR_INT.fields_by_name['SearchType'].enum_type = _SEARCHTYPEPE
 _SPREADSHEET_ACTIONS.fields_by_name['Type'].enum_type = _OPERATIONTYPE
 _SPREADSHEET_ACTIONS.fields_by_name['Dtype'].enum_type = commontaskmodel__pb2._DATATYPE
 _SPREADSHEET_ACTIONS.fields_by_name['CoordinateSystemType'].enum_type = commontaskmodel__pb2._COORDINATEREFERENCESYSTEM
@@ -22728,19 +23111,22 @@ _CLUSTERANALYSIS_INT.fields_by_name['tensor_dip'].message_type = _FTG_FAULT3D_CA
 _CONVOLVEGRID_INT.fields_by_name['Type'].enum_type = _CONVOLVEFILTERTYPE
 _CONVOLVEGRID_INT.fields_by_name['Tensor_Option'].enum_type = _TENSORGRIDCONVOLVEFILTERING
 _CONVOLVEGRID_INT.fields_by_name['norm'].enum_type = _TENSORNORMCASE
+_CONVOLVEGRID_INT.fields_by_name['OutputDataType'].enum_type = commontaskmodel__pb2._GRIDDATATYPES
 _CONVOLVEGRID_INT.fields_by_name['KernelType'].enum_type = _CONVOLVEALGORITHMTYPE
 _CONVOLVEGRID_INT.fields_by_name['CoordinateSystemType'].enum_type = commontaskmodel__pb2._COORDINATEREFERENCESYSTEM
 _MARINE_FILTER_PARAMETER.fields_by_name['FilterType'].enum_type = _MARINE_FILTER_TYPE
 _DATA_REPLACER.fields_by_name['Range'].message_type = _SELECTION_RANGE
+_DATA_REPLACER.fields_by_name['PE_selection'].enum_type = _EDITTYPES_INT
 _DATA_REPLACER.fields_by_name['Selection'].enum_type = _SELECTIONOPERATION_INT
 _GRAVITY_METER_CONFIG.fields_by_name['MarineSettings'].message_type = _GRAVITY_METER_MARINE_SETTINGS
 _GRAVITY_METER_TABLE.fields_by_name['Gravity_Meter'].message_type = _GRAVITY_METER_CONFIG
-_TERRAIN_CORRECTION_QUADTREE_INT.fields_by_name['DTMMethod'].enum_type = _SIGNALRESAMPLEMETHOD
-_TERRAIN_CORRECTION_QUADTREE_INT.fields_by_name['GravityDatum'].enum_type = _GRAVITY_DATUM
-_TERRAIN_CORRECTION_QUADTREE_INT.fields_by_name['GravityUnits'].enum_type = _GRAVITY_UNITS
-_TERRAIN_CORRECTION_QUADTREE_INT.fields_by_name['GravityAcquisitionEnvironment'].enum_type = _GRAVITY_TERRAIN_CASE
-_TERRAIN_CORRECTION_QUADTREE_INT.fields_by_name['CoordinateSystemType'].enum_type = commontaskmodel__pb2._COORDINATEREFERENCESYSTEM
-_TERRAIN_CORRECTION_QUADTREE_INT.fields_by_name['MaterialDensity'].message_type = _DENSITY_MATERIAL_PROPERTIES
+_TERRAIN_CORRECTION_INT.fields_by_name['DTMMethod'].enum_type = _SIGNALRESAMPLEMETHOD
+_TERRAIN_CORRECTION_INT.fields_by_name['GravityDatum'].enum_type = _GRAVITY_DATUM
+_TERRAIN_CORRECTION_INT.fields_by_name['GravityUnits'].enum_type = _GRAVITY_UNITS
+_TERRAIN_CORRECTION_INT.fields_by_name['GravityAcquisitionEnvironment'].enum_type = _GRAVITY_TERRAIN_CASE
+_TERRAIN_CORRECTION_INT.fields_by_name['CoordinateSystemType'].enum_type = commontaskmodel__pb2._COORDINATEREFERENCESYSTEM
+_TERRAIN_CORRECTION_INT.fields_by_name['MaterialDensity'].message_type = _DENSITY_MATERIAL_PROPERTIES
+_TERRAIN_CORRECTION_INT.fields_by_name['algorithm'].enum_type = _TERRAIN_CORRECTION_ALGORITHM
 _ABSOLUTE_REFERENCETIEIN.fields_by_name['DatumType'].enum_type = _GRAVITY_DATUM
 _ABSOLUTE_REFERENCETIEIN.fields_by_name['Location'].message_type = commontaskmodel__pb2._POINT3D
 _ABSOLUTE_REFERENCETIEIN.fields_by_name['GravityUnits'].enum_type = _GRAVITY_UNITS
@@ -22758,7 +23144,7 @@ _GRAVITY_INT.fields_by_name['RunType'].enum_type = _GRAVITY_PROCESS_OPTION
 _GRAVITY_INT.fields_by_name['TerrainType'].enum_type = _GRAVITY_TERRAIN_CASE
 _GRAVITY_INT.fields_by_name['Reduction'].message_type = _LAND_LOOP_REDUCTION_PRINCIPAL_FACTS
 _GRAVITY_INT.fields_by_name['Marine'].message_type = _TRADITIONAL_MARINE_GRAVITY
-_GRAVITY_INT.fields_by_name['Terrain'].message_type = _TERRAIN_CORRECTION
+_GRAVITY_INT.fields_by_name['Terrain'].message_type = _TERRAIN_CORRECTION_INT
 _GRAVITY_INT.fields_by_name['Properties'].message_type = _DENSITY_MATERIAL_PROPERTIES
 _GRAVITY_INT.fields_by_name['OutputUnits'].enum_type = _GRAVITY_UNITS
 _GRAVITY_INT.fields_by_name['DatumType'].enum_type = _GRAVITY_DATUM
@@ -22792,10 +23178,10 @@ _GRIDDING_INT.fields_by_name['Tiling'].message_type = _TILING_INT
 _GRIDDING_INT.fields_by_name['Grid_Refinement'].message_type = _GRID_REFINEMENT_INT
 _GRIDDING_INT.fields_by_name['Output_Grid'].message_type = _OUTPUT_GRID_INT
 _TRENDQ_INT.fields_by_name['Input_Datasets'].message_type = _INPUT_DATASETS_INT
-_TRENDQ_INT.fields_by_name['Projection'].message_type = commontaskmodel__pb2._COORDINATESYSTEM
 _TRENDQ_INT.fields_by_name['DataType'].enum_type = commontaskmodel__pb2._GRIDDATATYPES
 _TRENDQ_INT.fields_by_name['CTEST'].enum_type = _TRUSTGRIDOPTIONS
 _TRENDQ_INT.fields_by_name['Bounding_Box'].message_type = commontaskmodel__pb2._BOUNDINGBOX2D
+_TRENDQ_INT.fields_by_name['Reference'].message_type = _GRIDREFERENCE_INT
 _GRIDFEATHERINGOPTIONS.fields_by_name['ProcessingMode'].enum_type = _GRIDFEATHERINGOPTIONS_PROCESSING_MODE
 _GRIDFEATHERINGOPTIONS_PROCESSING_MODE.containing_type = _GRIDFEATHERINGOPTIONS
 _GRIDSCALEANDADJUSTOPTIONS.fields_by_name['RunType'].enum_type = _GRIDSCALEANDADJUSTOPTIONS_LEVELRUNTYPE
@@ -22854,6 +23240,8 @@ _ISOSTATIC_INT.fields_by_name['WindowType'].enum_type = filter__description__pb2
 _ISOSTATIC_INT.fields_by_name['FillType'].enum_type = filter__description__pb2._GETFILLTYPELIST
 _ISOSTATIC_INT.fields_by_name['OutputDataType'].enum_type = commontaskmodel__pb2._GRIDDATATYPES
 _ISOSTATIC_INT.fields_by_name['DiskUsageRule'].enum_type = _DISKUSAGERULES
+_ISOSTATIC_INT.fields_by_name['GravityUnits'].enum_type = _GRAVITY_UNITS
+_GRAVITYMERGE_INT.fields_by_name['MergeAction'].enum_type = _DUPLICATEHANDLINGBEHAVIOUR
 _GRAVITYMERGE_INT.fields_by_name['Field_Aliases'].enum_type = commontaskmodel__pb2._FIELDALIAS
 _DECORRUGATE_INT.fields_by_name['HighPassFilter'].enum_type = _GRIDFILTERTYPE
 _DECORRUGATE_INT.fields_by_name['HighPassExtrapolator'].enum_type = _EXTRACTORTYPE
@@ -23069,7 +23457,7 @@ _INTREPIDTASK.fields_by_name['Gridding'].message_type = _GRIDDING_INT
 _INTREPIDTASK.fields_by_name['Gridmerge'].message_type = _GRIDMERGE_INT
 _INTREPIDTASK.fields_by_name['TrendQ'].message_type = _TRENDQ_INT
 _INTREPIDTASK.fields_by_name['Gravity'].message_type = _GRAVITY_INT
-_INTREPIDTASK.fields_by_name['Terrain_Correction_QuadTree'].message_type = _TERRAIN_CORRECTION_QUADTREE_INT
+_INTREPIDTASK.fields_by_name['Terrain_Correction'].message_type = _TERRAIN_CORRECTION_INT
 _INTREPIDTASK.fields_by_name['isostatic'].message_type = _ISOSTATIC_INT
 _INTREPIDTASK.fields_by_name['Levelling'].message_type = _LEVELLING_INT
 _INTREPIDTASK.fields_by_name['MarineLevel'].message_type = _MARINELEVELLING_INT
@@ -23089,6 +23477,7 @@ _INTREPIDTASK.fields_by_name['ForwardModelFromSurfaces'].message_type = _FORWARD
 _INTREPIDTASK.fields_by_name['ForwardModelFromLayerCake'].message_type = _FORWARDMODELFROMLAYERCAKE_INT
 _INTREPIDTASK.fields_by_name['MapCompExport'].message_type = _MAPCOMPEXPORT_INT
 _INTREPIDTASK.fields_by_name['Visual'].message_type = _HARDCOPY_INT
+_INTREPIDTASK.fields_by_name['Rarify'].message_type = _RARIFYLINE_INT
 DESCRIPTOR.message_types_by_name['AsciiColumns_INT'] = _ASCIICOLUMNS_INT
 DESCRIPTOR.message_types_by_name['AsciiImage_INT'] = _ASCIIIMAGE_INT
 DESCRIPTOR.message_types_by_name['BinaryImage_INT'] = _BINARYIMAGE_INT
@@ -23130,8 +23519,7 @@ DESCRIPTOR.message_types_by_name['Gravity_Meter_Marine_Settings'] = _GRAVITY_MET
 DESCRIPTOR.message_types_by_name['Gravity_Meter_Config'] = _GRAVITY_METER_CONFIG
 DESCRIPTOR.message_types_by_name['Gravity_Meter_Table'] = _GRAVITY_METER_TABLE
 DESCRIPTOR.message_types_by_name['Density_Material_Properties'] = _DENSITY_MATERIAL_PROPERTIES
-DESCRIPTOR.message_types_by_name['Terrain_Correction'] = _TERRAIN_CORRECTION
-DESCRIPTOR.message_types_by_name['Terrain_Correction_QuadTree_INT'] = _TERRAIN_CORRECTION_QUADTREE_INT
+DESCRIPTOR.message_types_by_name['Terrain_Correction_INT'] = _TERRAIN_CORRECTION_INT
 DESCRIPTOR.message_types_by_name['Absolute_ReferenceTieIn'] = _ABSOLUTE_REFERENCETIEIN
 DESCRIPTOR.message_types_by_name['Land_Loop_Reduction_Principal_Facts'] = _LAND_LOOP_REDUCTION_PRINCIPAL_FACTS
 DESCRIPTOR.message_types_by_name['Traditional_Marine_Gravity'] = _TRADITIONAL_MARINE_GRAVITY
@@ -23235,6 +23623,7 @@ DESCRIPTOR.message_types_by_name['WormE_INT'] = _WORME_INT
 DESCRIPTOR.message_types_by_name['WienerFilter_INT'] = _WIENERFILTER_INT
 DESCRIPTOR.message_types_by_name['MapCompExport_INT'] = _MAPCOMPEXPORT_INT
 DESCRIPTOR.message_types_by_name['HARDCOPY_INT'] = _HARDCOPY_INT
+DESCRIPTOR.message_types_by_name['RarifyLine_INT'] = _RARIFYLINE_INT
 DESCRIPTOR.message_types_by_name['IntrepidTask'] = _INTREPIDTASK
 DESCRIPTOR.enum_types_by_name['GeophysicsFormatType'] = _GEOPHYSICSFORMATTYPE
 DESCRIPTOR.enum_types_by_name['DB_Operations'] = _DB_OPERATIONS
@@ -23243,6 +23632,7 @@ DESCRIPTOR.enum_types_by_name['PlanViewEditType'] = _PLANVIEWEDITTYPE
 DESCRIPTOR.enum_types_by_name['NoiseTypes_INT'] = _NOISETYPES_INT
 DESCRIPTOR.enum_types_by_name['EditTypes_INT'] = _EDITTYPES_INT
 DESCRIPTOR.enum_types_by_name['InterpMethod'] = _INTERPMETHOD
+DESCRIPTOR.enum_types_by_name['SearchTypePE'] = _SEARCHTYPEPE
 DESCRIPTOR.enum_types_by_name['ApplySearchTo'] = _APPLYSEARCHTO
 DESCRIPTOR.enum_types_by_name['OperationType'] = _OPERATIONTYPE
 DESCRIPTOR.enum_types_by_name['DeleteAction'] = _DELETEACTION
@@ -23263,6 +23653,7 @@ DESCRIPTOR.enum_types_by_name['Marine_Gravity_Selection_Type'] = _MARINE_GRAVITY
 DESCRIPTOR.enum_types_by_name['Marine_Filter_Type'] = _MARINE_FILTER_TYPE
 DESCRIPTOR.enum_types_by_name['StationCoordSource'] = _STATIONCOORDSOURCE
 DESCRIPTOR.enum_types_by_name['SelectionOperation_INT'] = _SELECTIONOPERATION_INT
+DESCRIPTOR.enum_types_by_name['Terrain_Correction_Algorithm'] = _TERRAIN_CORRECTION_ALGORITHM
 DESCRIPTOR.enum_types_by_name['Reference_Type'] = _REFERENCE_TYPE
 DESCRIPTOR.enum_types_by_name['Kernel_Size'] = _KERNEL_SIZE
 DESCRIPTOR.enum_types_by_name['Edge_Clipping'] = _EDGE_CLIPPING
@@ -23278,6 +23669,7 @@ DESCRIPTOR.enum_types_by_name['Grid_Operation_Tasks'] = _GRID_OPERATION_TASKS
 DESCRIPTOR.enum_types_by_name['DetrendOptions'] = _DETRENDOPTIONS
 DESCRIPTOR.enum_types_by_name['diskUsageRules'] = _DISKUSAGERULES
 DESCRIPTOR.enum_types_by_name['Special_GridFilter_Operations'] = _SPECIAL_GRIDFILTER_OPERATIONS
+DESCRIPTOR.enum_types_by_name['DuplicateHandlingBehaviour'] = _DUPLICATEHANDLINGBEHAVIOUR
 DESCRIPTOR.enum_types_by_name['Decorrugate_Request'] = _DECORRUGATE_REQUEST
 DESCRIPTOR.enum_types_by_name['GridFilterType'] = _GRIDFILTERTYPE
 DESCRIPTOR.enum_types_by_name['ExtractorType'] = _EXTRACTORTYPE
@@ -23607,19 +23999,12 @@ Density_Material_Properties = _reflection.GeneratedProtocolMessageType('Density_
   })
 _sym_db.RegisterMessage(Density_Material_Properties)
 
-Terrain_Correction = _reflection.GeneratedProtocolMessageType('Terrain_Correction', (_message.Message,), {
-  'DESCRIPTOR' : _TERRAIN_CORRECTION,
+Terrain_Correction_INT = _reflection.GeneratedProtocolMessageType('Terrain_Correction_INT', (_message.Message,), {
+  'DESCRIPTOR' : _TERRAIN_CORRECTION_INT,
   '__module__' : 'intrepid_tasks_pb2'
-  # @@protoc_insertion_point(class_scope:intrepid.Terrain_Correction)
+  # @@protoc_insertion_point(class_scope:intrepid.Terrain_Correction_INT)
   })
-_sym_db.RegisterMessage(Terrain_Correction)
-
-Terrain_Correction_QuadTree_INT = _reflection.GeneratedProtocolMessageType('Terrain_Correction_QuadTree_INT', (_message.Message,), {
-  'DESCRIPTOR' : _TERRAIN_CORRECTION_QUADTREE_INT,
-  '__module__' : 'intrepid_tasks_pb2'
-  # @@protoc_insertion_point(class_scope:intrepid.Terrain_Correction_QuadTree_INT)
-  })
-_sym_db.RegisterMessage(Terrain_Correction_QuadTree_INT)
+_sym_db.RegisterMessage(Terrain_Correction_INT)
 
 Absolute_ReferenceTieIn = _reflection.GeneratedProtocolMessageType('Absolute_ReferenceTieIn', (_message.Message,), {
   'DESCRIPTOR' : _ABSOLUTE_REFERENCETIEIN,
@@ -24357,6 +24742,13 @@ HARDCOPY_INT = _reflection.GeneratedProtocolMessageType('HARDCOPY_INT', (_messag
   # @@protoc_insertion_point(class_scope:intrepid.HARDCOPY_INT)
   })
 _sym_db.RegisterMessage(HARDCOPY_INT)
+
+RarifyLine_INT = _reflection.GeneratedProtocolMessageType('RarifyLine_INT', (_message.Message,), {
+  'DESCRIPTOR' : _RARIFYLINE_INT,
+  '__module__' : 'intrepid_tasks_pb2'
+  # @@protoc_insertion_point(class_scope:intrepid.RarifyLine_INT)
+  })
+_sym_db.RegisterMessage(RarifyLine_INT)
 
 IntrepidTask = _reflection.GeneratedProtocolMessageType('IntrepidTask', (_message.Message,), {
   'DESCRIPTOR' : _INTREPIDTASK,

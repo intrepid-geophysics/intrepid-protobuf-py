@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto2',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x15\x63ommontaskmodel.proto\x12\x03\x63tm\"*\n\tPairInt32\x12\r\n\x05\x66irst\x18\x01 \x02(\x05\x12\x0e\n\x06second\x18\x02 \x02(\x05\"+\n\nPairDouble\x12\r\n\x05\x66irst\x18\x01 \x02(\x01\x12\x0e\n\x06second\x18\x02 \x02(\x01\"\x1f\n\x07Point2d\x12\t\n\x01x\x18\x01 \x02(\x01\x12\t\n\x01y\x18\x02 \x02(\x01\"*\n\x07Point3d\x12\t\n\x01x\x18\x01 \x02(\x01\x12\t\n\x01y\x18\x02 \x02(\x01\x12\t\n\x01z\x18\x03 \x02(\x01\"\x1f\n\x0bReturnInt32\x12\x10\n\x05value\x18\x01 \x01(\x05:\x01\x30\"\x1e\n\x0eRepeatedString\x12\x0c\n\x04node\x18\x01 \x03(\t\" \n\x0cRepeatedBool\x12\x10\n\x04node\x18\x01 \x03(\x08\x42\x02\x10\x01\"\"\n\x0eRepeatedDouble\x12\x10\n\x04node\x18\x01 \x03(\x01\x42\x02\x10\x01\"!\n\rRepeatedInt32\x12\x10\n\x04node\x18\x01 \x03(\x05\x42\x02\x10\x01\"*\n\x0cKeywordValue\x12\x0b\n\x03key\x18\x01 \x02(\t\x12\r\n\x05value\x18\x02 \x02(\t\"A\n\x06\x43olour\x12\x0b\n\x03red\x18\x01 \x01(\x01\x12\r\n\x05green\x18\x02 \x01(\x01\x12\x0c\n\x04\x62lue\x18\x03 \x01(\x01\x12\r\n\x05\x61lpha\x18\x04 \x01(\x01\"y\n\x0b\x42oundingBox\x12\x0c\n\x04xmin\x18\x01 \x02(\x01\x12\x0c\n\x04ymin\x18\x02 \x02(\x01\x12\x0c\n\x04zmin\x18\x03 \x02(\x01\x12\x0c\n\x04xmax\x18\x04 \x02(\x01\x12\x0c\n\x04ymax\x18\x05 \x02(\x01\x12\x0c\n\x04zmax\x18\x06 \x02(\x01\x12\x16\n\x08internal\x18\x07 \x01(\x08:\x04true\"}\n\rBoundingBox2D\x12\x0c\n\x04xmin\x18\x01 \x02(\x01\x12\x0c\n\x04ymin\x18\x02 \x02(\x01\x12\x0c\n\x04xmax\x18\x04 \x02(\x01\x12\x0c\n\x04ymax\x18\x05 \x02(\x01\x12\x16\n\x08internal\x18\x06 \x01(\x08:\x04true\x12\r\n\x05xcell\x18\x07 \x01(\x01\x12\r\n\x05ycell\x18\x08 \x01(\x01\"{\n\x16RotatableBoundingBox2D\x12\x15\n\rCentroid_East\x18\x01 \x02(\x01\x12\x16\n\x0e\x43\x65ntroid_North\x18\x02 \x02(\x01\x12\r\n\x05Width\x18\x03 \x02(\x01\x12\x0e\n\x06Height\x18\x04 \x02(\x01\x12\x13\n\x08Rotation\x18\x05 \x01(\x01:\x01\x30\"\xa8\x01\n\rGeodeticBox2D\x12\x14\n\x05long0\x18\x01 \x01(\x01:\x05\x31\x31\x31.5\x12\x13\n\x04lat0\x18\x02 \x01(\x01:\x05-44.3\x12\x12\n\x05long1\x18\x04 \x01(\x01:\x03\x31\x35\x35\x12\x11\n\x04lat1\x18\x05 \x01(\x01:\x03-10\x12\x16\n\x08internal\x18\x06 \x01(\x08:\x04true\x12-\n\x08transect\x18\x07 \x01(\x0e\x32\x17.ctm.Transect_Direction:\x02WE\"P\n\nBasicStats\x12\x0f\n\x07\x61verage\x18\x01 \x01(\x01\x12\x0f\n\x07std_dev\x18\x02 \x01(\x01\x12\x0f\n\x07minimum\x18\x03 \x01(\x01\x12\x0f\n\x07maximum\x18\x04 \x01(\x01\"\x10\n\x0eTemporalExtent\"\x95\x04\n\x08Grid_INT\x12\x1c\n\tGrid_Name\x18\x01 \x02(\t:\tinput.ers\x12.\n\x06\x66ormat\x18\x02 \x01(\x0e\x32\x10.ctm.Grid_Format:\x0cINTREPIDGRID\x12)\n\nProjection\x18\x03 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12?\n\rTensorProduct\x18\x04 \x01(\x0e\x32\x17.ctm.TensorProduct_list:\x0fTENSOR_Complete\x12\x18\n\x0b\x43\x65ll_Size_X\x18\x05 \x01(\x01:\x03\x31\x30\x30\x12\x18\n\x0b\x43\x65ll_Size_Y\x18\x06 \x01(\x01:\x03\x31\x30\x30\x12\x13\n\x08Origin_X\x18\x07 \x01(\x01:\x01\x30\x12\x13\n\x08Origin_Y\x18\x08 \x01(\x01:\x01\x30\x12\x11\n\x04Rows\x18\t \x01(\x05:\x03\x31\x30\x30\x12\x14\n\x07\x43olumns\x18\n \x01(\x05:\x03\x31\x30\x30\x12\x10\n\x05\x42\x61nds\x18\x0b \x01(\x05:\x01\x31\x12\x13\n\tBand_Name\x18\x0c \x01(\t:\x00\x12\x0f\n\x04\x42\x61nd\x18\r \x01(\x05:\x01\x31\x12\x33\n\x08\x44\x61taType\x18\x0e \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12\x13\n\x08Rotation\x18\x0f \x01(\x01:\x01\x30\x12\x1a\n\nNull_Value\x18\x10 \x01(\x01:\x06-99999\x12*\n\x05units\x18\x11 \x01(\x0e\x32\x13.ctm.Distance_Units:\x06meters\"\xb6\x02\n\x10MeasuredGrid_INT\x12\x33\n\x04type\x18\x01 \x01(\x0e\x32\x19.ctm.GeophysicsSignalType:\nGravimetry\x12\x19\n\x0emean_elevation\x18\x02 \x01(\x01:\x01\x30\x12\x16\n\tprecision\x18\x03 \x01(\x01:\x03\x30.1\x12\x19\n\x0bMatch_Trend\x18\x04 \x01(\x08:\x04true\x12\x1d\n\x12Match_Trend_Degree\x18\x05 \x01(\x05:\x01\x32\x12\x1e\n\x10Match_Trend_Rate\x18\x06 \x01(\x05:\x04\x31\x30\x30\x30\x12\x41\n\x14\x43oordinateSystemType\x18\x07 \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12\x0c\n\x04grid\x18\x08 \x01(\t\x12\x0f\n\x04\x42\x61nd\x18\t \x01(\x05:\x01\x31\"\x95\x01\n\x10\x43oordinateSystem\x12\x16\n\x0egeographic2DCS\x18\x01 \x01(\t\x12\x16\n\x0emap_projection\x18\x02 \x01(\t\x12\x11\n\tCS_Number\x18\x03 \x01(\x11\x12\x14\n\x0cheight_datum\x18\x04 \x01(\t\x12\x11\n\tellipsoid\x18\x05 \x01(\t\x12\x15\n\rspatial_datum\x18\x06 \x01(\t\"\x85\x01\n$AngleProbabilityDistributionFunction\x12\x39\n\x04type\x18\x01 \x02(\x0e\x32\x17.ctm.ProbabilityLawType:\x12\x46isherDistribution\x12\x0f\n\x04mean\x18\x02 \x01(\x01:\x01\x30\x12\x11\n\x06stddev\x18\x03 \x01(\x01:\x01\x30\"\xc8\x03\n\x15LithologyProperty_GMT\x12\x11\n\tlithology\x18\x01 \x02(\t\x12#\n\x08property\x18\x02 \x01(\x0e\x32\x11.ctm.PropertyType\x12Q\n\x1fProbabilityDistributionFunction\x18\x03 \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12R\n ProbabilityDistributionFunction2\x18\x04 \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12R\n ProbabilityDistributionFunction3\x18\x05 \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12\x14\n\x05\x66ixed\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x0findex_voxet_key\x18\x07 \x01(\x05\x12\x13\n\x0blower_bound\x18\x08 \x01(\x01\x12\x13\n\x0bupper_bound\x18\t \x01(\x01\x12#\n\x08preserve\x18\n \x01(\x0b\x32\x11.ctm.RepeatedBool\"\xaa\x02\n#ProbabilityDistributionFunction_GMT\x12\x39\n\x04type\x18\x01 \x02(\x0e\x32\x17.ctm.ProbabilityLawType:\x12NormalDistribution\x12\x0f\n\x04mean\x18\x02 \x01(\x01:\x01\x30\x12\x11\n\x06stddev\x18\x03 \x01(\x01:\x01\x30\x12\x16\n\x0binclination\x18\x04 \x01(\x01:\x01\x30\x12\x16\n\x0b\x64\x65\x63lination\x18\x05 \x01(\x01:\x01\x30\x12\x17\n\npercentage\x18\x06 \x01(\x05:\x03\x31\x30\x30\x12\x17\n\x0f\x64\x65pthvaluepairs\x18\x07 \x01(\t\x12\x13\n\x0binput_voxet\x18\x08 \x01(\t\x12\x19\n\x11input_voxet_field\x18\t \x01(\t\x12\x12\n\ninput_grid\x18\n \x01(\t\"\xb6\x02\n\x19SetReferenceMagneticField\x12\x11\n\tMagnitude\x18\x01 \x01(\x01\x12\x13\n\x0bInclination\x18\x02 \x01(\x01\x12\x13\n\x0b\x44\x65\x63lination\x18\x03 \x01(\x01\x12\x14\n\tmag_error\x18\x05 \x01(\x01:\x01\x30\x12\x1c\n\x11inclination_error\x18\x06 \x01(\x01:\x01\x30\x12\x1c\n\x11\x64\x65\x63lination_error\x18\x07 \x01(\x01:\x01\x30\x12\x18\n\nSurveyYear\x18\x08 \x01(\x05:\x04\x32\x30\x31\x32\x12\x16\n\x0bSurveyMonth\x18\t \x01(\x05:\x01\x31\x12\x14\n\tSurveyDay\x18\n \x01(\x05:\x01\x31\x12\x16\n\tElevation\x18\x0c \x01(\x01:\x03\x31\x30\x30\x12*\n\nField_Type\x18\r \x01(\x0e\x32\x0c.ctm.GrfType:\x08GRF_IGRF\"P\n\x06Tensor\x12\n\n\x02XX\x18\x01 \x01(\x01\x12\n\n\x02YY\x18\x02 \x01(\x01\x12\n\n\x02ZZ\x18\x03 \x01(\x01\x12\n\n\x02XY\x18\x04 \x01(\x01\x12\n\n\x02YZ\x18\x05 \x01(\x01\x12\n\n\x02ZX\x18\x06 \x01(\x01\"0\n\rVectorMeasure\x12\t\n\x01X\x18\x01 \x01(\x01\x12\t\n\x01Y\x18\x02 \x01(\x01\x12\t\n\x01Z\x18\x03 \x01(\x01*$\n\x12Transect_Direction\x12\x06\n\x02SN\x10\x00\x12\x06\n\x02WE\x10\x01*\x8c\x01\n\x0e\x44istance_Units\x12\n\n\x06meters\x10\x00\x12\x08\n\x04\x66\x65\x65t\x10\x01\x12\x0f\n\x0b\x63\x65ntimeters\x10\x03\x12\x0e\n\nkilometers\x10\x05\x12\x08\n\x04yard\x10\x06\x12\x07\n\x03lab\x10\x07\x12\x13\n\x0f\x64\x65\x63imal_degrees\x10\x08\x12\x1b\n\x17\x64\x65grees_minutes_seconds\x10\t*K\n\x0eVertical_Units\x12\x14\n\x10meters_elevation\x10\x00\x12\x0f\n\x0btravel_time\x10\x01\x12\x12\n\x0e\x66\x65\x65t_elevation\x10\x02*O\n\x16GPSData_CoordinateType\x12\x13\n\x0fGPSData_unknown\x10\x00\x12\x0b\n\x07latLong\x10\x01\x12\x13\n\x0f\x65\x61stingNorthing\x10\x02*K\n\x12GPSData_HeaderType\x12\x12\n\x0eGPSData_ignore\x10\x00\x12\x10\n\x0cGPSData_none\x10\x01\x12\x0f\n\x0b\x63olumnNames\x10\x02*\xa8\x01\n\x0bGrid_Format\x12\x10\n\x0cINTREPIDGRID\x10\x00\x12\x10\n\x0c\x41SCIIArcGrid\x10\x01\x12\x0f\n\x0bGEOSOFTGRID\x10\x02\x12\x0e\n\nNETCDFGRID\x10\x03\x12\x0f\n\x0bNETDODSGRID\x10\x04\x12\x0c\n\x08SEMIGRID\x10\x05\x12\r\n\tZYCORGrid\x10\x06\x12\x08\n\x04TIFF\x10\x07\x12\x0f\n\x0b\x44XF_AUTOCAD\x10\t\x12\x0b\n\x07GXFGrid\x10\n*P\n\x0cImage_Format\x12\x0e\n\nPNG_format\x10\x01\x12\x0f\n\x0bTIFF_format\x10\x02\x12\x0f\n\x0bJPEG_format\x10\x03\x12\x0e\n\nGIF_format\x10\x04*\x8c\x04\n\x08\x44\x61taType\x12\x0b\n\x07\x44T_BYTE\x10\x00\x12\t\n\x05\x44T_I2\x10\x01\x12\t\n\x05\x44T_I4\x10\x02\x12\t\n\x05\x44T_R4\x10\x03\x12\t\n\x05\x44T_R8\x10\x04\x12\t\n\x05\x44T_CH\x10\x05\x12\t\n\x05\x44T_L4\x10\x06\x12\x0b\n\x07\x44T_DATE\x10\x07\x12\r\n\tDT_STRING\x10\x08\x12\n\n\x06\x44T_C16\x10\t\x12\t\n\x05\x44T_U2\x10\n\x12\r\n\tDT_TENSOR\x10\x0b\x12\x13\n\x0f\x44T_SDO_GEOMETRY\x10\x0c\x12\x0f\n\x0b\x44T_ARRAY_I2\x10\r\x12\x0f\n\x0b\x44T_ARRAY_I4\x10\x0e\x12\x0f\n\x0b\x44T_ARRAY_R4\x10\x0f\x12\x0f\n\x0b\x44T_ARRAY_R8\x10\x10\x12\t\n\x05\x44T_U4\x10\x11\x12\r\n\tDT_VECTOR\x10\x12\x12\x15\n\x11\x44T_OBSERVED_FIELD\x10\x13\x12\x11\n\rDT_STRUCTURAL\x10\x14\x12\x17\n\x13\x44T_OBSERVED_SEISMIC\x10\x15\x12\x17\n\x13\x44T_FIELD_COMPONENTS\x10\x16\x12\x16\n\x12\x44T_FIELD_GRADIENTS\x10\x17\x12\x15\n\x11\x44T_FIELD_SPECTRUM\x10\x18\x12\x11\n\rDT_QUATERNION\x10\x19\x12\x15\n\x11\x44T_COMPLEX_TENSOR\x10\x1a\x12\t\n\x05\x44T_I1\x10\x1b\x12\t\n\x05\x44T_I8\x10\x1c\x12\t\n\x05\x44T_U8\x10\x1d\x12\x0e\n\nDT_TENSOR2\x10\x1e\x12\x16\n\x12\x44T_COMPLEX_TENSOR2\x10\x1f*\xaf\x08\n\nDataFormat\x12\x0e\n\nDF_UNKNOWN\x10\x00\x12\x0b\n\x07\x44\x46_PITS\x10\x01\x12\n\n\x06\x44\x46_ERM\x10\x02\x12\x0e\n\nDF_EXT_BMR\x10\x03\x12\x10\n\x0c\x44\x46_EXT_ASCII\x10\x04\x12\x10\n\x0c\x44\x46_EXT_ARGUS\x10\x05\x12\x10\n\x0c\x44\x46_EXT_BASOS\x10\x06\x12\x12\n\x0e\x44\x46_EXT_ECSGRID\x10\x07\x12\x11\n\rDF_EXT_GRDUTE\x10\x08\x12\x13\n\x0f\x44\x46_EXT_ASEG_GXF\x10\t\x12\x12\n\x0e\x44\x46_EXT_GEOSOFT\x10\n\x12\x0e\n\nDF_EXT_RAF\x10\x0b\x12\x0e\n\nDF_EXT_XYZ\x10\x0c\x12\x11\n\rDF_EXT_GEOPAK\x10\r\x12\x11\n\rDF_EXT_NETCDF\x10\x0e\x12\x11\n\rDF_EXT_NETXYZ\x10\x0f\x12\x0b\n\x07\x44\x46_JDBC\x10\x10\x12\x0c\n\x08\x44\x46_OASIS\x10\x11\x12\n\n\x06\x44\x46_CSV\x10\x12\x12\x15\n\x11\x44\x46_EXT_DODSNETCDF\x10\x13\x12\x0c\n\x08\x44\x46_SHAPE\x10\x14\x12\x0e\n\nDF_FRACSIS\x10\x15\x12\x0c\n\x08\x44\x46_3DWEG\x10\x16\x12\x0c\n\x08\x44\x46_GOCAD\x10\x17\x12\x11\n\rDF_GOCADSGRID\x10\x18\x12\r\n\tDF_POTENT\x10\x19\x12\x0f\n\x0b\x44\x46_SCINTREX\x10\x1a\x12\x0b\n\x07\x44\x46_SEGY\x10\x1b\x12\x0b\n\x07\x44\x46_TIFF\x10\x1c\x12\x0b\n\x07\x44\x46_JPEG\x10\x1d\x12\n\n\x06\x44\x46_GIF\x10\x1e\x12\n\n\x06\x44\x46_ECW\x10\x1f\x12\n\n\x06\x44\x46_ALG\x10 \x12\x11\n\rDF_POSTSCRIPT\x10!\x12\x0c\n\x08\x44\x46_MSOFT\x10\"\x12\x0c\n\x08\x44\x46_ADOBE\x10#\x12\n\n\x06\x44\x46_ZIP\x10$\x12\n\n\x06\x44\x46_PNG\x10%\x12\x0b\n\x07\x44\x46_SEMI\x10&\x12\x12\n\x0e\x44\x46_MAPINFO_TAB\x10\'\x12\x12\n\x0e\x44\x46_GEOMODELLER\x10(\x12\x11\n\rDF_GOOGLE_KMZ\x10)\x12\x17\n\x13\x44\x46_FLEDERMAUS_SCENE\x10*\x12\n\n\x06\x44\x46_GSF\x10+\x12\n\n\x06\x44\x46_HGT\x10,\x12\x0c\n\x08\x44\x46_TSURF\x10-\x12\x13\n\x0f\x44\x46_GEOSOFT_POLY\x10.\x12\n\n\x06\x44\x46_GLT\x10/\x12\x0e\n\nDF_EV_GRID\x10\x30\x12\r\n\tDF_VULCAN\x10\x31\x12\x0b\n\x07\x44\x46_ZMAP\x10\x32\x12\n\n\x06\x44\x46_LAS\x10\x33\x12\x0b\n\x07\x44\x46_BREP\x10\x34\x12\n\n\x06\x44\x46_OFF\x10\x35\x12\n\n\x06\x44\x46_DXF\x10\x36\x12\n\n\x06\x44\x46_UBC\x10\x37\x12\r\n\tDF_IGMESH\x10\x38\x12\x0c\n\x08\x44\x46_NODDY\x10\x39\x12\x0e\n\nDF_UBC_SUS\x10:\x12\n\n\x06\x44\x46_EDI\x10;\x12\x0b\n\x07\x44\x46_ESRI\x10<\x12\n\n\x06\x44\x46_VTK\x10=\x12\r\n\tDF_PETREL\x10>\x12\x10\n\x0c\x44\x46_VARIOGRAM\x10?\x12\x0b\n\x07\x44\x46_GMOD\x10@\x12\n\n\x06\x44\x46_FEM\x10\x41\x12\x15\n\x11\x44\x46_JETSTREAM_Site\x10\x42\x12\x18\n\x14\x44\x46_JETSTREAM_Catalog\x10\x43*\x80\x02\n\rGridDataTypes\x12\x17\n\x13UnSigned8BitInteger\x10\x00\x12\x16\n\x12Signed16BitInteger\x10\x01\x12\x16\n\x12Signed32BitInteger\x10\x02\x12\x11\n\rIEEE4ByteReal\x10\x03\x12\x11\n\rIEEE8ByteReal\x10\x04\x12\x14\n\x10IEEE4ByteComplex\x10\x05\x12\x14\n\x10IEEE8ByteComplex\x10\x06\x12\x0e\n\nTensorGrid\x10\x07\x12\x0e\n\nVectorGrid\x10\x08\x12\x12\n\x0e\x43omplex_Tensor\x10\t\x12\x0e\n\nQuaternion\x10\n\x12\x10\n\x0c\x44ual_Complex\x10\x0b*\xc5\x12\n\nFieldAlias\x12\x0b\n\x07\x46\x41_INFO\x10\x00\x12\n\n\x06\x46\x41_FID\x10\x01\x12\x0b\n\x07\x46\x41_LINE\x10\x02\x12\r\n\tFA_FLIGHT\x10\x03\x12\r\n\tFA_SURVEY\x10\x04\x12\x10\n\x0c\x46\x41_LINE_TYPE\x10\x05\x12\x14\n\x10\x46\x41_MEAN_ALTITUDE\x10\x06\x12\x15\n\x11\x46\x41_MEAN_CLEARANCE\x10\x07\x12\x0e\n\nFA_BEARING\x10\x08\x12\x0f\n\x0b\x46\x41_VELOCITY\x10\t\x12\x10\n\x0c\x46\x41_DATE_CODE\x10\n\x12\x11\n\rFA_FID_FACTOR\x10\x0b\x12\x12\n\x0e\x46\x41_TIME_OF_DAY\x10\x0c\x12\x08\n\x04\x46\x41_X\x10\r\x12\x08\n\x04\x46\x41_Y\x10\x0e\x12\x10\n\x0c\x46\x41_ELEVATION\x10\x0f\x12\x10\n\x0c\x46\x41_CLEARANCE\x10\x10\x12\x0f\n\x0b\x46\x41_ALTITUDE\x10\x11\x12\x10\n\x0c\x46\x41_MAGNETICS\x10\x12\x12\x10\n\x0c\x46\x41_POTASSIUM\x10\x13\x12\x0e\n\nFA_URANIUM\x10\x14\x12\x0e\n\nFA_THORIUM\x10\x15\x12\x12\n\x0e\x46\x41_TOTAL_COUNT\x10\x16\x12\x15\n\x11\x46\x41_DOPPLER_ACROSS\x10\x17\x12\x14\n\x10\x46\x41_DOPPLER_ALONG\x10\x18\x12\x0f\n\x0b\x46\x41_GPS_TIME\x10\x19\x12\x15\n\x11\x46\x41_GPS_TIME_SHIFT\x10\x1a\x12\x10\n\x0c\x46\x41_GPS_DELAY\x10\x1b\x12\x0c\n\x08\x46\x41_VLF_P\x10\x1c\x12\x0c\n\x08\x46\x41_VLF_Q\x10\x1d\x12\x0f\n\x0b\x46\x41_SPECTRUM\x10\x1e\x12\x13\n\x0f\x46\x41_SPECTRUM_NEW\x10\x1f\x12\x12\n\x0e\x46\x41_TEMPERATURE\x10 \x12\x0f\n\x0b\x46\x41_PRESSURE\x10!\x12\r\n\tFA_COSMIC\x10\"\x12\x10\n\x0c\x46\x41_DEAD_TIME\x10#\x12\x10\n\x0c\x46\x41_LIVE_TIME\x10$\x12\x17\n\x13\x46\x41_UPWARD_POTASSIUM\x10%\x12\x15\n\x11\x46\x41_UPWARD_URANIUM\x10&\x12\x15\n\x11\x46\x41_UPWARD_THORIUM\x10\'\x12\x19\n\x15\x46\x41_UPWARD_TOTAL_COUNT\x10(\x12\x17\n\x13\x46\x41_UPWARD_DEAD_TIME\x10)\x12\x11\n\rFA_LOW_U_PEAK\x10*\x12\x16\n\x12\x46\x41_ESTIMATED_RADON\x10+\x12\x0e\n\nFA_SHOT_ID\x10,\x12\x13\n\x0f\x46\x41_STATION_NAME\x10-\x12\x11\n\rFA_OBSGRAVITY\x10.\x12\x10\n\x0c\x46\x41_METERELEV\x10/\x12\x13\n\x0f\x46\x41_STNELEVATION\x10\x30\x12\r\n\tFA_NVALUE\x10\x31\x12\x17\n\x13\x46\x41_CORRECTEDGRAVITY\x10\x32\x12\x0f\n\x0b\x46\x41_FREE_AIR\x10\x33\x12\x15\n\x11\x46\x41_SIMPLE_BOUGUER\x10\x34\x12\x0f\n\x0b\x46\x41_BULLARDB\x10\x35\x12\x10\n\x0c\x46\x41_POINTTYPE\x10\x36\x12\x11\n\rFA_POINTGROUP\x10\x37\x12\x14\n\x10\x46\x41_GRAVITY_UNITS\x10\x38\x12\x0b\n\x07\x46\x41_BEAM\x10\x39\x12\x15\n\x11\x46\x41_SPRING_TENSION\x10:\x12\x15\n\x11\x46\x41_CROSS_COUPLING\x10;\x12\n\n\x06\x46\x41_VCC\x10<\x12\t\n\x05\x46\x41_AL\x10=\x12\t\n\x05\x46\x41_AX\x10>\x12\t\n\x05\x46\x41_VE\x10?\x12\n\n\x06\x46\x41_AX2\x10@\x12\x0c\n\x08\x46\x41_XACC2\x10\x41\x12\x0c\n\x08\x46\x41_LACC2\x10\x42\x12\x0b\n\x07\x46\x41_XACC\x10\x43\x12\x0b\n\x07\x46\x41_LACC\x10\x44\x12\x0f\n\x0b\x46\x41_VCCPHASE\x10\x45\x12\x0e\n\nFA_AXPHASE\x10\x46\x12\x0e\n\nFA_ALPHASE\x10G\x12\x0e\n\nFA_BELL_I1\x10H\x12\x0e\n\nFA_BELL_I2\x10I\x12\x0e\n\nFA_BELL_I3\x10J\x12\x0e\n\nFA_BELL_C1\x10K\x12\x0e\n\nFA_BELL_C2\x10L\x12\x0e\n\nFA_BELL_C3\x10M\x12\x11\n\rFA_BELL_THETA\x10N\x12\x0c\n\x08\x46\x41_Pitch\x10Q\x12\x0b\n\x07\x46\x41_Roll\x10R\x12\n\n\x06\x46\x41_Yaw\x10S\x12\x14\n\x10\x46\x41_FilteredPitch\x10T\x12\x13\n\x0f\x46\x41_FilteredRoll\x10U\x12\x12\n\x0e\x46\x41_FilteredYaw\x10V\x12\x0b\n\x07\x46\x41_NONE\x10W\x12\x15\n\x11\x46\x41_Susceptibility\x10X\x12\x15\n\x11\x46\x41_RemanenceNorth\x10Y\x12\x14\n\x10\x46\x41_RemanenceEast\x10Z\x12\x14\n\x10\x46\x41_RemanenceDown\x10[\x12\x19\n\x15\x46\x41_RemanenceMagnitude\x10\\\x12\n\n\x06\x46\x41_TMI\x10^\x12\x14\n\x10\x46\x41_Observed_EM_X\x10_\x12\x14\n\x10\x46\x41_Observed_EM_Y\x10`\x12\x14\n\x10\x46\x41_Observed_EM_Z\x10\x61\x12\x0c\n\x08\x46\x41_Title\x10\x64\x12\x15\n\x11\x46\x41_PROCESSED_DATE\x10\x65\x12\x11\n\rFA_DATE_ADDED\x10\x66\x12\x18\n\x14\x46\x41_MINIMUM_LONGITUDE\x10g\x12\x17\n\x13\x46\x41_MINIMUM_LATITUDE\x10h\x12\x18\n\x14\x46\x41_MAXIMUM_LONGITUDE\x10i\x12\x17\n\x13\x46\x41_MAXIMUM_LATITUDE\x10j\x12\x0c\n\x08\x46\x41_BLOCK\x10k\x12\x0f\n\x0b\x46\x41_MAPSHEET\x10k\x12\x0b\n\x07\x46\x41_UUID\x10l\x12\x0c\n\x08\x46\x41_THEME\x10m\x12\x15\n\x11\x46\x41_DATASET_FORMAT\x10n\x12\x10\n\x0c\x46\x41_FILE_SIZE\x10o\x12\x0f\n\x0b\x46\x41_DATA_URL\x10p\x12\x0f\n\x0b\x46\x41_CELLSIZE\x10q\x12\x13\n\x0f\x46\x41_COORD_SYSTEM\x10r\x12\x15\n\x11\x46\x41_FLIGHT_SPACING\x10s\x12\x14\n\x10\x46\x41_NATIONAL_GRID\x10t\x12\x11\n\rFA_ASSET_TEAM\x10u\x12\x10\n\x0c\x46\x41_VWC_ALIAS\x10v\x12\x10\n\x0c\x46\x41_PUBLISHED\x10w\x12\x0e\n\nFA_Subject\x10{\x12\x0f\n\x0b\x46\x41_Abstract\x10|\x12\x0e\n\tFA_Source\x10\x80\x01\x12\x13\n\x0e\x46\x41_Association\x10\x81\x01\x12\x11\n\x0c\x46\x41_Lithology\x10\x96\x01\x12\x15\n\x10\x46\x41_GradientsEast\x10\x97\x01\x12\x16\n\x11\x46\x41_GradientsNorth\x10\x98\x01\x12\x13\n\x0e\x46\x41_GradientsUp\x10\x99\x01\x12\x15\n\x10\x46\x41_PSEUDO_FLIGHT\x10\x9b\x01\x12\x19\n\x14\x46\x41_ESTIMATED_CAESIUM\x10\x9c\x01\x12\x12\n\rFA_HIGH_RADON\x10\x9d\x01\x12\x10\n\x0b\x46\x41_NO_ALIAS\x10\xc7\x01\x1a\x02\x10\x01*\xb5\x05\n\x0b\x44\x66\x61\x46ileType\x12\x0c\n\x08\x46T_IMAGE\x10\x00\x12\x0c\n\x08\x46T_POINT\x10\x01\x12\x0b\n\x07\x46T_LINE\x10\x02\x12\x0e\n\nFT_POLYGON\x10\x03\x12\x0c\n\x08\x46T_INDEX\x10\x04\x12\n\n\x06\x46T_LUT\x10\x05\x12\n\n\x06\x46T_DIR\x10\x06\x12\x0f\n\x0b\x46T_EXTERNAL\x10\x07\x12\n\n\x06\x46T_ANY\x10\x08\x12\n\n\x06\x46T_JOB\x10\t\x12\x0e\n\nFT_HISTORY\x10\n\x12\x0f\n\x0b\x46T_HARDCOPY\x10\x0b\x12\t\n\x05\x46T_PC\x10\x0c\x12\n\n\x06\x46T_ADF\x10\r\x12\x0c\n\x08\x46T_ASCII\x10\x0e\x12\r\n\tFT_REPORT\x10\x0f\x12\n\n\x06\x46T_MAP\x10\x10\x12\x0c\n\x08\x46T_MACRO\x10\x11\x12\r\n\tFT_LEGEND\x10\x12\x12\x0c\n\x08\x46T_VOXET\x10\x13\x12\x0e\n\nFT_SURFACE\x10\x14\x12\n\n\x06\x46T_DDF\x10\x15\x12\r\n\tFT_KERNEL\x10\x16\x12\n\n\x06\x46T_FFT\x10\x17\x12\x0b\n\x07\x46T_PROJ\x10\x18\x12\x0c\n\x08\x46T_DATUM\x10\x19\x12\r\n\tFT_CONFIG\x10\x1a\x12\x0b\n\x07\x46T_FORM\x10\x1b\x12\x0b\n\x07\x46T_HELP\x10\x1c\x12\x12\n\x0e\x46T_GEOMODELLER\x10\x1d\x12\x0c\n\x08\x46T_EULER\x10\x1e\x12\x0f\n\x0b\x46T_ANY_AGSO\x10\x1f\x12\x0c\n\x08\x46T_SHELL\x10!\x12\x0f\n\x0b\x46T_BOREHOLE\x10\"\x12\x14\n\x10\x46T_PROTOBUF_TASK\x10#\x12\r\n\tFT_IGMESH\x10$\x12\x0b\n\x07\x46T_GRID\x10%\x12\x0f\n\x0b\x46T_BRGM_XYZ\x10&\x12\n\n\x06\x46T_EDI\x10\'\x12\x0b\n\x07\x46T_SEGY\x10(\x12\x12\n\x0e\x46T_IMAGE_TYPES\x10)\x12\x18\n\x0b\x46T_ANY_GRID\x10\xfd\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1a\n\rFT_ANY_VECTOR\x10\xfe\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1f\n\x12\x46T_ANY_VECTOR_AGSO\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01*+\n\nAccessType\x12\r\n\tAT_DIRECT\x10\x01\x12\x0e\n\nAT_INDEXED\x10\x02*\x97\x01\n\x0b\x46lightTypes\x12\x0b\n\x07LT_REDO\x10\x01\x12\r\n\tLT_FLIGHT\x10\x02\x12\n\n\x06LT_TIE\x10\x04\x12\x0e\n\nLT_DIURNAL\x10\x08\x12\x0c\n\x08LT_CALIB\x10\x10\x12\x0e\n\nLT_SPECTRA\x10 \x12\r\n\tLT_RANDOM\x10@\x12\x12\n\rLT_IGNORE_TIE\x10\x80\x01\x12\x0f\n\tLT_IGNORE\x10\x80\x80\x01*s\n\x0f\x41pplicationType\x12\x0f\n\x0b\x41T_MAGNETIC\x10\x01\x12\x12\n\x0e\x41T_RADIOMETRIC\x10\x02\x12\x0e\n\nAT_GRAVITY\x10\x04\x12\t\n\x05\x41T_EM\x10\x08\x12\x0e\n\nAT_GEOLOGY\x10\x10\x12\x10\n\nAT_UNKNOWN\x10\x80\x80\x01*\xe7\x05\n\x14GeophysicsSignalType\x12\x0e\n\nGravimetry\x10\x00\x12\x07\n\x03Gxx\x10\x01\x12\x07\n\x03Gyy\x10\x02\x12\x07\n\x03Gzz\x10\x03\x12\x07\n\x03Gxy\x10\x04\x12\x07\n\x03Gxz\x10\x05\x12\x07\n\x03Gyz\x10\x06\x12\x07\n\x03Gee\x10\x07\x12\x07\n\x03Gnn\x10\x08\x12\x07\n\x03Gdd\x10\t\x12\x07\n\x03Gen\x10\n\x12\x07\n\x03Ged\x10\x0b\x12\x07\n\x03Gnd\x10\x0c\x12\x07\n\x03Guv\x10\r\x12\x06\n\x02Gz\x10\x0e\x12\r\n\tMagnetism\x10\x0f\x12\x07\n\x03Mxx\x10\x10\x12\x07\n\x03Myy\x10\x11\x12\x07\n\x03Mzz\x10\x12\x12\x07\n\x03Mxy\x10\x13\x12\x07\n\x03Mxz\x10\x14\x12\x07\n\x03Myz\x10\x15\x12\x06\n\x02Mx\x10\x16\x12\x06\n\x02My\x10\x17\x12\x06\n\x02Mz\x10\x18\x12\x07\n\x03Mee\x10\x19\x12\x07\n\x03Mnn\x10\x1a\x12\x07\n\x03Mdd\x10\x1b\x12\x07\n\x03Men\x10\x1c\x12\x07\n\x03Med\x10\x1d\x12\x07\n\x03Mnd\x10\x1e\x12\x06\n\x02Me\x10\x1f\x12\x06\n\x02Mn\x10 \x12\x06\n\x02Md\x10!\x12\x07\n\x03TMI\x10\"\x12\x0f\n\x0bTemperature\x10#\x12\x12\n\x0eUNKNOWN_SIGNAL\x10$\x12\x12\n\x0eGravityTensors\x10%\x12\x13\n\x0fMagneticTensors\x10&\x12\x08\n\x04Temp\x10\'\x12\t\n\x05Trend\x10(\x12\r\n\tElevation\x10)\x12\t\n\x05\x44\x65pth\x10\x37\x12\x11\n\rFalconTensors\x10*\x12\r\n\tAdvection\x10+\x12\x13\n\x0fSiesmicVelocity\x10,\x12\t\n\x05Pwave\x10-\x12\t\n\x05Swave\x10.\x12\x07\n\x03Goo\x10/\x12\x07\n\x03Moo\x10\x30\x12\x0e\n\nBathymetry\x10\x31\x12\x10\n\x0cRadiometrics\x10\x32\x12\r\n\tPotassium\x10\x33\x12\x0b\n\x07Thorium\x10\x34\x12\x0b\n\x07Uranium\x10\x35\x12\x0f\n\x0bTotal_Count\x10\x36\x12\x13\n\x0f\x45lectroMagnetic\x10<\x12\x10\n\x0c\x43onductivity\x10=\x12\x0f\n\x0bResistivity\x10>\x12\x13\n\x0fMagnetoTelluric\x10\x46\x12\t\n\x05Phase\x10G*C\n\x07GrfType\x12\x0c\n\x08GRF_AGRF\x10\x00\x12\x0c\n\x08GRF_IGRF\x10\x01\x12\x0e\n\nGRF_MANUAL\x10\x02\x12\x0c\n\x08GRF_USGS\x10\x03*;\n\x11GammaMeasures_3DE\x12\x12\n\x0e\x43ounts_per_bin\x10\x01\x12\x12\n\x0e\x45nergy_per_bin\x10\x02*S\n\x19\x43oordinateReferenceSystem\x12\x07\n\x03NED\x10\x00\x12\x07\n\x03\x45NU\x10\x01\x12\x07\n\x03\x45ND\x10\x02\x12\t\n\x05LOCAL\x10\x03\x12\x07\n\x03WSD\x10\x04\x12\x07\n\x03WSU\x10\x05*a\n\x0bReliability\x12\x0f\n\x0bUnspecified\x10\x00\x12\x0c\n\x08Observed\x10\x01\x12\x0c\n\x08Inferred\x10\x02\x12\x0f\n\x0bInterpreted\x10\x03\x12\x14\n\x10ModelConstructor\x10\x04*\x82\x01\n\x0eProvenanceType\x12\x08\n\x04none\x10\x00\x12\n\n\x06GISmap\x10\x01\x12\x15\n\x11\x66ield_observation\x10\x02\x12\x0c\n\x08inferred\x10\x03\x12\x10\n\x0cseismic_pick\x10\x04\x12\x11\n\rmagnetic_pick\x10\x05\x12\x10\n\x0cgravity_pick\x10\x06*B\n\x0cPolarityType\x12\x13\n\x0fNormal_Polarity\x10\x01\x12\x1d\n\x10Reverse_Polarity\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01*V\n\x19StratigraphicRelationship\x12\t\n\x05Onlap\x10\x01\x12\t\n\x05\x45rode\x10\x02\x12\x0b\n\x07\x43hannel\x10\x03\x12\r\n\tIntrusion\x10\x04\x12\x07\n\x03\x41ny\x10\x05*\x90\x01\n\x0fSectionDataType\x12\x12\n\x0erock_interface\x10\x00\x12\r\n\tfoliation\x10\x01\x12\x0b\n\x07\x63ontact\x10\x02\x12\x0e\n\ntrajectory\x10\x03\x12\x0b\n\x07sondage\x10\x04\x12\x10\n\x0cintersection\x10\x05\x12\x08\n\x04\x66ond\x10\x06\x12\x08\n\x04\x64yke\x10\x07\x12\n\n\x06region\x10\x08*\xb1\x01\n\x10GeologyObsType3D\x12\x0e\n\ncontact_3D\x10\x00\x12\x10\n\x0c\x66oliation_3D\x10\x01\x12\x13\n\x0f\x61pparent_dip_3D\x10\x03\x12\x0b\n\x07\x44yke_3D\x10\x04\x12 \n\x1cInterface_project2Section_3D\x10\x05\x12\"\n\x1eOrientation_project2Section_3D\x10\x06\x12\x13\n\x0f\x66\x61ult_limits_3D\x10\x07*p\n\x15OrientationMethodType\x12\r\n\tundefined\x10\x00\x12\x11\n\rdip_direction\x10\x01\x12\x0f\n\x0b\x64ip_azimuth\x10\x02\x12\x14\n\x10line_orientation\x10\x03\x12\x0e\n\northogonal\x10\x04*\xdf\x03\n\x0cPropertyType\x12\x0b\n\x07\x44\x65nsity\x10\x00\x12\x12\n\x0eSusceptibility\x10\x01\x12\r\n\tRemanence\x10\x02\x12\x17\n\x13ThermalConductivity\x10\x07\x12\x16\n\x12HeatProductionRate\x10\x08\x12\x10\n\x0cSpecificHeat\x10\t\x12\x11\n\rAdvectionRate\x10\n\x12\x11\n\rSonicVelocity\x10\x0c\x12\x16\n\x12SonicShearVelocity\x10\x13\x12\x0c\n\x08Porosity\x10\r\x12\x11\n\rFluidVelocity\x10\x0e\x12\x1a\n\x16\x45lectricalConductivity\x10\x11\x12\x19\n\x15\x45lectricalResistivity\x10\x12\x12\x14\n\x10IP_CHARGEABILITY\x10\x14\x12\x14\n\x10IP_TIME_CONSTANT\x10\x15\x12\x17\n\x13IP_FREQUENCY_FACTOR\x10\x16\x12\x0f\n\x0b\x43ommonality\x10\x03\x12\x15\n\x11\x43ommonalityVolume\x10\x04\x12\x0e\n\nShapeRatio\x10\x05\x12\x0f\n\x0bVolumeRatio\x10\x06\x12 \n\x1cPreserveVerticalRelationship\x10\x0b\x12\x0b\n\x07Movable\x10\x0f\x12\t\n\x05Index\x10\x10*\xbd\x01\n\x12ProbabilityLawType\x12\x16\n\x12NormalDistribution\x10\x00\x12\r\n\tLogNormal\x10\x01\x12\x0e\n\nLog_normal\x10\x02\x12\x0b\n\x07Poisson\x10\x03\x12\x0c\n\x08Rayleigh\x10\x04\x12\x0b\n\x07Uniform\x10\x05\x12\x10\n\x0cUniform_Plus\x10\x06\x12\x11\n\rUniform_Minus\x10\x07\x12\x0b\n\x07Weibull\x10\x08\x12\x16\n\x12\x46isherDistribution\x10\t*\x8f\x01\n\x15MeshGrid_TypeMeshGrid\x12\x13\n\x0fMeshGrid_VERTEX\x10\x01\x12\x15\n\x11MeshGrid_TRIANGLE\x10\x02\x12\x11\n\rMeshGrid_QUAD\x10\x03\x12\x12\n\x0eMeshGrid_TETRA\x10\x04\x12\x11\n\rMeshGrid_CUBE\x10\x05\x12\x10\n\x0cMeshGrid_ANY\x10\x06*o\n\x13InterpolationMethod\x12\x19\n\x15IM_InverserveDistance\x10\x01\x12\x0e\n\nIM_Kriging\x10\x02\x12\x18\n\x14IM_Minimum_Curvature\x10\x03\x12\x13\n\x0fIM_Tensor_Slerp\x10\x04*W\n\x0fInputDataSource\x12\x10\n\x0cIDS_Points3D\x10\x01\x12\x12\n\x0eIDS_DrillHoles\x10\x02\x12\x1e\n\x1aIDS_DrillHolesPlus3DPoints\x10\x03*\x8d\x01\n\x0eOutputMeshType\x12\x15\n\x11ODT_RegularMesh3D\x10\x01\x12\x15\n\x11ODT_RegularMesh2D\x10\x02\x12\x19\n\x15ODT_TopographySurface\x10\x03\x12\x17\n\x13ODT_IrregularMesh3D\x10\x04\x12\x19\n\x15ODT_SemiRegularMesh3D\x10\x05*l\n\x17InterpolationOutputType\x12\n\n\x06IOT_D3\x10\x00\x12\x10\n\x0cIOT_D2_polar\x10\x01\x12\n\n\x06IOT_D1\x10\x02\x12\x18\n\x14IOT_GeologicalDomain\x10\x03\x12\r\n\tIOT_OnlyT\x10\x04*S\n\x12VariogramComponent\x12\x08\n\x04VC_U\x10\x01\x12\x08\n\x04VC_V\x10\x02\x12\x08\n\x04VC_W\x10\x03\x12\n\n\x06VC_RHO\x10\x04\x12\x08\n\x04VC_T\x10\x05\x12\t\n\x05VC_UV\x10\x06*\x9c\x01\n\x12VariogramModelType\x12\x11\n\rVMT_Spherical\x10\x01\x12\x13\n\x0fVMT_Exponential\x10\x02\x12\x10\n\x0cVMT_Gaussian\x10\x03\x12\x10\n\x0cVMT_PowerLaw\x10\x04\x12\x10\n\x0cVMT_CubicLaw\x10\x05\x12\x12\n\x0eVMT_GravityLaw\x10\x06\x12\x14\n\x10VMT_MagneticsLaw\x10\x07*9\n\x0eNeighbourStyle\x12\x10\n\x0cNS_Voisinage\x10\x01\x12\x15\n\x11NS_RegularGridBox\x10\x02*\x82\x01\n\x13\x43omputationalMethod\x12\x0b\n\x07Spatial\x10\x00\x12\x18\n\x14\x46\x61stFourierTransform\x10\x01\x12\x12\n\x0e\x44yke_Skeletons\x10\x02\x12\n\n\x06\x46\x61\x63\x65ts\x10\x03\x12\x15\n\x11Surface_Integrals\x10\x04\x12\r\n\tCylinders\x10\x05*F\n\x0b\x43\x45NTER_TYPE\x12\x11\n\rMEAN_POSITION\x10\x01\x12\x12\n\x0e\x44\x41TABOX_CENTER\x10\x02\x12\x10\n\x0cUSER_DEFINED\x10\x03*7\n\x14VfiltExpansionMethod\x12\x08\n\x04Zero\x10\x00\x12\n\n\x06Mirror\x10\x01\x12\t\n\x05Taper\x10\x02*\xa4\x01\n\x0cTMI_Products\x12\x0b\n\x07TMItoXX\x10\x01\x12\x0b\n\x07TMItoYY\x10\x02\x12\x0b\n\x07TMItoZZ\x10\x03\x12\x0b\n\x07TMItoXY\x10\x04\x12\x0b\n\x07TMItoYZ\x10\x05\x12\x0b\n\x07TMItoZX\x10\x06\x12\x11\n\rTMItoCOMPLETE\x10\x07\x12\n\n\x06TMItoX\x10\x08\x12\n\n\x06TMItoY\x10\t\x12\n\n\x06TMItoZ\x10\n\x12\x0f\n\x0bTMItoVector\x10\x0b*\x90\r\n\x12TensorProduct_list\x12\r\n\tTENSOR_XX\x10\n\x12\r\n\tTENSOR_YY\x10\x0b\x12\r\n\tTENSOR_ZZ\x10\x0c\x12\r\n\tTENSOR_XY\x10\r\x12\r\n\tTENSOR_YZ\x10\x0e\x12\r\n\tTENSOR_ZX\x10\x0f\x12\r\n\tTENSOR_UV\x10\x10\x12\x16\n\x12TENSOR_Determinant\x10\x11\x12\x14\n\x10TENSOR_Max_Eigen\x10\x12\x12\x14\n\x10TENSOR_Mid_Eigen\x10\x13\x12\x14\n\x10TENSOR_Min_Eigen\x10\x14\x12\x10\n\x0cTENSOR_Trace\x10\x15\x12\x1b\n\x17TENSOR_Second_Invariant\x10\x16\x12\x10\n\x0cTENSOR_Ratio\x10\x17\x12\x11\n\rTENSOR_Strike\x10\x18\x12\"\n\x1eTENSOR_CubeRoot_of_Determinant\x10\x19\x12)\n%TENSOR_SquareRoot_of_Second_Invariant\x10\x1a\x12(\n$TENSOR_Horizontal_Gradient_Amplitude\x10\x1b\x12(\n$TENSOR_Horizontal_Gradient_Direction\x10\x1c\x12\'\n#TENSOR_Curvature_Gradient_Amplitude\x10\x1d\x12\'\n#TENSOR_Curvature_Gradient_Direction\x10\x1e\x12\x1c\n\x18TENSOR_Octahedral_Normal\x10\x1f\x12\x1b\n\x17TENSOR_Octahedral_Shear\x10 \x12\x13\n\x0fTENSOR_Complete\x10!\x12\x0f\n\x0bTENSOR_Norm\x10\"\x12\x1f\n\x1bTENSOR_Quaternion_Real_part\x10#\x12\x1c\n\x18TENSOR_Quaternion_I_part\x10$\x12\x1c\n\x18TENSOR_Quaternion_J_part\x10%\x12\x1c\n\x18TENSOR_Quaternion_K_part\x10&\x12\x1c\n\x18TENSOR_Maximum_Magnitude\x10\'\x12\"\n\x1eTENSOR_Unit_EigenVector_Volume\x10(\x12\x10\n\x0cTENSOR_Phase\x10)\x12\x11\n\rTENSOR_Modulo\x10*\x12\x14\n\x10TENSOR_EigenAxis\x10+\x12\x1f\n\x1bTENSOR_Quaternion_RGB_Phase\x10,\x12\x0f\n\x0bTENSOR_FREQ\x10-\x12\x13\n\x0fTENSOR_ZZ_XXtoZ\x10\x31\x12\x14\n\x10TENSOR_ZZ_XXtoZZ\x10\x32\x12\x13\n\x0fTENSOR_ZZ_YYtoZ\x10\x33\x12\x14\n\x10TENSOR_ZZ_YYtoZZ\x10\x34\x12\x10\n\x0cTENSOR_ZtoXX\x10\x35\x12\x10\n\x0cTENSOR_ZtoYY\x10\x36\x12\x10\n\x0cTENSOR_ZtoZZ\x10\x37\x12\x10\n\x0cTENSOR_ZtoXY\x10\x38\x12\x10\n\x0cTENSOR_ZtoYZ\x10\x39\x12\x10\n\x0cTENSOR_ZtoZX\x10:\x12\x0f\n\x0bTENSOR_2TMI\x10;\x12\x0f\n\x0bTENSOR_TILT\x10<\x12\x10\n\x0cTENSOR_BRUTE\x10=\x12\x1b\n\x17TENSOR_SCALAR_MAGNITUDE\x10>\x12\x0e\n\nTENSOR_AUV\x10?\x12\x0e\n\nTENSOR_ANE\x10@\x12\x0e\n\nTENSOR_BUV\x10\x41\x12\x0e\n\nTENSOR_BNE\x10\x42\x12\x12\n\x0eTENSOR_BRUTE_B\x10\x43\x12\x1e\n\x1aTENSOR_COMPLETE_FALCON_FFT\x10\x44\x12!\n\x1dTENSOR_FirstBalancedGradientX\x10\x46\x12!\n\x1dTENSOR_FirstBalancedGradientY\x10G\x12!\n\x1dTENSOR_FirstBalancedGradientZ\x10H\x12\"\n\x1eTENSOR_SecondBalancedGradientX\x10I\x12\"\n\x1eTENSOR_SecondBalancedGradientY\x10J\x12\"\n\x1eTENSOR_SecondBalancedGradientZ\x10K\x12%\n!TENSOR_Quaternion_Isotropic_Phase\x10P\x12&\n\"TENSOR_Quaternion_Deviatoric_Phase\x10Q\x12\"\n\x1eTENSOR_Quaternion_Modulo_Phase\x10R\x12\x14\n\x10TENSOR_ZtoFALCON\x10\x63*\xa0\x02\n\x19Tensor_Integration_Method\x12\x10\n\x0cINT_XZ_YZ_ZZ\x10\x00\x12\r\n\tINT_XZ_YZ\x10\x01\x12\n\n\x06INT_ZZ\x10\x04\x12\n\n\x06INT_XZ\x10\x02\x12\n\n\x06INT_YZ\x10\x03\x12\x0b\n\x07INT_TMI\x10\x05\x12\r\n\tINT_TRACE\x10\x06\x12\x11\n\rINT_POTENTIAL\x10\x07\x12\x16\n\x12INT_MEAN_CURVATURE\x10\x08\x12\x1e\n\x1aINT_DIFFERENTIAL_CURVATURE\x10\t\x12\x12\n\x0eINT_PLUMB_LINE\x10\n\x12\x1a\n\x16INT_GAUSSIAN_CURVATURE\x10\x0b\x12\x13\n\x0fINT_SHAPE_INDEX\x10\x0c\x12\x12\n\x0eINT_MAG_VECTOR\x10\r*_\n\x16\x46\x61lcon_Reading_Options\x12\x0c\n\x08\x46\x41LCON_A\x10\x00\x12\x0c\n\x08\x46\x41LCON_B\x10\x01\x12\x12\n\x0e\x46\x41LCON_AVERAGE\x10\x02\x12\x15\n\x11\x46\x41LCON_DIFFERENCE\x10\x03*\x9b\x02\n\x1b\x46\x61lcon_FFT_TRANSFORM_Option\x12\x0e\n\nFALCON_FTG\x10\x00\x12\x0e\n\nFALCON_TZZ\x10\x01\x12\x0e\n\nFALCON_TXX\x10\x02\x12\x0e\n\nFALCON_TYY\x10\x03\x12\x0e\n\nFALCON_TXY\x10\x04\x12\x0e\n\nFALCON_TXZ\x10\x05\x12\x0e\n\nFALCON_TYZ\x10\x06\x12\r\n\tFALCON_TZ\x10\x07\x12\r\n\tFALCON_TX\x10\x08\x12\r\n\tFALCON_TY\x10\t\x12\x14\n\x10\x46\x41LCON_POTENTIAL\x10\n\x12\x0e\n\nFALCON_TUV\x10\x0b\x12\x16\n\x12\x46\x41LCON_CHECK_PHASE\x10\x0c\x12!\n\x1d\x46\x41LCON_DIFFERENTIAL_CURVATURE\x10\r*\xd9\x02\n\x12VectorProduct_list\x12\x13\n\x0f\x41NALYTIC_SIGNAL\x10\x64\x12\x18\n\x14TOTAL_HORIZONTALGRAD\x10\x65\x12\x13\n\x0f\x45\x41ST_HORIZONTAL\x10\x66\x12\x14\n\x10NORTH_HORIZONTAL\x10g\x12\x11\n\rVERTICAL_GRAD\x10h\x12\x13\n\x0f\x45NHANCED_SIGNAL\x10i\x12\x16\n\x12\x43\x41LCULATED_DIURNAL\x10j\x12\x14\n\x10TRANS_HORIZONTAL\x10k\x12\x13\n\x0fLONG_HORIZONTAL\x10l\x12\x0e\n\nTILT_ANGLE\x10m\x12\x12\n\x0e\x45\x41ST_COMPONENT\x10n\x12\x13\n\x0fNORTH_COMPONENT\x10o\x12\x16\n\x12VERTICAL_COMPONENT\x10p\x12\x0f\n\x0bVECTOR_GRID\x10q\x12\x1c\n\x18TOTAL_MAGNETIC_INTENSITY\x10r*\xc1\x01\n\x16QuaternionProduct_list\x12\x14\n\x0fQUATERNION_REAL\x10\xc8\x01\x12\x11\n\x0cQUATERNION_I\x10\xc9\x01\x12\x11\n\x0cQUATERNION_J\x10\xca\x01\x12\x11\n\x0cQUATERNION_K\x10\xcb\x01\x12\x16\n\x11QUATERNION_NORMAL\x10\xcc\x01\x12\x14\n\x0fQUATERNION_ROLL\x10\xcd\x01\x12\x15\n\x10QUATERNION_PITCH\x10\xce\x01\x12\x13\n\x0eQUATERNION_YAW\x10\xcf\x01*s\n\x12ScalarProduct_list\x12\x13\n\x0f\x43OMPONENTS_NONE\x10\x00\x12\x14\n\x10SIGNAL_MAGNITUDE\x10\x01\x12\r\n\tREAL_PART\x10\x02\x12\x12\n\x0eIMAGINARY_PART\x10\x03\x12\x0f\n\x0bPHASE_ANGLE\x10\x04*\x8b\x01\n\x0b\x64\x61te_styles\x12\x0c\n\x08YYYYMMDD\x10\x00\x12\x0c\n\x08\x44\x44MMYYYY\x10\x01\x12\n\n\x06\x44\x44MMYY\x10\x02\x12\n\n\x06YYMMDD\x10\x03\x12\n\n\x06MMDDYY\x10\x04\x12\x08\n\x04JDAY\x10\x06\x12\x10\n\x0c\x44\x45\x43IMAL_YEAR\x10\x07\x12 \n\x13UNKNOWN_DATE_FORMAT\x10\x9d\xff\xff\xff\xff\xff\xff\xff\xff\x01*7\n\x0e\x64iurnal_styles\x12\x14\n\x10\x46LIGHT_DATE_TIME\x10\x00\x12\x0f\n\x0bJULIAN_TIME\x10\x01'
+  serialized_pb=b'\n\x15\x63ommontaskmodel.proto\x12\x03\x63tm\"*\n\tPairInt32\x12\r\n\x05\x66irst\x18\x01 \x02(\x05\x12\x0e\n\x06second\x18\x02 \x02(\x05\"+\n\nPairDouble\x12\r\n\x05\x66irst\x18\x01 \x02(\x01\x12\x0e\n\x06second\x18\x02 \x02(\x01\"\x1f\n\x07Point2d\x12\t\n\x01x\x18\x01 \x02(\x01\x12\t\n\x01y\x18\x02 \x02(\x01\"*\n\x07Point3d\x12\t\n\x01x\x18\x01 \x02(\x01\x12\t\n\x01y\x18\x02 \x02(\x01\x12\t\n\x01z\x18\x03 \x02(\x01\"\x1f\n\x0bReturnInt32\x12\x10\n\x05value\x18\x01 \x01(\x05:\x01\x30\"\x1e\n\x0eRepeatedString\x12\x0c\n\x04node\x18\x01 \x03(\t\" \n\x0cRepeatedBool\x12\x10\n\x04node\x18\x01 \x03(\x08\x42\x02\x10\x01\"\"\n\x0eRepeatedDouble\x12\x10\n\x04node\x18\x01 \x03(\x01\x42\x02\x10\x01\"!\n\rRepeatedInt32\x12\x10\n\x04node\x18\x01 \x03(\x05\x42\x02\x10\x01\"*\n\x0cKeywordValue\x12\x0b\n\x03key\x18\x01 \x02(\t\x12\r\n\x05value\x18\x02 \x02(\t\"A\n\x06\x43olour\x12\x0b\n\x03red\x18\x01 \x01(\x01\x12\r\n\x05green\x18\x02 \x01(\x01\x12\x0c\n\x04\x62lue\x18\x03 \x01(\x01\x12\r\n\x05\x61lpha\x18\x04 \x01(\x01\"y\n\x0b\x42oundingBox\x12\x0c\n\x04xmin\x18\x01 \x02(\x01\x12\x0c\n\x04ymin\x18\x02 \x02(\x01\x12\x0c\n\x04zmin\x18\x03 \x02(\x01\x12\x0c\n\x04xmax\x18\x04 \x02(\x01\x12\x0c\n\x04ymax\x18\x05 \x02(\x01\x12\x0c\n\x04zmax\x18\x06 \x02(\x01\x12\x16\n\x08internal\x18\x07 \x01(\x08:\x04true\"}\n\rBoundingBox2D\x12\x0c\n\x04xmin\x18\x01 \x02(\x01\x12\x0c\n\x04ymin\x18\x02 \x02(\x01\x12\x0c\n\x04xmax\x18\x04 \x02(\x01\x12\x0c\n\x04ymax\x18\x05 \x02(\x01\x12\x16\n\x08internal\x18\x06 \x01(\x08:\x04true\x12\r\n\x05xcell\x18\x07 \x01(\x01\x12\r\n\x05ycell\x18\x08 \x01(\x01\"{\n\x16RotatableBoundingBox2D\x12\x15\n\rCentroid_East\x18\x01 \x02(\x01\x12\x16\n\x0e\x43\x65ntroid_North\x18\x02 \x02(\x01\x12\r\n\x05Width\x18\x03 \x02(\x01\x12\x0e\n\x06Height\x18\x04 \x02(\x01\x12\x13\n\x08Rotation\x18\x05 \x01(\x01:\x01\x30\"\xa8\x01\n\rGeodeticBox2D\x12\x14\n\x05long0\x18\x01 \x01(\x01:\x05\x31\x31\x31.5\x12\x13\n\x04lat0\x18\x02 \x01(\x01:\x05-44.3\x12\x12\n\x05long1\x18\x04 \x01(\x01:\x03\x31\x35\x35\x12\x11\n\x04lat1\x18\x05 \x01(\x01:\x03-10\x12\x16\n\x08internal\x18\x06 \x01(\x08:\x04true\x12-\n\x08transect\x18\x07 \x01(\x0e\x32\x17.ctm.Transect_Direction:\x02WE\"P\n\nBasicStats\x12\x0f\n\x07\x61verage\x18\x01 \x01(\x01\x12\x0f\n\x07std_dev\x18\x02 \x01(\x01\x12\x0f\n\x07minimum\x18\x03 \x01(\x01\x12\x0f\n\x07maximum\x18\x04 \x01(\x01\"\x10\n\x0eTemporalExtent\"\x95\x04\n\x08Grid_INT\x12\x1c\n\tGrid_Name\x18\x01 \x02(\t:\tinput.ers\x12.\n\x06\x66ormat\x18\x02 \x01(\x0e\x32\x10.ctm.Grid_Format:\x0cINTREPIDGRID\x12)\n\nProjection\x18\x03 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12?\n\rTensorProduct\x18\x04 \x01(\x0e\x32\x17.ctm.TensorProduct_list:\x0fTENSOR_Complete\x12\x18\n\x0b\x43\x65ll_Size_X\x18\x05 \x01(\x01:\x03\x31\x30\x30\x12\x18\n\x0b\x43\x65ll_Size_Y\x18\x06 \x01(\x01:\x03\x31\x30\x30\x12\x13\n\x08Origin_X\x18\x07 \x01(\x01:\x01\x30\x12\x13\n\x08Origin_Y\x18\x08 \x01(\x01:\x01\x30\x12\x11\n\x04Rows\x18\t \x01(\x05:\x03\x31\x30\x30\x12\x14\n\x07\x43olumns\x18\n \x01(\x05:\x03\x31\x30\x30\x12\x10\n\x05\x42\x61nds\x18\x0b \x01(\x05:\x01\x31\x12\x13\n\tBand_Name\x18\x0c \x01(\t:\x00\x12\x0f\n\x04\x42\x61nd\x18\r \x01(\x05:\x01\x31\x12\x33\n\x08\x44\x61taType\x18\x0e \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12\x13\n\x08Rotation\x18\x0f \x01(\x01:\x01\x30\x12\x1a\n\nNull_Value\x18\x10 \x01(\x01:\x06-99999\x12*\n\x05units\x18\x11 \x01(\x0e\x32\x13.ctm.Distance_Units:\x06meters\"\xb6\x02\n\x10MeasuredGrid_INT\x12\x33\n\x04type\x18\x01 \x01(\x0e\x32\x19.ctm.GeophysicsSignalType:\nGravimetry\x12\x19\n\x0emean_elevation\x18\x02 \x01(\x01:\x01\x30\x12\x16\n\tprecision\x18\x03 \x01(\x01:\x03\x30.1\x12\x19\n\x0bMatch_Trend\x18\x04 \x01(\x08:\x04true\x12\x1d\n\x12Match_Trend_Degree\x18\x05 \x01(\x05:\x01\x32\x12\x1e\n\x10Match_Trend_Rate\x18\x06 \x01(\x05:\x04\x31\x30\x30\x30\x12\x41\n\x14\x43oordinateSystemType\x18\x07 \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12\x0c\n\x04grid\x18\x08 \x01(\t\x12\x0f\n\x04\x42\x61nd\x18\t \x01(\x05:\x01\x31\"\xa3\x01\n\x10\x43oordinateSystem\x12\x16\n\x0egeographic2DCS\x18\x01 \x01(\t\x12\x16\n\x0emap_projection\x18\x02 \x01(\t\x12\x11\n\tCS_Number\x18\x03 \x01(\x11\x12\x14\n\x0cheight_datum\x18\x04 \x01(\t\x12\x11\n\tellipsoid\x18\x05 \x01(\t\x12\x15\n\rspatial_datum\x18\x06 \x01(\t\x12\x0c\n\x04\x65psg\x18\x07 \x01(\x05\"\x85\x01\n$AngleProbabilityDistributionFunction\x12\x39\n\x04type\x18\x01 \x02(\x0e\x32\x17.ctm.ProbabilityLawType:\x12\x46isherDistribution\x12\x0f\n\x04mean\x18\x02 \x01(\x01:\x01\x30\x12\x11\n\x06stddev\x18\x03 \x01(\x01:\x01\x30\"\xc8\x03\n\x15LithologyProperty_GMT\x12\x11\n\tlithology\x18\x01 \x02(\t\x12#\n\x08property\x18\x02 \x01(\x0e\x32\x11.ctm.PropertyType\x12Q\n\x1fProbabilityDistributionFunction\x18\x03 \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12R\n ProbabilityDistributionFunction2\x18\x04 \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12R\n ProbabilityDistributionFunction3\x18\x05 \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12\x14\n\x05\x66ixed\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x0findex_voxet_key\x18\x07 \x01(\x05\x12\x13\n\x0blower_bound\x18\x08 \x01(\x01\x12\x13\n\x0bupper_bound\x18\t \x01(\x01\x12#\n\x08preserve\x18\n \x01(\x0b\x32\x11.ctm.RepeatedBool\"\xaa\x02\n#ProbabilityDistributionFunction_GMT\x12\x39\n\x04type\x18\x01 \x02(\x0e\x32\x17.ctm.ProbabilityLawType:\x12NormalDistribution\x12\x0f\n\x04mean\x18\x02 \x01(\x01:\x01\x30\x12\x11\n\x06stddev\x18\x03 \x01(\x01:\x01\x30\x12\x16\n\x0binclination\x18\x04 \x01(\x01:\x01\x30\x12\x16\n\x0b\x64\x65\x63lination\x18\x05 \x01(\x01:\x01\x30\x12\x17\n\npercentage\x18\x06 \x01(\x05:\x03\x31\x30\x30\x12\x17\n\x0f\x64\x65pthvaluepairs\x18\x07 \x01(\t\x12\x13\n\x0binput_voxet\x18\x08 \x01(\t\x12\x19\n\x11input_voxet_field\x18\t \x01(\t\x12\x12\n\ninput_grid\x18\n \x01(\t\"\xb6\x02\n\x19SetReferenceMagneticField\x12\x11\n\tMagnitude\x18\x01 \x01(\x01\x12\x13\n\x0bInclination\x18\x02 \x01(\x01\x12\x13\n\x0b\x44\x65\x63lination\x18\x03 \x01(\x01\x12\x14\n\tmag_error\x18\x05 \x01(\x01:\x01\x30\x12\x1c\n\x11inclination_error\x18\x06 \x01(\x01:\x01\x30\x12\x1c\n\x11\x64\x65\x63lination_error\x18\x07 \x01(\x01:\x01\x30\x12\x18\n\nSurveyYear\x18\x08 \x01(\x05:\x04\x32\x30\x31\x32\x12\x16\n\x0bSurveyMonth\x18\t \x01(\x05:\x01\x31\x12\x14\n\tSurveyDay\x18\n \x01(\x05:\x01\x31\x12\x16\n\tElevation\x18\x0c \x01(\x01:\x03\x31\x30\x30\x12*\n\nField_Type\x18\r \x01(\x0e\x32\x0c.ctm.GrfType:\x08GRF_IGRF\"P\n\x06Tensor\x12\n\n\x02XX\x18\x01 \x01(\x01\x12\n\n\x02YY\x18\x02 \x01(\x01\x12\n\n\x02ZZ\x18\x03 \x01(\x01\x12\n\n\x02XY\x18\x04 \x01(\x01\x12\n\n\x02YZ\x18\x05 \x01(\x01\x12\n\n\x02ZX\x18\x06 \x01(\x01\"0\n\rVectorMeasure\x12\t\n\x01X\x18\x01 \x01(\x01\x12\t\n\x01Y\x18\x02 \x01(\x01\x12\t\n\x01Z\x18\x03 \x01(\x01*$\n\x12Transect_Direction\x12\x06\n\x02SN\x10\x00\x12\x06\n\x02WE\x10\x01*\x8c\x01\n\x0e\x44istance_Units\x12\n\n\x06meters\x10\x00\x12\x08\n\x04\x66\x65\x65t\x10\x01\x12\x0f\n\x0b\x63\x65ntimeters\x10\x03\x12\x0e\n\nkilometers\x10\x05\x12\x08\n\x04yard\x10\x06\x12\x07\n\x03lab\x10\x07\x12\x13\n\x0f\x64\x65\x63imal_degrees\x10\x08\x12\x1b\n\x17\x64\x65grees_minutes_seconds\x10\t*K\n\x0eVertical_Units\x12\x14\n\x10meters_elevation\x10\x00\x12\x0f\n\x0btravel_time\x10\x01\x12\x12\n\x0e\x66\x65\x65t_elevation\x10\x02*O\n\x16GPSData_CoordinateType\x12\x13\n\x0fGPSData_unknown\x10\x00\x12\x0b\n\x07latLong\x10\x01\x12\x13\n\x0f\x65\x61stingNorthing\x10\x02*K\n\x12GPSData_HeaderType\x12\x12\n\x0eGPSData_ignore\x10\x00\x12\x10\n\x0cGPSData_none\x10\x01\x12\x0f\n\x0b\x63olumnNames\x10\x02*\xa8\x01\n\x0bGrid_Format\x12\x10\n\x0cINTREPIDGRID\x10\x00\x12\x10\n\x0c\x41SCIIArcGrid\x10\x01\x12\x0f\n\x0bGEOSOFTGRID\x10\x02\x12\x0e\n\nNETCDFGRID\x10\x03\x12\x0f\n\x0bNETDODSGRID\x10\x04\x12\x0c\n\x08SEMIGRID\x10\x05\x12\r\n\tZYCORGrid\x10\x06\x12\x08\n\x04TIFF\x10\x07\x12\x0f\n\x0b\x44XF_AUTOCAD\x10\t\x12\x0b\n\x07GXFGrid\x10\n*P\n\x0cImage_Format\x12\x0e\n\nPNG_format\x10\x01\x12\x0f\n\x0bTIFF_format\x10\x02\x12\x0f\n\x0bJPEG_format\x10\x03\x12\x0e\n\nGIF_format\x10\x04*\xc0\x04\n\x08\x44\x61taType\x12\x0b\n\x07\x44T_BYTE\x10\x00\x12\t\n\x05\x44T_I2\x10\x01\x12\t\n\x05\x44T_I4\x10\x02\x12\t\n\x05\x44T_R4\x10\x03\x12\t\n\x05\x44T_R8\x10\x04\x12\t\n\x05\x44T_CH\x10\x05\x12\t\n\x05\x44T_L4\x10\x06\x12\x0b\n\x07\x44T_DATE\x10\x07\x12\r\n\tDT_STRING\x10\x08\x12\n\n\x06\x44T_C16\x10\t\x12\t\n\x05\x44T_U2\x10\n\x12\r\n\tDT_TENSOR\x10\x0b\x12\x13\n\x0f\x44T_SDO_GEOMETRY\x10\x0c\x12\x0f\n\x0b\x44T_ARRAY_I2\x10\r\x12\x0f\n\x0b\x44T_ARRAY_I4\x10\x0e\x12\x0f\n\x0b\x44T_ARRAY_R4\x10\x0f\x12\x0f\n\x0b\x44T_ARRAY_R8\x10\x10\x12\t\n\x05\x44T_U4\x10\x11\x12\r\n\tDT_VECTOR\x10\x12\x12\x15\n\x11\x44T_OBSERVED_FIELD\x10\x13\x12\x11\n\rDT_STRUCTURAL\x10\x14\x12\x17\n\x13\x44T_OBSERVED_SEISMIC\x10\x15\x12\x17\n\x13\x44T_FIELD_COMPONENTS\x10\x16\x12\x16\n\x12\x44T_FIELD_GRADIENTS\x10\x17\x12\x15\n\x11\x44T_FIELD_SPECTRUM\x10\x18\x12\x11\n\rDT_QUATERNION\x10\x19\x12\x15\n\x11\x44T_COMPLEX_TENSOR\x10\x1a\x12\t\n\x05\x44T_I1\x10\x1b\x12\t\n\x05\x44T_I8\x10\x1c\x12\t\n\x05\x44T_U8\x10\x1d\x12\x0e\n\nDT_TENSOR2\x10\x1e\x12\x16\n\x12\x44T_COMPLEX_TENSOR2\x10\x1f\x12\x13\n\x0f\x44T_OBSERVED_AEM\x10 \x12\x12\n\x0e\x44T_LONG_STRING\x10!\x12\t\n\x05\x44T_C8\x10\"*\xa9\x08\n\nDataFormat\x12\x0e\n\nDF_UNKNOWN\x10\x00\x12\x0b\n\x07\x44\x46_PITS\x10\x01\x12\n\n\x06\x44\x46_ERM\x10\x02\x12\x0e\n\nDF_EXT_BMR\x10\x03\x12\x10\n\x0c\x44\x46_EXT_ASCII\x10\x04\x12\x10\n\x0c\x44\x46_EXT_ARGUS\x10\x05\x12\x10\n\x0c\x44\x46_EXT_BASOS\x10\x06\x12\x12\n\x0e\x44\x46_EXT_ECSGRID\x10\x07\x12\x11\n\rDF_EXT_GRDUTE\x10\x08\x12\x13\n\x0f\x44\x46_EXT_ASEG_GXF\x10\t\x12\x12\n\x0e\x44\x46_EXT_GEOSOFT\x10\n\x12\x0e\n\nDF_EXT_RAF\x10\x0b\x12\x0e\n\nDF_EXT_XYZ\x10\x0c\x12\x11\n\rDF_EXT_GEOPAK\x10\r\x12\x11\n\rDF_EXT_NETCDF\x10\x0e\x12\x11\n\rDF_EXT_NETXYZ\x10\x0f\x12\x0b\n\x07\x44\x46_JDBC\x10\x10\x12\x0c\n\x08\x44\x46_OASIS\x10\x11\x12\n\n\x06\x44\x46_CSV\x10\x12\x12\x15\n\x11\x44\x46_EXT_DODSNETCDF\x10\x13\x12\x0c\n\x08\x44\x46_SHAPE\x10\x14\x12\x0e\n\nDF_FRACSIS\x10\x15\x12\x0c\n\x08\x44\x46_3DWEG\x10\x16\x12\x0c\n\x08\x44\x46_GOCAD\x10\x17\x12\x11\n\rDF_GOCADSGRID\x10\x18\x12\r\n\tDF_POTENT\x10\x19\x12\x0f\n\x0b\x44\x46_SCINTREX\x10\x1a\x12\x0b\n\x07\x44\x46_SEGY\x10\x1b\x12\x0b\n\x07\x44\x46_TIFF\x10\x1c\x12\x0b\n\x07\x44\x46_JPEG\x10\x1d\x12\n\n\x06\x44\x46_GIF\x10\x1e\x12\n\n\x06\x44\x46_ECW\x10\x1f\x12\n\n\x06\x44\x46_ALG\x10 \x12\x11\n\rDF_POSTSCRIPT\x10!\x12\x0c\n\x08\x44\x46_MSOFT\x10\"\x12\x0c\n\x08\x44\x46_ADOBE\x10#\x12\n\n\x06\x44\x46_ZIP\x10$\x12\n\n\x06\x44\x46_PNG\x10%\x12\x0b\n\x07\x44\x46_SEMI\x10&\x12\x12\n\x0e\x44\x46_MAPINFO_TAB\x10\'\x12\x0c\n\x08\x44\x46_Argus\x10(\x12\x11\n\rDF_GOOGLE_KMZ\x10)\x12\x17\n\x13\x44\x46_FLEDERMAUS_SCENE\x10*\x12\n\n\x06\x44\x46_GSF\x10+\x12\n\n\x06\x44\x46_HGT\x10,\x12\x0c\n\x08\x44\x46_TSURF\x10-\x12\x13\n\x0f\x44\x46_GEOSOFT_POLY\x10.\x12\n\n\x06\x44\x46_GLT\x10/\x12\x0e\n\nDF_EV_GRID\x10\x30\x12\r\n\tDF_VULCAN\x10\x31\x12\x0b\n\x07\x44\x46_ZMAP\x10\x32\x12\n\n\x06\x44\x46_LAS\x10\x33\x12\x0b\n\x07\x44\x46_BREP\x10\x34\x12\n\n\x06\x44\x46_OFF\x10\x35\x12\n\n\x06\x44\x46_DXF\x10\x36\x12\n\n\x06\x44\x46_UBC\x10\x37\x12\r\n\tDF_IGMESH\x10\x38\x12\x0c\n\x08\x44\x46_NODDY\x10\x39\x12\x0e\n\nDF_UBC_SUS\x10:\x12\n\n\x06\x44\x46_EDI\x10;\x12\x0b\n\x07\x44\x46_ESRI\x10<\x12\n\n\x06\x44\x46_VTK\x10=\x12\r\n\tDF_PETREL\x10>\x12\x10\n\x0c\x44\x46_VARIOGRAM\x10?\x12\x0b\n\x07\x44\x46_GMOD\x10@\x12\n\n\x06\x44\x46_FEM\x10\x41\x12\x15\n\x11\x44\x46_JETSTREAM_Site\x10\x42\x12\x18\n\x14\x44\x46_JETSTREAM_Catalog\x10\x43*\x80\x02\n\rGridDataTypes\x12\x17\n\x13UnSigned8BitInteger\x10\x00\x12\x16\n\x12Signed16BitInteger\x10\x01\x12\x16\n\x12Signed32BitInteger\x10\x02\x12\x11\n\rIEEE4ByteReal\x10\x03\x12\x11\n\rIEEE8ByteReal\x10\x04\x12\x14\n\x10IEEE4ByteComplex\x10\x05\x12\x14\n\x10IEEE8ByteComplex\x10\x06\x12\x0e\n\nTensorGrid\x10\x07\x12\x0e\n\nVectorGrid\x10\x08\x12\x12\n\x0e\x43omplex_Tensor\x10\t\x12\x0e\n\nQuaternion\x10\n\x12\x10\n\x0c\x44ual_Complex\x10\x0b*\xbf\x14\n\nFieldAlias\x12\x0b\n\x07\x46\x41_INFO\x10\x00\x12\n\n\x06\x46\x41_FID\x10\x01\x12\x0b\n\x07\x46\x41_LINE\x10\x02\x12\r\n\tFA_FLIGHT\x10\x03\x12\r\n\tFA_SURVEY\x10\x04\x12\x10\n\x0c\x46\x41_LINE_TYPE\x10\x05\x12\x14\n\x10\x46\x41_MEAN_ALTITUDE\x10\x06\x12\x15\n\x11\x46\x41_MEAN_CLEARANCE\x10\x07\x12\x0e\n\nFA_BEARING\x10\x08\x12\x0f\n\x0b\x46\x41_VELOCITY\x10\t\x12\x10\n\x0c\x46\x41_DATE_CODE\x10\n\x12\x11\n\rFA_FID_FACTOR\x10\x0b\x12\x12\n\x0e\x46\x41_TIME_OF_DAY\x10\x0c\x12\x08\n\x04\x46\x41_X\x10\r\x12\x08\n\x04\x46\x41_Y\x10\x0e\x12\x10\n\x0c\x46\x41_ELEVATION\x10\x0f\x12\x10\n\x0c\x46\x41_CLEARANCE\x10\x10\x12\x0f\n\x0b\x46\x41_ALTITUDE\x10\x11\x12\x10\n\x0c\x46\x41_MAGNETICS\x10\x12\x12\x10\n\x0c\x46\x41_POTASSIUM\x10\x13\x12\x0e\n\nFA_URANIUM\x10\x14\x12\x0e\n\nFA_THORIUM\x10\x15\x12\x12\n\x0e\x46\x41_TOTAL_COUNT\x10\x16\x12\x15\n\x11\x46\x41_DOPPLER_ACROSS\x10\x17\x12\x14\n\x10\x46\x41_DOPPLER_ALONG\x10\x18\x12\x0f\n\x0b\x46\x41_GPS_TIME\x10\x19\x12\x15\n\x11\x46\x41_GPS_TIME_SHIFT\x10\x1a\x12\x10\n\x0c\x46\x41_GPS_DELAY\x10\x1b\x12\x0c\n\x08\x46\x41_VLF_P\x10\x1c\x12\x0c\n\x08\x46\x41_VLF_Q\x10\x1d\x12\x0f\n\x0b\x46\x41_SPECTRUM\x10\x1e\x12\x13\n\x0f\x46\x41_SPECTRUM_NEW\x10\x1f\x12\x12\n\x0e\x46\x41_TEMPERATURE\x10 \x12\x0f\n\x0b\x46\x41_PRESSURE\x10!\x12\r\n\tFA_COSMIC\x10\"\x12\x10\n\x0c\x46\x41_DEAD_TIME\x10#\x12\x10\n\x0c\x46\x41_LIVE_TIME\x10$\x12\x17\n\x13\x46\x41_UPWARD_POTASSIUM\x10%\x12\x15\n\x11\x46\x41_UPWARD_URANIUM\x10&\x12\x15\n\x11\x46\x41_UPWARD_THORIUM\x10\'\x12\x19\n\x15\x46\x41_UPWARD_TOTAL_COUNT\x10(\x12\x17\n\x13\x46\x41_UPWARD_DEAD_TIME\x10)\x12\x11\n\rFA_LOW_U_PEAK\x10*\x12\x16\n\x12\x46\x41_ESTIMATED_RADON\x10+\x12\x0e\n\nFA_SHOT_ID\x10,\x12\x13\n\x0f\x46\x41_STATION_NAME\x10-\x12\x11\n\rFA_OBSGRAVITY\x10.\x12\x10\n\x0c\x46\x41_METERELEV\x10/\x12\x13\n\x0f\x46\x41_STNELEVATION\x10\x30\x12\r\n\tFA_NVALUE\x10\x31\x12\x17\n\x13\x46\x41_CORRECTEDGRAVITY\x10\x32\x12\x0f\n\x0b\x46\x41_FREE_AIR\x10\x33\x12\x15\n\x11\x46\x41_SIMPLE_BOUGUER\x10\x34\x12\x0f\n\x0b\x46\x41_BULLARDB\x10\x35\x12\x10\n\x0c\x46\x41_POINTTYPE\x10\x36\x12\x11\n\rFA_POINTGROUP\x10\x37\x12\x14\n\x10\x46\x41_GRAVITY_UNITS\x10\x38\x12\x0b\n\x07\x46\x41_BEAM\x10\x39\x12\x15\n\x11\x46\x41_SPRING_TENSION\x10:\x12\x15\n\x11\x46\x41_CROSS_COUPLING\x10;\x12\n\n\x06\x46\x41_VCC\x10<\x12\t\n\x05\x46\x41_AL\x10=\x12\t\n\x05\x46\x41_AX\x10>\x12\t\n\x05\x46\x41_VE\x10?\x12\n\n\x06\x46\x41_AX2\x10@\x12\x0c\n\x08\x46\x41_XACC2\x10\x41\x12\x0c\n\x08\x46\x41_LACC2\x10\x42\x12\x0b\n\x07\x46\x41_XACC\x10\x43\x12\x0b\n\x07\x46\x41_LACC\x10\x44\x12\x0f\n\x0b\x46\x41_VCCPHASE\x10\x45\x12\x0e\n\nFA_AXPHASE\x10\x46\x12\x0e\n\nFA_ALPHASE\x10G\x12\x0e\n\nFA_BELL_I1\x10H\x12\x0e\n\nFA_BELL_I2\x10I\x12\x0e\n\nFA_BELL_I3\x10J\x12\x0e\n\nFA_BELL_C1\x10K\x12\x0e\n\nFA_BELL_C2\x10L\x12\x0e\n\nFA_BELL_C3\x10M\x12\x11\n\rFA_BELL_THETA\x10N\x12\x0c\n\x08\x46\x41_Pitch\x10Q\x12\x0b\n\x07\x46\x41_Roll\x10R\x12\n\n\x06\x46\x41_Yaw\x10S\x12\x14\n\x10\x46\x41_FilteredPitch\x10T\x12\x13\n\x0f\x46\x41_FilteredRoll\x10U\x12\x12\n\x0e\x46\x41_FilteredYaw\x10V\x12\x0b\n\x07\x46\x41_NONE\x10W\x12\x15\n\x11\x46\x41_Susceptibility\x10X\x12\x15\n\x11\x46\x41_RemanenceNorth\x10Y\x12\x14\n\x10\x46\x41_RemanenceEast\x10Z\x12\x14\n\x10\x46\x41_RemanenceDown\x10[\x12\x19\n\x15\x46\x41_RemanenceMagnitude\x10\\\x12\n\n\x06\x46\x41_TMI\x10^\x12\x14\n\x10\x46\x41_Observed_EM_X\x10_\x12\x14\n\x10\x46\x41_Observed_EM_Y\x10`\x12\x14\n\x10\x46\x41_Observed_EM_Z\x10\x61\x12\x0c\n\x08\x46\x41_Title\x10\x64\x12\x15\n\x11\x46\x41_PROCESSED_DATE\x10\x65\x12\x11\n\rFA_DATE_ADDED\x10\x66\x12\x18\n\x14\x46\x41_MINIMUM_LONGITUDE\x10g\x12\x17\n\x13\x46\x41_MINIMUM_LATITUDE\x10h\x12\x18\n\x14\x46\x41_MAXIMUM_LONGITUDE\x10i\x12\x17\n\x13\x46\x41_MAXIMUM_LATITUDE\x10j\x12\x0c\n\x08\x46\x41_BLOCK\x10k\x12\x0b\n\x07\x46\x41_UUID\x10l\x12\x0c\n\x08\x46\x41_THEME\x10m\x12\x15\n\x11\x46\x41_DATASET_FORMAT\x10n\x12\x10\n\x0c\x46\x41_FILE_SIZE\x10o\x12\x0f\n\x0b\x46\x41_DATA_URL\x10p\x12\x0f\n\x0b\x46\x41_CELLSIZE\x10q\x12\x13\n\x0f\x46\x41_COORD_SYSTEM\x10r\x12\x15\n\x11\x46\x41_FLIGHT_SPACING\x10s\x12\x14\n\x10\x46\x41_NATIONAL_GRID\x10t\x12\x11\n\rFA_ASSET_TEAM\x10u\x12\n\n\x06\x46\x41_VWC\x10v\x12\x10\n\x0c\x46\x41_PUBLISHED\x10w\x12\x12\n\x0e\x46\x41_SURVEY_DATE\x10y\x12\x0e\n\nFA_Subject\x10{\x12\x0f\n\x0b\x46\x41_Abstract\x10|\x12\x0e\n\tFA_Source\x10\x80\x01\x12\x13\n\x0e\x46\x41_Association\x10\x81\x01\x12\x14\n\x0f\x46\x41_ReportFormat\x10\x82\x01\x12\x13\n\x0e\x46\x41_RenderStyle\x10\x83\x01\x12\x10\n\x0b\x46\x41_MAPSHEET\x10\x84\x01\x12\x11\n\x0c\x46\x41_DIRECTORY\x10\x85\x01\x12\x15\n\x10\x46\x41_JURISTRICTION\x10\x87\x01\x12\x14\n\x0f\x46\x41_LINE_AZIMUTH\x10\x88\x01\x12\x17\n\x12\x46\x41_LINE_KILOMETERS\x10\x89\x01\x12\x18\n\x13\x46\x41_FLIGHT_CLEARANCE\x10\x8a\x01\x12\x19\n\x14\x46\x41_HAS_LINE_ALTITUDE\x10\x8b\x01\x12\x19\n\x14\x46\x41_MINIMUM_ELEVATION\x10\x8c\x01\x12\x19\n\x14\x46\x41_MAXIMUM_ELEVATION\x10\x8d\x01\x12\x11\n\x0c\x46\x41_Lithology\x10\x96\x01\x12\x15\n\x10\x46\x41_GradientsEast\x10\x97\x01\x12\x16\n\x11\x46\x41_GradientsNorth\x10\x98\x01\x12\x13\n\x0e\x46\x41_GradientsUp\x10\x99\x01\x12\x15\n\x10\x46\x41_PSEUDO_FLIGHT\x10\x9b\x01\x12\x19\n\x14\x46\x41_ESTIMATED_CAESIUM\x10\x9c\x01\x12\x12\n\rFA_HIGH_RADON\x10\x9d\x01\x12\x10\n\x0b\x46\x41_NO_ALIAS\x10\xc7\x01*\xb5\x05\n\x0b\x44\x66\x61\x46ileType\x12\x0c\n\x08\x46T_IMAGE\x10\x00\x12\x0c\n\x08\x46T_POINT\x10\x01\x12\x0b\n\x07\x46T_LINE\x10\x02\x12\x0e\n\nFT_POLYGON\x10\x03\x12\x0c\n\x08\x46T_INDEX\x10\x04\x12\n\n\x06\x46T_LUT\x10\x05\x12\n\n\x06\x46T_DIR\x10\x06\x12\x0f\n\x0b\x46T_EXTERNAL\x10\x07\x12\n\n\x06\x46T_ANY\x10\x08\x12\n\n\x06\x46T_JOB\x10\t\x12\x0e\n\nFT_HISTORY\x10\n\x12\x0f\n\x0b\x46T_HARDCOPY\x10\x0b\x12\t\n\x05\x46T_PC\x10\x0c\x12\n\n\x06\x46T_ADF\x10\r\x12\x0c\n\x08\x46T_ASCII\x10\x0e\x12\r\n\tFT_REPORT\x10\x0f\x12\n\n\x06\x46T_MAP\x10\x10\x12\x0c\n\x08\x46T_MACRO\x10\x11\x12\r\n\tFT_LEGEND\x10\x12\x12\x0c\n\x08\x46T_VOXET\x10\x13\x12\x0e\n\nFT_SURFACE\x10\x14\x12\n\n\x06\x46T_DDF\x10\x15\x12\r\n\tFT_KERNEL\x10\x16\x12\n\n\x06\x46T_FFT\x10\x17\x12\x0b\n\x07\x46T_PROJ\x10\x18\x12\x0c\n\x08\x46T_DATUM\x10\x19\x12\r\n\tFT_CONFIG\x10\x1a\x12\x0b\n\x07\x46T_FORM\x10\x1b\x12\x0b\n\x07\x46T_HELP\x10\x1c\x12\x12\n\x0e\x46T_GEOMODELLER\x10\x1d\x12\x0c\n\x08\x46T_EULER\x10\x1e\x12\x0f\n\x0b\x46T_ANY_AGSO\x10\x1f\x12\x0c\n\x08\x46T_SHELL\x10!\x12\x0f\n\x0b\x46T_BOREHOLE\x10\"\x12\x14\n\x10\x46T_PROTOBUF_TASK\x10#\x12\r\n\tFT_IGMESH\x10$\x12\x0b\n\x07\x46T_GRID\x10%\x12\x0f\n\x0b\x46T_BRGM_XYZ\x10&\x12\n\n\x06\x46T_EDI\x10\'\x12\x0b\n\x07\x46T_SEGY\x10(\x12\x12\n\x0e\x46T_IMAGE_TYPES\x10)\x12\x18\n\x0b\x46T_ANY_GRID\x10\xfd\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1a\n\rFT_ANY_VECTOR\x10\xfe\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1f\n\x12\x46T_ANY_VECTOR_AGSO\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01*+\n\nAccessType\x12\r\n\tAT_DIRECT\x10\x01\x12\x0e\n\nAT_INDEXED\x10\x02*\x97\x01\n\x0b\x46lightTypes\x12\x0b\n\x07LT_REDO\x10\x01\x12\r\n\tLT_FLIGHT\x10\x02\x12\n\n\x06LT_TIE\x10\x04\x12\x0e\n\nLT_DIURNAL\x10\x08\x12\x0c\n\x08LT_CALIB\x10\x10\x12\x0e\n\nLT_SPECTRA\x10 \x12\r\n\tLT_RANDOM\x10@\x12\x12\n\rLT_IGNORE_TIE\x10\x80\x01\x12\x0f\n\tLT_IGNORE\x10\x80\x80\x01*s\n\x0f\x41pplicationType\x12\x0f\n\x0b\x41T_MAGNETIC\x10\x01\x12\x12\n\x0e\x41T_RADIOMETRIC\x10\x02\x12\x0e\n\nAT_GRAVITY\x10\x04\x12\t\n\x05\x41T_EM\x10\x08\x12\x0e\n\nAT_GEOLOGY\x10\x10\x12\x10\n\nAT_UNKNOWN\x10\x80\x80\x01*\xfb\x05\n\x14GeophysicsSignalType\x12\x0e\n\nGravimetry\x10\x00\x12\x07\n\x03Gxx\x10\x01\x12\x07\n\x03Gyy\x10\x02\x12\x07\n\x03Gzz\x10\x03\x12\x07\n\x03Gxy\x10\x04\x12\x07\n\x03Gxz\x10\x05\x12\x07\n\x03Gyz\x10\x06\x12\x07\n\x03Gee\x10\x07\x12\x07\n\x03Gnn\x10\x08\x12\x07\n\x03Gdd\x10\t\x12\x07\n\x03Gen\x10\n\x12\x07\n\x03Ged\x10\x0b\x12\x07\n\x03Gnd\x10\x0c\x12\x07\n\x03Guv\x10\r\x12\x06\n\x02Gz\x10\x0e\x12\r\n\tMagnetism\x10\x0f\x12\x07\n\x03Mxx\x10\x10\x12\x07\n\x03Myy\x10\x11\x12\x07\n\x03Mzz\x10\x12\x12\x07\n\x03Mxy\x10\x13\x12\x07\n\x03Mxz\x10\x14\x12\x07\n\x03Myz\x10\x15\x12\x06\n\x02Mx\x10\x16\x12\x06\n\x02My\x10\x17\x12\x06\n\x02Mz\x10\x18\x12\x07\n\x03Mee\x10\x19\x12\x07\n\x03Mnn\x10\x1a\x12\x07\n\x03Mdd\x10\x1b\x12\x07\n\x03Men\x10\x1c\x12\x07\n\x03Med\x10\x1d\x12\x07\n\x03Mnd\x10\x1e\x12\x06\n\x02Me\x10\x1f\x12\x06\n\x02Mn\x10 \x12\x06\n\x02Md\x10!\x12\x07\n\x03TMI\x10\"\x12\x0f\n\x0bTemperature\x10#\x12\x12\n\x0eUNKNOWN_SIGNAL\x10$\x12\x12\n\x0eGravityTensors\x10%\x12\x13\n\x0fMagneticTensors\x10&\x12\x08\n\x04Temp\x10\'\x12\t\n\x05Trend\x10(\x12\r\n\tElevation\x10)\x12\t\n\x05\x44\x65pth\x10\x37\x12\x11\n\rFalconTensors\x10*\x12\r\n\tAdvection\x10+\x12\x13\n\x0fSiesmicVelocity\x10,\x12\t\n\x05Pwave\x10-\x12\t\n\x05Swave\x10.\x12\x07\n\x03Goo\x10/\x12\x07\n\x03Moo\x10\x30\x12\x0e\n\nBathymetry\x10\x31\x12\x10\n\x0cRadiometrics\x10\x32\x12\r\n\tPotassium\x10\x33\x12\x0b\n\x07Thorium\x10\x34\x12\x0b\n\x07Uranium\x10\x35\x12\x0f\n\x0bTotal_Count\x10\x36\x12\x13\n\x0f\x45lectroMagnetic\x10<\x12\x10\n\x0c\x43onductivity\x10=\x12\x0f\n\x0bResistivity\x10>\x12\x13\n\x0fMagnetoTelluric\x10\x46\x12\t\n\x05Phase\x10G\x12\x12\n\x0e\x41nalyticSignal\x10H*C\n\x07GrfType\x12\x0c\n\x08GRF_AGRF\x10\x00\x12\x0c\n\x08GRF_IGRF\x10\x01\x12\x0e\n\nGRF_MANUAL\x10\x02\x12\x0c\n\x08GRF_USGS\x10\x03*;\n\x11GammaMeasures_3DE\x12\x12\n\x0e\x43ounts_per_bin\x10\x01\x12\x12\n\x0e\x45nergy_per_bin\x10\x02*\\\n\x19\x43oordinateReferenceSystem\x12\x07\n\x03NED\x10\x00\x12\x07\n\x03\x45NU\x10\x01\x12\x07\n\x03\x45ND\x10\x02\x12\t\n\x05LOCAL\x10\x03\x12\x07\n\x03WSD\x10\x04\x12\x07\n\x03WSU\x10\x05\x12\x07\n\x03\x44\x45N\x10\x06*a\n\x0bReliability\x12\x0f\n\x0bUnspecified\x10\x00\x12\x0c\n\x08Observed\x10\x01\x12\x0c\n\x08Inferred\x10\x02\x12\x0f\n\x0bInterpreted\x10\x03\x12\x14\n\x10ModelConstructor\x10\x04*\x82\x01\n\x0eProvenanceType\x12\x08\n\x04none\x10\x00\x12\n\n\x06GISmap\x10\x01\x12\x15\n\x11\x66ield_observation\x10\x02\x12\x0c\n\x08inferred\x10\x03\x12\x10\n\x0cseismic_pick\x10\x04\x12\x11\n\rmagnetic_pick\x10\x05\x12\x10\n\x0cgravity_pick\x10\x06*B\n\x0cPolarityType\x12\x13\n\x0fNormal_Polarity\x10\x01\x12\x1d\n\x10Reverse_Polarity\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01*V\n\x19StratigraphicRelationship\x12\t\n\x05Onlap\x10\x01\x12\t\n\x05\x45rode\x10\x02\x12\x0b\n\x07\x43hannel\x10\x03\x12\r\n\tIntrusion\x10\x04\x12\x07\n\x03\x41ny\x10\x05*\x90\x01\n\x0fSectionDataType\x12\x12\n\x0erock_interface\x10\x00\x12\r\n\tfoliation\x10\x01\x12\x0b\n\x07\x63ontact\x10\x02\x12\x0e\n\ntrajectory\x10\x03\x12\x0b\n\x07sondage\x10\x04\x12\x10\n\x0cintersection\x10\x05\x12\x08\n\x04\x66ond\x10\x06\x12\x08\n\x04\x64yke\x10\x07\x12\n\n\x06region\x10\x08*\xb1\x01\n\x10GeologyObsType3D\x12\x0e\n\ncontact_3D\x10\x00\x12\x10\n\x0c\x66oliation_3D\x10\x01\x12\x13\n\x0f\x61pparent_dip_3D\x10\x03\x12\x0b\n\x07\x44yke_3D\x10\x04\x12 \n\x1cInterface_project2Section_3D\x10\x05\x12\"\n\x1eOrientation_project2Section_3D\x10\x06\x12\x13\n\x0f\x66\x61ult_limits_3D\x10\x07*p\n\x15OrientationMethodType\x12\r\n\tundefined\x10\x00\x12\x11\n\rdip_direction\x10\x01\x12\x0f\n\x0b\x64ip_azimuth\x10\x02\x12\x14\n\x10line_orientation\x10\x03\x12\x0e\n\northogonal\x10\x04*\xdf\x03\n\x0cPropertyType\x12\x0b\n\x07\x44\x65nsity\x10\x00\x12\x12\n\x0eSusceptibility\x10\x01\x12\r\n\tRemanence\x10\x02\x12\x17\n\x13ThermalConductivity\x10\x07\x12\x16\n\x12HeatProductionRate\x10\x08\x12\x10\n\x0cSpecificHeat\x10\t\x12\x11\n\rAdvectionRate\x10\n\x12\x11\n\rSonicVelocity\x10\x0c\x12\x16\n\x12SonicShearVelocity\x10\x13\x12\x0c\n\x08Porosity\x10\r\x12\x11\n\rFluidVelocity\x10\x0e\x12\x1a\n\x16\x45lectricalConductivity\x10\x11\x12\x19\n\x15\x45lectricalResistivity\x10\x12\x12\x14\n\x10IP_CHARGEABILITY\x10\x14\x12\x14\n\x10IP_TIME_CONSTANT\x10\x15\x12\x17\n\x13IP_FREQUENCY_FACTOR\x10\x16\x12\x0f\n\x0b\x43ommonality\x10\x03\x12\x15\n\x11\x43ommonalityVolume\x10\x04\x12\x0e\n\nShapeRatio\x10\x05\x12\x0f\n\x0bVolumeRatio\x10\x06\x12 \n\x1cPreserveVerticalRelationship\x10\x0b\x12\x0b\n\x07Movable\x10\x0f\x12\t\n\x05Index\x10\x10*\xbd\x01\n\x12ProbabilityLawType\x12\x16\n\x12NormalDistribution\x10\x00\x12\r\n\tLogNormal\x10\x01\x12\x0e\n\nLog_normal\x10\x02\x12\x0b\n\x07Poisson\x10\x03\x12\x0c\n\x08Rayleigh\x10\x04\x12\x0b\n\x07Uniform\x10\x05\x12\x10\n\x0cUniform_Plus\x10\x06\x12\x11\n\rUniform_Minus\x10\x07\x12\x0b\n\x07Weibull\x10\x08\x12\x16\n\x12\x46isherDistribution\x10\t*\x8f\x01\n\x15MeshGrid_TypeMeshGrid\x12\x13\n\x0fMeshGrid_VERTEX\x10\x01\x12\x15\n\x11MeshGrid_TRIANGLE\x10\x02\x12\x11\n\rMeshGrid_QUAD\x10\x03\x12\x12\n\x0eMeshGrid_TETRA\x10\x04\x12\x11\n\rMeshGrid_CUBE\x10\x05\x12\x10\n\x0cMeshGrid_ANY\x10\x06*o\n\x13InterpolationMethod\x12\x19\n\x15IM_InverserveDistance\x10\x01\x12\x0e\n\nIM_Kriging\x10\x02\x12\x18\n\x14IM_Minimum_Curvature\x10\x03\x12\x13\n\x0fIM_Tensor_Slerp\x10\x04*W\n\x0fInputDataSource\x12\x10\n\x0cIDS_Points3D\x10\x01\x12\x12\n\x0eIDS_DrillHoles\x10\x02\x12\x1e\n\x1aIDS_DrillHolesPlus3DPoints\x10\x03*\x8d\x01\n\x0eOutputMeshType\x12\x15\n\x11ODT_RegularMesh3D\x10\x01\x12\x15\n\x11ODT_RegularMesh2D\x10\x02\x12\x19\n\x15ODT_TopographySurface\x10\x03\x12\x17\n\x13ODT_IrregularMesh3D\x10\x04\x12\x19\n\x15ODT_SemiRegularMesh3D\x10\x05*l\n\x17InterpolationOutputType\x12\n\n\x06IOT_D3\x10\x00\x12\x10\n\x0cIOT_D2_polar\x10\x01\x12\n\n\x06IOT_D1\x10\x02\x12\x18\n\x14IOT_GeologicalDomain\x10\x03\x12\r\n\tIOT_OnlyT\x10\x04*S\n\x12VariogramComponent\x12\x08\n\x04VC_U\x10\x01\x12\x08\n\x04VC_V\x10\x02\x12\x08\n\x04VC_W\x10\x03\x12\n\n\x06VC_RHO\x10\x04\x12\x08\n\x04VC_T\x10\x05\x12\t\n\x05VC_UV\x10\x06*\x9c\x01\n\x12VariogramModelType\x12\x11\n\rVMT_Spherical\x10\x01\x12\x13\n\x0fVMT_Exponential\x10\x02\x12\x10\n\x0cVMT_Gaussian\x10\x03\x12\x10\n\x0cVMT_PowerLaw\x10\x04\x12\x10\n\x0cVMT_CubicLaw\x10\x05\x12\x12\n\x0eVMT_GravityLaw\x10\x06\x12\x14\n\x10VMT_MagneticsLaw\x10\x07*9\n\x0eNeighbourStyle\x12\x10\n\x0cNS_Voisinage\x10\x01\x12\x15\n\x11NS_RegularGridBox\x10\x02*\x82\x01\n\x13\x43omputationalMethod\x12\x0b\n\x07Spatial\x10\x00\x12\x18\n\x14\x46\x61stFourierTransform\x10\x01\x12\x12\n\x0e\x44yke_Skeletons\x10\x02\x12\n\n\x06\x46\x61\x63\x65ts\x10\x03\x12\x15\n\x11Surface_Integrals\x10\x04\x12\r\n\tCylinders\x10\x05*F\n\x0b\x43\x45NTER_TYPE\x12\x11\n\rMEAN_POSITION\x10\x01\x12\x12\n\x0e\x44\x41TABOX_CENTER\x10\x02\x12\x10\n\x0cUSER_DEFINED\x10\x03*7\n\x14VfiltExpansionMethod\x12\x08\n\x04Zero\x10\x00\x12\n\n\x06Mirror\x10\x01\x12\t\n\x05Taper\x10\x02*\xa4\x01\n\x0cTMI_Products\x12\x0b\n\x07TMItoXX\x10\x01\x12\x0b\n\x07TMItoYY\x10\x02\x12\x0b\n\x07TMItoZZ\x10\x03\x12\x0b\n\x07TMItoXY\x10\x04\x12\x0b\n\x07TMItoYZ\x10\x05\x12\x0b\n\x07TMItoZX\x10\x06\x12\x11\n\rTMItoCOMPLETE\x10\x07\x12\n\n\x06TMItoX\x10\x08\x12\n\n\x06TMItoY\x10\t\x12\n\n\x06TMItoZ\x10\n\x12\x0f\n\x0bTMItoVector\x10\x0b*\x90\r\n\x12TensorProduct_list\x12\r\n\tTENSOR_XX\x10\n\x12\r\n\tTENSOR_YY\x10\x0b\x12\r\n\tTENSOR_ZZ\x10\x0c\x12\r\n\tTENSOR_XY\x10\r\x12\r\n\tTENSOR_YZ\x10\x0e\x12\r\n\tTENSOR_ZX\x10\x0f\x12\r\n\tTENSOR_UV\x10\x10\x12\x16\n\x12TENSOR_Determinant\x10\x11\x12\x14\n\x10TENSOR_Max_Eigen\x10\x12\x12\x14\n\x10TENSOR_Mid_Eigen\x10\x13\x12\x14\n\x10TENSOR_Min_Eigen\x10\x14\x12\x10\n\x0cTENSOR_Trace\x10\x15\x12\x1b\n\x17TENSOR_Second_Invariant\x10\x16\x12\x10\n\x0cTENSOR_Ratio\x10\x17\x12\x11\n\rTENSOR_Strike\x10\x18\x12\"\n\x1eTENSOR_CubeRoot_of_Determinant\x10\x19\x12)\n%TENSOR_SquareRoot_of_Second_Invariant\x10\x1a\x12(\n$TENSOR_Horizontal_Gradient_Amplitude\x10\x1b\x12(\n$TENSOR_Horizontal_Gradient_Direction\x10\x1c\x12\'\n#TENSOR_Curvature_Gradient_Amplitude\x10\x1d\x12\'\n#TENSOR_Curvature_Gradient_Direction\x10\x1e\x12\x1c\n\x18TENSOR_Octahedral_Normal\x10\x1f\x12\x1b\n\x17TENSOR_Octahedral_Shear\x10 \x12\x13\n\x0fTENSOR_Complete\x10!\x12\x0f\n\x0bTENSOR_Norm\x10\"\x12\x1f\n\x1bTENSOR_Quaternion_Real_part\x10#\x12\x1c\n\x18TENSOR_Quaternion_I_part\x10$\x12\x1c\n\x18TENSOR_Quaternion_J_part\x10%\x12\x1c\n\x18TENSOR_Quaternion_K_part\x10&\x12\x1c\n\x18TENSOR_Maximum_Magnitude\x10\'\x12\"\n\x1eTENSOR_Unit_EigenVector_Volume\x10(\x12\x10\n\x0cTENSOR_Phase\x10)\x12\x11\n\rTENSOR_Modulo\x10*\x12\x14\n\x10TENSOR_EigenAxis\x10+\x12\x1f\n\x1bTENSOR_Quaternion_RGB_Phase\x10,\x12\x0f\n\x0bTENSOR_FREQ\x10-\x12\x13\n\x0fTENSOR_ZZ_XXtoZ\x10\x31\x12\x14\n\x10TENSOR_ZZ_XXtoZZ\x10\x32\x12\x13\n\x0fTENSOR_ZZ_YYtoZ\x10\x33\x12\x14\n\x10TENSOR_ZZ_YYtoZZ\x10\x34\x12\x10\n\x0cTENSOR_ZtoXX\x10\x35\x12\x10\n\x0cTENSOR_ZtoYY\x10\x36\x12\x10\n\x0cTENSOR_ZtoZZ\x10\x37\x12\x10\n\x0cTENSOR_ZtoXY\x10\x38\x12\x10\n\x0cTENSOR_ZtoYZ\x10\x39\x12\x10\n\x0cTENSOR_ZtoZX\x10:\x12\x0f\n\x0bTENSOR_2TMI\x10;\x12\x0f\n\x0bTENSOR_TILT\x10<\x12\x10\n\x0cTENSOR_BRUTE\x10=\x12\x1b\n\x17TENSOR_SCALAR_MAGNITUDE\x10>\x12\x0e\n\nTENSOR_AUV\x10?\x12\x0e\n\nTENSOR_ANE\x10@\x12\x0e\n\nTENSOR_BUV\x10\x41\x12\x0e\n\nTENSOR_BNE\x10\x42\x12\x12\n\x0eTENSOR_BRUTE_B\x10\x43\x12\x1e\n\x1aTENSOR_COMPLETE_FALCON_FFT\x10\x44\x12!\n\x1dTENSOR_FirstBalancedGradientX\x10\x46\x12!\n\x1dTENSOR_FirstBalancedGradientY\x10G\x12!\n\x1dTENSOR_FirstBalancedGradientZ\x10H\x12\"\n\x1eTENSOR_SecondBalancedGradientX\x10I\x12\"\n\x1eTENSOR_SecondBalancedGradientY\x10J\x12\"\n\x1eTENSOR_SecondBalancedGradientZ\x10K\x12%\n!TENSOR_Quaternion_Isotropic_Phase\x10P\x12&\n\"TENSOR_Quaternion_Deviatoric_Phase\x10Q\x12\"\n\x1eTENSOR_Quaternion_Modulo_Phase\x10R\x12\x14\n\x10TENSOR_ZtoFALCON\x10\x63*\xc3\x02\n\x19Tensor_Integration_Method\x12\x10\n\x0cINT_XZ_YZ_ZZ\x10\x00\x12\r\n\tINT_XZ_YZ\x10\x01\x12\n\n\x06INT_ZZ\x10\x04\x12\n\n\x06INT_XZ\x10\x02\x12\n\n\x06INT_YZ\x10\x03\x12\x0b\n\x07INT_TMI\x10\x05\x12\r\n\tINT_TRACE\x10\x06\x12\x11\n\rINT_POTENTIAL\x10\x07\x12\x16\n\x12INT_MEAN_CURVATURE\x10\x08\x12\x1e\n\x1aINT_DIFFERENTIAL_CURVATURE\x10\t\x12\x12\n\x0eINT_PLUMB_LINE\x10\n\x12\x1a\n\x16INT_GAUSSIAN_CURVATURE\x10\x0b\x12\x13\n\x0fINT_SHAPE_INDEX\x10\x0c\x12\x12\n\x0eINT_MAG_VECTOR\x10\r\x12!\n\x1dINT_MODIFIED_PHASE_EIGENVALUE\x10\x0e*_\n\x16\x46\x61lcon_Reading_Options\x12\x0c\n\x08\x46\x41LCON_A\x10\x00\x12\x0c\n\x08\x46\x41LCON_B\x10\x01\x12\x12\n\x0e\x46\x41LCON_AVERAGE\x10\x02\x12\x15\n\x11\x46\x41LCON_DIFFERENCE\x10\x03*\x9b\x02\n\x1b\x46\x61lcon_FFT_TRANSFORM_Option\x12\x0e\n\nFALCON_FTG\x10\x00\x12\x0e\n\nFALCON_TZZ\x10\x01\x12\x0e\n\nFALCON_TXX\x10\x02\x12\x0e\n\nFALCON_TYY\x10\x03\x12\x0e\n\nFALCON_TXY\x10\x04\x12\x0e\n\nFALCON_TXZ\x10\x05\x12\x0e\n\nFALCON_TYZ\x10\x06\x12\r\n\tFALCON_TZ\x10\x07\x12\r\n\tFALCON_TX\x10\x08\x12\r\n\tFALCON_TY\x10\t\x12\x14\n\x10\x46\x41LCON_POTENTIAL\x10\n\x12\x0e\n\nFALCON_TUV\x10\x0b\x12\x16\n\x12\x46\x41LCON_CHECK_PHASE\x10\x0c\x12!\n\x1d\x46\x41LCON_DIFFERENTIAL_CURVATURE\x10\r*\xd9\x02\n\x12VectorProduct_list\x12\x13\n\x0f\x41NALYTIC_SIGNAL\x10\x64\x12\x18\n\x14TOTAL_HORIZONTALGRAD\x10\x65\x12\x13\n\x0f\x45\x41ST_HORIZONTAL\x10\x66\x12\x14\n\x10NORTH_HORIZONTAL\x10g\x12\x11\n\rVERTICAL_GRAD\x10h\x12\x13\n\x0f\x45NHANCED_SIGNAL\x10i\x12\x16\n\x12\x43\x41LCULATED_DIURNAL\x10j\x12\x14\n\x10TRANS_HORIZONTAL\x10k\x12\x13\n\x0fLONG_HORIZONTAL\x10l\x12\x0e\n\nTILT_ANGLE\x10m\x12\x12\n\x0e\x45\x41ST_COMPONENT\x10n\x12\x13\n\x0fNORTH_COMPONENT\x10o\x12\x16\n\x12VERTICAL_COMPONENT\x10p\x12\x0f\n\x0bVECTOR_GRID\x10q\x12\x1c\n\x18TOTAL_MAGNETIC_INTENSITY\x10r*\xc1\x01\n\x16QuaternionProduct_list\x12\x14\n\x0fQUATERNION_REAL\x10\xc8\x01\x12\x11\n\x0cQUATERNION_I\x10\xc9\x01\x12\x11\n\x0cQUATERNION_J\x10\xca\x01\x12\x11\n\x0cQUATERNION_K\x10\xcb\x01\x12\x16\n\x11QUATERNION_NORMAL\x10\xcc\x01\x12\x14\n\x0fQUATERNION_ROLL\x10\xcd\x01\x12\x15\n\x10QUATERNION_PITCH\x10\xce\x01\x12\x13\n\x0eQUATERNION_YAW\x10\xcf\x01*\x80\x01\n\x12ScalarProduct_list\x12\x13\n\x0f\x43OMPONENTS_NONE\x10\x00\x12\x14\n\x10SIGNAL_MAGNITUDE\x10\x01\x12\r\n\tREAL_PART\x10\x02\x12\x12\n\x0eIMAGINARY_PART\x10\x03\x12\x0f\n\x0bPHASE_ANGLE\x10\x04\x12\x0b\n\x07MODULUS\x10\x05*^\n\x13\x43omplexProduct_list\x12\x0f\n\x0b\x43_REAL_PART\x10\x02\x12\x14\n\x10\x43_IMAGINARY_PART\x10\x03\x12\x11\n\rC_PHASE_ANGLE\x10\x04\x12\r\n\tC_MODULUS\x10\x05*\x8b\x01\n\x0b\x64\x61te_styles\x12\x0c\n\x08YYYYMMDD\x10\x00\x12\x0c\n\x08\x44\x44MMYYYY\x10\x01\x12\n\n\x06\x44\x44MMYY\x10\x02\x12\n\n\x06YYMMDD\x10\x03\x12\n\n\x06MMDDYY\x10\x04\x12\x08\n\x04JDAY\x10\x06\x12\x10\n\x0c\x44\x45\x43IMAL_YEAR\x10\x07\x12 \n\x13UNKNOWN_DATE_FORMAT\x10\x9d\xff\xff\xff\xff\xff\xff\xff\xff\x01*7\n\x0e\x64iurnal_styles\x12\x14\n\x10\x46LIGHT_DATE_TIME\x10\x00\x12\x0f\n\x0bJULIAN_TIME\x10\x01'
 )
 
 _TRANSECT_DIRECTION = _descriptor.EnumDescriptor(
@@ -43,8 +43,8 @@ _TRANSECT_DIRECTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=3465,
-  serialized_end=3501,
+  serialized_start=3479,
+  serialized_end=3515,
 )
 _sym_db.RegisterEnumDescriptor(_TRANSECT_DIRECTION)
 
@@ -99,8 +99,8 @@ _DISTANCE_UNITS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=3504,
-  serialized_end=3644,
+  serialized_start=3518,
+  serialized_end=3658,
 )
 _sym_db.RegisterEnumDescriptor(_DISTANCE_UNITS)
 
@@ -130,8 +130,8 @@ _VERTICAL_UNITS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=3646,
-  serialized_end=3721,
+  serialized_start=3660,
+  serialized_end=3735,
 )
 _sym_db.RegisterEnumDescriptor(_VERTICAL_UNITS)
 
@@ -161,8 +161,8 @@ _GPSDATA_COORDINATETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=3723,
-  serialized_end=3802,
+  serialized_start=3737,
+  serialized_end=3816,
 )
 _sym_db.RegisterEnumDescriptor(_GPSDATA_COORDINATETYPE)
 
@@ -192,8 +192,8 @@ _GPSDATA_HEADERTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=3804,
-  serialized_end=3879,
+  serialized_start=3818,
+  serialized_end=3893,
 )
 _sym_db.RegisterEnumDescriptor(_GPSDATA_HEADERTYPE)
 
@@ -258,8 +258,8 @@ _GRID_FORMAT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=3882,
-  serialized_end=4050,
+  serialized_start=3896,
+  serialized_end=4064,
 )
 _sym_db.RegisterEnumDescriptor(_GRID_FORMAT)
 
@@ -294,8 +294,8 @@ _IMAGE_FORMAT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=4052,
-  serialized_end=4132,
+  serialized_start=4066,
+  serialized_end=4146,
 )
 _sym_db.RegisterEnumDescriptor(_IMAGE_FORMAT)
 
@@ -467,11 +467,26 @@ _DATATYPE = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='DT_OBSERVED_AEM', index=32, number=32,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='DT_LONG_STRING', index=33, number=33,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='DT_C8', index=34, number=34,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=4135,
-  serialized_end=4659,
+  serialized_start=4149,
+  serialized_end=4725,
 )
 _sym_db.RegisterEnumDescriptor(_DATATYPE)
 
@@ -684,7 +699,7 @@ _DATAFORMAT = _descriptor.EnumDescriptor(
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='DF_GEOMODELLER', index=40, number=40,
+      name='DF_Argus', index=40, number=40,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
@@ -826,8 +841,8 @@ _DATAFORMAT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=4662,
-  serialized_end=5733,
+  serialized_start=4728,
+  serialized_end=5793,
 )
 _sym_db.RegisterEnumDescriptor(_DATAFORMAT)
 
@@ -902,8 +917,8 @@ _GRIDDATATYPES = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=5736,
-  serialized_end=5992,
+  serialized_start=5796,
+  serialized_end=6052,
 )
 _sym_db.RegisterEnumDescriptor(_GRIDDATATYPES)
 
@@ -1431,67 +1446,67 @@ _FIELDALIAS = _descriptor.EnumDescriptor(
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_MAPSHEET', index=103, number=107,
+      name='FA_UUID', index=103, number=108,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_UUID', index=104, number=108,
+      name='FA_THEME', index=104, number=109,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_THEME', index=105, number=109,
+      name='FA_DATASET_FORMAT', index=105, number=110,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_DATASET_FORMAT', index=106, number=110,
+      name='FA_FILE_SIZE', index=106, number=111,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_FILE_SIZE', index=107, number=111,
+      name='FA_DATA_URL', index=107, number=112,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_DATA_URL', index=108, number=112,
+      name='FA_CELLSIZE', index=108, number=113,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_CELLSIZE', index=109, number=113,
+      name='FA_COORD_SYSTEM', index=109, number=114,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_COORD_SYSTEM', index=110, number=114,
+      name='FA_FLIGHT_SPACING', index=110, number=115,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_FLIGHT_SPACING', index=111, number=115,
+      name='FA_NATIONAL_GRID', index=111, number=116,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_NATIONAL_GRID', index=112, number=116,
+      name='FA_ASSET_TEAM', index=112, number=117,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_ASSET_TEAM', index=113, number=117,
+      name='FA_VWC', index=113, number=118,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_VWC_ALIAS', index=114, number=118,
+      name='FA_PUBLISHED', index=114, number=119,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_PUBLISHED', index=115, number=119,
+      name='FA_SURVEY_DATE', index=115, number=121,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
@@ -1516,50 +1531,105 @@ _FIELDALIAS = _descriptor.EnumDescriptor(
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_Lithology', index=120, number=150,
+      name='FA_ReportFormat', index=120, number=130,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_GradientsEast', index=121, number=151,
+      name='FA_RenderStyle', index=121, number=131,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_GradientsNorth', index=122, number=152,
+      name='FA_MAPSHEET', index=122, number=132,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_GradientsUp', index=123, number=153,
+      name='FA_DIRECTORY', index=123, number=133,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_PSEUDO_FLIGHT', index=124, number=155,
+      name='FA_JURISTRICTION', index=124, number=135,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_ESTIMATED_CAESIUM', index=125, number=156,
+      name='FA_LINE_AZIMUTH', index=125, number=136,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_HIGH_RADON', index=126, number=157,
+      name='FA_LINE_KILOMETERS', index=126, number=137,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='FA_NO_ALIAS', index=127, number=199,
+      name='FA_FLIGHT_CLEARANCE', index=127, number=138,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='FA_HAS_LINE_ALTITUDE', index=128, number=139,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='FA_MINIMUM_ELEVATION', index=129, number=140,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='FA_MAXIMUM_ELEVATION', index=130, number=141,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='FA_Lithology', index=131, number=150,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='FA_GradientsEast', index=132, number=151,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='FA_GradientsNorth', index=133, number=152,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='FA_GradientsUp', index=134, number=153,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='FA_PSEUDO_FLIGHT', index=135, number=155,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='FA_ESTIMATED_CAESIUM', index=136, number=156,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='FA_HIGH_RADON', index=137, number=157,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='FA_NO_ALIAS', index=138, number=199,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
-  serialized_options=b'\020\001',
-  serialized_start=5995,
-  serialized_end=8368,
+  serialized_options=None,
+  serialized_start=6055,
+  serialized_end=8678,
 )
 _sym_db.RegisterEnumDescriptor(_FIELDALIAS)
 
@@ -1794,8 +1864,8 @@ _DFAFILETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=8371,
-  serialized_end=9064,
+  serialized_start=8681,
+  serialized_end=9374,
 )
 _sym_db.RegisterEnumDescriptor(_DFAFILETYPE)
 
@@ -1820,8 +1890,8 @@ _ACCESSTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=9066,
-  serialized_end=9109,
+  serialized_start=9376,
+  serialized_end=9419,
 )
 _sym_db.RegisterEnumDescriptor(_ACCESSTYPE)
 
@@ -1881,8 +1951,8 @@ _FLIGHTTYPES = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=9112,
-  serialized_end=9263,
+  serialized_start=9422,
+  serialized_end=9573,
 )
 _sym_db.RegisterEnumDescriptor(_FLIGHTTYPES)
 
@@ -1927,8 +1997,8 @@ _APPLICATIONTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=9265,
-  serialized_end=9380,
+  serialized_start=9575,
+  serialized_end=9690,
 )
 _sym_db.RegisterEnumDescriptor(_APPLICATIONTYPE)
 
@@ -2245,11 +2315,16 @@ _GEOPHYSICSSIGNALTYPE = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='AnalyticSignal', index=61, number=72,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=9383,
-  serialized_end=10126,
+  serialized_start=9693,
+  serialized_end=10456,
 )
 _sym_db.RegisterEnumDescriptor(_GEOPHYSICSSIGNALTYPE)
 
@@ -2284,8 +2359,8 @@ _GRFTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=10128,
-  serialized_end=10195,
+  serialized_start=10458,
+  serialized_end=10525,
 )
 _sym_db.RegisterEnumDescriptor(_GRFTYPE)
 
@@ -2310,8 +2385,8 @@ _GAMMAMEASURES_3DE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=10197,
-  serialized_end=10256,
+  serialized_start=10527,
+  serialized_end=10586,
 )
 _sym_db.RegisterEnumDescriptor(_GAMMAMEASURES_3DE)
 
@@ -2353,11 +2428,16 @@ _COORDINATEREFERENCESYSTEM = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='DEN', index=6, number=6,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=10258,
-  serialized_end=10341,
+  serialized_start=10588,
+  serialized_end=10680,
 )
 _sym_db.RegisterEnumDescriptor(_COORDINATEREFERENCESYSTEM)
 
@@ -2397,8 +2477,8 @@ _RELIABILITY = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=10343,
-  serialized_end=10440,
+  serialized_start=10682,
+  serialized_end=10779,
 )
 _sym_db.RegisterEnumDescriptor(_RELIABILITY)
 
@@ -2448,8 +2528,8 @@ _PROVENANCETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=10443,
-  serialized_end=10573,
+  serialized_start=10782,
+  serialized_end=10912,
 )
 _sym_db.RegisterEnumDescriptor(_PROVENANCETYPE)
 
@@ -2474,8 +2554,8 @@ _POLARITYTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=10575,
-  serialized_end=10641,
+  serialized_start=10914,
+  serialized_end=10980,
 )
 _sym_db.RegisterEnumDescriptor(_POLARITYTYPE)
 
@@ -2515,8 +2595,8 @@ _STRATIGRAPHICRELATIONSHIP = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=10643,
-  serialized_end=10729,
+  serialized_start=10982,
+  serialized_end=11068,
 )
 _sym_db.RegisterEnumDescriptor(_STRATIGRAPHICRELATIONSHIP)
 
@@ -2576,8 +2656,8 @@ _SECTIONDATATYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=10732,
-  serialized_end=10876,
+  serialized_start=11071,
+  serialized_end=11215,
 )
 _sym_db.RegisterEnumDescriptor(_SECTIONDATATYPE)
 
@@ -2627,8 +2707,8 @@ _GEOLOGYOBSTYPE3D = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=10879,
-  serialized_end=11056,
+  serialized_start=11218,
+  serialized_end=11395,
 )
 _sym_db.RegisterEnumDescriptor(_GEOLOGYOBSTYPE3D)
 
@@ -2668,8 +2748,8 @@ _ORIENTATIONMETHODTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=11058,
-  serialized_end=11170,
+  serialized_start=11397,
+  serialized_end=11509,
 )
 _sym_db.RegisterEnumDescriptor(_ORIENTATIONMETHODTYPE)
 
@@ -2799,8 +2879,8 @@ _PROPERTYTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=11173,
-  serialized_end=11652,
+  serialized_start=11512,
+  serialized_end=11991,
 )
 _sym_db.RegisterEnumDescriptor(_PROPERTYTYPE)
 
@@ -2865,8 +2945,8 @@ _PROBABILITYLAWTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=11655,
-  serialized_end=11844,
+  serialized_start=11994,
+  serialized_end=12183,
 )
 _sym_db.RegisterEnumDescriptor(_PROBABILITYLAWTYPE)
 
@@ -2911,8 +2991,8 @@ _MESHGRID_TYPEMESHGRID = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=11847,
-  serialized_end=11990,
+  serialized_start=12186,
+  serialized_end=12329,
 )
 _sym_db.RegisterEnumDescriptor(_MESHGRID_TYPEMESHGRID)
 
@@ -2947,8 +3027,8 @@ _INTERPOLATIONMETHOD = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=11992,
-  serialized_end=12103,
+  serialized_start=12331,
+  serialized_end=12442,
 )
 _sym_db.RegisterEnumDescriptor(_INTERPOLATIONMETHOD)
 
@@ -2978,8 +3058,8 @@ _INPUTDATASOURCE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12105,
-  serialized_end=12192,
+  serialized_start=12444,
+  serialized_end=12531,
 )
 _sym_db.RegisterEnumDescriptor(_INPUTDATASOURCE)
 
@@ -3019,8 +3099,8 @@ _OUTPUTMESHTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12195,
-  serialized_end=12336,
+  serialized_start=12534,
+  serialized_end=12675,
 )
 _sym_db.RegisterEnumDescriptor(_OUTPUTMESHTYPE)
 
@@ -3060,8 +3140,8 @@ _INTERPOLATIONOUTPUTTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12338,
-  serialized_end=12446,
+  serialized_start=12677,
+  serialized_end=12785,
 )
 _sym_db.RegisterEnumDescriptor(_INTERPOLATIONOUTPUTTYPE)
 
@@ -3106,8 +3186,8 @@ _VARIOGRAMCOMPONENT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12448,
-  serialized_end=12531,
+  serialized_start=12787,
+  serialized_end=12870,
 )
 _sym_db.RegisterEnumDescriptor(_VARIOGRAMCOMPONENT)
 
@@ -3157,8 +3237,8 @@ _VARIOGRAMMODELTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12534,
-  serialized_end=12690,
+  serialized_start=12873,
+  serialized_end=13029,
 )
 _sym_db.RegisterEnumDescriptor(_VARIOGRAMMODELTYPE)
 
@@ -3183,8 +3263,8 @@ _NEIGHBOURSTYLE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12692,
-  serialized_end=12749,
+  serialized_start=13031,
+  serialized_end=13088,
 )
 _sym_db.RegisterEnumDescriptor(_NEIGHBOURSTYLE)
 
@@ -3229,8 +3309,8 @@ _COMPUTATIONALMETHOD = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12752,
-  serialized_end=12882,
+  serialized_start=13091,
+  serialized_end=13221,
 )
 _sym_db.RegisterEnumDescriptor(_COMPUTATIONALMETHOD)
 
@@ -3260,8 +3340,8 @@ _CENTER_TYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12884,
-  serialized_end=12954,
+  serialized_start=13223,
+  serialized_end=13293,
 )
 _sym_db.RegisterEnumDescriptor(_CENTER_TYPE)
 
@@ -3291,8 +3371,8 @@ _VFILTEXPANSIONMETHOD = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12956,
-  serialized_end=13011,
+  serialized_start=13295,
+  serialized_end=13350,
 )
 _sym_db.RegisterEnumDescriptor(_VFILTEXPANSIONMETHOD)
 
@@ -3362,8 +3442,8 @@ _TMI_PRODUCTS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=13014,
-  serialized_end=13178,
+  serialized_start=13353,
+  serialized_end=13517,
 )
 _sym_db.RegisterEnumDescriptor(_TMI_PRODUCTS)
 
@@ -3708,8 +3788,8 @@ _TENSORPRODUCT_LIST = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=13181,
-  serialized_end=14861,
+  serialized_start=13520,
+  serialized_end=15200,
 )
 _sym_db.RegisterEnumDescriptor(_TENSORPRODUCT_LIST)
 
@@ -3791,11 +3871,16 @@ _TENSOR_INTEGRATION_METHOD = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='INT_MODIFIED_PHASE_EIGENVALUE', index=14, number=14,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=14864,
-  serialized_end=15152,
+  serialized_start=15203,
+  serialized_end=15526,
 )
 _sym_db.RegisterEnumDescriptor(_TENSOR_INTEGRATION_METHOD)
 
@@ -3830,8 +3915,8 @@ _FALCON_READING_OPTIONS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=15154,
-  serialized_end=15249,
+  serialized_start=15528,
+  serialized_end=15623,
 )
 _sym_db.RegisterEnumDescriptor(_FALCON_READING_OPTIONS)
 
@@ -3916,8 +4001,8 @@ _FALCON_FFT_TRANSFORM_OPTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=15252,
-  serialized_end=15535,
+  serialized_start=15626,
+  serialized_end=15909,
 )
 _sym_db.RegisterEnumDescriptor(_FALCON_FFT_TRANSFORM_OPTION)
 
@@ -4007,8 +4092,8 @@ _VECTORPRODUCT_LIST = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=15538,
-  serialized_end=15883,
+  serialized_start=15912,
+  serialized_end=16257,
 )
 _sym_db.RegisterEnumDescriptor(_VECTORPRODUCT_LIST)
 
@@ -4063,8 +4148,8 @@ _QUATERNIONPRODUCT_LIST = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=15886,
-  serialized_end=16079,
+  serialized_start=16260,
+  serialized_end=16453,
 )
 _sym_db.RegisterEnumDescriptor(_QUATERNIONPRODUCT_LIST)
 
@@ -4101,15 +4186,56 @@ _SCALARPRODUCT_LIST = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='MODULUS', index=5, number=5,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=16081,
-  serialized_end=16196,
+  serialized_start=16456,
+  serialized_end=16584,
 )
 _sym_db.RegisterEnumDescriptor(_SCALARPRODUCT_LIST)
 
 ScalarProduct_list = enum_type_wrapper.EnumTypeWrapper(_SCALARPRODUCT_LIST)
+_COMPLEXPRODUCT_LIST = _descriptor.EnumDescriptor(
+  name='ComplexProduct_list',
+  full_name='ctm.ComplexProduct_list',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='C_REAL_PART', index=0, number=2,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='C_IMAGINARY_PART', index=1, number=3,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='C_PHASE_ANGLE', index=2, number=4,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='C_MODULUS', index=3, number=5,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=16586,
+  serialized_end=16680,
+)
+_sym_db.RegisterEnumDescriptor(_COMPLEXPRODUCT_LIST)
+
+ComplexProduct_list = enum_type_wrapper.EnumTypeWrapper(_COMPLEXPRODUCT_LIST)
 _DATE_STYLES = _descriptor.EnumDescriptor(
   name='date_styles',
   full_name='ctm.date_styles',
@@ -4160,8 +4286,8 @@ _DATE_STYLES = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=16199,
-  serialized_end=16338,
+  serialized_start=16683,
+  serialized_end=16822,
 )
 _sym_db.RegisterEnumDescriptor(_DATE_STYLES)
 
@@ -4186,8 +4312,8 @@ _DIURNAL_STYLES = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=16340,
-  serialized_end=16395,
+  serialized_start=16824,
+  serialized_end=16879,
 )
 _sym_db.RegisterEnumDescriptor(_DIURNAL_STYLES)
 
@@ -4257,6 +4383,9 @@ DT_I8 = 28
 DT_U8 = 29
 DT_TENSOR2 = 30
 DT_COMPLEX_TENSOR2 = 31
+DT_OBSERVED_AEM = 32
+DT_LONG_STRING = 33
+DT_C8 = 34
 DF_UNKNOWN = 0
 DF_PITS = 1
 DF_ERM = 2
@@ -4297,7 +4426,7 @@ DF_ZIP = 36
 DF_PNG = 37
 DF_SEMI = 38
 DF_MAPINFO_TAB = 39
-DF_GEOMODELLER = 40
+DF_Argus = 40
 DF_GOOGLE_KMZ = 41
 DF_FLEDERMAUS_SCENE = 42
 DF_GSF = 43
@@ -4440,7 +4569,6 @@ FA_MINIMUM_LATITUDE = 104
 FA_MAXIMUM_LONGITUDE = 105
 FA_MAXIMUM_LATITUDE = 106
 FA_BLOCK = 107
-FA_MAPSHEET = 107
 FA_UUID = 108
 FA_THEME = 109
 FA_DATASET_FORMAT = 110
@@ -4451,12 +4579,24 @@ FA_COORD_SYSTEM = 114
 FA_FLIGHT_SPACING = 115
 FA_NATIONAL_GRID = 116
 FA_ASSET_TEAM = 117
-FA_VWC_ALIAS = 118
+FA_VWC = 118
 FA_PUBLISHED = 119
+FA_SURVEY_DATE = 121
 FA_Subject = 123
 FA_Abstract = 124
 FA_Source = 128
 FA_Association = 129
+FA_ReportFormat = 130
+FA_RenderStyle = 131
+FA_MAPSHEET = 132
+FA_DIRECTORY = 133
+FA_JURISTRICTION = 135
+FA_LINE_AZIMUTH = 136
+FA_LINE_KILOMETERS = 137
+FA_FLIGHT_CLEARANCE = 138
+FA_HAS_LINE_ALTITUDE = 139
+FA_MINIMUM_ELEVATION = 140
+FA_MAXIMUM_ELEVATION = 141
 FA_Lithology = 150
 FA_GradientsEast = 151
 FA_GradientsNorth = 152
@@ -4587,6 +4727,7 @@ Conductivity = 61
 Resistivity = 62
 MagnetoTelluric = 70
 Phase = 71
+AnalyticSignal = 72
 GRF_AGRF = 0
 GRF_IGRF = 1
 GRF_MANUAL = 2
@@ -4599,6 +4740,7 @@ END = 2
 LOCAL = 3
 WSD = 4
 WSU = 5
+DEN = 6
 Unspecified = 0
 Observed = 1
 Inferred = 2
@@ -4813,6 +4955,7 @@ INT_PLUMB_LINE = 10
 INT_GAUSSIAN_CURVATURE = 11
 INT_SHAPE_INDEX = 12
 INT_MAG_VECTOR = 13
+INT_MODIFIED_PHASE_EIGENVALUE = 14
 FALCON_A = 0
 FALCON_B = 1
 FALCON_AVERAGE = 2
@@ -4859,6 +5002,11 @@ SIGNAL_MAGNITUDE = 1
 REAL_PART = 2
 IMAGINARY_PART = 3
 PHASE_ANGLE = 4
+MODULUS = 5
+C_REAL_PART = 2
+C_IMAGINARY_PART = 3
+C_PHASE_ANGLE = 4
+C_MODULUS = 5
 YYYYMMDD = 0
 DDMMYYYY = 1
 DDMMYY = 2
@@ -5922,6 +6070,13 @@ _COORDINATESYSTEM = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='epsg', full_name='ctm.CoordinateSystem.epsg', index=6,
+      number=7, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -5935,7 +6090,7 @@ _COORDINATESYSTEM = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=1973,
-  serialized_end=2122,
+  serialized_end=2136,
 )
 
 
@@ -5980,8 +6135,8 @@ _ANGLEPROBABILITYDISTRIBUTIONFUNCTION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2125,
-  serialized_end=2258,
+  serialized_start=2139,
+  serialized_end=2272,
 )
 
 
@@ -6075,8 +6230,8 @@ _LITHOLOGYPROPERTY_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2261,
-  serialized_end=2717,
+  serialized_start=2275,
+  serialized_end=2731,
 )
 
 
@@ -6170,8 +6325,8 @@ _PROBABILITYDISTRIBUTIONFUNCTION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2720,
-  serialized_end=3018,
+  serialized_start=2734,
+  serialized_end=3032,
 )
 
 
@@ -6272,8 +6427,8 @@ _SETREFERENCEMAGNETICFIELD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3021,
-  serialized_end=3331,
+  serialized_start=3035,
+  serialized_end=3345,
 )
 
 
@@ -6339,8 +6494,8 @@ _TENSOR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3333,
-  serialized_end=3413,
+  serialized_start=3347,
+  serialized_end=3427,
 )
 
 
@@ -6385,8 +6540,8 @@ _VECTORMEASURE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3415,
-  serialized_end=3463,
+  serialized_start=3429,
+  serialized_end=3477,
 )
 
 _GEODETICBOX2D.fields_by_name['transect'].enum_type = _TRANSECT_DIRECTION
@@ -6478,6 +6633,7 @@ DESCRIPTOR.enum_types_by_name['Falcon_FFT_TRANSFORM_Option'] = _FALCON_FFT_TRANS
 DESCRIPTOR.enum_types_by_name['VectorProduct_list'] = _VECTORPRODUCT_LIST
 DESCRIPTOR.enum_types_by_name['QuaternionProduct_list'] = _QUATERNIONPRODUCT_LIST
 DESCRIPTOR.enum_types_by_name['ScalarProduct_list'] = _SCALARPRODUCT_LIST
+DESCRIPTOR.enum_types_by_name['ComplexProduct_list'] = _COMPLEXPRODUCT_LIST
 DESCRIPTOR.enum_types_by_name['date_styles'] = _DATE_STYLES
 DESCRIPTOR.enum_types_by_name['diurnal_styles'] = _DIURNAL_STYLES
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
@@ -6665,7 +6821,6 @@ VectorMeasure = _reflection.GeneratedProtocolMessageType('VectorMeasure', (_mess
 _sym_db.RegisterMessage(VectorMeasure)
 
 
-_FIELDALIAS._options = None
 _REPEATEDBOOL.fields_by_name['node']._options = None
 _REPEATEDDOUBLE.fields_by_name['node']._options = None
 _REPEATEDINT32.fields_by_name['node']._options = None

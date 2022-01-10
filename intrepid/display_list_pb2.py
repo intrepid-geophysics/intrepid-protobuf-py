@@ -12,8 +12,8 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-import intrepid.commontaskmodel_pb2 as commontaskmodel__pb2
-import intrepid.intrepid_maps_pb2 as intrepid__maps__pb2
+import commontaskmodel_pb2 as commontaskmodel__pb2
+import intrepid_maps_pb2 as intrepid__maps__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -22,7 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto2',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x12\x64isplay_list.proto\x12\x05\x64list\x1a\x15\x63ommontaskmodel.proto\x1a\x13intrepid_maps.proto\"\xea\x01\n\x0f\x63ontourData_INT\x12\x12\n\x05level\x18\x01 \x01(\x05:\x03\x31\x30\x30\x12\x15\n\x07\x64\x65nsity\x18\x02 \x01(\x01:\x04\x31\x30\x30\x30\x12\x13\n\x08\x64\x65\x63imals\x18\x03 \x01(\x05:\x01\x30\x12\x13\n\x04size\x18\x04 \x01(\x01:\x05\x30.004\x12\x14\n\tthickness\x18\x05 \x01(\x01:\x01\x31\x12\x34\n\ncolourName\x18\x06 \x01(\x0e\x32\x13.dlist.ColourVector:\x0b\x62lackVector\x12\x36\n\x0ctxcolourName\x18\x07 \x01(\x0e\x32\x13.dlist.ColourVector:\x0b\x62lackVector\"z\n\x15HighLowManagement_INT\x12\x17\n\x08showHigh\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07showLow\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tshowValue\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x08selected\x18\x04 \x01(\x08:\x04true\"\xd9\x01\n\x0bNewPlot_INT\x12\x0c\n\x04PLOT\x18\x01 \x01(\t\x12\x37\n\x06\x46ORMAT\x18\x02 \x01(\x0e\x32\x1a.intrepid_maps.Devices_MAP:\x0bTIFFHighRes\x12\x13\n\x05XSIZE\x18\x03 \x01(\x01:\x04\x31\x30\x30\x30\x12\x13\n\x05YSIZE\x18\x04 \x01(\x01:\x04\x31\x30\x30\x30\x12\x0e\n\x06XDELTA\x18\x05 \x01(\x01\x12\x0e\n\x06YDELTA\x18\x06 \x01(\x01\x12\x0f\n\x07XORIGIN\x18\x07 \x01(\x01\x12\x0f\n\x07YORIGIN\x18\x08 \x01(\x01\x12\x17\n\x08Portrait\x18\t \x01(\x08:\x05\x66\x61lse\"\xe6\x02\n\x0b\x45xtents_INT\x12\x19\n\x0bisIsotropic\x18\x01 \x01(\x08:\x04true\x12\x17\n\x08geodetic\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x30\n\x11\x45xtent_Projection\x18\x03 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x16\n\x0b\x42orderAtTop\x18\x04 \x01(\x01:\x01\x30\x12\x16\n\x0b\x42orderAtBot\x18\x05 \x01(\x01:\x01\x30\x12\x17\n\x0c\x42orderAtLeft\x18\x06 \x01(\x01:\x01\x30\x12\x18\n\rBorderAtRight\x18\x07 \x01(\x01:\x01\x30\x12\x0f\n\x04xlow\x18\x08 \x01(\x01:\x01\x30\x12\x13\n\x05xhigh\x18\t \x01(\x01:\x04\x31\x30\x30\x30\x12\x0f\n\x04ylow\x18\n \x01(\x01:\x01\x30\x12\x13\n\x05yhigh\x18\x0b \x01(\x01:\x04\x31\x30\x30\x30\x12\x19\n\x11ReferenceGridPath\x18\x1e \x01(\t\x12\'\n\x1fReferenceGeophysicalDatasetPath\x18\x1f \x01(\t\"\xbe\x03\n\x0bMapPlot_INT\x12-\n\x0eMap_Projection\x18\x01 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x15\n\x06xscale\x18\x02 \x01(\x01:\x05\x31\x30\x30\x30\x30\x12\x15\n\x06yscale\x18\x03 \x01(\x01:\x05\x31\x30\x30\x30\x30\x12\x12\n\x07xorigin\x18\x04 \x01(\x01:\x01\x30\x12\x12\n\x07yorigin\x18\x05 \x01(\x01:\x01\x30\x12\x12\n\x07xoffset\x18\x06 \x01(\x01:\x01\x30\x12\x12\n\x07yoffset\x18\x07 \x01(\x01:\x01\x30\x12\x13\n\x08rotation\x18\x08 \x01(\x01:\x01\x30\x12\x15\n\nxoriginDDC\x18\x0b \x01(\x01:\x01\x30\x12\x15\n\nyoriginDDC\x18\x0c \x01(\x01:\x01\x30\x12\x1e\n\x0foriginIsTopLeft\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x18\n\ryoriginOffset\x18\x11 \x01(\x05:\x01\x30\x12\x18\n\rLevelOfDetail\x18\x12 \x01(\x01:\x01\x31\x12\x1d\n\x12xplotterResolution\x18\x15 \x01(\x01:\x01\x31\x12\x1d\n\x12yplotterResolution\x18\x16 \x01(\x01:\x01\x31\x12\x16\n\x07pushMap\x18\x17 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06popMap\x18\x18 \x01(\x08:\x05\x66\x61lse\"\xc3\x0c\n\rImageWork_INT\x12\x11\n\tDirectory\x18\x01 \x01(\t\x12\x14\n\x0cSignalColour\x18\x02 \x01(\t\x12\x1b\n\x13SignalColourMinClip\x18\x03 \x01(\x01\x12\x1b\n\x13SignalColourMaxClip\x18\x04 \x01(\x01\x12\x11\n\tSignalRed\x18\x06 \x01(\t\x12\x18\n\x10SignalRedMinClip\x18\x07 \x01(\x01\x12\x18\n\x10SignalRedMaxClip\x18\x08 \x01(\x01\x12\x13\n\x0bSignalGreen\x18\n \x01(\t\x12\x1a\n\x12SignalGreenMinClip\x18\x0b \x01(\x01\x12\x1a\n\x12SignalGreenMaxClip\x18\x0c \x01(\x01\x12\x12\n\nSignalBlue\x18\x0e \x01(\t\x12\x19\n\x11SignalBlueMinClip\x18\x0f \x01(\x01\x12\x19\n\x11SignalBlueMaxClip\x18\x10 \x01(\x01\x12\x1a\n\x12IntensityDirectory\x18\x11 \x01(\t\x12\x17\n\x0fSignalIntensity\x18\x12 \x01(\t\x12\x1e\n\x16SignalIntensityMinClip\x18\x13 \x01(\x01\x12\x1e\n\x16SignalIntensityMaxClip\x18\x14 \x01(\x01\x12\x1d\n\x10SaturationFactor\x18\x15 \x01(\x01:\x03\x30.7\x12\x19\n\nDoSunAngle\x18\x1f \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0eInclinationSun\x18  \x01(\x01:\x02\x34\x35\x12\x1a\n\x0e\x44\x65\x63linationSun\x18! \x01(\x01:\x02\x34\x35\x12#\n\x17VerticalExaggerationSun\x18\" \x01(\x01:\x02\x35\x30\x12\x10\n\x05\x64xesq\x18# \x01(\x01:\x01\x31\x12:\n\x0fGridCombination\x18. \x01(\x0e\x32\x15.dlist.EColourMixType:\nMap_Scalar\x12M\n\x13GridInterpolateType\x18, \x01(\x0e\x32\x1c.dlist.Grid_Interpolate_Type:\x12INTREPID_NEWTON4TH\x12\x30\n\tSpatialOp\x18- \x01(\x0e\x32\x10.dlist.SpatialOp:\x0bspatialNone\x12\x33\n\ncolourMode\x18\x32 \x01(\x0e\x32\x11.dlist.ColourMode:\x0cPseudoColour\x12\x13\n\x0b\x43olourLevel\x18\x34 \x01(\x08\x12\x18\n\rSignalLowClip\x18\x35 \x01(\x01:\x01\x30\x12\x19\n\x0eSignalHighClip\x18\x36 \x01(\x01:\x01\x30\x12\'\n\x06histOp\x18; \x01(\x0e\x32\r.dlist.HistOp:\x08histNone\x12\x15\n\x08\x42inWidth\x18\x33 \x01(\x01:\x03\x30.3\x12\x16\n\x07hasClip\x18\x42 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rhasFixedRange\x18\x43 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bShowContour\x18\x44 \x01(\x08:\x05\x66\x61lse\x12+\n\x0b\x63ontourInfo\x18\x45 \x03(\x0b\x32\x16.dlist.contourData_INT\x12-\n\x07highlow\x18\x41 \x01(\x0b\x32\x1c.dlist.HighLowManagement_INT\x12\x1f\n\x10\x44rawingIncrement\x18< \x01(\x01:\x05\x31\x65-06\x12\x12\n\x07Tension\x18= \x01(\x01:\x01\x31\x12\x1e\n\x10GapBetweenLabels\x18> \x01(\x01:\x04\x30.05\x12\x1c\n\x0e\x41nnotationPass\x18? \x01(\x08:\x04true\x12\x1f\n\x11RotateToTrueNorth\x18@ \x01(\x08:\x04true\x12\x31\n\x0cnew_contours\x18G \x01(\x0b\x32\x1b.intrepid_maps.Contours_MAP\x12\x38\n\nSignalType\x18+ \x01(\x0e\x32\x19.ctm.GeophysicsSignalType:\tMagnetism\x12\x1b\n\x0c\x64oing_tensor\x18( \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0c\x64oing_falcon\x18) \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10\x64oing_quaternion\x18* \x01(\x08:\x05\x66\x61lse\x12M\n\x0ctensorMethod\x18\x46 \x01(\x0e\x32\x17.ctm.TensorProduct_list:\x1eTENSOR_CubeRoot_of_Determinant\"\x96\x10\n\x0cLineWork_INT\x12\x0f\n\x07\x44\x61taset\x18\x01 \x01(\t\x12\x0b\n\x03Xin\x18\x02 \x01(\t\x12\x0b\n\x03Yin\x18\x03 \x01(\t\x12 \n\x11ShowLineDirection\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x18\n\rlineSubSample\x18\x05 \x01(\x05:\x01\x31\x12\x1d\n\x0eShowLineColour\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x39\n\x12\x63olourAssignChoice\x18\x34 \x01(\x0e\x32\x12.dlist.StatsOpType:\tSOT_HISTO\x12\x19\n\rNumberColours\x18\x06 \x01(\x05:\x02\x31\x32\x12\x15\n\rColourLowClip\x18\x07 \x01(\x01\x12\x16\n\x0e\x43olourHighClip\x18\t \x01(\x01\x12#\n\x12SignalColourLegend\x18\x35 \x01(\t:\x07\x44\x45\x46\x41ULT\x12\x30\n\x06\x63olour\x18\x32 \x01(\x0e\x32\x13.dlist.ColourVector:\x0bwhiteVector\x12\x13\n\x0bSignalField\x18\x33 \x01(\t\x12\x32\n\x05style\x18\n \x01(\x0e\x32\x1c.intrepid_maps.LineStyle_MAP:\x05Solid\x12\x37\n\tthickness\x18\x0b \x01(\x0e\x32 .intrepid_maps.LineThickness_MAP:\x02L1\x12\x1c\n\rShowLineLabel\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x39\n\x0flineLabelColour\x18\r \x01(\x0e\x32\x13.dlist.ColourVector:\x0bgreenVector\x12\x19\n\x0elineLabelAngle\x18\x0e \x01(\x01:\x01\x30\x12\x11\n\tlineField\x18\x0f \x01(\t\x12\"\n\x13ShowSecondLineLabel\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x12\n\nlineField2\x18\x11 \x01(\t\x12\x1c\n\x0flineLabelTxsize\x18\x12 \x01(\x01:\x03\x30.8\x12\x18\n\tShowPoint\x18\x14 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cShowFidLabel\x18\x15 \x01(\x08:\x05\x66\x61lse\x12\x39\n\x10pointLabelColour\x18\x16 \x01(\x0e\x32\x13.dlist.ColourVector:\nblueVector\x12\x1d\n\x10pointLabelTxsize\x18\x18 \x01(\x01:\x03\x30.7\x12\x1a\n\x0fpointLabelAngle\x18\x19 \x01(\x01:\x01\x30\x12.\n\x0bpointSymbol\x18\x1a \x01(\x0e\x32\x11.dlist.MarkerType:\x06MK_DOT\x12\x1a\n\x0fpointSymbolsize\x18\x1b \x01(\x01:\x01\x31\x12\x15\n\rFiducialField\x18\x1c \x01(\t\x12\x1d\n\x15RECOVERYFiducialField\x18\x1d \x01(\t\x12 \n\x11ShowRecoveredFids\x18\x1e \x01(\x08:\x05\x66\x61lse\x12\x17\n\x0c\x46IDTEXTANGLE\x18\x1f \x01(\x01:\x01\x30\x12\x14\n\tLABELRATE\x18  \x01(\x01:\x01\x31\x12\x16\n\x0b\x46IDTEXTSIZE\x18! \x01(\x01:\x01\x31\x12\x1e\n\x11RECOVERY_Interval\x18\" \x01(\x01:\x03\x31\x30\x30\x12/\n\tFIDSYMBOL\x18# \x01(\x0e\x32\x11.dlist.MarkerType:\tMK_SQUARE\x12\x37\n\rFIDTEXTCOLOUR\x18$ \x01(\x0e\x32\x13.dlist.ColourVector:\x0bwhiteVector\x12\x1a\n\rFIDSymbolsize\x18% \x01(\x01:\x03\x30.8\x12\"\n\x13ShowSignalAsProfile\x18( \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x12SignalProfileField\x18) \x01(\t\x12 \n\x0fSignalScaleText\x18* \x01(\t:\x07\x44\x65\x66\x61ult\x12\x16\n\x0bSignalScale\x18+ \x01(\x01:\x01\x31\x12\x16\n\x0eSignalBaseText\x18, \x01(\t\x12\x15\n\nSignalBase\x18- \x01(\x01:\x01\x30\x12\x10\n\x05XVIEW\x18. \x01(\x01:\x01\x31\x12\x11\n\x05YVIEW\x18/ \x01(\x01:\x02-1\x12\x1b\n\x0c\x44oLineToBase\x18\x30 \x01(\x08:\x05\x66\x61lse\x12 \n\x11\x44oLineToRecovered\x18\x31 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0f\x41\x44\x41PT_SUBSAMPLE\x18\x36 \x01(\x01:\x01\x30\x12#\n\x14ShowValidationResult\x18< \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eShowOutOfRange\x18\x46 \x01(\x08:\x05\x66\x61lse\x12 \n\x11ShowOutOfSequence\x18= \x01(\x08:\x05\x66\x61lse\x12$\n\x15ShowLineInternalNulls\x18I \x01(\x08:\x05\x66\x61lse\x12/\n ShowLocalLineDirectionDeviations\x18J \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x12OutOfRangeDistance\x18> \x01(\x01:\x03\x31\x30\x30\x12\x18\n\rOutOfRangeMin\x18? \x01(\x01:\x01\x30\x12\x1a\n\rOutOfRangeMax\x18@ \x01(\x01:\x03\x31\x30\x30\x12\x1e\n\x10GradientDistance\x18\x41 \x01(\x01:\x04\x35\x30\x30\x30\x12\x18\n\x0bGradientMax\x18\x42 \x01(\x01:\x03\x31\x30\x30\x12!\n\x15\x44irectionMaxDeviation\x18\x43 \x01(\x01:\x02\x35\x30\x12\x1f\n\x11\x44irectionDistance\x18\x44 \x01(\x01:\x04\x35\x30\x30\x30\x12\x1d\n\x12\x41verageSampleSpace\x18\x45 \x01(\x01:\x01\x30\x12\x16\n\tTolerance\x18G \x01(\x01:\x03\x30.1\x12\x15\n\nWavelength\x18H \x01(\x01:\x01\x35\"\x8f\x07\n\rPointWork_INT\x12\x0f\n\x07\x44\x61taset\x18\x12 \x01(\t\x12\x0b\n\x03Xin\x18\x10 \x01(\t\x12\x0b\n\x03Yin\x18\x11 \x01(\t\x12\x13\n\x0bSignalField\x18\x06 \x01(\t\x12\x17\n\x0fSignalSizeField\x18\x07 \x01(\t\x12\x18\n\x10SignalAngleField\x18\x08 \x01(\t\x12\x1f\n\x10ShowSignalColour\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eShowSignalSize\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fShowSignalAngle\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\'\n\x04type\x18\x05 \x01(\x0e\x32\x11.dlist.MarkerType:\x06MK_DOT\x12\x16\n\nnumColours\x18\n \x01(\x05:\x02\x31\x32\x12\x39\n\x12\x63olourAssignChoice\x18\x0b \x01(\x0e\x32\x12.dlist.StatsOpType:\tSOT_HISTO\x12\x13\n\x0b\x63olourLevel\x18\x0c \x01(\x08\x12\x18\n\rcolourLowClip\x18\r \x01(\x01:\x01\x30\x12\x19\n\x0e\x63olourHighClip\x18\x0e \x01(\x01:\x01\x30\x12.\n\x06\x63olour\x18\x0f \x01(\x0e\x32\x13.dlist.ColourVector:\tredVector\x12\x14\n\x08numSizes\x18\x14 \x01(\x05:\x02\x31\x32\x12\x37\n\x10sizeAssignChoice\x18\x15 \x01(\x0e\x32\x12.dlist.StatsOpType:\tSOT_HISTO\x12\x11\n\tsizeLevel\x18\x16 \x01(\x08\x12\x16\n\x0bsizeLowClip\x18\x1c \x01(\x01:\x01\x30\x12\x17\n\x0csizeHighClip\x18\x1d \x01(\x01:\x01\x30\x12\x18\n\tShowLabel\x18\x1e \x01(\x08:\x05\x66\x61lse\x12\x12\n\nlabelField\x18\x1f \x01(\t\x12\x1a\n\x0blabelTxsize\x18  \x01(\x01:\x05\x30.001\x12\x15\n\nlabelAngle\x18! \x01(\x01:\x01\x30\x12\x35\n\x0blabelColour\x18\" \x01(\x0e\x32\x13.dlist.ColourVector:\x0bgreenVector\x12\x19\n\x0epointSubSample\x18( \x01(\x05:\x01\x31\x12\x16\n\npointGroup\x18) \x01(\x05:\x02-1\x12%\n\x16\x62\x61se_markersize_factor\x18* \x01(\x01:\x05\x30.002\x12\x1b\n\x0chasCondition\x18+ \x01(\x08:\x05\x66\x61lse\x12\x13\n\x0b\x63onditional\x18, \x01(\t\"\xa8\x02\n\x0cPolyWork_INT\x12\x0f\n\x07\x44\x61taset\x18\x12 \x01(\t\x12\x0b\n\x03Xin\x18\x01 \x01(\t\x12\x0b\n\x03Yin\x18\x02 \x01(\t\x12\x11\n\tPolyLabel\x18\x03 \x01(\t\x12\x10\n\x08PolyName\x18\x04 \x01(\t\x12\x18\n\tShowLabel\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0blabelTxsize\x18\x06 \x01(\x01:\x05\x30.001\x12\x35\n\x0blabelColour\x18\x07 \x01(\x0e\x32\x13.dlist.ColourVector:\x0bgreenVector\x12\x30\n\x06\x43olour\x18\" \x01(\x0e\x32\x13.dlist.ColourVector:\x0bwhiteVector\x12)\n\x05style\x18\t \x01(\x0e\x32\x12.dlist.PolygonType:\x06HOLLOW\"\x80\x06\n\x0cTickWork_INT\x12\x18\n\nisSelected\x18\x01 \x01(\x08:\x04true\x12\x17\n\x08Geodetic\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x15\n\nlatlondegX\x18\x03 \x01(\x01:\x01\x30\x12\x15\n\nlatlonminX\x18\x04 \x01(\x01:\x01\x30\x12\x16\n\nlatlonsecX\x18\x05 \x01(\x01:\x02\x33\x30\x12\x15\n\nlatlondegY\x18\x06 \x01(\x01:\x01\x30\x12\x15\n\nlatlonminY\x18\x07 \x01(\x01:\x01\x30\x12\x16\n\nlatlonsecY\x18\x08 \x01(\x01:\x02\x33\x30\x12\x17\n\tProjected\x18\n \x01(\x08:\x04true\x12\x1c\n\x0eProjectedtickX\x18\x0b \x01(\x01:\x04\x31\x30\x30\x30\x12\x1c\n\x0eProjectedtickY\x18\x0c \x01(\x01:\x04\x31\x30\x30\x30\x12\x30\n\x08ticktype\x18\r \x01(\x0e\x32\x14.dlist.GraticuleType:\x08LineType\x12\x35\n\x06labels\x18\x0e \x01(\x0e\x32\x15.dlist.LabelPositions:\x0eInternalLabels\x12\x16\n\x08labeltop\x18\x0f \x01(\x08:\x04true\x12\x16\n\x08labelbot\x18\x10 \x01(\x08:\x04true\x12\x17\n\tlabelleft\x18\x11 \x01(\x08:\x04true\x12\x19\n\nlabelright\x18\x12 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0blabelTxsize\x18\x13 \x01(\x01:\x05\x30.001\x12\x35\n\x0blabelColour\x18\x14 \x01(\x0e\x32\x13.dlist.ColourVector:\x0bwhiteVector\x12\x17\n\x08tickSize\x18\x16 \x01(\x01:\x05\x30.004\x12\x34\n\ntickColour\x18\x17 \x01(\x0e\x32\x13.dlist.ColourVector:\x0bwhiteVector\x12\x19\n\nShowborder\x18\x18 \x01(\x08:\x05\x66\x61lse\x12:\n\x0b\x62orderTicks\x18\x19 \x01(\x0e\x32\x15.dlist.LabelPositions:\x0eInternalLabels\x12\x16\n\x0blabelOffset\x18\x1a \x01(\x01:\x01\x30\"/\n\x0eTitle_Text_INT\x12\x0f\n\x04SIZE\x18\x01 \x01(\x01:\x01\x31\x12\x0c\n\x04TEXT\x18\x02 \x01(\t\"T\n\tTitle_INT\x12\x10\n\x08XTOPLEFT\x18\x01 \x01(\x01\x12\x10\n\x08YTOPLEFT\x18\x02 \x01(\x01\x12#\n\x04HEAD\x18\x04 \x03(\x0b\x32\x15.dlist.Title_Text_INT*\xa7\x03\n\x07\x43lassID\x12\x11\n\x0cNewPlot_COMP\x10\xd0\x0f\x12\x11\n\x0cMapProj_COMP\x10\xd1\x0f\x12\x10\n\x0b\x45xtent_COMP\x10\xd2\x0f\x12\x0f\n\nImage_COMP\x10\xd3\x0f\x12\x0e\n\tLine_COMP\x10\xd4\x0f\x12\x0f\n\nPoint_COMP\x10\xd5\x0f\x12\x11\n\x0cPolygon_COMP\x10\xd6\x0f\x12\x15\n\x10\x43ornerLabel_COMP\x10\xd7\x0f\x12\x13\n\x0eimmediate_COMP\x10\xd8\x0f\x12\x11\n\x0cinclude_COMP\x10\xd9\x0f\x12\x0e\n\tTick_COMP\x10\xda\x0f\x12\x0f\n\nTitle_COMP\x10\xdb\x0f\x12\x11\n\x0cGreybar_COMP\x10\xdc\x0f\x12\x15\n\x10\x43olourTable_COMP\x10\xdd\x0f\x12\x12\n\rScalebar_COMP\x10\xde\x0f\x12\x10\n\x0bLegend_COMP\x10\xdf\x0f\x12\x14\n\x0fNorthArrow_COMP\x10\xe0\x0f\x12\x17\n\x12MapSheetIndex_COMP\x10\xe1\x0f\x12\x0e\n\tAttr_COMP\x10\xe2\x0f\x12\x10\n\x0bPlotxy_COMP\x10\xe3\x0f\x12\x1e\n\x11\x41\x62stractBase_COMP\x10\xf1\xb1\xff\xff\xff\xff\xff\xff\xff\x01*y\n\x0e\x45\x43olourMixType\x12\x0e\n\nMap_Scalar\x10\x00\x12\x13\n\x0fSun_Angle_Drape\x10\x01\x12\x17\n\x13Sun_Angle_Drape_RGB\x10\x02\x12\x0f\n\x0bRgb_Ternary\x10\x03\x12\x18\n\x14Rgb_Ternary_SunAngle\x10\x04*\x99\x02\n\nColourMode\x12\x10\n\x0cPseudoColour\x10\x00\x12\x0f\n\x0b\x46\x61lseColour\x10\x01\x12\x0f\n\x0b\x44rapeColour\x10\x02\x12\x12\n\x0eSunAngleColour\x10\x03\x12\x14\n\x10\x46ixedRangeColour\x10\x04\x12\x13\n\x0fGreyScaleColour\x10\x05\x12\x0e\n\nTrueColour\x10\x06\x12\x11\n\rRedColourRamp\x10\x07\x12\x13\n\x0fGreenColourRamp\x10\x08\x12\x12\n\x0e\x42lueColourRamp\x10\t\x12\x12\n\x0eRedColourCycle\x10\n\x12\x14\n\x10GreenColourCycle\x10\x0b\x12\x13\n\x0f\x42lueColourCycle\x10\x0c\x12\r\n\tLutColour\x10\x63*q\n\tSpatialOp\x12\x0f\n\x0bspatialNone\x10\x00\x12\x13\n\x0fspatialSunAngle\x10\x01\x12\x15\n\x11spatialEWGradient\x10\x02\x12\x15\n\x11spatialNSGradient\x10\x03\x12\x10\n\x0cspatialCNORM\x10\x04*\\\n\x07PointOp\x12\r\n\tpointNone\x10\x00\x12\x0c\n\x08pointLog\x10\x01\x12\x12\n\x0epointNormalize\x10\x02\x12\r\n\tpointClip\x10\x03\x12\x11\n\rpointEquation\x10\x04*\xde\x01\n\x0c\x43olourVector\x12\x0f\n\x0b\x62lackVector\x10\x00\x12\x0f\n\x0bwhiteVector\x10\x01\x12\r\n\tredVector\x10\x02\x12\x0f\n\x0bgreenVector\x10\x03\x12\x0e\n\nblueVector\x10\x04\x12\x10\n\x0cyellowVector\x10\x05\x12\x11\n\rmagentaVector\x10\x06\x12\x0e\n\ncyanVector\x10\x07\x12\x14\n\x10\x66oregroundVector\x10\x08\x12\x14\n\x10\x62\x61\x63kgroundVector\x10\t\x12\x1b\n\x0enocolourVector\x10\x9d\xff\xff\xff\xff\xff\xff\xff\xff\x01*\x89\x07\n\nMarkerType\x12\r\n\tMK_SQUARE\x10\x00\x12\x0b\n\x07MK_PLUS\x10\x01\x12\x0f\n\x0bMK_ASTERISK\x10\x02\x12\r\n\tMK_CIRCLE\x10\x03\x12\x11\n\rMK_CIRCLE_MED\x10\x04\x12\x17\n\x13MK_CIRCLE_MED_SOLID\x10\x05\x12\x11\n\rMK_CIRCLE_SML\x10\x06\x12\x1a\n\x16MK_SML_TOP_SEMI_CIRCLE\x10\x07\x12\x1a\n\x16MK_SML_BOT_SEMI_CIRCLE\x10\x08\x12\x0f\n\x0bMK_TRIANGLE\x10\t\x12\x0c\n\x08MK_CROSS\x10\n\x12\x0e\n\nMK_SQRPLUS\x10\x0b\x12\x0f\n\x0bMK_SQRCROSS\x10\x0c\x12\n\n\x06MK_DOT\x10\r\x12\x13\n\x0fMK_SQUARE_SOLID\x10\x0e\x12\x13\n\x0fMK_CIRCLE_SOLID\x10\x0f\x12\x15\n\x11MK_TRIANGLE_SOLID\x10\x10\x12\x14\n\x10MK_SQRPLUS_SOLID\x10\x11\x12\x15\n\x11MK_SQRCROSS_SOLID\x10\x12\x12\x0e\n\nMK_POINTER\x10\x13\x12\n\n\x06MK_DIP\x10\x14\x12\x0b\n\x07MK_RECT\x10\x1e\x12\r\n\tMK_FOLIAT\x10\x1f\x12\x0e\n\nMK_DIAMOND\x10 \x12\x0c\n\x08MK_JOINT\x10!\x12\x0c\n\x08MK_ARROW\x10\"\x12\x0f\n\x0bMK_DRILLING\x10#\x12\x13\n\x0fMK_DOUBLE_ARROW\x10$\x12\x14\n\x10MK_REVERSE_ARROW\x10%\x12\x0b\n\x07MK_DYKE\x10&\x12\x13\n\x0fMK_UNKNOWN_WELL\x10\'\x12\x0f\n\x0bMK_DRY_HOLE\x10(\x12\x14\n\x10MK_PROPOSED_HOLE\x10)\x12\x18\n\x14MK_PLUGGED_ABANDONED\x10*\x12!\n\x1dMK_PLUGGED_ABANDONED_OIL_SHOW\x10+\x12\x13\n\x0fMK_DRY_OIL_SHOW\x10,\x12\x12\n\x0eMK_SHUT_IN_GAS\x10-\x12\x13\n\x0fMK_DRY_GAS_SHOW\x10.\x12\x1b\n\x17MK_PLUGGED_OIL_GAS_SHOW\x10/\x12\x15\n\x11MK_WATER_PRODUCER\x10\x30\x12\x13\n\x0fMK_OIL_RECOVERY\x10\x31\x12!\n\x1dMK_PLUGGED_ABANDONED_OIL_FLOW\x10\x32\x12\x0c\n\x08MK_TYPES\x10\x33\x12\x15\n\x11MK_DRY_HOLE_SHOWS\x10\x34\x12\x19\n\x15MK_DRY_HOLE_ABANDONED\x10\x35*\xde\x01\n\nAttrDomain\x12\x11\n\rDomain_Colour\x10\x00\x12\x12\n\x0e\x44omain_Numeric\x10\x01\x12\x10\n\x0c\x44omain_Label\x10\x02\x12\x11\n\rDomain_Symbol\x10\x03\x12\x14\n\x10\x44omain_LineStyle\x10\x04\x12\x14\n\x10\x44omain_FillStyle\x10\x05\x12\x15\n\x11\x44omain_MarkerSize\x10\x06\x12\x18\n\x14\x44omain_LineThickness\x10\x07\x12\x0f\n\x0b\x44omain_Grey\x10\x08\x12\x16\n\x12\x44omain_MarkerAngle\x10\t*`\n\x0e\x41ttrLookupType\x12\r\n\tAttrAssoc\x10\x00\x12\x0e\n\nLevelAssoc\x10\x01\x12\x0e\n\nRangeAssoc\x10\x02\x12\x0e\n\nHistoAssoc\x10\x03\x12\x0f\n\x0bLookupAssoc\x10\x04*\x7f\n\x06HistOp\x12\x0c\n\x08histNone\x10\x00\x12\x0e\n\nhistLinear\x10\x01\x12\x10\n\x0chistEqualise\x10\x02\x12\r\n\thistPLHEQ\x10\x03\x12\x11\n\rhistNormalise\x10\x04\x12\x0f\n\x0bhistLogInfl\x10\x05\x12\x12\n\x0ehistInvLogInfl\x10\x06*\x7f\n\x08SizeFrom\x12\x12\n\x0eSizeFromLimits\x10\x00\x12\x0f\n\x0bSizeFromAll\x10\x01\x12\x13\n\x0fSizeFromVectors\x10\x02\x12\x11\n\rSizeFromGrids\x10\x03\x12\x14\n\x10SizeFromPolygons\x10\x04\x12\x10\n\x0cSizeFromList\x10\x05*q\n\x0bStatsOpType\x12\r\n\tSOT_DUMMY\x10\x00\x12\x0f\n\x0bSOT_DEFAULT\x10\x01\x12\x0e\n\nSOT_LEGEND\x10\x02\x12\x13\n\x0fSOT_VALUE_FIXED\x10\x03\x12\x0e\n\nSOT_LINEAR\x10\x04\x12\r\n\tSOT_HISTO\x10\x05*A\n\x0b\x44\x65tailLevel\x12\x11\n\rDetailOutline\x10\x00\x12\x0f\n\x0b\x44\x65tailDraft\x10\x01\x12\x0e\n\nDetailFull\x10\x02*\x99\x01\n\x15Grid_Interpolate_Type\x12\x14\n\x10INTREPID_NEAREST\x10\x00\x12\x15\n\x11INTREPID_BILINEAR\x10\x01\x12\x16\n\x12INTREPID_NEWTON4TH\x10\x02\x12\x1d\n\x19INTREPID_MinimumCurvature\x10\x03\x12\x1c\n\x18INTREPID_InverseDistance\x10\x04*$\n\x0bPolygonType\x12\n\n\x06HOLLOW\x10\x00\x12\t\n\x05SOLID\x10\x01*+\n\rGraticuleType\x12\x0c\n\x08TickType\x10\x00\x12\x0c\n\x08LineType\x10\x01*8\n\x0eLabelPositions\x12\x12\n\x0eInternalLabels\x10\x00\x12\x12\n\x0e\x45xternalLabels\x10\x01'
+  serialized_pb=b'\n\x12\x64isplay_list.proto\x12\x05\x64list\x1a\x15\x63ommontaskmodel.proto\x1a\x13intrepid_maps.proto\"\xa3\x02\n\x0f\x63ontourData_INT\x12\x12\n\x05level\x18\x01 \x01(\x05:\x03\x31\x30\x30\x12\x15\n\x08Interval\x18\x02 \x01(\x01:\x03\x31\x30\x30\x12\x15\n\x07\x44\x65nsity\x18\x03 \x01(\x01:\x04\x31\x30\x30\x30\x12\x13\n\x08\x44\x65\x63imals\x18\x04 \x01(\x05:\x01\x30\x12\x18\n\rValueTextSize\x18\x05 \x01(\x01:\x01\x31\x12\x18\n\rLineThickness\x18\x06 \x01(\x01:\x01\x31\x12\x34\n\nColourName\x18\x07 \x01(\x0e\x32\x13.dlist.ColourVector:\x0b\x62lackVector\x12\x36\n\x0cTxColourName\x18\x08 \x01(\x0e\x32\x13.dlist.ColourVector:\x0b\x62lackVector\x12\x17\n\x08\x41nnotate\x18\t \x01(\x08:\x05\x66\x61lse\"\x85\x03\n\x15HighLowManagement_INT\x12\x17\n\x08ShowHigh\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07ShowLow\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tShowValue\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x08Selected\x18\x04 \x01(\x08:\x04true\x12\x19\n\x0eSymbolTextSize\x18\x05 \x01(\x01:\x01\x32\x12\x18\n\rValueTextSize\x18\x06 \x01(\x01:\x01\x32\x12\x18\n\rValueDecimals\x18\x07 \x01(\x05:\x01\x30\x12\x15\n\nValueAngle\x18\x08 \x01(\x01:\x01\x30\x12\x35\n\x0bValueColour\x18\t \x01(\x0e\x32\x13.dlist.ColourVector:\x0b\x62lackVector\x12\x36\n\x0cSymbolColour\x18\n \x01(\x0e\x32\x13.dlist.ColourVector:\x0b\x62lackVector\x12\x18\n\x0cSearchRadius\x18\x0b \x01(\x01:\x02-1\x12\x1a\n\x0fSignalTolerance\x18\x0c \x01(\x01:\x01\x30\"\xd9\x01\n\x0bNewPlot_INT\x12\x0c\n\x04PLOT\x18\x01 \x01(\t\x12\x37\n\x06\x46ORMAT\x18\x02 \x01(\x0e\x32\x1a.intrepid_maps.Devices_MAP:\x0bTIFFHighRes\x12\x13\n\x05XSIZE\x18\x03 \x01(\x01:\x04\x31\x30\x30\x30\x12\x13\n\x05YSIZE\x18\x04 \x01(\x01:\x04\x31\x30\x30\x30\x12\x0e\n\x06XDELTA\x18\x05 \x01(\x01\x12\x0e\n\x06YDELTA\x18\x06 \x01(\x01\x12\x0f\n\x07XORIGIN\x18\x07 \x01(\x01\x12\x0f\n\x07YORIGIN\x18\x08 \x01(\x01\x12\x17\n\x08Portrait\x18\t \x01(\x08:\x05\x66\x61lse\"\xe6\x02\n\x0b\x45xtents_INT\x12\x19\n\x0bisIsotropic\x18\x01 \x01(\x08:\x04true\x12\x17\n\x08geodetic\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x30\n\x11\x45xtent_Projection\x18\x03 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x16\n\x0b\x42orderAtTop\x18\x04 \x01(\x01:\x01\x30\x12\x16\n\x0b\x42orderAtBot\x18\x05 \x01(\x01:\x01\x30\x12\x17\n\x0c\x42orderAtLeft\x18\x06 \x01(\x01:\x01\x30\x12\x18\n\rBorderAtRight\x18\x07 \x01(\x01:\x01\x30\x12\x0f\n\x04xlow\x18\x08 \x01(\x01:\x01\x30\x12\x13\n\x05xhigh\x18\t \x01(\x01:\x04\x31\x30\x30\x30\x12\x0f\n\x04ylow\x18\n \x01(\x01:\x01\x30\x12\x13\n\x05yhigh\x18\x0b \x01(\x01:\x04\x31\x30\x30\x30\x12\x19\n\x11ReferenceGridPath\x18\x1e \x01(\t\x12\'\n\x1fReferenceGeophysicalDatasetPath\x18\x1f \x01(\t\"\xbe\x03\n\x0bMapPlot_INT\x12-\n\x0eMap_Projection\x18\x01 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x15\n\x06xscale\x18\x02 \x01(\x01:\x05\x31\x30\x30\x30\x30\x12\x15\n\x06yscale\x18\x03 \x01(\x01:\x05\x31\x30\x30\x30\x30\x12\x12\n\x07xorigin\x18\x04 \x01(\x01:\x01\x30\x12\x12\n\x07yorigin\x18\x05 \x01(\x01:\x01\x30\x12\x12\n\x07xoffset\x18\x06 \x01(\x01:\x01\x30\x12\x12\n\x07yoffset\x18\x07 \x01(\x01:\x01\x30\x12\x13\n\x08rotation\x18\x08 \x01(\x01:\x01\x30\x12\x15\n\nxoriginDDC\x18\x0b \x01(\x01:\x01\x30\x12\x15\n\nyoriginDDC\x18\x0c \x01(\x01:\x01\x30\x12\x1e\n\x0foriginIsTopLeft\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x18\n\ryoriginOffset\x18\x11 \x01(\x05:\x01\x30\x12\x18\n\rLevelOfDetail\x18\x12 \x01(\x01:\x01\x31\x12\x1d\n\x12xplotterResolution\x18\x15 \x01(\x01:\x01\x31\x12\x1d\n\x12yplotterResolution\x18\x16 \x01(\x01:\x01\x31\x12\x16\n\x07pushMap\x18\x17 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06popMap\x18\x18 \x01(\x08:\x05\x66\x61lse\"\xc0\x0c\n\rImageWork_INT\x12\x11\n\tDirectory\x18\x01 \x01(\t\x12\x14\n\x0cSignalColour\x18\x02 \x01(\t\x12\x1b\n\x13SignalColourMinClip\x18\x03 \x01(\x01\x12\x1b\n\x13SignalColourMaxClip\x18\x04 \x01(\x01\x12\x11\n\tSignalRed\x18\x06 \x01(\t\x12\x18\n\x10SignalRedMinClip\x18\x07 \x01(\x01\x12\x18\n\x10SignalRedMaxClip\x18\x08 \x01(\x01\x12\x13\n\x0bSignalGreen\x18\n \x01(\t\x12\x1a\n\x12SignalGreenMinClip\x18\x0b \x01(\x01\x12\x1a\n\x12SignalGreenMaxClip\x18\x0c \x01(\x01\x12\x12\n\nSignalBlue\x18\x0e \x01(\t\x12\x19\n\x11SignalBlueMinClip\x18\x0f \x01(\x01\x12\x19\n\x11SignalBlueMaxClip\x18\x10 \x01(\x01\x12\x1a\n\x12IntensityDirectory\x18\x11 \x01(\t\x12\x17\n\x0fSignalIntensity\x18\x12 \x01(\t\x12\x1e\n\x16SignalIntensityMinClip\x18\x13 \x01(\x01\x12\x1e\n\x16SignalIntensityMaxClip\x18\x14 \x01(\x01\x12\x1d\n\x10SaturationFactor\x18\x15 \x01(\x01:\x03\x30.7\x12\x19\n\nDoSunAngle\x18\x1f \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0eInclinationSun\x18  \x01(\x01:\x02\x34\x35\x12\x1a\n\x0e\x44\x65\x63linationSun\x18! \x01(\x01:\x02\x34\x35\x12#\n\x17VerticalExaggerationSun\x18\" \x01(\x01:\x02\x35\x30\x12\x10\n\x05\x64xesq\x18# \x01(\x01:\x01\x31\x12:\n\x0fGridCombination\x18. \x01(\x0e\x32\x15.dlist.EColourMixType:\nMap_Scalar\x12M\n\x13GridInterpolateType\x18, \x01(\x0e\x32\x1c.dlist.Grid_Interpolate_Type:\x12INTREPID_NEWTON4TH\x12\x30\n\tSpatialOp\x18- \x01(\x0e\x32\x10.dlist.SpatialOp:\x0bspatialNone\x12\x33\n\ncolourMode\x18\x32 \x01(\x0e\x32\x11.dlist.ColourMode:\x0cPseudoColour\x12\x13\n\x0b\x43olourLevel\x18\x34 \x01(\x08\x12\x18\n\rSignalLowClip\x18\x35 \x01(\x01:\x01\x30\x12\x19\n\x0eSignalHighClip\x18\x36 \x01(\x01:\x01\x30\x12\'\n\x06histOp\x18; \x01(\x0e\x32\r.dlist.HistOp:\x08histNone\x12\x15\n\x08\x42inWidth\x18\x33 \x01(\x01:\x03\x30.3\x12\x16\n\x07hasClip\x18\x42 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rhasFixedRange\x18\x43 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bShowContour\x18\x44 \x01(\x08:\x05\x66\x61lse\x12+\n\x0b\x63ontourInfo\x18\x45 \x03(\x0b\x32\x16.dlist.contourData_INT\x12-\n\x07highlow\x18\x41 \x01(\x0b\x32\x1c.dlist.HighLowManagement_INT\x12\x1d\n\x10\x44rawingIncrement\x18< \x01(\x01:\x03\x30.5\x12\x12\n\x07Tension\x18= \x01(\x01:\x01\x31\x12\x1d\n\x10GapBetweenLabels\x18> \x01(\x01:\x03\x31\x30\x30\x12\x1c\n\x0e\x41nnotationPass\x18? \x01(\x08:\x04true\x12\x1f\n\x11RotateToTrueNorth\x18@ \x01(\x08:\x04true\x12\x31\n\x0cnew_contours\x18G \x01(\x0b\x32\x1b.intrepid_maps.Contours_MAP\x12\x38\n\nSignalType\x18+ \x01(\x0e\x32\x19.ctm.GeophysicsSignalType:\tMagnetism\x12\x1b\n\x0c\x64oing_tensor\x18( \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0c\x64oing_falcon\x18) \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10\x64oing_quaternion\x18* \x01(\x08:\x05\x66\x61lse\x12M\n\x0ctensorMethod\x18\x46 \x01(\x0e\x32\x17.ctm.TensorProduct_list:\x1eTENSOR_CubeRoot_of_Determinant\"\x96\x10\n\x0cLineWork_INT\x12\x0f\n\x07\x44\x61taset\x18\x01 \x01(\t\x12\x0b\n\x03Xin\x18\x02 \x01(\t\x12\x0b\n\x03Yin\x18\x03 \x01(\t\x12 \n\x11ShowLineDirection\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x18\n\rlineSubSample\x18\x05 \x01(\x05:\x01\x31\x12\x1d\n\x0eShowLineColour\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x39\n\x12\x63olourAssignChoice\x18\x34 \x01(\x0e\x32\x12.dlist.StatsOpType:\tSOT_HISTO\x12\x19\n\rNumberColours\x18\x06 \x01(\x05:\x02\x31\x32\x12\x15\n\rColourLowClip\x18\x07 \x01(\x01\x12\x16\n\x0e\x43olourHighClip\x18\t \x01(\x01\x12#\n\x12SignalColourLegend\x18\x35 \x01(\t:\x07\x44\x45\x46\x41ULT\x12\x30\n\x06\x63olour\x18\x32 \x01(\x0e\x32\x13.dlist.ColourVector:\x0bwhiteVector\x12\x13\n\x0bSignalField\x18\x33 \x01(\t\x12\x32\n\x05style\x18\n \x01(\x0e\x32\x1c.intrepid_maps.LineStyle_MAP:\x05Solid\x12\x37\n\tthickness\x18\x0b \x01(\x0e\x32 .intrepid_maps.LineThickness_MAP:\x02L1\x12\x1c\n\rShowLineLabel\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x39\n\x0flineLabelColour\x18\r \x01(\x0e\x32\x13.dlist.ColourVector:\x0bgreenVector\x12\x19\n\x0elineLabelAngle\x18\x0e \x01(\x01:\x01\x30\x12\x11\n\tlineField\x18\x0f \x01(\t\x12\"\n\x13ShowSecondLineLabel\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x12\n\nlineField2\x18\x11 \x01(\t\x12\x1c\n\x0flineLabelTxsize\x18\x12 \x01(\x01:\x03\x30.8\x12\x18\n\tShowPoint\x18\x14 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cShowFidLabel\x18\x15 \x01(\x08:\x05\x66\x61lse\x12\x39\n\x10pointLabelColour\x18\x16 \x01(\x0e\x32\x13.dlist.ColourVector:\nblueVector\x12\x1d\n\x10pointLabelTxsize\x18\x18 \x01(\x01:\x03\x30.7\x12\x1a\n\x0fpointLabelAngle\x18\x19 \x01(\x01:\x01\x30\x12.\n\x0bpointSymbol\x18\x1a \x01(\x0e\x32\x11.dlist.MarkerType:\x06MK_DOT\x12\x1a\n\x0fpointSymbolsize\x18\x1b \x01(\x01:\x01\x31\x12\x15\n\rFiducialField\x18\x1c \x01(\t\x12\x1d\n\x15RECOVERYFiducialField\x18\x1d \x01(\t\x12 \n\x11ShowRecoveredFids\x18\x1e \x01(\x08:\x05\x66\x61lse\x12\x17\n\x0c\x46IDTEXTANGLE\x18\x1f \x01(\x01:\x01\x30\x12\x14\n\tLABELRATE\x18  \x01(\x01:\x01\x31\x12\x16\n\x0b\x46IDTEXTSIZE\x18! \x01(\x01:\x01\x31\x12\x1e\n\x11RECOVERY_Interval\x18\" \x01(\x01:\x03\x31\x30\x30\x12/\n\tFIDSYMBOL\x18# \x01(\x0e\x32\x11.dlist.MarkerType:\tMK_SQUARE\x12\x37\n\rFIDTEXTCOLOUR\x18$ \x01(\x0e\x32\x13.dlist.ColourVector:\x0bwhiteVector\x12\x1a\n\rFIDSymbolsize\x18% \x01(\x01:\x03\x30.8\x12\"\n\x13ShowSignalAsProfile\x18( \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x12SignalProfileField\x18) \x01(\t\x12 \n\x0fSignalScaleText\x18* \x01(\t:\x07\x44\x65\x66\x61ult\x12\x16\n\x0bSignalScale\x18+ \x01(\x01:\x01\x31\x12\x16\n\x0eSignalBaseText\x18, \x01(\t\x12\x15\n\nSignalBase\x18- \x01(\x01:\x01\x30\x12\x10\n\x05XVIEW\x18. \x01(\x01:\x01\x31\x12\x11\n\x05YVIEW\x18/ \x01(\x01:\x02-1\x12\x1b\n\x0c\x44oLineToBase\x18\x30 \x01(\x08:\x05\x66\x61lse\x12 \n\x11\x44oLineToRecovered\x18\x31 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0f\x41\x44\x41PT_SUBSAMPLE\x18\x36 \x01(\x01:\x01\x30\x12#\n\x14ShowValidationResult\x18< \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eShowOutOfRange\x18\x46 \x01(\x08:\x05\x66\x61lse\x12 \n\x11ShowOutOfSequence\x18= \x01(\x08:\x05\x66\x61lse\x12$\n\x15ShowLineInternalNulls\x18I \x01(\x08:\x05\x66\x61lse\x12/\n ShowLocalLineDirectionDeviations\x18J \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x12OutOfRangeDistance\x18> \x01(\x01:\x03\x31\x30\x30\x12\x18\n\rOutOfRangeMin\x18? \x01(\x01:\x01\x30\x12\x1a\n\rOutOfRangeMax\x18@ \x01(\x01:\x03\x31\x30\x30\x12\x1e\n\x10GradientDistance\x18\x41 \x01(\x01:\x04\x35\x30\x30\x30\x12\x18\n\x0bGradientMax\x18\x42 \x01(\x01:\x03\x31\x30\x30\x12!\n\x15\x44irectionMaxDeviation\x18\x43 \x01(\x01:\x02\x35\x30\x12\x1f\n\x11\x44irectionDistance\x18\x44 \x01(\x01:\x04\x35\x30\x30\x30\x12\x1d\n\x12\x41verageSampleSpace\x18\x45 \x01(\x01:\x01\x30\x12\x16\n\tTolerance\x18G \x01(\x01:\x03\x30.1\x12\x15\n\nWavelength\x18H \x01(\x01:\x01\x35\"\x8f\x07\n\rPointWork_INT\x12\x0f\n\x07\x44\x61taset\x18\x12 \x01(\t\x12\x0b\n\x03Xin\x18\x10 \x01(\t\x12\x0b\n\x03Yin\x18\x11 \x01(\t\x12\x13\n\x0bSignalField\x18\x06 \x01(\t\x12\x17\n\x0fSignalSizeField\x18\x07 \x01(\t\x12\x18\n\x10SignalAngleField\x18\x08 \x01(\t\x12\x1f\n\x10ShowSignalColour\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eShowSignalSize\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fShowSignalAngle\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\'\n\x04type\x18\x05 \x01(\x0e\x32\x11.dlist.MarkerType:\x06MK_DOT\x12\x16\n\nnumColours\x18\n \x01(\x05:\x02\x31\x32\x12\x39\n\x12\x63olourAssignChoice\x18\x0b \x01(\x0e\x32\x12.dlist.StatsOpType:\tSOT_HISTO\x12\x13\n\x0b\x63olourLevel\x18\x0c \x01(\x08\x12\x18\n\rcolourLowClip\x18\r \x01(\x01:\x01\x30\x12\x19\n\x0e\x63olourHighClip\x18\x0e \x01(\x01:\x01\x30\x12.\n\x06\x63olour\x18\x0f \x01(\x0e\x32\x13.dlist.ColourVector:\tredVector\x12\x14\n\x08numSizes\x18\x14 \x01(\x05:\x02\x31\x32\x12\x37\n\x10sizeAssignChoice\x18\x15 \x01(\x0e\x32\x12.dlist.StatsOpType:\tSOT_HISTO\x12\x11\n\tsizeLevel\x18\x16 \x01(\x08\x12\x16\n\x0bsizeLowClip\x18\x1c \x01(\x01:\x01\x30\x12\x17\n\x0csizeHighClip\x18\x1d \x01(\x01:\x01\x30\x12\x18\n\tShowLabel\x18\x1e \x01(\x08:\x05\x66\x61lse\x12\x12\n\nlabelField\x18\x1f \x01(\t\x12\x1a\n\x0blabelTxsize\x18  \x01(\x01:\x05\x30.001\x12\x15\n\nlabelAngle\x18! \x01(\x01:\x01\x30\x12\x35\n\x0blabelColour\x18\" \x01(\x0e\x32\x13.dlist.ColourVector:\x0bgreenVector\x12\x19\n\x0epointSubSample\x18( \x01(\x05:\x01\x31\x12\x16\n\npointGroup\x18) \x01(\x05:\x02-1\x12%\n\x16\x62\x61se_markersize_factor\x18* \x01(\x01:\x05\x30.002\x12\x1b\n\x0chasCondition\x18+ \x01(\x08:\x05\x66\x61lse\x12\x13\n\x0b\x63onditional\x18, \x01(\t\"\xa8\x02\n\x0cPolyWork_INT\x12\x0f\n\x07\x44\x61taset\x18\x12 \x01(\t\x12\x0b\n\x03Xin\x18\x01 \x01(\t\x12\x0b\n\x03Yin\x18\x02 \x01(\t\x12\x11\n\tPolyLabel\x18\x03 \x01(\t\x12\x10\n\x08PolyName\x18\x04 \x01(\t\x12\x18\n\tShowLabel\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0blabelTxsize\x18\x06 \x01(\x01:\x05\x30.001\x12\x35\n\x0blabelColour\x18\x07 \x01(\x0e\x32\x13.dlist.ColourVector:\x0bgreenVector\x12\x30\n\x06\x43olour\x18\" \x01(\x0e\x32\x13.dlist.ColourVector:\x0bwhiteVector\x12)\n\x05style\x18\t \x01(\x0e\x32\x12.dlist.PolygonType:\x06HOLLOW\"\x80\x06\n\x0cTickWork_INT\x12\x18\n\nisSelected\x18\x01 \x01(\x08:\x04true\x12\x17\n\x08Geodetic\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x15\n\nlatlondegX\x18\x03 \x01(\x01:\x01\x30\x12\x15\n\nlatlonminX\x18\x04 \x01(\x01:\x01\x30\x12\x16\n\nlatlonsecX\x18\x05 \x01(\x01:\x02\x33\x30\x12\x15\n\nlatlondegY\x18\x06 \x01(\x01:\x01\x30\x12\x15\n\nlatlonminY\x18\x07 \x01(\x01:\x01\x30\x12\x16\n\nlatlonsecY\x18\x08 \x01(\x01:\x02\x33\x30\x12\x17\n\tProjected\x18\n \x01(\x08:\x04true\x12\x1c\n\x0eProjectedtickX\x18\x0b \x01(\x01:\x04\x31\x30\x30\x30\x12\x1c\n\x0eProjectedtickY\x18\x0c \x01(\x01:\x04\x31\x30\x30\x30\x12\x30\n\x08ticktype\x18\r \x01(\x0e\x32\x14.dlist.GraticuleType:\x08LineType\x12\x35\n\x06labels\x18\x0e \x01(\x0e\x32\x15.dlist.LabelPositions:\x0eInternalLabels\x12\x16\n\x08labeltop\x18\x0f \x01(\x08:\x04true\x12\x16\n\x08labelbot\x18\x10 \x01(\x08:\x04true\x12\x17\n\tlabelleft\x18\x11 \x01(\x08:\x04true\x12\x19\n\nlabelright\x18\x12 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0blabelTxsize\x18\x13 \x01(\x01:\x05\x30.001\x12\x35\n\x0blabelColour\x18\x14 \x01(\x0e\x32\x13.dlist.ColourVector:\x0bwhiteVector\x12\x17\n\x08tickSize\x18\x16 \x01(\x01:\x05\x30.004\x12\x34\n\ntickColour\x18\x17 \x01(\x0e\x32\x13.dlist.ColourVector:\x0bwhiteVector\x12\x19\n\nShowborder\x18\x18 \x01(\x08:\x05\x66\x61lse\x12:\n\x0b\x62orderTicks\x18\x19 \x01(\x0e\x32\x15.dlist.LabelPositions:\x0eInternalLabels\x12\x16\n\x0blabelOffset\x18\x1a \x01(\x01:\x01\x30\"/\n\x0eTitle_Text_INT\x12\x0f\n\x04SIZE\x18\x01 \x01(\x01:\x01\x31\x12\x0c\n\x04TEXT\x18\x02 \x01(\t\"T\n\tTitle_INT\x12\x10\n\x08XTOPLEFT\x18\x01 \x01(\x01\x12\x10\n\x08YTOPLEFT\x18\x02 \x01(\x01\x12#\n\x04HEAD\x18\x04 \x03(\x0b\x32\x15.dlist.Title_Text_INT*\xa7\x03\n\x07\x43lassID\x12\x11\n\x0cNewPlot_COMP\x10\xd0\x0f\x12\x11\n\x0cMapProj_COMP\x10\xd1\x0f\x12\x10\n\x0b\x45xtent_COMP\x10\xd2\x0f\x12\x0f\n\nImage_COMP\x10\xd3\x0f\x12\x0e\n\tLine_COMP\x10\xd4\x0f\x12\x0f\n\nPoint_COMP\x10\xd5\x0f\x12\x11\n\x0cPolygon_COMP\x10\xd6\x0f\x12\x15\n\x10\x43ornerLabel_COMP\x10\xd7\x0f\x12\x13\n\x0eimmediate_COMP\x10\xd8\x0f\x12\x11\n\x0cinclude_COMP\x10\xd9\x0f\x12\x0e\n\tTick_COMP\x10\xda\x0f\x12\x0f\n\nTitle_COMP\x10\xdb\x0f\x12\x11\n\x0cGreybar_COMP\x10\xdc\x0f\x12\x15\n\x10\x43olourTable_COMP\x10\xdd\x0f\x12\x12\n\rScalebar_COMP\x10\xde\x0f\x12\x10\n\x0bLegend_COMP\x10\xdf\x0f\x12\x14\n\x0fNorthArrow_COMP\x10\xe0\x0f\x12\x17\n\x12MapSheetIndex_COMP\x10\xe1\x0f\x12\x0e\n\tAttr_COMP\x10\xe2\x0f\x12\x10\n\x0bPlotxy_COMP\x10\xe3\x0f\x12\x1e\n\x11\x41\x62stractBase_COMP\x10\xf1\xb1\xff\xff\xff\xff\xff\xff\xff\x01*`\n\x0e\x45\x43olourMixType\x12\x0e\n\nMap_Scalar\x10\x00\x12\x13\n\x0fSun_Angle_Drape\x10\x01\x12\x0f\n\x0bRgb_Ternary\x10\x03\x12\x18\n\x14Rgb_Ternary_SunAngle\x10\x04*\x99\x02\n\nColourMode\x12\x10\n\x0cPseudoColour\x10\x00\x12\x0f\n\x0b\x46\x61lseColour\x10\x01\x12\x0f\n\x0b\x44rapeColour\x10\x02\x12\x12\n\x0eSunAngleColour\x10\x03\x12\x14\n\x10\x46ixedRangeColour\x10\x04\x12\x13\n\x0fGreyScaleColour\x10\x05\x12\x0e\n\nTrueColour\x10\x06\x12\x11\n\rRedColourRamp\x10\x07\x12\x13\n\x0fGreenColourRamp\x10\x08\x12\x12\n\x0e\x42lueColourRamp\x10\t\x12\x12\n\x0eRedColourCycle\x10\n\x12\x14\n\x10GreenColourCycle\x10\x0b\x12\x13\n\x0f\x42lueColourCycle\x10\x0c\x12\r\n\tLutColour\x10\x63*q\n\tSpatialOp\x12\x0f\n\x0bspatialNone\x10\x00\x12\x13\n\x0fspatialSunAngle\x10\x01\x12\x15\n\x11spatialEWGradient\x10\x02\x12\x15\n\x11spatialNSGradient\x10\x03\x12\x10\n\x0cspatialCNORM\x10\x04*\\\n\x07PointOp\x12\r\n\tpointNone\x10\x00\x12\x0c\n\x08pointLog\x10\x01\x12\x12\n\x0epointNormalize\x10\x02\x12\r\n\tpointClip\x10\x03\x12\x11\n\rpointEquation\x10\x04*\xde\x01\n\x0c\x43olourVector\x12\x0f\n\x0b\x62lackVector\x10\x00\x12\x0f\n\x0bwhiteVector\x10\x01\x12\r\n\tredVector\x10\x02\x12\x0f\n\x0bgreenVector\x10\x03\x12\x0e\n\nblueVector\x10\x04\x12\x10\n\x0cyellowVector\x10\x05\x12\x11\n\rmagentaVector\x10\x06\x12\x0e\n\ncyanVector\x10\x07\x12\x14\n\x10\x66oregroundVector\x10\x08\x12\x14\n\x10\x62\x61\x63kgroundVector\x10\t\x12\x1b\n\x0enocolourVector\x10\x9d\xff\xff\xff\xff\xff\xff\xff\xff\x01*\x89\x07\n\nMarkerType\x12\r\n\tMK_SQUARE\x10\x00\x12\x0b\n\x07MK_PLUS\x10\x01\x12\x0f\n\x0bMK_ASTERISK\x10\x02\x12\r\n\tMK_CIRCLE\x10\x03\x12\x11\n\rMK_CIRCLE_MED\x10\x04\x12\x17\n\x13MK_CIRCLE_MED_SOLID\x10\x05\x12\x11\n\rMK_CIRCLE_SML\x10\x06\x12\x1a\n\x16MK_SML_TOP_SEMI_CIRCLE\x10\x07\x12\x1a\n\x16MK_SML_BOT_SEMI_CIRCLE\x10\x08\x12\x0f\n\x0bMK_TRIANGLE\x10\t\x12\x0c\n\x08MK_CROSS\x10\n\x12\x0e\n\nMK_SQRPLUS\x10\x0b\x12\x0f\n\x0bMK_SQRCROSS\x10\x0c\x12\n\n\x06MK_DOT\x10\r\x12\x13\n\x0fMK_SQUARE_SOLID\x10\x0e\x12\x13\n\x0fMK_CIRCLE_SOLID\x10\x0f\x12\x15\n\x11MK_TRIANGLE_SOLID\x10\x10\x12\x14\n\x10MK_SQRPLUS_SOLID\x10\x11\x12\x15\n\x11MK_SQRCROSS_SOLID\x10\x12\x12\x0e\n\nMK_POINTER\x10\x13\x12\n\n\x06MK_DIP\x10\x14\x12\x0b\n\x07MK_RECT\x10\x1e\x12\r\n\tMK_FOLIAT\x10\x1f\x12\x0e\n\nMK_DIAMOND\x10 \x12\x0c\n\x08MK_JOINT\x10!\x12\x0c\n\x08MK_ARROW\x10\"\x12\x0f\n\x0bMK_DRILLING\x10#\x12\x13\n\x0fMK_DOUBLE_ARROW\x10$\x12\x14\n\x10MK_REVERSE_ARROW\x10%\x12\x0b\n\x07MK_DYKE\x10&\x12\x13\n\x0fMK_UNKNOWN_WELL\x10\'\x12\x0f\n\x0bMK_DRY_HOLE\x10(\x12\x14\n\x10MK_PROPOSED_HOLE\x10)\x12\x18\n\x14MK_PLUGGED_ABANDONED\x10*\x12!\n\x1dMK_PLUGGED_ABANDONED_OIL_SHOW\x10+\x12\x13\n\x0fMK_DRY_OIL_SHOW\x10,\x12\x12\n\x0eMK_SHUT_IN_GAS\x10-\x12\x13\n\x0fMK_DRY_GAS_SHOW\x10.\x12\x1b\n\x17MK_PLUGGED_OIL_GAS_SHOW\x10/\x12\x15\n\x11MK_WATER_PRODUCER\x10\x30\x12\x13\n\x0fMK_OIL_RECOVERY\x10\x31\x12!\n\x1dMK_PLUGGED_ABANDONED_OIL_FLOW\x10\x32\x12\x0c\n\x08MK_TYPES\x10\x33\x12\x15\n\x11MK_DRY_HOLE_SHOWS\x10\x34\x12\x19\n\x15MK_DRY_HOLE_ABANDONED\x10\x35*\xde\x01\n\nAttrDomain\x12\x11\n\rDomain_Colour\x10\x00\x12\x12\n\x0e\x44omain_Numeric\x10\x01\x12\x10\n\x0c\x44omain_Label\x10\x02\x12\x11\n\rDomain_Symbol\x10\x03\x12\x14\n\x10\x44omain_LineStyle\x10\x04\x12\x14\n\x10\x44omain_FillStyle\x10\x05\x12\x15\n\x11\x44omain_MarkerSize\x10\x06\x12\x18\n\x14\x44omain_LineThickness\x10\x07\x12\x0f\n\x0b\x44omain_Grey\x10\x08\x12\x16\n\x12\x44omain_MarkerAngle\x10\t*`\n\x0e\x41ttrLookupType\x12\r\n\tAttrAssoc\x10\x00\x12\x0e\n\nLevelAssoc\x10\x01\x12\x0e\n\nRangeAssoc\x10\x02\x12\x0e\n\nHistoAssoc\x10\x03\x12\x0f\n\x0bLookupAssoc\x10\x04*\x7f\n\x06HistOp\x12\x0c\n\x08histNone\x10\x00\x12\x0e\n\nhistLinear\x10\x01\x12\x10\n\x0chistEqualise\x10\x02\x12\r\n\thistPLHEQ\x10\x03\x12\x11\n\rhistNormalise\x10\x04\x12\x0f\n\x0bhistLogInfl\x10\x05\x12\x12\n\x0ehistInvLogInfl\x10\x06*\x7f\n\x08SizeFrom\x12\x12\n\x0eSizeFromLimits\x10\x00\x12\x0f\n\x0bSizeFromAll\x10\x01\x12\x13\n\x0fSizeFromVectors\x10\x02\x12\x11\n\rSizeFromGrids\x10\x03\x12\x14\n\x10SizeFromPolygons\x10\x04\x12\x10\n\x0cSizeFromList\x10\x05*q\n\x0bStatsOpType\x12\r\n\tSOT_DUMMY\x10\x00\x12\x0f\n\x0bSOT_DEFAULT\x10\x01\x12\x0e\n\nSOT_LEGEND\x10\x02\x12\x13\n\x0fSOT_VALUE_FIXED\x10\x03\x12\x0e\n\nSOT_LINEAR\x10\x04\x12\r\n\tSOT_HISTO\x10\x05*A\n\x0b\x44\x65tailLevel\x12\x11\n\rDetailOutline\x10\x00\x12\x0f\n\x0b\x44\x65tailDraft\x10\x01\x12\x0e\n\nDetailFull\x10\x02*\x99\x01\n\x15Grid_Interpolate_Type\x12\x14\n\x10INTREPID_NEAREST\x10\x00\x12\x15\n\x11INTREPID_BILINEAR\x10\x01\x12\x16\n\x12INTREPID_NEWTON4TH\x10\x02\x12\x1d\n\x19INTREPID_MinimumCurvature\x10\x03\x12\x1c\n\x18INTREPID_InverseDistance\x10\x04*$\n\x0bPolygonType\x12\n\n\x06HOLLOW\x10\x00\x12\t\n\x05SOLID\x10\x01*+\n\rGraticuleType\x12\x0c\n\x08TickType\x10\x00\x12\x0c\n\x08LineType\x10\x01*8\n\x0eLabelPositions\x12\x12\n\x0eInternalLabels\x10\x00\x12\x12\n\x0e\x45xternalLabels\x10\x01'
   ,
   dependencies=[commontaskmodel__pb2.DESCRIPTOR,intrepid__maps__pb2.DESCRIPTOR,])
 
@@ -141,8 +141,8 @@ _CLASSID = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=7263,
-  serialized_end=7686,
+  serialized_start=7585,
+  serialized_end=8008,
 )
 _sym_db.RegisterEnumDescriptor(_CLASSID)
 
@@ -165,25 +165,20 @@ _ECOLOURMIXTYPE = _descriptor.EnumDescriptor(
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='Sun_Angle_Drape_RGB', index=2, number=2,
+      name='Rgb_Ternary', index=2, number=3,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='Rgb_Ternary', index=3, number=3,
-      serialized_options=None,
-      type=None,
-      create_key=_descriptor._internal_create_key),
-    _descriptor.EnumValueDescriptor(
-      name='Rgb_Ternary_SunAngle', index=4, number=4,
+      name='Rgb_Ternary_SunAngle', index=3, number=4,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=7688,
-  serialized_end=7809,
+  serialized_start=8010,
+  serialized_end=8106,
 )
 _sym_db.RegisterEnumDescriptor(_ECOLOURMIXTYPE)
 
@@ -268,8 +263,8 @@ _COLOURMODE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=7812,
-  serialized_end=8093,
+  serialized_start=8109,
+  serialized_end=8390,
 )
 _sym_db.RegisterEnumDescriptor(_COLOURMODE)
 
@@ -309,8 +304,8 @@ _SPATIALOP = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=8095,
-  serialized_end=8208,
+  serialized_start=8392,
+  serialized_end=8505,
 )
 _sym_db.RegisterEnumDescriptor(_SPATIALOP)
 
@@ -350,8 +345,8 @@ _POINTOP = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=8210,
-  serialized_end=8302,
+  serialized_start=8507,
+  serialized_end=8599,
 )
 _sym_db.RegisterEnumDescriptor(_POINTOP)
 
@@ -421,8 +416,8 @@ _COLOURVECTOR = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=8305,
-  serialized_end=8527,
+  serialized_start=8602,
+  serialized_end=8824,
 )
 _sym_db.RegisterEnumDescriptor(_COLOURVECTOR)
 
@@ -662,8 +657,8 @@ _MARKERTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=8530,
-  serialized_end=9435,
+  serialized_start=8827,
+  serialized_end=9732,
 )
 _sym_db.RegisterEnumDescriptor(_MARKERTYPE)
 
@@ -728,8 +723,8 @@ _ATTRDOMAIN = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=9438,
-  serialized_end=9660,
+  serialized_start=9735,
+  serialized_end=9957,
 )
 _sym_db.RegisterEnumDescriptor(_ATTRDOMAIN)
 
@@ -769,8 +764,8 @@ _ATTRLOOKUPTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=9662,
-  serialized_end=9758,
+  serialized_start=9959,
+  serialized_end=10055,
 )
 _sym_db.RegisterEnumDescriptor(_ATTRLOOKUPTYPE)
 
@@ -820,8 +815,8 @@ _HISTOP = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=9760,
-  serialized_end=9887,
+  serialized_start=10057,
+  serialized_end=10184,
 )
 _sym_db.RegisterEnumDescriptor(_HISTOP)
 
@@ -866,8 +861,8 @@ _SIZEFROM = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=9889,
-  serialized_end=10016,
+  serialized_start=10186,
+  serialized_end=10313,
 )
 _sym_db.RegisterEnumDescriptor(_SIZEFROM)
 
@@ -912,8 +907,8 @@ _STATSOPTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=10018,
-  serialized_end=10131,
+  serialized_start=10315,
+  serialized_end=10428,
 )
 _sym_db.RegisterEnumDescriptor(_STATSOPTYPE)
 
@@ -943,8 +938,8 @@ _DETAILLEVEL = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=10133,
-  serialized_end=10198,
+  serialized_start=10430,
+  serialized_end=10495,
 )
 _sym_db.RegisterEnumDescriptor(_DETAILLEVEL)
 
@@ -984,8 +979,8 @@ _GRID_INTERPOLATE_TYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=10201,
-  serialized_end=10354,
+  serialized_start=10498,
+  serialized_end=10651,
 )
 _sym_db.RegisterEnumDescriptor(_GRID_INTERPOLATE_TYPE)
 
@@ -1010,8 +1005,8 @@ _POLYGONTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=10356,
-  serialized_end=10392,
+  serialized_start=10653,
+  serialized_end=10689,
 )
 _sym_db.RegisterEnumDescriptor(_POLYGONTYPE)
 
@@ -1036,8 +1031,8 @@ _GRATICULETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=10394,
-  serialized_end=10437,
+  serialized_start=10691,
+  serialized_end=10734,
 )
 _sym_db.RegisterEnumDescriptor(_GRATICULETYPE)
 
@@ -1062,8 +1057,8 @@ _LABELPOSITIONS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=10439,
-  serialized_end=10495,
+  serialized_start=10736,
+  serialized_end=10792,
 )
 _sym_db.RegisterEnumDescriptor(_LABELPOSITIONS)
 
@@ -1091,7 +1086,6 @@ Plotxy_COMP = 2019
 AbstractBase_COMP = -9999
 Map_Scalar = 0
 Sun_Angle_Drape = 1
-Sun_Angle_Drape_RGB = 2
 Rgb_Ternary = 3
 Rgb_Ternary_SunAngle = 4
 PseudoColour = 0
@@ -1241,44 +1235,58 @@ _CONTOURDATA_INT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='density', full_name='dlist.contourData_INT.density', index=1,
+      name='Interval', full_name='dlist.contourData_INT.Interval', index=1,
       number=2, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(100),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Density', full_name='dlist.contourData_INT.Density', index=2,
+      number=3, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(1000),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='decimals', full_name='dlist.contourData_INT.decimals', index=2,
-      number=3, type=5, cpp_type=1, label=1,
+      name='Decimals', full_name='dlist.contourData_INT.Decimals', index=3,
+      number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='size', full_name='dlist.contourData_INT.size', index=3,
-      number=4, type=1, cpp_type=5, label=1,
-      has_default_value=True, default_value=float(0.004),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='thickness', full_name='dlist.contourData_INT.thickness', index=4,
+      name='ValueTextSize', full_name='dlist.contourData_INT.ValueTextSize', index=4,
       number=5, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(1),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='colourName', full_name='dlist.contourData_INT.colourName', index=5,
-      number=6, type=14, cpp_type=8, label=1,
+      name='LineThickness', full_name='dlist.contourData_INT.LineThickness', index=5,
+      number=6, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(1),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ColourName', full_name='dlist.contourData_INT.ColourName', index=6,
+      number=7, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='txcolourName', full_name='dlist.contourData_INT.txcolourName', index=6,
-      number=7, type=14, cpp_type=8, label=1,
+      name='TxColourName', full_name='dlist.contourData_INT.TxColourName', index=7,
+      number=8, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Annotate', full_name='dlist.contourData_INT.Annotate', index=8,
+      number=9, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -1295,7 +1303,7 @@ _CONTOURDATA_INT = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=74,
-  serialized_end=308,
+  serialized_end=365,
 )
 
 
@@ -1308,30 +1316,86 @@ _HIGHLOWMANAGEMENT_INT = _descriptor.Descriptor(
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='showHigh', full_name='dlist.HighLowManagement_INT.showHigh', index=0,
+      name='ShowHigh', full_name='dlist.HighLowManagement_INT.ShowHigh', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='showLow', full_name='dlist.HighLowManagement_INT.showLow', index=1,
+      name='ShowLow', full_name='dlist.HighLowManagement_INT.ShowLow', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='showValue', full_name='dlist.HighLowManagement_INT.showValue', index=2,
+      name='ShowValue', full_name='dlist.HighLowManagement_INT.ShowValue', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='selected', full_name='dlist.HighLowManagement_INT.selected', index=3,
+      name='Selected', full_name='dlist.HighLowManagement_INT.Selected', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=True,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='SymbolTextSize', full_name='dlist.HighLowManagement_INT.SymbolTextSize', index=4,
+      number=5, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(2),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ValueTextSize', full_name='dlist.HighLowManagement_INT.ValueTextSize', index=5,
+      number=6, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(2),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ValueDecimals', full_name='dlist.HighLowManagement_INT.ValueDecimals', index=6,
+      number=7, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ValueAngle', full_name='dlist.HighLowManagement_INT.ValueAngle', index=7,
+      number=8, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ValueColour', full_name='dlist.HighLowManagement_INT.ValueColour', index=8,
+      number=9, type=14, cpp_type=8, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='SymbolColour', full_name='dlist.HighLowManagement_INT.SymbolColour', index=9,
+      number=10, type=14, cpp_type=8, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='SearchRadius', full_name='dlist.HighLowManagement_INT.SearchRadius', index=10,
+      number=11, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(-1),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='SignalTolerance', full_name='dlist.HighLowManagement_INT.SignalTolerance', index=11,
+      number=12, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -1347,8 +1411,8 @@ _HIGHLOWMANAGEMENT_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=310,
-  serialized_end=432,
+  serialized_start=368,
+  serialized_end=757,
 )
 
 
@@ -1435,8 +1499,8 @@ _NEWPLOT_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=435,
-  serialized_end=652,
+  serialized_start=760,
+  serialized_end=977,
 )
 
 
@@ -1551,8 +1615,8 @@ _EXTENTS_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=655,
-  serialized_end=1013,
+  serialized_start=980,
+  serialized_end=1338,
 )
 
 
@@ -1695,8 +1759,8 @@ _MAPPLOT_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1016,
-  serialized_end=1462,
+  serialized_start=1341,
+  serialized_end=1787,
 )
 
 
@@ -1970,7 +2034,7 @@ _IMAGEWORK_INT = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='DrawingIncrement', full_name='dlist.ImageWork_INT.DrawingIncrement', index=37,
       number=60, type=1, cpp_type=5, label=1,
-      has_default_value=True, default_value=float(1e-06),
+      has_default_value=True, default_value=float(0.5),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -1984,7 +2048,7 @@ _IMAGEWORK_INT = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='GapBetweenLabels', full_name='dlist.ImageWork_INT.GapBetweenLabels', index=39,
       number=62, type=1, cpp_type=5, label=1,
-      has_default_value=True, default_value=float(0.05),
+      has_default_value=True, default_value=float(100),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -2056,8 +2120,8 @@ _IMAGEWORK_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1465,
-  serialized_end=3068,
+  serialized_start=1790,
+  serialized_end=3390,
 )
 
 
@@ -2536,8 +2600,8 @@ _LINEWORK_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3071,
-  serialized_end=5141,
+  serialized_start=3393,
+  serialized_end=5463,
 )
 
 
@@ -2778,8 +2842,8 @@ _POINTWORK_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5144,
-  serialized_end=6055,
+  serialized_start=5466,
+  serialized_end=6377,
 )
 
 
@@ -2873,8 +2937,8 @@ _POLYWORK_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6058,
-  serialized_end=6354,
+  serialized_start=6380,
+  serialized_end=6676,
 )
 
 
@@ -3066,8 +3130,8 @@ _TICKWORK_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6357,
-  serialized_end=7125,
+  serialized_start=6679,
+  serialized_end=7447,
 )
 
 
@@ -3105,8 +3169,8 @@ _TITLE_TEXT_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7127,
-  serialized_end=7174,
+  serialized_start=7449,
+  serialized_end=7496,
 )
 
 
@@ -3151,12 +3215,14 @@ _TITLE_INT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7176,
-  serialized_end=7260,
+  serialized_start=7498,
+  serialized_end=7582,
 )
 
-_CONTOURDATA_INT.fields_by_name['colourName'].enum_type = _COLOURVECTOR
-_CONTOURDATA_INT.fields_by_name['txcolourName'].enum_type = _COLOURVECTOR
+_CONTOURDATA_INT.fields_by_name['ColourName'].enum_type = _COLOURVECTOR
+_CONTOURDATA_INT.fields_by_name['TxColourName'].enum_type = _COLOURVECTOR
+_HIGHLOWMANAGEMENT_INT.fields_by_name['ValueColour'].enum_type = _COLOURVECTOR
+_HIGHLOWMANAGEMENT_INT.fields_by_name['SymbolColour'].enum_type = _COLOURVECTOR
 _NEWPLOT_INT.fields_by_name['FORMAT'].enum_type = intrepid__maps__pb2._DEVICES_MAP
 _EXTENTS_INT.fields_by_name['Extent_Projection'].message_type = commontaskmodel__pb2._COORDINATESYSTEM
 _MAPPLOT_INT.fields_by_name['Map_Projection'].message_type = commontaskmodel__pb2._COORDINATESYSTEM

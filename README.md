@@ -25,4 +25,4 @@ Then, add the python.exe to your system Path, to find it's location open Anacond
 With the library succesfully installed to the Python environment that you have on system Path, use the Intrepid Project Manager to navigate to your working directory containing your python file (examples are included in Intrepid Shipment) open a Command Window using the Project Manager main menu > File > New Command Window, and run your script using python <filename.py>
 
 ## Uninstall
-pip uninstall intrepid-protobuf
+```pip uninstall intrepid-protobuf```

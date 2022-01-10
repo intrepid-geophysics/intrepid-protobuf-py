@@ -12,7 +12,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-import intrepid.commontaskmodel_pb2 as commontaskmodel__pb2
+import commontaskmodel_pb2 as commontaskmodel__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto2',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x12invtaskmodel.proto\x12\x0cinvtaskmodel\x1a\x15\x63ommontaskmodel.proto\"\xa1\x02\n\x07Run_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x02(\t\x12\x16\n\x0bNumber_CPUs\x18\x04 \x01(\x05:\x01\x31\x12.\n\x1fSaveForwardResponsePerLithology\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06\x64o_MPI\x18\x06 \x01(\x08:\x05\x66\x61lse\x12#\n\x14\x63heckpoint_iteration\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x15\n\rProcessID_Log\x18\x08 \x01(\t\x12\x30\n\x08\x44\x65legate\x18\t \x01(\x0b\x32\x1e.invtaskmodel.Delegate_Process\x12\x0f\n\x04nice\x18\n \x01(\x05:\x01\x35\x12\x0b\n\x03log\x18\x11 \x01(\t\"1\n\x10\x44\x65legate_Process\x12\r\n\x05nodes\x18\x01 \x02(\x05\x12\x0e\n\x06ticket\x18\x02 \x02(\t\"\xe0\x04\n\x17NewProjectFromVoxet_GMT\x12\x12\n\ninputvoxet\x18\x01 \x02(\t\x12\x13\n\x0bnew_project\x18\x02 \x02(\t\x12\x36\n\tformation\x18\x03 \x03(\x0b\x32#.invtaskmodel.VoxetLithologyMap_GMT\x12\x33\n\x0b\x66ield_alias\x18\x04 \x01(\x0b\x32\x1e.invtaskmodel.VoxetAliases_GMT\x12\x18\n\x06\x61uthor\x18\x05 \x01(\t:\x08invbatch\x12!\n\x04\x64\x61te\x18\x06 \x01(\t:\x13\x30\x31/01/2011 00:00:00\x12\x15\n\x0b\x64\x65scription\x18\x07 \x01(\t:\x00\x12)\n\nprojection\x18\x08 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x12\n\x07version\x18\t \x01(\t:\x01\x32\x12\x10\n\x05units\x18\n \x01(\t:\x01M\x12\x14\n\tprecision\x18\x0b \x01(\x01:\x01\x31\x12\x1b\n\x0c\x64\x65\x66lection2d\x18\x0c \x01(\x01:\x05\x30.001\x12\x1c\n\x0c\x64\x65\x66lection3d\x18\r \x01(\x01:\x06\x30.0001\x12\x1f\n\x0e\x64iscretisation\x18\x0e \x01(\x01:\x07\x31\x30\x30\x30\x30\x30\x30\x12\x1e\n\x10\x64ynamicSelection\x18\x0f \x01(\x08:\x04true\x12\x1a\n\x0creferenceTop\x18\x10 \x01(\x08:\x04true\x12\x1c\n\rexternal_null\x18\x11 \x01(\x05:\x05-9999\x12#\n\x14loadvoxetintoproject\x18\x12 \x01(\x08:\x05\x66\x61lse\x12\x19\n\nzflipvoxet\x18\x13 \x01(\x08:\x05\x66\x61lse\"\x8e\x01\n\x15VoxetLithologyMap_GMT\x12\r\n\x05index\x18\x01 \x02(\x05\x12\r\n\x05\x66ield\x18\x02 \x02(\t\x12\r\n\x05\x61lpha\x18\x03 \x01(\x01\x12\x0e\n\x03red\x18\x04 \x01(\x01:\x01\x30\x12\x12\n\x05green\x18\x05 \x01(\x01:\x03\x31\x32\x35\x12\x11\n\x04\x62lue\x18\x06 \x01(\x01:\x03\x32\x35\x35\x12\x11\n\x06\x63olour\x18\x07 \x01(\t:\x01\x30\"0\n\x10VoxetAliases_GMT\x12\r\n\x05\x61lias\x18\x01 \x02(\t\x12\r\n\x05\x66ield\x18\x02 \x02(\t\"\xde\x0b\n\x19\x46orwardModelFromVoxet_GMT\x12\x13\n\x0binput_voxet\x18\x01 \x02(\t\x12\r\n\x05\x66ield\x18\x02 \x03(\t\x12(\n\x19InputVoxetAlreadyProperty\x18\x03 \x01(\x08:\x05\x66\x61lse\x12(\n\x0fOutputVoxelName\x18\x04 \x01(\t:\x0foutput_voxel.vo\x12\x36\n\x07product\x18\x05 \x01(\x0e\x32\x19.ctm.GeophysicsSignalType:\nGravimetry\x12\x41\n\x14\x43oordinateSystemType\x18\x06 \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12\x1c\n\x14\x64rape_elevation_grid\x18\x07 \x01(\t\x12\x17\n\x0foutput_gridname\x18\x08 \x01(\t\x12\x1b\n\x0emean_elevation\x18\t \x01(\x01:\x03\x31\x30\x30\x12\x18\n\x10output_tablename\x18\n \x01(\t\x12\x19\n\x11\x43omputedFieldName\x18\x0b \x01(\t\x12\x1f\n\x17PropertyValuesVoxelName\x18\x0c \x01(\t\x12,\n\x11\x45xpandedVoxelName\x18\r \x01(\t:\x11\x65xpanded_voxel.vo\x12:\n\x0f\x65xpansionmethod\x18\x0e \x01(\x0e\x32\x19.ctm.VfiltExpansionMethod:\x06Mirror\x12&\n\x19horizontalexpansionfactor\x18\x0f \x01(\x01:\x03\x31\x30\x30\x12$\n\x17verticalexpansionfactor\x18\x10 \x01(\x01:\x03\x33\x30\x30\x12#\n\x15include_border_effect\x18\x11 \x01(\x08:\x04true\x12/\n measure_depth_from_formation_top\x18\x12 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cLanczosTaper\x18\x13 \x01(\x08:\x05\x66\x61lse\x12\x0f\n\x07\x44\x65nsity\x18\x14 \x03(\x01\x12!\n\x13SetReferenceDensity\x18\x15 \x01(\x01:\x04\x32.67\x12\x16\n\x0eSusceptibility\x18\x16 \x03(\x01\x12(\n\x1aSetReferenceSusceptibility\x18\x17 \x01(\x01:\x04\x30.01\x12;\n\tRemanence\x18- \x03(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12\x38\n#property_voxet_field_east_remanence\x18/ \x01(\t:\x0bGeologyEast\x12:\n$property_voxet_field_north_remanence\x18\x30 \x01(\t:\x0cGeologyNorth\x12\x34\n!property_voxet_field_up_remanence\x18\x31 \x01(\t:\tGeologyUp\x12\'\n\x18\x64oing_variable_gradients\x18\x32 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x15POSC_CoordinateSystem\x18\x18 \x01(\t\x12/\n\x10OutputProjection\x18\x1c \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12,\n\x04IGRF\x18\x19 \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x31\n\x06method\x18\x1a \x01(\x0e\x32\x18.ctm.ComputationalMethod:\x07Spatial\x12\x1d\n\x15ObservedReferenceGrid\x18\x1b \x01(\t\x12\x0c\n\x04\x63\x61se\x18\x1e \x01(\t\x12.\n\x1fSaveForwardResponsePerLithology\x18\x1f \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bInterpolate\x18  \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x12TopographySampling\x18! \x01(\x05:\x01\x31\x12\x16\n\x0bNumber_CPUs\x18( \x01(\x05:\x01\x31\x12\x10\n\x08ToolName\x18\x63 \x01(\t\"\xca\x03\n\x19Property_Optimization_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x02(\t\x12-\n\nReportFile\x18\x04 \x01(\t:\x19Property_Optimization.rpt\x12(\n\x06SetLaw\x18\x05 \x01(\x0b\x32\x18.invtaskmodel.SetLaw_GMT\x12\x1b\n\x13maxAbsoluteObserved\x18\x06 \x01(\x01\x12\x1d\n\x0f\x45stimateDensity\x18\x07 \x01(\x08:\x04true\x12%\n\x16\x45stimateSusceptibility\x18\t \x01(\x08:\x05\x66\x61lse\x12 \n\x11MaximumIterations\x18\n \x01(\x05:\x05\x31\x30\x30\x30\x30\x12\x1e\n\x0fMisfitThreshold\x18\x0b \x01(\x01:\x05\x31\x65-06\x12\x19\n\x0bMatchTrends\x18\x0c \x01(\x08:\x04true\x12\x1b\n\x10ReferenceDensity\x18\r \x01(\x01:\x01\x30\x12\x16\n\x0eIGRF_Magnitude\x18\x0e \x01(\x01\x12\x18\n\x10IGRF_Inclination\x18\x0f \x01(\x01\x12\x18\n\x10IGRF_Declination\x18\x10 \x01(\x01\"\xa2\x03\n\x0bNewCase_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x13\n\x0bx_cell_size\x18\x03 \x01(\x01\x12\x13\n\x0by_cell_size\x18\x04 \x01(\x01\x12\x13\n\x0bz_cell_size\x18\x05 \x01(\x01\x12\x1a\n\x12\x65\x61st_minimum_voxet\x18\x06 \x01(\x01\x12\x1a\n\x12\x65\x61st_maximum_voxet\x18\x07 \x01(\x01\x12\x1b\n\x13north_minimum_voxet\x18\x08 \x01(\x01\x12\x1b\n\x13north_maximum_voxet\x18\t \x01(\x01\x12\x1f\n\x17\x65levation_minimum_voxet\x18\n \x01(\x01\x12\x1f\n\x17\x65levation_maximum_voxet\x18\x0b \x01(\x01\x12\x42\n\x13VariableZResolution\x18\x0c \x01(\x0b\x32%.invtaskmodel.VariableZResolution_GMT\x12<\n\x10ObservedGridList\x18\r \x02(\x0b\x32\".invtaskmodel.MeasuredGridList_GMT\"\xa0\x01\n\x17VariableZResolution_GMT\x12(\n\x19use_variable_z_resolution\x18\x01 \x01(\x08:\x05\x66\x61lse\x12 \n\x15topo_part_boundary_at\x18\x02 \x01(\x01:\x01\x30\x12\x1c\n\x11lower_z_cell_size\x18\x03 \x01(\x01:\x01\x30\x12\x1b\n\x10geometric_factor\x18\x04 \x01(\x01:\x01\x31\"L\n\x14MeasuredGridList_GMT\x12\x34\n\x0cObservedGrid\x18\x01 \x03(\x0b\x32\x1e.invtaskmodel.MeasuredGrid_GMT\"\xa4\x03\n\x10MeasuredGrid_GMT\x12\x0c\n\x04grid\x18\x01 \x02(\t\x12\'\n\x04type\x18\x02 \x02(\x0e\x32\x19.ctm.GeophysicsSignalType\x12N\n\x15\x63ompute_surface_style\x18\x03 \x01(\x0e\x32!.invtaskmodel.ComputeSurfaceStyle:\x0cOnTopography\x12\x19\n\x0emean_elevation\x18\x04 \x01(\x01:\x01\x30\x12\x1c\n\x14\x63ompute_surface_grid\x18\x05 \x01(\t\x12&\n\x1a\x63ompute_surface_z_sampling\x18\x06 \x01(\x01:\x02\x32\x30\x12\x1a\n\x0bInterpolate\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x16\n\tprecision\x18\x08 \x01(\x01:\x03\x30.1\x12\x1a\n\x0bMatch_Trend\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x12Match_Trend_Degree\x18\n \x01(\x05:\x01\x31\x12\x1b\n\x10Match_Trend_Rate\x18\x0b \x01(\x05:\x01\x30\x12\x1c\n\rOutput_Trends\x18\x0c \x01(\x08:\x05\x66\x61lse\"\xb9\x02\n\x0f\x43\x61seControl_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12!\n\x13SetReferenceDensity\x18\x03 \x01(\x01:\x04\x32.67\x12!\n\x13SetAboveTopoDensity\x18\x04 \x01(\x01:\x04\x32.67\x12\x41\n\x19SetReferenceMagneticField\x18\x05 \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12(\n\x06SetLaw\x18\x06 \x01(\x0b\x32\x18.invtaskmodel.SetLaw_GMT\x12\'\n\x19UseRelativeGravityChanges\x18\x07 \x01(\x08:\x04true\x12*\n\x07product\x18\r \x03(\x0e\x32\x19.ctm.GeophysicsSignalType\"C\n\nSetLaw_GMT\x12\x35\n\x11LithologyProperty\x18\x01 \x03(\x0b\x32\x1a.ctm.LithologyProperty_GMT\"e\n\nNewRun_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x02(\t\x12\x1d\n\x12NumberOfIterations\x18\x04 \x02(\x05:\x01\x31\x12\x0b\n\x03log\x18\x11 \x01(\t\"\xfd\x10\n\x0eRunControl_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x02(\t\x12\x38\n\x0eShapeRatioTest\x18\x04 \x01(\x0b\x32 .invtaskmodel.ShapeRatioTest_GMT\x12:\n\x0fVolumeRatioTest\x18\x05 \x01(\x0b\x32!.invtaskmodel.VolumeRatioTest_GMT\x12:\n\x0f\x43ommonalityTest\x18\x06 \x01(\x0b\x32!.invtaskmodel.CommonalityTest_GMT\x12\x46\n\x15\x43ommonalityVolumeTest\x18\x07 \x01(\x0b\x32\'.invtaskmodel.CommonalityVolumeTest_GMT\x12J\n\x17\x44ilationOrErosionFilter\x18\x08 \x01(\x0b\x32).invtaskmodel.DilationOrErosionFilter_GMT\x12>\n\x11HomogeneousFilter\x18\t \x01(\x0b\x32#.invtaskmodel.HomogeneousFilter_GMT\x12R\n\x18LithologyInitialiseStyle\x18\n \x01(\x0e\x32%.invtaskmodel.PropertyInitialiseStyle:\tFromModel\x12R\n\x16\x44\x65nsityInitialiseStyle\x18\x0b \x01(\x0e\x32%.invtaskmodel.PropertyInitialiseStyle:\x0b\x46romLawMean\x12Y\n\x1dSusceptibilityInitialiseStyle\x18\x0c \x01(\x0e\x32%.invtaskmodel.PropertyInitialiseStyle:\x0b\x46romLawMean\x12`\n$RemanentMagnetizationInitialiseStyle\x18\r \x01(\x0e\x32%.invtaskmodel.PropertyInitialiseStyle:\x0b\x46romLawMean\x12\'\n\x14property_voxet_litho\x18( \x01(\t:\tLithology\x12\x1e\n\x16property_voxet_density\x18) \x01(\t\x12%\n\x1dproperty_voxet_susceptibility\x18* \x01(\t\x12 \n\x18property_voxet_remanence\x18+ \x01(\t\x12-\n\x1aproperty_voxet_field_litho\x18, \x01(\t:\tLithology\x12-\n\x1cproperty_voxet_field_density\x18- \x01(\t:\x07\x44\x65nsity\x12;\n#property_voxet_field_susceptibility\x18. \x01(\t:\x0eSusceptibility\x12\x31\n\x1eproperty_voxet_field_remanence\x18/ \x01(\t:\tRemanence\x12\x33\n$AllowNeighbourPropertyDifferentCheck\x18\x12 \x01(\x08:\x05\x66\x61lse\x12#\n\x15\x41llowGeophysicalTests\x18\x13 \x01(\x08:\x04true\x12\"\n\x14\x41llowGeologicalTests\x18\x14 \x01(\x08:\x04true\x12\x1f\n\x10PreserveTopology\x18\x15 \x01(\x08:\x05\x66\x61lse\x12\"\n\x13SetOutputTrendGrids\x18\x16 \x01(\x08:\x05\x66\x61lse\x12%\n\x16SetDualTemperatureMode\x18\x17 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x16LargeMisfitTemperature\x18\x18 \x01(\x01\x12%\n\x1dLargeMisfitRMSThresholdFactor\x18\x19 \x01(\x01\x12!\n\x16Mode1TemperatureFactor\x18\x1a \x01(\x01:\x01\x31\x12\x1c\n\rMode1Duration\x18\x1b \x01(\x01:\x05\x39\x39\x39\x30\x30\x12\'\n\x16Mode2TemperatureFactor\x18\x1c \x01(\x01:\x07\x31\x30\x30\x30\x30\x30\x30\x12\x1a\n\rMode2Duration\x18\x1d \x01(\x01:\x03\x31\x30\x30\x12+\n\x1fProbabilityOfPropertyChangeOnly\x18\x1e \x01(\x05:\x02\x35\x30\x12/\n PreserveVerticalRelationshipTest\x18\x1f \x01(\x08:\x05\x66\x61lse\x12\'\n\x19PropertyChangeOnFixedCell\x18  \x01(\x08:\x04true\x12\x12\n\x04Seed\x18# \x01(\x01:\x04\x31\x32\x33\x34\x12\x1d\n\x12NumberOfIterations\x18$ \x01(\x05:\x01\x31\x12\x32\n#PreserveVerticalDensityGradientTest\x18% \x01(\x08:\x05\x66\x61lse\x12\x0b\n\x03log\x18& \x01(\t\x12:\n\x0f\x65xpansionmethod\x18< \x01(\x0e\x32\x19.ctm.VfiltExpansionMethod:\x06Mirror\x12&\n\x19horizontalexpansionfactor\x18= \x01(\x01:\x03\x31\x30\x30\x12$\n\x17verticalexpansionfactor\x18> \x01(\x01:\x03\x33\x30\x30\x12#\n\x15include_border_effect\x18? \x01(\x08:\x04true\x12\x1b\n\x0cLanczosTaper\x18@ \x01(\x08:\x05\x66\x61lse\x12 \n\x11SaveResponseVoxet\x18\x41 \x01(\x08:\x05\x66\x61lse\x12 \n\x11SaveExpandedVoxet\x18\x42 \x01(\x08:\x05\x66\x61lse\x12\x31\n\x06method\x18\x43 \x01(\x0e\x32\x18.ctm.ComputationalMethod:\x07Spatial\"\x82\x02\n\x12ShapeRatioTest_GMT\x12Y\n\nSetWeights\x18\x01 \x02(\x0e\x32\x35.invtaskmodel.ShapeRatioTest_GMT.ShapeRatioWeightType:\x0eLocalAbundance\x12#\n\x15IncludeAboveTopoFaces\x18\x02 \x02(\x08:\x04true\x12!\n\x13IncludeOutsideFaces\x18\x03 \x02(\x08:\x04true\x12\x13\n\x05\x41llow\x18\x04 \x01(\x08:\x04true\"4\n\x14ShapeRatioWeightType\x12\x08\n\x04none\x10\x00\x12\x12\n\x0eLocalAbundance\x10\x01\"\xbe\x01\n\x13VolumeRatioTest_GMT\x12[\n\nSetWeights\x18\x01 \x02(\x0e\x32\x37.invtaskmodel.VolumeRatioTest_GMT.VolumeRatioWeightType:\x0eLocalAbundance\x12\x13\n\x05\x41llow\x18\x02 \x01(\x08:\x04true\"5\n\x15VolumeRatioWeightType\x12\x08\n\x04none\x10\x00\x12\x12\n\x0eLocalAbundance\x10\x01\"\xd6\x01\n\x19\x43ommonalityVolumeTest_GMT\x12g\n\nSetWeights\x18\x01 \x02(\x0e\x32\x43.invtaskmodel.CommonalityVolumeTest_GMT.CommonalityVolumeWeightType:\x0eLocalAbundance\x12\x13\n\x05\x41llow\x18\x02 \x01(\x08:\x04true\";\n\x1b\x43ommonalityVolumeWeightType\x12\x08\n\x04none\x10\x00\x12\x12\n\x0eLocalAbundance\x10\x01\"\xe1\x01\n\x13\x43ommonalityTest_GMT\x12Q\n\nSetWeights\x18\x01 \x02(\x0e\x32\x37.invtaskmodel.CommonalityTest_GMT.CommonalityWeightType:\x04none\x12\x13\n\x05\x41llow\x18\x02 \x01(\x08:\x04true\"b\n\x15\x43ommonalityWeightType\x12\x08\n\x04none\x10\x00\x12\x12\n\x0eLocalAbundance\x10\x01\x12\x14\n\x10LocalCommonality\x10\x02\x12\x15\n\x11GlobalCommonality\x10\x03\"G\n\x1b\x44ilationOrErosionFilter_GMT\x12\x12\n\x04Rate\x18\x01 \x02(\x05:\x04\x35\x30\x30\x30\x12\x14\n\x05\x41llow\x18\x02 \x01(\x08:\x05\x66\x61lse\"A\n\x15HomogeneousFilter_GMT\x12\x12\n\x04Rate\x18\x01 \x02(\x05:\x04\x31\x30\x30\x30\x12\x14\n\x05\x41llow\x18\x02 \x01(\x08:\x05\x66\x61lse\"\xac\x03\n\x11SetFixedCells_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0b\n\x03run\x18\x02 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x03 \x01(\t\x12$\n\x07xyzfile\x18\x04 \x01(\x0b\x32\x13.ctm.RepeatedString\x12\x14\n\x05\x43LEAR\x18\x05 \x01(\x08:\x05\x66\x61lse\x12!\n\x12MappedObservations\x18\x06 \x01(\x08:\x05\x66\x61lse\x12?\n\x08goodness\x18\x07 \x01(\x0b\x32-.invtaskmodel.RepeatedObservedReliability_GMT\x12$\n\x07geology\x18\x08 \x01(\x0b\x32\x13.ctm.RepeatedString\x12\x16\n\x07SURFACE\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x03\x62ox\x18\n \x01(\x0b\x32\x10.ctm.BoundingBox\x12\'\n\ndrillholes\x18\x0b \x01(\x0b\x32\x13.ctm.RepeatedString\x12\x0e\n\x06radius\x18\x0c \x01(\x01\x12\'\n\x0bprovenances\x18\r \x01(\x0b\x32\x12.ctm.RepeatedInt32\x12\x0b\n\x03log\x18\x11 \x01(\t\"[\n\x1fRepeatedObservedReliability_GMT\x12\x11\n\tformation\x18\x01 \x03(\t\x12%\n\x0breliability\x18\x02 \x01(\x0e\x32\x10.ctm.Reliability\"Y\n\x0cRunState_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0b\n\x03run\x18\x02 \x02(\t\x12\x1c\n\x14number_of_iterations\x18\x03 \x02(\x05\x12\x0c\n\x04\x63\x61se\x18\x04 \x01(\t\"\xa5\x01\n\x14MakeSummaryStats_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x01(\t\x12:\n\x0fRunIntervalList\x18\x04 \x02(\x0b\x32!.invtaskmodel.RunIntervalList_GMT\x12\x17\n\x0fvoxet_name_stub\x18\x05 \x01(\t\x12\x0b\n\x03log\x18\x11 \x01(\t\"\xb5\x01\n\x19MakeSuperSummaryStats_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x32\n\x0bRunInterval\x18\x03 \x02(\x0b\x32\x1d.invtaskmodel.RunInterval_GMT\x12\x19\n\x11statistical_voxet\x18\x04 \x01(\t\x12\x1c\n\x14threshold_percentage\x18\x05 \x02(\x05\x12\x0b\n\x03log\x18\x11 \x01(\t\"I\n\x13RunIntervalList_GMT\x12\x32\n\x0bRunInterval\x18\x01 \x03(\x0b\x32\x1d.invtaskmodel.RunInterval_GMT\"\xda\x03\n\x16MakeEvolutionMovie_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x32\n\x0bRunInterval\x18\x03 \x02(\x0b\x32\x1d.invtaskmodel.RunInterval_GMT\x12\x19\n\x0cMaxPixelCols\x18\x04 \x01(\x05:\x03\x35\x30\x30\x12\x19\n\x0cMaxPixelRows\x18\x05 \x01(\x05:\x03\x35\x30\x30\x12\x1f\n\x14VerticalExaggeration\x18\x06 \x01(\x01:\x01\x31\x12\x1e\n\x11QualityPercentage\x18\x07 \x01(\x05:\x03\x31\x30\x30\x12\x1c\n\x0f\x46ramesPerSecond\x18\x08 \x01(\x05:\x03\x31\x30\x30\x12 \n\x12IterationIncrement\x18\t \x01(\x05:\x04\x32\x30\x30\x30\x12\x30\n\x03lut\x18\n \x01(\x0e\x32\x1a.invtaskmodel.ColourScheme:\x07\x43olours\x12.\n\x07Scaling\x18\x0b \x01(\x0b\x32\x1d.invtaskmodel.ScaleOption_GMT\x12\x33\n\x04show\x18\x0c \x01(\x0e\x32\x1c.invtaskmodel.EvolutionField:\x07Geology\x12\x0f\n\x07Section\x18\r \x02(\t\x12\r\n\x05movie\x18\x0e \x01(\t\"P\n\x0fRunInterval_GMT\x12\x0b\n\x03run\x18\x01 \x02(\t\x12\x18\n\x10start_iterations\x18\x03 \x02(\x05\x12\x16\n\x0e\x65nd_iterations\x18\x04 \x02(\x05\"\xac\x01\n\x16MakeThresholdStats_GMT\x12\x12\n\ninputvoxet\x18\x01 \x02(\t\x12\x12\n\ninputfield\x18\x02 \x01(\t\x12\x13\n\x0boutputvoxet\x18\x03 \x01(\t\x12\x10\n\x08isovalue\x18\x04 \x02(\x01\x12\x1c\n\x14threshold_percentage\x18\x05 \x01(\x01\x12\x18\n\x10threshold_stddev\x18\x06 \x01(\x01\x12\x0b\n\x03log\x18\x11 \x01(\t\"\x9e\x02\n\x11MakeHistogram_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x0b\n\x03run\x18\x03 \x01(\t\x12\r\n\x05voxet\x18\x04 \x02(\t\x12\x17\n\x0flithology_field\x18\x05 \x02(\t\x12\x16\n\x0eproperty_field\x18\x06 \x02(\t\x12\x1c\n\x0enumber_of_bins\x18\x07 \x01(\x05:\x04\x31\x30\x32\x34\x12.\n\x07Scaling\x18\x08 \x02(\x0b\x32\x1d.invtaskmodel.ScaleOption_GMT\x12\x19\n\x06report\x18\t \x01(\t:\thisto.rpt\x12\x10\n\x08products\x18\n \x01(\t\x12\x14\n\x05ttest\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x0b\n\x03log\x18\x11 \x01(\t\"I\n\x0fScaleOption_GMT\x12\x14\n\x05\x64oLog\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x0f\n\x07minClip\x18\x02 \x01(\x01\x12\x0f\n\x07maxClip\x18\x03 \x01(\x01\"\xd6\x02\n\x0fGetFunction_GMT\x12\x32\n\ttransform\x18\x01 \x02(\x0e\x32\x1f.invtaskmodel.TransformFunction\x12\x16\n\x0e\x65xisting_voxet\x18\x02 \x01(\t\x12\x1b\n\x13\x65xisting_aem_output\x18\x03 \x01(\t\x12V\n\x11statistical_field\x18\x04 \x01(\x0e\x32..invtaskmodel.StatisticalFieldWithinStatsVoxet:\x0bMeanDensity\x12?\n\tAEM_Field\x18\x05 \x01(\x0e\x32\x1b.invtaskmodel.AEM_Fields_EM:\x0fLog_Resistivity\x12\x15\n\tthreshold\x18\x06 \x01(\x01:\x02\x39\x30\x12\x13\n\x0binput_field\x18\x07 \x01(\t\x12\x15\n\titeration\x18\x08 \x01(\x05:\x02\x33\x30\"r\n\x12RunFieldResult_GMT\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\x14\n\x0creject_count\x18\x02 \x01(\x05\x12\x12\n\ntest_count\x18\x03 \x01(\x05\x12$\n\x1cobserved_grid_computed_index\x18\x04 \x01(\x05\"\xd1\x07\n\rRunResult_GMT\x12\x0f\n\x07\x63ounter\x18\x01 \x01(\x05\x12\x16\n\x0eproposal_count\x18\x02 \x01(\x05\x12\x1e\n\x16proposal_rate_per_hour\x18\x03 \x01(\x05\x12+\n#inter_proposal_same_formation_count\x18\x04 \x01(\x05\x12\x30\n(inter_proposal_different_formation_count\x18\x05 \x01(\x05\x12\x1c\n\x14intra_proposal_count\x18\x06 \x01(\x05\x12 \n\x18\x61\x63\x63\x65ptance_rate_per_hour\x18\x07 \x01(\x05\x12\x18\n\x10\x61\x63\x63\x65ptance_count\x18\x08 \x01(\x05\x12-\n%inter_acceptance_same_formation_count\x18\t \x01(\x05\x12\x32\n*inter_acceptance_different_formation_count\x18\n \x01(\x05\x12\x1e\n\x16intra_acceptance_count\x18\x0b \x01(\x05\x12&\n\x1epreserve_topology_reject_count\x18\x0c \x01(\x05\x12$\n\x1cpreserve_topology_test_count\x18\r \x01(\x05\x12\x33\n+preserve_vertical_relationship_reject_count\x18\x0e \x01(\x05\x12\x31\n)preserve_vertical_relationship_test_count\x18\x0f \x01(\x05\x12\'\n\x1f\x63ommonality_volume_reject_count\x18\x10 \x01(\x05\x12%\n\x1d\x63ommonality_volume_test_count\x18\x11 \x01(\x05\x12 \n\x18\x63ommonality_reject_count\x18\x12 \x01(\x05\x12\x1e\n\x16\x63ommonality_test_count\x18\x13 \x01(\x05\x12\x1b\n\x13volume_reject_count\x18\x14 \x01(\x05\x12\x19\n\x11volume_test_count\x18\x15 \x01(\x05\x12\x1a\n\x12shape_reject_count\x18\x16 \x01(\x05\x12\x18\n\x10shape_test_count\x18\x17 \x01(\x05\x12\x15\n\rcomputer_name\x18\x18 \x01(\t\x12\x19\n\x11started_date_time\x18\x19 \x01(\t\x12\x1a\n\x12\x66inished_date_time\x18\x1a \x01(\t\x12\x37\n\rfield_results\x18\x1b \x03(\x0b\x32 .invtaskmodel.RunFieldResult_GMT\"\x86\x03\n\x14MakeSectionImage_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x0b\n\x03run\x18\x03 \x01(\t\x12\x13\n\x08products\x18\x04 \x01(\t:\x01.\x12\x33\n\x0cget_function\x18\x05 \x02(\x0b\x32\x1d.invtaskmodel.GetFunction_GMT\x12\x0f\n\x07Section\x18\x06 \x02(\t\x12\x19\n\x0cMaxPixelCols\x18\x07 \x01(\x05:\x03\x35\x30\x30\x12\x19\n\x0cMaxPixelRows\x18\x08 \x01(\x05:\x03\x35\x30\x30\x12\x1f\n\x14VerticalExaggeration\x18\t \x01(\x01:\x01\x31\x12\x1e\n\x11QualityPercentage\x18\n \x01(\x05:\x03\x31\x30\x30\x12\x30\n\x03lut\x18\x0b \x01(\x0e\x32\x1a.invtaskmodel.ColourScheme:\x07\x43olours\x12.\n\x07Scaling\x18\x0c \x01(\x0b\x32\x1d.invtaskmodel.ScaleOption_GMT\x12\r\n\x05image\x18\r \x01(\t\"\xe4\x02\n\x18MakeAllSectionImages_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x0b\n\x03run\x18\x03 \x01(\t\x12\x33\n\x0cget_function\x18\x04 \x02(\x0b\x32\x1d.invtaskmodel.GetFunction_GMT\x12\x19\n\x0cMaxPixelCols\x18\x05 \x01(\x05:\x03\x35\x30\x30\x12\x19\n\x0cMaxPixelRows\x18\x06 \x01(\x05:\x03\x35\x30\x30\x12\x1f\n\x14VerticalExaggeration\x18\x07 \x01(\x01:\x01\x31\x12\x1e\n\x11QualityPercentage\x18\x08 \x01(\x05:\x03\x31\x30\x30\x12\x30\n\x03lut\x18\t \x01(\x0e\x32\x1a.invtaskmodel.ColourScheme:\x07\x43olours\x12.\n\x07Scaling\x18\n \x01(\x0b\x32\x1d.invtaskmodel.ScaleOption_GMT\x12\r\n\x05image\x18\x0b \x01(\t\"\x8f\x05\n\x15MakeSurfaceShells_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x01(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x0b\n\x03run\x18\x03 \x01(\t\x12\x12\n\ninputvoxet\x18\x04 \x02(\t\x12\x12\n\ninputfield\x18\x05 \x02(\t\x12\x42\n\x07operand\x18\x06 \x01(\x0e\x32-.invtaskmodel.MakeSurfaceShells_GMT.QueryType:\x02GT\x12\x0e\n\x06value1\x18\x07 \x01(\x01\x12\x0e\n\x06value2\x18\x08 \x01(\x01\x12\x1d\n\x06output\x18\t \x01(\t:\rLimit_surface\x12\x16\n\x07\x44o_Tops\x18\n \x01(\x08:\x05\x66\x61lse\x12J\n\x0binterpolate\x18\x0b \x01(\x0b\x32\x35.invtaskmodel.MakeSurfaceShells_GMT.InterpolateShells\x12$\n\nReportFile\x18\x18 \x01(\t:\x10SurfaceShell.rpt\x1a\xc5\x01\n\x11InterpolateShells\x12\x18\n\x0bresample_nx\x18\x01 \x01(\x05:\x03\x31\x30\x30\x12\x18\n\x0bresample_ny\x18\x02 \x01(\x05:\x03\x31\x30\x30\x12\x18\n\x0bresample_nz\x18\x03 \x01(\x05:\x03\x31\x30\x30\x12\x16\n\ncluster_nx\x18\x04 \x01(\x05:\x02\x35\x30\x12\x16\n\ncluster_ny\x18\x05 \x01(\x05:\x02\x35\x30\x12\x16\n\ncluster_nz\x18\x06 \x01(\x05:\x02\x35\x30\x12\x1a\n\x0clowpass_iter\x18\x07 \x01(\x05:\x04\x32\x35\x30\x30\"L\n\tQueryType\x12\x06\n\x02GT\x10\x00\x12\x06\n\x02LT\x10\x01\x12\x06\n\x02\x45Q\x10\x02\x12\x06\n\x02LE\x10\x03\x12\x06\n\x02GE\x10\x04\x12\x06\n\x02NE\x10\x05\x12\x0f\n\x0bINSIDERANGE\x10\x06\"e\n!SetupMultiProcessForwardModel_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x02(\t\x12\x13\n\x0bNumber_CPUs\x18\x04 \x01(\x05\"z\n\"RunAllMultiProcessForwardModel_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x02(\t\x12\r\n\x05torun\x18\x04 \x01(\t\x12\x18\n\x10Number_Processes\x18\x05 \x01(\x05\"\x9b\x01\n\"RunOneMultiProcessForwardModel_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x02(\t\x12\x13\n\x0bstart_layer\x18\x04 \x02(\x05\x12\x1b\n\x10number_of_layers\x18\x05 \x01(\x05:\x01\x31\x12\x16\n\x0bNumber_CPUs\x18\x06 \x01(\x05:\x01\x31\"p\n\"GatherMultiProcessForwardModel_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x02(\t\x12\x0e\n\x06layers\x18\x04 \x02(\x05\x12\r\n\x05torun\x18\x05 \x01(\t\"\xa6\x08\n1ForwardModelTemperatureForCreateCaseFromVoxet_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x14\n\x03run\x18\x03 \x01(\t:\x07Thermal\x12\x13\n\x0binput_voxet\x18\x04 \x02(\t\x12\x33\n\x0b\x66ield_alias\x18\x05 \x03(\x0b\x32\x1e.invtaskmodel.VoxetAliases_GMT\x12\x1a\n\x12NumberOfIterations\x18\x06 \x02(\x05\x12\x43\n\x12TemperatureControl\x18\x07 \x01(\x0b\x32\'.invtaskmodel.SetTemperatureControl_GMT\x12&\n\x16MaxResidualTemperature\x18\x08 \x01(\x01:\x06\x30.0001\x12\x17\n\x08\x41\x64vanced\x18\n \x01(\x08:\x05\x66\x61lse\x12I\n\x17Surface_Temperature_Law\x18\x0c \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12\x46\n\x14Surface_Heatflow_Law\x18\r \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12I\n\x17Horizon_Temperature_Law\x18\x0e \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12\x46\n\x14Horizon_Heatflow_Law\x18\x0f \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12\x46\n\x14\x42\x61se_Temperature_Law\x18\x10 \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12\x43\n\x11\x42\x61se_Heatflow_Law\x18\x11 \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12\"\n\x1aXYZT_fixed_temperature_csv\x18\x12 \x01(\t\x12\x31\n\x06method\x18\x13 \x01(\x0e\x32\x18.ctm.ComputationalMethod:\x07Spatial\x12\x1f\n\x17InitialTemperatureVoxet\x18\x14 \x01(\t\x12\x16\n\x0bNumber_CPUs\x18\x15 \x01(\x05:\x01\x31\x12(\n\x06SetLaw\x18\x1a \x01(\x0b\x32\x18.invtaskmodel.SetLaw_GMT\x12/\n\nReportFile\x18\x1b \x01(\t:\x1b\x46orwardModelTemperature.rpt\x12$\n\x15ReinitialiseFromModel\x18\x1c \x01(\x08:\x05\x66\x61lse\x12\x0b\n\x03log\x18\x63 \x01(\t\"\xea\x01\n\x19SetTemperatureControl_GMT\x12\x1e\n\x16MeanSurfaceTemperature\x18\x01 \x01(\x01\x12I\n\rBoundaryStyle\x18\x02 \x01(\x0e\x32\x1f.invtaskmodel.BoundaryStyleList:\x11\x42oundary_HeatFlow\x12\x15\n\rBoundaryValue\x18\x03 \x01(\x01\x12\x37\n\x08location\x18\x04 \x01(\x0e\x32\x1f.invtaskmodel.Boundary_Location:\x04\x42\x61se\x12\x12\n\ninput_grid\x18\n \x01(\t\"\xa6\x04\n\x1cProperty_Parameter_Sweep_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x17\n\x03run\x18\x03 \x01(\t:\nstochastic\x12`\n\x17ThermalUncertaintyStudy\x18\x04 \x01(\x0b\x32?.invtaskmodel.ForwardModelTemperatureForCreateCaseFromVoxet_GMT\x12Q\n\x1ePotentialFieldUncertaintyStudy\x18\x05 \x01(\x0b\x32).invtaskmodel.ForwardModelFromProject_GMT\x12I\n\x18\x42oundaryConditionToSweep\x18\x07 \x03(\x0b\x32\'.invtaskmodel.SetTemperatureControl_GMT\x12<\n\x18LithologyPropertyToSweep\x18\x08 \x03(\x0b\x32\x1a.ctm.LithologyProperty_GMT\x12\x16\n\x0bNumber_CPUs\x18\x15 \x01(\x05:\x01\x31\x12\x1e\n\x13Number_Permutations\x18\x16 \x01(\x05:\x01\x33\x12%\n\x16GenerateTasks_ThenStop\x18\x17 \x01(\x08:\x05\x66\x61lse\x12\x30\n\nReportFile\x18\x18 \x01(\t:\x1cProperty_Parameter_Sweep.rpt\"\xd3\x02\n\"MakeParameterSweepSummaryStats_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x17\n\x03run\x18\x03 \x01(\t:\nstochastic\x12I\n\x18\x42oundaryConditionToSweep\x18\x07 \x03(\x0b\x32\'.invtaskmodel.SetTemperatureControl_GMT\x12<\n\x18LithologyPropertyToSweep\x18\x08 \x03(\x0b\x32\x1a.ctm.LithologyProperty_GMT\x12\x19\n\x11statistical_voxet\x18\t \x01(\t\x12\x1e\n\x13Number_Permutations\x18\x16 \x01(\x05:\x01\x33\x12#\n\nReportFile\x18\x18 \x01(\t:\x0fStats_Voxet.rpt\x12\x0b\n\x03log\x18\x11 \x01(\t\"\xbc\x05\n\x1b\x46orwardModelFromProject_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x16\n\x03run\x18\x10 \x01(\t:\tPotential\x12\x13\n\x0bx_cell_size\x18\x03 \x02(\x01\x12\x13\n\x0by_cell_size\x18\x04 \x02(\x01\x12\x13\n\x0bz_cell_size\x18\x05 \x02(\x01\x12\x1a\n\x12\x65\x61st_minimum_voxet\x18\x06 \x02(\x01\x12\x1a\n\x12\x65\x61st_maximum_voxet\x18\x07 \x02(\x01\x12\x1b\n\x13north_minimum_voxet\x18\x08 \x02(\x01\x12\x1b\n\x13north_maximum_voxet\x18\t \x02(\x01\x12\x1f\n\x17\x65levation_minimum_voxet\x18\n \x02(\x01\x12\x1f\n\x17\x65levation_maximum_voxet\x18\x0b \x02(\x01\x12\x16\n\x0emean_elevation\x18\x0c \x02(\x01\x12*\n\x07product\x18\r \x02(\x0e\x32\x19.ctm.GeophysicsSignalType\x12\x1d\n\x15include_border_effect\x18\x0e \x01(\x08\x12,\n\x04IGRF\x18\x0f \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x31\n\x06method\x18\x12 \x01(\x0e\x32\x18.ctm.ComputationalMethod:\x07Spatial\x12.\n\x1fSaveForwardResponsePerLithology\x18\x13 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x0bNumber_CPUs\x18\x14 \x01(\x05:\x01\x31\x12(\n\x06SetLaw\x18\x1a \x01(\x0b\x32\x18.invtaskmodel.SetLaw_GMT\x12/\n\nReportFile\x18\x1c \x01(\t:\x1b\x46orwardModelFromProject.rpt\x12\x0b\n\x03log\x18\x63 \x01(\t\"s\n\x16MakeMisfitAndTrend_GMT\x12\r\n\x05gridA\x18\x01 \x02(\t\x12\r\n\x05gridB\x18\x02 \x02(\t\x12\x14\n\x0cTrend_Degree\x18\x03 \x02(\x05\x12\x12\n\nmisfitGrid\x18\x04 \x02(\t\x12\x11\n\ttrendGrid\x18\x05 \x02(\t\"\xfe\x15\n\rInversionTask\x12*\n\x07NewCase\x18\x01 \x01(\x0b\x32\x19.invtaskmodel.NewCase_GMT\x12\x32\n\x0b\x43\x61seControl\x18\x02 \x01(\x0b\x32\x1d.invtaskmodel.CaseControl_GMT\x12<\n\x10MeasuredGridList\x18\x07 \x01(\x0b\x32\".invtaskmodel.MeasuredGridList_GMT\x12\x34\n\x0cMeasuredGrid\x18\x08 \x01(\x0b\x32\x1e.invtaskmodel.MeasuredGrid_GMT\x12\x36\n\rSetFixedCells\x18\t \x01(\x0b\x32\x1f.invtaskmodel.SetFixedCells_GMT\x12\x46\n\x15SetTemperatureControl\x18\n \x01(\x0b\x32\'.invtaskmodel.SetTemperatureControl_GMT\x12\x42\n\x13NewProjectFromVoxet\x18\x0b \x01(\x0b\x32%.invtaskmodel.NewProjectFromVoxet_GMT\x12\x35\n\x11LithologyProperty\x18\x15 \x01(\x0b\x32\x1a.ctm.LithologyProperty_GMT\x12(\n\x06SetLaw\x18\x18 \x01(\x0b\x32\x18.invtaskmodel.SetLaw_GMT\x12\x46\n\x15Property_Optimization\x18\x1a \x01(\x0b\x32\'.invtaskmodel.Property_Optimization_GMT\x12\x38\n\x0eShapeRatioTest\x18\x32 \x01(\x0b\x32 .invtaskmodel.ShapeRatioTest_GMT\x12:\n\x0fVolumeRatioTest\x18\x33 \x01(\x0b\x32!.invtaskmodel.VolumeRatioTest_GMT\x12:\n\x0f\x43ommonalityTest\x18\x34 \x01(\x0b\x32!.invtaskmodel.CommonalityTest_GMT\x12\x46\n\x15\x43ommonalityVolumeTest\x18\x35 \x01(\x0b\x32\'.invtaskmodel.CommonalityVolumeTest_GMT\x12J\n\x17\x44ilationOrErosionFilter\x18\x36 \x01(\x0b\x32).invtaskmodel.DilationOrErosionFilter_GMT\x12>\n\x11HomogeneousFilter\x18\x37 \x01(\x0b\x32#.invtaskmodel.HomogeneousFilter_GMT\x12\x30\n\nRunControl\x18< \x01(\x0b\x32\x1c.invtaskmodel.RunControl_GMT\x12(\n\x06NewRun\x18= \x01(\x0b\x32\x18.invtaskmodel.NewRun_GMT\x12\"\n\x03Run\x18? \x01(\x0b\x32\x15.invtaskmodel.Run_GMT\x12,\n\x08RunState\x18\x45 \x01(\x0b\x32\x1a.invtaskmodel.RunState_GMT\x12\x36\n\rMakeHistogram\x18\x46 \x01(\x0b\x32\x1f.invtaskmodel.MakeHistogram_GMT\x12<\n\x10MakeSummaryStats\x18G \x01(\x0b\x32\".invtaskmodel.MakeSummaryStats_GMT\x12\x46\n\x15MakeSuperSummaryStats\x18H \x01(\x0b\x32\'.invtaskmodel.MakeSuperSummaryStats_GMT\x12@\n\x12MakeEvolutionMovie\x18I \x01(\x0b\x32$.invtaskmodel.MakeEvolutionMovie_GMT\x12<\n\x10MakeSectionImage\x18J \x01(\x0b\x32\".invtaskmodel.MakeSectionImage_GMT\x12\x44\n\x14MakeAllSectionImages\x18K \x01(\x0b\x32&.invtaskmodel.MakeAllSectionImages_GMT\x12>\n\x11MakeSurfaceShells\x18L \x01(\x0b\x32#.invtaskmodel.MakeSurfaceShells_GMT\x12:\n\x0fRunIntervalList\x18M \x01(\x0b\x32!.invtaskmodel.RunIntervalList_GMT\x12\x32\n\x0bRunInterval\x18N \x01(\x0b\x32\x1d.invtaskmodel.RunInterval_GMT\x12\x32\n\x0bScaleOption\x18O \x01(\x0b\x32\x1d.invtaskmodel.ScaleOption_GMT\x12\x32\n\x0bGetFunction\x18P \x01(\x0b\x32\x1d.invtaskmodel.GetFunction_GMT\x12X\n\x1eMakeParameterSweepSummaryStats\x18Q \x01(\x0b\x32\x30.invtaskmodel.MakeParameterSweepSummaryStats_GMT\x12<\n\x0eMisfitAndTrend\x18R \x01(\x0b\x32$.invtaskmodel.MakeMisfitAndTrend_GMT\x12J\n\x17\x46orwardModelFromProject\x18S \x01(\x0b\x32).invtaskmodel.ForwardModelFromProject_GMT\x12\x46\n\x15\x46orwardModelFromVoxet\x18T \x01(\x0b\x32\'.invtaskmodel.ForwardModelFromVoxet_GMT\x12v\n-ForwardModelTemperatureForCreateCaseFromVoxet\x18U \x01(\x0b\x32?.invtaskmodel.ForwardModelTemperatureForCreateCaseFromVoxet_GMT\x12\x34\n\x0cVoxetAliases\x18V \x01(\x0b\x32\x1e.invtaskmodel.VoxetAliases_GMT\x12V\n\x1dSetupMultiProcessForwardModel\x18W \x01(\x0b\x32/.invtaskmodel.SetupMultiProcessForwardModel_GMT\x12X\n\x1eRunOneMultiProcessForwardModel\x18X \x01(\x0b\x32\x30.invtaskmodel.RunOneMultiProcessForwardModel_GMT\x12X\n\x1eRunAllMultiProcessForwardModel\x18Y \x01(\x0b\x32\x30.invtaskmodel.RunAllMultiProcessForwardModel_GMT\x12X\n\x1eGatherMultiProcessForwardModel\x18Z \x01(\x0b\x32\x30.invtaskmodel.GatherMultiProcessForwardModel_GMT\x12L\n\x18Property_Parameter_Sweep\x18] \x01(\x0b\x32*.invtaskmodel.Property_Parameter_Sweep_GMT\x12@\n\x12MakeThresholdStats\x18^ \x01(\x0b\x32$.invtaskmodel.MakeThresholdStats_GMT\x12\x0c\n\x03log\x18\xff\x01 \x01(\t*\x8c\x01\n\x13\x43omputeSurfaceStyle\x12\x10\n\x0cOnTopography\x10\x00\x12\x1d\n\x19OnTopographyWithClearance\x10\x01\x12\x0e\n\nOnASurface\x10\x02\x12\x15\n\x11\x43onstantElevation\x10\x03\x12\x1d\n\x19OnTopOfVoxetWithClearance\x10\x04*[\n\x17PropertyInitialiseStyle\x12\r\n\tFromModel\x10\x00\x12\r\n\tFromVoxet\x10\x01\x12\x0f\n\x0b\x46romLawMean\x10\x02\x12\x11\n\rFromLawRandom\x10\x03*\x86\x01\n\x0e\x45volutionField\x12\x0b\n\x07Geology\x10\x00\x12\x12\n\x0eWatchedDensity\x10\x01\x12\x19\n\x15WatchedSusceptibility\x10\x02\x12\x11\n\rRemanenceEast\x10\x03\x12\x12\n\x0eRemanenceNorth\x10\x04\x12\x11\n\rRemanenceDown\x10\x05*w\n\x11TransformFunction\x12\x15\n\x11MostProbableField\x10\x00\x12\x11\n\rWeightedField\x10\x01\x12\x19\n\x15MostProbableLithology\x10\x02\x12\x0c\n\x08GetField\x10\x03\x12\x0f\n\x0bGetHeatFlow\x10\x04*\xec\x02\n StatisticalFieldWithinStatsVoxet\x12\x0f\n\x0b\x43hangeCount\x10\x00\x12\x0f\n\x0bMeanDensity\x10\x01\x12\x11\n\rStdDevDensity\x10\x02\x12\x16\n\x12MeanSusceptibility\x10\x03\x12\x18\n\x14StdDevSusceptibility\x10\x04\x12\x15\n\x11MeanRemanenceEast\x10\x05\x12\x17\n\x13StdDevRemanenceEast\x10\x06\x12\x16\n\x12MeanRemanenceNorth\x10\x07\x12\x18\n\x14StdDevRemanenceNorth\x10\x08\x12\x13\n\x0fMeanRemanenceUp\x10\t\x12\x15\n\x11StdDevRemanenceUp\x10\n\x12\x10\n\x0cMostProbable\x10\x0b\x12\x1b\n\x17MostProbableThresholded\x10\x0c\x12\x12\n\x0eProb_AboveTopo\x10\r\x12\x10\n\x0cMeanHeatFlow\x10\x0e*z\n\rAEM_Fields_EM\x12\x14\n\x10Resistivity_ohmm\x10\x00\x12\x13\n\x0fLog_Resistivity\x10\x01\x12\x15\n\x11\x43onductivity_mS_m\x10\x02\x12\x14\n\x10Log_Conductivity\x10\x03\x12\x11\n\rChargeability\x10\x04*@\n\x0c\x43olourScheme\x12\x14\n\x10LithologyColours\x10\x00\x12\x0b\n\x07\x43olours\x10\x01\x12\r\n\tGreyScale\x10\x02*x\n\x11\x42oundaryStyleList\x12\x18\n\x14\x42oundary_Temperature\x10\x00\x12\x15\n\x11\x42oundary_HeatFlow\x10\x01\x12\n\n\x06Mirror\x10\x02\x12\x11\n\rFlippedMirror\x10\x03\x12\x13\n\x0fUseObservedGrid\x10\x04*>\n\x11\x42oundary_Location\x12\x08\n\x04\x42\x61se\x10\x00\x12\x07\n\x03Top\x10\x01\x12\x08\n\x04Side\x10\x02\x12\x0c\n\x08Internal\x10\x03'
+  serialized_pb=b'\n\x12invtaskmodel.proto\x12\x0cinvtaskmodel\x1a\x15\x63ommontaskmodel.proto\"\xa1\x02\n\x07Run_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x02(\t\x12\x16\n\x0bNumber_CPUs\x18\x04 \x01(\x05:\x01\x31\x12.\n\x1fSaveForwardResponsePerLithology\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06\x64o_MPI\x18\x06 \x01(\x08:\x05\x66\x61lse\x12#\n\x14\x63heckpoint_iteration\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x15\n\rProcessID_Log\x18\x08 \x01(\t\x12\x30\n\x08\x44\x65legate\x18\t \x01(\x0b\x32\x1e.invtaskmodel.Delegate_Process\x12\x0f\n\x04nice\x18\n \x01(\x05:\x01\x35\x12\x0b\n\x03log\x18\x11 \x01(\t\"1\n\x10\x44\x65legate_Process\x12\r\n\x05nodes\x18\x01 \x02(\x05\x12\x0e\n\x06ticket\x18\x02 \x02(\t\"\xe0\x04\n\x17NewProjectFromVoxet_GMT\x12\x12\n\ninputvoxet\x18\x01 \x02(\t\x12\x13\n\x0bnew_project\x18\x02 \x02(\t\x12\x36\n\tformation\x18\x03 \x03(\x0b\x32#.invtaskmodel.VoxetLithologyMap_GMT\x12\x33\n\x0b\x66ield_alias\x18\x04 \x01(\x0b\x32\x1e.invtaskmodel.VoxetAliases_GMT\x12\x18\n\x06\x61uthor\x18\x05 \x01(\t:\x08invbatch\x12!\n\x04\x64\x61te\x18\x06 \x01(\t:\x13\x30\x31/01/2011 00:00:00\x12\x15\n\x0b\x64\x65scription\x18\x07 \x01(\t:\x00\x12)\n\nprojection\x18\x08 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x12\n\x07version\x18\t \x01(\t:\x01\x32\x12\x10\n\x05units\x18\n \x01(\t:\x01M\x12\x14\n\tprecision\x18\x0b \x01(\x01:\x01\x31\x12\x1b\n\x0c\x64\x65\x66lection2d\x18\x0c \x01(\x01:\x05\x30.001\x12\x1c\n\x0c\x64\x65\x66lection3d\x18\r \x01(\x01:\x06\x30.0001\x12\x1f\n\x0e\x64iscretisation\x18\x0e \x01(\x01:\x07\x31\x30\x30\x30\x30\x30\x30\x12\x1e\n\x10\x64ynamicSelection\x18\x0f \x01(\x08:\x04true\x12\x1a\n\x0creferenceTop\x18\x10 \x01(\x08:\x04true\x12\x1c\n\rexternal_null\x18\x11 \x01(\x05:\x05-9999\x12#\n\x14loadvoxetintoproject\x18\x12 \x01(\x08:\x05\x66\x61lse\x12\x19\n\nzflipvoxet\x18\x13 \x01(\x08:\x05\x66\x61lse\"\x8e\x01\n\x15VoxetLithologyMap_GMT\x12\r\n\x05index\x18\x01 \x02(\x05\x12\r\n\x05\x66ield\x18\x02 \x02(\t\x12\r\n\x05\x61lpha\x18\x03 \x01(\x01\x12\x0e\n\x03red\x18\x04 \x01(\x01:\x01\x30\x12\x12\n\x05green\x18\x05 \x01(\x01:\x03\x31\x32\x35\x12\x11\n\x04\x62lue\x18\x06 \x01(\x01:\x03\x32\x35\x35\x12\x11\n\x06\x63olour\x18\x07 \x01(\t:\x01\x30\"0\n\x10VoxetAliases_GMT\x12\r\n\x05\x61lias\x18\x01 \x02(\t\x12\r\n\x05\x66ield\x18\x02 \x02(\t\"\x9e\r\n\x19\x46orwardModelFromVoxet_GMT\x12\x13\n\x0binput_voxet\x18\x01 \x01(\t\x12\r\n\x05\x66ield\x18\x02 \x03(\t\x12(\n\x19InputVoxetAlreadyProperty\x18\x03 \x01(\x08:\x05\x66\x61lse\x12(\n\x0fOutputVoxelName\x18\x04 \x01(\t:\x0foutput_voxel.vo\x12\x36\n\x07product\x18\x05 \x01(\x0e\x32\x19.ctm.GeophysicsSignalType:\nGravimetry\x12\x41\n\x14\x43oordinateSystemType\x18\x06 \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12\x1c\n\x14\x64rape_elevation_grid\x18\x07 \x01(\t\x12\x17\n\x0foutput_gridname\x18\x08 \x01(\t\x12\x1b\n\x0emean_elevation\x18\t \x01(\x01:\x03\x31\x30\x30\x12\x18\n\x10output_tablename\x18\n \x01(\t\x12\x19\n\x11\x43omputedFieldName\x18\x0b \x01(\t\x12\x1f\n\x17PropertyValuesVoxelName\x18\x0c \x01(\t\x12,\n\x11\x45xpandedVoxelName\x18\r \x01(\t:\x11\x65xpanded_voxel.vo\x12:\n\x0f\x65xpansionmethod\x18\x0e \x01(\x0e\x32\x19.ctm.VfiltExpansionMethod:\x06Mirror\x12&\n\x19horizontalexpansionfactor\x18\x0f \x01(\x01:\x03\x31\x30\x30\x12$\n\x17verticalexpansionfactor\x18\x10 \x01(\x01:\x03\x33\x30\x30\x12#\n\x15include_border_effect\x18\x11 \x01(\x08:\x04true\x12/\n measure_depth_from_formation_top\x18\x12 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cLanczosTaper\x18\x13 \x01(\x08:\x05\x66\x61lse\x12\x0f\n\x07\x44\x65nsity\x18\x14 \x03(\x01\x12!\n\x13SetReferenceDensity\x18\x15 \x01(\x01:\x04\x32.67\x12\x16\n\x0eSusceptibility\x18\x16 \x03(\x01\x12(\n\x1aSetReferenceSusceptibility\x18\x17 \x01(\x01:\x04\x30.01\x12;\n\tRemanence\x18- \x03(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12\x38\n#property_voxet_field_east_remanence\x18/ \x01(\t:\x0bGeologyEast\x12:\n$property_voxet_field_north_remanence\x18\x30 \x01(\t:\x0cGeologyNorth\x12\x34\n!property_voxet_field_up_remanence\x18\x31 \x01(\t:\tGeologyUp\x12\'\n\x18\x64oing_variable_gradients\x18\x32 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x15POSC_CoordinateSystem\x18\x18 \x01(\t\x12/\n\x10OutputProjection\x18\x1c \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12,\n\x04IGRF\x18\x19 \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x31\n\x06method\x18\x1a \x01(\x0e\x32\x18.ctm.ComputationalMethod:\x07Spatial\x12\x1d\n\x15ObservedReferenceGrid\x18\x1b \x01(\t\x12\x0c\n\x04\x63\x61se\x18\x1e \x01(\t\x12.\n\x1fSaveForwardResponsePerLithology\x18\x1f \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bInterpolate\x18  \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x12TopographySampling\x18! \x01(\x05:\x01\x31\x12\x1e\n\x0f\x44oing_2DForward\x18\x33 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x0fInputDBPolygons\x18\x34 \x01(\t\x12\x12\n\nInputField\x18\x35 \x01(\t\x12\'\n\rComputedField\x18\x36 \x01(\t:\x10\x66orward_response\x12\x16\n\tGrid_Size\x18\x37 \x01(\x01:\x03\x31\x30\x30\x12\x30\n\"append_2DForward_response2Polygons\x18\x38 \x01(\x08:\x04true\x12\x16\n\x0bNumber_CPUs\x18( \x01(\x05:\x01\x31\x12\x10\n\x08ToolName\x18\x63 \x01(\t\"\xca\x03\n\x19Property_Optimization_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x02(\t\x12-\n\nReportFile\x18\x04 \x01(\t:\x19Property_Optimization.rpt\x12(\n\x06SetLaw\x18\x05 \x01(\x0b\x32\x18.invtaskmodel.SetLaw_GMT\x12\x1b\n\x13maxAbsoluteObserved\x18\x06 \x01(\x01\x12\x1d\n\x0f\x45stimateDensity\x18\x07 \x01(\x08:\x04true\x12%\n\x16\x45stimateSusceptibility\x18\t \x01(\x08:\x05\x66\x61lse\x12 \n\x11MaximumIterations\x18\n \x01(\x05:\x05\x31\x30\x30\x30\x30\x12\x1e\n\x0fMisfitThreshold\x18\x0b \x01(\x01:\x05\x31\x65-06\x12\x19\n\x0bMatchTrends\x18\x0c \x01(\x08:\x04true\x12\x1b\n\x10ReferenceDensity\x18\r \x01(\x01:\x01\x30\x12\x16\n\x0eIGRF_Magnitude\x18\x0e \x01(\x01\x12\x18\n\x10IGRF_Inclination\x18\x0f \x01(\x01\x12\x18\n\x10IGRF_Declination\x18\x10 \x01(\x01\"\xa2\x03\n\x0bNewCase_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x13\n\x0bx_cell_size\x18\x03 \x01(\x01\x12\x13\n\x0by_cell_size\x18\x04 \x01(\x01\x12\x13\n\x0bz_cell_size\x18\x05 \x01(\x01\x12\x1a\n\x12\x65\x61st_minimum_voxet\x18\x06 \x01(\x01\x12\x1a\n\x12\x65\x61st_maximum_voxet\x18\x07 \x01(\x01\x12\x1b\n\x13north_minimum_voxet\x18\x08 \x01(\x01\x12\x1b\n\x13north_maximum_voxet\x18\t \x01(\x01\x12\x1f\n\x17\x65levation_minimum_voxet\x18\n \x01(\x01\x12\x1f\n\x17\x65levation_maximum_voxet\x18\x0b \x01(\x01\x12\x42\n\x13VariableZResolution\x18\x0c \x01(\x0b\x32%.invtaskmodel.VariableZResolution_GMT\x12<\n\x10ObservedGridList\x18\r \x02(\x0b\x32\".invtaskmodel.MeasuredGridList_GMT\"\xa0\x01\n\x17VariableZResolution_GMT\x12(\n\x19use_variable_z_resolution\x18\x01 \x01(\x08:\x05\x66\x61lse\x12 \n\x15topo_part_boundary_at\x18\x02 \x01(\x01:\x01\x30\x12\x1c\n\x11lower_z_cell_size\x18\x03 \x01(\x01:\x01\x30\x12\x1b\n\x10geometric_factor\x18\x04 \x01(\x01:\x01\x31\"L\n\x14MeasuredGridList_GMT\x12\x34\n\x0cObservedGrid\x18\x01 \x03(\x0b\x32\x1e.invtaskmodel.MeasuredGrid_GMT\"\xa4\x03\n\x10MeasuredGrid_GMT\x12\x0c\n\x04grid\x18\x01 \x02(\t\x12\'\n\x04type\x18\x02 \x02(\x0e\x32\x19.ctm.GeophysicsSignalType\x12N\n\x15\x63ompute_surface_style\x18\x03 \x01(\x0e\x32!.invtaskmodel.ComputeSurfaceStyle:\x0cOnTopography\x12\x19\n\x0emean_elevation\x18\x04 \x01(\x01:\x01\x30\x12\x1c\n\x14\x63ompute_surface_grid\x18\x05 \x01(\t\x12&\n\x1a\x63ompute_surface_z_sampling\x18\x06 \x01(\x01:\x02\x32\x30\x12\x1a\n\x0bInterpolate\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x16\n\tprecision\x18\x08 \x01(\x01:\x03\x30.1\x12\x1a\n\x0bMatch_Trend\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x12Match_Trend_Degree\x18\n \x01(\x05:\x01\x31\x12\x1b\n\x10Match_Trend_Rate\x18\x0b \x01(\x05:\x01\x30\x12\x1c\n\rOutput_Trends\x18\x0c \x01(\x08:\x05\x66\x61lse\"\xb9\x02\n\x0f\x43\x61seControl_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12!\n\x13SetReferenceDensity\x18\x03 \x01(\x01:\x04\x32.67\x12!\n\x13SetAboveTopoDensity\x18\x04 \x01(\x01:\x04\x32.67\x12\x41\n\x19SetReferenceMagneticField\x18\x05 \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12(\n\x06SetLaw\x18\x06 \x01(\x0b\x32\x18.invtaskmodel.SetLaw_GMT\x12\'\n\x19UseRelativeGravityChanges\x18\x07 \x01(\x08:\x04true\x12*\n\x07product\x18\r \x03(\x0e\x32\x19.ctm.GeophysicsSignalType\"C\n\nSetLaw_GMT\x12\x35\n\x11LithologyProperty\x18\x01 \x03(\x0b\x32\x1a.ctm.LithologyProperty_GMT\"e\n\nNewRun_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x02(\t\x12\x1d\n\x12NumberOfIterations\x18\x04 \x02(\x05:\x01\x31\x12\x0b\n\x03log\x18\x11 \x01(\t\"\xfd\x10\n\x0eRunControl_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x02(\t\x12\x38\n\x0eShapeRatioTest\x18\x04 \x01(\x0b\x32 .invtaskmodel.ShapeRatioTest_GMT\x12:\n\x0fVolumeRatioTest\x18\x05 \x01(\x0b\x32!.invtaskmodel.VolumeRatioTest_GMT\x12:\n\x0f\x43ommonalityTest\x18\x06 \x01(\x0b\x32!.invtaskmodel.CommonalityTest_GMT\x12\x46\n\x15\x43ommonalityVolumeTest\x18\x07 \x01(\x0b\x32\'.invtaskmodel.CommonalityVolumeTest_GMT\x12J\n\x17\x44ilationOrErosionFilter\x18\x08 \x01(\x0b\x32).invtaskmodel.DilationOrErosionFilter_GMT\x12>\n\x11HomogeneousFilter\x18\t \x01(\x0b\x32#.invtaskmodel.HomogeneousFilter_GMT\x12R\n\x18LithologyInitialiseStyle\x18\n \x01(\x0e\x32%.invtaskmodel.PropertyInitialiseStyle:\tFromModel\x12R\n\x16\x44\x65nsityInitialiseStyle\x18\x0b \x01(\x0e\x32%.invtaskmodel.PropertyInitialiseStyle:\x0b\x46romLawMean\x12Y\n\x1dSusceptibilityInitialiseStyle\x18\x0c \x01(\x0e\x32%.invtaskmodel.PropertyInitialiseStyle:\x0b\x46romLawMean\x12`\n$RemanentMagnetizationInitialiseStyle\x18\r \x01(\x0e\x32%.invtaskmodel.PropertyInitialiseStyle:\x0b\x46romLawMean\x12\'\n\x14property_voxet_litho\x18( \x01(\t:\tLithology\x12\x1e\n\x16property_voxet_density\x18) \x01(\t\x12%\n\x1dproperty_voxet_susceptibility\x18* \x01(\t\x12 \n\x18property_voxet_remanence\x18+ \x01(\t\x12-\n\x1aproperty_voxet_field_litho\x18, \x01(\t:\tLithology\x12-\n\x1cproperty_voxet_field_density\x18- \x01(\t:\x07\x44\x65nsity\x12;\n#property_voxet_field_susceptibility\x18. \x01(\t:\x0eSusceptibility\x12\x31\n\x1eproperty_voxet_field_remanence\x18/ \x01(\t:\tRemanence\x12\x33\n$AllowNeighbourPropertyDifferentCheck\x18\x12 \x01(\x08:\x05\x66\x61lse\x12#\n\x15\x41llowGeophysicalTests\x18\x13 \x01(\x08:\x04true\x12\"\n\x14\x41llowGeologicalTests\x18\x14 \x01(\x08:\x04true\x12\x1f\n\x10PreserveTopology\x18\x15 \x01(\x08:\x05\x66\x61lse\x12\"\n\x13SetOutputTrendGrids\x18\x16 \x01(\x08:\x05\x66\x61lse\x12%\n\x16SetDualTemperatureMode\x18\x17 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x16LargeMisfitTemperature\x18\x18 \x01(\x01\x12%\n\x1dLargeMisfitRMSThresholdFactor\x18\x19 \x01(\x01\x12!\n\x16Mode1TemperatureFactor\x18\x1a \x01(\x01:\x01\x31\x12\x1c\n\rMode1Duration\x18\x1b \x01(\x01:\x05\x39\x39\x39\x30\x30\x12\'\n\x16Mode2TemperatureFactor\x18\x1c \x01(\x01:\x07\x31\x30\x30\x30\x30\x30\x30\x12\x1a\n\rMode2Duration\x18\x1d \x01(\x01:\x03\x31\x30\x30\x12+\n\x1fProbabilityOfPropertyChangeOnly\x18\x1e \x01(\x05:\x02\x35\x30\x12/\n PreserveVerticalRelationshipTest\x18\x1f \x01(\x08:\x05\x66\x61lse\x12\'\n\x19PropertyChangeOnFixedCell\x18  \x01(\x08:\x04true\x12\x12\n\x04Seed\x18# \x01(\x01:\x04\x31\x32\x33\x34\x12\x1d\n\x12NumberOfIterations\x18$ \x01(\x05:\x01\x31\x12\x32\n#PreserveVerticalDensityGradientTest\x18% \x01(\x08:\x05\x66\x61lse\x12\x0b\n\x03log\x18& \x01(\t\x12:\n\x0f\x65xpansionmethod\x18< \x01(\x0e\x32\x19.ctm.VfiltExpansionMethod:\x06Mirror\x12&\n\x19horizontalexpansionfactor\x18= \x01(\x01:\x03\x31\x30\x30\x12$\n\x17verticalexpansionfactor\x18> \x01(\x01:\x03\x33\x30\x30\x12#\n\x15include_border_effect\x18? \x01(\x08:\x04true\x12\x1b\n\x0cLanczosTaper\x18@ \x01(\x08:\x05\x66\x61lse\x12 \n\x11SaveResponseVoxet\x18\x41 \x01(\x08:\x05\x66\x61lse\x12 \n\x11SaveExpandedVoxet\x18\x42 \x01(\x08:\x05\x66\x61lse\x12\x31\n\x06method\x18\x43 \x01(\x0e\x32\x18.ctm.ComputationalMethod:\x07Spatial\"\x82\x02\n\x12ShapeRatioTest_GMT\x12Y\n\nSetWeights\x18\x01 \x02(\x0e\x32\x35.invtaskmodel.ShapeRatioTest_GMT.ShapeRatioWeightType:\x0eLocalAbundance\x12#\n\x15IncludeAboveTopoFaces\x18\x02 \x02(\x08:\x04true\x12!\n\x13IncludeOutsideFaces\x18\x03 \x02(\x08:\x04true\x12\x13\n\x05\x41llow\x18\x04 \x01(\x08:\x04true\"4\n\x14ShapeRatioWeightType\x12\x08\n\x04none\x10\x00\x12\x12\n\x0eLocalAbundance\x10\x01\"\xbe\x01\n\x13VolumeRatioTest_GMT\x12[\n\nSetWeights\x18\x01 \x02(\x0e\x32\x37.invtaskmodel.VolumeRatioTest_GMT.VolumeRatioWeightType:\x0eLocalAbundance\x12\x13\n\x05\x41llow\x18\x02 \x01(\x08:\x04true\"5\n\x15VolumeRatioWeightType\x12\x08\n\x04none\x10\x00\x12\x12\n\x0eLocalAbundance\x10\x01\"\xd6\x01\n\x19\x43ommonalityVolumeTest_GMT\x12g\n\nSetWeights\x18\x01 \x02(\x0e\x32\x43.invtaskmodel.CommonalityVolumeTest_GMT.CommonalityVolumeWeightType:\x0eLocalAbundance\x12\x13\n\x05\x41llow\x18\x02 \x01(\x08:\x04true\";\n\x1b\x43ommonalityVolumeWeightType\x12\x08\n\x04none\x10\x00\x12\x12\n\x0eLocalAbundance\x10\x01\"i\n\x13\x43ommonalityTest_GMT\x12=\n\nSetWeights\x18\x01 \x02(\x0e\x32#.invtaskmodel.CommonalityWeightType:\x04none\x12\x13\n\x05\x41llow\x18\x02 \x01(\x08:\x04true\"G\n\x1b\x44ilationOrErosionFilter_GMT\x12\x12\n\x04Rate\x18\x01 \x02(\x05:\x04\x35\x30\x30\x30\x12\x14\n\x05\x41llow\x18\x02 \x01(\x08:\x05\x66\x61lse\"A\n\x15HomogeneousFilter_GMT\x12\x12\n\x04Rate\x18\x01 \x02(\x05:\x04\x31\x30\x30\x30\x12\x14\n\x05\x41llow\x18\x02 \x01(\x08:\x05\x66\x61lse\"\xac\x03\n\x11SetFixedCells_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0b\n\x03run\x18\x02 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x03 \x01(\t\x12$\n\x07xyzfile\x18\x04 \x01(\x0b\x32\x13.ctm.RepeatedString\x12\x14\n\x05\x43LEAR\x18\x05 \x01(\x08:\x05\x66\x61lse\x12!\n\x12MappedObservations\x18\x06 \x01(\x08:\x05\x66\x61lse\x12?\n\x08goodness\x18\x07 \x01(\x0b\x32-.invtaskmodel.RepeatedObservedReliability_GMT\x12$\n\x07geology\x18\x08 \x01(\x0b\x32\x13.ctm.RepeatedString\x12\x16\n\x07SURFACE\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x03\x62ox\x18\n \x01(\x0b\x32\x10.ctm.BoundingBox\x12\'\n\ndrillholes\x18\x0b \x01(\x0b\x32\x13.ctm.RepeatedString\x12\x0e\n\x06radius\x18\x0c \x01(\x01\x12\'\n\x0bprovenances\x18\r \x01(\x0b\x32\x12.ctm.RepeatedInt32\x12\x0b\n\x03log\x18\x11 \x01(\t\"[\n\x1fRepeatedObservedReliability_GMT\x12\x11\n\tformation\x18\x01 \x03(\t\x12%\n\x0breliability\x18\x02 \x01(\x0e\x32\x10.ctm.Reliability\"Y\n\x0cRunState_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0b\n\x03run\x18\x02 \x02(\t\x12\x1c\n\x14number_of_iterations\x18\x03 \x02(\x05\x12\x0c\n\x04\x63\x61se\x18\x04 \x01(\t\"\xa5\x01\n\x14MakeSummaryStats_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x01(\t\x12:\n\x0fRunIntervalList\x18\x04 \x02(\x0b\x32!.invtaskmodel.RunIntervalList_GMT\x12\x17\n\x0fvoxet_name_stub\x18\x05 \x01(\t\x12\x0b\n\x03log\x18\x11 \x01(\t\"\xb5\x01\n\x19MakeSuperSummaryStats_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x32\n\x0bRunInterval\x18\x03 \x02(\x0b\x32\x1d.invtaskmodel.RunInterval_GMT\x12\x19\n\x11statistical_voxet\x18\x04 \x01(\t\x12\x1c\n\x14threshold_percentage\x18\x05 \x02(\x05\x12\x0b\n\x03log\x18\x11 \x01(\t\"I\n\x13RunIntervalList_GMT\x12\x32\n\x0bRunInterval\x18\x01 \x03(\x0b\x32\x1d.invtaskmodel.RunInterval_GMT\"\xda\x03\n\x16MakeEvolutionMovie_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x32\n\x0bRunInterval\x18\x03 \x02(\x0b\x32\x1d.invtaskmodel.RunInterval_GMT\x12\x19\n\x0cMaxPixelCols\x18\x04 \x01(\x05:\x03\x35\x30\x30\x12\x19\n\x0cMaxPixelRows\x18\x05 \x01(\x05:\x03\x35\x30\x30\x12\x1f\n\x14VerticalExaggeration\x18\x06 \x01(\x01:\x01\x31\x12\x1e\n\x11QualityPercentage\x18\x07 \x01(\x05:\x03\x31\x30\x30\x12\x1c\n\x0f\x46ramesPerSecond\x18\x08 \x01(\x05:\x03\x31\x30\x30\x12 \n\x12IterationIncrement\x18\t \x01(\x05:\x04\x32\x30\x30\x30\x12\x30\n\x03lut\x18\n \x01(\x0e\x32\x1a.invtaskmodel.ColourScheme:\x07\x43olours\x12.\n\x07Scaling\x18\x0b \x01(\x0b\x32\x1d.invtaskmodel.ScaleOption_GMT\x12\x33\n\x04show\x18\x0c \x01(\x0e\x32\x1c.invtaskmodel.EvolutionField:\x07Geology\x12\x0f\n\x07Section\x18\r \x02(\t\x12\r\n\x05movie\x18\x0e \x01(\t\"P\n\x0fRunInterval_GMT\x12\x0b\n\x03run\x18\x01 \x02(\t\x12\x18\n\x10start_iterations\x18\x03 \x02(\x05\x12\x16\n\x0e\x65nd_iterations\x18\x04 \x02(\x05\"\xac\x01\n\x16MakeThresholdStats_GMT\x12\x12\n\ninputvoxet\x18\x01 \x02(\t\x12\x12\n\ninputfield\x18\x02 \x01(\t\x12\x13\n\x0boutputvoxet\x18\x03 \x01(\t\x12\x10\n\x08isovalue\x18\x04 \x02(\x01\x12\x1c\n\x14threshold_percentage\x18\x05 \x01(\x01\x12\x18\n\x10threshold_stddev\x18\x06 \x01(\x01\x12\x0b\n\x03log\x18\x11 \x01(\t\"\x9e\x02\n\x11MakeHistogram_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x0b\n\x03run\x18\x03 \x01(\t\x12\r\n\x05voxet\x18\x04 \x02(\t\x12\x17\n\x0flithology_field\x18\x05 \x02(\t\x12\x16\n\x0eproperty_field\x18\x06 \x02(\t\x12\x1c\n\x0enumber_of_bins\x18\x07 \x01(\x05:\x04\x31\x30\x32\x34\x12.\n\x07Scaling\x18\x08 \x02(\x0b\x32\x1d.invtaskmodel.ScaleOption_GMT\x12\x19\n\x06report\x18\t \x01(\t:\thisto.rpt\x12\x10\n\x08products\x18\n \x01(\t\x12\x14\n\x05ttest\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x0b\n\x03log\x18\x11 \x01(\t\"I\n\x0fScaleOption_GMT\x12\x14\n\x05\x64oLog\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x0f\n\x07minClip\x18\x02 \x01(\x01\x12\x0f\n\x07maxClip\x18\x03 \x01(\x01\"\xd6\x02\n\x0fGetFunction_GMT\x12\x32\n\ttransform\x18\x01 \x02(\x0e\x32\x1f.invtaskmodel.TransformFunction\x12\x16\n\x0e\x65xisting_voxet\x18\x02 \x01(\t\x12\x1b\n\x13\x65xisting_aem_output\x18\x03 \x01(\t\x12V\n\x11statistical_field\x18\x04 \x01(\x0e\x32..invtaskmodel.StatisticalFieldWithinStatsVoxet:\x0bMeanDensity\x12?\n\tAEM_Field\x18\x05 \x01(\x0e\x32\x1b.invtaskmodel.AEM_Fields_EM:\x0fLog_Resistivity\x12\x15\n\tthreshold\x18\x06 \x01(\x01:\x02\x39\x30\x12\x13\n\x0binput_field\x18\x07 \x01(\t\x12\x15\n\titeration\x18\x08 \x01(\x05:\x02\x33\x30\"r\n\x12RunFieldResult_GMT\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\x14\n\x0creject_count\x18\x02 \x01(\x05\x12\x12\n\ntest_count\x18\x03 \x01(\x05\x12$\n\x1cobserved_grid_computed_index\x18\x04 \x01(\x05\"\xd1\x07\n\rRunResult_GMT\x12\x0f\n\x07\x63ounter\x18\x01 \x01(\x05\x12\x16\n\x0eproposal_count\x18\x02 \x01(\x05\x12\x1e\n\x16proposal_rate_per_hour\x18\x03 \x01(\x05\x12+\n#inter_proposal_same_formation_count\x18\x04 \x01(\x05\x12\x30\n(inter_proposal_different_formation_count\x18\x05 \x01(\x05\x12\x1c\n\x14intra_proposal_count\x18\x06 \x01(\x05\x12 \n\x18\x61\x63\x63\x65ptance_rate_per_hour\x18\x07 \x01(\x05\x12\x18\n\x10\x61\x63\x63\x65ptance_count\x18\x08 \x01(\x05\x12-\n%inter_acceptance_same_formation_count\x18\t \x01(\x05\x12\x32\n*inter_acceptance_different_formation_count\x18\n \x01(\x05\x12\x1e\n\x16intra_acceptance_count\x18\x0b \x01(\x05\x12&\n\x1epreserve_topology_reject_count\x18\x0c \x01(\x05\x12$\n\x1cpreserve_topology_test_count\x18\r \x01(\x05\x12\x33\n+preserve_vertical_relationship_reject_count\x18\x0e \x01(\x05\x12\x31\n)preserve_vertical_relationship_test_count\x18\x0f \x01(\x05\x12\'\n\x1f\x63ommonality_volume_reject_count\x18\x10 \x01(\x05\x12%\n\x1d\x63ommonality_volume_test_count\x18\x11 \x01(\x05\x12 \n\x18\x63ommonality_reject_count\x18\x12 \x01(\x05\x12\x1e\n\x16\x63ommonality_test_count\x18\x13 \x01(\x05\x12\x1b\n\x13volume_reject_count\x18\x14 \x01(\x05\x12\x19\n\x11volume_test_count\x18\x15 \x01(\x05\x12\x1a\n\x12shape_reject_count\x18\x16 \x01(\x05\x12\x18\n\x10shape_test_count\x18\x17 \x01(\x05\x12\x15\n\rcomputer_name\x18\x18 \x01(\t\x12\x19\n\x11started_date_time\x18\x19 \x01(\t\x12\x1a\n\x12\x66inished_date_time\x18\x1a \x01(\t\x12\x37\n\rfield_results\x18\x1b \x03(\x0b\x32 .invtaskmodel.RunFieldResult_GMT\"\x86\x03\n\x14MakeSectionImage_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x0b\n\x03run\x18\x03 \x01(\t\x12\x13\n\x08products\x18\x04 \x01(\t:\x01.\x12\x33\n\x0cget_function\x18\x05 \x02(\x0b\x32\x1d.invtaskmodel.GetFunction_GMT\x12\x0f\n\x07Section\x18\x06 \x02(\t\x12\x19\n\x0cMaxPixelCols\x18\x07 \x01(\x05:\x03\x35\x30\x30\x12\x19\n\x0cMaxPixelRows\x18\x08 \x01(\x05:\x03\x35\x30\x30\x12\x1f\n\x14VerticalExaggeration\x18\t \x01(\x01:\x01\x31\x12\x1e\n\x11QualityPercentage\x18\n \x01(\x05:\x03\x31\x30\x30\x12\x30\n\x03lut\x18\x0b \x01(\x0e\x32\x1a.invtaskmodel.ColourScheme:\x07\x43olours\x12.\n\x07Scaling\x18\x0c \x01(\x0b\x32\x1d.invtaskmodel.ScaleOption_GMT\x12\r\n\x05image\x18\r \x01(\t\"\xe4\x02\n\x18MakeAllSectionImages_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x0b\n\x03run\x18\x03 \x01(\t\x12\x33\n\x0cget_function\x18\x04 \x02(\x0b\x32\x1d.invtaskmodel.GetFunction_GMT\x12\x19\n\x0cMaxPixelCols\x18\x05 \x01(\x05:\x03\x35\x30\x30\x12\x19\n\x0cMaxPixelRows\x18\x06 \x01(\x05:\x03\x35\x30\x30\x12\x1f\n\x14VerticalExaggeration\x18\x07 \x01(\x01:\x01\x31\x12\x1e\n\x11QualityPercentage\x18\x08 \x01(\x05:\x03\x31\x30\x30\x12\x30\n\x03lut\x18\t \x01(\x0e\x32\x1a.invtaskmodel.ColourScheme:\x07\x43olours\x12.\n\x07Scaling\x18\n \x01(\x0b\x32\x1d.invtaskmodel.ScaleOption_GMT\x12\r\n\x05image\x18\x0b \x01(\t\"\x8f\x05\n\x15MakeSurfaceShells_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x01(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x0b\n\x03run\x18\x03 \x01(\t\x12\x12\n\ninputvoxet\x18\x04 \x02(\t\x12\x12\n\ninputfield\x18\x05 \x02(\t\x12\x42\n\x07operand\x18\x06 \x01(\x0e\x32-.invtaskmodel.MakeSurfaceShells_GMT.QueryType:\x02GT\x12\x0e\n\x06value1\x18\x07 \x01(\x01\x12\x0e\n\x06value2\x18\x08 \x01(\x01\x12\x1d\n\x06output\x18\t \x01(\t:\rLimit_surface\x12\x16\n\x07\x44o_Tops\x18\n \x01(\x08:\x05\x66\x61lse\x12J\n\x0binterpolate\x18\x0b \x01(\x0b\x32\x35.invtaskmodel.MakeSurfaceShells_GMT.InterpolateShells\x12$\n\nReportFile\x18\x18 \x01(\t:\x10SurfaceShell.rpt\x1a\xc5\x01\n\x11InterpolateShells\x12\x18\n\x0bresample_nx\x18\x01 \x01(\x05:\x03\x31\x30\x30\x12\x18\n\x0bresample_ny\x18\x02 \x01(\x05:\x03\x31\x30\x30\x12\x18\n\x0bresample_nz\x18\x03 \x01(\x05:\x03\x31\x30\x30\x12\x16\n\ncluster_nx\x18\x04 \x01(\x05:\x02\x35\x30\x12\x16\n\ncluster_ny\x18\x05 \x01(\x05:\x02\x35\x30\x12\x16\n\ncluster_nz\x18\x06 \x01(\x05:\x02\x35\x30\x12\x1a\n\x0clowpass_iter\x18\x07 \x01(\x05:\x04\x32\x35\x30\x30\"L\n\tQueryType\x12\x06\n\x02GT\x10\x00\x12\x06\n\x02LT\x10\x01\x12\x06\n\x02\x45Q\x10\x02\x12\x06\n\x02LE\x10\x03\x12\x06\n\x02GE\x10\x04\x12\x06\n\x02NE\x10\x05\x12\x0f\n\x0bINSIDERANGE\x10\x06\"e\n!SetupMultiProcessForwardModel_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x02(\t\x12\x13\n\x0bNumber_CPUs\x18\x04 \x01(\x05\"z\n\"RunAllMultiProcessForwardModel_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x02(\t\x12\r\n\x05torun\x18\x04 \x01(\t\x12\x18\n\x10Number_Processes\x18\x05 \x01(\x05\"\x9b\x01\n\"RunOneMultiProcessForwardModel_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x02(\t\x12\x13\n\x0bstart_layer\x18\x04 \x02(\x05\x12\x1b\n\x10number_of_layers\x18\x05 \x01(\x05:\x01\x31\x12\x16\n\x0bNumber_CPUs\x18\x06 \x01(\x05:\x01\x31\"p\n\"GatherMultiProcessForwardModel_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x02(\t\x12\x0b\n\x03run\x18\x03 \x02(\t\x12\x0e\n\x06layers\x18\x04 \x02(\x05\x12\r\n\x05torun\x18\x05 \x01(\t\"\xa6\x08\n1ForwardModelTemperatureForCreateCaseFromVoxet_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x14\n\x03run\x18\x03 \x01(\t:\x07Thermal\x12\x13\n\x0binput_voxet\x18\x04 \x02(\t\x12\x33\n\x0b\x66ield_alias\x18\x05 \x03(\x0b\x32\x1e.invtaskmodel.VoxetAliases_GMT\x12\x1a\n\x12NumberOfIterations\x18\x06 \x02(\x05\x12\x43\n\x12TemperatureControl\x18\x07 \x01(\x0b\x32\'.invtaskmodel.SetTemperatureControl_GMT\x12&\n\x16MaxResidualTemperature\x18\x08 \x01(\x01:\x06\x30.0001\x12\x17\n\x08\x41\x64vanced\x18\n \x01(\x08:\x05\x66\x61lse\x12I\n\x17Surface_Temperature_Law\x18\x0c \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12\x46\n\x14Surface_Heatflow_Law\x18\r \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12I\n\x17Horizon_Temperature_Law\x18\x0e \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12\x46\n\x14Horizon_Heatflow_Law\x18\x0f \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12\x46\n\x14\x42\x61se_Temperature_Law\x18\x10 \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12\x43\n\x11\x42\x61se_Heatflow_Law\x18\x11 \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12\"\n\x1aXYZT_fixed_temperature_csv\x18\x12 \x01(\t\x12\x31\n\x06method\x18\x13 \x01(\x0e\x32\x18.ctm.ComputationalMethod:\x07Spatial\x12\x1f\n\x17InitialTemperatureVoxet\x18\x14 \x01(\t\x12\x16\n\x0bNumber_CPUs\x18\x15 \x01(\x05:\x01\x31\x12(\n\x06SetLaw\x18\x1a \x01(\x0b\x32\x18.invtaskmodel.SetLaw_GMT\x12/\n\nReportFile\x18\x1b \x01(\t:\x1b\x46orwardModelTemperature.rpt\x12$\n\x15ReinitialiseFromModel\x18\x1c \x01(\x08:\x05\x66\x61lse\x12\x0b\n\x03log\x18\x63 \x01(\t\"\xea\x01\n\x19SetTemperatureControl_GMT\x12\x1e\n\x16MeanSurfaceTemperature\x18\x01 \x01(\x01\x12I\n\rBoundaryStyle\x18\x02 \x01(\x0e\x32\x1f.invtaskmodel.BoundaryStyleList:\x11\x42oundary_HeatFlow\x12\x15\n\rBoundaryValue\x18\x03 \x01(\x01\x12\x37\n\x08location\x18\x04 \x01(\x0e\x32\x1f.invtaskmodel.Boundary_Location:\x04\x42\x61se\x12\x12\n\ninput_grid\x18\n \x01(\t\"\xa6\x04\n\x1cProperty_Parameter_Sweep_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x17\n\x03run\x18\x03 \x01(\t:\nstochastic\x12`\n\x17ThermalUncertaintyStudy\x18\x04 \x01(\x0b\x32?.invtaskmodel.ForwardModelTemperatureForCreateCaseFromVoxet_GMT\x12Q\n\x1ePotentialFieldUncertaintyStudy\x18\x05 \x01(\x0b\x32).invtaskmodel.ForwardModelFromProject_GMT\x12I\n\x18\x42oundaryConditionToSweep\x18\x07 \x03(\x0b\x32\'.invtaskmodel.SetTemperatureControl_GMT\x12<\n\x18LithologyPropertyToSweep\x18\x08 \x03(\x0b\x32\x1a.ctm.LithologyProperty_GMT\x12\x16\n\x0bNumber_CPUs\x18\x15 \x01(\x05:\x01\x31\x12\x1e\n\x13Number_Permutations\x18\x16 \x01(\x05:\x01\x33\x12%\n\x16GenerateTasks_ThenStop\x18\x17 \x01(\x08:\x05\x66\x61lse\x12\x30\n\nReportFile\x18\x18 \x01(\t:\x1cProperty_Parameter_Sweep.rpt\"\xd3\x02\n\"MakeParameterSweepSummaryStats_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x17\n\x03run\x18\x03 \x01(\t:\nstochastic\x12I\n\x18\x42oundaryConditionToSweep\x18\x07 \x03(\x0b\x32\'.invtaskmodel.SetTemperatureControl_GMT\x12<\n\x18LithologyPropertyToSweep\x18\x08 \x03(\x0b\x32\x1a.ctm.LithologyProperty_GMT\x12\x19\n\x11statistical_voxet\x18\t \x01(\t\x12\x1e\n\x13Number_Permutations\x18\x16 \x01(\x05:\x01\x33\x12#\n\nReportFile\x18\x18 \x01(\t:\x0fStats_Voxet.rpt\x12\x0b\n\x03log\x18\x11 \x01(\t\"\xbc\x05\n\x1b\x46orwardModelFromProject_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04\x63\x61se\x18\x02 \x01(\t\x12\x16\n\x03run\x18\x10 \x01(\t:\tPotential\x12\x13\n\x0bx_cell_size\x18\x03 \x02(\x01\x12\x13\n\x0by_cell_size\x18\x04 \x02(\x01\x12\x13\n\x0bz_cell_size\x18\x05 \x02(\x01\x12\x1a\n\x12\x65\x61st_minimum_voxet\x18\x06 \x02(\x01\x12\x1a\n\x12\x65\x61st_maximum_voxet\x18\x07 \x02(\x01\x12\x1b\n\x13north_minimum_voxet\x18\x08 \x02(\x01\x12\x1b\n\x13north_maximum_voxet\x18\t \x02(\x01\x12\x1f\n\x17\x65levation_minimum_voxet\x18\n \x02(\x01\x12\x1f\n\x17\x65levation_maximum_voxet\x18\x0b \x02(\x01\x12\x16\n\x0emean_elevation\x18\x0c \x02(\x01\x12*\n\x07product\x18\r \x02(\x0e\x32\x19.ctm.GeophysicsSignalType\x12\x1d\n\x15include_border_effect\x18\x0e \x01(\x08\x12,\n\x04IGRF\x18\x0f \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x31\n\x06method\x18\x12 \x01(\x0e\x32\x18.ctm.ComputationalMethod:\x07Spatial\x12.\n\x1fSaveForwardResponsePerLithology\x18\x13 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x0bNumber_CPUs\x18\x14 \x01(\x05:\x01\x31\x12(\n\x06SetLaw\x18\x1a \x01(\x0b\x32\x18.invtaskmodel.SetLaw_GMT\x12/\n\nReportFile\x18\x1c \x01(\t:\x1b\x46orwardModelFromProject.rpt\x12\x0b\n\x03log\x18\x63 \x01(\t\"s\n\x16MakeMisfitAndTrend_GMT\x12\r\n\x05gridA\x18\x01 \x02(\t\x12\r\n\x05gridB\x18\x02 \x02(\t\x12\x14\n\x0cTrend_Degree\x18\x03 \x02(\x05\x12\x12\n\nmisfitGrid\x18\x04 \x02(\t\x12\x11\n\ttrendGrid\x18\x05 \x02(\t\"\xfe\x15\n\rInversionTask\x12*\n\x07NewCase\x18\x01 \x01(\x0b\x32\x19.invtaskmodel.NewCase_GMT\x12\x32\n\x0b\x43\x61seControl\x18\x02 \x01(\x0b\x32\x1d.invtaskmodel.CaseControl_GMT\x12<\n\x10MeasuredGridList\x18\x07 \x01(\x0b\x32\".invtaskmodel.MeasuredGridList_GMT\x12\x34\n\x0cMeasuredGrid\x18\x08 \x01(\x0b\x32\x1e.invtaskmodel.MeasuredGrid_GMT\x12\x36\n\rSetFixedCells\x18\t \x01(\x0b\x32\x1f.invtaskmodel.SetFixedCells_GMT\x12\x46\n\x15SetTemperatureControl\x18\n \x01(\x0b\x32\'.invtaskmodel.SetTemperatureControl_GMT\x12\x42\n\x13NewProjectFromVoxet\x18\x0b \x01(\x0b\x32%.invtaskmodel.NewProjectFromVoxet_GMT\x12\x35\n\x11LithologyProperty\x18\x15 \x01(\x0b\x32\x1a.ctm.LithologyProperty_GMT\x12(\n\x06SetLaw\x18\x18 \x01(\x0b\x32\x18.invtaskmodel.SetLaw_GMT\x12\x46\n\x15Property_Optimization\x18\x1a \x01(\x0b\x32\'.invtaskmodel.Property_Optimization_GMT\x12\x38\n\x0eShapeRatioTest\x18\x32 \x01(\x0b\x32 .invtaskmodel.ShapeRatioTest_GMT\x12:\n\x0fVolumeRatioTest\x18\x33 \x01(\x0b\x32!.invtaskmodel.VolumeRatioTest_GMT\x12:\n\x0f\x43ommonalityTest\x18\x34 \x01(\x0b\x32!.invtaskmodel.CommonalityTest_GMT\x12\x46\n\x15\x43ommonalityVolumeTest\x18\x35 \x01(\x0b\x32\'.invtaskmodel.CommonalityVolumeTest_GMT\x12J\n\x17\x44ilationOrErosionFilter\x18\x36 \x01(\x0b\x32).invtaskmodel.DilationOrErosionFilter_GMT\x12>\n\x11HomogeneousFilter\x18\x37 \x01(\x0b\x32#.invtaskmodel.HomogeneousFilter_GMT\x12\x30\n\nRunControl\x18< \x01(\x0b\x32\x1c.invtaskmodel.RunControl_GMT\x12(\n\x06NewRun\x18= \x01(\x0b\x32\x18.invtaskmodel.NewRun_GMT\x12\"\n\x03Run\x18? \x01(\x0b\x32\x15.invtaskmodel.Run_GMT\x12,\n\x08RunState\x18\x45 \x01(\x0b\x32\x1a.invtaskmodel.RunState_GMT\x12\x36\n\rMakeHistogram\x18\x46 \x01(\x0b\x32\x1f.invtaskmodel.MakeHistogram_GMT\x12<\n\x10MakeSummaryStats\x18G \x01(\x0b\x32\".invtaskmodel.MakeSummaryStats_GMT\x12\x46\n\x15MakeSuperSummaryStats\x18H \x01(\x0b\x32\'.invtaskmodel.MakeSuperSummaryStats_GMT\x12@\n\x12MakeEvolutionMovie\x18I \x01(\x0b\x32$.invtaskmodel.MakeEvolutionMovie_GMT\x12<\n\x10MakeSectionImage\x18J \x01(\x0b\x32\".invtaskmodel.MakeSectionImage_GMT\x12\x44\n\x14MakeAllSectionImages\x18K \x01(\x0b\x32&.invtaskmodel.MakeAllSectionImages_GMT\x12>\n\x11MakeSurfaceShells\x18L \x01(\x0b\x32#.invtaskmodel.MakeSurfaceShells_GMT\x12:\n\x0fRunIntervalList\x18M \x01(\x0b\x32!.invtaskmodel.RunIntervalList_GMT\x12\x32\n\x0bRunInterval\x18N \x01(\x0b\x32\x1d.invtaskmodel.RunInterval_GMT\x12\x32\n\x0bScaleOption\x18O \x01(\x0b\x32\x1d.invtaskmodel.ScaleOption_GMT\x12\x32\n\x0bGetFunction\x18P \x01(\x0b\x32\x1d.invtaskmodel.GetFunction_GMT\x12X\n\x1eMakeParameterSweepSummaryStats\x18Q \x01(\x0b\x32\x30.invtaskmodel.MakeParameterSweepSummaryStats_GMT\x12<\n\x0eMisfitAndTrend\x18R \x01(\x0b\x32$.invtaskmodel.MakeMisfitAndTrend_GMT\x12J\n\x17\x46orwardModelFromProject\x18S \x01(\x0b\x32).invtaskmodel.ForwardModelFromProject_GMT\x12\x46\n\x15\x46orwardModelFromVoxet\x18T \x01(\x0b\x32\'.invtaskmodel.ForwardModelFromVoxet_GMT\x12v\n-ForwardModelTemperatureForCreateCaseFromVoxet\x18U \x01(\x0b\x32?.invtaskmodel.ForwardModelTemperatureForCreateCaseFromVoxet_GMT\x12\x34\n\x0cVoxetAliases\x18V \x01(\x0b\x32\x1e.invtaskmodel.VoxetAliases_GMT\x12V\n\x1dSetupMultiProcessForwardModel\x18W \x01(\x0b\x32/.invtaskmodel.SetupMultiProcessForwardModel_GMT\x12X\n\x1eRunOneMultiProcessForwardModel\x18X \x01(\x0b\x32\x30.invtaskmodel.RunOneMultiProcessForwardModel_GMT\x12X\n\x1eRunAllMultiProcessForwardModel\x18Y \x01(\x0b\x32\x30.invtaskmodel.RunAllMultiProcessForwardModel_GMT\x12X\n\x1eGatherMultiProcessForwardModel\x18Z \x01(\x0b\x32\x30.invtaskmodel.GatherMultiProcessForwardModel_GMT\x12L\n\x18Property_Parameter_Sweep\x18] \x01(\x0b\x32*.invtaskmodel.Property_Parameter_Sweep_GMT\x12@\n\x12MakeThresholdStats\x18^ \x01(\x0b\x32$.invtaskmodel.MakeThresholdStats_GMT\x12\x0c\n\x03log\x18\xff\x01 \x01(\t*\x8c\x01\n\x13\x43omputeSurfaceStyle\x12\x10\n\x0cOnTopography\x10\x00\x12\x1d\n\x19OnTopographyWithClearance\x10\x01\x12\x0e\n\nOnASurface\x10\x02\x12\x15\n\x11\x43onstantElevation\x10\x03\x12\x1d\n\x19OnTopOfVoxetWithClearance\x10\x04*[\n\x17PropertyInitialiseStyle\x12\r\n\tFromModel\x10\x00\x12\r\n\tFromVoxet\x10\x01\x12\x0f\n\x0b\x46romLawMean\x10\x02\x12\x11\n\rFromLawRandom\x10\x03*b\n\x15\x43ommonalityWeightType\x12\x08\n\x04none\x10\x00\x12\x12\n\x0eLocalAbundance\x10\x01\x12\x14\n\x10LocalCommonality\x10\x02\x12\x15\n\x11GlobalCommonality\x10\x03*\x86\x01\n\x0e\x45volutionField\x12\x0b\n\x07Geology\x10\x00\x12\x12\n\x0eWatchedDensity\x10\x01\x12\x19\n\x15WatchedSusceptibility\x10\x02\x12\x11\n\rRemanenceEast\x10\x03\x12\x12\n\x0eRemanenceNorth\x10\x04\x12\x11\n\rRemanenceDown\x10\x05*w\n\x11TransformFunction\x12\x15\n\x11MostProbableField\x10\x00\x12\x11\n\rWeightedField\x10\x01\x12\x19\n\x15MostProbableLithology\x10\x02\x12\x0c\n\x08GetField\x10\x03\x12\x0f\n\x0bGetHeatFlow\x10\x04*\xec\x02\n StatisticalFieldWithinStatsVoxet\x12\x0f\n\x0b\x43hangeCount\x10\x00\x12\x0f\n\x0bMeanDensity\x10\x01\x12\x11\n\rStdDevDensity\x10\x02\x12\x16\n\x12MeanSusceptibility\x10\x03\x12\x18\n\x14StdDevSusceptibility\x10\x04\x12\x15\n\x11MeanRemanenceEast\x10\x05\x12\x17\n\x13StdDevRemanenceEast\x10\x06\x12\x16\n\x12MeanRemanenceNorth\x10\x07\x12\x18\n\x14StdDevRemanenceNorth\x10\x08\x12\x13\n\x0fMeanRemanenceUp\x10\t\x12\x15\n\x11StdDevRemanenceUp\x10\n\x12\x10\n\x0cMostProbable\x10\x0b\x12\x1b\n\x17MostProbableThresholded\x10\x0c\x12\x12\n\x0eProb_AboveTopo\x10\r\x12\x10\n\x0cMeanHeatFlow\x10\x0e*z\n\rAEM_Fields_EM\x12\x14\n\x10Resistivity_ohmm\x10\x00\x12\x13\n\x0fLog_Resistivity\x10\x01\x12\x15\n\x11\x43onductivity_mS_m\x10\x02\x12\x14\n\x10Log_Conductivity\x10\x03\x12\x11\n\rChargeability\x10\x04*@\n\x0c\x43olourScheme\x12\x14\n\x10LithologyColours\x10\x00\x12\x0b\n\x07\x43olours\x10\x01\x12\r\n\tGreyScale\x10\x02*x\n\x11\x42oundaryStyleList\x12\x18\n\x14\x42oundary_Temperature\x10\x00\x12\x15\n\x11\x42oundary_HeatFlow\x10\x01\x12\n\n\x06Mirror\x10\x02\x12\x11\n\rFlippedMirror\x10\x03\x12\x13\n\x0fUseObservedGrid\x10\x04*>\n\x11\x42oundary_Location\x12\x08\n\x04\x42\x61se\x10\x00\x12\x07\n\x03Top\x10\x01\x12\x08\n\x04Side\x10\x02\x12\x0c\n\x08Internal\x10\x03'
   ,
   dependencies=[commontaskmodel__pb2.DESCRIPTOR,])
 
@@ -60,8 +60,8 @@ _COMPUTESURFACESTYLE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=19287,
-  serialized_end=19427,
+  serialized_start=19358,
+  serialized_end=19498,
 )
 _sym_db.RegisterEnumDescriptor(_COMPUTESURFACESTYLE)
 
@@ -96,12 +96,48 @@ _PROPERTYINITIALISESTYLE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=19429,
-  serialized_end=19520,
+  serialized_start=19500,
+  serialized_end=19591,
 )
 _sym_db.RegisterEnumDescriptor(_PROPERTYINITIALISESTYLE)
 
 PropertyInitialiseStyle = enum_type_wrapper.EnumTypeWrapper(_PROPERTYINITIALISESTYLE)
+_COMMONALITYWEIGHTTYPE = _descriptor.EnumDescriptor(
+  name='CommonalityWeightType',
+  full_name='invtaskmodel.CommonalityWeightType',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='none', index=0, number=0,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='LocalAbundance', index=1, number=1,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='LocalCommonality', index=2, number=2,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='GlobalCommonality', index=3, number=3,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=19593,
+  serialized_end=19691,
+)
+_sym_db.RegisterEnumDescriptor(_COMMONALITYWEIGHTTYPE)
+
+CommonalityWeightType = enum_type_wrapper.EnumTypeWrapper(_COMMONALITYWEIGHTTYPE)
 _EVOLUTIONFIELD = _descriptor.EnumDescriptor(
   name='EvolutionField',
   full_name='invtaskmodel.EvolutionField',
@@ -142,8 +178,8 @@ _EVOLUTIONFIELD = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=19523,
-  serialized_end=19657,
+  serialized_start=19694,
+  serialized_end=19828,
 )
 _sym_db.RegisterEnumDescriptor(_EVOLUTIONFIELD)
 
@@ -183,8 +219,8 @@ _TRANSFORMFUNCTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=19659,
-  serialized_end=19778,
+  serialized_start=19830,
+  serialized_end=19949,
 )
 _sym_db.RegisterEnumDescriptor(_TRANSFORMFUNCTION)
 
@@ -274,8 +310,8 @@ _STATISTICALFIELDWITHINSTATSVOXET = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=19781,
-  serialized_end=20145,
+  serialized_start=19952,
+  serialized_end=20316,
 )
 _sym_db.RegisterEnumDescriptor(_STATISTICALFIELDWITHINSTATSVOXET)
 
@@ -315,8 +351,8 @@ _AEM_FIELDS_EM = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=20147,
-  serialized_end=20269,
+  serialized_start=20318,
+  serialized_end=20440,
 )
 _sym_db.RegisterEnumDescriptor(_AEM_FIELDS_EM)
 
@@ -346,8 +382,8 @@ _COLOURSCHEME = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=20271,
-  serialized_end=20335,
+  serialized_start=20442,
+  serialized_end=20506,
 )
 _sym_db.RegisterEnumDescriptor(_COLOURSCHEME)
 
@@ -387,8 +423,8 @@ _BOUNDARYSTYLELIST = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=20337,
-  serialized_end=20457,
+  serialized_start=20508,
+  serialized_end=20628,
 )
 _sym_db.RegisterEnumDescriptor(_BOUNDARYSTYLELIST)
 
@@ -423,8 +459,8 @@ _BOUNDARY_LOCATION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=20459,
-  serialized_end=20521,
+  serialized_start=20630,
+  serialized_end=20692,
 )
 _sym_db.RegisterEnumDescriptor(_BOUNDARY_LOCATION)
 
@@ -438,6 +474,10 @@ FromModel = 0
 FromVoxet = 1
 FromLawMean = 2
 FromLawRandom = 3
+none = 0
+LocalAbundance = 1
+LocalCommonality = 2
+GlobalCommonality = 3
 Geology = 0
 WatchedDensity = 1
 WatchedSusceptibility = 2
@@ -503,8 +543,8 @@ _SHAPERATIOTEST_GMT_SHAPERATIOWEIGHTTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=7130,
-  serialized_end=7182,
+  serialized_start=7322,
+  serialized_end=7374,
 )
 _sym_db.RegisterEnumDescriptor(_SHAPERATIOTEST_GMT_SHAPERATIOWEIGHTTYPE)
 
@@ -528,8 +568,8 @@ _VOLUMERATIOTEST_GMT_VOLUMERATIOWEIGHTTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=7322,
-  serialized_end=7375,
+  serialized_start=7514,
+  serialized_end=7567,
 )
 _sym_db.RegisterEnumDescriptor(_VOLUMERATIOTEST_GMT_VOLUMERATIOWEIGHTTYPE)
 
@@ -553,45 +593,10 @@ _COMMONALITYVOLUMETEST_GMT_COMMONALITYVOLUMEWEIGHTTYPE = _descriptor.EnumDescrip
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=7533,
-  serialized_end=7592,
+  serialized_start=7725,
+  serialized_end=7784,
 )
 _sym_db.RegisterEnumDescriptor(_COMMONALITYVOLUMETEST_GMT_COMMONALITYVOLUMEWEIGHTTYPE)
-
-_COMMONALITYTEST_GMT_COMMONALITYWEIGHTTYPE = _descriptor.EnumDescriptor(
-  name='CommonalityWeightType',
-  full_name='invtaskmodel.CommonalityTest_GMT.CommonalityWeightType',
-  filename=None,
-  file=DESCRIPTOR,
-  create_key=_descriptor._internal_create_key,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='none', index=0, number=0,
-      serialized_options=None,
-      type=None,
-      create_key=_descriptor._internal_create_key),
-    _descriptor.EnumValueDescriptor(
-      name='LocalAbundance', index=1, number=1,
-      serialized_options=None,
-      type=None,
-      create_key=_descriptor._internal_create_key),
-    _descriptor.EnumValueDescriptor(
-      name='LocalCommonality', index=2, number=2,
-      serialized_options=None,
-      type=None,
-      create_key=_descriptor._internal_create_key),
-    _descriptor.EnumValueDescriptor(
-      name='GlobalCommonality', index=3, number=3,
-      serialized_options=None,
-      type=None,
-      create_key=_descriptor._internal_create_key),
-  ],
-  containing_type=None,
-  serialized_options=None,
-  serialized_start=7722,
-  serialized_end=7820,
-)
-_sym_db.RegisterEnumDescriptor(_COMMONALITYTEST_GMT_COMMONALITYWEIGHTTYPE)
 
 _MAKESURFACESHELLS_GMT_QUERYTYPE = _descriptor.EnumDescriptor(
   name='QueryType',
@@ -638,8 +643,8 @@ _MAKESURFACESHELLS_GMT_QUERYTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12875,
-  serialized_end=12951,
+  serialized_start=12946,
+  serialized_end=13022,
 )
 _sym_db.RegisterEnumDescriptor(_MAKESURFACESHELLS_GMT_QUERYTYPE)
 
@@ -1066,7 +1071,7 @@ _FORWARDMODELFROMVOXET_GMT = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='input_voxet', full_name='invtaskmodel.ForwardModelFromVoxet_GMT.input_voxet', index=0,
-      number=1, type=9, cpp_type=9, label=2,
+      number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -1324,14 +1329,56 @@ _FORWARDMODELFROMVOXET_GMT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Number_CPUs', full_name='invtaskmodel.ForwardModelFromVoxet_GMT.Number_CPUs', index=37,
+      name='Doing_2DForward', full_name='invtaskmodel.ForwardModelFromVoxet_GMT.Doing_2DForward', index=37,
+      number=51, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='InputDBPolygons', full_name='invtaskmodel.ForwardModelFromVoxet_GMT.InputDBPolygons', index=38,
+      number=52, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='InputField', full_name='invtaskmodel.ForwardModelFromVoxet_GMT.InputField', index=39,
+      number=53, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ComputedField', full_name='invtaskmodel.ForwardModelFromVoxet_GMT.ComputedField', index=40,
+      number=54, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=b"forward_response".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Grid_Size', full_name='invtaskmodel.ForwardModelFromVoxet_GMT.Grid_Size', index=41,
+      number=55, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=float(100),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='append_2DForward_response2Polygons', full_name='invtaskmodel.ForwardModelFromVoxet_GMT.append_2DForward_response2Polygons', index=42,
+      number=56, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=True,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Number_CPUs', full_name='invtaskmodel.ForwardModelFromVoxet_GMT.Number_CPUs', index=43,
       number=40, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ToolName', full_name='invtaskmodel.ForwardModelFromVoxet_GMT.ToolName', index=38,
+      name='ToolName', full_name='invtaskmodel.ForwardModelFromVoxet_GMT.ToolName', index=44,
       number=99, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1350,7 +1397,7 @@ _FORWARDMODELFROMVOXET_GMT = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=1209,
-  serialized_end=2711,
+  serialized_end=2903,
 )
 
 
@@ -1479,8 +1526,8 @@ _PROPERTY_OPTIMIZATION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2714,
-  serialized_end=3172,
+  serialized_start=2906,
+  serialized_end=3364,
 )
 
 
@@ -1595,8 +1642,8 @@ _NEWCASE_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3175,
-  serialized_end=3593,
+  serialized_start=3367,
+  serialized_end=3785,
 )
 
 
@@ -1648,8 +1695,8 @@ _VARIABLEZRESOLUTION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3596,
-  serialized_end=3756,
+  serialized_start=3788,
+  serialized_end=3948,
 )
 
 
@@ -1680,8 +1727,8 @@ _MEASUREDGRIDLIST_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3758,
-  serialized_end=3834,
+  serialized_start=3950,
+  serialized_end=4026,
 )
 
 
@@ -1789,8 +1836,8 @@ _MEASUREDGRID_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3837,
-  serialized_end=4257,
+  serialized_start=4029,
+  serialized_end=4449,
 )
 
 
@@ -1870,8 +1917,8 @@ _CASECONTROL_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4260,
-  serialized_end=4573,
+  serialized_start=4452,
+  serialized_end=4765,
 )
 
 
@@ -1902,8 +1949,8 @@ _SETLAW_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4575,
-  serialized_end=4642,
+  serialized_start=4767,
+  serialized_end=4834,
 )
 
 
@@ -1962,8 +2009,8 @@ _NEWRUN_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4644,
-  serialized_end=4745,
+  serialized_start=4836,
+  serialized_end=4937,
 )
 
 
@@ -2323,8 +2370,8 @@ _RUNCONTROL_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4748,
-  serialized_end=6921,
+  serialized_start=4940,
+  serialized_end=7113,
 )
 
 
@@ -2377,8 +2424,8 @@ _SHAPERATIOTEST_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6924,
-  serialized_end=7182,
+  serialized_start=7116,
+  serialized_end=7374,
 )
 
 
@@ -2417,8 +2464,8 @@ _VOLUMERATIOTEST_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7185,
-  serialized_end=7375,
+  serialized_start=7377,
+  serialized_end=7567,
 )
 
 
@@ -2457,8 +2504,8 @@ _COMMONALITYVOLUMETEST_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7378,
-  serialized_end=7592,
+  serialized_start=7570,
+  serialized_end=7784,
 )
 
 
@@ -2489,7 +2536,6 @@ _COMMONALITYTEST_GMT = _descriptor.Descriptor(
   ],
   nested_types=[],
   enum_types=[
-    _COMMONALITYTEST_GMT_COMMONALITYWEIGHTTYPE,
   ],
   serialized_options=None,
   is_extendable=False,
@@ -2497,8 +2543,8 @@ _COMMONALITYTEST_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7595,
-  serialized_end=7820,
+  serialized_start=7786,
+  serialized_end=7891,
 )
 
 
@@ -2536,8 +2582,8 @@ _DILATIONOREROSIONFILTER_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7822,
-  serialized_end=7893,
+  serialized_start=7893,
+  serialized_end=7964,
 )
 
 
@@ -2575,8 +2621,8 @@ _HOMOGENEOUSFILTER_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7895,
-  serialized_end=7960,
+  serialized_start=7966,
+  serialized_end=8031,
 )
 
 
@@ -2698,8 +2744,8 @@ _SETFIXEDCELLS_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7963,
-  serialized_end=8391,
+  serialized_start=8034,
+  serialized_end=8462,
 )
 
 
@@ -2737,8 +2783,8 @@ _REPEATEDOBSERVEDRELIABILITY_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8393,
-  serialized_end=8484,
+  serialized_start=8464,
+  serialized_end=8555,
 )
 
 
@@ -2790,8 +2836,8 @@ _RUNSTATE_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8486,
-  serialized_end=8575,
+  serialized_start=8557,
+  serialized_end=8646,
 )
 
 
@@ -2857,8 +2903,8 @@ _MAKESUMMARYSTATS_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8578,
-  serialized_end=8743,
+  serialized_start=8649,
+  serialized_end=8814,
 )
 
 
@@ -2924,8 +2970,8 @@ _MAKESUPERSUMMARYSTATS_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8746,
-  serialized_end=8927,
+  serialized_start=8817,
+  serialized_end=8998,
 )
 
 
@@ -2956,8 +3002,8 @@ _RUNINTERVALLIST_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8929,
-  serialized_end=9002,
+  serialized_start=9000,
+  serialized_end=9073,
 )
 
 
@@ -3079,8 +3125,8 @@ _MAKEEVOLUTIONMOVIE_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9005,
-  serialized_end=9479,
+  serialized_start=9076,
+  serialized_end=9550,
 )
 
 
@@ -3125,8 +3171,8 @@ _RUNINTERVAL_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9481,
-  serialized_end=9561,
+  serialized_start=9552,
+  serialized_end=9632,
 )
 
 
@@ -3199,8 +3245,8 @@ _MAKETHRESHOLDSTATS_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9564,
-  serialized_end=9736,
+  serialized_start=9635,
+  serialized_end=9807,
 )
 
 
@@ -3308,8 +3354,8 @@ _MAKEHISTOGRAM_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9739,
-  serialized_end=10025,
+  serialized_start=9810,
+  serialized_end=10096,
 )
 
 
@@ -3354,8 +3400,8 @@ _SCALEOPTION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10027,
-  serialized_end=10100,
+  serialized_start=10098,
+  serialized_end=10171,
 )
 
 
@@ -3435,8 +3481,8 @@ _GETFUNCTION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10103,
-  serialized_end=10445,
+  serialized_start=10174,
+  serialized_end=10516,
 )
 
 
@@ -3488,8 +3534,8 @@ _RUNFIELDRESULT_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10447,
-  serialized_end=10561,
+  serialized_start=10518,
+  serialized_end=10632,
 )
 
 
@@ -3702,8 +3748,8 @@ _RUNRESULT_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10564,
-  serialized_end=11541,
+  serialized_start=10635,
+  serialized_end=11612,
 )
 
 
@@ -3818,8 +3864,8 @@ _MAKESECTIONIMAGE_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=11544,
-  serialized_end=11934,
+  serialized_start=11615,
+  serialized_end=12005,
 )
 
 
@@ -3920,8 +3966,8 @@ _MAKEALLSECTIONIMAGES_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=11937,
-  serialized_end=12293,
+  serialized_start=12008,
+  serialized_end=12364,
 )
 
 
@@ -3994,8 +4040,8 @@ _MAKESURFACESHELLS_GMT_INTERPOLATESHELLS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12676,
-  serialized_end=12873,
+  serialized_start=12747,
+  serialized_end=12944,
 )
 
 _MAKESURFACESHELLS_GMT = _descriptor.Descriptor(
@@ -4103,8 +4149,8 @@ _MAKESURFACESHELLS_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12296,
-  serialized_end=12951,
+  serialized_start=12367,
+  serialized_end=13022,
 )
 
 
@@ -4156,8 +4202,8 @@ _SETUPMULTIPROCESSFORWARDMODEL_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12953,
-  serialized_end=13054,
+  serialized_start=13024,
+  serialized_end=13125,
 )
 
 
@@ -4216,8 +4262,8 @@ _RUNALLMULTIPROCESSFORWARDMODEL_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13056,
-  serialized_end=13178,
+  serialized_start=13127,
+  serialized_end=13249,
 )
 
 
@@ -4283,8 +4329,8 @@ _RUNONEMULTIPROCESSFORWARDMODEL_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13181,
-  serialized_end=13336,
+  serialized_start=13252,
+  serialized_end=13407,
 )
 
 
@@ -4343,8 +4389,8 @@ _GATHERMULTIPROCESSFORWARDMODEL_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13338,
-  serialized_end=13450,
+  serialized_start=13409,
+  serialized_end=13521,
 )
 
 
@@ -4529,8 +4575,8 @@ _FORWARDMODELTEMPERATUREFORCREATECASEFROMVOXET_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13453,
-  serialized_end=14515,
+  serialized_start=13524,
+  serialized_end=14586,
 )
 
 
@@ -4589,8 +4635,8 @@ _SETTEMPERATURECONTROL_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14518,
-  serialized_end=14752,
+  serialized_start=14589,
+  serialized_end=14823,
 )
 
 
@@ -4691,8 +4737,8 @@ _PROPERTY_PARAMETER_SWEEP_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14755,
-  serialized_end=15305,
+  serialized_start=14826,
+  serialized_end=15376,
 )
 
 
@@ -4779,8 +4825,8 @@ _MAKEPARAMETERSWEEPSUMMARYSTATS_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15308,
-  serialized_end=15647,
+  serialized_start=15379,
+  serialized_end=15718,
 )
 
 
@@ -4958,8 +5004,8 @@ _FORWARDMODELFROMPROJECT_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15650,
-  serialized_end=16350,
+  serialized_start=15721,
+  serialized_end=16421,
 )
 
 
@@ -5018,8 +5064,8 @@ _MAKEMISFITANDTREND_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16352,
-  serialized_end=16467,
+  serialized_start=16423,
+  serialized_end=16538,
 )
 
 
@@ -5351,8 +5397,8 @@ _INVERSIONTASK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16470,
-  serialized_end=19284,
+  serialized_start=16541,
+  serialized_end=19355,
 )
 
 _RUN_GMT.fields_by_name['Delegate'].message_type = _DELEGATE_PROCESS
@@ -5394,8 +5440,7 @@ _VOLUMERATIOTEST_GMT.fields_by_name['SetWeights'].enum_type = _VOLUMERATIOTEST_G
 _VOLUMERATIOTEST_GMT_VOLUMERATIOWEIGHTTYPE.containing_type = _VOLUMERATIOTEST_GMT
 _COMMONALITYVOLUMETEST_GMT.fields_by_name['SetWeights'].enum_type = _COMMONALITYVOLUMETEST_GMT_COMMONALITYVOLUMEWEIGHTTYPE
 _COMMONALITYVOLUMETEST_GMT_COMMONALITYVOLUMEWEIGHTTYPE.containing_type = _COMMONALITYVOLUMETEST_GMT
-_COMMONALITYTEST_GMT.fields_by_name['SetWeights'].enum_type = _COMMONALITYTEST_GMT_COMMONALITYWEIGHTTYPE
-_COMMONALITYTEST_GMT_COMMONALITYWEIGHTTYPE.containing_type = _COMMONALITYTEST_GMT
+_COMMONALITYTEST_GMT.fields_by_name['SetWeights'].enum_type = _COMMONALITYWEIGHTTYPE
 _SETFIXEDCELLS_GMT.fields_by_name['xyzfile'].message_type = commontaskmodel__pb2._REPEATEDSTRING
 _SETFIXEDCELLS_GMT.fields_by_name['goodness'].message_type = _REPEATEDOBSERVEDRELIABILITY_GMT
 _SETFIXEDCELLS_GMT.fields_by_name['geology'].message_type = commontaskmodel__pb2._REPEATEDSTRING
@@ -5541,6 +5586,7 @@ DESCRIPTOR.message_types_by_name['MakeMisfitAndTrend_GMT'] = _MAKEMISFITANDTREND
 DESCRIPTOR.message_types_by_name['InversionTask'] = _INVERSIONTASK
 DESCRIPTOR.enum_types_by_name['ComputeSurfaceStyle'] = _COMPUTESURFACESTYLE
 DESCRIPTOR.enum_types_by_name['PropertyInitialiseStyle'] = _PROPERTYINITIALISESTYLE
+DESCRIPTOR.enum_types_by_name['CommonalityWeightType'] = _COMMONALITYWEIGHTTYPE
 DESCRIPTOR.enum_types_by_name['EvolutionField'] = _EVOLUTIONFIELD
 DESCRIPTOR.enum_types_by_name['TransformFunction'] = _TRANSFORMFUNCTION
 DESCRIPTOR.enum_types_by_name['StatisticalFieldWithinStatsVoxet'] = _STATISTICALFIELDWITHINSTATSVOXET

@@ -12,11 +12,11 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-import intrepid.commontaskmodel_pb2 as commontaskmodel__pb2
-import intrepid.filter_description_pb2 as filter__description__pb2
-import intrepid.intrepid_tasks_pb2 as intrepid__tasks__pb2
-import intrepid.geophysical_models_pb2 as geophysical__models__pb2
-import intrepid.magnetic_tensor_processing_pb2 as magnetic__tensor__processing__pb2
+import commontaskmodel_pb2 as commontaskmodel__pb2
+import filter_description_pb2 as filter__description__pb2
+import intrepid_tasks_pb2 as intrepid__tasks__pb2
+import geophysical_models_pb2 as geophysical__models__pb2
+import magnetic_tensor_processing_pb2 as magnetic__tensor__processing__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -25,7 +25,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto2',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x16magnetic_methods.proto\x12\x08magnetic\x1a\x15\x63ommontaskmodel.proto\x1a\x18\x66ilter_description.proto\x1a\x14intrepid_tasks.proto\x1a\x18geophysical_models.proto\x1a magnetic_tensor_processing.proto\"\x92\x0e\n\x1d\x43ompensated_Magnetization_MAG\x12?\n\x07RunType\x18\x10 \x01(\x0e\x32\x1d.magnetic.CompensationRunType:\x0f\x46igure_Of_Merit\x12\x10\n\x08\x44\x61taBase\x18\x01 \x02(\t\x12\x13\n\x0bInputSignal\x18\x02 \x02(\t\x12\x18\n\rSensor_Number\x18$ \x01(\x05:\x01\x31\x12\x0e\n\x06InputX\x18\x03 \x01(\t\x12\x0e\n\x06InputY\x18\x04 \x01(\t\x12\x0e\n\x06InputZ\x18\x05 \x01(\t\x12\x10\n\x08InputFid\x18\x06 \x01(\t\x12\x10\n\x08TYPEName\x18\x07 \x01(\t\x12\x11\n\tInputLine\x18\x08 \x01(\t\x12\x14\n\x0cInputFlights\x18\t \x01(\t\x12 \n\x18InputHeightAboveSpheroid\x18\n \x01(\t\x12\x11\n\tInputDate\x18\x0b \x01(\t\x12\x11\n\tInputTime\x18\x0c \x01(\t\x12\x17\n\nFID_Factor\x18\x36 \x01(\x01:\x03\x30.1\x12,\n\nDate_Style\x18\x37 \x01(\x0e\x32\x10.ctm.date_styles:\x06YYMMDD\x12\x0c\n\x04Roll\x18\r \x01(\t\x12\r\n\x05Pitch\x18\x0e \x01(\t\x12\x0b\n\x03Yaw\x18\x0f \x01(\t\x12\x10\n\x08\x66luxgate\x18\x12 \x01(\t\x12\x0e\n\x06MatA01\x18< \x01(\t\x12\x0e\n\x06MatA02\x18= \x01(\t\x12\x0e\n\x06MatA03\x18> \x01(\t\x12\x0e\n\x06MatA04\x18? \x01(\t\x12\x0e\n\x06MatA05\x18@ \x01(\t\x12\x0e\n\x06MatA06\x18\x41 \x01(\t\x12\x0e\n\x06MatA07\x18\x42 \x01(\t\x12\x0e\n\x06MatA08\x18\x43 \x01(\t\x12\x0e\n\x06MatA09\x18\x44 \x01(\t\x12\x0e\n\x06MatA10\x18\x45 \x01(\t\x12\x0e\n\x06MatA11\x18\x46 \x01(\t\x12\x0e\n\x06MatA12\x18G \x01(\t\x12\x0e\n\x06MatA13\x18H \x01(\t\x12\x0e\n\x06MatA14\x18I \x01(\t\x12\x0e\n\x06MatA15\x18J \x01(\t\x12\x0e\n\x06MatA16\x18K \x01(\t\x12\x0e\n\x06MatA17\x18L \x01(\t\x12\x0e\n\x06MatA18\x18M \x01(\t\x12S\n\x0e\x44\x43OffsetMethod\x18P \x01(\x0e\x32(.magnetic.PrimaryDirectionalOffsetMethod:\x11HeadingStatistics\x12\x0f\n\x07\x45\x66tCaps\x18Q \x03(\x01\x12(\n\x06\x66ilter\x18\x16 \x01(\x0b\x32\x18.fdf.CompositeFilter_FDF\x12*\n\x07ZFilter\x18\x15 \x01(\x0e\x32\x13.fdf.filter_methods:\x04NONE\x12\x16\n\x0bWindow_Size\x18\x13 \x01(\x05:\x01\x37\x12\x16\n\tTolerance\x18\x14 \x01(\x01:\x03\x30.1\x12\x15\n\rFiltered_Roll\x18* \x01(\t\x12\x16\n\x0e\x46iltered_Pitch\x18+ \x01(\t\x12\x14\n\x0c\x46iltered_Yaw\x18, \x01(\t\x12\x17\n\x0f\x46iltered_Signal\x18- \x01(\t\x12\x15\n\rDiurnalFlight\x18\x1e \x01(\t\x12\x12\n\nDiurnalFid\x18\x1f \x01(\t\x12\x16\n\x0e\x44iurnalReading\x18  \x01(\t\x12\x15\n\rDiurnalJulian\x18! \x01(\t\x12\x37\n\rDiurnal_Style\x18\x38 \x01(\x0e\x32\x13.ctm.diurnal_styles:\x0bJULIAN_TIME\x12\"\n\x13\x64oDiurnalCorrection\x18\" \x01(\x08:\x05\x66\x61lse\x12\x35\n\x04Mode\x18% \x01(\x0e\x32\x1c.magnetic.Compensation_Model:\tBy_Flight\x12\x11\n\tLine_List\x18& \x03(\x05\x12K\n\x10\x45ulerAngleMethod\x18\' \x01(\x0e\x32\'.magnetic.EulerAngleDeterminationMethod:\x08\x46luxgate\x12\x1e\n\x10\x46ind_Line_Xovers\x18( \x01(\x08:\x04true\x12*\n\x1bRestrict_Angular_Variations\x18) \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x15Max_Angular_Deviation\x18/ \x03(\x05\x12\x14\n\x0cOutputSignal\x18\x30 \x01(\t\x12\x1e\n\x12NumberCoefficients\x18# \x01(\x05:\x02\x31\x36\x12\x14\n\x0c\x63oefficients\x18\x32 \x03(\x01\x12(\n\nReportFile\x18. \x01(\t:\x14mag_compensation.rpt\x12\x13\n\x05\x64oLog\x18R \x01(\x08:\x04true\x12\x1f\n\x10Generated_By_GUI\x18S \x01(\x08:\x05\x66\x61lse\x12\'\n\rBatchToolName\x18\x63 \x01(\t:\x10mag_compensation\x12/\n\x0bGUIToolName\x18\x64 \x01(\t:\x1amagneticCompensationAppGUI\"\xc1\n\n\x17KeatingCoefficients_MAG\x12\x11\n\tInputGrid\x18\x02 \x02(\t\x12\x1f\n\x17OutputFilteredInputGrid\x18\x03 \x01(\t\x12\x17\n\x0f\x43orrelationGrid\x18\x04 \x01(\t\x12\x13\n\x0bOutputShape\x18\x05 \x01(\t\x12)\n\nReportFile\x18\x06 \x01(\t:\x15intelligentSearch.rpt\x12\x39\n\x07RunType\x18\x07 \x01(\x0e\x32\x18.magnetic.KeatingRunType:\x0eMagnetic_Field\x12\x36\n\x08\x44\x61taType\x18\x08 \x01(\x0e\x32\x19.magnetic.KeatingDataType:\tMagnetics\x12\x39\n\x0bSignal_Type\x18\t \x01(\x0e\x32\x19.ctm.GeophysicsSignalType:\tMagnetism\x12,\n\x04IGRF\x18\n \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x14\n\tRemenance\x18\x1e \x01(\x01:\x01\x30\x12\x1a\n\x0frem_inclination\x18\x1f \x01(\x01:\x01\x30\x12\x1a\n\x0frem_declination\x18  \x01(\x01:\x01\x30\x12\x1b\n\x04\x42ody\x18\x0b \x01(\x0b\x32\r.geophy.cBody\x12\x16\n\x0bNoise_Level\x18\x32 \x01(\x01:\x01\x30\x12 \n\x12Maximum_Base_Level\x18\x33 \x01(\x01:\x04\x30.01\x12)\n\x1cMinimum_Required_Correlation\x18\x34 \x01(\x01:\x03\x30.7\x12(\n\x13Upper_Signal_Cutoff\x18\x35 \x01(\x01:\x0b\x31\x30\x30\x30\x30\x30\x30\x30\x30\x30\x30\x12)\n\x13Lower_Signal_Cutoff\x18\x36 \x01(\x01:\x0c-10000000000\x12\x17\n\x0bWindow_Size\x18\x37 \x01(\x01:\x02\x31\x31\x12\x1a\n\rWindow_Length\x18\x38 \x01(\x01:\x03\x35\x30\x30\x12\x1e\n\x11ObservationHeight\x18\x39 \x01(\x01:\x03\x31\x30\x30\x12\x38\n\x0bRolloffType\x18\x0f \x01(\x0e\x32\x17.fdf.GetRolloffTypeList:\nNO_RollOff\x12\x35\n\nWindowType\x18\x0c \x01(\x0e\x32\x16.fdf.GetWindowTypeList:\tNO_Window\x12/\n\x08\x46illType\x18\r \x01(\x0e\x32\x14.fdf.GetFillTypeList:\x07NO_Fill\x12$\n\x0b\x46\x66tGridName\x18\x0e \x01(\t:\x0f\x66\x66tGridName.ers\x12(\n\x10WindowedGridName\x18\x10 \x01(\t:\x0ewindowGrid.ers\x12*\n\x10\x45xpandedGridName\x18\x11 \x01(\t:\x10\x65xpandedGrid.ers\x12\x0f\n\x04\x42\x61nd\x18\x15 \x01(\x05:\x01\x31\x12\x39\n\x0eOutputDataType\x18\x16 \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12\x18\n\rDetrendDegree\x18\x17 \x01(\x05:\x01\x31\x12\x39\n\x0b\x46\x46TDataType\x18\x18 \x01(\x0e\x32\x12.ctm.GridDataTypes:\x10IEEE4ByteComplex\x12\x19\n\x0bUseSymmetry\x18\x19 \x01(\x08:\x04true\x12+\n\x1c\x44o_RTP_before_AnalyticSignal\x18\x1a \x01(\x08:\x05\x66\x61lse\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07keating\x12\x1c\n\x0bGUIToolName\x18\x64 \x01(\t:\x07keating\"\x9e\x06\n\x17Magnetic_Variograms_MAG\x12\x12\n\nInputLines\x18\x01 \x01(\t\x12\x18\n\x0bSignalField\x18\x02 \x01(\t:\x03mag\x12\x1e\n\x0e\x45levationField\x18\x03 \x01(\t:\x06gps_ht\x12\x1e\n\x07\x44TMGrid\x18\x05 \x01(\x0b\x32\r.ctm.Grid_INT\x12/\n\nFlightType\x18\x04 \x01(\x0e\x32\x10.ctm.FlightTypes:\tLT_FLIGHT\x12\x10\n\x08xyz_file\x18\n \x01(\t\x12\x16\n\x08\x66ormatpc\x18\x0b \x01(\x08:\x04true\x12\x19\n\x0emagnetic_param\x18\x0c \x01(\x05:\x01\x31\x12\x13\n\x0bOutputLines\x18\r \x01(\t\x12\x18\n\x10\x61\x64\x64itional_param\x18\x0e \x03(\x05\x12\x1e\n\x11\x41verage_Clearance\x18\x0f \x01(\x01:\x03\x31\x30\x30\x12,\n\x04IGRF\x18\t \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12%\n\x0evariogram_file\x18\x14 \x01(\t:\rvar_file.gvar\x12\x1f\n\x03\x62ox\x18\x15 \x01(\x0b\x32\x12.ctm.BoundingBox2D\x12\x16\n\talong_win\x18\x16 \x02(\x05:\x03\x32\x30\x30\x12\x16\n\nalong_step\x18\x17 \x02(\x05:\x02\x32\x30\x12\x12\n\x07\x61zimuth\x18\x18 \x01(\x01:\x01\x30\x12\x14\n\tsubsample\x18\x19 \x01(\x05:\x01\x31\x12\x1b\n\x0f\x61long_bin_width\x18\x1a \x01(\x05:\x02\x32\x30\x12\x1b\n\x0cweight_equal\x18\x1b \x01(\x08:\x05\x66\x61lse\x12)\n\nProjection\x18\x1c \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12+\n\nReportFile\x18\x1d \x01(\t:\x17magnetic_variograms.rpt\x12\x1f\n\x10Generated_By_GUI\x18\x33 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08MagVario\x12,\n\x0bGUIToolName\x18\x64 \x01(\t:\x17magneticVariogramAppGUI\"\xc5\x04\n\x14Stack_Variograms_MAG\x12\x17\n\ncell_dim_x\x18\x01 \x01(\x01:\x03\x31\x30\x30\x12\x17\n\ncell_dim_y\x18\x02 \x01(\x01:\x03\x31\x30\x30\x12\x1f\n\x03\x62ox\x18\x03 \x01(\x0b\x32\x12.ctm.BoundingBox2D\x12\x1e\n\x13topographic_azimuth\x18\x04 \x01(\x01:\x01\x30\x12\x1a\n\x0cweight_gauss\x18\x05 \x01(\x08:\x04true\x12\x17\n\x08sigma_l1\x18\x06 \x01(\x01:\x05\x31\x30\x30\x30\x30\x12\x16\n\x08sigma_l2\x18\x07 \x01(\x01:\x04\x37\x30\x30\x30\x12\'\n\x1c\x43ut_influence_distance_sigma\x18\x08 \x01(\x01:\x01\x33\x12\x1d\n\x11weight_resolution\x18\t \x01(\x01:\x02\x31\x30\x12\x1c\n\x14input_variogram_file\x18\n \x01(\t\x12+\n\x15output_variogram_file\x18\x0b \x01(\t:\x0c\x61verage.gvar\x12\x17\n\x0brect_margin\x18\x0c \x01(\x01:\x02-1\x12%\n\x18weight_lookup_table_size\x18\r \x01(\x05:\x03\x35\x30\x30\x12(\n\nReportFile\x18\x13 \x01(\t:\x14stack_variograms.rpt\x12\x1f\n\x10Generated_By_GUI\x18\x33 \x01(\x08:\x05\x66\x61lse\x12!\n\rBatchToolName\x18\x63 \x01(\t:\nStackVario\x12,\n\x0bGUIToolName\x18\x64 \x01(\t:\x17magneticVariogramAppGUI\"D\n\x13Variogram_Files_MAG\x12\x16\n\x0evariogram_file\x18\x01 \x01(\t\x12\x15\n\nfit_factor\x18\x02 \x01(\x01:\x01\x31\"\xd7\x08\n\x1eInvert_Depth_Magnetization_MAG\x12\x1e\n\nmodel_file\x18\x01 \x01(\t:\nmodelcoeff\x12\x1d\n\x10scaling_exponent\x18\x02 \x01(\x01:\x03\x31.6\x12 \n\x11incomplete_raster\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x31\n\nvariograms\x18\x07 \x03(\x0b\x32\x1d.magnetic.Variogram_Files_MAG\x12\x1b\n\x10\x61\x64\x64itional_par_h\x18\x08 \x01(\x05:\x01\x31\x12\x1e\n\x10invert_DepthOnly\x18\t \x01(\x08:\x04true\x12%\n\x16\x46lyingHeight_from_file\x18\n \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x16\x46lyingHeight_file_name\x18\x0b \x01(\t\x12 \n\x15height_file_parameter\x18\x0c \x01(\x05:\x01\x31\x12\x1f\n\x10output_variogram\x18\r \x01(\x08:\x05\x66\x61lse\x12 \n\x08out_file\x18\x14 \x01(\t:\x0evar_invert.xyz\x12\x1e\n\x06Output\x18\x13 \x02(\t:\x0epredicted..DIR\x12)\n\nProjection\x18\x65 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x1b\n\x0c\x65rror_bounds\x18\x15 \x01(\x08:\x05\x66\x61lse\x12\x19\n\rerror_percent\x18\x16 \x01(\x01:\x02\x31\x30\x12\x19\n\x0cmininum_nges\x18\x18 \x01(\x05:\x03\x31\x30\x30\x12\x19\n\x0b\x64rop_margin\x18\x19 \x01(\x08:\x04true\x12$\n\x15single_susceptibility\x18\x1a \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07L1_norm\x18\x1b \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x11\x66\x61st_optimization\x18\x1c \x01(\x08:\x04true\x12\x16\n\x0b\x64\x65\x63lination\x18\x04 \x01(\x01:\x01\x30\x12\x17\n\x0binclination\x18\x05 \x01(\x01:\x02\x39\x30\x12\x19\n\rminimum_depth\x18\x1d \x01(\x01:\x02-1\x12\x19\n\rmaximum_depth\x18\x1e \x01(\x01:\x02-1\x12\x1e\n\x13number_end_bins_off\x18\x1f \x01(\x05:\x01\x31\x12\x1a\n\x0cwrite_header\x18  \x01(\x08:\x04true\x12\x12\n\ncell_dim_x\x18) \x01(\x01\x12\x12\n\ncell_dim_y\x18* \x01(\x01\x12\x1f\n\x03\x62ox\x18+ \x01(\x0b\x32\x12.ctm.BoundingBox2D\x12\x33\n\nReportFile\x18\x31 \x01(\t:\x1finvert_depths_magnetization.rpt\x12\x1f\n\x10Generated_By_GUI\x18\x33 \x01(\x08:\x05\x66\x61lse\x12/\n\rBatchToolName\x18\x63 \x01(\t:\x18InvertDepthMagnetization\x12-\n\x0bGUIToolName\x18\x64 \x01(\t:\x18InvertDepthMagnetization\"\x93\x06\n*Get_Fractal_Magnetization_Distribution_MAG\x12\x19\n\rNumber_Blocks\x18\x01 \x01(\x05:\x02\x36\x34\x12\x18\n\rNumber_Layers\x18\x02 \x01(\x05:\x01\x32\x12\x11\n\x05\x41lpha\x18\x03 \x01(\x01:\x02-4\x12\x11\n\x05Gamma\x18\x04 \x01(\x01:\x02-4\x12\x16\n\x05iseed\x18\x05 \x01(\x05:\x07\x31\x32\x33\x34\x35\x36\x37\x12\"\n\x15\x41verage_Magnetization\x18\x06 \x01(\x01:\x03\x31\x30\x30\x12+\n\x1d\x45xponent_Magnetization_Factor\x18\x07 \x01(\x01:\x04\x30.25\x12\x18\n\x0bXYCell_Size\x18\x0c \x01(\x01:\x03\x31\x30\x30\x12\x17\n\nZCell_Size\x18\r \x01(\x01:\x03\x31\x30\x30\x12\x1c\n\x0f\x44\x65pth_Model_Top\x18\x0e \x01(\x01:\x03\x31\x30\x30\x12\x17\n\x0cMag_Constant\x18\x0f \x01(\x01:\x01\x31\x12 \n\x11\x44o_One_Layer_Only\x18\x10 \x01(\x08:\x05\x66\x61lse\x12!\n\nOutputGrid\x18\x41 \x01(\x0b\x32\r.ctm.Grid_INT\x12+\n\x10Output_Magnetics\x18\x08 \x01(\t:\x11synthetic_mag.ers\x12\x1c\n\rWrite_3DModel\x18\x11 \x01(\x08:\x05\x66\x61lse\x12\x31\n\x0fMagnetism_Voxet\x18\x12 \x01(\t:\x18\x66ractal_magnetization.vo\x12\x1e\n\x0fWrite_3DInitial\x18\x13 \x01(\x08:\x05\x66\x61lse\x12(\n\rInitial_Voxet\x18\x14 \x01(\t:\x11initial_random.vo\x12\x13\n\x08Origin_Z\x18\x15 \x01(\x01:\x01\x30\x12\"\n\x13Write_PowerSpectrum\x18\x16 \x01(\x08:\x05\x66\x61lse\x12-\n\nReportFile\x18\x17 \x01(\t:\x19\x66ractal_magnetization.rpt\x12!\n\rBatchToolName\x18\x63 \x01(\t:\nFractalMag\x12\x1f\n\x0bGUIToolName\x18\x64 \x01(\t:\nFractalMag\"\xac\x07\n\x16Magnetic_Transects_MAG\x12\'\n\x08gridName\x18\x01 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12\x30\n\x11\x65levationGridName\x18\x03 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12\x11\n\toriginLat\x18< \x01(\x01\x12\x11\n\toriginLng\x18= \x01(\x01\x12\x12\n\x04step\x18\x1c \x01(\x01:\x04\x30.05\x12\x18\n\x10\x61ngleOfTransects\x18> \x01(\x01\x12\x1c\n\x11numberOfTransects\x18? \x01(\x05:\x01\x31\x12\x1c\n\x11lengthOfTransects\x18@ \x01(\x05:\x01\x31\x12,\n\x0foutputVoxelName\x18\x0c \x01(\t:\x13\x43\x61lculatedDepths.vo\x12 \n\x14horizontalResolution\x18\r \x01(\x01:\x02\x31\x30\x12\x1d\n\x12verticalResolution\x18\x0e \x01(\x01:\x01\x35\x12\x1a\n\x0eRadarAltimeter\x18\x1d \x01(\x01:\x02\x38\x30\x12\x1a\n\x0cMaximumDepth\x18\x1e \x01(\x01:\x04\x31\x35\x30\x30\x12\x1a\n\x0cMinimumDepth\x18\x1f \x01(\x01:\x04-100\x12\x19\n\x0e\x44ipoleCriteria\x18  \x01(\x01:\x01\x31\x12\x1a\n\rOverlapFactor\x18! \x01(\x01:\x03\x31.5\x12$\n\x16MaximumUsefulFrequency\x18\" \x01(\x01:\x04\x36.25\x12&\n\x1aGaussian_StandardDeviation\x18/ \x01(\x05:\x02\x31\x30\x12!\n\x16Trim_Early_Frequencies\x18\x30 \x01(\x05:\x01\x31\x12\x1c\n\x11powerSpectrumBins\x18\x31 \x01(\x05:\x01\x30\x12$\n\x17nullPercentageTolerance\x18\x32 \x01(\x01:\x03\x30.1\x12\x18\n\nshowViewer\x18\x14 \x01(\x08:\x04true\x12\x1a\n\x0c\x63\x61\x63heResults\x18\x15 \x01(\x08:\x04true\x12\x15\n\routputCSVFile\x18& \x01(\t\x12\x1f\n\x10Generated_By_GUI\x18\x33 \x01(\x08:\x05\x66\x61lse\x12\x32\n\nReportFile\x18. \x01(\t:\x1ereports/Magnetic_Transects.rpt\x12)\n\rBatchToolName\x18\x63 \x01(\t:\x12magnetic_transects\x12+\n\x0bGUIToolName\x18\x64 \x01(\t:\x16MagneticTransectAppGUI\"\x85\x0c\n ForwardModelFromRandomDipole_MAG\x12\x13\n\x0binput_voxet\x18\x01 \x01(\t\x12#\n\x06\x66ields\x18\x02 \x01(\x0b\x32\x13.ctm.RepeatedString\x12\x16\n\x0e\x66ormation_name\x18\x03 \x01(\t\x12(\n\x19InputVoxetAlreadyProperty\x18\x04 \x01(\x08:\x05\x66\x61lse\x12.\n\x0fOutputVoxelName\x18\x05 \x01(\t:\x15random_dipole_sill.sg\x12+\n\x12KernelResponseName\x18\x06 \x01(\t:\x0f\x64ipole_model.vo\x12?\n\rDipole_Locale\x18\x07 \x01(\x0e\x32\x1b.magnetic.Dipole_FFT_Locale:\x0b\x64i_Centered\x12\x41\n\x14\x43oordinateSystemType\x18\x08 \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12\x1c\n\x14\x64rape_elevation_grid\x18\t \x01(\t\x12\x38\n\x0foutput_gridname\x18\n \x01(\t:\x1frandom_dipole_surface_model.ers\x12\x17\n\x0csurvey_plane\x18\x0b \x01(\x01:\x01\x30\x12;\n\talgorithm\x18\x0c \x01(\x0e\x32\x1a.magnetic.Random_Algorithm:\x0cGeologyModel\x12\x11\n\tGrid_Size\x18\x0f \x01(\x01\x12$\n\nprojectBox\x18\x10 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x16\n\x0eSusceptibility\x18\x15 \x03(\x01\x12(\n\x1aSetReferenceSusceptibility\x18\x16 \x01(\x01:\x04\x30.01\x12\x1d\n\x15POSC_CoordinateSystem\x18\x17 \x01(\t\x12,\n\x04IGRF\x18\x18 \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x33\n\rMagneticField\x18\" \x01(\x0b\x32\x1c.geophy.InducedMagneticField\x12\x15\n\x04seed\x18\x19 \x01(\x05:\x07\x31\x32\x33\x34\x35\x36\x37\x12\x1c\n\x0e\x64ipole_density\x18\x14 \x01(\x01:\x04\x30.01\x12\x1a\n\x0b\x43heck_Print\x18\x1a \x01(\x08:\x05\x66\x61lse\x12,\n\x12OutputDipolePoints\x18, \x01(\t:\x10sill_random..DIR\x12\x1b\n\x0eNS_Kernel_Size\x18\x1b \x01(\x05:\x03\x32\x35\x31\x12\x1b\n\x0e\x45W_Kernel_Size\x18\x1c \x01(\x05:\x03\x32\x35\x31\x12!\n\x14VERTICAL_Kernel_Size\x18\x1d \x01(\x05:\x03\x31\x30\x31\x12\x18\n\x0cNS_Step_Size\x18\x1e \x01(\x05:\x02\x32\x30\x12\x18\n\x0c\x45W_Step_Size\x18\x1f \x01(\x05:\x02\x32\x30\x12\x1e\n\x12VERTICAL_Step_Size\x18  \x01(\x05:\x02\x31\x30\x12\'\n\x18\x66orce_ellipse_constraint\x18! \x01(\x08:\x05\x66\x61lse\x12\x1c\n\x06origin\x18# \x01(\x0b\x32\x0c.ctm.Point3d\x12\x1f\n\x13PrimaryEllipsoidYaw\x18$ \x01(\x01:\x02\x39\x30\x12 \n\x15PrimaryEllipsoidPitch\x18% \x01(\x01:\x01\x30\x12\x1f\n\x14PrimaryEllipsoidRoll\x18& \x01(\x01:\x01\x30\x12\x1a\n\rrelativeSizeX\x18) \x01(\x01:\x03\x32.5\x12\x18\n\rrelativeSizeY\x18* \x01(\x01:\x01\x36\x12\x18\n\rrelativeSizeZ\x18+ \x01(\x01:\x01\x34\x12\x16\n\x0bNumber_CPUs\x18( \x01(\x05:\x01\x31\x12\x1f\n\x10Generated_By_GUI\x18\x33 \x01(\x08:\x05\x66\x61lse\x12$\n\rBatchToolName\x18\x63 \x01(\t:\rrandom_dipole\x12\'\n\x0bGUIToolName\x18\x64 \x01(\t:\x12randomDipoleAppGUI\x12&\n\nReportFile\x18. \x01(\t:\x12random_diploes.rpt\"\xa2\t\n\x14\x45quivalent_Layer_MAG\x12=\n\x07RunType\x18\x01 \x02(\x0e\x32$.magnetic.Equivalent_Layer_Algorithm:\x06RT_RTP\x12\x14\n\x0cInputTMIGrid\x18\x02 \x01(\t\x12:\n\rDetrendOption\x18\x03 \x01(\x0e\x32\x19.magnetic.e_DetrendOption:\x08\x44\x45GREE1_\x12\x0f\n\x04\x42\x61nd\x18\x04 \x01(\x05:\x01\x31\x12\x15\n\rOutputRTPGrid\x18\x05 \x01(\t\x12\x1b\n\x13\x45quivalentLayerGrid\x18\x06 \x01(\t\x12\x18\n\x10\x44\x65trendedTMIGrid\x18\x07 \x01(\t\x12\x19\n\x11\x43\x61lculatedTMIGrid\x18\x08 \x01(\t\x12\x1f\n\x12SensorToLayerDepth\x18\t \x01(\x01:\x03\x31\x30\x30\x12\x30\n\x0cWienerFilter\x18\x0b \x01(\x0b\x32\x1a.intrepid.WienerFilter_INT\x12\x18\n\rMaxIterations\x18\x0c \x01(\x05:\x01\x30\x12 \n\x13IncrementMultiplier\x18\r \x01(\x01:\x03\x30.5\x12\x16\n\x08\x41utoIgrf\x18\x0e \x01(\x08:\x04true\x12\x18\n\nSurveyYear\x18\x0f \x01(\x01:\x04\x32\x30\x32\x30\x12\x17\n\x0cSurveyHeight\x18\x10 \x01(\x01:\x01\x30\x12,\n\x04IGRF\x18\x11 \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12>\n\x13\x44\x65\x63orrugateSettings\x18\x13 \x01(\x0e\x32\x18.magnetic.e_deStreakType:\x07\x44S_NONE\x12!\n\x13MinimumStreakLength\x18\x14 \x01(\x01:\x04\x31\x30\x30\x30\x12\x18\n\x0bStreakWidth\x18\x15 \x01(\x01:\x03\x31\x30\x30\x12\x1c\n\x10\x44\x65\x63orrugateRange\x18\x16 \x01(\x01:\x02\x33\x30\x12\x17\n\tUseDering\x18\x17 \x01(\x08:\x04true\x12$\n\x15keepintermediategrids\x18\x18 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0etestcalckernel\x18\x19 \x01(\x08:\x05\x66\x61lse\x12\x18\n\x10wienersourcegrid\x18\x1a \x01(\t\x12\x12\n\nInputLines\x18\x1b \x01(\t\x12\x1a\n\rInputTMIField\x18\x1c \x01(\t:\x03mag\x12%\n\x0eOutputTmiField\x18\x1d \x01(\t:\rcorrected_mag\x12/\n\nFlightType\x18\x1e \x01(\x0e\x32\x10.ctm.FlightTypes:\tLT_FLIGHT\x12\x1e\n\x0e\x45levationField\x18\x1f \x01(\t:\x06gps_ht\x12$\n\x14GroundClearanceField\x18  \x01(\t:\x06gps_ht\x12!\n\x14OutputTMISignalField\x18! \x01(\t:\x03mag\x12\x1d\n\rBatchToolName\x18\x62 \x01(\t:\x06slayer\x12*\n\x0bGUIToolName\x18\x64 \x01(\t:\x15\x45quivalentLayerAppGUI\x12(\n\nReportFile\x18\x63 \x01(\t:\x14\x65quivalent_layer.rpt\"\xa8\x02\n\x1eHorizontal_Components2Grid_MAG\x12\x17\n\x0fInputXComponent\x18\x01 \x01(\t\x12\x17\n\x0fInputYComponent\x18\x02 \x01(\t\x12\x12\n\nOutputGrid\x18\x03 \x01(\t\x12\x39\n\x0eOutputDataType\x18\x04 \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12!\n\x12VerticalDerivative\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x11\n\x06\x44\x65gree\x18\x06 \x01(\x01:\x01\x31\x12\"\n\rBatchToolName\x18\x62 \x01(\t:\x0bhzcomp2grid\x12+\n\x0bGUIToolName\x18\x64 \x01(\t:\x16horizontalComp2GridGUI\"\xf2\x01\n\x1bMagnetic_Interpretation_MAG\x12\r\n\x05Input\x18\x01 \x01(\t\x12\x0e\n\x06Output\x18\x02 \x01(\t\x12\x37\n\x06Method\x18\x03 \x01(\x0e\x32\x18.magnetic.MagMage_Option:\rCoherence_map\x12\x1b\n\x10\x43oherence_Window\x18\x05 \x01(\x05:\x01\x37\x12 \n\x10Minimum_Variance\x18\x06 \x01(\x01:\x06\x30.0001\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07magmage\x12\x1c\n\x0bGUIToolName\x18\x64 \x01(\t:\x07magmage\"\xf3\x05\n\x0cMagneticTask\x12J\n\x19\x43ompensated_Magnetization\x18\x01 \x01(\x0b\x32\'.magnetic.Compensated_Magnetization_MAG\x12\x33\n\x08MagVario\x18\x02 \x01(\x0b\x32!.magnetic.Magnetic_Variograms_MAG\x12\x32\n\nStackVario\x18\x03 \x01(\x0b\x32\x1e.magnetic.Stack_Variograms_MAG\x12J\n\x18InvertDepthMagnetization\x18\x04 \x01(\x0b\x32(.magnetic.Invert_Depth_Magnetization_MAG\x12\x64\n&Get_Fractal_Magnetization_Distribution\x18\x05 \x01(\x0b\x32\x34.magnetic.Get_Fractal_Magnetization_Distribution_MAG\x12<\n\x12Magnetic_Transects\x18\x06 \x01(\x0b\x32 .magnetic.Magnetic_Transects_MAG\x12P\n\x1c\x46orwardModelFromRandomDipole\x18\x07 \x01(\x0b\x32*.magnetic.ForwardModelFromRandomDipole_MAG\x12\x37\n\x0f\x45quivalentLayer\x18\x08 \x01(\x0b\x32\x1e.magnetic.Equivalent_Layer_MAG\x12=\n\x0bhzcomp2grid\x18\t \x01(\x0b\x32(.magnetic.Horizontal_Components2Grid_MAG\x12<\n\x11IntelligentSearch\x18\n \x01(\x0b\x32!.magnetic.KeatingCoefficients_MAG\x12\x36\n\x07magmage\x18\x0b \x01(\x0b\x32%.magnetic.Magnetic_Interpretation_MAG*L\n\x12\x43ompensation_Model\x12\x0b\n\x07\x42y_Line\x10\x00\x12\r\n\tBy_Flight\x10\x01\x12\x0b\n\x07\x42y_List\x10\x02\x12\r\n\tAll_Lines\x10\x03*I\n\x1d\x45ulerAngleDeterminationMethod\x12\x0c\n\x08\x46luxgate\x10\x00\x12\x1a\n\x16InertialNavigationUnit\x10\x01*~\n\x1ePrimaryDirectionalOffsetMethod\x12\x15\n\x11HeadingStatistics\x10\x00\x12\x17\n\x13\x43rossOverStatistics\x10\x01\x12\x14\n\x10ProfileFiltering\x10\x02\x12\x16\n\x12\x45xternallySupplied\x10\x03*\xf3\x01\n\x13\x43ompensationRunType\x12\x13\n\x0f\x46igure_Of_Merit\x10\x00\x12#\n\x1f\x46igure_Of_Merit_with_CrossOvers\x10\x01\x12\x19\n\x15\x43heck_Figure_Of_Merit\x10\x02\x12\x10\n\x0c\x43ompensation\x10\x03\x12\x1d\n\x19Small_Signal_Compensation\x10\x04\x12\x1d\n\x19\x45xternal_Supplied_Amatrix\x10\t\x12\x1b\n\x17\x43heck_Filter_Lines_only\x10\n\x12\x1a\n\x16\x43heck_Post_Filter_only\x10\x0b*h\n\x0eKeatingRunType\x12\x12\n\x0eMagnetic_Field\x10\x00\x12\x16\n\x12VerticalDerivative\x10\x01\x12\x12\n\x0e\x41nalyticSignal\x10\x02\x12\r\n\tInvariant\x10\x03\x12\x07\n\x03\x46TG\x10\x04*-\n\x0fKeatingDataType\x12\r\n\tMagnetics\x10\x00\x12\x0b\n\x07Gravity\x10\x01*S\n\x1bNumber_Points_EstimateSlope\x12\t\n\x05three\x10\x03\x12\x08\n\x04\x66ive\x10\x05\x12\t\n\x05seven\x10\x07\x12\x08\n\x04nine\x10\t\x12\n\n\x06\x65leven\x10\x0b*1\n\x0fSourceDepthBias\x12\x08\n\x04\x64\x65\x65p\x10\x01\x12\x07\n\x03mid\x10\x02\x12\x0b\n\x07shallow\x10\x03*L\n\x11\x44ipole_FFT_Locale\x12\x0f\n\x0b\x64i_Centered\x10\x00\x12\x0e\n\ndi_Corners\x10\x01\x12\x16\n\x12\x64i_Top_Dead_Centre\x10\x02*3\n\x10Random_Algorithm\x12\r\n\tDefineBox\x10\x03\x12\x10\n\x0cGeologyModel\x10\x04*L\n\x1a\x45quivalent_Layer_Algorithm\x12\n\n\x06RT_RTP\x10\x00\x12\r\n\tRT_HEIGHT\x10\x01\x12\x13\n\x0fRT_GAMMA_INVERT\x10\x02*7\n\x0e\x65_deStreakType\x12\x0b\n\x07\x44S_AUTO\x10\x00\x12\x0b\n\x07\x44S_NONE\x10\x01\x12\x0b\n\x07\x44S_USER\x10\x02*\\\n\x0f\x65_DetrendOption\x12\x11\n\rDetrend_NONE_\x10\t\x12\x0c\n\x08\x44\x45GREE0_\x10\x00\x12\x0c\n\x08\x44\x45GREE1_\x10\x01\x12\x0c\n\x08\x44\x45GREE2_\x10\x02\x12\x0c\n\x08\x44\x45GREE3_\x10\x03*\\\n\x0eMagMage_Option\x12\x12\n\x0e\x41nomaly_Points\x10\x00\x12\x12\n\x0eMaximum_Points\x10\x01\x12\x11\n\rCoherence_map\x10\x02\x12\x0f\n\x0bMQCoherence\x10\x03'
+  serialized_pb=b'\n\x16magnetic_methods.proto\x12\x08magnetic\x1a\x15\x63ommontaskmodel.proto\x1a\x18\x66ilter_description.proto\x1a\x14intrepid_tasks.proto\x1a\x18geophysical_models.proto\x1a magnetic_tensor_processing.proto\"\x85\x0f\n\x1d\x43ompensated_Magnetization_MAG\x12?\n\x07RunType\x18\x10 \x01(\x0e\x32\x1d.magnetic.CompensationRunType:\x0f\x46igure_Of_Merit\x12\x10\n\x08\x44\x61taBase\x18\x01 \x02(\t\x12\x13\n\x0bInputSignal\x18\x02 \x02(\t\x12\x18\n\rSensor_Number\x18$ \x01(\x05:\x01\x31\x12\x0e\n\x06InputX\x18\x03 \x01(\t\x12\x0e\n\x06InputY\x18\x04 \x01(\t\x12\x0e\n\x06InputZ\x18\x05 \x01(\t\x12\x10\n\x08InputFid\x18\x06 \x01(\t\x12\x10\n\x08TYPEName\x18\x07 \x01(\t\x12\x11\n\tInputLine\x18\x08 \x01(\t\x12\x14\n\x0cInputFlights\x18\t \x01(\t\x12 \n\x18InputHeightAboveSpheroid\x18\n \x01(\t\x12\x11\n\tInputDate\x18\x0b \x01(\t\x12\x11\n\tInputTime\x18\x0c \x01(\t\x12\x17\n\nFID_Factor\x18\x36 \x01(\x01:\x03\x30.1\x12,\n\nDate_Style\x18\x37 \x01(\x0e\x32\x10.ctm.date_styles:\x06YYMMDD\x12\x0c\n\x04Roll\x18\r \x01(\t\x12\r\n\x05Pitch\x18\x0e \x01(\t\x12\x0b\n\x03Yaw\x18\x0f \x01(\t\x12\x1f\n\x11UseTMI_Components\x18\x1b \x01(\x08:\x04true\x12,\n\x04IGRF\x18\x1a \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\n\n\x02\x42x\x18\x17 \x01(\t\x12\n\n\x02\x42y\x18\x18 \x01(\t\x12\n\n\x02\x42z\x18\x19 \x01(\t\x12\x10\n\x08\x66luxgate\x18\x12 \x01(\t\x12\x0e\n\x06MatA01\x18< \x01(\t\x12\x0e\n\x06MatA02\x18= \x01(\t\x12\x0e\n\x06MatA03\x18> \x01(\t\x12\x0e\n\x06MatA04\x18? \x01(\t\x12\x0e\n\x06MatA05\x18@ \x01(\t\x12\x0e\n\x06MatA06\x18\x41 \x01(\t\x12\x0e\n\x06MatA07\x18\x42 \x01(\t\x12\x0e\n\x06MatA08\x18\x43 \x01(\t\x12\x0e\n\x06MatA09\x18\x44 \x01(\t\x12\x0e\n\x06MatA10\x18\x45 \x01(\t\x12\x0e\n\x06MatA11\x18\x46 \x01(\t\x12\x0e\n\x06MatA12\x18G \x01(\t\x12\x0e\n\x06MatA13\x18H \x01(\t\x12\x0e\n\x06MatA14\x18I \x01(\t\x12\x0e\n\x06MatA15\x18J \x01(\t\x12\x0e\n\x06MatA16\x18K \x01(\t\x12\x0e\n\x06MatA17\x18L \x01(\t\x12\x0e\n\x06MatA18\x18M \x01(\t\x12S\n\x0e\x44\x43OffsetMethod\x18P \x01(\x0e\x32(.magnetic.PrimaryDirectionalOffsetMethod:\x11HeadingStatistics\x12\x0f\n\x07\x45\x66tCaps\x18Q \x03(\x01\x12(\n\x06\x66ilter\x18\x16 \x01(\x0b\x32\x18.fdf.CompositeFilter_FDF\x12*\n\x07ZFilter\x18\x15 \x01(\x0e\x32\x13.fdf.filter_methods:\x04NONE\x12\x16\n\x0bWindow_Size\x18\x13 \x01(\x05:\x01\x37\x12\x16\n\tTolerance\x18\x14 \x01(\x01:\x03\x30.1\x12\x15\n\rFiltered_Roll\x18* \x01(\t\x12\x16\n\x0e\x46iltered_Pitch\x18+ \x01(\t\x12\x14\n\x0c\x46iltered_Yaw\x18, \x01(\t\x12\x17\n\x0f\x46iltered_Signal\x18- \x01(\t\x12\x15\n\rDiurnalFlight\x18\x1e \x01(\t\x12\x12\n\nDiurnalFid\x18\x1f \x01(\t\x12\x16\n\x0e\x44iurnalReading\x18  \x01(\t\x12\x15\n\rDiurnalJulian\x18! \x01(\t\x12\x37\n\rDiurnal_Style\x18\x38 \x01(\x0e\x32\x13.ctm.diurnal_styles:\x0bJULIAN_TIME\x12\"\n\x13\x64oDiurnalCorrection\x18\" \x01(\x08:\x05\x66\x61lse\x12\x35\n\x04Mode\x18% \x01(\x0e\x32\x1c.magnetic.Compensation_Model:\tBy_Flight\x12\x11\n\tLine_List\x18& \x03(\x05\x12K\n\x10\x45ulerAngleMethod\x18\' \x01(\x0e\x32\'.magnetic.EulerAngleDeterminationMethod:\x08\x46luxgate\x12\x1e\n\x10\x46ind_Line_Xovers\x18( \x01(\x08:\x04true\x12*\n\x1bRestrict_Angular_Variations\x18) \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x15Max_Angular_Deviation\x18/ \x03(\x05\x12\x14\n\x0cOutputSignal\x18\x30 \x01(\t\x12\x1e\n\x12NumberCoefficients\x18# \x01(\x05:\x02\x31\x36\x12\x14\n\x0c\x63oefficients\x18\x32 \x03(\x01\x12(\n\nReportFile\x18. \x01(\t:\x14mag_compensation.rpt\x12\x13\n\x05\x64oLog\x18R \x01(\x08:\x04true\x12\x1f\n\x10Generated_By_GUI\x18S \x01(\x08:\x05\x66\x61lse\x12\'\n\rBatchToolName\x18\x63 \x01(\t:\x10mag_compensation\x12/\n\x0bGUIToolName\x18\x64 \x01(\t:\x1amagneticCompensationAppGUI\"\xc1\n\n\x17KeatingCoefficients_MAG\x12\x11\n\tInputGrid\x18\x02 \x02(\t\x12\x1f\n\x17OutputFilteredInputGrid\x18\x03 \x01(\t\x12\x17\n\x0f\x43orrelationGrid\x18\x04 \x01(\t\x12\x13\n\x0bOutputShape\x18\x05 \x01(\t\x12)\n\nReportFile\x18\x06 \x01(\t:\x15intelligentSearch.rpt\x12\x39\n\x07RunType\x18\x07 \x01(\x0e\x32\x18.magnetic.KeatingRunType:\x0eMagnetic_Field\x12\x36\n\x08\x44\x61taType\x18\x08 \x01(\x0e\x32\x19.magnetic.KeatingDataType:\tMagnetics\x12\x39\n\x0bSignal_Type\x18\t \x01(\x0e\x32\x19.ctm.GeophysicsSignalType:\tMagnetism\x12,\n\x04IGRF\x18\n \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x14\n\tRemenance\x18\x1e \x01(\x01:\x01\x30\x12\x1a\n\x0frem_inclination\x18\x1f \x01(\x01:\x01\x30\x12\x1a\n\x0frem_declination\x18  \x01(\x01:\x01\x30\x12\x1b\n\x04\x42ody\x18\x0b \x01(\x0b\x32\r.geophy.cBody\x12\x16\n\x0bNoise_Level\x18\x32 \x01(\x01:\x01\x30\x12 \n\x12Maximum_Base_Level\x18\x33 \x01(\x01:\x04\x30.01\x12)\n\x1cMinimum_Required_Correlation\x18\x34 \x01(\x01:\x03\x30.7\x12(\n\x13Upper_Signal_Cutoff\x18\x35 \x01(\x01:\x0b\x31\x30\x30\x30\x30\x30\x30\x30\x30\x30\x30\x12)\n\x13Lower_Signal_Cutoff\x18\x36 \x01(\x01:\x0c-10000000000\x12\x17\n\x0bWindow_Size\x18\x37 \x01(\x01:\x02\x31\x31\x12\x1a\n\rWindow_Length\x18\x38 \x01(\x01:\x03\x35\x30\x30\x12\x1e\n\x11ObservationHeight\x18\x39 \x01(\x01:\x03\x31\x30\x30\x12\x38\n\x0bRolloffType\x18\x0f \x01(\x0e\x32\x17.fdf.GetRolloffTypeList:\nNO_RollOff\x12\x35\n\nWindowType\x18\x0c \x01(\x0e\x32\x16.fdf.GetWindowTypeList:\tNO_Window\x12/\n\x08\x46illType\x18\r \x01(\x0e\x32\x14.fdf.GetFillTypeList:\x07NO_Fill\x12$\n\x0b\x46\x66tGridName\x18\x0e \x01(\t:\x0f\x66\x66tGridName.ers\x12(\n\x10WindowedGridName\x18\x10 \x01(\t:\x0ewindowGrid.ers\x12*\n\x10\x45xpandedGridName\x18\x11 \x01(\t:\x10\x65xpandedGrid.ers\x12\x0f\n\x04\x42\x61nd\x18\x15 \x01(\x05:\x01\x31\x12\x39\n\x0eOutputDataType\x18\x16 \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12\x18\n\rDetrendDegree\x18\x17 \x01(\x05:\x01\x31\x12\x39\n\x0b\x46\x46TDataType\x18\x18 \x01(\x0e\x32\x12.ctm.GridDataTypes:\x10IEEE4ByteComplex\x12\x19\n\x0bUseSymmetry\x18\x19 \x01(\x08:\x04true\x12+\n\x1c\x44o_RTP_before_AnalyticSignal\x18\x1a \x01(\x08:\x05\x66\x61lse\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07keating\x12\x1c\n\x0bGUIToolName\x18\x64 \x01(\t:\x07keating\"\x9e\x06\n\x17Magnetic_Variograms_MAG\x12\x12\n\nInputLines\x18\x01 \x01(\t\x12\x18\n\x0bSignalField\x18\x02 \x01(\t:\x03mag\x12\x1e\n\x0e\x45levationField\x18\x03 \x01(\t:\x06gps_ht\x12\x1e\n\x07\x44TMGrid\x18\x05 \x01(\x0b\x32\r.ctm.Grid_INT\x12/\n\nFlightType\x18\x04 \x01(\x0e\x32\x10.ctm.FlightTypes:\tLT_FLIGHT\x12\x10\n\x08xyz_file\x18\n \x01(\t\x12\x16\n\x08\x66ormatpc\x18\x0b \x01(\x08:\x04true\x12\x19\n\x0emagnetic_param\x18\x0c \x01(\x05:\x01\x31\x12\x13\n\x0bOutputLines\x18\r \x01(\t\x12\x18\n\x10\x61\x64\x64itional_param\x18\x0e \x03(\x05\x12\x1e\n\x11\x41verage_Clearance\x18\x0f \x01(\x01:\x03\x31\x30\x30\x12,\n\x04IGRF\x18\t \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12%\n\x0evariogram_file\x18\x14 \x01(\t:\rvar_file.gvar\x12\x1f\n\x03\x62ox\x18\x15 \x01(\x0b\x32\x12.ctm.BoundingBox2D\x12\x16\n\talong_win\x18\x16 \x02(\x05:\x03\x32\x30\x30\x12\x16\n\nalong_step\x18\x17 \x02(\x05:\x02\x32\x30\x12\x12\n\x07\x61zimuth\x18\x18 \x01(\x01:\x01\x30\x12\x14\n\tsubsample\x18\x19 \x01(\x05:\x01\x31\x12\x1b\n\x0f\x61long_bin_width\x18\x1a \x01(\x05:\x02\x32\x30\x12\x1b\n\x0cweight_equal\x18\x1b \x01(\x08:\x05\x66\x61lse\x12)\n\nProjection\x18\x1c \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12+\n\nReportFile\x18\x1d \x01(\t:\x17magnetic_variograms.rpt\x12\x1f\n\x10Generated_By_GUI\x18\x33 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08MagVario\x12,\n\x0bGUIToolName\x18\x64 \x01(\t:\x17magneticVariogramAppGUI\"\xc5\x04\n\x14Stack_Variograms_MAG\x12\x17\n\ncell_dim_x\x18\x01 \x01(\x01:\x03\x31\x30\x30\x12\x17\n\ncell_dim_y\x18\x02 \x01(\x01:\x03\x31\x30\x30\x12\x1f\n\x03\x62ox\x18\x03 \x01(\x0b\x32\x12.ctm.BoundingBox2D\x12\x1e\n\x13topographic_azimuth\x18\x04 \x01(\x01:\x01\x30\x12\x1a\n\x0cweight_gauss\x18\x05 \x01(\x08:\x04true\x12\x17\n\x08sigma_l1\x18\x06 \x01(\x01:\x05\x31\x30\x30\x30\x30\x12\x16\n\x08sigma_l2\x18\x07 \x01(\x01:\x04\x37\x30\x30\x30\x12\'\n\x1c\x43ut_influence_distance_sigma\x18\x08 \x01(\x01:\x01\x33\x12\x1d\n\x11weight_resolution\x18\t \x01(\x01:\x02\x31\x30\x12\x1c\n\x14input_variogram_file\x18\n \x01(\t\x12+\n\x15output_variogram_file\x18\x0b \x01(\t:\x0c\x61verage.gvar\x12\x17\n\x0brect_margin\x18\x0c \x01(\x01:\x02-1\x12%\n\x18weight_lookup_table_size\x18\r \x01(\x05:\x03\x35\x30\x30\x12(\n\nReportFile\x18\x13 \x01(\t:\x14stack_variograms.rpt\x12\x1f\n\x10Generated_By_GUI\x18\x33 \x01(\x08:\x05\x66\x61lse\x12!\n\rBatchToolName\x18\x63 \x01(\t:\nStackVario\x12,\n\x0bGUIToolName\x18\x64 \x01(\t:\x17magneticVariogramAppGUI\"D\n\x13Variogram_Files_MAG\x12\x16\n\x0evariogram_file\x18\x01 \x01(\t\x12\x15\n\nfit_factor\x18\x02 \x01(\x01:\x01\x31\"\xd7\x08\n\x1eInvert_Depth_Magnetization_MAG\x12\x1e\n\nmodel_file\x18\x01 \x01(\t:\nmodelcoeff\x12\x1d\n\x10scaling_exponent\x18\x02 \x01(\x01:\x03\x31.6\x12 \n\x11incomplete_raster\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x31\n\nvariograms\x18\x07 \x03(\x0b\x32\x1d.magnetic.Variogram_Files_MAG\x12\x1b\n\x10\x61\x64\x64itional_par_h\x18\x08 \x01(\x05:\x01\x31\x12\x1e\n\x10invert_DepthOnly\x18\t \x01(\x08:\x04true\x12%\n\x16\x46lyingHeight_from_file\x18\n \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x16\x46lyingHeight_file_name\x18\x0b \x01(\t\x12 \n\x15height_file_parameter\x18\x0c \x01(\x05:\x01\x31\x12\x1f\n\x10output_variogram\x18\r \x01(\x08:\x05\x66\x61lse\x12 \n\x08out_file\x18\x14 \x01(\t:\x0evar_invert.xyz\x12\x1e\n\x06Output\x18\x13 \x02(\t:\x0epredicted..DIR\x12)\n\nProjection\x18\x65 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x1b\n\x0c\x65rror_bounds\x18\x15 \x01(\x08:\x05\x66\x61lse\x12\x19\n\rerror_percent\x18\x16 \x01(\x01:\x02\x31\x30\x12\x19\n\x0cmininum_nges\x18\x18 \x01(\x05:\x03\x31\x30\x30\x12\x19\n\x0b\x64rop_margin\x18\x19 \x01(\x08:\x04true\x12$\n\x15single_susceptibility\x18\x1a \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07L1_norm\x18\x1b \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x11\x66\x61st_optimization\x18\x1c \x01(\x08:\x04true\x12\x16\n\x0b\x64\x65\x63lination\x18\x04 \x01(\x01:\x01\x30\x12\x17\n\x0binclination\x18\x05 \x01(\x01:\x02\x39\x30\x12\x19\n\rminimum_depth\x18\x1d \x01(\x01:\x02-1\x12\x19\n\rmaximum_depth\x18\x1e \x01(\x01:\x02-1\x12\x1e\n\x13number_end_bins_off\x18\x1f \x01(\x05:\x01\x31\x12\x1a\n\x0cwrite_header\x18  \x01(\x08:\x04true\x12\x12\n\ncell_dim_x\x18) \x01(\x01\x12\x12\n\ncell_dim_y\x18* \x01(\x01\x12\x1f\n\x03\x62ox\x18+ \x01(\x0b\x32\x12.ctm.BoundingBox2D\x12\x33\n\nReportFile\x18\x31 \x01(\t:\x1finvert_depths_magnetization.rpt\x12\x1f\n\x10Generated_By_GUI\x18\x33 \x01(\x08:\x05\x66\x61lse\x12/\n\rBatchToolName\x18\x63 \x01(\t:\x18InvertDepthMagnetization\x12-\n\x0bGUIToolName\x18\x64 \x01(\t:\x18InvertDepthMagnetization\"\x93\x06\n*Get_Fractal_Magnetization_Distribution_MAG\x12\x19\n\rNumber_Blocks\x18\x01 \x01(\x05:\x02\x36\x34\x12\x18\n\rNumber_Layers\x18\x02 \x01(\x05:\x01\x32\x12\x11\n\x05\x41lpha\x18\x03 \x01(\x01:\x02-4\x12\x11\n\x05Gamma\x18\x04 \x01(\x01:\x02-4\x12\x16\n\x05iseed\x18\x05 \x01(\x05:\x07\x31\x32\x33\x34\x35\x36\x37\x12\"\n\x15\x41verage_Magnetization\x18\x06 \x01(\x01:\x03\x31\x30\x30\x12+\n\x1d\x45xponent_Magnetization_Factor\x18\x07 \x01(\x01:\x04\x30.25\x12\x18\n\x0bXYCell_Size\x18\x0c \x01(\x01:\x03\x31\x30\x30\x12\x17\n\nZCell_Size\x18\r \x01(\x01:\x03\x31\x30\x30\x12\x1c\n\x0f\x44\x65pth_Model_Top\x18\x0e \x01(\x01:\x03\x31\x30\x30\x12\x17\n\x0cMag_Constant\x18\x0f \x01(\x01:\x01\x31\x12 \n\x11\x44o_One_Layer_Only\x18\x10 \x01(\x08:\x05\x66\x61lse\x12!\n\nOutputGrid\x18\x41 \x01(\x0b\x32\r.ctm.Grid_INT\x12+\n\x10Output_Magnetics\x18\x08 \x01(\t:\x11synthetic_mag.ers\x12\x1c\n\rWrite_3DModel\x18\x11 \x01(\x08:\x05\x66\x61lse\x12\x31\n\x0fMagnetism_Voxet\x18\x12 \x01(\t:\x18\x66ractal_magnetization.vo\x12\x1e\n\x0fWrite_3DInitial\x18\x13 \x01(\x08:\x05\x66\x61lse\x12(\n\rInitial_Voxet\x18\x14 \x01(\t:\x11initial_random.vo\x12\x13\n\x08Origin_Z\x18\x15 \x01(\x01:\x01\x30\x12\"\n\x13Write_PowerSpectrum\x18\x16 \x01(\x08:\x05\x66\x61lse\x12-\n\nReportFile\x18\x17 \x01(\t:\x19\x66ractal_magnetization.rpt\x12!\n\rBatchToolName\x18\x63 \x01(\t:\nFractalMag\x12\x1f\n\x0bGUIToolName\x18\x64 \x01(\t:\nFractalMag\"\xd9\x07\n\x16Magnetic_Transects_MAG\x12\'\n\x08gridName\x18\x01 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12\x30\n\x11\x65levationGridName\x18\x03 \x01(\x0b\x32\x15.ctm.MeasuredGrid_INT\x12\x11\n\toriginLat\x18< \x01(\x01\x12\x11\n\toriginLng\x18= \x01(\x01\x12\x12\n\x04step\x18\x1c \x01(\x01:\x04\x30.05\x12\x18\n\x10\x61ngleOfTransects\x18> \x01(\x01\x12\x1c\n\x11numberOfTransects\x18? \x01(\x05:\x01\x31\x12\x1c\n\x11lengthOfTransects\x18@ \x01(\x05:\x01\x31\x12+\n\x1cOptimize_grid_cache_creation\x18\x41 \x01(\x08:\x05\x66\x61lse\x12,\n\x0foutputVoxelName\x18\x0c \x01(\t:\x13\x43\x61lculatedDepths.vo\x12 \n\x14horizontalResolution\x18\r \x01(\x01:\x02\x31\x30\x12\x1d\n\x12verticalResolution\x18\x0e \x01(\x01:\x01\x35\x12\x1a\n\x0eRadarAltimeter\x18\x1d \x01(\x01:\x02\x38\x30\x12\x1a\n\x0cMaximumDepth\x18\x1e \x01(\x01:\x04\x31\x35\x30\x30\x12\x1a\n\x0cMinimumDepth\x18\x1f \x01(\x01:\x04-100\x12\x19\n\x0e\x44ipoleCriteria\x18  \x01(\x01:\x01\x31\x12\x1a\n\rOverlapFactor\x18! \x01(\x01:\x03\x31.5\x12$\n\x16MaximumUsefulFrequency\x18\" \x01(\x01:\x04\x36.25\x12&\n\x1aGaussian_StandardDeviation\x18/ \x01(\x05:\x02\x31\x30\x12!\n\x16Trim_Early_Frequencies\x18\x30 \x01(\x05:\x01\x31\x12\x1c\n\x11powerSpectrumBins\x18\x31 \x01(\x05:\x01\x30\x12$\n\x17nullPercentageTolerance\x18\x32 \x01(\x01:\x03\x30.1\x12\x18\n\nshowViewer\x18\x14 \x01(\x08:\x04true\x12\x1a\n\x0c\x63\x61\x63heResults\x18\x15 \x01(\x08:\x04true\x12\x15\n\routputCSVFile\x18& \x01(\t\x12\x1f\n\x10Generated_By_GUI\x18\x33 \x01(\x08:\x05\x66\x61lse\x12\x32\n\nReportFile\x18. \x01(\t:\x1ereports/Magnetic_Transects.rpt\x12)\n\rBatchToolName\x18\x63 \x01(\t:\x12magnetic_transects\x12+\n\x0bGUIToolName\x18\x64 \x01(\t:\x16MagneticTransectAppGUI\"\x85\x0c\n ForwardModelFromRandomDipole_MAG\x12\x13\n\x0binput_voxet\x18\x01 \x01(\t\x12#\n\x06\x66ields\x18\x02 \x01(\x0b\x32\x13.ctm.RepeatedString\x12\x16\n\x0e\x66ormation_name\x18\x03 \x01(\t\x12(\n\x19InputVoxetAlreadyProperty\x18\x04 \x01(\x08:\x05\x66\x61lse\x12.\n\x0fOutputVoxelName\x18\x05 \x01(\t:\x15random_dipole_sill.sg\x12+\n\x12KernelResponseName\x18\x06 \x01(\t:\x0f\x64ipole_model.vo\x12?\n\rDipole_Locale\x18\x07 \x01(\x0e\x32\x1b.magnetic.Dipole_FFT_Locale:\x0b\x64i_Centered\x12\x41\n\x14\x43oordinateSystemType\x18\x08 \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45ND\x12\x1c\n\x14\x64rape_elevation_grid\x18\t \x01(\t\x12\x38\n\x0foutput_gridname\x18\n \x01(\t:\x1frandom_dipole_surface_model.ers\x12\x17\n\x0csurvey_plane\x18\x0b \x01(\x01:\x01\x30\x12;\n\talgorithm\x18\x0c \x01(\x0e\x32\x1a.magnetic.Random_Algorithm:\x0cGeologyModel\x12\x11\n\tGrid_Size\x18\x0f \x01(\x01\x12$\n\nprojectBox\x18\x10 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x16\n\x0eSusceptibility\x18\x15 \x03(\x01\x12(\n\x1aSetReferenceSusceptibility\x18\x16 \x01(\x01:\x04\x30.01\x12\x1d\n\x15POSC_CoordinateSystem\x18\x17 \x01(\t\x12,\n\x04IGRF\x18\x18 \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12\x33\n\rMagneticField\x18\" \x01(\x0b\x32\x1c.geophy.InducedMagneticField\x12\x15\n\x04seed\x18\x19 \x01(\x05:\x07\x31\x32\x33\x34\x35\x36\x37\x12\x1c\n\x0e\x64ipole_density\x18\x14 \x01(\x01:\x04\x30.01\x12\x1a\n\x0b\x43heck_Print\x18\x1a \x01(\x08:\x05\x66\x61lse\x12,\n\x12OutputDipolePoints\x18, \x01(\t:\x10sill_random..DIR\x12\x1b\n\x0eNS_Kernel_Size\x18\x1b \x01(\x05:\x03\x32\x35\x31\x12\x1b\n\x0e\x45W_Kernel_Size\x18\x1c \x01(\x05:\x03\x32\x35\x31\x12!\n\x14VERTICAL_Kernel_Size\x18\x1d \x01(\x05:\x03\x31\x30\x31\x12\x18\n\x0cNS_Step_Size\x18\x1e \x01(\x05:\x02\x32\x30\x12\x18\n\x0c\x45W_Step_Size\x18\x1f \x01(\x05:\x02\x32\x30\x12\x1e\n\x12VERTICAL_Step_Size\x18  \x01(\x05:\x02\x31\x30\x12\'\n\x18\x66orce_ellipse_constraint\x18! \x01(\x08:\x05\x66\x61lse\x12\x1c\n\x06origin\x18# \x01(\x0b\x32\x0c.ctm.Point3d\x12\x1f\n\x13PrimaryEllipsoidYaw\x18$ \x01(\x01:\x02\x39\x30\x12 \n\x15PrimaryEllipsoidPitch\x18% \x01(\x01:\x01\x30\x12\x1f\n\x14PrimaryEllipsoidRoll\x18& \x01(\x01:\x01\x30\x12\x1a\n\rrelativeSizeX\x18) \x01(\x01:\x03\x32.5\x12\x18\n\rrelativeSizeY\x18* \x01(\x01:\x01\x36\x12\x18\n\rrelativeSizeZ\x18+ \x01(\x01:\x01\x34\x12\x16\n\x0bNumber_CPUs\x18( \x01(\x05:\x01\x31\x12\x1f\n\x10Generated_By_GUI\x18\x33 \x01(\x08:\x05\x66\x61lse\x12$\n\rBatchToolName\x18\x63 \x01(\t:\rrandom_dipole\x12\'\n\x0bGUIToolName\x18\x64 \x01(\t:\x12randomDipoleAppGUI\x12&\n\nReportFile\x18. \x01(\t:\x12random_diploes.rpt\"\xa2\t\n\x14\x45quivalent_Layer_MAG\x12=\n\x07RunType\x18\x01 \x02(\x0e\x32$.magnetic.Equivalent_Layer_Algorithm:\x06RT_RTP\x12\x14\n\x0cInputTMIGrid\x18\x02 \x01(\t\x12:\n\rDetrendOption\x18\x03 \x01(\x0e\x32\x19.magnetic.e_DetrendOption:\x08\x44\x45GREE1_\x12\x0f\n\x04\x42\x61nd\x18\x04 \x01(\x05:\x01\x31\x12\x15\n\rOutputRTPGrid\x18\x05 \x01(\t\x12\x1b\n\x13\x45quivalentLayerGrid\x18\x06 \x01(\t\x12\x18\n\x10\x44\x65trendedTMIGrid\x18\x07 \x01(\t\x12\x19\n\x11\x43\x61lculatedTMIGrid\x18\x08 \x01(\t\x12\x1f\n\x12SensorToLayerDepth\x18\t \x01(\x01:\x03\x31\x30\x30\x12\x30\n\x0cWienerFilter\x18\x0b \x01(\x0b\x32\x1a.intrepid.WienerFilter_INT\x12\x18\n\rMaxIterations\x18\x0c \x01(\x05:\x01\x30\x12 \n\x13IncrementMultiplier\x18\r \x01(\x01:\x03\x30.5\x12\x16\n\x08\x41utoIgrf\x18\x0e \x01(\x08:\x04true\x12\x18\n\nSurveyYear\x18\x0f \x01(\x01:\x04\x32\x30\x32\x30\x12\x17\n\x0cSurveyHeight\x18\x10 \x01(\x01:\x01\x30\x12,\n\x04IGRF\x18\x11 \x01(\x0b\x32\x1e.ctm.SetReferenceMagneticField\x12>\n\x13\x44\x65\x63orrugateSettings\x18\x13 \x01(\x0e\x32\x18.magnetic.e_deStreakType:\x07\x44S_NONE\x12!\n\x13MinimumStreakLength\x18\x14 \x01(\x01:\x04\x31\x30\x30\x30\x12\x18\n\x0bStreakWidth\x18\x15 \x01(\x01:\x03\x31\x30\x30\x12\x1c\n\x10\x44\x65\x63orrugateRange\x18\x16 \x01(\x01:\x02\x33\x30\x12\x17\n\tUseDering\x18\x17 \x01(\x08:\x04true\x12$\n\x15keepintermediategrids\x18\x18 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0etestcalckernel\x18\x19 \x01(\x08:\x05\x66\x61lse\x12\x18\n\x10wienersourcegrid\x18\x1a \x01(\t\x12\x12\n\nInputLines\x18\x1b \x01(\t\x12\x1a\n\rInputTMIField\x18\x1c \x01(\t:\x03mag\x12%\n\x0eOutputTmiField\x18\x1d \x01(\t:\rcorrected_mag\x12/\n\nFlightType\x18\x1e \x01(\x0e\x32\x10.ctm.FlightTypes:\tLT_FLIGHT\x12\x1e\n\x0e\x45levationField\x18\x1f \x01(\t:\x06gps_ht\x12$\n\x14GroundClearanceField\x18  \x01(\t:\x06gps_ht\x12!\n\x14OutputTMISignalField\x18! \x01(\t:\x03mag\x12\x1d\n\rBatchToolName\x18\x62 \x01(\t:\x06slayer\x12*\n\x0bGUIToolName\x18\x64 \x01(\t:\x15\x45quivalentLayerAppGUI\x12(\n\nReportFile\x18\x63 \x01(\t:\x14\x65quivalent_layer.rpt\"\xa8\x02\n\x1eHorizontal_Components2Grid_MAG\x12\x17\n\x0fInputXComponent\x18\x01 \x01(\t\x12\x17\n\x0fInputYComponent\x18\x02 \x01(\t\x12\x12\n\nOutputGrid\x18\x03 \x01(\t\x12\x39\n\x0eOutputDataType\x18\x04 \x01(\x0e\x32\x12.ctm.GridDataTypes:\rIEEE4ByteReal\x12!\n\x12VerticalDerivative\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x11\n\x06\x44\x65gree\x18\x06 \x01(\x01:\x01\x31\x12\"\n\rBatchToolName\x18\x62 \x01(\t:\x0bhzcomp2grid\x12+\n\x0bGUIToolName\x18\x64 \x01(\t:\x16horizontalComp2GridGUI\"\xf2\x01\n\x1bMagnetic_Interpretation_MAG\x12\r\n\x05Input\x18\x01 \x01(\t\x12\x0e\n\x06Output\x18\x02 \x01(\t\x12\x37\n\x06Method\x18\x03 \x01(\x0e\x32\x18.magnetic.MagMage_Option:\rCoherence_map\x12\x1b\n\x10\x43oherence_Window\x18\x05 \x01(\x05:\x01\x37\x12 \n\x10Minimum_Variance\x18\x06 \x01(\x01:\x06\x30.0001\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07magmage\x12\x1c\n\x0bGUIToolName\x18\x64 \x01(\t:\x07magmage\"\xf3\x05\n\x0cMagneticTask\x12J\n\x19\x43ompensated_Magnetization\x18\x01 \x01(\x0b\x32\'.magnetic.Compensated_Magnetization_MAG\x12\x33\n\x08MagVario\x18\x02 \x01(\x0b\x32!.magnetic.Magnetic_Variograms_MAG\x12\x32\n\nStackVario\x18\x03 \x01(\x0b\x32\x1e.magnetic.Stack_Variograms_MAG\x12J\n\x18InvertDepthMagnetization\x18\x04 \x01(\x0b\x32(.magnetic.Invert_Depth_Magnetization_MAG\x12\x64\n&Get_Fractal_Magnetization_Distribution\x18\x05 \x01(\x0b\x32\x34.magnetic.Get_Fractal_Magnetization_Distribution_MAG\x12<\n\x12Magnetic_Transects\x18\x06 \x01(\x0b\x32 .magnetic.Magnetic_Transects_MAG\x12P\n\x1c\x46orwardModelFromRandomDipole\x18\x07 \x01(\x0b\x32*.magnetic.ForwardModelFromRandomDipole_MAG\x12\x37\n\x0f\x45quivalentLayer\x18\x08 \x01(\x0b\x32\x1e.magnetic.Equivalent_Layer_MAG\x12=\n\x0bhzcomp2grid\x18\t \x01(\x0b\x32(.magnetic.Horizontal_Components2Grid_MAG\x12<\n\x11IntelligentSearch\x18\n \x01(\x0b\x32!.magnetic.KeatingCoefficients_MAG\x12\x36\n\x07magmage\x18\x0b \x01(\x0b\x32%.magnetic.Magnetic_Interpretation_MAG*L\n\x12\x43ompensation_Model\x12\x0b\n\x07\x42y_Line\x10\x00\x12\r\n\tBy_Flight\x10\x01\x12\x0b\n\x07\x42y_List\x10\x02\x12\r\n\tAll_Lines\x10\x03*J\n\x1d\x45ulerAngleDeterminationMethod\x12\x0c\n\x08\x46luxgate\x10\x00\x12\x1b\n\x17InertialMeasurementUnit\x10\x01*~\n\x1ePrimaryDirectionalOffsetMethod\x12\x15\n\x11HeadingStatistics\x10\x00\x12\x17\n\x13\x43rossOverStatistics\x10\x01\x12\x14\n\x10ProfileFiltering\x10\x02\x12\x16\n\x12\x45xternallySupplied\x10\x03*\xf3\x01\n\x13\x43ompensationRunType\x12\x13\n\x0f\x46igure_Of_Merit\x10\x00\x12#\n\x1f\x46igure_Of_Merit_with_CrossOvers\x10\x01\x12\x19\n\x15\x43heck_Figure_Of_Merit\x10\x02\x12\x10\n\x0c\x43ompensation\x10\x03\x12\x1d\n\x19Small_Signal_Compensation\x10\x04\x12\x1d\n\x19\x45xternal_Supplied_Amatrix\x10\t\x12\x1b\n\x17\x43heck_Filter_Lines_only\x10\n\x12\x1a\n\x16\x43heck_Post_Filter_only\x10\x0b*h\n\x0eKeatingRunType\x12\x12\n\x0eMagnetic_Field\x10\x00\x12\x16\n\x12VerticalDerivative\x10\x01\x12\x12\n\x0e\x41nalyticSignal\x10\x02\x12\r\n\tInvariant\x10\x03\x12\x07\n\x03\x46TG\x10\x04*-\n\x0fKeatingDataType\x12\r\n\tMagnetics\x10\x00\x12\x0b\n\x07Gravity\x10\x01*S\n\x1bNumber_Points_EstimateSlope\x12\t\n\x05three\x10\x03\x12\x08\n\x04\x66ive\x10\x05\x12\t\n\x05seven\x10\x07\x12\x08\n\x04nine\x10\t\x12\n\n\x06\x65leven\x10\x0b*1\n\x0fSourceDepthBias\x12\x08\n\x04\x64\x65\x65p\x10\x01\x12\x07\n\x03mid\x10\x02\x12\x0b\n\x07shallow\x10\x03*L\n\x11\x44ipole_FFT_Locale\x12\x0f\n\x0b\x64i_Centered\x10\x00\x12\x0e\n\ndi_Corners\x10\x01\x12\x16\n\x12\x64i_Top_Dead_Centre\x10\x02*3\n\x10Random_Algorithm\x12\r\n\tDefineBox\x10\x03\x12\x10\n\x0cGeologyModel\x10\x04*L\n\x1a\x45quivalent_Layer_Algorithm\x12\n\n\x06RT_RTP\x10\x00\x12\r\n\tRT_HEIGHT\x10\x01\x12\x13\n\x0fRT_GAMMA_INVERT\x10\x02*7\n\x0e\x65_deStreakType\x12\x0b\n\x07\x44S_AUTO\x10\x00\x12\x0b\n\x07\x44S_NONE\x10\x01\x12\x0b\n\x07\x44S_USER\x10\x02*\\\n\x0f\x65_DetrendOption\x12\x11\n\rDetrend_NONE_\x10\t\x12\x0c\n\x08\x44\x45GREE0_\x10\x00\x12\x0c\n\x08\x44\x45GREE1_\x10\x01\x12\x0c\n\x08\x44\x45GREE2_\x10\x02\x12\x0c\n\x08\x44\x45GREE3_\x10\x03*\\\n\x0eMagMage_Option\x12\x12\n\x0e\x41nomaly_Points\x10\x00\x12\x12\n\x0eMaximum_Points\x10\x01\x12\x11\n\rCoherence_map\x10\x02\x12\x0f\n\x0bMQCoherence\x10\x03'
   ,
   dependencies=[commontaskmodel__pb2.DESCRIPTOR,filter__description__pb2.DESCRIPTOR,intrepid__tasks__pb2.DESCRIPTOR,geophysical__models__pb2.DESCRIPTOR,magnetic__tensor__processing__pb2.DESCRIPTOR,])
 
@@ -59,8 +59,8 @@ _COMPENSATION_MODEL = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=11665,
-  serialized_end=11741,
+  serialized_start=11825,
+  serialized_end=11901,
 )
 _sym_db.RegisterEnumDescriptor(_COMPENSATION_MODEL)
 
@@ -78,15 +78,15 @@ _EULERANGLEDETERMINATIONMETHOD = _descriptor.EnumDescriptor(
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='InertialNavigationUnit', index=1, number=1,
+      name='InertialMeasurementUnit', index=1, number=1,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=11743,
-  serialized_end=11816,
+  serialized_start=11903,
+  serialized_end=11977,
 )
 _sym_db.RegisterEnumDescriptor(_EULERANGLEDETERMINATIONMETHOD)
 
@@ -121,8 +121,8 @@ _PRIMARYDIRECTIONALOFFSETMETHOD = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=11818,
-  serialized_end=11944,
+  serialized_start=11979,
+  serialized_end=12105,
 )
 _sym_db.RegisterEnumDescriptor(_PRIMARYDIRECTIONALOFFSETMETHOD)
 
@@ -177,8 +177,8 @@ _COMPENSATIONRUNTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=11947,
-  serialized_end=12190,
+  serialized_start=12108,
+  serialized_end=12351,
 )
 _sym_db.RegisterEnumDescriptor(_COMPENSATIONRUNTYPE)
 
@@ -218,8 +218,8 @@ _KEATINGRUNTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12192,
-  serialized_end=12296,
+  serialized_start=12353,
+  serialized_end=12457,
 )
 _sym_db.RegisterEnumDescriptor(_KEATINGRUNTYPE)
 
@@ -244,8 +244,8 @@ _KEATINGDATATYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12298,
-  serialized_end=12343,
+  serialized_start=12459,
+  serialized_end=12504,
 )
 _sym_db.RegisterEnumDescriptor(_KEATINGDATATYPE)
 
@@ -285,8 +285,8 @@ _NUMBER_POINTS_ESTIMATESLOPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12345,
-  serialized_end=12428,
+  serialized_start=12506,
+  serialized_end=12589,
 )
 _sym_db.RegisterEnumDescriptor(_NUMBER_POINTS_ESTIMATESLOPE)
 
@@ -316,8 +316,8 @@ _SOURCEDEPTHBIAS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12430,
-  serialized_end=12479,
+  serialized_start=12591,
+  serialized_end=12640,
 )
 _sym_db.RegisterEnumDescriptor(_SOURCEDEPTHBIAS)
 
@@ -347,8 +347,8 @@ _DIPOLE_FFT_LOCALE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12481,
-  serialized_end=12557,
+  serialized_start=12642,
+  serialized_end=12718,
 )
 _sym_db.RegisterEnumDescriptor(_DIPOLE_FFT_LOCALE)
 
@@ -373,8 +373,8 @@ _RANDOM_ALGORITHM = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12559,
-  serialized_end=12610,
+  serialized_start=12720,
+  serialized_end=12771,
 )
 _sym_db.RegisterEnumDescriptor(_RANDOM_ALGORITHM)
 
@@ -404,8 +404,8 @@ _EQUIVALENT_LAYER_ALGORITHM = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12612,
-  serialized_end=12688,
+  serialized_start=12773,
+  serialized_end=12849,
 )
 _sym_db.RegisterEnumDescriptor(_EQUIVALENT_LAYER_ALGORITHM)
 
@@ -435,8 +435,8 @@ _E_DESTREAKTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12690,
-  serialized_end=12745,
+  serialized_start=12851,
+  serialized_end=12906,
 )
 _sym_db.RegisterEnumDescriptor(_E_DESTREAKTYPE)
 
@@ -476,8 +476,8 @@ _E_DETRENDOPTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12747,
-  serialized_end=12839,
+  serialized_start=12908,
+  serialized_end=13000,
 )
 _sym_db.RegisterEnumDescriptor(_E_DETRENDOPTION)
 
@@ -512,8 +512,8 @@ _MAGMAGE_OPTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12841,
-  serialized_end=12933,
+  serialized_start=13002,
+  serialized_end=13094,
 )
 _sym_db.RegisterEnumDescriptor(_MAGMAGE_OPTION)
 
@@ -523,7 +523,7 @@ By_Flight = 1
 By_List = 2
 All_Lines = 3
 Fluxgate = 0
-InertialNavigationUnit = 1
+InertialMeasurementUnit = 1
 HeadingStatistics = 0
 CrossOverStatistics = 1
 ProfileFiltering = 2
@@ -716,343 +716,378 @@ _COMPENSATED_MAGNETIZATION_MAG = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='fluxgate', full_name='magnetic.Compensated_Magnetization_MAG.fluxgate', index=19,
+      name='UseTMI_Components', full_name='magnetic.Compensated_Magnetization_MAG.UseTMI_Components', index=19,
+      number=27, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=True,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='IGRF', full_name='magnetic.Compensated_Magnetization_MAG.IGRF', index=20,
+      number=26, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Bx', full_name='magnetic.Compensated_Magnetization_MAG.Bx', index=21,
+      number=23, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='By', full_name='magnetic.Compensated_Magnetization_MAG.By', index=22,
+      number=24, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Bz', full_name='magnetic.Compensated_Magnetization_MAG.Bz', index=23,
+      number=25, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='fluxgate', full_name='magnetic.Compensated_Magnetization_MAG.fluxgate', index=24,
       number=18, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA01', full_name='magnetic.Compensated_Magnetization_MAG.MatA01', index=20,
+      name='MatA01', full_name='magnetic.Compensated_Magnetization_MAG.MatA01', index=25,
       number=60, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA02', full_name='magnetic.Compensated_Magnetization_MAG.MatA02', index=21,
+      name='MatA02', full_name='magnetic.Compensated_Magnetization_MAG.MatA02', index=26,
       number=61, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA03', full_name='magnetic.Compensated_Magnetization_MAG.MatA03', index=22,
+      name='MatA03', full_name='magnetic.Compensated_Magnetization_MAG.MatA03', index=27,
       number=62, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA04', full_name='magnetic.Compensated_Magnetization_MAG.MatA04', index=23,
+      name='MatA04', full_name='magnetic.Compensated_Magnetization_MAG.MatA04', index=28,
       number=63, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA05', full_name='magnetic.Compensated_Magnetization_MAG.MatA05', index=24,
+      name='MatA05', full_name='magnetic.Compensated_Magnetization_MAG.MatA05', index=29,
       number=64, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA06', full_name='magnetic.Compensated_Magnetization_MAG.MatA06', index=25,
+      name='MatA06', full_name='magnetic.Compensated_Magnetization_MAG.MatA06', index=30,
       number=65, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA07', full_name='magnetic.Compensated_Magnetization_MAG.MatA07', index=26,
+      name='MatA07', full_name='magnetic.Compensated_Magnetization_MAG.MatA07', index=31,
       number=66, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA08', full_name='magnetic.Compensated_Magnetization_MAG.MatA08', index=27,
+      name='MatA08', full_name='magnetic.Compensated_Magnetization_MAG.MatA08', index=32,
       number=67, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA09', full_name='magnetic.Compensated_Magnetization_MAG.MatA09', index=28,
+      name='MatA09', full_name='magnetic.Compensated_Magnetization_MAG.MatA09', index=33,
       number=68, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA10', full_name='magnetic.Compensated_Magnetization_MAG.MatA10', index=29,
+      name='MatA10', full_name='magnetic.Compensated_Magnetization_MAG.MatA10', index=34,
       number=69, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA11', full_name='magnetic.Compensated_Magnetization_MAG.MatA11', index=30,
+      name='MatA11', full_name='magnetic.Compensated_Magnetization_MAG.MatA11', index=35,
       number=70, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA12', full_name='magnetic.Compensated_Magnetization_MAG.MatA12', index=31,
+      name='MatA12', full_name='magnetic.Compensated_Magnetization_MAG.MatA12', index=36,
       number=71, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA13', full_name='magnetic.Compensated_Magnetization_MAG.MatA13', index=32,
+      name='MatA13', full_name='magnetic.Compensated_Magnetization_MAG.MatA13', index=37,
       number=72, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA14', full_name='magnetic.Compensated_Magnetization_MAG.MatA14', index=33,
+      name='MatA14', full_name='magnetic.Compensated_Magnetization_MAG.MatA14', index=38,
       number=73, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA15', full_name='magnetic.Compensated_Magnetization_MAG.MatA15', index=34,
+      name='MatA15', full_name='magnetic.Compensated_Magnetization_MAG.MatA15', index=39,
       number=74, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA16', full_name='magnetic.Compensated_Magnetization_MAG.MatA16', index=35,
+      name='MatA16', full_name='magnetic.Compensated_Magnetization_MAG.MatA16', index=40,
       number=75, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA17', full_name='magnetic.Compensated_Magnetization_MAG.MatA17', index=36,
+      name='MatA17', full_name='magnetic.Compensated_Magnetization_MAG.MatA17', index=41,
       number=76, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MatA18', full_name='magnetic.Compensated_Magnetization_MAG.MatA18', index=37,
+      name='MatA18', full_name='magnetic.Compensated_Magnetization_MAG.MatA18', index=42,
       number=77, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='DCOffsetMethod', full_name='magnetic.Compensated_Magnetization_MAG.DCOffsetMethod', index=38,
+      name='DCOffsetMethod', full_name='magnetic.Compensated_Magnetization_MAG.DCOffsetMethod', index=43,
       number=80, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='EftCaps', full_name='magnetic.Compensated_Magnetization_MAG.EftCaps', index=39,
+      name='EftCaps', full_name='magnetic.Compensated_Magnetization_MAG.EftCaps', index=44,
       number=81, type=1, cpp_type=5, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='filter', full_name='magnetic.Compensated_Magnetization_MAG.filter', index=40,
+      name='filter', full_name='magnetic.Compensated_Magnetization_MAG.filter', index=45,
       number=22, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ZFilter', full_name='magnetic.Compensated_Magnetization_MAG.ZFilter', index=41,
+      name='ZFilter', full_name='magnetic.Compensated_Magnetization_MAG.ZFilter', index=46,
       number=21, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Window_Size', full_name='magnetic.Compensated_Magnetization_MAG.Window_Size', index=42,
+      name='Window_Size', full_name='magnetic.Compensated_Magnetization_MAG.Window_Size', index=47,
       number=19, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=7,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Tolerance', full_name='magnetic.Compensated_Magnetization_MAG.Tolerance', index=43,
+      name='Tolerance', full_name='magnetic.Compensated_Magnetization_MAG.Tolerance', index=48,
       number=20, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(0.1),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Filtered_Roll', full_name='magnetic.Compensated_Magnetization_MAG.Filtered_Roll', index=44,
+      name='Filtered_Roll', full_name='magnetic.Compensated_Magnetization_MAG.Filtered_Roll', index=49,
       number=42, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Filtered_Pitch', full_name='magnetic.Compensated_Magnetization_MAG.Filtered_Pitch', index=45,
+      name='Filtered_Pitch', full_name='magnetic.Compensated_Magnetization_MAG.Filtered_Pitch', index=50,
       number=43, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Filtered_Yaw', full_name='magnetic.Compensated_Magnetization_MAG.Filtered_Yaw', index=46,
+      name='Filtered_Yaw', full_name='magnetic.Compensated_Magnetization_MAG.Filtered_Yaw', index=51,
       number=44, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Filtered_Signal', full_name='magnetic.Compensated_Magnetization_MAG.Filtered_Signal', index=47,
+      name='Filtered_Signal', full_name='magnetic.Compensated_Magnetization_MAG.Filtered_Signal', index=52,
       number=45, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='DiurnalFlight', full_name='magnetic.Compensated_Magnetization_MAG.DiurnalFlight', index=48,
+      name='DiurnalFlight', full_name='magnetic.Compensated_Magnetization_MAG.DiurnalFlight', index=53,
       number=30, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='DiurnalFid', full_name='magnetic.Compensated_Magnetization_MAG.DiurnalFid', index=49,
+      name='DiurnalFid', full_name='magnetic.Compensated_Magnetization_MAG.DiurnalFid', index=54,
       number=31, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='DiurnalReading', full_name='magnetic.Compensated_Magnetization_MAG.DiurnalReading', index=50,
+      name='DiurnalReading', full_name='magnetic.Compensated_Magnetization_MAG.DiurnalReading', index=55,
       number=32, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='DiurnalJulian', full_name='magnetic.Compensated_Magnetization_MAG.DiurnalJulian', index=51,
+      name='DiurnalJulian', full_name='magnetic.Compensated_Magnetization_MAG.DiurnalJulian', index=56,
       number=33, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Diurnal_Style', full_name='magnetic.Compensated_Magnetization_MAG.Diurnal_Style', index=52,
+      name='Diurnal_Style', full_name='magnetic.Compensated_Magnetization_MAG.Diurnal_Style', index=57,
       number=56, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='doDiurnalCorrection', full_name='magnetic.Compensated_Magnetization_MAG.doDiurnalCorrection', index=53,
+      name='doDiurnalCorrection', full_name='magnetic.Compensated_Magnetization_MAG.doDiurnalCorrection', index=58,
       number=34, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Mode', full_name='magnetic.Compensated_Magnetization_MAG.Mode', index=54,
+      name='Mode', full_name='magnetic.Compensated_Magnetization_MAG.Mode', index=59,
       number=37, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Line_List', full_name='magnetic.Compensated_Magnetization_MAG.Line_List', index=55,
+      name='Line_List', full_name='magnetic.Compensated_Magnetization_MAG.Line_List', index=60,
       number=38, type=5, cpp_type=1, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='EulerAngleMethod', full_name='magnetic.Compensated_Magnetization_MAG.EulerAngleMethod', index=56,
+      name='EulerAngleMethod', full_name='magnetic.Compensated_Magnetization_MAG.EulerAngleMethod', index=61,
       number=39, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Find_Line_Xovers', full_name='magnetic.Compensated_Magnetization_MAG.Find_Line_Xovers', index=57,
+      name='Find_Line_Xovers', full_name='magnetic.Compensated_Magnetization_MAG.Find_Line_Xovers', index=62,
       number=40, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=True,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Restrict_Angular_Variations', full_name='magnetic.Compensated_Magnetization_MAG.Restrict_Angular_Variations', index=58,
+      name='Restrict_Angular_Variations', full_name='magnetic.Compensated_Magnetization_MAG.Restrict_Angular_Variations', index=63,
       number=41, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Max_Angular_Deviation', full_name='magnetic.Compensated_Magnetization_MAG.Max_Angular_Deviation', index=59,
+      name='Max_Angular_Deviation', full_name='magnetic.Compensated_Magnetization_MAG.Max_Angular_Deviation', index=64,
       number=47, type=5, cpp_type=1, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='OutputSignal', full_name='magnetic.Compensated_Magnetization_MAG.OutputSignal', index=60,
+      name='OutputSignal', full_name='magnetic.Compensated_Magnetization_MAG.OutputSignal', index=65,
       number=48, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='NumberCoefficients', full_name='magnetic.Compensated_Magnetization_MAG.NumberCoefficients', index=61,
+      name='NumberCoefficients', full_name='magnetic.Compensated_Magnetization_MAG.NumberCoefficients', index=66,
       number=35, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=16,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='coefficients', full_name='magnetic.Compensated_Magnetization_MAG.coefficients', index=62,
+      name='coefficients', full_name='magnetic.Compensated_Magnetization_MAG.coefficients', index=67,
       number=50, type=1, cpp_type=5, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ReportFile', full_name='magnetic.Compensated_Magnetization_MAG.ReportFile', index=63,
+      name='ReportFile', full_name='magnetic.Compensated_Magnetization_MAG.ReportFile', index=68,
       number=46, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"mag_compensation.rpt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='doLog', full_name='magnetic.Compensated_Magnetization_MAG.doLog', index=64,
+      name='doLog', full_name='magnetic.Compensated_Magnetization_MAG.doLog', index=69,
       number=82, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=True,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Generated_By_GUI', full_name='magnetic.Compensated_Magnetization_MAG.Generated_By_GUI', index=65,
+      name='Generated_By_GUI', full_name='magnetic.Compensated_Magnetization_MAG.Generated_By_GUI', index=70,
       number=83, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='BatchToolName', full_name='magnetic.Compensated_Magnetization_MAG.BatchToolName', index=66,
+      name='BatchToolName', full_name='magnetic.Compensated_Magnetization_MAG.BatchToolName', index=71,
       number=99, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"mag_compensation".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GUIToolName', full_name='magnetic.Compensated_Magnetization_MAG.GUIToolName', index=67,
+      name='GUIToolName', full_name='magnetic.Compensated_Magnetization_MAG.GUIToolName', index=72,
       number=100, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"magneticCompensationAppGUI".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1071,7 +1106,7 @@ _COMPENSATED_MAGNETIZATION_MAG = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=168,
-  serialized_end=1978,
+  serialized_end=2093,
 )
 
 
@@ -1340,8 +1375,8 @@ _KEATINGCOEFFICIENTS_MAG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1981,
-  serialized_end=3326,
+  serialized_start=2096,
+  serialized_end=3441,
 )
 
 
@@ -1540,8 +1575,8 @@ _MAGNETIC_VARIOGRAMS_MAG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3329,
-  serialized_end=4127,
+  serialized_start=3444,
+  serialized_end=4242,
 )
 
 
@@ -1684,8 +1719,8 @@ _STACK_VARIOGRAMS_MAG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4130,
-  serialized_end=4711,
+  serialized_start=4245,
+  serialized_end=4826,
 )
 
 
@@ -1723,8 +1758,8 @@ _VARIOGRAM_FILES_MAG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4713,
-  serialized_end=4781,
+  serialized_start=4828,
+  serialized_end=4896,
 )
 
 
@@ -1979,8 +2014,8 @@ _INVERT_DEPTH_MAGNETIZATION_MAG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4784,
-  serialized_end=5895,
+  serialized_start=4899,
+  serialized_end=6010,
 )
 
 
@@ -2165,8 +2200,8 @@ _GET_FRACTAL_MAGNETIZATION_DISTRIBUTION_MAG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5898,
-  serialized_end=6685,
+  serialized_start=6013,
+  serialized_end=6800,
 )
 
 
@@ -2235,140 +2270,147 @@ _MAGNETIC_TRANSECTS_MAG = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='outputVoxelName', full_name='magnetic.Magnetic_Transects_MAG.outputVoxelName', index=8,
+      name='Optimize_grid_cache_creation', full_name='magnetic.Magnetic_Transects_MAG.Optimize_grid_cache_creation', index=8,
+      number=65, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='outputVoxelName', full_name='magnetic.Magnetic_Transects_MAG.outputVoxelName', index=9,
       number=12, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"CalculatedDepths.vo".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='horizontalResolution', full_name='magnetic.Magnetic_Transects_MAG.horizontalResolution', index=9,
+      name='horizontalResolution', full_name='magnetic.Magnetic_Transects_MAG.horizontalResolution', index=10,
       number=13, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(10),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='verticalResolution', full_name='magnetic.Magnetic_Transects_MAG.verticalResolution', index=10,
+      name='verticalResolution', full_name='magnetic.Magnetic_Transects_MAG.verticalResolution', index=11,
       number=14, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(5),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='RadarAltimeter', full_name='magnetic.Magnetic_Transects_MAG.RadarAltimeter', index=11,
+      name='RadarAltimeter', full_name='magnetic.Magnetic_Transects_MAG.RadarAltimeter', index=12,
       number=29, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(80),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MaximumDepth', full_name='magnetic.Magnetic_Transects_MAG.MaximumDepth', index=12,
+      name='MaximumDepth', full_name='magnetic.Magnetic_Transects_MAG.MaximumDepth', index=13,
       number=30, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(1500),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MinimumDepth', full_name='magnetic.Magnetic_Transects_MAG.MinimumDepth', index=13,
+      name='MinimumDepth', full_name='magnetic.Magnetic_Transects_MAG.MinimumDepth', index=14,
       number=31, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(-100),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='DipoleCriteria', full_name='magnetic.Magnetic_Transects_MAG.DipoleCriteria', index=14,
+      name='DipoleCriteria', full_name='magnetic.Magnetic_Transects_MAG.DipoleCriteria', index=15,
       number=32, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(1),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='OverlapFactor', full_name='magnetic.Magnetic_Transects_MAG.OverlapFactor', index=15,
+      name='OverlapFactor', full_name='magnetic.Magnetic_Transects_MAG.OverlapFactor', index=16,
       number=33, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(1.5),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='MaximumUsefulFrequency', full_name='magnetic.Magnetic_Transects_MAG.MaximumUsefulFrequency', index=16,
+      name='MaximumUsefulFrequency', full_name='magnetic.Magnetic_Transects_MAG.MaximumUsefulFrequency', index=17,
       number=34, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(6.25),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Gaussian_StandardDeviation', full_name='magnetic.Magnetic_Transects_MAG.Gaussian_StandardDeviation', index=17,
+      name='Gaussian_StandardDeviation', full_name='magnetic.Magnetic_Transects_MAG.Gaussian_StandardDeviation', index=18,
       number=47, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=10,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Trim_Early_Frequencies', full_name='magnetic.Magnetic_Transects_MAG.Trim_Early_Frequencies', index=18,
+      name='Trim_Early_Frequencies', full_name='magnetic.Magnetic_Transects_MAG.Trim_Early_Frequencies', index=19,
       number=48, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='powerSpectrumBins', full_name='magnetic.Magnetic_Transects_MAG.powerSpectrumBins', index=19,
+      name='powerSpectrumBins', full_name='magnetic.Magnetic_Transects_MAG.powerSpectrumBins', index=20,
       number=49, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='nullPercentageTolerance', full_name='magnetic.Magnetic_Transects_MAG.nullPercentageTolerance', index=20,
+      name='nullPercentageTolerance', full_name='magnetic.Magnetic_Transects_MAG.nullPercentageTolerance', index=21,
       number=50, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(0.1),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='showViewer', full_name='magnetic.Magnetic_Transects_MAG.showViewer', index=21,
+      name='showViewer', full_name='magnetic.Magnetic_Transects_MAG.showViewer', index=22,
       number=20, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=True,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='cacheResults', full_name='magnetic.Magnetic_Transects_MAG.cacheResults', index=22,
+      name='cacheResults', full_name='magnetic.Magnetic_Transects_MAG.cacheResults', index=23,
       number=21, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=True,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='outputCSVFile', full_name='magnetic.Magnetic_Transects_MAG.outputCSVFile', index=23,
+      name='outputCSVFile', full_name='magnetic.Magnetic_Transects_MAG.outputCSVFile', index=24,
       number=38, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Generated_By_GUI', full_name='magnetic.Magnetic_Transects_MAG.Generated_By_GUI', index=24,
+      name='Generated_By_GUI', full_name='magnetic.Magnetic_Transects_MAG.Generated_By_GUI', index=25,
       number=51, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='ReportFile', full_name='magnetic.Magnetic_Transects_MAG.ReportFile', index=25,
+      name='ReportFile', full_name='magnetic.Magnetic_Transects_MAG.ReportFile', index=26,
       number=46, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"reports/Magnetic_Transects.rpt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='BatchToolName', full_name='magnetic.Magnetic_Transects_MAG.BatchToolName', index=26,
+      name='BatchToolName', full_name='magnetic.Magnetic_Transects_MAG.BatchToolName', index=27,
       number=99, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"magnetic_transects".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='GUIToolName', full_name='magnetic.Magnetic_Transects_MAG.GUIToolName', index=27,
+      name='GUIToolName', full_name='magnetic.Magnetic_Transects_MAG.GUIToolName', index=28,
       number=100, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"MagneticTransectAppGUI".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -2386,8 +2428,8 @@ _MAGNETIC_TRANSECTS_MAG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6688,
-  serialized_end=7628,
+  serialized_start=6803,
+  serialized_end=7788,
 )
 
 
@@ -2705,8 +2747,8 @@ _FORWARDMODELFROMRANDOMDIPOLE_MAG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7631,
-  serialized_end=9172,
+  serialized_start=7791,
+  serialized_end=9332,
 )
 
 
@@ -2968,8 +3010,8 @@ _EQUIVALENT_LAYER_MAG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9175,
-  serialized_end=10361,
+  serialized_start=9335,
+  serialized_end=10521,
 )
 
 
@@ -3049,8 +3091,8 @@ _HORIZONTAL_COMPONENTS2GRID_MAG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10364,
-  serialized_end=10660,
+  serialized_start=10524,
+  serialized_end=10820,
 )
 
 
@@ -3123,8 +3165,8 @@ _MAGNETIC_INTERPRETATION_MAG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10663,
-  serialized_end=10905,
+  serialized_start=10823,
+  serialized_end=11065,
 )
 
 
@@ -3225,12 +3267,13 @@ _MAGNETICTASK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10908,
-  serialized_end=11663,
+  serialized_start=11068,
+  serialized_end=11823,
 )
 
 _COMPENSATED_MAGNETIZATION_MAG.fields_by_name['RunType'].enum_type = _COMPENSATIONRUNTYPE
 _COMPENSATED_MAGNETIZATION_MAG.fields_by_name['Date_Style'].enum_type = commontaskmodel__pb2._DATE_STYLES
+_COMPENSATED_MAGNETIZATION_MAG.fields_by_name['IGRF'].message_type = commontaskmodel__pb2._SETREFERENCEMAGNETICFIELD
 _COMPENSATED_MAGNETIZATION_MAG.fields_by_name['DCOffsetMethod'].enum_type = _PRIMARYDIRECTIONALOFFSETMETHOD
 _COMPENSATED_MAGNETIZATION_MAG.fields_by_name['filter'].message_type = filter__description__pb2._COMPOSITEFILTER_FDF
 _COMPENSATED_MAGNETIZATION_MAG.fields_by_name['ZFilter'].enum_type = filter__description__pb2._FILTER_METHODS
