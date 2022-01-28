@@ -11,14 +11,14 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-import intrepid_tasks_pb2 as intrepid__tasks__pb2
-import intrepid_3dexplore_pb2 as intrepid__3dexplore__pb2
-import gmtaskmodel_pb2 as gmtaskmodel__pb2
-import invtaskmodel_pb2 as invtaskmodel__pb2
-import Petrel_data_interchange_pb2 as Petrel__data__interchange__pb2
-import magnetic_methods_pb2 as magnetic__methods__pb2
-import jetstream_pb2 as jetstream__pb2
-import AEMINV_pb2 as AEMINV__pb2
+import intrepid.intrepid_tasks_pb2 as intrepid__tasks__pb2
+import intrepid.intrepid_3dexplore_pb2 as intrepid__3dexplore__pb2
+import intrepid.gmtaskmodel_pb2 as gmtaskmodel__pb2
+import intrepid.invtaskmodel_pb2 as invtaskmodel__pb2
+import intrepid.Petrel_data_interchange_pb2 as Petrel__data__interchange__pb2
+import intrepid.magnetic_methods_pb2 as magnetic__methods__pb2
+import intrepid.jetstream_pb2 as jetstream__pb2
+import intrepid.AEMINV_pb2 as AEMINV__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(

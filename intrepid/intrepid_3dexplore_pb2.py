@@ -12,9 +12,9 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-import intrepid_maps_pb2 as intrepid__maps__pb2
-import display_list_pb2 as display__list__pb2
-import commontaskmodel_pb2 as commontaskmodel__pb2
+import intrepid.intrepid_maps_pb2 as intrepid__maps__pb2
+import intrepid.display_list_pb2 as display__list__pb2
+import intrepid.commontaskmodel_pb2 as commontaskmodel__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
