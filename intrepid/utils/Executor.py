@@ -8,7 +8,7 @@ import tempfile
 
 from pathlib import Path
 
-logging.basicConfig(stream=sys.stdout, level=logging.DEBUG, format='%(asctime)s(%(relativeCreated)6d)[%(threadName)s]%(message)s')
+logging.basicConfig(stream=sys.stdout, level=logging.INFO, format='%(asctime)s(%(relativeCreated)6d)[%(threadName)s]%(message)s')
 
 def execute(batch, wd=Path(os.getcwd())):
     logging.info("Executable: %s", exec)
