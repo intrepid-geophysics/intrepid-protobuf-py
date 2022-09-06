@@ -23,7 +23,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto2',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x18intrepid_3dexplore.proto\x12\x12intrepid_3dexplore\x1a\x13intrepid_maps.proto\x1a\x12\x64isplay_list.proto\x1a\x15\x63ommontaskmodel.proto\"-\n\tRange_3DE\x12\x0f\n\x07minimum\x18\x01 \x02(\x01\x12\x0f\n\x07maximum\x18\x02 \x02(\x01\",\n\x12\x43ustomLutPoint_3DE\x12\t\n\x01v\x18\x01 \x02(\x01\x12\x0b\n\x03\x63ix\x18\x02 \x02(\x05\"\xef\x03\n\rLutConfig_3DE\x12\x0c\n\x04name\x18\x01 \x02(\t\x12\x35\n\x0euserDataBounds\x18\x02 \x01(\x0b\x32\x1d.intrepid_3dexplore.Range_3DE\x12\x33\n\x0cvisualBounds\x18\x03 \x01(\x0b\x32\x1d.intrepid_3dexplore.Range_3DE\x12G\n\x08\x44\x61taClip\x18\x04 \x01(\x0e\x32(.intrepid_3dexplore.ClipRangeRequest_3DE:\x0b\x44\x61ta_Limits\x12I\n\nVisualClip\x18\x05 \x01(\x0e\x32(.intrepid_3dexplore.ClipRangeRequest_3DE:\x0b\x44\x61ta_Limits\x12\x39\n\x04type\x18\x06 \x01(\x0e\x32!.intrepid_3dexplore.LutConfigType:\x08HistoLut\x12?\n\x0f\x63ustomLutPoints\x18\x07 \x03(\x0b\x32&.intrepid_3dexplore.CustomLutPoint_3DE\x12\x16\n\x0estepLutUseData\x18\x08 \x01(\x08\x12\x1c\n\x10stepLutStepCount\x18\t \x01(\x05:\x02\x31\x30\x12\x1e\n\x0f\x61utoRefreshData\x18\n \x01(\x08:\x05\x66\x61lse\"\xb3\x02\n\x0fXAxisConfig_3DE\x12\x32\n\nxAxisStyle\x18\x01 \x01(\x0e\x32\x1e.intrepid_3dexplore.XAxisStyle\x12=\n\x10xAxisScaleOption\x18\x02 \x01(\x0e\x32#.intrepid_3dexplore.AxisScaleOption\x12\x10\n\x08logScale\x18\x03 \x01(\x08\x12\x13\n\x0bxAxisColumn\x18\x04 \x01(\t\x12\x0f\n\x07xColumn\x18\x05 \x01(\t\x12\x0f\n\x07yColumn\x18\x06 \x01(\t\x12\x0f\n\x07xOrigin\x18\x07 \x01(\x01\x12\x0f\n\x07yOrigin\x18\x08 \x01(\x01\x12\x0f\n\x07\x62\x65\x61ring\x18\t \x01(\x01\x12\r\n\x05width\x18\n \x01(\x01\x12\x10\n\x08xMinimum\x18\x0b \x01(\x01\x12\x10\n\x08xMaximum\x18\x0c \x01(\x01\"\xb1\x01\n\x0fYAxisConfig_3DE\x12\x38\n\x05range\x18\x01 \x01(\x0e\x32\x1d.intrepid_3dexplore.RangeType:\nCommonAxis\x12K\n\x10yAxisScaleOption\x18\x02 \x01(\x0e\x32#.intrepid_3dexplore.AxisScaleOption:\x0c\x43urrent_Line\x12\x17\n\x08logScale\x18\x03 \x01(\x08:\x05\x66\x61lse\"\xb3\x01\n\rRGBConfig_3DE\x12\x10\n\x08\x66ilename\x18\x0b \x01(\t\x12\x34\n\tlutConfig\x18\r \x01(\x0b\x32!.intrepid_3dexplore.LutConfig_3DE\x12\x12\n\nsignalName\x18\x0e \x01(\t\x12\x12\n\nsignalBand\x18\x0f \x01(\x05\x12\x32\n\x0bsignalQuery\x18\x10 \x01(\x0e\x32\x1d.intrepid_3dexplore.Query_3DE\"\x8b\x0c\n\x11\x44\x61tasetConfig_3DE\x12\x15\n\x07visible\x18\x01 \x01(\x08:\x04true\x12\x14\n\x07opacity\x18\x02 \x01(\x01:\x03\x31\x30\x30\x12:\n\x0clegendConfig\x18\x03 \x01(\x0b\x32$.intrepid_3dexplore.LegendConfig_3DE\x12\x38\n\x0bpointLabels\x18\x04 \x01(\x0b\x32#.intrepid_3dexplore.PointLabels_3DE\x12\x38\n\x0blineNumbers\x18\x05 \x01(\x0b\x32#.intrepid_3dexplore.LineNumbers_3DE\x12\x10\n\x08\x66ilename\x18\x0b \x01(\t\x12,\n\x07lutMode\x18\x0c \x01(\x0e\x32\x1b.intrepid_3dexplore.LutMode\x12\x34\n\tlutConfig\x18\r \x01(\x0b\x32!.intrepid_3dexplore.LutConfig_3DE\x12\x12\n\nsignalName\x18\x0e \x01(\t\x12\x12\n\nsignalBand\x18\x0f \x01(\x05\x12\x32\n\x0bsignalQuery\x18\x10 \x01(\x0e\x32\x1d.intrepid_3dexplore.Query_3DE\x12.\n\x03Red\x18\x11 \x01(\x0b\x32!.intrepid_3dexplore.RGBConfig_3DE\x12\x30\n\x05Green\x18\x12 \x01(\x0b\x32!.intrepid_3dexplore.RGBConfig_3DE\x12/\n\x04\x42lue\x18\x13 \x01(\x0b\x32!.intrepid_3dexplore.RGBConfig_3DE\x12\x1a\n\x0binterpolate\x18\x15 \x01(\x08:\x05\x66\x61lse\x12\x15\n\relevationFile\x18\x16 \x01(\t\x12\x17\n\x08useZAxis\x18\x17 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\x0e\x61utoScaleZAxis\x18- \x01(\x08:\x04true\x12\x35\n\ncolourMode\x18\x18 \x01(\x0e\x32\x15.dlist.EColourMixType:\nMap_Scalar\x12\x17\n\x0b\x64\x65\x63lination\x18\x19 \x01(\x05:\x02\x34\x35\x12\x17\n\x0binclination\x18\x1a \x01(\x05:\x02\x36\x30\x12\x17\n\nverticalEx\x18\x1b \x01(\x05:\x03\x31\x30\x30\x12\x16\n\tintensity\x18, \x01(\x05:\x03\x31\x30\x30\x12\x14\n\x0cstrokePoints\x18\x1c \x01(\x08\x12\x12\n\nstrokeSize\x18\x1d \x01(\x01\x12\x36\n\tglyphType\x18\x1e \x01(\x0e\x32\x1d.intrepid_3dexplore.GlyphType:\x04NONE\x12\x12\n\nglyphScale\x18\x1f \x01(\x01\x12J\n\x0btensorColor\x18  \x01(\x0e\x32%.intrepid_3dexplore.TensorGlyphSource:\x0e\x46ROBENIUS_NORM\x12K\n\x0btensorScale\x18! \x01(\x0e\x32%.intrepid_3dexplore.TensorGlyphSource:\x0fSECOND_BALANCED\x12K\n\x0ctensorOrient\x18\" \x01(\x0e\x32%.intrepid_3dexplore.TensorGlyphSource:\x0e\x46IRST_BALANCED\x12\'\n\x1aGlyphSuperQuadricRoundness\x18\x36 \x01(\x01:\x03\x30.5\x12\x15\n\x0bscalarScale\x18# \x01(\t:\x00\x12\x12\n\x08scalarXY\x18$ \x01(\t:\x00\x12\x12\n\x08scalarXZ\x18% \x01(\t:\x00\x12\x12\n\x08scalarYZ\x18& \x01(\t:\x00\x12\x14\n\tfirstBand\x18\x32 \x01(\x05:\x01\x30\x12\x13\n\x08lastBand\x18\x33 \x01(\x05:\x01\x30\x12\x13\n\x08\x62\x61ndStep\x18\x34 \x01(\x05:\x01\x31\x12\x0c\n\x04xcol\x18\' \x01(\t\x12\x0c\n\x04ycol\x18( \x01(\t\x12\x0c\n\x04zcol\x18) \x01(\t\x12\x10\n\x08zcolBand\x18* \x01(\x05\x12\x30\n\tzcolQuery\x18+ \x01(\x0e\x32\x1d.intrepid_3dexplore.Query_3DE\x12\x14\n\x06useGPU\x18. \x01(\x08:\x04true\x12\x14\n\x06useAGC\x18/ \x01(\x08:\x04true\"\xea\x02\n\x16\x44\x61tasetGroupConfig_3DE\x12<\n\rdatasetConfig\x18\x01 \x03(\x0b\x32%.intrepid_3dexplore.DatasetConfig_3DE\x12:\n\x0clegendConfig\x18\x02 \x01(\x0b\x32$.intrepid_3dexplore.LegendConfig_3DE\x12\x32\n\x08gridAxes\x18\x03 \x01(\x0b\x32 .intrepid_3dexplore.GridAxes_3DE\x12\x16\n\x0bZ_Axis_Base\x18\x04 \x01(\x01:\x01\x30\x12\x10\n\x05Scale\x18\x05 \x01(\x01:\x01\x31\x12\x15\n\nScale_Base\x18\x06 \x01(\x01:\x01\x31\x12\x18\n\x0cScale_Factor\x18\x07 \x01(\x01:\x02\x31\x30\x12\x11\n\x06Offset\x18\x08 \x01(\x01:\x01\x30\x12\x34\n\tlutConfig\x18\t \x01(\x0b\x32!.intrepid_3dexplore.LutConfig_3DE\"\x8a\x01\n\x0fPointLabels_3DE\x12\x13\n\x04show\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x08\x66ontSize\x18\x02 \x01(\x05:\x02\x31\x36\x12\x39\n\nforeground\x18\x03 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nForeground\x12\x11\n\x05\x66ield\x18\x04 \x01(\x05:\x02-1\"w\n\x0fLineNumbers_3DE\x12\x13\n\x04show\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x08\x66ontSize\x18\x16 \x01(\x05:\x02\x31\x36\x12\x39\n\nforeground\x18\x17 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nForeground\"\xd6\x02\n\x10LegendConfig_3DE\x12\x13\n\x04show\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x0b\x63ustomTitle\x18\x02 \x01(\t:\x00\x12\x1b\n\x0cisHorizontal\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x06length\x18\x04 \x01(\x01:\x03\x30.2\x12\x17\n\tthickness\x18\x05 \x01(\x01:\x04\x30.03\x12\x11\n\x06\x66ormat\x18\x06 \x01(\x05:\x01\x32\x12\x19\n\x0enumberOfLabels\x18\x07 \x01(\x05:\x01\x35\x12\x39\n\nforeground\x18\x08 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nForeground\x12\x19\n\rlabelFontSize\x18\t \x01(\x05:\x02\x31\x30\x12\x19\n\rtitleFontSize\x18\n \x01(\x05:\x02\x31\x32\x12\x15\n\txLocation\x18[ \x01(\x01:\x02-1\x12\x15\n\tyLocation\x18\\ \x01(\x01:\x02-1\"\xb0\x01\n\rWorldAxis_3DE\x12\x13\n\x04show\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x33\n\x06system\x18\x02 \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45NU\x12\x11\n\x04size\x18\x03 \x01(\x01:\x03\x30.2\x12\x14\n\x08\x66ontSize\x18\x07 \x01(\x05:\x02\x31\x32\x12\x15\n\txLocation\x18[ \x01(\x01:\x02-1\x12\x15\n\tyLocation\x18\\ \x01(\x01:\x02-1\"\x9e\x01\n\tTitle_3DE\x12\x12\n\x04show\x18\x01 \x01(\x08:\x04true\x12\x14\n\x08\x66ontSize\x18\x02 \x01(\x05:\x02\x31\x36\x12\x39\n\nforeground\x18\x03 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nForeground\x12\x15\n\txLocation\x18[ \x01(\x01:\x02-1\x12\x15\n\tyLocation\x18\\ \x01(\x01:\x02-1\"\x8e\x02\n\x0cScaleBar_3DE\x12\x13\n\x04show\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0elengthFraction\x18\x02 \x01(\x01:\x03\x30.2\x12\x13\n\x08interval\x18\x03 \x01(\x05:\x01\x35\x12\x13\n\x08\x66ontSize\x18\x05 \x01(\x05:\x01\x33\x12\x39\n\nforeground\x18\x06 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nForeground\x12\x39\n\nbackground\x18\x07 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nBackground\x12\x15\n\txLocation\x18[ \x01(\x01:\x02-1\x12\x15\n\tyLocation\x18\\ \x01(\x01:\x02-1\"\xd8\x02\n\x0eNorthArrow_3DE\x12\x13\n\x04show\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x08\x66ontSize\x18\x02 \x01(\x05:\x01\x33\x12\x44\n\x15\x64\x65scriptionForeground\x18\x03 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nForeground\x12\x37\n\ttrueNorth\x18\x04 \x01(\x0b\x32$.intrepid_3dexplore.GenericArrow_3DE\x12\x37\n\tgridNorth\x18\x05 \x01(\x0b\x32$.intrepid_3dexplore.GenericArrow_3DE\x12\x36\n\x08magNorth\x18\x06 \x01(\x0b\x32$.intrepid_3dexplore.GenericArrow_3DE\x12\x15\n\txLocation\x18[ \x01(\x01:\x02-1\x12\x15\n\tyLocation\x18\\ \x01(\x01:\x02-1\"\xd0\x01\n\x10GenericArrow_3DE\x12\x13\n\x04show\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0elengthFraction\x18\x02 \x01(\x01:\x02-1\x12\x12\n\x07vectorX\x18\x03 \x01(\x01:\x01\x30\x12\x12\n\x07vectorY\x18\x04 \x01(\x01:\x01\x31\x12\x12\n\x07vectorZ\x18\x05 \x01(\x01:\x01\x30\x12\x39\n\nforeground\x18\x06 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nForeground\x12\x14\n\x08\x66ontSize\x18\x07 \x01(\x05:\x02\x31\x30\"p\n\rLetterBox_3DE\x12\x13\n\x04show\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x11\n\x04xmin\x18\x02 \x01(\x01:\x03\x30.1\x12\x11\n\x04xmax\x18\x03 \x01(\x01:\x03\x30.9\x12\x11\n\x04ymin\x18\x04 \x01(\x01:\x03\x30.1\x12\x11\n\x04ymax\x18\x05 \x01(\x01:\x03\x30.9\"\xae\x01\n\x0cGridAxes_3DE\x12\x12\n\x04show\x18\x01 \x01(\x08:\x04true\x12\x11\n\x05scale\x18\x02 \x01(\x01:\x02\x34\x30\x12\x17\n\tautoscale\x18\x03 \x01(\x08:\x04true\x12#\n\x15hideOverlappingLabels\x18\x04 \x01(\x08:\x04true\x12\x39\n\nforeground\x18\x06 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nForeground\"\x96\x02\n\x0ePlotConfig_3DE\x12\x0e\n\x06\x63olumn\x18\x01 \x01(\t\x12\x0f\n\x04\x62\x61nd\x18\x02 \x01(\x05:\x01\x30\x12.\n\x06\x63olour\x18\x03 \x01(\x0e\x32\x1e.intrepid_3dexplore.Colour_3DE\x12<\n\x0fNegative_colour\x18\x04 \x01(\x0e\x32\x1e.intrepid_3dexplore.Colour_3DE:\x03RED\x12,\n\x05query\x18\x05 \x01(\x0e\x32\x1d.intrepid_3dexplore.Query_3DE\x12\r\n\x05group\x18\x06 \x01(\x05\x12\x38\n\x0byAxisConfig\x18\x07 \x01(\x0b\x32#.intrepid_3dexplore.YAxisConfig_3DE\"\x87\x01\n\x13PlotGroupConfig_3DE\x12\x38\n\x0byAxisConfig\x18\x01 \x01(\x0b\x32#.intrepid_3dexplore.YAxisConfig_3DE\x12\x36\n\nplotConfig\x18\x02 \x03(\x0b\x32\".intrepid_3dexplore.PlotConfig_3DE\"#\n\x0fOpenDataset_3DE\x12\x10\n\x08\x66ilename\x18\x01 \x01(\t\"\xa9\x04\n\x0bMapView_3DE\x12\x11\n\ttitleText\x18\x01 \x01(\t\x12\x46\n\x12\x64\x61tasetGroupConfig\x18\x02 \x03(\x0b\x32*.intrepid_3dexplore.DatasetGroupConfig_3DE\x12,\n\x05title\x18\x03 \x01(\x0b\x32\x1d.intrepid_3dexplore.Title_3DE\x12\x32\n\x08scaleBar\x18\x04 \x01(\x0b\x32 .intrepid_3dexplore.ScaleBar_3DE\x12\x36\n\nnorthArrow\x18\x05 \x01(\x0b\x32\".intrepid_3dexplore.NorthArrow_3DE\x12\x34\n\tworldAxis\x18\x06 \x01(\x0b\x32!.intrepid_3dexplore.WorldAxis_3DE\x12\x35\n\nsignalAxis\x18\x07 \x01(\x0b\x32!.intrepid_3dexplore.WorldAxis_3DE\x12>\n\x0cmemoryParams\x18\x08 \x01(\x0b\x32(.intrepid_3dexplore.MemoryParameters_3DE\x12:\n\x0clightOptions\x18\t \x01(\x0b\x32$.intrepid_3dexplore.LightOptions_3DE\x12<\n\rcameraOptions\x18\n \x01(\x0b\x32%.intrepid_3dexplore.CameraOptions_3DE\"_\n\x10LightOptions_3DE\x12\x1a\n\x0c\x66ollowCamera\x18\x01 \x01(\x08:\x04true\x12\x16\n\x0b\x64\x65\x63lination\x18\x02 \x01(\x01:\x01\x30\x12\x17\n\x0binclination\x18\x03 \x01(\x01:\x02\x39\x30\"\xdc\x01\n\x11\x43\x61meraOptions_3DE\x12!\n\x12parallelProjection\x18\x01 \x01(\x08:\x05\x66\x61lse\x12[\n\x16\x64\x65\x66\x61ultFacingDirection\x18\x02 \x01(\x0e\x32\x35.intrepid_3dexplore.MapViewDefaultCameraDirection_3DE:\x04\x41UTO\x12#\n\x17\x63ustomCameraInclination\x18\x03 \x01(\x01:\x02\x39\x30\x12\"\n\x17\x63ustomCameraDeclination\x18\x04 \x01(\x01:\x01\x30\"v\n\x14MemoryParameters_3DE\x12\x1e\n\rmaxLinePoints\x18\x01 \x01(\x05:\x07\x31\x30\x30\x30\x30\x30\x30\x12\x1e\n\rmaxVoxetCubes\x18\x02 \x01(\x05:\x07\x31\x30\x30\x30\x30\x30\x30\x12\x1e\n\x0cmaxGridCells\x18\x03 \x01(\x05:\x08\x31\x36\x30\x30\x30\x30\x30\x30\"\xd0\x01\n\x0fProfilePlot_3DE\x12\x11\n\ttitleText\x18\x01 \x01(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12\x38\n\x0bxAxisConfig\x18\x03 \x01(\x0b\x32#.intrepid_3dexplore.XAxisConfig_3DE\x12\x0e\n\x06\x63olumn\x18\x04 \x03(\t\x12@\n\x0fplotGroupConfig\x18\x05 \x03(\x0b\x32\'.intrepid_3dexplore.PlotGroupConfig_3DE\x12\x0c\n\x04line\x18\x06 \x01(\t\"\x8d\x01\n\x15PotassiumEnergyWindow\x12\x13\n\x05start\x18\x01 \x02(\x01:\x04\x31.37\x12\x11\n\x03\x65nd\x18\x02 \x02(\x01:\x04\x31.57\x12#\n\x15\x63orrect_peak_location\x18\x03 \x01(\x01:\x04\x31.47\x12\x19\n\x11raw_peak_location\x18\x04 \x01(\x01\x12\x0c\n\x04name\x18\x06 \x01(\t\"\x8b\x01\n\x13UraniumEnergyWindow\x12\x13\n\x05start\x18\x01 \x02(\x01:\x04\x31.66\x12\x11\n\x03\x65nd\x18\x02 \x02(\x01:\x04\x31.86\x12#\n\x15\x63orrect_peak_location\x18\x03 \x01(\x01:\x04\x31.76\x12\x19\n\x11raw_peak_location\x18\x04 \x01(\x01\x12\x0c\n\x04name\x18\x06 \x01(\t\"\x8b\x01\n\x13ThoriumEnergyWindow\x12\x13\n\x05start\x18\x01 \x02(\x01:\x04\x32.41\x12\x11\n\x03\x65nd\x18\x02 \x02(\x01:\x04\x32.81\x12#\n\x15\x63orrect_peak_location\x18\x03 \x01(\x01:\x04\x32.61\x12\x19\n\x11raw_peak_location\x18\x04 \x01(\x01\x12\x0c\n\x04name\x18\x06 \x01(\t\"\xbf\x01\n\x16SpectralPlotConfig_3DE\x12\x0e\n\x06\x63olumn\x18\x01 \x01(\t\x12.\n\x06\x63olour\x18\x02 \x01(\x0e\x32\x1e.intrepid_3dexplore.Colour_3DE\x12=\n\rGammaMeasures\x18\x03 \x01(\x0e\x32\x16.ctm.GammaMeasures_3DE:\x0e\x43ounts_per_bin\x12\x14\n\tFirstBand\x18\x04 \x01(\x05:\x01\x30\x12\x10\n\x08LastBand\x18\x05 \x01(\x05\"\xda\x02\n\x1bSpectralPlotGroupConfig_3DE\x12\x46\n\x12spectralPlotConfig\x18\x01 \x03(\x0b\x32*.intrepid_3dexplore.SpectralPlotConfig_3DE\x12\x1d\n\x0fShowGammaBounds\x18\x02 \x01(\x08:\x04true\x12H\n\x15PotassiumEnergyBounds\x18\x03 \x01(\x0b\x32).intrepid_3dexplore.PotassiumEnergyWindow\x12\x44\n\x13UraniumEnergyBounds\x18\x04 \x01(\x0b\x32\'.intrepid_3dexplore.UraniumEnergyWindow\x12\x44\n\x13ThoriumEnergyBounds\x18\x05 \x01(\x0b\x32\'.intrepid_3dexplore.ThoriumEnergyWindow\"\xa7\x01\n\x10SpectralPlot_3DE\x12\x11\n\ttitleText\x18\x01 \x01(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12\x0e\n\x06\x63olumn\x18\x04 \x03(\t\x12P\n\x17spectralPlotGroupConfig\x18\x05 \x03(\x0b\x32/.intrepid_3dexplore.SpectralPlotGroupConfig_3DE\x12\x0c\n\x04line\x18\x06 \x01(\t\"\x9d\x01\n\x16GammaRayPlotConfig_3DE\x12\x0e\n\x06\x63olumn\x18\x01 \x01(\t\x12\x34\n\tlutConfig\x18\x02 \x01(\x0b\x32!.intrepid_3dexplore.LutConfig_3DE\x12=\n\rGammaMeasures\x18\x03 \x01(\x0e\x32\x16.ctm.GammaMeasures_3DE:\x0e\x43ounts_per_bin\"e\n\x1bGammaRayPlotGroupConfig_3DE\x12\x46\n\x12gammaRayPlotConfig\x18\x01 \x03(\x0b\x32*.intrepid_3dexplore.GammaRayPlotConfig_3DE\"\xbc\x01\n\x10GammaRayPlot_3DE\x12\x11\n\ttitleText\x18\x01 \x01(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12\x0e\n\x06\x63olumn\x18\x03 \x03(\t\x12\x13\n\x0bxAxisColumn\x18\x04 \x01(\t\x12P\n\x17gammaRayPlotGroupConfig\x18\x05 \x03(\x0b\x32/.intrepid_3dexplore.GammaRayPlotGroupConfig_3DE\x12\x0c\n\x04line\x18\x06 \x01(\t\"]\n\x15SeismicPlotConfig_3DE\x12\x0e\n\x06\x63olumn\x18\x01 \x01(\t\x12\x34\n\tlutConfig\x18\x02 \x01(\x0b\x32!.intrepid_3dexplore.LutConfig_3DE\"b\n\x1aSeismicPlotGroupConfig_3DE\x12\x44\n\x11seismicPlotConfig\x18\x01 \x03(\x0b\x32).intrepid_3dexplore.SeismicPlotConfig_3DE\"\xb9\x01\n\x0fSeismicPlot_3DE\x12\x11\n\ttitleText\x18\x01 \x01(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12\x0e\n\x06\x63olumn\x18\x03 \x03(\t\x12\x13\n\x0bxAxisColumn\x18\x04 \x01(\t\x12N\n\x16seismicPlotGroupConfig\x18\x05 \x03(\x0b\x32..intrepid_3dexplore.SeismicPlotGroupConfig_3DE\x12\x0c\n\x04line\x18\x06 \x01(\t\"\xb8\x01\n\x17HistogramPlotConfig_3DE\x12\x0e\n\x06\x63olumn\x18\x01 \x01(\t\x12.\n\x06\x63olour\x18\x02 \x01(\x0e\x32\x1e.intrepid_3dexplore.Colour_3DE\x12/\n\x04type\x18\x03 \x01(\x0e\x32!.intrepid_3dexplore.HistogramType\x12,\n\x05query\x18\x04 \x01(\x0e\x32\x1d.intrepid_3dexplore.Query_3DE\"h\n\x1cHistogramPlotGroupConfig_3DE\x12H\n\x13histogramPlotConfig\x18\x01 \x03(\x0b\x32+.intrepid_3dexplore.HistogramPlotConfig_3DE\"\xb8\x01\n\x11HistogramPlot_3DE\x12\x11\n\ttitleText\x18\x01 \x01(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12\x0c\n\x04\x62ins\x18\x03 \x01(\x05\x12\x0e\n\x06\x63olumn\x18\x04 \x03(\t\x12R\n\x18histogramPlotGroupConfig\x18\x05 \x03(\x0b\x32\x30.intrepid_3dexplore.HistogramPlotGroupConfig_3DE\x12\x0c\n\x04line\x18\x06 \x01(\t\"/\n\rTableView_3DE\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04line\x18\x02 \x01(\t\"\xdf\x03\n\x11Intrepid3DExplore\x12\x38\n\x0bopenDataset\x18\x01 \x03(\x0b\x32#.intrepid_3dexplore.OpenDataset_3DE\x12\x30\n\x07mapView\x18\x02 \x03(\x0b\x32\x1f.intrepid_3dexplore.MapView_3DE\x12\x38\n\x0bprofilePlot\x18\x03 \x03(\x0b\x32#.intrepid_3dexplore.ProfilePlot_3DE\x12:\n\x0cgammaRayPlot\x18\x04 \x03(\x0b\x32$.intrepid_3dexplore.GammaRayPlot_3DE\x12:\n\x0cspectralPlot\x18\x05 \x03(\x0b\x32$.intrepid_3dexplore.SpectralPlot_3DE\x12<\n\rhistogramPlot\x18\x06 \x03(\x0b\x32%.intrepid_3dexplore.HistogramPlot_3DE\x12\x38\n\x0bseismicPlot\x18\x07 \x03(\x0b\x32#.intrepid_3dexplore.SeismicPlot_3DE\x12\x34\n\ttableView\x18\x08 \x03(\x0b\x32!.intrepid_3dexplore.TableView_3DE*u\n!MapViewDefaultCameraDirection_3DE\x12\x08\n\x04\x41UTO\x10\x00\x12\x08\n\x04\x44OWN\x10\x01\x12\x06\n\x02UP\x10\x02\x12\x08\n\x04\x45\x41ST\x10\x03\x12\x08\n\x04WEST\x10\x04\x12\t\n\x05NORTH\x10\x05\x12\t\n\x05SOUTH\x10\x06\x12\n\n\x06\x43USTOM\x10\x07*\x83\x01\n\nColour_3DE\x12\x08\n\x04\x42LUE\x10\x00\x12\x07\n\x03RED\x10\x01\x12\t\n\x05GREEN\x10\x02\x12\x0b\n\x07MAGENTA\x10\x03\x12\x08\n\x04\x43YAN\x10\x04\x12\n\n\x06ORANGE\x10\x05\x12\n\n\x06YELLOW\x10\x06\x12\x08\n\x04PINK\x10\x07\x12\t\n\x05\x42LACK\x10\x08\x12\t\n\x05WHITE\x10\t\x12\x08\n\x04GRAY\x10\n*\xab\x12\n\tQuery_3DE\x12\x13\n\x0f\x43OMPONENTS_NONE\x10\x00\x12\x14\n\x10SIGNAL_MAGNITUDE\x10\x01\x12\r\n\tREAL_PART\x10\x02\x12\x12\n\x0eIMAGINARY_PART\x10\x03\x12\x0f\n\x0bPHASE_ANGLE\x10\x04\x12\t\n\x05TEN_X\x10\n\x12\t\n\x05TEN_Y\x10\x0b\x12\t\n\x05TEN_Z\x10\x0c\x12\n\n\x06TEN_XY\x10\r\x12\n\n\x06TEN_YZ\x10\x0e\x12\n\n\x06TEN_ZX\x10\x0f\x12\n\n\x06TEN_UV\x10\x10\x12\x0b\n\x07TEN_DET\x10\x11\x12\x0b\n\x07TEN_MAX\x10\x12\x12\x0b\n\x07TEN_MID\x10\x13\x12\x0b\n\x07TEN_MIN\x10\x14\x12\r\n\tTEN_TRACE\x10\x15\x12\n\n\x06TEN_I1\x10\x16\x12\r\n\tTEN_RATIO\x10\x17\x12\x0e\n\nTEN_STRIKE\x10\x18\x12\x14\n\x10TEN_CUBE_ROOT_I2\x10\x19\x12\x10\n\x0cTEN_SQRT_MI1\x10\x1a\x12\x1a\n\x16TEN_HOR_GRAD_AMPLITUDE\x10\x1b\x12\x1a\n\x16TEN_HOR_GRAD_DIRECTION\x10\x1c\x12 \n\x1cTEN_CURVATURE_GRAD_AMPLITUDE\x10\x1d\x12 \n\x1cTEN_CURVATURE_GRAD_DIRECTION\x10\x1e\x12\x19\n\x15TEN_OCTAHEDRAL_NORMAL\x10\x1f\x12\x18\n\x14TEN_OCTAHEDRAL_SHEAR\x10 \x12\x10\n\x0cTEN_COMPLETE\x10!\x12\x16\n\x12TEN_FROBENIUS_NORM\x10\"\x12\x17\n\x13TEN_QUATERNION_REAL\x10#\x12\x14\n\x10TEN_QUATERNION_I\x10$\x12\x14\n\x10TEN_QUATERNION_J\x10%\x12\x14\n\x10TEN_QUATERNION_K\x10&\x12\x15\n\x11TEN_MAX_MAGNITUDE\x10\'\x12\x14\n\x10TEN_EIGEN_VOLUME\x10(\x12\r\n\tTEN_PHASE\x10)\x12\x0e\n\nTEN_MODULO\x10*\x12\x11\n\rTEN_EIGENAXIS\x10+\x12\x16\n\x12TEN_QUATERNION_RGB\x10,\x12\x0c\n\x08TEN_FREQ\x10-\x12\x10\n\x0cTEN_ZZ_XXtoZ\x10\x31\x12\x11\n\rTEN_ZZ_XXtoZZ\x10\x32\x12\x10\n\x0cTEN_ZZ_YYtoZ\x10\x33\x12\x11\n\rTEN_ZZ_YYtoZZ\x10\x34\x12\r\n\tTEN_ZtoXX\x10\x35\x12\r\n\tTEN_ZtoYY\x10\x36\x12\r\n\tTEN_ZtoZZ\x10\x37\x12\r\n\tTEN_ZtoXY\x10\x38\x12\r\n\tTEN_ZtoYZ\x10\x39\x12\r\n\tTEN_ZtoZX\x10:\x12\x0c\n\x08TEN_2TMI\x10;\x12\x0c\n\x08TEN_TILT\x10<\x12\r\n\tTEN_BRUTE\x10=\x12\x18\n\x14TEN_SCALAR_MAGNITUDE\x10>\x12\x0b\n\x07TEN_AUV\x10?\x12\x0b\n\x07TEN_ANE\x10@\x12\x0b\n\x07TEN_BUV\x10\x41\x12\x0b\n\x07TEN_BNE\x10\x42\x12\x0f\n\x0bTEN_BRUTE_B\x10\x43\x12\x1b\n\x17TEN_COMPLETE_FALCON_FFT\x10\x44\x12!\n\x1dTENSOR_FirstBalancedGradientX\x10\x46\x12!\n\x1dTENSOR_FirstBalancedGradientY\x10G\x12!\n\x1dTENSOR_FirstBalancedGradientZ\x10H\x12\"\n\x1eTENSOR_SecondBalancedGradientX\x10I\x12\"\n\x1eTENSOR_SecondBalancedGradientY\x10J\x12\"\n\x1eTENSOR_SecondBalancedGradientZ\x10K\x12\x13\n\x0f\x41NALYTIC_SIGNAL\x10\x64\x12\x18\n\x14TOTAL_HORIZONTALGRAD\x10\x65\x12\x13\n\x0f\x45\x41ST_HORIZONTAL\x10\x66\x12\x14\n\x10NORTH_HORIZONTAL\x10g\x12\x11\n\rVERTICAL_GRAD\x10h\x12\x13\n\x0f\x45NHANCED_SIGNAL\x10i\x12\x16\n\x12\x43\x41LCULATED_DIURNAL\x10j\x12\x14\n\x10TRANS_HORIZONTAL\x10k\x12\x13\n\x0fLONG_HORIZONTAL\x10l\x12\x0e\n\nTILT_ANGLE\x10m\x12\x12\n\x0e\x45\x41ST_COMPONENT\x10n\x12\x13\n\x0fNORTH_COMPONENT\x10o\x12\x16\n\x12VERTICAL_COMPONENT\x10p\x12\x0f\n\x0bVECTOR_GRID\x10q\x12\x1c\n\x18TOTAL_MAGNETIC_INTENSITY\x10r\x12\x14\n\x0fQUATERNION_REAL\x10\xc8\x01\x12\x11\n\x0cQUATERNION_I\x10\xc9\x01\x12\x11\n\x0cQUATERNION_J\x10\xca\x01\x12\x11\n\x0cQUATERNION_K\x10\xcb\x01\x12\x16\n\x11QUATERNION_NORMAL\x10\xcc\x01\x12\x14\n\x0fQUATERNION_ROLL\x10\xcd\x01\x12\x15\n\x10QUATERNION_PITCH\x10\xce\x01\x12\x13\n\x0eQUATERNION_YAW\x10\xcf\x01\x12\x0c\n\x07TEN2D_X\x10\xac\x02\x12\x0c\n\x07TEN2D_Y\x10\xad\x02\x12\r\n\x08TEN2D_XY\x10\xae\x02\x12\r\n\x08TEN2D_YX\x10\xaf\x02\x12\x0e\n\tTEN2D_MAX\x10\xb0\x02\x12\x0e\n\tTEN2D_MIN\x10\xb1\x02\x12\x10\n\x0bTEN2D_PHASE\x10\xb2\x02\x12\x0e\n\tTEN2D_DET\x10\xb3\x02\x12\x0f\n\nTEN2D_FREQ\x10\xb4\x02\x12\x0e\n\tCTEN2D_XR\x10\x90\x03\x12\x0e\n\tCTEN2D_YR\x10\x91\x03\x12\x0f\n\nCTEN2D_XYR\x10\x92\x03\x12\x0f\n\nCTEN2D_YXR\x10\x93\x03\x12\x0e\n\tCTEN2D_XI\x10\x94\x03\x12\x0e\n\tCTEN2D_YI\x10\x95\x03\x12\x0f\n\nCTEN2D_XYI\x10\x96\x03\x12\x0f\n\nCTEN2D_YXI\x10\x97\x03\x12\x0f\n\nCTEN2D_MAX\x10\x98\x03\x12\x0f\n\nCTEN2D_MIN\x10\x99\x03\x12\x11\n\x0c\x43TEN2D_PHASE\x10\x9a\x03\x12\x0f\n\nCTEN2D_DET\x10\x9b\x03\x12\x10\n\x0b\x43TEN2D_FREQ\x10\x9c\x03\x12\x12\n\rCTEN2D_RHOZXY\x10\x9d\x03\x12\x12\n\rCTEN2D_RHOZYX\x10\x9e\x03\x12\x12\n\rCTEN2D_RHOZXX\x10\x9f\x03\x12\x12\n\rCTEN2D_RHOZYY\x10\xa0\x03\x12\x14\n\x0f\x43TEN2D_PHASEZXY\x10\xa1\x03\x12\x14\n\x0f\x43TEN2D_PHASEZYX\x10\xa2\x03\x12\x14\n\x0f\x43TEN2D_PHASEZXX\x10\xa3\x03\x12\x14\n\x0f\x43TEN2D_PHASEZYY\x10\xa4\x03*\xbc\x02\n\x11TensorGlyphSource\x12\x13\n\x0fMAX_EIGEN_VALUE\x10\x02\x12\x13\n\x0fMID_EIGEN_VALUE\x10\x03\x12\x13\n\x0fMIN_EIGEN_VALUE\x10\x04\x12\x14\n\x10MAX_EIGEN_VECTOR\x10\x05\x12\x14\n\x10MID_EIGEN_VECTOR\x10\x06\x12\x14\n\x10MIN_EIGEN_VECTOR\x10\x07\x12\x12\n\x0e\x46IRST_BALANCED\x10\x08\x12\x13\n\x0fSECOND_BALANCED\x10\t\x12\x12\n\x0e\x46ROBENIUS_NORM\x10\n\x12\x18\n\x14\x43UBE_ROOT_INVARIANT2\x10\x0b\x12\x1a\n\x16SQUARE_ROOT_INVARIANT1\x10\x0c\x12\x1b\n\x17QUARTERNION_ORIENTATION\x10\r\x12\x16\n\x12\x45IGEN_VALUE_VECTOR\x10\x0e*\xa0\x02\n\tGlyphType\x12\x08\n\x04NONE\x10\x00\x12\x0b\n\x07\x41RROW3D\x10\x01\x12\x08\n\x04\x43ONE\x10\x02\x12\x08\n\x04\x43UBE\x10\x03\x12\x0c\n\x08\x43YLINDER\x10\x04\x12\x08\n\x04\x44\x41SH\x10\x05\x12\t\n\x05\x43ROSS\x10\x06\x12\x0c\n\x08TRIANGLE\x10\x07\x12\n\n\x06SQUARE\x10\x08\x12\n\n\x06\x43IRCLE\x10\t\x12\x0b\n\x07\x44IAMOND\x10\n\x12\t\n\x05\x41RROW\x10\x0b\x12\x0f\n\x0bTETRAHEDRON\x10\x0f\x12\x0e\n\nOCTOHEDRON\x10\x10\x12\x0f\n\x0bICOSAHEDRON\x10\x11\x12\x10\n\x0c\x44ODECAHEDRON\x10\x12\x12\x0c\n\x08NPOLYGON\x10\x13\x12\x08\n\x04RING\x10\x15\x12\n\n\x06SPHERE\x10\x16\x12\x10\n\x0cSUPERQUADRIC\x10\x18\x12\r\n\tELLIPSOID\x10\x19*,\n\x07LutMode\x12\r\n\tSharedLUT\x10\x00\x12\x12\n\x0eIndependentLUT\x10\x01*T\n\rLutConfigType\x12\r\n\tLinearLut\x10\x00\x12\x0c\n\x08HistoLut\x10\x01\x12\x0b\n\x07StepLut\x10\x02\x12\n\n\x06LogLut\x10\x03\x12\r\n\tCustomLut\x10\x04*\xbb\x02\n\x14\x43lipRangeRequest_3DE\x12\r\n\tData_Clip\x10\x00\x12\x0f\n\x0b\x44\x61ta_Limits\x10\x01\x12\x0e\n\n_95Percent\x10\x02\x12\x0e\n\n_97Percent\x10\x03\x12\x0e\n\n_98Percent\x10\x04\x12\x0e\n\n_99Percent\x10\x05\x12\x0f\n\x0b_995Percent\x10\x06\x12\x0f\n\x0b_999Percent\x10\x07\x12\x0f\n\x0b\x43ustom_Clip\x10\x08\x12\x16\n\x12Gradient_95Percent\x10\x0c\x12\x16\n\x12Gradient_97Percent\x10\r\x12\x16\n\x12Gradient_98Percent\x10\x0e\x12\x16\n\x12Gradient_99Percent\x10\x0f\x12\x17\n\x13Gradient_995Percent\x10\x10\x12\x17\n\x13Gradient_999Percent\x10\x11*[\n\nXAxisStyle\x12\x0e\n\nFieldValue\x10\x00\x12\x13\n\x0fXYDistanceAlong\x10\x01\x12\x0c\n\x08XYCustom\x10\x02\x12\x0c\n\x08RowValue\x10\x03\x12\x0c\n\x08\x44\x61teTime\x10\x04*J\n\tRangeType\x12\x17\n\x13LargestDynamicRange\x10\x00\x12\x14\n\x10IndependentRange\x10\x01\x12\x0e\n\nCommonAxis\x10\x02*>\n\x0f\x41xisScaleOption\x12\x10\n\x0c\x43urrent_Line\x10\x00\x12\r\n\tAll_Lines\x10\x01\x12\n\n\x06\x43ustom\x10\x02*.\n\rHistogramType\x12\r\n\tFrequency\x10\x00\x12\x0e\n\nCumulative\x10\x01'
+  serialized_pb=b'\n\x18intrepid_3dexplore.proto\x12\x12intrepid_3dexplore\x1a\x13intrepid_maps.proto\x1a\x12\x64isplay_list.proto\x1a\x15\x63ommontaskmodel.proto\"-\n\tRange_3DE\x12\x0f\n\x07minimum\x18\x01 \x02(\x01\x12\x0f\n\x07maximum\x18\x02 \x02(\x01\",\n\x12\x43ustomLutPoint_3DE\x12\t\n\x01v\x18\x01 \x02(\x01\x12\x0b\n\x03\x63ix\x18\x02 \x02(\x05\"\xef\x03\n\rLutConfig_3DE\x12\x0c\n\x04name\x18\x01 \x02(\t\x12\x35\n\x0euserDataBounds\x18\x02 \x01(\x0b\x32\x1d.intrepid_3dexplore.Range_3DE\x12\x33\n\x0cvisualBounds\x18\x03 \x01(\x0b\x32\x1d.intrepid_3dexplore.Range_3DE\x12G\n\x08\x44\x61taClip\x18\x04 \x01(\x0e\x32(.intrepid_3dexplore.ClipRangeRequest_3DE:\x0b\x44\x61ta_Limits\x12I\n\nVisualClip\x18\x05 \x01(\x0e\x32(.intrepid_3dexplore.ClipRangeRequest_3DE:\x0b\x44\x61ta_Limits\x12\x39\n\x04type\x18\x06 \x01(\x0e\x32!.intrepid_3dexplore.LutConfigType:\x08HistoLut\x12?\n\x0f\x63ustomLutPoints\x18\x07 \x03(\x0b\x32&.intrepid_3dexplore.CustomLutPoint_3DE\x12\x16\n\x0estepLutUseData\x18\x08 \x01(\x08\x12\x1c\n\x10stepLutStepCount\x18\t \x01(\x05:\x02\x31\x30\x12\x1e\n\x0f\x61utoRefreshData\x18\n \x01(\x08:\x05\x66\x61lse\"\xb3\x02\n\x0fXAxisConfig_3DE\x12\x32\n\nxAxisStyle\x18\x01 \x01(\x0e\x32\x1e.intrepid_3dexplore.XAxisStyle\x12=\n\x10xAxisScaleOption\x18\x02 \x01(\x0e\x32#.intrepid_3dexplore.AxisScaleOption\x12\x10\n\x08logScale\x18\x03 \x01(\x08\x12\x13\n\x0bxAxisColumn\x18\x04 \x01(\t\x12\x0f\n\x07xColumn\x18\x05 \x01(\t\x12\x0f\n\x07yColumn\x18\x06 \x01(\t\x12\x0f\n\x07xOrigin\x18\x07 \x01(\x01\x12\x0f\n\x07yOrigin\x18\x08 \x01(\x01\x12\x0f\n\x07\x62\x65\x61ring\x18\t \x01(\x01\x12\r\n\x05width\x18\n \x01(\x01\x12\x10\n\x08xMinimum\x18\x0b \x01(\x01\x12\x10\n\x08xMaximum\x18\x0c \x01(\x01\"\xb1\x01\n\x0fYAxisConfig_3DE\x12\x38\n\x05range\x18\x01 \x01(\x0e\x32\x1d.intrepid_3dexplore.RangeType:\nCommonAxis\x12K\n\x10yAxisScaleOption\x18\x02 \x01(\x0e\x32#.intrepid_3dexplore.AxisScaleOption:\x0c\x43urrent_Line\x12\x17\n\x08logScale\x18\x03 \x01(\x08:\x05\x66\x61lse\"\xb3\x01\n\rRGBConfig_3DE\x12\x10\n\x08\x66ilename\x18\x0b \x01(\t\x12\x34\n\tlutConfig\x18\r \x01(\x0b\x32!.intrepid_3dexplore.LutConfig_3DE\x12\x12\n\nsignalName\x18\x0e \x01(\t\x12\x12\n\nsignalBand\x18\x0f \x01(\x05\x12\x32\n\x0bsignalQuery\x18\x10 \x01(\x0e\x32\x1d.intrepid_3dexplore.Query_3DE\"\x8b\x0c\n\x11\x44\x61tasetConfig_3DE\x12\x15\n\x07visible\x18\x01 \x01(\x08:\x04true\x12\x14\n\x07opacity\x18\x02 \x01(\x01:\x03\x31\x30\x30\x12:\n\x0clegendConfig\x18\x03 \x01(\x0b\x32$.intrepid_3dexplore.LegendConfig_3DE\x12\x38\n\x0bpointLabels\x18\x04 \x01(\x0b\x32#.intrepid_3dexplore.PointLabels_3DE\x12\x38\n\x0blineNumbers\x18\x05 \x01(\x0b\x32#.intrepid_3dexplore.LineNumbers_3DE\x12\x10\n\x08\x66ilename\x18\x0b \x01(\t\x12,\n\x07lutMode\x18\x0c \x01(\x0e\x32\x1b.intrepid_3dexplore.LutMode\x12\x34\n\tlutConfig\x18\r \x01(\x0b\x32!.intrepid_3dexplore.LutConfig_3DE\x12\x12\n\nsignalName\x18\x0e \x01(\t\x12\x12\n\nsignalBand\x18\x0f \x01(\x05\x12\x32\n\x0bsignalQuery\x18\x10 \x01(\x0e\x32\x1d.intrepid_3dexplore.Query_3DE\x12.\n\x03Red\x18\x11 \x01(\x0b\x32!.intrepid_3dexplore.RGBConfig_3DE\x12\x30\n\x05Green\x18\x12 \x01(\x0b\x32!.intrepid_3dexplore.RGBConfig_3DE\x12/\n\x04\x42lue\x18\x13 \x01(\x0b\x32!.intrepid_3dexplore.RGBConfig_3DE\x12\x1a\n\x0binterpolate\x18\x15 \x01(\x08:\x05\x66\x61lse\x12\x15\n\relevationFile\x18\x16 \x01(\t\x12\x17\n\x08useZAxis\x18\x17 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\x0e\x61utoScaleZAxis\x18- \x01(\x08:\x04true\x12\x35\n\ncolourMode\x18\x18 \x01(\x0e\x32\x15.dlist.EColourMixType:\nMap_Scalar\x12\x17\n\x0b\x64\x65\x63lination\x18\x19 \x01(\x05:\x02\x34\x35\x12\x17\n\x0binclination\x18\x1a \x01(\x05:\x02\x36\x30\x12\x17\n\nverticalEx\x18\x1b \x01(\x05:\x03\x31\x30\x30\x12\x16\n\tintensity\x18, \x01(\x05:\x03\x31\x30\x30\x12\x14\n\x0cstrokePoints\x18\x1c \x01(\x08\x12\x12\n\nstrokeSize\x18\x1d \x01(\x01\x12\x36\n\tglyphType\x18\x1e \x01(\x0e\x32\x1d.intrepid_3dexplore.GlyphType:\x04NONE\x12\x12\n\nglyphScale\x18\x1f \x01(\x01\x12J\n\x0btensorColor\x18  \x01(\x0e\x32%.intrepid_3dexplore.TensorGlyphSource:\x0e\x46ROBENIUS_NORM\x12K\n\x0btensorScale\x18! \x01(\x0e\x32%.intrepid_3dexplore.TensorGlyphSource:\x0fSECOND_BALANCED\x12K\n\x0ctensorOrient\x18\" \x01(\x0e\x32%.intrepid_3dexplore.TensorGlyphSource:\x0e\x46IRST_BALANCED\x12\'\n\x1aGlyphSuperQuadricRoundness\x18\x36 \x01(\x01:\x03\x30.5\x12\x15\n\x0bscalarScale\x18# \x01(\t:\x00\x12\x12\n\x08scalarXY\x18$ \x01(\t:\x00\x12\x12\n\x08scalarXZ\x18% \x01(\t:\x00\x12\x12\n\x08scalarYZ\x18& \x01(\t:\x00\x12\x14\n\tfirstBand\x18\x32 \x01(\x05:\x01\x30\x12\x13\n\x08lastBand\x18\x33 \x01(\x05:\x01\x30\x12\x13\n\x08\x62\x61ndStep\x18\x34 \x01(\x05:\x01\x31\x12\x0c\n\x04xcol\x18\' \x01(\t\x12\x0c\n\x04ycol\x18( \x01(\t\x12\x0c\n\x04zcol\x18) \x01(\t\x12\x10\n\x08zcolBand\x18* \x01(\x05\x12\x30\n\tzcolQuery\x18+ \x01(\x0e\x32\x1d.intrepid_3dexplore.Query_3DE\x12\x14\n\x06useGPU\x18. \x01(\x08:\x04true\x12\x14\n\x06useAGC\x18/ \x01(\x08:\x04true\"\xea\x02\n\x16\x44\x61tasetGroupConfig_3DE\x12<\n\rdatasetConfig\x18\x01 \x03(\x0b\x32%.intrepid_3dexplore.DatasetConfig_3DE\x12:\n\x0clegendConfig\x18\x02 \x01(\x0b\x32$.intrepid_3dexplore.LegendConfig_3DE\x12\x32\n\x08gridAxes\x18\x03 \x01(\x0b\x32 .intrepid_3dexplore.GridAxes_3DE\x12\x16\n\x0bZ_Axis_Base\x18\x04 \x01(\x01:\x01\x30\x12\x10\n\x05Scale\x18\x05 \x01(\x01:\x01\x31\x12\x15\n\nScale_Base\x18\x06 \x01(\x01:\x01\x31\x12\x18\n\x0cScale_Factor\x18\x07 \x01(\x01:\x02\x31\x30\x12\x11\n\x06Offset\x18\x08 \x01(\x01:\x01\x30\x12\x34\n\tlutConfig\x18\t \x01(\x0b\x32!.intrepid_3dexplore.LutConfig_3DE\"\x8a\x01\n\x0fPointLabels_3DE\x12\x13\n\x04show\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x08\x66ontSize\x18\x02 \x01(\x05:\x02\x31\x36\x12\x39\n\nforeground\x18\x03 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nForeground\x12\x11\n\x05\x66ield\x18\x04 \x01(\x05:\x02-1\"w\n\x0fLineNumbers_3DE\x12\x13\n\x04show\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x08\x66ontSize\x18\x16 \x01(\x05:\x02\x31\x36\x12\x39\n\nforeground\x18\x17 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nForeground\"\xd6\x02\n\x10LegendConfig_3DE\x12\x13\n\x04show\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x0b\x63ustomTitle\x18\x02 \x01(\t:\x00\x12\x1b\n\x0cisHorizontal\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x06length\x18\x04 \x01(\x01:\x03\x30.2\x12\x17\n\tthickness\x18\x05 \x01(\x01:\x04\x30.03\x12\x11\n\x06\x66ormat\x18\x06 \x01(\x05:\x01\x32\x12\x19\n\x0enumberOfLabels\x18\x07 \x01(\x05:\x01\x35\x12\x39\n\nforeground\x18\x08 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nForeground\x12\x19\n\rlabelFontSize\x18\t \x01(\x05:\x02\x31\x30\x12\x19\n\rtitleFontSize\x18\n \x01(\x05:\x02\x31\x32\x12\x15\n\txLocation\x18[ \x01(\x01:\x02-1\x12\x15\n\tyLocation\x18\\ \x01(\x01:\x02-1\"\xb0\x01\n\rWorldAxis_3DE\x12\x13\n\x04show\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x33\n\x06system\x18\x02 \x01(\x0e\x32\x1e.ctm.CoordinateReferenceSystem:\x03\x45NU\x12\x11\n\x04size\x18\x03 \x01(\x01:\x03\x30.2\x12\x14\n\x08\x66ontSize\x18\x07 \x01(\x05:\x02\x31\x32\x12\x15\n\txLocation\x18[ \x01(\x01:\x02-1\x12\x15\n\tyLocation\x18\\ \x01(\x01:\x02-1\"\x9e\x01\n\tTitle_3DE\x12\x12\n\x04show\x18\x01 \x01(\x08:\x04true\x12\x14\n\x08\x66ontSize\x18\x02 \x01(\x05:\x02\x31\x36\x12\x39\n\nforeground\x18\x03 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nForeground\x12\x15\n\txLocation\x18[ \x01(\x01:\x02-1\x12\x15\n\tyLocation\x18\\ \x01(\x01:\x02-1\"\x8e\x02\n\x0cScaleBar_3DE\x12\x13\n\x04show\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0elengthFraction\x18\x02 \x01(\x01:\x03\x30.2\x12\x13\n\x08interval\x18\x03 \x01(\x05:\x01\x35\x12\x13\n\x08\x66ontSize\x18\x05 \x01(\x05:\x01\x33\x12\x39\n\nforeground\x18\x06 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nForeground\x12\x39\n\nbackground\x18\x07 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nBackground\x12\x15\n\txLocation\x18[ \x01(\x01:\x02-1\x12\x15\n\tyLocation\x18\\ \x01(\x01:\x02-1\"\xd8\x02\n\x0eNorthArrow_3DE\x12\x13\n\x04show\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x08\x66ontSize\x18\x02 \x01(\x05:\x01\x33\x12\x44\n\x15\x64\x65scriptionForeground\x18\x03 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nForeground\x12\x37\n\ttrueNorth\x18\x04 \x01(\x0b\x32$.intrepid_3dexplore.GenericArrow_3DE\x12\x37\n\tgridNorth\x18\x05 \x01(\x0b\x32$.intrepid_3dexplore.GenericArrow_3DE\x12\x36\n\x08magNorth\x18\x06 \x01(\x0b\x32$.intrepid_3dexplore.GenericArrow_3DE\x12\x15\n\txLocation\x18[ \x01(\x01:\x02-1\x12\x15\n\tyLocation\x18\\ \x01(\x01:\x02-1\"\xd0\x01\n\x10GenericArrow_3DE\x12\x13\n\x04show\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0elengthFraction\x18\x02 \x01(\x01:\x02-1\x12\x12\n\x07vectorX\x18\x03 \x01(\x01:\x01\x30\x12\x12\n\x07vectorY\x18\x04 \x01(\x01:\x01\x31\x12\x12\n\x07vectorZ\x18\x05 \x01(\x01:\x01\x30\x12\x39\n\nforeground\x18\x06 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nForeground\x12\x14\n\x08\x66ontSize\x18\x07 \x01(\x05:\x02\x31\x30\"p\n\rLetterBox_3DE\x12\x13\n\x04show\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x11\n\x04xmin\x18\x02 \x01(\x01:\x03\x30.1\x12\x11\n\x04xmax\x18\x03 \x01(\x01:\x03\x30.9\x12\x11\n\x04ymin\x18\x04 \x01(\x01:\x03\x30.1\x12\x11\n\x04ymax\x18\x05 \x01(\x01:\x03\x30.9\"\xae\x01\n\x0cGridAxes_3DE\x12\x12\n\x04show\x18\x01 \x01(\x08:\x04true\x12\x11\n\x05scale\x18\x02 \x01(\x01:\x02\x34\x30\x12\x17\n\tautoscale\x18\x03 \x01(\x08:\x04true\x12#\n\x15hideOverlappingLabels\x18\x04 \x01(\x08:\x04true\x12\x39\n\nforeground\x18\x06 \x01(\x0e\x32\x19.intrepid_maps.Colour_MAP:\nForeground\"\x96\x02\n\x0ePlotConfig_3DE\x12\x0e\n\x06\x63olumn\x18\x01 \x01(\t\x12\x0f\n\x04\x62\x61nd\x18\x02 \x01(\x05:\x01\x30\x12.\n\x06\x63olour\x18\x03 \x01(\x0e\x32\x1e.intrepid_3dexplore.Colour_3DE\x12<\n\x0fNegative_colour\x18\x04 \x01(\x0e\x32\x1e.intrepid_3dexplore.Colour_3DE:\x03RED\x12,\n\x05query\x18\x05 \x01(\x0e\x32\x1d.intrepid_3dexplore.Query_3DE\x12\r\n\x05group\x18\x06 \x01(\x05\x12\x38\n\x0byAxisConfig\x18\x07 \x01(\x0b\x32#.intrepid_3dexplore.YAxisConfig_3DE\"\x87\x01\n\x13PlotGroupConfig_3DE\x12\x38\n\x0byAxisConfig\x18\x01 \x01(\x0b\x32#.intrepid_3dexplore.YAxisConfig_3DE\x12\x36\n\nplotConfig\x18\x02 \x03(\x0b\x32\".intrepid_3dexplore.PlotConfig_3DE\"#\n\x0fOpenDataset_3DE\x12\x10\n\x08\x66ilename\x18\x01 \x01(\t\"\xa9\x04\n\x0bMapView_3DE\x12\x11\n\ttitleText\x18\x01 \x01(\t\x12\x46\n\x12\x64\x61tasetGroupConfig\x18\x02 \x03(\x0b\x32*.intrepid_3dexplore.DatasetGroupConfig_3DE\x12,\n\x05title\x18\x03 \x01(\x0b\x32\x1d.intrepid_3dexplore.Title_3DE\x12\x32\n\x08scaleBar\x18\x04 \x01(\x0b\x32 .intrepid_3dexplore.ScaleBar_3DE\x12\x36\n\nnorthArrow\x18\x05 \x01(\x0b\x32\".intrepid_3dexplore.NorthArrow_3DE\x12\x34\n\tworldAxis\x18\x06 \x01(\x0b\x32!.intrepid_3dexplore.WorldAxis_3DE\x12\x35\n\nsignalAxis\x18\x07 \x01(\x0b\x32!.intrepid_3dexplore.WorldAxis_3DE\x12>\n\x0cmemoryParams\x18\x08 \x01(\x0b\x32(.intrepid_3dexplore.MemoryParameters_3DE\x12:\n\x0clightOptions\x18\t \x01(\x0b\x32$.intrepid_3dexplore.LightOptions_3DE\x12<\n\rcameraOptions\x18\n \x01(\x0b\x32%.intrepid_3dexplore.CameraOptions_3DE\"_\n\x10LightOptions_3DE\x12\x1a\n\x0c\x66ollowCamera\x18\x01 \x01(\x08:\x04true\x12\x16\n\x0b\x64\x65\x63lination\x18\x02 \x01(\x01:\x01\x30\x12\x17\n\x0binclination\x18\x03 \x01(\x01:\x02\x39\x30\"\xdc\x01\n\x11\x43\x61meraOptions_3DE\x12!\n\x12parallelProjection\x18\x01 \x01(\x08:\x05\x66\x61lse\x12[\n\x16\x64\x65\x66\x61ultFacingDirection\x18\x02 \x01(\x0e\x32\x35.intrepid_3dexplore.MapViewDefaultCameraDirection_3DE:\x04\x41UTO\x12#\n\x17\x63ustomCameraInclination\x18\x03 \x01(\x01:\x02\x39\x30\x12\"\n\x17\x63ustomCameraDeclination\x18\x04 \x01(\x01:\x01\x30\"v\n\x14MemoryParameters_3DE\x12\x1e\n\rmaxLinePoints\x18\x01 \x01(\x05:\x07\x31\x30\x30\x30\x30\x30\x30\x12\x1e\n\rmaxVoxetCubes\x18\x02 \x01(\x05:\x07\x31\x30\x30\x30\x30\x30\x30\x12\x1e\n\x0cmaxGridCells\x18\x03 \x01(\x05:\x08\x31\x36\x30\x30\x30\x30\x30\x30\"\xd0\x01\n\x0fProfilePlot_3DE\x12\x11\n\ttitleText\x18\x01 \x01(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12\x38\n\x0bxAxisConfig\x18\x03 \x01(\x0b\x32#.intrepid_3dexplore.XAxisConfig_3DE\x12\x0e\n\x06\x63olumn\x18\x04 \x03(\t\x12@\n\x0fplotGroupConfig\x18\x05 \x03(\x0b\x32\'.intrepid_3dexplore.PlotGroupConfig_3DE\x12\x0c\n\x04line\x18\x06 \x01(\t\"\x8d\x01\n\x15PotassiumEnergyWindow\x12\x13\n\x05start\x18\x01 \x02(\x01:\x04\x31.37\x12\x11\n\x03\x65nd\x18\x02 \x02(\x01:\x04\x31.57\x12#\n\x15\x63orrect_peak_location\x18\x03 \x01(\x01:\x04\x31.47\x12\x19\n\x11raw_peak_location\x18\x04 \x01(\x01\x12\x0c\n\x04name\x18\x06 \x01(\t\"\x8b\x01\n\x13UraniumEnergyWindow\x12\x13\n\x05start\x18\x01 \x02(\x01:\x04\x31.66\x12\x11\n\x03\x65nd\x18\x02 \x02(\x01:\x04\x31.86\x12#\n\x15\x63orrect_peak_location\x18\x03 \x01(\x01:\x04\x31.76\x12\x19\n\x11raw_peak_location\x18\x04 \x01(\x01\x12\x0c\n\x04name\x18\x06 \x01(\t\"\x8b\x01\n\x13ThoriumEnergyWindow\x12\x13\n\x05start\x18\x01 \x02(\x01:\x04\x32.41\x12\x11\n\x03\x65nd\x18\x02 \x02(\x01:\x04\x32.81\x12#\n\x15\x63orrect_peak_location\x18\x03 \x01(\x01:\x04\x32.61\x12\x19\n\x11raw_peak_location\x18\x04 \x01(\x01\x12\x0c\n\x04name\x18\x06 \x01(\t\"\xbf\x01\n\x16SpectralPlotConfig_3DE\x12\x0e\n\x06\x63olumn\x18\x01 \x01(\t\x12.\n\x06\x63olour\x18\x02 \x01(\x0e\x32\x1e.intrepid_3dexplore.Colour_3DE\x12=\n\rGammaMeasures\x18\x03 \x01(\x0e\x32\x16.ctm.GammaMeasures_3DE:\x0e\x43ounts_per_bin\x12\x14\n\tFirstBand\x18\x04 \x01(\x05:\x01\x30\x12\x10\n\x08LastBand\x18\x05 \x01(\x05\"\xda\x02\n\x1bSpectralPlotGroupConfig_3DE\x12\x46\n\x12spectralPlotConfig\x18\x01 \x03(\x0b\x32*.intrepid_3dexplore.SpectralPlotConfig_3DE\x12\x1d\n\x0fShowGammaBounds\x18\x02 \x01(\x08:\x04true\x12H\n\x15PotassiumEnergyBounds\x18\x03 \x01(\x0b\x32).intrepid_3dexplore.PotassiumEnergyWindow\x12\x44\n\x13UraniumEnergyBounds\x18\x04 \x01(\x0b\x32\'.intrepid_3dexplore.UraniumEnergyWindow\x12\x44\n\x13ThoriumEnergyBounds\x18\x05 \x01(\x0b\x32\'.intrepid_3dexplore.ThoriumEnergyWindow\"\xa7\x01\n\x10SpectralPlot_3DE\x12\x11\n\ttitleText\x18\x01 \x01(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12\x0e\n\x06\x63olumn\x18\x04 \x03(\t\x12P\n\x17spectralPlotGroupConfig\x18\x05 \x03(\x0b\x32/.intrepid_3dexplore.SpectralPlotGroupConfig_3DE\x12\x0c\n\x04line\x18\x06 \x01(\t\"\x9d\x01\n\x16GammaRayPlotConfig_3DE\x12\x0e\n\x06\x63olumn\x18\x01 \x01(\t\x12\x34\n\tlutConfig\x18\x02 \x01(\x0b\x32!.intrepid_3dexplore.LutConfig_3DE\x12=\n\rGammaMeasures\x18\x03 \x01(\x0e\x32\x16.ctm.GammaMeasures_3DE:\x0e\x43ounts_per_bin\"e\n\x1bGammaRayPlotGroupConfig_3DE\x12\x46\n\x12gammaRayPlotConfig\x18\x01 \x03(\x0b\x32*.intrepid_3dexplore.GammaRayPlotConfig_3DE\"\xbc\x01\n\x10GammaRayPlot_3DE\x12\x11\n\ttitleText\x18\x01 \x01(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12\x0e\n\x06\x63olumn\x18\x03 \x03(\t\x12\x13\n\x0bxAxisColumn\x18\x04 \x01(\t\x12P\n\x17gammaRayPlotGroupConfig\x18\x05 \x03(\x0b\x32/.intrepid_3dexplore.GammaRayPlotGroupConfig_3DE\x12\x0c\n\x04line\x18\x06 \x01(\t\"]\n\x15SeismicPlotConfig_3DE\x12\x0e\n\x06\x63olumn\x18\x01 \x01(\t\x12\x34\n\tlutConfig\x18\x02 \x01(\x0b\x32!.intrepid_3dexplore.LutConfig_3DE\"b\n\x1aSeismicPlotGroupConfig_3DE\x12\x44\n\x11seismicPlotConfig\x18\x01 \x03(\x0b\x32).intrepid_3dexplore.SeismicPlotConfig_3DE\"\xb9\x01\n\x0fSeismicPlot_3DE\x12\x11\n\ttitleText\x18\x01 \x01(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12\x0e\n\x06\x63olumn\x18\x03 \x03(\t\x12\x13\n\x0bxAxisColumn\x18\x04 \x01(\t\x12N\n\x16seismicPlotGroupConfig\x18\x05 \x03(\x0b\x32..intrepid_3dexplore.SeismicPlotGroupConfig_3DE\x12\x0c\n\x04line\x18\x06 \x01(\t\"\xb8\x01\n\x17HistogramPlotConfig_3DE\x12\x0e\n\x06\x63olumn\x18\x01 \x01(\t\x12.\n\x06\x63olour\x18\x02 \x01(\x0e\x32\x1e.intrepid_3dexplore.Colour_3DE\x12/\n\x04type\x18\x03 \x01(\x0e\x32!.intrepid_3dexplore.HistogramType\x12,\n\x05query\x18\x04 \x01(\x0e\x32\x1d.intrepid_3dexplore.Query_3DE\"h\n\x1cHistogramPlotGroupConfig_3DE\x12H\n\x13histogramPlotConfig\x18\x01 \x03(\x0b\x32+.intrepid_3dexplore.HistogramPlotConfig_3DE\"\xb8\x01\n\x11HistogramPlot_3DE\x12\x11\n\ttitleText\x18\x01 \x01(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12\x0c\n\x04\x62ins\x18\x03 \x01(\x05\x12\x0e\n\x06\x63olumn\x18\x04 \x03(\t\x12R\n\x18histogramPlotGroupConfig\x18\x05 \x03(\x0b\x32\x30.intrepid_3dexplore.HistogramPlotGroupConfig_3DE\x12\x0c\n\x04line\x18\x06 \x01(\t\"/\n\rTableView_3DE\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x0c\n\x04line\x18\x02 \x01(\t\"\xdf\x03\n\x11Intrepid3DExplore\x12\x38\n\x0bopenDataset\x18\x01 \x03(\x0b\x32#.intrepid_3dexplore.OpenDataset_3DE\x12\x30\n\x07mapView\x18\x02 \x03(\x0b\x32\x1f.intrepid_3dexplore.MapView_3DE\x12\x38\n\x0bprofilePlot\x18\x03 \x03(\x0b\x32#.intrepid_3dexplore.ProfilePlot_3DE\x12:\n\x0cgammaRayPlot\x18\x04 \x03(\x0b\x32$.intrepid_3dexplore.GammaRayPlot_3DE\x12:\n\x0cspectralPlot\x18\x05 \x03(\x0b\x32$.intrepid_3dexplore.SpectralPlot_3DE\x12<\n\rhistogramPlot\x18\x06 \x03(\x0b\x32%.intrepid_3dexplore.HistogramPlot_3DE\x12\x38\n\x0bseismicPlot\x18\x07 \x03(\x0b\x32#.intrepid_3dexplore.SeismicPlot_3DE\x12\x34\n\ttableView\x18\x08 \x03(\x0b\x32!.intrepid_3dexplore.TableView_3DE*u\n!MapViewDefaultCameraDirection_3DE\x12\x08\n\x04\x41UTO\x10\x00\x12\x08\n\x04\x44OWN\x10\x01\x12\x06\n\x02UP\x10\x02\x12\x08\n\x04\x45\x41ST\x10\x03\x12\x08\n\x04WEST\x10\x04\x12\t\n\x05NORTH\x10\x05\x12\t\n\x05SOUTH\x10\x06\x12\n\n\x06\x43USTOM\x10\x07*\x83\x01\n\nColour_3DE\x12\x08\n\x04\x42LUE\x10\x00\x12\x07\n\x03RED\x10\x01\x12\t\n\x05GREEN\x10\x02\x12\x0b\n\x07MAGENTA\x10\x03\x12\x08\n\x04\x43YAN\x10\x04\x12\n\n\x06ORANGE\x10\x05\x12\n\n\x06YELLOW\x10\x06\x12\x08\n\x04PINK\x10\x07\x12\t\n\x05\x42LACK\x10\x08\x12\t\n\x05WHITE\x10\t\x12\x08\n\x04GRAY\x10\n*\xcf\x12\n\tQuery_3DE\x12\x13\n\x0f\x43OMPONENTS_NONE\x10\x00\x12\x14\n\x10SIGNAL_MAGNITUDE\x10\x01\x12\r\n\tREAL_PART\x10\x02\x12\x12\n\x0eIMAGINARY_PART\x10\x03\x12\x0f\n\x0bPHASE_ANGLE\x10\x04\x12\t\n\x05TEN_X\x10\n\x12\t\n\x05TEN_Y\x10\x0b\x12\t\n\x05TEN_Z\x10\x0c\x12\n\n\x06TEN_XY\x10\r\x12\n\n\x06TEN_YZ\x10\x0e\x12\n\n\x06TEN_ZX\x10\x0f\x12\n\n\x06TEN_UV\x10\x10\x12\x0b\n\x07TEN_DET\x10\x11\x12\x0b\n\x07TEN_MAX\x10\x12\x12\x0b\n\x07TEN_MID\x10\x13\x12\x0b\n\x07TEN_MIN\x10\x14\x12\r\n\tTEN_TRACE\x10\x15\x12\n\n\x06TEN_I1\x10\x16\x12\r\n\tTEN_RATIO\x10\x17\x12\x0e\n\nTEN_STRIKE\x10\x18\x12\x14\n\x10TEN_CUBE_ROOT_I2\x10\x19\x12\x10\n\x0cTEN_SQRT_MI1\x10\x1a\x12\x1a\n\x16TEN_HOR_GRAD_AMPLITUDE\x10\x1b\x12\x1a\n\x16TEN_HOR_GRAD_DIRECTION\x10\x1c\x12 \n\x1cTEN_CURVATURE_GRAD_AMPLITUDE\x10\x1d\x12 \n\x1cTEN_CURVATURE_GRAD_DIRECTION\x10\x1e\x12\x19\n\x15TEN_OCTAHEDRAL_NORMAL\x10\x1f\x12\x18\n\x14TEN_OCTAHEDRAL_SHEAR\x10 \x12\x10\n\x0cTEN_COMPLETE\x10!\x12\x16\n\x12TEN_FROBENIUS_NORM\x10\"\x12\x17\n\x13TEN_QUATERNION_REAL\x10#\x12\x14\n\x10TEN_QUATERNION_I\x10$\x12\x14\n\x10TEN_QUATERNION_J\x10%\x12\x14\n\x10TEN_QUATERNION_K\x10&\x12\x15\n\x11TEN_MAX_MAGNITUDE\x10\'\x12\x14\n\x10TEN_EIGEN_VOLUME\x10(\x12\r\n\tTEN_PHASE\x10)\x12\x0e\n\nTEN_MODULO\x10*\x12\x11\n\rTEN_EIGENAXIS\x10+\x12\x16\n\x12TEN_QUATERNION_RGB\x10,\x12\x0c\n\x08TEN_FREQ\x10-\x12\x10\n\x0cTEN_ZZ_XXtoZ\x10\x31\x12\x11\n\rTEN_ZZ_XXtoZZ\x10\x32\x12\x10\n\x0cTEN_ZZ_YYtoZ\x10\x33\x12\x11\n\rTEN_ZZ_YYtoZZ\x10\x34\x12\r\n\tTEN_ZtoXX\x10\x35\x12\r\n\tTEN_ZtoYY\x10\x36\x12\r\n\tTEN_ZtoZZ\x10\x37\x12\r\n\tTEN_ZtoXY\x10\x38\x12\r\n\tTEN_ZtoYZ\x10\x39\x12\r\n\tTEN_ZtoZX\x10:\x12\x0c\n\x08TEN_2TMI\x10;\x12\x0c\n\x08TEN_TILT\x10<\x12\r\n\tTEN_BRUTE\x10=\x12\x18\n\x14TEN_SCALAR_MAGNITUDE\x10>\x12\x0b\n\x07TEN_AUV\x10?\x12\x0b\n\x07TEN_ANE\x10@\x12\x0b\n\x07TEN_BUV\x10\x41\x12\x0b\n\x07TEN_BNE\x10\x42\x12\x10\n\x0cTEN_NOISE_UV\x10S\x12\x10\n\x0cTEN_NOISE_NE\x10T\x12\x0f\n\x0bTEN_BRUTE_B\x10\x43\x12\x1b\n\x17TEN_COMPLETE_FALCON_FFT\x10\x44\x12!\n\x1dTENSOR_FirstBalancedGradientX\x10\x46\x12!\n\x1dTENSOR_FirstBalancedGradientY\x10G\x12!\n\x1dTENSOR_FirstBalancedGradientZ\x10H\x12\"\n\x1eTENSOR_SecondBalancedGradientX\x10I\x12\"\n\x1eTENSOR_SecondBalancedGradientY\x10J\x12\"\n\x1eTENSOR_SecondBalancedGradientZ\x10K\x12\x13\n\x0f\x41NALYTIC_SIGNAL\x10\x64\x12\x18\n\x14TOTAL_HORIZONTALGRAD\x10\x65\x12\x13\n\x0f\x45\x41ST_HORIZONTAL\x10\x66\x12\x14\n\x10NORTH_HORIZONTAL\x10g\x12\x11\n\rVERTICAL_GRAD\x10h\x12\x13\n\x0f\x45NHANCED_SIGNAL\x10i\x12\x16\n\x12\x43\x41LCULATED_DIURNAL\x10j\x12\x14\n\x10TRANS_HORIZONTAL\x10k\x12\x13\n\x0fLONG_HORIZONTAL\x10l\x12\x0e\n\nTILT_ANGLE\x10m\x12\x12\n\x0e\x45\x41ST_COMPONENT\x10n\x12\x13\n\x0fNORTH_COMPONENT\x10o\x12\x16\n\x12VERTICAL_COMPONENT\x10p\x12\x0f\n\x0bVECTOR_GRID\x10q\x12\x1c\n\x18TOTAL_MAGNETIC_INTENSITY\x10r\x12\x14\n\x0fQUATERNION_REAL\x10\xc8\x01\x12\x11\n\x0cQUATERNION_I\x10\xc9\x01\x12\x11\n\x0cQUATERNION_J\x10\xca\x01\x12\x11\n\x0cQUATERNION_K\x10\xcb\x01\x12\x16\n\x11QUATERNION_NORMAL\x10\xcc\x01\x12\x14\n\x0fQUATERNION_ROLL\x10\xcd\x01\x12\x15\n\x10QUATERNION_PITCH\x10\xce\x01\x12\x13\n\x0eQUATERNION_YAW\x10\xcf\x01\x12\x0c\n\x07TEN2D_X\x10\xac\x02\x12\x0c\n\x07TEN2D_Y\x10\xad\x02\x12\r\n\x08TEN2D_XY\x10\xae\x02\x12\r\n\x08TEN2D_YX\x10\xaf\x02\x12\x0e\n\tTEN2D_MAX\x10\xb0\x02\x12\x0e\n\tTEN2D_MIN\x10\xb1\x02\x12\x10\n\x0bTEN2D_PHASE\x10\xb2\x02\x12\x0e\n\tTEN2D_DET\x10\xb3\x02\x12\x0f\n\nTEN2D_FREQ\x10\xb4\x02\x12\x0e\n\tCTEN2D_XR\x10\x90\x03\x12\x0e\n\tCTEN2D_YR\x10\x91\x03\x12\x0f\n\nCTEN2D_XYR\x10\x92\x03\x12\x0f\n\nCTEN2D_YXR\x10\x93\x03\x12\x0e\n\tCTEN2D_XI\x10\x94\x03\x12\x0e\n\tCTEN2D_YI\x10\x95\x03\x12\x0f\n\nCTEN2D_XYI\x10\x96\x03\x12\x0f\n\nCTEN2D_YXI\x10\x97\x03\x12\x0f\n\nCTEN2D_MAX\x10\x98\x03\x12\x0f\n\nCTEN2D_MIN\x10\x99\x03\x12\x11\n\x0c\x43TEN2D_PHASE\x10\x9a\x03\x12\x0f\n\nCTEN2D_DET\x10\x9b\x03\x12\x10\n\x0b\x43TEN2D_FREQ\x10\x9c\x03\x12\x12\n\rCTEN2D_RHOZXY\x10\x9d\x03\x12\x12\n\rCTEN2D_RHOZYX\x10\x9e\x03\x12\x12\n\rCTEN2D_RHOZXX\x10\x9f\x03\x12\x12\n\rCTEN2D_RHOZYY\x10\xa0\x03\x12\x14\n\x0f\x43TEN2D_PHASEZXY\x10\xa1\x03\x12\x14\n\x0f\x43TEN2D_PHASEZYX\x10\xa2\x03\x12\x14\n\x0f\x43TEN2D_PHASEZXX\x10\xa3\x03\x12\x14\n\x0f\x43TEN2D_PHASEZYY\x10\xa4\x03*\xbc\x02\n\x11TensorGlyphSource\x12\x13\n\x0fMAX_EIGEN_VALUE\x10\x02\x12\x13\n\x0fMID_EIGEN_VALUE\x10\x03\x12\x13\n\x0fMIN_EIGEN_VALUE\x10\x04\x12\x14\n\x10MAX_EIGEN_VECTOR\x10\x05\x12\x14\n\x10MID_EIGEN_VECTOR\x10\x06\x12\x14\n\x10MIN_EIGEN_VECTOR\x10\x07\x12\x12\n\x0e\x46IRST_BALANCED\x10\x08\x12\x13\n\x0fSECOND_BALANCED\x10\t\x12\x12\n\x0e\x46ROBENIUS_NORM\x10\n\x12\x18\n\x14\x43UBE_ROOT_INVARIANT2\x10\x0b\x12\x1a\n\x16SQUARE_ROOT_INVARIANT1\x10\x0c\x12\x1b\n\x17QUARTERNION_ORIENTATION\x10\r\x12\x16\n\x12\x45IGEN_VALUE_VECTOR\x10\x0e*\xa0\x02\n\tGlyphType\x12\x08\n\x04NONE\x10\x00\x12\x0b\n\x07\x41RROW3D\x10\x01\x12\x08\n\x04\x43ONE\x10\x02\x12\x08\n\x04\x43UBE\x10\x03\x12\x0c\n\x08\x43YLINDER\x10\x04\x12\x08\n\x04\x44\x41SH\x10\x05\x12\t\n\x05\x43ROSS\x10\x06\x12\x0c\n\x08TRIANGLE\x10\x07\x12\n\n\x06SQUARE\x10\x08\x12\n\n\x06\x43IRCLE\x10\t\x12\x0b\n\x07\x44IAMOND\x10\n\x12\t\n\x05\x41RROW\x10\x0b\x12\x0f\n\x0bTETRAHEDRON\x10\x0f\x12\x0e\n\nOCTOHEDRON\x10\x10\x12\x0f\n\x0bICOSAHEDRON\x10\x11\x12\x10\n\x0c\x44ODECAHEDRON\x10\x12\x12\x0c\n\x08NPOLYGON\x10\x13\x12\x08\n\x04RING\x10\x15\x12\n\n\x06SPHERE\x10\x16\x12\x10\n\x0cSUPERQUADRIC\x10\x18\x12\r\n\tELLIPSOID\x10\x19*,\n\x07LutMode\x12\r\n\tSharedLUT\x10\x00\x12\x12\n\x0eIndependentLUT\x10\x01*T\n\rLutConfigType\x12\r\n\tLinearLut\x10\x00\x12\x0c\n\x08HistoLut\x10\x01\x12\x0b\n\x07StepLut\x10\x02\x12\n\n\x06LogLut\x10\x03\x12\r\n\tCustomLut\x10\x04*\xbb\x02\n\x14\x43lipRangeRequest_3DE\x12\r\n\tData_Clip\x10\x00\x12\x0f\n\x0b\x44\x61ta_Limits\x10\x01\x12\x0e\n\n_95Percent\x10\x02\x12\x0e\n\n_97Percent\x10\x03\x12\x0e\n\n_98Percent\x10\x04\x12\x0e\n\n_99Percent\x10\x05\x12\x0f\n\x0b_995Percent\x10\x06\x12\x0f\n\x0b_999Percent\x10\x07\x12\x0f\n\x0b\x43ustom_Clip\x10\x08\x12\x16\n\x12Gradient_95Percent\x10\x0c\x12\x16\n\x12Gradient_97Percent\x10\r\x12\x16\n\x12Gradient_98Percent\x10\x0e\x12\x16\n\x12Gradient_99Percent\x10\x0f\x12\x17\n\x13Gradient_995Percent\x10\x10\x12\x17\n\x13Gradient_999Percent\x10\x11*[\n\nXAxisStyle\x12\x0e\n\nFieldValue\x10\x00\x12\x13\n\x0fXYDistanceAlong\x10\x01\x12\x0c\n\x08XYCustom\x10\x02\x12\x0c\n\x08RowValue\x10\x03\x12\x0c\n\x08\x44\x61teTime\x10\x04*J\n\tRangeType\x12\x17\n\x13LargestDynamicRange\x10\x00\x12\x14\n\x10IndependentRange\x10\x01\x12\x0e\n\nCommonAxis\x10\x02*>\n\x0f\x41xisScaleOption\x12\x10\n\x0c\x43urrent_Line\x10\x00\x12\r\n\tAll_Lines\x10\x01\x12\n\n\x06\x43ustom\x10\x02*.\n\rHistogramType\x12\r\n\tFrequency\x10\x00\x12\x0e\n\nCumulative\x10\x01'
   ,
   dependencies=[intrepid__maps__pb2.DESCRIPTOR,display__list__pb2.DESCRIPTOR,commontaskmodel__pb2.DESCRIPTOR,])
 
@@ -457,307 +457,317 @@ _QUERY_3DE = _descriptor.EnumDescriptor(
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TEN_BRUTE_B', index=59, number=67,
+      name='TEN_NOISE_UV', index=59, number=83,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TEN_COMPLETE_FALCON_FFT', index=60, number=68,
+      name='TEN_NOISE_NE', index=60, number=84,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TENSOR_FirstBalancedGradientX', index=61, number=70,
+      name='TEN_BRUTE_B', index=61, number=67,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TENSOR_FirstBalancedGradientY', index=62, number=71,
+      name='TEN_COMPLETE_FALCON_FFT', index=62, number=68,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TENSOR_FirstBalancedGradientZ', index=63, number=72,
+      name='TENSOR_FirstBalancedGradientX', index=63, number=70,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TENSOR_SecondBalancedGradientX', index=64, number=73,
+      name='TENSOR_FirstBalancedGradientY', index=64, number=71,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TENSOR_SecondBalancedGradientY', index=65, number=74,
+      name='TENSOR_FirstBalancedGradientZ', index=65, number=72,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TENSOR_SecondBalancedGradientZ', index=66, number=75,
+      name='TENSOR_SecondBalancedGradientX', index=66, number=73,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='ANALYTIC_SIGNAL', index=67, number=100,
+      name='TENSOR_SecondBalancedGradientY', index=67, number=74,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TOTAL_HORIZONTALGRAD', index=68, number=101,
+      name='TENSOR_SecondBalancedGradientZ', index=68, number=75,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='EAST_HORIZONTAL', index=69, number=102,
+      name='ANALYTIC_SIGNAL', index=69, number=100,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='NORTH_HORIZONTAL', index=70, number=103,
+      name='TOTAL_HORIZONTALGRAD', index=70, number=101,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='VERTICAL_GRAD', index=71, number=104,
+      name='EAST_HORIZONTAL', index=71, number=102,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='ENHANCED_SIGNAL', index=72, number=105,
+      name='NORTH_HORIZONTAL', index=72, number=103,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CALCULATED_DIURNAL', index=73, number=106,
+      name='VERTICAL_GRAD', index=73, number=104,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TRANS_HORIZONTAL', index=74, number=107,
+      name='ENHANCED_SIGNAL', index=74, number=105,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='LONG_HORIZONTAL', index=75, number=108,
+      name='CALCULATED_DIURNAL', index=75, number=106,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TILT_ANGLE', index=76, number=109,
+      name='TRANS_HORIZONTAL', index=76, number=107,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='EAST_COMPONENT', index=77, number=110,
+      name='LONG_HORIZONTAL', index=77, number=108,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='NORTH_COMPONENT', index=78, number=111,
+      name='TILT_ANGLE', index=78, number=109,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='VERTICAL_COMPONENT', index=79, number=112,
+      name='EAST_COMPONENT', index=79, number=110,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='VECTOR_GRID', index=80, number=113,
+      name='NORTH_COMPONENT', index=80, number=111,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TOTAL_MAGNETIC_INTENSITY', index=81, number=114,
+      name='VERTICAL_COMPONENT', index=81, number=112,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='QUATERNION_REAL', index=82, number=200,
+      name='VECTOR_GRID', index=82, number=113,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='QUATERNION_I', index=83, number=201,
+      name='TOTAL_MAGNETIC_INTENSITY', index=83, number=114,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='QUATERNION_J', index=84, number=202,
+      name='QUATERNION_REAL', index=84, number=200,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='QUATERNION_K', index=85, number=203,
+      name='QUATERNION_I', index=85, number=201,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='QUATERNION_NORMAL', index=86, number=204,
+      name='QUATERNION_J', index=86, number=202,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='QUATERNION_ROLL', index=87, number=205,
+      name='QUATERNION_K', index=87, number=203,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='QUATERNION_PITCH', index=88, number=206,
+      name='QUATERNION_NORMAL', index=88, number=204,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='QUATERNION_YAW', index=89, number=207,
+      name='QUATERNION_ROLL', index=89, number=205,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TEN2D_X', index=90, number=300,
+      name='QUATERNION_PITCH', index=90, number=206,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TEN2D_Y', index=91, number=301,
+      name='QUATERNION_YAW', index=91, number=207,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TEN2D_XY', index=92, number=302,
+      name='TEN2D_X', index=92, number=300,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TEN2D_YX', index=93, number=303,
+      name='TEN2D_Y', index=93, number=301,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TEN2D_MAX', index=94, number=304,
+      name='TEN2D_XY', index=94, number=302,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TEN2D_MIN', index=95, number=305,
+      name='TEN2D_YX', index=95, number=303,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TEN2D_PHASE', index=96, number=306,
+      name='TEN2D_MAX', index=96, number=304,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TEN2D_DET', index=97, number=307,
+      name='TEN2D_MIN', index=97, number=305,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='TEN2D_FREQ', index=98, number=308,
+      name='TEN2D_PHASE', index=98, number=306,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_XR', index=99, number=400,
+      name='TEN2D_DET', index=99, number=307,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_YR', index=100, number=401,
+      name='TEN2D_FREQ', index=100, number=308,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_XYR', index=101, number=402,
+      name='CTEN2D_XR', index=101, number=400,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_YXR', index=102, number=403,
+      name='CTEN2D_YR', index=102, number=401,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_XI', index=103, number=404,
+      name='CTEN2D_XYR', index=103, number=402,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_YI', index=104, number=405,
+      name='CTEN2D_YXR', index=104, number=403,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_XYI', index=105, number=406,
+      name='CTEN2D_XI', index=105, number=404,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_YXI', index=106, number=407,
+      name='CTEN2D_YI', index=106, number=405,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_MAX', index=107, number=408,
+      name='CTEN2D_XYI', index=107, number=406,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_MIN', index=108, number=409,
+      name='CTEN2D_YXI', index=108, number=407,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_PHASE', index=109, number=410,
+      name='CTEN2D_MAX', index=109, number=408,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_DET', index=110, number=411,
+      name='CTEN2D_MIN', index=110, number=409,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_FREQ', index=111, number=412,
+      name='CTEN2D_PHASE', index=111, number=410,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_RHOZXY', index=112, number=413,
+      name='CTEN2D_DET', index=112, number=411,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_RHOZYX', index=113, number=414,
+      name='CTEN2D_FREQ', index=113, number=412,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_RHOZXX', index=114, number=415,
+      name='CTEN2D_RHOZXY', index=114, number=413,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_RHOZYY', index=115, number=416,
+      name='CTEN2D_RHOZYX', index=115, number=414,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_PHASEZXY', index=116, number=417,
+      name='CTEN2D_RHOZXX', index=116, number=415,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_PHASEZYX', index=117, number=418,
+      name='CTEN2D_RHOZYY', index=117, number=416,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_PHASEZXX', index=118, number=419,
+      name='CTEN2D_PHASEZXY', index=118, number=417,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CTEN2D_PHASEZYY', index=119, number=420,
+      name='CTEN2D_PHASEZYX', index=119, number=418,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='CTEN2D_PHASEZXX', index=120, number=419,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='CTEN2D_PHASEZYY', index=121, number=420,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
@@ -765,7 +775,7 @@ _QUERY_3DE = _descriptor.EnumDescriptor(
   containing_type=None,
   serialized_options=None,
   serialized_start=10265,
-  serialized_end=12612,
+  serialized_end=12648,
 )
 _sym_db.RegisterEnumDescriptor(_QUERY_3DE)
 
@@ -845,8 +855,8 @@ _TENSORGLYPHSOURCE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12615,
-  serialized_end=12931,
+  serialized_start=12651,
+  serialized_end=12967,
 )
 _sym_db.RegisterEnumDescriptor(_TENSORGLYPHSOURCE)
 
@@ -966,8 +976,8 @@ _GLYPHTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=12934,
-  serialized_end=13222,
+  serialized_start=12970,
+  serialized_end=13258,
 )
 _sym_db.RegisterEnumDescriptor(_GLYPHTYPE)
 
@@ -992,8 +1002,8 @@ _LUTMODE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=13224,
-  serialized_end=13268,
+  serialized_start=13260,
+  serialized_end=13304,
 )
 _sym_db.RegisterEnumDescriptor(_LUTMODE)
 
@@ -1033,8 +1043,8 @@ _LUTCONFIGTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=13270,
-  serialized_end=13354,
+  serialized_start=13306,
+  serialized_end=13390,
 )
 _sym_db.RegisterEnumDescriptor(_LUTCONFIGTYPE)
 
@@ -1124,8 +1134,8 @@ _CLIPRANGEREQUEST_3DE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=13357,
-  serialized_end=13672,
+  serialized_start=13393,
+  serialized_end=13708,
 )
 _sym_db.RegisterEnumDescriptor(_CLIPRANGEREQUEST_3DE)
 
@@ -1165,8 +1175,8 @@ _XAXISSTYLE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=13674,
-  serialized_end=13765,
+  serialized_start=13710,
+  serialized_end=13801,
 )
 _sym_db.RegisterEnumDescriptor(_XAXISSTYLE)
 
@@ -1196,8 +1206,8 @@ _RANGETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=13767,
-  serialized_end=13841,
+  serialized_start=13803,
+  serialized_end=13877,
 )
 _sym_db.RegisterEnumDescriptor(_RANGETYPE)
 
@@ -1227,8 +1237,8 @@ _AXISSCALEOPTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=13843,
-  serialized_end=13905,
+  serialized_start=13879,
+  serialized_end=13941,
 )
 _sym_db.RegisterEnumDescriptor(_AXISSCALEOPTION)
 
@@ -1253,8 +1263,8 @@ _HISTOGRAMTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=13907,
-  serialized_end=13953,
+  serialized_start=13943,
+  serialized_end=13989,
 )
 _sym_db.RegisterEnumDescriptor(_HISTOGRAMTYPE)
 
@@ -1337,6 +1347,8 @@ TEN_AUV = 63
 TEN_ANE = 64
 TEN_BUV = 65
 TEN_BNE = 66
+TEN_NOISE_UV = 83
+TEN_NOISE_NE = 84
 TEN_BRUTE_B = 67
 TEN_COMPLETE_FALCON_FFT = 68
 TENSOR_FirstBalancedGradientX = 70

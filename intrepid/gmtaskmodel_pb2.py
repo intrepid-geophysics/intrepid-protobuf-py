@@ -22,7 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto2',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x11gmtaskmodel.proto\x12\x0bgmtaskmodel\x1a\x15\x63ommontaskmodel.proto\x1a\x10vtktasksup.proto\"\xfa\x03\n\rFoliation_GMT\x12*\n\x05Point\x18\x01 \x01(\x0b\x32\x1b.gmtaskmodel.AddPoint2d_GMT\x12,\n\x07Point3D\x18\x02 \x01(\x0b\x32\x1b.gmtaskmodel.AddPoint3d_GMT\x12\x0b\n\x03\x64ip\x18\x03 \x02(\x01\x12\x11\n\tdirection\x18\x04 \x01(\x01\x12\x0f\n\x07\x61zimuth\x18\x05 \x01(\x01\x12\x42\n\x0f\x44ipDistribution\x18\x0b \x01(\x0b\x32).ctm.AngleProbabilityDistributionFunction\x12H\n\x15\x44irectionDistribution\x18\x0c \x01(\x0b\x32).ctm.AngleProbabilityDistributionFunction\x12-\n\nProvenance\x18\x06 \x01(\x0e\x32\x13.ctm.ProvenanceType:\x04none\x12\x34\n\x08polarity\x18\x07 \x01(\x0e\x32\x11.ctm.PolarityType:\x0fNormal_Polarity\x12\x17\n\robservationID\x18\x08 \x01(\t:\x00\x12\x11\n\tIntensity\x18\t \x01(\x01\x12#\n\x18spherical_variance_kappa\x18\n \x01(\x01:\x01\x32\x12\x1a\n\x03log\x18\x14 \x01(\t:\rfoliation.rpt\"\x83\x02\n\x0f\x41pparentDip_GMT\x12*\n\x05Point\x18\x01 \x02(\x0b\x32\x1b.gmtaskmodel.AddPoint2d_GMT\x12\x42\n\x0f\x44ipDistribution\x18\x0b \x01(\x0b\x32).ctm.AngleProbabilityDistributionFunction\x12\x35\n\nProvenance\x18\x03 \x01(\x0e\x32\x13.ctm.ProvenanceType:\x0cseismic_pick\x12\x17\n\robservationID\x18\x04 \x01(\t:\x00\x12\x11\n\tdip_error\x18\x05 \x01(\x01\x12\x1d\n\x03log\x18\x06 \x01(\t:\x10\x61pparent_dip.rpt\"Z\n\x12SetModelBounds_GMT\x12!\n\x07\x45xtents\x18\x01 \x02(\x0b\x32\x10.ctm.BoundingBox\x12!\n\x03log\x18\x02 \x01(\t:\x14set_model_bounds.rpt\"Z\n\x12GetModelBounds_GMT\x12!\n\x07\x45xtents\x18\x01 \x01(\x0b\x32\x10.ctm.BoundingBox\x12!\n\x03log\x18\x02 \x01(\t:\x14get_model_bounds.rpt\"E\n\x12OpenProjectGUI_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x1d\n\x03log\x18\x02 \x01(\t:\x10open_project.rpt\"G\n\x14OpenProjectNoGUI_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x1d\n\x03log\x18\x02 \x01(\t:\x10open_project.rpt\"I\n\x15\x43loseProjectNoGUI_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x01(\t\x12\x1e\n\x03log\x18\x02 \x01(\t:\x11\x63lose_project.rpt\"W\n\x0fSaveProject_GMT\x12%\n\x16without_computed_model\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x03log\x18\x01 \x01(\t:\x10save_project.rpt\"n\n\x11SaveProjectAs_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12%\n\x16without_computed_model\x18\x02 \x01(\x08:\x05\x66\x61lse\x12 \n\x03log\x18\x03 \x01(\t:\x13save_project_as.rpt\"\x93\x03\n\rCustomDTM_GMT\x12\x14\n\x05isGDM\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x0c\n\x04name\x18\x02 \x02(\t\x12\x1f\n\x08\x66ilename\x18\x03 \x01(\x0b\x32\r.ctm.Grid_INT\x12#\n\x07\x45xtents\x18\x04 \x01(\x0b\x32\x12.ctm.BoundingBox2D\x12\r\n\x02nx\x18\x05 \x01(\x05:\x01\x35\x12\r\n\x02ny\x18\x06 \x01(\x05:\x01\x35\x12\x12\n\x07\x64\x65gree1\x18\x07 \x01(\x05:\x01\x33\x12\x12\n\x07\x64\x65gree2\x18\x08 \x01(\x05:\x01\x35\x12\x1a\n\x0fsub_sample_rate\x18\t \x01(\x05:\x01\x31\x12\x17\n\x0f\x65levation_error\x18\n \x01(\x01\x12 \n\x12isElevationMeasure\x18\x0b \x01(\x08:\x04true\x12*\n\x05units\x18\x0c \x01(\x0e\x32\x13.ctm.Distance_Units:\x06meters\x12\x1e\n\x16spatial_location_error\x18\r \x01(\x01\x12\x12\n\nshape_file\x18\x0e \x01(\t\x12\x1b\n\x03log\x18\x14 \x01(\t:\x0e\x63ustom_dtm.rpt\"u\n\x11HorizontalDTM_GMT\x12\x0c\n\x04name\x18\x01 \x02(\t\x12\x11\n\televation\x18\x02 \x02(\x01\x12\x1e\n\x16spatial_location_error\x18\x03 \x01(\x01\x12\x1f\n\x03log\x18\x04 \x01(\t:\x12horizontal_dtm.rpt\"\xa9\x05\n\x11\x43reateProject_GMT\x12-\n\tCustomDTM\x18\x01 \x01(\x0b\x32\x1a.gmtaskmodel.CustomDTM_GMT\x12\x35\n\rHorizontalDTM\x18\x02 \x01(\x0b\x32\x1e.gmtaskmodel.HorizontalDTM_GMT\x12\x0c\n\x04name\x18\x03 \x02(\t\x12\x0e\n\x06\x61uthor\x18\x04 \x02(\t\x12!\n\x04\x64\x61te\x18\x05 \x01(\t:\x13\x30\x31/01/2012 00:00:00\x12\x15\n\x0b\x64\x65scription\x18\x06 \x01(\t:\x00\x12)\n\nprojection\x18\x07 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x12\n\x07version\x18\x08 \x01(\t:\x01\x33\x12*\n\x05units\x18\t \x01(\x0e\x32\x13.ctm.Distance_Units:\x06meters\x12\x35\n\x06Zunits\x18\n \x01(\x0e\x32\x13.ctm.Vertical_Units:\x10meters_elevation\x12\x14\n\tprecision\x18\x0c \x01(\x01:\x01\x31\x12!\n\x07\x45xtents\x18\x0e \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x38\n\x0f\x43reateFromVoxet\x18\x0f \x01(\x0b\x32\x1f.gmtaskmodel.SourceMeshGrid_GMT\x12\x1b\n\x0c\x64\x65\x66lection2d\x18\x10 \x01(\x01:\x05\x30.001\x12\x1b\n\x0c\x64\x65\x66lection3d\x18\x11 \x01(\x01:\x05\x30.001\x12\x1a\n\x0e\x64iscretisation\x18\x12 \x01(\x01:\x02\x31\x30\x12\x1e\n\x10\x64ynamicSelection\x18\x13 \x01(\x08:\x04true\x12\x1a\n\x0creferenceTop\x18\x14 \x01(\x08:\x04true\x12\x1f\n\x03log\x18\x1e \x01(\t:\x12\x63reate_project.rpt\x12\x0e\n\x03run\x18( \x01(\x05:\x01\x30\"\xc1\x02\n ModelInterpolationParameters_GMT\x12\x14\n\x05Range\x18\x01 \x01(\x01:\x05\x31\x30\x30\x30\x30\x12%\n\x16\x43ontacts_Nugget_Effect\x18\x02 \x01(\x01:\x05\x31\x65-06\x12%\n\x17Gradients_Nugget_Effect\x18\x03 \x01(\x01:\x04\x30.01\x12#\n\x18\x46\x61ultDriftEquationDegree\x18\x04 \x01(\x01:\x01\x31\x12\x37\n\nAnisotropy\x18\x05 \x01(\x0b\x32#.gmtaskmodel.Anisotropic_Effect_GMT\x12\x0e\n\x06series\x18\x06 \x02(\t\x12=\n\x12\x65xotic_constraints\x18\x07 \x03(\x0b\x32!.gmtaskmodel.ExoticConstraint_GMT\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\xad\x01\n\x16\x41nisotropic_Effect_GMT\x12\x12\n\x07\x41zimuth\x18\x01 \x01(\x01:\x01\x30\x12\x0e\n\x03\x44ip\x18\x02 \x01(\x01:\x01\x30\x12\x10\n\x05Pitch\x18\x03 \x01(\x01:\x01\x30\x12\x19\n\x0bLocalXRange\x18\x04 \x01(\x01:\x04\x31\x30\x30\x30\x12\x19\n\x0bLocalYRange\x18\x05 \x01(\x01:\x04\x31\x30\x30\x30\x12\x19\n\x0bLocalZRange\x18\x06 \x01(\x01:\x04\x31\x30\x30\x30\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"7\n\x14\x45xoticConstraint_GMT\x12\x11\n\tlithology\x18\x01 \x02(\t\x12\x0c\n\x04type\x18\x02 \x02(\r\"\xcf\x04\n\x10\x43omputeModel_GMT\x12\'\n\nSeriesList\x18\x01 \x01(\x0b\x32\x13.ctm.RepeatedString\x12(\n\x0bSectionList\x18\x02 \x01(\x0b\x32\x13.ctm.RepeatedString\x12&\n\tFaultList\x18\x03 \x01(\x0b\x32\x13.ctm.RepeatedString\x12)\n\x0c\x42oreholeList\x18\x04 \x01(\x0b\x32\x13.ctm.RepeatedString\x12!\n\x07\x45xtents\x18\x06 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x12\n\x06radius\x18\x05 \x01(\x01:\x02\x31\x30\x12\x1f\n\x14MinimumDykeThickness\x18\x07 \x01(\x01:\x01\x32\x12\x1a\n\x0b\x64ump_system\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10\x63\x61lc_uncertainty\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x66\x61ults_only\x18\n \x01(\x08:\x05\x66\x61lse\x12\x19\n\ndykes_only\x18\x0b \x01(\x08:\x05\x66\x61lse\x12T\n\x1dSeriesInterpolationParameters\x18\x0c \x03(\x0b\x32-.gmtaskmodel.ModelInterpolationParameters_GMT\x12S\n\x1c\x46\x61ultInterpolationParameters\x18\r \x03(\x0b\x32-.gmtaskmodel.ModelInterpolationParameters_GMT\x12\x1e\n\x03log\x18\x14 \x01(\t:\x11\x63ompute_model.rpt\"\x93\x04\n\x0fRenderModel_GMT\x12\n\n\x02nx\x18\x01 \x02(\x05\x12\n\n\x02ny\x18\x02 \x02(\x05\x12\n\n\x02nz\x18\x03 \x02(\x05\x12\x1f\n\x10generateSurfaces\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0fgenerateVolumes\x18\x05 \x01(\x08:\x04true\x12\x13\n\x04grid\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0f\x62uildFormations\x18\x07 \x01(\x08:\x04true\x12\x1a\n\x0b\x62uildFaults\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x19\n\nbuildDykes\x18\x16 \x01(\x08:\x05\x66\x61lse\x12\x19\n\x0b\x61\x64\x61ptToTopo\x18\t \x01(\x08:\x04true\x12\x19\n\x0btopoLimited\x18\n \x01(\x08:\x04true\x12\x15\n\x06\x61\x64\x61ptX\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06\x61\x64\x61ptY\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06\x61\x64\x61ptZ\x18\r \x01(\x08:\x05\x66\x61lse\x12 \n\x11lookForOverturned\x18\x0e \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0c\x63reateShapes\x18\x0f \x01(\x08:\x04true\x12\x16\n\x07restart\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x13smoothingIterations\x18\x11 \x01(\x05:\x01\x30\x12!\n\x07\x45xtents\x18\x12 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x1d\n\x03log\x18\x19 \x01(\t:\x10render_model.rpt\"\x8e\x02\n\x18RenderModelOnSection_GMT\x12\n\n\x02nu\x18\x01 \x02(\x05\x12\n\n\x02nv\x18\x02 \x02(\x05\x12\x0f\n\x07section\x18\x03 \x02(\t\x12\x1d\n\x08\x66ilename\x18\x04 \x02(\t:\x0bsection.png\x12-\n\x06\x46ormat\x18\x05 \x01(\x0e\x32\x11.ctm.Image_Format:\nPNG_format\x12:\n\x05Style\x18\x06 \x01(\x0e\x32\x1f.gmtaskmodel.SectionRenderStyle:\nSolid_Fill\x12\x1e\n\x13projection_distance\x18\x07 \x01(\x01:\x01\x31\x12\x1f\n\x03log\x18\x19 \x01(\t:\x12render_section.rpt\"\x8b\x01\n\x0f\x43reateFault_GMT\x12\x0c\n\x04name\x18\x01 \x02(\t\x12\x10\n\x03red\x18\x02 \x01(\x01:\x03\x32\x35\x35\x12\x12\n\x05green\x18\x03 \x01(\x01:\x03\x32\x35\x35\x12\x0f\n\x04\x62lue\x18\x04 \x01(\x01:\x01\x30\x12\x14\n\tThickness\x18\x06 \x01(\x01:\x01\x30\x12\x1d\n\x03log\x18\t \x01(\t:\x10\x63reate_fault.rpt\"\x9f\x01\n\x14Set3dFaultLimits_GMT\x12\x12\n\nFault_name\x18\x01 \x02(\t\x12\x18\n\nHorizontal\x18\x02 \x01(\x01:\x04\x31\x30\x30\x30\x12\x16\n\x08Vertical\x18\x03 \x01(\x01:\x04\x31\x30\x30\x30\x12\x1e\n\x11InfluenceDistance\x18\x04 \x01(\x01:\x03\x31\x30\x30\x12!\n\x03log\x18\x05 \x01(\t:\x14set_fault_limits.rpt\"\x80\x01\n\x0f\x46\x61ultCentre_GMT\x12\x12\n\nfault_name\x18\x01 \x02(\t\x12*\n\x04type\x18\x02 \x02(\x0e\x32\x1c.gmtaskmodel.FaultCentreType\x12-\n\x08location\x18\x03 \x01(\x0b\x32\x1b.gmtaskmodel.AddPoint3d_GMT\"\xb4\x01\n\x13\x43reateFormation_GMT\x12\x0c\n\x04name\x18\x01 \x02(\t\x12\x0e\n\x03red\x18\x02 \x01(\x01:\x01\x30\x12\x12\n\x05green\x18\x03 \x01(\x01:\x03\x31\x32\x35\x12\x11\n\x04\x62lue\x18\x04 \x01(\x01:\x03\x32\x35\x35\x12\x35\n\x11LithologyProperty\x18\x05 \x03(\x0b\x32\x1a.ctm.LithologyProperty_GMT\x12!\n\x03log\x18\n \x01(\t:\x14\x63reate_formation.rpt\"\xaa\x01\n\x0e\x43reateDyke_GMT\x12\x0c\n\x04name\x18\x01 \x02(\t\x12\x10\n\x03red\x18\x02 \x01(\x01:\x03\x31\x32\x35\x12\x12\n\x05green\x18\x03 \x01(\x01:\x03\x32\x35\x35\x12\x0f\n\x04\x62lue\x18\x04 \x01(\x01:\x01\x30\x12\x35\n\x11LithologyProperty\x18\x05 \x03(\x0b\x32\x1a.ctm.LithologyProperty_GMT\x12\x1c\n\x03log\x18\n \x01(\t:\x0f\x63reate_dyke.rpt\"W\n\x11\x45xportSection_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12\x1f\n\x03log\x18\x03 \x01(\t:\x12\x65xport_section.rpt\"\xab\x01\n\x10\x45xport2DData_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12&\n\x06\x66ormat\x18\x03 \x02(\x0e\x32\x16.gmtaskmodel.Formats2D\x12+\n\x04type\x18\x04 \x02(\x0e\x32\x14.ctm.SectionDataType:\x07\x63ontact\x12\x1f\n\x03log\x18\x05 \x01(\t:\x12\x65xport_2D_data.rpt\"H\n#CentralVerticalPotentialAndRank_GMT\x12\x0f\n\x07message\x18\x01 \x02(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\"G\n\x13GetModelSummary_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x10\n\x05level\x18\x02 \x01(\x05:\x01\x32\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\x8b\x01\n\rSetSeries_GMT\x12\x0c\n\x04name\x18\x01 \x02(\t\x12\x10\n\x08position\x18\x02 \x02(\x05\x12\x15\n\x08relation\x18\x03 \x01(\t:\x03\x61ny\x12\x36\n\terelation\x18\x05 \x01(\x0e\x32\x1e.ctm.StratigraphicRelationship:\x03\x41ny\x12\x0b\n\x03log\x18\x07 \x01(\t\"J\n\x18\x41\x64\x64\x46ormationToSeries_GMT\x12\x0e\n\x06series\x18\x01 \x02(\t\x12\x11\n\tformation\x18\x02 \x02(\t\x12\x0b\n\x03log\x18\x03 \x01(\t\"V\n\x13\x41\x64\x64\x44ykeToSeries_GMT\x12\x0e\n\x06series\x18\x01 \x02(\t\x12\x0c\n\x04\x64yke\x18\x02 \x02(\t\x12\x14\n\x06\x61sBase\x18\x03 \x01(\x08:\x04true\x12\x0b\n\x03log\x18\x04 \x01(\t\"g\n\x0e\x41\x64\x64Point3d_GMT\x12\t\n\x01x\x18\x01 \x02(\x01\x12\t\n\x01y\x18\x02 \x02(\x01\x12\x12\n\x01z\x18\x03 \x01(\x01:\x07-999999\x12\x1e\n\x16spatial_location_error\x18\x04 \x01(\x01\x12\x0b\n\x03log\x18\x05 \x01(\t\"J\n\x0fPointList3d_GMT\x12*\n\x05Point\x18\x01 \x03(\x0b\x32\x1b.gmtaskmodel.AddPoint3d_GMT\x12\x0b\n\x03log\x18\x02 \x01(\t\"S\n\x0e\x41\x64\x64Point2d_GMT\x12\t\n\x01u\x18\x01 \x02(\x01\x12\t\n\x01v\x18\x02 \x02(\x01\x12\x1e\n\x16spatial_location_error\x18\x03 \x01(\x01\x12\x0b\n\x03log\x18\x04 \x01(\t\"J\n\x0fPointList2d_GMT\x12*\n\x05Point\x18\x01 \x03(\x0b\x32\x1b.gmtaskmodel.AddPoint2d_GMT\x12\x0b\n\x03log\x18\x02 \x01(\t\"\xa3\x02\n\x11\x43reateSection_GMT\x12\x0c\n\x04name\x18\x01 \x02(\t\x12/\n\tPointList\x18\x02 \x01(\x0b\x32\x1c.gmtaskmodel.PointList3d_GMT\x12\x12\n\x07\x64\x65grees\x18\x03 \x01(\x05:\x01\x31\x12\x14\n\tdirection\x18\x04 \x01(\x01:\x01\x30\x12\x10\n\x03\x64ip\x18\x05 \x01(\x01:\x03-90\x12!\n\x07\x45xtents\x18\x06 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x15\n\rInputDataBase\x18\x0c \x01(\t\x12\x12\n\nLineNumber\x18\r \x03(\x05\x12\x1b\n\x10MaxSectionPoints\x18\x11 \x01(\x05:\x01\x35\x12\x1b\n\rClipToProject\x18\x12 \x01(\x08:\x04true\x12\x0b\n\x03log\x18\x07 \x01(\t\"l\n\x17\x43reateSegYThumbnail_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x1c\n\x11standarddeviation\x18\x02 \x01(\x01:\x01\x33\x12\x14\n\tcolourmap\x18\x03 \x01(\x01:\x01\x32\x12\x0b\n\x03log\x18\x04 \x01(\t\"\xa1\x03\n\x19\x41\x64\x64InterfaceToSection_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12\x14\n\x0ctopFormation\x18\x02 \x02(\t\x12\x1e\n\x0f\x62ottomFormation\x18\x03 \x01(\t:\x05\x64ummy\x12/\n\tPointList\x18\x04 \x02(\x0b\x32\x1c.gmtaskmodel.PointList2d_GMT\x12O\n\x11OrientationMethod\x18\x05 \x01(\x0e\x32).gmtaskmodel.Associated_OrientationMethod:\tUNDEFINED\x12\x0b\n\x03\x64ip\x18\x06 \x01(\x01\x12\x0f\n\x07\x61zimuth\x18\x07 \x01(\x01\x12#\n\x08polarity\x18\x08 \x01(\x0e\x32\x11.ctm.PolarityType\x12-\n\nprovenance\x18\t \x01(\x0e\x32\x13.ctm.ProvenanceType:\x04none\x12\x17\n\x08location\x18\n \x01(\x08:\x05\x66\x61lse\x12#\n\x18spherical_variance_kappa\x18\x0c \x01(\x01:\x01\x32\x12\x0b\n\x03log\x18\r \x01(\t\"{\n\x19\x41\x64\x64\x46oliationToSection_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12\x11\n\tformation\x18\x02 \x02(\t\x12-\n\tfoliation\x18\x03 \x02(\x0b\x32\x1a.gmtaskmodel.Foliation_GMT\x12\x0b\n\x03log\x18\x07 \x01(\t\"n\n\x1d\x41\x64\x64\x33\x44\x46oliationToFormation_GMT\x12\x11\n\tformation\x18\x02 \x02(\t\x12-\n\tfoliation\x18\x03 \x03(\x0b\x32\x1a.gmtaskmodel.Foliation_GMT\x12\x0b\n\x03log\x18\x07 \x01(\t\"]\n\x1e\x41\x64\x64\x33\x44InterfacesToFormation_GMT\x12\x11\n\tformation\x18\x02 \x02(\t\x12\x1b\n\x05point\x18\x01 \x03(\x0b\x32\x0c.ctm.Point3d\x12\x0b\n\x03log\x18\x07 \x01(\t\"\x81\x01\n\x1b\x41\x64\x64\x41pparentDipToSection_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12\x11\n\tformation\x18\x02 \x02(\t\x12\x31\n\x0b\x61pparentdip\x18\x03 \x02(\x0b\x32\x1c.gmtaskmodel.ApparentDip_GMT\x12\x0b\n\x03log\x18\x07 \x01(\t\"\xbd\x05\n\"AddDykeStructuralDataToSection_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12\x11\n\tdyke_name\x18\x02 \x02(\t\x12*\n\x05Point\x18\x03 \x02(\x0b\x32\x1b.gmtaskmodel.AddPoint2d_GMT\x12\x0b\n\x03\x64ip\x18\" \x02(\x01\x12\x11\n\tdirection\x18\x05 \x01(\x01\x12\x0e\n\x06strike\x18\x06 \x01(\x01\x12\x42\n\x0f\x44ipDistribution\x18\x0b \x01(\x0b\x32).ctm.AngleProbabilityDistributionFunction\x12H\n\x15\x44irectionDistribution\x18\x0c \x01(\x0b\x32).ctm.AngleProbabilityDistributionFunction\x12-\n\nProvenance\x18\x07 \x01(\x0e\x32\x13.ctm.ProvenanceType:\x04none\x12\x34\n\x08polarity\x18\x11 \x01(\x0e\x32\x11.ctm.PolarityType:\x0fNormal_Polarity\x12\x17\n\robservationID\x18\x08 \x01(\t:\x00\x12\x14\n\tthickness\x18\t \x01(\x01:\x01\x35\x12\x13\n\x06length\x18\n \x01(\x01:\x03\x31\x30\x30\x12\x13\n\x06height\x18\x12 \x01(\x01:\x03\x31\x30\x30\x12\x1c\n\x0esusceptibility\x18\x13 \x01(\x01:\x04\x30.01\x12\x0e\n\x03rms\x18\r \x01(\x01:\x01\x31\x12\x1a\n\x0fthickness_error\x18\x0f \x01(\x01:\x01\x35\x12#\n\x18spherical_variance_kappa\x18\x0e \x01(\x01:\x01\x32\x12O\n\x11OrientationMethod\x18\x10 \x01(\x0e\x32).gmtaskmodel.Associated_OrientationMethod:\tUNDEFINED\x12\x0b\n\x03log\x18\x14 \x01(\t\"=\n\x11\x43reate3DPoint_GMT\x12\x1b\n\x05point\x18\x01 \x03(\x0b\x32\x0c.ctm.Point3d\x12\x0b\n\x03log\x18\x04 \x01(\t\"\x86\x01\n\x19Import2dDataToSection_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12\x1e\n\x16spatial_location_error\x18\x03 \x01(\x01\x12&\n\x03log\x18\x04 \x01(\t:\x19read_import2d_section.rpt\"\xdb\x01\n!ReadAndImport2dDataToASection_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12+\n\x04type\x18\x03 \x01(\x0e\x32\x14.ctm.SectionDataType:\x07\x63ontact\x12&\n\tFieldList\x18\x04 \x02(\x0b\x32\x13.ctm.RepeatedString\x12\x1e\n\x16spatial_location_error\x18\x05 \x01(\x01\x12\x1e\n\x03log\x18\x06 \x01(\t:\x11read_import2d.rpt\"\xd2\x03\n\x17ReadAndImport3dData_GMT\x12\x18\n\x10\x63ontact_csv_file\x18\x01 \x01(\t\x12\x1a\n\x12\x66oliation_csv_file\x18\x02 \x01(\t\x12\x17\n\x0flimits_csv_file\x18\x03 \x01(\t\x12%\n\x1a\x63ontact_header_linestoSkip\x18\x04 \x01(\x05:\x01\x33\x12\'\n\x1c\x66oliation_header_linestoSkip\x18\x05 \x01(\x05:\x01\x33\x12)\n\x1e\x66\x61ult_limit_header_linestoSkip\x18\x06 \x01(\x05:\x01\x34\x12/\n\x04type\x18\x08 \x01(\x0e\x32\x15.ctm.GeologyObsType3D:\ncontact_3D\x12\x39\n\toperation\x18\t \x01(\x0e\x32\x19.gmtaskmodel.ImportAction:\x0b\x43reateFault\x12%\n\x16Treat_Tag_As_Text_Only\x18\n \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x16spatial_location_error\x18\x14 \x01(\x01\x12\x1f\n\x17vertical_location_error\x18\x16 \x01(\x01\x12\x19\n\x03log\x18\x15 \x01(\t:\x0cimport3d.rpt\"\x92\x02\n\x1cImportMicroSeismicEvents_GMT\x12\x17\n\x0f\x65vents_csv_file\x18\x01 \x01(\t\x12$\n\x19\x65vents_header_linestoSkip\x18\x02 \x01(\x05:\x01\x33\x12\x15\n\rMeshGrid_Name\x18\x03 \x01(\t\x12\x14\n\x0cignoreFields\x18\x05 \x03(\t\x12\x1e\n\x16spatial_location_error\x18\x14 \x01(\x01\x12\x1f\n\x17vertical_location_error\x18\x16 \x01(\x01\x12\x1d\n\x0e\x43reateDateTime\x18\t \x01(\x08:\x05\x66\x61lse\x12&\n\x03log\x18\x15 \x01(\t:\x19import3d_microseismic.rpt\"J\n\x13SurveyDirection_GMT\x12\x0f\n\x03\x64ip\x18\x01 \x01(\x01:\x02\x39\x30\x12\x12\n\x07\x61zimuth\x18\x02 \x01(\x01:\x01\x30\x12\x0e\n\x06length\x18\x03 \x01(\x01\"B\n\x15LithologyInterval_GMT\x12\x0c\n\x04\x66rom\x18\x01 \x01(\x01\x12\n\n\x02to\x18\x02 \x01(\x01\x12\x0f\n\x07geology\x18\x03 \x01(\t\"\xef\x01\n\x13\x43reateDrillhole_GMT\x12\x0e\n\x06HoleID\x18\x01 \x02(\t\x12+\n\x06\x43ollar\x18\x02 \x02(\x0b\x32\x1b.gmtaskmodel.AddPoint3d_GMT\x12\x39\n\x0fSurveyDirection\x18\x03 \x03(\x0b\x32 .gmtaskmodel.SurveyDirection_GMT\x12=\n\x11LithologyInterval\x18\x04 \x03(\x0b\x32\".gmtaskmodel.LithologyInterval_GMT\x12!\n\x03log\x18\x05 \x01(\t:\x14\x63reate_drillhole.rpt\"\xad\x03\n\x12LoadDrillholes_GMT\x12\x11\n\tprecision\x18\x01 \x02(\x01\x12\x12\n\ncollarFile\x18\x02 \x02(\t\x12\x12\n\nsurveyFile\x18\x03 \x02(\t\x12\x13\n\x0bgeologyFile\x18\x04 \x02(\t\x12*\n\rcollarAliases\x18\x05 \x02(\x0b\x32\x13.ctm.RepeatedString\x12*\n\rsurveyAliases\x18\x06 \x02(\x0b\x32\x13.ctm.RepeatedString\x12+\n\x0egeologyAliases\x18\x07 \x02(\x0b\x32\x13.ctm.RepeatedString\x12\x19\n\ninvertDips\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08scanOnly\x18\t \x01(\x08:\x05\x66\x61lse\x12\"\n\x17\x64ownhole_distance_error\x18\n \x01(\x01:\x01\x30\x12!\n\x16\x64ownhole_azimuth_error\x18\x0b \x01(\x01:\x01\x30\x12%\n\x1a\x64ownhole_declination_error\x18\x0c \x01(\x01:\x01\x30\x12 \n\x03log\x18\r \x01(\t:\x13load_drillholes.rpt\"\xf4\x05\n\x17\x43ompositeDrillholes_GMT\x12\x1f\n\x10\x44oAllAssayFields\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x12\n\nAssayField\x18\x02 \x01(\t\x12\x13\n\x06Suffix\x18\x03 \x01(\t:\x03Reg\x12\x14\n\x0c\x44\x65nsityField\x18\x04 \x01(\t\x12\x19\n\x0eSupport_Length\x18\x05 \x01(\x01:\x01\x32\x12>\n\x0b\x42uild_Style\x18\x06 \x01(\x0e\x32\x1b.gmtaskmodel.CompositeStyle:\x0cStart_Collar\x12\x1f\n\x10Restart_On_Nulls\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x10restart_interval\x18\x08 \x01(\x01:\x01\x32\x12Z\n\x19internal_null_replacement\x18\t \x01(\x0e\x32&.gmtaskmodel.CompositeReplacementStyle:\x0f\x42\x61\x63kgroundValue\x12Z\n\x19\x65xternal_null_replacement\x18\n \x01(\x0e\x32&.gmtaskmodel.CompositeReplacementStyle:\x0f\x42\x61\x63kgroundValue\x12\x38\n)Enable_Trailing_Interval_Length_Threshold\x18\x0b \x01(\x08:\x05\x66\x61lse\x12!\n\x16low_trailing_threshold\x18\x0c \x01(\x01:\x01\x31\x12\"\n\x17high_trailing_threshold\x18\r \x01(\x01:\x01\x33\x12L\n\x0cWeight_Style\x18\x0e \x01(\x0e\x32$.gmtaskmodel.CompositeWeightingStyle:\x10length_weighting\x12\x17\n\x0f\x61ssayBackground\x18\x0f \x01(\x01\x12\x19\n\x11\x64\x65nsityBackground\x18\x10 \x01(\x01\x12%\n\x03log\x18\x1e \x01(\t:\x18\x63omposite_drillholes.rpt\"\xa7\x01\n\x1a\x44rillholeQueryMeshGrid_GMT\x12\x18\n\x10source_drillhole\x18\x01 \x03(\t\x12\x1a\n\x12new_drillhole_name\x18\x02 \x01(\t\x12\x16\n\x0esample_spacing\x18\x03 \x01(\x01\x12\x15\n\rmeshgrid_name\x18\x14 \x01(\t\x12\x17\n\x0fmeshgrid_fields\x18\x15 \x03(\t\x12\x0b\n\x03log\x18\x63 \x01(\t\"\xab\x03\n\x13ImportSeismicCommon\x12\x14\n\x05InGUI\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x15\n\rInputDataFile\x18\x02 \x01(\t\x12\x18\n\x10InputProjectFile\x18\x03 \x01(\t\x12\x1d\n\x0fMaxThinningIter\x18\x05 \x01(\x05:\x04\x39\x39\x39\x39\x12\x1f\n\x10MinThinningDelta\x18\x06 \x01(\x01:\x05\x31\x65-07\x12\x1b\n\x10MaxSectionPoints\x18\x07 \x01(\x05:\x01\x35\x12\x1b\n\rClipToProject\x18\x08 \x01(\x08:\x04true\x12\x19\n\nDMSConvert\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x0c\x44MSLatFormat\x18\x0b \x01(\t:\tddmmss.ss\x12 \n\x0c\x44MSLonFormat\x18\x0c \x01(\t:\ndddmmss.ss\x12\x19\n\x0bInvertDepth\x18\r \x01(\x08:\x04true\x12\x1d\n\x0fRunParallelCode\x18\x0e \x01(\x08:\x04true\x12\x19\n\x11OutputProjectFile\x18\x13 \x01(\t\x12 \n\x03log\x18\xff\x01 \x01(\t:\x12seismic_report.rpt\"}\n\x14ImportSeismicNav_GMT\x12\x1e\n\x13SectionSplineDegree\x18\x01 \x01(\x05:\x01\x31\x12\x37\n\rImportSeismic\x18\x02 \x02(\x0b\x32 .gmtaskmodel.ImportSeismicCommon\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\xdd\x01\n\x19ImportSeismicHorizons_GMT\x12,\n\x0fNavigationFiles\x18\x01 \x01(\x0b\x32\x13.ctm.RepeatedString\x12/\n\x12HorizonColumnNames\x18\x02 \x01(\x0b\x32\x13.ctm.RepeatedString\x12\x1a\n\x12IntersectionRadius\x18\x03 \x01(\x01\x12\x37\n\rImportSeismic\x18\x08 \x02(\x0b\x32 .gmtaskmodel.ImportSeismicCommon\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\xa8\x03\n\x11RenderSection_GMT\x12\x0f\n\x07section\x18\x01 \x01(\t\x12\x0e\n\x02nx\x18\x02 \x02(\x05:\x02\x35\x30\x12\x0e\n\x02ny\x18\x03 \x02(\x05:\x02\x35\x30\x12\x16\n\x0e\x66illFormations\x18\x04 \x03(\t\x12\x1d\n\x15lineFormationOrFaults\x18\x05 \x03(\t\x12\x13\n\x0btraceSeries\x18\x06 \x03(\t\x12\x1f\n\x11showTraceInSeries\x18\x07 \x01(\x08:\x04true\x12\"\n\x13showTraceEverywhere\x18\x08 \x01(\x08:\x05\x66\x61lse\x12#\n\x14showVarianceEnvelope\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x10\x43lipToTopography\x18\n \x01(\x08:\x04true\x12\x1e\n\x0fshowUncertainty\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rshowTriangles\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\r\n\x02\x65t\x18\r \x01(\x01:\x01\x32\x12\x1e\n\x13number_trajectories\x18\x0e \x01(\x05:\x01\x35\x12\x1f\n\x03log\x18\x0f \x01(\t:\x12render_section.rpt\"y\n\x16SaveLithologyVoxet_GMT\x12\n\n\x02nx\x18\x01 \x02(\x05\x12\n\n\x02ny\x18\x02 \x02(\x05\x12\n\n\x02nz\x18\x03 \x02(\x05\x12\x1e\n\x16LithologyVoxetFileStub\x18\x04 \x02(\t\x12\x1b\n\x03log\x18\x0f \x01(\t:\x0esave_voxet.rpt\"\xc2\x01\n\x1eSavePotentialGradientVoxet_GMT\x12\n\n\x02nx\x18\x01 \x02(\x05\x12\n\n\x02ny\x18\x02 \x02(\x05\x12\n\n\x02nz\x18\x03 \x02(\x05\x12\x1c\n\x0eJust_Gradients\x18\x05 \x01(\x08:\x04true\x12!\n\x12OneVoxet_Lithology\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x15\n\rVoxetFileStub\x18\x04 \x02(\t\x12$\n\x03log\x18\x0f \x01(\t:\x17save_potentialvoxet.rpt\"\xc3\x03\n\x13UpdateInterface_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12*\n\x05Point\x18\x02 \x02(\x0b\x32\x1b.gmtaskmodel.AddPoint2d_GMT\x12\x17\n\robservationId\x18\x03 \x02(\t:\x00\x12-\n\nprovenance\x18\x04 \x01(\x0e\x32\x13.ctm.ProvenanceType:\x04none\x12\x1a\n\x0chasFoliation\x18\x05 \x01(\x08:\x04true\x12\x1a\n\x0bhasLocation\x18\x06 \x02(\x08:\x05\x66\x61lse\x12@\n\x11orientationMethod\x18\x07 \x01(\x0e\x32\x1a.ctm.OrientationMethodType:\tundefined\x12\x12\n\x07\x61zimuth\x18\x08 \x01(\x01:\x01\x30\x12\x0e\n\x03\x64ip\x18\t \x01(\x01:\x01\x30\x12\x16\n\x0blineAzimuth\x18\n \x01(\x01:\x01\x30\x12\x12\n\x07lineDip\x18\x0b \x01(\x01:\x01\x30\x12\x15\n\x08polarity\x18\x0c \x02(\t:\x03top\x12#\n\x18spherical_variance_kappa\x18\r \x01(\x01:\x01\x35\x12!\n\x03log\x18\x0f \x01(\t:\x14update_interface.rpt\"U\n\x1f\x44\x65leteInterfacesFromSection_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12!\n\x03log\x18\x02 \x01(\t:\x14\x64\x65lete_interface.rpt\"C\n\x14\x46\x61ultSeriesLinks_GMT\x12\r\n\x05\x66\x61ult\x18\x01 \x02(\t\x12\x0e\n\x06series\x18\x02 \x03(\t\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"{\n\x18LinkFaultsWithSeries_GMT\x12;\n\x10\x46\x61ultSeriesLinks\x18\x01 \x03(\x0b\x32!.gmtaskmodel.FaultSeriesLinks_GMT\x12\"\n\x03log\x18\x02 \x01(\t:\x15link_fault_series.rpt\"F\n\x16\x46\x61ultStopsOnFaults_GMT\x12\r\n\x05\x66\x61ult\x18\x01 \x02(\t\x12\x0f\n\x07stopson\x18\x02 \x03(\t\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"~\n\x18LinkFaultsWithFaults_GMT\x12?\n\x12\x46\x61ultStopsOnFaults\x18\x01 \x03(\x0b\x32#.gmtaskmodel.FaultStopsOnFaults_GMT\x12!\n\x03log\x18\x02 \x01(\t:\x14link_fault_fault.rpt\"\xb4\x02\n\x12WriteBatchFile_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12!\n\tTask_Name\x18\x02 \x01(\t:\x0emyProject.task\x12,\n\x1d\x63onvertSection_InterfacesTo3D\x18\x05 \x01(\x08:\x05\x66\x61lse\x12+\n\x1c\x63onvertSection_FoliationTo3D\x18\x06 \x01(\x08:\x05\x66\x61lse\x12#\n\x14\x65xportBoreholesToCSV\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x19\n\x08\x63sv_path\x18\x08 \x01(\t:\x07\x45XPORT/\x12.\n exportToGeomodellerTempDirectory\x18\t \x01(\x08:\x04true\x12\x1e\n\x03log\x18\x0c \x01(\t:\x11writeprotobuf.rpt\"\xe3\x02\n\x12SourceMeshGrid_GMT\x12?\n\nSourceType\x18\x01 \x01(\x0e\x32\".gmtaskmodel.GeomodellerDataSource:\x07Project\x12\x11\n\tFile_Name\x18\x02 \x01(\t\x12\x15\n\rMeshGrid_Name\x18\x03 \x01(\t\x12-\n\x08\x46ileType\x18\x04 \x01(\x0e\x32\x10.ctm.DfaFileType:\tFT_IGMESH\x12+\n\x06\x46ormat\x18\r \x01(\x0e\x32\x0f.ctm.DataFormat:\nDF_UNKNOWN\x12\x12\n\nField_Name\x18\x05 \x01(\t\x12\x19\n\x0eheader_records\x18\x06 \x01(\x11:\x01\x30\x12!\n\x03log\x18\xff\x01 \x01(\t:\x13source_meshgrid.rpt\x12 \n\x12isElevationMeasure\x18\x0b \x01(\x08:\x04true\x12\x12\n\nUBC_Header\x18\x0c \x01(\t\"\x95\x04\n\x12\x43reateMeshGrid_GMT\x12J\n\x15\x43reateDestinationType\x18\x01 \x01(\x0e\x32\".gmtaskmodel.GeomodellerDataSource:\x07Project\x12>\n\x0eOutputMeshType\x18\x14 \x01(\x0e\x32\x13.ctm.OutputMeshType:\x11ODT_RegularMesh3D\x12\x11\n\tFile_Name\x18\x02 \x01(\t\x12\x15\n\rMeshGrid_Name\x18\x03 \x01(\t\x12-\n\x08\x46ileType\x18\x04 \x01(\x0e\x32\x10.ctm.DfaFileType:\tFT_IGMESH\x12\x12\n\nField_Name\x18\x05 \x01(\t\x12\x16\n\x0e\x46ield_Variance\x18\x06 \x01(\t\x12\x0f\n\x02\x64x\x18\n \x01(\x11:\x03\x31\x30\x30\x12\x0f\n\x02\x64y\x18\x0b \x01(\x11:\x03\x31\x30\x30\x12\x0f\n\x02\x64z\x18\x0c \x01(\x11:\x03\x31\x30\x30\x12!\n\x07\x45xtents\x18\r \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x0e\n\x02nx\x18\x15 \x01(\x11:\x02\x32\x30\x12\x0e\n\x02ny\x18\x16 \x01(\x11:\x02\x32\x30\x12\x0e\n\x02nz\x18\x17 \x01(\x11:\x02\x32\x30\x12\x1e\n\x0f\x41\x64\x64GeologyField\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\'\n\nReportFile\x18\x10 \x01(\t:\x13\x63reate_meshgrid.rpt\x12\x1f\n\x03log\x18\x63 \x01(\t:\x12\x63reate a mesh grid\"\xf4\x03\n\x12\x45xportMeshGrid_GMT\x12\x38\n\x0fMeshGrid_Source\x18\x01 \x02(\x0b\x32\x1f.gmtaskmodel.SourceMeshGrid_GMT\x12>\n\x0eOutputMeshType\x18\x14 \x01(\x0e\x32\x13.ctm.OutputMeshType:\x11ODT_RegularMesh3D\x12\x13\n\x0bOutFileName\x18\x02 \x01(\t\x12\x17\n\x0fOutMeshGridName\x18\x03 \x01(\t\x12\x30\n\x0bOutFileType\x18\x04 \x01(\x0e\x32\x10.ctm.DfaFileType:\tFT_IGMESH\x12.\n\rOutDataFormat\x18\x05 \x01(\x0e\x32\x0f.ctm.DataFormat:\x06\x44\x46_VTK\x12\r\n\x05\x46ield\x18\x06 \x01(\t\x12!\n\x07\x45xtents\x18\x15 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x0e\n\x02nx\x18\x16 \x01(\x05:\x02\x32\x30\x12\x0e\n\x02ny\x18\x17 \x01(\x05:\x02\x32\x30\x12\x0e\n\x02nz\x18\x18 \x01(\x05:\x02\x32\x30\x12\x0f\n\x02\x64x\x18\x19 \x01(\x01:\x03\x31\x30\x30\x12\x0f\n\x02\x64y\x18\x1a \x01(\x01:\x03\x31\x30\x30\x12\x0f\n\x02\x64z\x18\x1b \x01(\x01:\x03\x31\x30\x30\x12\x1e\n\x0f\x41\x64\x64GeologyField\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x03log\x18\xff\x01 \x01(\t:\x11save_meshgrid.rpt\"\xa0\x03\n\x13VariogramCurves_GMT\x12\x10\n\x03lag\x18\x02 \x02(\x01:\x03\x31\x30\x30\x12&\n\tvariance1\x18\x03 \x01(\x0b\x32\x13.ctm.RepeatedDouble\x12@\n\x06which1\x18\x04 \x01(\x0e\x32#.gmtaskmodel.Kriging_WhichVariogram:\x0bKriging_RHO\x12&\n\tvariance2\x18\x05 \x01(\x0b\x32\x13.ctm.RepeatedDouble\x12>\n\x06which2\x18\x06 \x01(\x0e\x32#.gmtaskmodel.Kriging_WhichVariogram:\tKriging_V\x12&\n\tvariance3\x18\x07 \x01(\x0b\x32\x13.ctm.RepeatedDouble\x12>\n\x06which3\x18\x08 \x01(\x0e\x32#.gmtaskmodel.Kriging_WhichVariogram:\tKriging_W\x12\x1a\n\rnumber_points\x18\n \x02(\x05:\x03\x31\x30\x30\x12!\n\x03log\x18\xff\x01 \x01(\t:\x13model_variogram.rpt\"\xdf\x04\n\x14\x43omputeVariogram_GMT\x12\x38\n\x0fMeshGrid_Source\x18\x01 \x02(\x0b\x32\x1f.gmtaskmodel.SourceMeshGrid_GMT\x12\x39\n\rAnalysis_Type\x18\x03 \x01(\x0b\x32\".gmtaskmodel.VariogramAnalysisType\x12\x34\n\x06\x44omain\x18\x04 \x02(\x0e\x32\x1a.gmtaskmodel.KrigingDomain:\x08NoDomain\x12\x11\n\tData_Name\x18\x05 \x01(\t\x12\x18\n\x10Maximum_Distance\x18\x06 \x01(\x01\x12\x16\n\x0eVariogram_Name\x18\x07 \x02(\t\x12!\n\x07\x45xtents\x18\x08 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x17\n\x0cNuggetEffect\x18\n \x01(\x01:\x01\x30\x12\x10\n\x05Range\x18\x0b \x01(\x01:\x01\x31\x12\x0f\n\x04Sill\x18\x0c \x01(\x01:\x01\x31\x12\x42\n\x12VariogramModelType\x18\r \x01(\x0e\x32\x17.ctm.VariogramModelType:\rVMT_Spherical\x12\x10\n\x03lag\x18\x0e \x01(\x01:\x03\x31\x30\x30\x12\x19\n\rNumber_Points\x18\x0f \x01(\x11:\x02\x32\x30\x12!\n\nReportFile\x18\x10 \x01(\t:\rvariogram.rpt\x12\x1f\n\x10Maximum_Measures\x18\x11 \x01(\x05:\x05\x31\x30\x30\x30\x30\x12\x1d\n\rMaximum_Pairs\x18\x12 \x01(\x05:\x06\x31\x30\x30\x30\x30\x30\x12\x16\n\x0bNumber_CPUs\x18\x13 \x01(\x05:\x01\x33\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\x90\x02\n\x15VariogramAnalysisType\x12\x12\n\x07\x61zmiuth\x18\x03 \x01(\x01:\x01\x30\x12\x0f\n\x03\x64ip\x18\x04 \x01(\x01:\x02\x39\x30\x12\x11\n\x06plunge\x18\x05 \x01(\x01:\x01\x30\x12\x0c\n\x04name\x18\x06 \x01(\t\x12\x19\n\x11nameOfSerieOrUnit\x18\x07 \x01(\t\x12\x1e\n\x0fserieConstraint\x18\x08 \x01(\x08:\x05\x66\x61lse\x12.\n\x04type\x18\t \x01(\x0e\x32\x1b.gmtaskmodel.TypeOfAnalysis:\x03Rho\x12\x1d\n\x0eunitConstraint\x18\n \x01(\x08:\x05\x66\x61lse\x12\x19\n\x0eNumber_Sectors\x18\x13 \x01(\x05:\x01\x31\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\xba\x07\n InterpolateNumericalReadings_GMT\x12\x38\n\x0fMeshGrid_Source\x18\x01 \x02(\x0b\x32\x1f.gmtaskmodel.SourceMeshGrid_GMT\x12\x34\n\x06method\x18\x02 \x02(\x0e\x32\x18.ctm.InterpolationMethod:\nIM_Kriging\x12\x39\n\x0bOutputStyle\x18\x03 \x02(\x0e\x32\x1c.ctm.InterpolationOutputType:\x06IOT_D3\x12 \n\x14Maximum_Observations\x18\x05 \x01(\x11:\x02\x35\x30\x12\x1f\n\x14Minimum_Observations\x18\x06 \x01(\x11:\x01\x32\x12\x16\n\x0eMaximum_Radius\x18\x07 \x01(\x01\x12\x34\n\x06\x44omain\x18\x08 \x01(\x0e\x32\x1a.gmtaskmodel.KrigingDomain:\x08NoDomain\x12\x11\n\tData_Name\x18\t \x01(\t\x12\x37\n\rAnalysis_Type\x18\x15 \x01(\x0e\x32\x1b.gmtaskmodel.TypeOfAnalysis:\x03Rho\x12\x39\n\x0fVariogram_Model\x18\n \x01(\x0b\x32 .gmtaskmodel.VariogramCurves_GMT\x12#\n\x1b\x45xperimental_Variogram_Name\x18\x14 \x01(\t\x12\x42\n\x12VariogramModelType\x18\x1e \x01(\x0e\x32\x17.ctm.VariogramModelType:\rVMT_Spherical\x12\x39\n\tNeighbour\x18\x1f \x01(\x0e\x32\x13.ctm.NeighbourStyle:\x11NS_RegularGridBox\x12\x17\n\x0cNuggetEffect\x18  \x01(\x01:\x01\x30\x12\x10\n\x05Range\x18! \x01(\x01:\x01\x31\x12\x0f\n\x04Sill\x18\" \x01(\x01:\x01\x31\x12?\n\x05which\x18# \x01(\x0e\x32#.gmtaskmodel.Kriging_WhichVariogram:\x0bKriging_RHO\x12\x11\n\x06\x61ratio\x18\x0f \x01(\x01:\x01\x31\x12\x0f\n\x03\x64ip\x18\x11 \x01(\x01:\x02\x39\x30\x12\x12\n\x07\x61zimuth\x18\x12 \x01(\x01:\x01\x30\x12\x11\n\x06plunge\x18\x13 \x01(\x01:\x01\x30\x12\x34\n\x0bOutput_Mesh\x18\x32 \x02(\x0b\x32\x1f.gmtaskmodel.CreateMeshGrid_GMT\x12#\n\nReportFile\x18P \x01(\t:\x0finterpolate.rpt\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\xdc\x05\n\x14\x42uildTripleLines_GMT\x12\x15\n\tprecision\x18\x0c \x01(\x01:\x02\x32\x30\x12\x19\n\x0b\x63lean_lines\x18\x14 \x01(\x08:\x04true\x12\x1a\n\rpoint_spacing\x18\x18 \x01(\x01:\x03\x32\x35\x30\x12\x46\n\x0ethin_body_bias\x18\x19 \x01(\x0b\x32..gmtaskmodel.BuildTripleLines_GMT.ThinBodyBias\x12P\n\x13\x65xport_triple_lines\x18\x1b \x01(\x0b\x32\x33.gmtaskmodel.BuildTripleLines_GMT.ExportTripleLines\x12\x19\n\x0btopolimited\x18\x1c \x01(\x08:\x04true\x12\x18\n\nborderline\x18\x1d \x01(\x08:\x04true\x12\x18\n\ninsideline\x18\x1e \x01(\x08:\x04true\x12\x31\n#divide_model_using_regular_sections\x18\x1f \x01(\x08:\x04true\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x1a\x91\x02\n\x11\x45xportTripleLines\x12\x1c\n\x10output_directory\x18\x01 \x01(\t:\x02./\x12k\n\x06\x66ormat\x18\x02 \x01(\x0e\x32K.gmtaskmodel.BuildTripleLines_GMT.ExportTripleLines.TripleLine_ExportFormat:\x0eTripleLine_VTK\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"c\n\x17TripleLine_ExportFormat\x12\x19\n\x15TripleLine_ASCII_LONG\x10\x00\x12\x19\n\x15TripleLine_ASCII_CGAL\x10\x01\x12\x12\n\x0eTripleLine_VTK\x10\x02\x1a\x38\n\x0cThinBodyBias\x12\x0c\n\x01x\x18\x01 \x01(\x01:\x01\x31\x12\x0c\n\x01y\x18\x02 \x01(\x01:\x01\x31\x12\x0c\n\x01z\x18\x03 \x01(\x01:\x01\x31\"I\n\x15ImportTripleLines_GMT\x12\"\n\x08\x66ilename\x18\x01 \x01(\t:\x10triple_lines.txt\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\xb6\x14\n\x11\x42uildMeshCGAL_GMT\x12\x42\n\rmesh_criteria\x18\x01 \x01(\x0b\x32+.gmtaskmodel.BuildMeshCGAL_GMT.MeshCriteria\x12>\n\x0brefine_mesh\x18\x02 \x01(\x0b\x32).gmtaskmodel.BuildMeshCGAL_GMT.RefineMesh\x12=\n\x12\x62uild_triple_lines\x18\x03 \x01(\x0b\x32!.gmtaskmodel.BuildTripleLines_GMT\x12?\n\x13import_triple_lines\x18\x04 \x01(\x0b\x32\".gmtaskmodel.ImportTripleLines_GMT\x12\x1c\n\rmultithreaded\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x34\n\x0b\x65xport_mesh\x18\x06 \x03(\x0b\x32\x1f.gmtaskmodel.Export3DShapes_GMT\x12L\n\x12geomodeller_output\x18\x07 \x01(\x0b\x32\x30.gmtaskmodel.BuildMeshCGAL_GMT.GeomodellerOutput\x12\x41\n\x0einitial_points\x18\x08 \x01(\x0b\x32).gmtaskmodel.BuildMeshCGAL_GMT.SeedPoints\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x1a\xe5\x04\n\nRefineMesh\x12G\n\x05lloyd\x18\x01 \x01(\x0b\x32\x38.gmtaskmodel.BuildMeshCGAL_GMT.RefineMesh.OptEnergyParms\x12\x45\n\x03odt\x18\x02 \x01(\x0b\x32\x38.gmtaskmodel.BuildMeshCGAL_GMT.RefineMesh.OptEnergyParms\x12I\n\x07perturb\x18\x03 \x01(\x0b\x32\x38.gmtaskmodel.BuildMeshCGAL_GMT.RefineMesh.OptVertexParms\x12G\n\x05\x65xude\x18\x04 \x01(\x0b\x32\x38.gmtaskmodel.BuildMeshCGAL_GMT.RefineMesh.OptVertexParms\x12\x46\n\x0fmanifold_status\x18\x05 \x01(\x0e\x32\x1f.gmtaskmodel.OptManifoldRequest:\x0cnon_manifold\x1a\x9a\x01\n\x0eOptEnergyParms\x12\x15\n\ntime_limit\x18\x01 \x01(\x01:\x01\x35\x12\x13\n\x08max_iter\x18\x02 \x01(\x05:\x01\x30\x12\x19\n\x0b\x63onvergence\x18\x03 \x01(\x01:\x04\x30.02\x12\x1a\n\x0c\x66reeze_bound\x18\x04 \x01(\x01:\x04\x30.01\x12\x17\n\tdo_freeze\x18\x05 \x01(\x08:\x04true\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x1aN\n\x0eOptVertexParms\x12\x15\n\ntime_limit\x18\x01 \x01(\x01:\x01\x35\x12\x17\n\x0csliver_bound\x18\x02 \x01(\x01:\x01\x33\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x1a\xe5\x01\n\x11GeomodellerOutput\x12\x18\n\x10output_directory\x18\x01 \x01(\t\x12\x11\n\x06smooth\x18\x02 \x01(\x05:\x01\x30\x12\x1a\n\x0b\x64raw_shapes\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x18\n\nformations\x18\x04 \x01(\x08:\x04true\x12\x14\n\x06\x66\x61ults\x18\x05 \x01(\x08:\x04true\x12\x16\n\x08surfaces\x18\x06 \x01(\x08:\x04true\x12\x15\n\x07volumes\x18\x07 \x01(\x08:\x04true\x12\x1a\n\x0ctetrahedrons\x18\x08 \x01(\x08:\x04true\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x1a\xd6\x06\n\x0cMeshCriteria\x12\x1b\n\x0fmin_facet_angle\x18\x01 \x01(\x01:\x02\x31\x30\x12\x17\n\x0fmin_facet_radii\x18\x02 \x01(\x01\x12\x1f\n\x17min_protect_ball_radius\x18\x03 \x01(\x01\x12\x38\n\x0e\x66\x61\x63\x65t_topology\x18\t \x01(\x0e\x32 .gmtaskmodel.Mesh_facet_topology\x12\x1e\n\x11radius_edge_ratio\x18\x04 \x01(\x01:\x03\x32.5\x12\x63\n\x16\x64\x65\x66\x61ult_discretization\x18\x05 \x01(\x0b\x32\x43.gmtaskmodel.BuildMeshCGAL_GMT.MeshCriteria.FormationDiscretization\x12\x65\n\x18\x66ormation_discretization\x18\x06 \x03(\x0b\x32\x43.gmtaskmodel.BuildMeshCGAL_GMT.MeshCriteria.FormationDiscretization\x12;\n\x1emin_protect_ball_radius_values\x18\x07 \x01(\x0b\x32\x13.ctm.RepeatedDouble\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x1a\xfd\x02\n\x17\x46ormationDiscretization\x12\x1a\n\tformation\x18\x01 \x01(\t:\x07\x64\x65\x66\x61ult\x12\x11\n\tprecision\x18\x02 \x01(\x01\x12\x17\n\x0fmax_facet_radii\x18\x03 \x01(\x01\x12\x15\n\rmax_tet_radii\x18\x04 \x01(\x01\x12\x17\n\x0fmax_edge_length\x18\x05 \x01(\x01\x12-\n\x10precision_values\x18\x06 \x01(\x0b\x32\x13.ctm.RepeatedDouble\x12\x33\n\x16max_facet_radii_values\x18\x07 \x01(\x0b\x32\x13.ctm.RepeatedDouble\x12\x31\n\x14max_tet_radii_values\x18\x08 \x01(\x0b\x32\x13.ctm.RepeatedDouble\x12\x33\n\x16max_edge_length_values\x18\t \x01(\x0b\x32\x13.ctm.RepeatedDouble\x12\x1e\n\x16\x61\x64\x61ptive_sphere_radius\x18\n \x01(\x01\x1a\x80\x03\n\nSeedPoints\x12\x1f\n\x11use_triple_points\x18\x01 \x01(\x08:\x04true\x12Q\n\rrandom_points\x18\x02 \x01(\x0b\x32:.gmtaskmodel.BuildMeshCGAL_GMT.SeedPoints.RandomSeedPoints\x12M\n\x0bmesh_points\x18\x03 \x03(\x0b\x32\x38.gmtaskmodel.BuildMeshCGAL_GMT.SeedPoints.MeshSeedPoints\x1a\x87\x01\n\x0eMeshSeedPoints\x12\x10\n\x08\x66ilename\x18\x01 \x01(\t\x12-\n\nclean_mesh\x18\x03 \x01(\x0b\x32\x19.vtktasksup.CleanPolyData\x12\x34\n\rdecimate_mesh\x18\x04 \x01(\x0b\x32\x1d.vtktasksup.QuadricDecimation\x1a%\n\x10RandomSeedPoints\x12\x11\n\x05\x63ount\x18\x01 \x01(\x05:\x02\x31\x32\"\x83\x07\n\x0f\x45xportModel_GMT\x12%\n\x10output_directory\x18\x01 \x01(\t:\x0b\x65xport_mesh\x12;\n\x08\x65xport3D\x18\x02 \x01(\x0b\x32).gmtaskmodel.ExportModel_GMT.ExportType3D\x12;\n\x08\x65xport2D\x18\x03 \x01(\x0b\x32).gmtaskmodel.ExportModel_GMT.ExportType2D\x12\"\n\x08GridSize\x18\x06 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x0f\n\x02\x64x\x18\n \x01(\x11:\x03\x31\x30\x30\x12\x0f\n\x02\x64y\x18\x0b \x01(\x11:\x03\x31\x30\x30\x12\x0f\n\x02\x64z\x18\x0c \x01(\x11:\x03\x31\x30\x30\x12\x10\n\x03\x64xy\x18\r \x01(\x11:\x03\x31\x30\x30\x12\x1b\n\x10VariableZ_Factor\x18\x11 \x01(\x01:\x01\x31\x12$\n\nReportFile\x18\x10 \x01(\t:\x10\x65xport_model.rpt\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x1a\xbc\x01\n\x0c\x45xportType2D\x12\x17\n\x08Isopachs\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07Isohyps\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x19\n\nInterfaces\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tLayercake\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06Marthe\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x05Tough\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x19\n\nCataclinal\x18\x07 \x01(\x08:\x05\x66\x61lse\x1a\xd5\x02\n\x0c\x45xportType3D\x12\x1f\n\x10\x44istanceToFaults\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0e\x46\x65\x66low_Layered\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tGradients\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06Grdecl\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fKrigingVariance\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\'\n\x18KrigingStandardDeviation\x18\x05 \x01(\x08:\x05\x66\x61lse\x12!\n\x12KrigingScaledError\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cMartheVoxels\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bToughVoxels\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06Voxels\x18\t \x01(\x08:\x05\x66\x61lse\x12\x18\n\tvoxelsXYZ\x18\n \x01(\x08:\x05\x66\x61lse\"\xb9\x05\n\x12\x45xport3DShapes_GMT\x12%\n\x10output_directory\x18\x01 \x01(\t:\x0b\x65xport_mesh\x12\x12\n\nmodel_name\x18\x02 \x03(\t\x12\x42\n\tfile_type\x18\x03 \x01(\x0e\x32*.gmtaskmodel.Export3DShapes_GMT.FileType3D:\x03VTU\x12\x43\n\tmesh_type\x18\x04 \x01(\x0e\x32(.gmtaskmodel.Export3DShapes_GMT.MeshType:\x06VOLUME\x12\x39\n+filterout_triangles_from_inner_tetrahedrons\x18\x05 \x01(\x08:\x04true\x12\x1c\n\x0ewantTetrahedra\x18\x06 \x01(\x08:\x04true\x12#\n\x15\x65nvelop_surfaces_only\x18\x07 \x01(\x08:\x04true\x12%\n\x17\x46ormation_IsoPotentials\x18\x08 \x01(\x08:\x04true\x12*\n\x1c\x46ormation_GradientPotentials\x18\t \x01(\x08:\x04true\x12#\n\x08property\x18\x32 \x03(\x0e\x32\x11.ctm.PropertyType\x12!\n\x03log\x18\x63 \x01(\t:\x14\x65xport_3d_shapes.rpt\"\x95\x01\n\nFileType3D\x12\t\n\x05TSURF\x10\x00\x12\n\n\x06VULCAN\x10\x01\x12\x08\n\x04IGES\x10\x02\x12\x08\n\x04STEP\x10\x03\x12\t\n\x05\x44XF12\x10\x04\x12\t\n\x05\x44XF13\x10\x05\x12\x07\n\x03VTP\x10\x06\x12\x07\n\x03STL\x10\x07\x12\x07\n\x03VTU\x10\x08\x12\n\n\x06\x46\x45\x46LOW\x10\t\x12\t\n\x05MEDIT\x10\n\x12\x08\n\x04\x43\x33T3\x10\x0b\x12\n\n\x06\x43OMSOL\x10\x0c\".\n\x08MeshType\x12\x0b\n\x07SURFACE\x10\n\x12\t\n\x05SHELL\x10\x0b\x12\n\n\x06VOLUME\x10\x0c\"\xaf\x01\n\x12\x45xportAEMToPDF_GMT\x12\x0c\n\x04\x66ile\x18\x01 \x01(\t\x12\x12\n\ncomponents\x18\x02 \x03(\t\x12\x12\n\nnoiseTypes\x18\x03 \x03(\t\x12\x10\n\x08products\x18\x04 \x03(\t\x12\x0e\n\x06\x66ields\x18\x05 \x03(\t\x12\x10\n\x08sections\x18\x06 \x03(\t\x12\x16\n\x08\x64ocWidth\x18\x07 \x01(\x05:\x04\x31\x30\x30\x30\x12\x17\n\tdocHeight\x18\x08 \x01(\x05:\x04\x31\x32\x30\x30\"\xeb\t\n\x15\x45xportProjectSite_GMT\x12\x32\n\x08\x64\x61taType\x18\x01 \x03(\x0e\x32 .gmtaskmodel.GeomodellerDataType\x12\x37\n\nmyTypeSite\x18\x02 \x01(\x0e\x32\x17.gmtaskmodel.SiteType3D:\nPDF3D_Site\x12\x0c\n\x04Name\x18\x03 \x01(\t\x12\x15\n\rVRMLFile_Name\x18\x04 \x01(\t\x12\"\n\x14\x44oTextureEnhancement\x18\x06 \x01(\x08:\x04true\x12\x1a\n\x0b\x41\x64\x64Lighting\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x11\n\tvtp_files\x18\n \x03(\t\x12#\n\x0coutput_pdf3d\x18\x0b \x01(\t:\rmyProject.pdf\x12!\n\noutput_u3d\x18\x0c \x01(\t:\rmyProject.u3d\x12!\n\noutput_png\x18\x0e \x01(\t:\rmyProject.png\x12!\n\noutput_prc\x18\x0f \x01(\t:\rmyProject.prc\x12\x38\n\x0fMeshGrid_Source\x18\x14 \x03(\x0b\x32\x1f.gmtaskmodel.SourceMeshGrid_GMT\x12\x1a\n\x0fsolution_radius\x18\x15 \x01(\x01:\x01\x35\x12\x1f\n\x12grid_shrink_factor\x18\x16 \x01(\x01:\x03\x30.5\x12\x1d\n\x0eInversion_Case\x18\x1e \x01(\t:\x05\x43\x61se1\x12\x1b\n\rInversion_Run\x18\x1f \x01(\t:\x04Run1\x12#\n\x11Inversion_Product\x18  \x01(\t:\x08\x66inal.vo\x12\x1e\n\rInversion_AEM\x18( \x01(\t:\x07\x45M2DInv\x12\x13\n\x0bLine_Number\x18) \x03(\t\x12\x11\n\tIteration\x18* \x03(\x05\x12\x17\n\x08\x41\x64\x64Ticks\x18< \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x41\x64\x64Sections\x18= \x01(\x08:\x05\x66\x61lse\x12!\n\x07\x45xtents\x18> \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x1f\n\x14VerticalExaggeration\x18? \x01(\x01:\x01\x31\x12\x1d\n\x10PageHeightPixels\x18\x46 \x01(\x05:\x03\x37\x30\x30\x12\x1c\n\x0fPageWidthPixels\x18G \x01(\x05:\x03\x39\x32\x30\x12\x1b\n\x0e\x62\x61\x63kground_red\x18H \x01(\x01:\x03\x32\x30\x30\x12\x1d\n\x10\x62\x61\x63kground_green\x18I \x01(\x01:\x03\x32\x30\x30\x12\x1c\n\x0f\x62\x61\x63kground_blue\x18J \x01(\x01:\x03\x32\x30\x30\x12\x1e\n\tview_name\x18K \x01(\t:\x0b\x44\x65\x66\x61ultView\x12\x19\n\x0bShowToolBar\x18L \x01(\x08:\x04true\x12\"\n\x13ShowNavigationPanel\x18M \x01(\x08:\x05\x66\x61lse\x12&\n\x17SetOrthogonalProjection\x18N \x01(\x08:\x05\x66\x61lse\x12&\n\x18SetPerspectiveProjection\x18O \x01(\x08:\x04true\x12\x19\n\rfield_of_view\x18P \x01(\x01:\x02\x34\x35\x12\x16\n\x0e\x63overimagefile\x18Q \x01(\t\x12\x14\n\x05\x64\x65\x62ug\x18R \x01(\x08:\x05\x66\x61lse\x12)\n\nReportFile\x18Z \x01(\t:\x15\x45xportProjectSite.rpt\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"i\n\x10\x41xis_Control_GMT\x12\x10\n\x04step\x18\x02 \x01(\x01:\x02-1\x12\x19\n\x0e\x44\x65\x63imal_Number\x18  \x01(\x11:\x01\x31\x12\r\n\x05Title\x18\x04 \x01(\t\"\x19\n\tdirection\x12\x05\n\x01u\x10\x00\x12\x05\n\x01v\x10\x01\"\xd4\x02\n\x1bPresentation2D_Graphics_GMT\x12\x14\n\x0cSection_Name\x18\x01 \x01(\t\x12\x1c\n\rDoAllSections\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x33\n\x0eTitle_Position\x18\x03 \x01(\x0b\x32\x1b.gmtaskmodel.AddPoint2d_GMT\x12\x1d\n\x0f\x41xis_Graduation\x18\x04 \x01(\x08:\x04true\x12\x19\n\x0b\x41xis_Labels\x18\x05 \x01(\x08:\x04true\x12\x1a\n\x0b\x41xis_Titles\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x33\n\x0c\x41xis_Control\x18\x07 \x03(\x0b\x32\x1d.gmtaskmodel.Axis_Control_GMT\x12\x33\n\x19output_graphics_file_stub\x18\x08 \x01(\t:\x10section_name.png\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\xda\x01\n\x1cPrismFeFLOWTriangulation_GMT\x12\x1b\n\x13input_fem_mesh_file\x18\x01 \x02(\t\x12\x19\n\rNumber_Layers\x18\x02 \x01(\x11:\x02\x32\x30\x12\x1b\n\x10VariableZ_Factor\x18\x05 \x01(\x01:\x01\x31\x12 \n\x0boutput_mesh\x18\x03 \x01(\t:\x0bmesh_3d.fem\x12\x35\n\x12output_report_file\x18\x04 \x01(\t:\x19prism_fem_mesh_report.rpt\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\x9e\x04\n\x16GenerateMeshReport_GMT\x12\x34\n\x12output_report_file\x18\x01 \x01(\t:\x18generate_mesh_report.rpt\x12\x17\n\x0finput_mesh_file\x18\x02 \x01(\t\x12\x41\n\x0cTypeMeshGrid\x18\r \x01(\x0e\x32\x1a.ctm.MeshGrid_TypeMeshGrid:\x0fMeshGrid_VERTEX\x12\x11\n\x03vtk\x18\x03 \x01(\x08:\x04true\x12\x1d\n\x15sharp_angle_threshold\x18\x04 \x01(\x01\x12.\n\x15\x66\x61\x63\x65t_angle_threshold\x18\x05 \x01(\x0b\x32\x0f.ctm.PairDouble\x12-\n\x14\x66\x61\x63\x65t_size_threshold\x18\x06 \x01(\x0b\x32\x0f.ctm.PairDouble\x12\x12\n\x07vtp_dir\x18\x07 \x01(\t:\x01.\x12\x1e\n\x0fwrite_vtp_files\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0freport_vertices\x18\t \x01(\x08:\x04true\x12\x1a\n\x0creport_edges\x18\n \x01(\x08:\x04true\x12\x1b\n\rreport_facets\x18\x0b \x01(\x08:\x04true\x12\x19\n\ttolerance\x18\x0c \x01(\x01:\x06\x30.0001\x12,\n\x12output_mesh_report\x18\x14 \x01(\t:\x10mesh_quality.rpt\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\x95\x06\n\x16MeshUnitForGeophys_GMT\x12\x18\n\x10input_point_file\x18\x01 \x01(\t\x12\x18\n\x10output_mesh_file\x18\x02 \x01(\t\x12J\n\x0brank_radius\x18\x03 \x03(\x0b\x32\x35.gmtaskmodel.MeshUnitForGeophys_GMT.RankRadiusControl\x12\x17\n\x0bnum_samples\x18\x04 \x01(\x05:\x02\x31\x30\x12\x11\n\tdebug_dir\x18\x05 \x01(\t\x12\x14\n\x0c\x64\x65\x62ug_prefix\x18\x07 \x01(\t\x12W\n\x11thinning_function\x18\x08 \x01(\x0e\x32\x34.gmtaskmodel.MeshUnitForGeophys_GMT.ThinningFunction:\x06LINEAR\x12Z\n\rsample_method\x18\t \x01(\x0e\x32\x30.gmtaskmodel.MeshUnitForGeophys_GMT.SampleMethod:\x11INPUT_POINT_CLOUD\x12*\n\x1bthinning_radii_are_absolute\x18\n \x01(\x08:\x05\x66\x61lse\x12\x11\n\tunit_name\x18\x0b \x01(\t\x12\x11\n\tunit_rank\x18\x0c \x01(\x05\x12\x31\n\tcgalparms\x18\r \x01(\x0b\x32\x1e.gmtaskmodel.BuildMeshCGAL_GMT\x12/\n\x03log\x18\x63 \x01(\t:\"mesh_unit_for_geophysics_model.rpt\x1a\x61\n\x11RankRadiusControl\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0c\n\x04rank\x18\x02 \x01(\x05\x12\x16\n\x0btopo_radius\x18\x03 \x01(\x01:\x01\x31\x12\x18\n\x0b\x62\x61se_radius\x18\x04 \x01(\x01:\x03\x31\x30\x30\"/\n\x10ThinningFunction\x12\n\n\x06LINEAR\x10\x00\x12\x0f\n\x0b\x41NISOTROPIC\x10\x01\":\n\x0cSampleMethod\x12\x15\n\x11INPUT_POINT_CLOUD\x10\x00\x12\x13\n\x0fPOTENTIAL_FIELD\x10\x01\"}\n\x19GetComputedLithoAtXYZ_GMT\x12&\n\x08\x66ilename\x18\x01 \x02(\t:\x14ModelLitho_Query.rpt\x12*\n\x05Point\x18\x02 \x03(\x0b\x32\x1b.gmtaskmodel.AddPoint3d_GMT\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\x84\x01\n\x1cGetComputedGradientAtXYZ_GMT\x12*\n\x08\x66ilename\x18\x01 \x02(\t:\x18ModelGradients_Query.rpt\x12*\n\x05Point\x18\x02 \x03(\x0b\x32\x1b.gmtaskmodel.AddPoint3d_GMT\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\xb5\x04\n\x1d\x43omputeExternalDriftField_GMT\x12\x38\n\x0fMeshGrid_Source\x18\x01 \x02(\x0b\x32\x1f.gmtaskmodel.SourceMeshGrid_GMT\x12\x62\n\x17required_drift_function\x18\x03 \x03(\x0b\x32\x41.gmtaskmodel.ComputeExternalDriftField_GMT.Formation_Distribution\x12.\n\tDepthUnit\x18\x04 \x01(\x0e\x32\x13.ctm.Distance_Units:\x06meters\x12\x31\n\rProperty_Type\x18\x05 \x01(\x0e\x32\x11.ctm.PropertyType:\x07\x44\x65nsity\x12\x41\n\x0cTypeMeshGrid\x18\r \x01(\x0e\x32\x1a.ctm.MeshGrid_TypeMeshGrid:\x0fMeshGrid_VERTEX\x12\x39\n\x12output_report_file\x18\x63 \x01(\t:\x1d\x43omputeExternalDriftField.rpt\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x1a\x86\x01\n\x16\x46ormation_Distribution\x12\x11\n\tformation\x18\x01 \x02(\t\x12,\n\x04Type\x18\x02 \x01(\x0e\x32\x1e.gmtaskmodel.Distribution_Type\x12\r\n\x02p1\x18\x03 \x01(\x01:\x01\x30\x12\r\n\x02p2\x18\x04 \x01(\x01:\x01\x30\x12\r\n\x02p3\x18\x05 \x01(\x01:\x01\x30\"\xe4\x01\n\x15\x43reateAxialSeries_GMT\x12\x13\n\x0b\x41xialSeries\x18\x01 \x02(\t\x12\x0e\n\x03red\x18\x03 \x01(\x01:\x01\x30\x12\x12\n\x05green\x18\x04 \x01(\x01:\x03\x31\x32\x35\x12\x11\n\x04\x62lue\x18\x05 \x01(\x01:\x03\x32\x35\x35\x12;\n\tMechanism\x18\r \x01(\x0e\x32\x1a.gmtaskmodel.FoldMechanism:\x0c\x46lexuralSlip\x12\x35\n\x05style\x18\x0e \x01(\x0e\x32\x1d.gmtaskmodel.DeformationStyle:\x07\x43lass1B\x12\x0b\n\x03log\x18\x07 \x01(\t\"\x9a\x03\n\x16\x43reateAxialSurface_GMT\x12\x13\n\x0b\x41xialSeries\x18\x01 \x02(\t\x12\x14\n\x0c\x41xialSurface\x18\x02 \x02(\t\x12\x0e\n\x03red\x18\x03 \x01(\x01:\x01\x30\x12\x12\n\x05green\x18\x04 \x01(\x01:\x03\x31\x32\x35\x12\x11\n\x04\x62lue\x18\x05 \x01(\x01:\x03\x32\x35\x35\x12/\n\tPointList\x18\x06 \x01(\x0b\x32\x1c.gmtaskmodel.PointList2d_GMT\x12\x31\n\x0bPointList3D\x18\x07 \x01(\x0b\x32\x1c.gmtaskmodel.PointList3d_GMT\x12\x17\n\robservationId\x18\x08 \x01(\t:\x00\x12-\n\nprovenance\x18\t \x01(\x0e\x32\x13.ctm.ProvenanceType:\x04none\x12.\n\x04type\x18\n \x01(\x0e\x32\x15.gmtaskmodel.FoldType:\tAnticline\x12\x35\n\ttightness\x18\x0c \x01(\x0e\x32\x1a.gmtaskmodel.FoldTightness:\x06Gentle\x12\x0b\n\x03log\x18\x14 \x01(\t\"\x95\x02\n\x15\x41\x64\x64\x41xialTraceLine_GMT\x12\x13\n\x0b\x41xialSeries\x18\x01 \x01(\t\x12\x14\n\x0c\x41xialSurface\x18\x02 \x02(\t\x12\x17\n\x0f\x44\x65\x66iningSection\x18\x03 \x01(\t\x12/\n\tPointList\x18\x04 \x01(\x0b\x32\x1c.gmtaskmodel.PointList2d_GMT\x12\x31\n\x0bPointList3D\x18\x05 \x01(\x0b\x32\x1c.gmtaskmodel.PointList3d_GMT\x12\x17\n\robservationId\x18\x06 \x01(\t:\x00\x12-\n\nprovenance\x18\x07 \x01(\x0e\x32\x13.ctm.ProvenanceType:\x04none\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\x9d\x03\n\x1e\x41\x64\x64\x41xialSurfaceOrientation_GMT\x12\x13\n\x0b\x41xialSeries\x18\x01 \x02(\t\x12\x17\n\robservationId\x18\x02 \x01(\t:\x00\x12\x17\n\x0f\x44\x65\x66iningSection\x18\x04 \x01(\t\x12*\n\x05Point\x18\x06 \x01(\x0b\x32\x1b.gmtaskmodel.AddPoint2d_GMT\x12,\n\x07Point3D\x18\x07 \x01(\x0b\x32\x1b.gmtaskmodel.AddPoint3d_GMT\x12-\n\nprovenance\x18\x05 \x01(\x0e\x32\x13.ctm.ProvenanceType:\x04none\x12\x0e\n\x03\x44ip\x18\x08 \x01(\x01:\x01\x30\x12\x17\n\x0c\x44ipDirection\x18\t \x01(\x01:\x01\x30\x12\x10\n\x05Pitch\x18\n \x01(\x01:\x01\x30\x12\x34\n\x08Polarity\x18\x11 \x01(\x0e\x32\x11.ctm.PolarityType:\x0fNormal_Polarity\x12-\n\tfoliation\x18\x14 \x01(\x0b\x32\x1a.gmtaskmodel.Foliation_GMT\x12\x0b\n\x03log\x18\x32 \x01(\t\"\xe5\x03\n\x10\x41\x64\x64HingeLine_GMT\x12\x13\n\x0b\x41xialSeries\x18\x01 \x01(\t\x12\x14\n\x0c\x41xialSurface\x18\x02 \x02(\t\x12\x11\n\tFormation\x18\x04 \x02(\t\x12/\n\tPointList\x18\x05 \x01(\x0b\x32\x1c.gmtaskmodel.PointList2d_GMT\x12\x31\n\x0bPointList3D\x18\x06 \x01(\x0b\x32\x1c.gmtaskmodel.PointList3d_GMT\x12\x17\n\robservationId\x18\x07 \x01(\t:\x00\x12-\n\nprovenance\x18\x08 \x01(\x0e\x32\x13.ctm.ProvenanceType:\x04none\x12\x1c\n\x10\x44istanceAtOrigin\x18\t \x01(\x01:\x02\x39\x30\x12 \n\x13\x44istanceAtExtremity\x18\n \x01(\x01:\x03\x31\x30\x30\x12!\n\x13\x43onstant_Fold_Shape\x18\x0b \x01(\x08:\x04true\x12\x1c\n\x10\x41pertureAtOrigin\x18\x0c \x01(\x01:\x02\x33\x30\x12\x1f\n\x13\x41pertureAtExtremity\x18\r \x01(\x01:\x02\x33\x30\x12\x38\n\x08Polarity\x18\x0e \x01(\x0e\x32\x1a.gmtaskmodel.HingePolarity:\nHinge_Left\x12\x0b\n\x03log\x18\x32 \x01(\t\"\xea\x01\n!CreateSectionFromAxialSurface_GMT\x12\x18\n\x10\x41xialSectionName\x18\x01 \x02(\t\x12\x14\n\x0c\x41xialSurface\x18\x02 \x02(\t\x12\x15\n\tGridNodes\x18\x04 \x01(\x05:\x02\x31\x30\x12!\n\x07\x45xtents\x18\x06 \x01(\x0b\x32\x10.ctm.BoundingBox\x12N\n\x17InterpotationParameters\x18\x0c \x01(\x0b\x32-.gmtaskmodel.ModelInterpolationParameters_GMT\x12\x0b\n\x03log\x18\x07 \x01(\t\"\x94)\n\x0fGeomodellerTask\x12\x35\n\rCreateProject\x18\x01 \x01(\x0b\x32\x1e.gmtaskmodel.CreateProject_GMT\x12\x37\n\x0eOpenProjectGUI\x18\x02 \x01(\x0b\x32\x1f.gmtaskmodel.OpenProjectGUI_GMT\x12;\n\x10OpenProjectNoGUI\x18\x03 \x01(\x0b\x32!.gmtaskmodel.OpenProjectNoGUI_GMT\x12\x31\n\x0bSaveProject\x18\x04 \x01(\x0b\x32\x1c.gmtaskmodel.SaveProject_GMT\x12\x35\n\rSaveProjectAs\x18\x05 \x01(\x0b\x32\x1e.gmtaskmodel.SaveProjectAs_GMT\x12-\n\tCustomDTM\x18\x06 \x01(\x0b\x32\x1a.gmtaskmodel.CustomDTM_GMT\x12\x35\n\rHorizontalDTM\x18\x07 \x01(\x0b\x32\x1e.gmtaskmodel.HorizontalDTM_GMT\x12\x39\n\x0f\x43reateFormation\x18\x08 \x01(\x0b\x32 .gmtaskmodel.CreateFormation_GMT\x12\x31\n\x0b\x43reateFault\x18\t \x01(\x0b\x32\x1c.gmtaskmodel.CreateFault_GMT\x12-\n\tSetSeries\x18\n \x01(\x0b\x32\x1a.gmtaskmodel.SetSeries_GMT\x12\x43\n\x14\x41\x64\x64\x46ormationToSeries\x18\x0b \x01(\x0b\x32%.gmtaskmodel.AddFormationToSeries_GMT\x12\x39\n\x0f\x41\x64\x64\x44ykeToSeries\x18\x34 \x01(\x0b\x32 .gmtaskmodel.AddDykeToSeries_GMT\x12/\n\nAddPoint3d\x18\x0c \x01(\x0b\x32\x1b.gmtaskmodel.AddPoint3d_GMT\x12\x31\n\x0bPointList3d\x18\r \x01(\x0b\x32\x1c.gmtaskmodel.PointList3d_GMT\x12\x35\n\rCreateSection\x18\x0e \x01(\x0b\x32\x1e.gmtaskmodel.CreateSection_GMT\x12/\n\nAddPoint2d\x18\x0f \x01(\x0b\x32\x1b.gmtaskmodel.AddPoint2d_GMT\x12\x31\n\x0bPointList2d\x18\x10 \x01(\x0b\x32\x1c.gmtaskmodel.PointList2d_GMT\x12\x45\n\x15\x41\x64\x64InterfaceToSection\x18\x11 \x01(\x0b\x32&.gmtaskmodel.AddInterfaceToSection_GMT\x12\x45\n\x15\x41\x64\x64\x46oliationToSection\x18\x12 \x01(\x0b\x32&.gmtaskmodel.AddFoliationToSection_GMT\x12M\n\x19\x41\x64\x64\x33\x44\x46oliationToFormation\x18\x13 \x01(\x0b\x32*.gmtaskmodel.Add3DFoliationToFormation_GMT\x12\x45\n\x15Import2dDataToSection\x18\x14 \x01(\x0b\x32&.gmtaskmodel.Import2dDataToSection_GMT\x12Q\n\x1b\x44\x65leteInterfacesFromSection\x18\x15 \x01(\x0b\x32,.gmtaskmodel.DeleteInterfacesFromSection_GMT\x12U\n\x1dReadAndImport2dDataToASection\x18\x1e \x01(\x0b\x32..gmtaskmodel.ReadAndImport2dDataToASection_GMT\x12\x35\n\rRenderSection\x18\x1f \x01(\x0b\x32\x1e.gmtaskmodel.RenderSection_GMT\x12\x39\n\x0fUpdateInterface\x18  \x01(\x0b\x32 .gmtaskmodel.UpdateInterface_GMT\x12\x43\n\x14LinkFaultsWithSeries\x18! \x01(\x0b\x32%.gmtaskmodel.LinkFaultsWithSeries_GMT\x12\x43\n\x14LinkFaultsWithFaults\x18\x30 \x01(\x0b\x32%.gmtaskmodel.LinkFaultsWithFaults_GMT\x12/\n\nCreateDyke\x18\" \x01(\x0b\x32\x1b.gmtaskmodel.CreateDyke_GMT\x12\x35\n\rExportSection\x18# \x01(\x0b\x32\x1e.gmtaskmodel.ExportSection_GMT\x12Y\n\x1f\x43\x65ntralVerticalPotentialAndRank\x18$ \x01(\x0b\x32\x30.gmtaskmodel.CentralVerticalPotentialAndRank_GMT\x12\x39\n\x0fGetModelSummary\x18% \x01(\x0b\x32 .gmtaskmodel.GetModelSummary_GMT\x12;\n\x10Set3dFaultLimits\x18\' \x01(\x0b\x32!.gmtaskmodel.Set3dFaultLimits_GMT\x12I\n\x17\x41\x64\x64\x41pparentDipToSection\x18( \x01(\x0b\x32(.gmtaskmodel.AddApparentDipToSection_GMT\x12\x33\n\x0c\x66\x61ult_centre\x18\xa0\x01 \x01(\x0b\x32\x1c.gmtaskmodel.FaultCentre_GMT\x12\x35\n\rCreate3DPoint\x18+ \x01(\x0b\x32\x1e.gmtaskmodel.Create3DPoint_GMT\x12O\n\x1a\x41\x64\x64\x33\x44InterfacesToFormation\x18, \x01(\x0b\x32+.gmtaskmodel.Add3DInterfacesToFormation_GMT\x12\x45\n\x15GetComputedLithoAtXYZ\x18- \x01(\x0b\x32&.gmtaskmodel.GetComputedLithoAtXYZ_GMT\x12K\n\x18GetComputedGradientAtXYZ\x18. \x01(\x0b\x32).gmtaskmodel.GetComputedGradientAtXYZ_GMT\x12\x41\n\x13ReadAndImport3dData\x18/ \x01(\x0b\x32$.gmtaskmodel.ReadAndImport3dData_GMT\x12W\n\x1e\x41\x64\x64\x44ykeStructuralDataToSection\x18\x33 \x01(\x0b\x32/.gmtaskmodel.AddDykeStructuralDataToSection_GMT\x12=\n\x11\x43reateAxialSeries\x18\x36 \x01(\x0b\x32\".gmtaskmodel.CreateAxialSeries_GMT\x12?\n\x12\x43reateAxialSurface\x18\x37 \x01(\x0b\x32#.gmtaskmodel.CreateAxialSurface_GMT\x12=\n\x11\x41\x64\x64\x41xialTraceLine\x18\x38 \x01(\x0b\x32\".gmtaskmodel.AddAxialTraceLine_GMT\x12\x33\n\x0c\x41\x64\x64HingeLine\x18\x39 \x01(\x0b\x32\x1d.gmtaskmodel.AddHingeLine_GMT\x12O\n\x1a\x41\x64\x64\x41xialSurfaceOrientation\x18: \x01(\x0b\x32+.gmtaskmodel.AddAxialSurfaceOrientation_GMT\x12U\n\x1d\x43reateSectionFromAxialSurface\x18; \x01(\x0b\x32..gmtaskmodel.CreateSectionFromAxialSurface_GMT\x12\x39\n\x0f\x43reateDrillhole\x18= \x01(\x0b\x32 .gmtaskmodel.CreateDrillhole_GMT\x12\x37\n\x0eLoadDrillholes\x18& \x01(\x0b\x32\x1f.gmtaskmodel.LoadDrillholes_GMT\x12\x41\n\x13\x43ompositeDrillholes\x18< \x01(\x0b\x32$.gmtaskmodel.CompositeDrillholes_GMT\x12Q\n\x1fProbabilityDistributionFunction\x18\x46 \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12\x35\n\x11LithologyProperty\x18G \x01(\x0b\x32\x1a.ctm.LithologyProperty_GMT\x12\x37\n\x0eSetModelBounds\x18\x62 \x01(\x0b\x32\x1f.gmtaskmodel.SetModelBounds_GMT\x12\x37\n\x0eGetModelBounds\x18\x63 \x01(\x0b\x32\x1f.gmtaskmodel.GetModelBounds_GMT\x12\x37\n\x0eWriteBatchFile\x18\x31 \x01(\x0b\x32\x1f.gmtaskmodel.WriteBatchFile_GMT\x12\x33\n\x0c\x43omputeModel\x18\x64 \x01(\x0b\x32\x1d.gmtaskmodel.ComputeModel_GMT\x12\x31\n\x0bRenderModel\x18\x65 \x01(\x0b\x32\x1c.gmtaskmodel.RenderModel_GMT\x12\x43\n\x14RenderModelOnSection\x18q \x01(\x0b\x32%.gmtaskmodel.RenderModelOnSection_GMT\x12?\n\x12SaveLithologyVoxet\x18\x66 \x01(\x0b\x32#.gmtaskmodel.SaveLithologyVoxet_GMT\x12O\n\x1aSavePotentialGradientVoxet\x18g \x01(\x0b\x32+.gmtaskmodel.SavePotentialGradientVoxet_GMT\x12S\n\x1cInterpolateNumericalReadings\x18h \x01(\x0b\x32-.gmtaskmodel.InterpolateNumericalReadings_GMT\x12;\n\x10ImportSeismicNav\x18i \x01(\x0b\x32!.gmtaskmodel.ImportSeismicNav_GMT\x12\x45\n\x15ImportSeismicHorizons\x18j \x01(\x0b\x32&.gmtaskmodel.ImportSeismicHorizons_GMT\x12K\n\x18ImportMicroSeismicEvents\x18p \x01(\x0b\x32).gmtaskmodel.ImportMicroSeismicEvents_GMT\x12\x35\n\x0cLoadMeshGrid\x18k \x01(\x0b\x32\x1f.gmtaskmodel.SourceMeshGrid_GMT\x12\x37\n\x0e\x45xportMeshGrid\x18l \x01(\x0b\x32\x1f.gmtaskmodel.ExportMeshGrid_GMT\x12\x37\n\x0e\x43reateMeshGrid\x18m \x01(\x0b\x32\x1f.gmtaskmodel.CreateMeshGrid_GMT\x12?\n\x12GenerateMeshReport\x18n \x01(\x0b\x32#.gmtaskmodel.GenerateMeshReport_GMT\x12\x35\n\rBuildMeshCGAL\x18) \x01(\x0b\x32\x1e.gmtaskmodel.BuildMeshCGAL_GMT\x12\x37\n\x0e\x45xport3DShapes\x18* \x01(\x0b\x32\x1f.gmtaskmodel.Export3DShapes_GMT\x12\x31\n\x0b\x45xportModel\x18\x41 \x01(\x0b\x32\x1c.gmtaskmodel.ExportModel_GMT\x12=\n\x11\x45xportProjectSite\x18\x32 \x01(\x0b\x32\".gmtaskmodel.ExportProjectSite_GMT\x12I\n\x17Presentation2D_Graphics\x18> \x01(\x0b\x32(.gmtaskmodel.Presentation2D_Graphics_GMT\x12;\n\x10\x42uildTripleLines\x18\x35 \x01(\x0b\x32!.gmtaskmodel.BuildTripleLines_GMT\x12K\n\x18PrismFeFLOWTriangulation\x18\x43 \x01(\x0b\x32).gmtaskmodel.PrismFeFLOWTriangulation_GMT\x12?\n\x12MeshUnitForGeophys\x18o \x01(\x0b\x32#.gmtaskmodel.MeshUnitForGeophys_GMT\x12M\n\x19\x43omputeExternalDriftField\x18r \x01(\x0b\x32*.gmtaskmodel.ComputeExternalDriftField_GMT\x12;\n\x10\x43omputeVariogram\x18x \x01(\x0b\x32!.gmtaskmodel.ComputeVariogram_GMT\x12>\n\x11ImportTripleLines\x18\x82\x01 \x01(\x0b\x32\".gmtaskmodel.ImportTripleLines_GMT\x12>\n\x11\x43loseProjectNoGUI\x18\x8c\x01 \x01(\x0b\x32\".gmtaskmodel.CloseProjectNoGUI_GMT\x12H\n\x16\x44rillholeQueryMeshGrid\x18\x96\x01 \x01(\x0b\x32\'.gmtaskmodel.DrillholeQueryMeshGrid_GMT\x12\x34\n\x0c\x45xport2DData\x18\x97\x01 \x01(\x0b\x32\x1d.gmtaskmodel.Export2DData_GMT\x12\x42\n\x13\x43reateSegYThumbnail\x18\x98\x01 \x01(\x0b\x32$.gmtaskmodel.CreateSegYThumbnail_GMT\x12\x0c\n\x03log\x18\xff\x01 \x01(\t*.\n\x15GeomodellerDataSource\x12\x0b\n\x07Project\x10\x00\x12\x08\n\x04\x46ile\x10\x01*L\n\x12SectionRenderStyle\x12\x0e\n\nSolid_Fill\x10\x00\x12\x12\n\x0e\x42oundary_Lines\x10\x01\x12\x12\n\x0eGeology_Trends\x10\x02*P\n\x0f\x46\x61ultCentreType\x12\x11\n\rMEAN_POSITION\x10\x00\x12\x16\n\x12\x42OUNDINGBOX_CENTRE\x10\x01\x12\x12\n\x0eUSER_SPECIFIED\x10\x63*E\n\tFormats2D\x12\n\n\x06\x46T_SHP\x10\x00\x12\x0e\n\nFT_MAPINFO\x10\x01\x12\x10\n\x0c\x46T_ASCIIBRGM\x10\x02\x12\n\n\x06\x46T_CSV\x10\x04*k\n\x1c\x41ssociated_OrientationMethod\x12\r\n\tUNDEFINED\x10\x00\x12\x07\n\x03\x44IP\x10\x01\x12\x0e\n\nDIPAZIMUTH\x10\x02\x12\x13\n\x0fLINEORIENTATION\x10\x03\x12\x0e\n\nORTHOGONAL\x10\x04*|\n\x0cImportAction\x12\x0f\n\x0b\x43reateFault\x10\x00\x12\x13\n\x0f\x43reateFormation\x10\x01\x12\x0e\n\nCreateDyke\x10\x02\x12\x0e\n\nMergeFault\x10\x03\x12\x12\n\x0eMergeFormation\x10\x05\x12\x12\n\x0eImport_default\x10\x06*5\n\x0e\x43ompositeStyle\x12\x10\n\x0cStart_Collar\x10\x00\x12\x11\n\rFirst_NonNull\x10\x01*B\n\x19\x43ompositeReplacementStyle\x12\x13\n\x0f\x42\x61\x63kgroundValue\x10\x00\x12\x10\n\x0cWeightedMean\x10\x01*F\n\x17\x43ompositeWeightingStyle\x12\x14\n\x10length_weighting\x10\x00\x12\x15\n\x11\x64\x65nsity_weighting\x10\x01*L\n\x0eTypeOfAnalysis\x12\x0f\n\x0bRhoThetaPhi\x10\x00\x12\x0c\n\x08RhoTheta\x10\x01\x12\x07\n\x03Rho\x10\x02\x12\x07\n\x03UVT\x10\x03\x12\t\n\x05OnlyT\x10\x04*8\n\rKrigingDomain\x12\n\n\x06Series\x10\x00\x12\r\n\tFormation\x10\x01\x12\x0c\n\x08NoDomain\x10\x02*u\n\x16Kriging_WhichVariogram\x12\r\n\tKriging_U\x10\x00\x12\r\n\tKriging_V\x10\x01\x12\r\n\tKriging_W\x10\x02\x12\x0f\n\x0bKriging_RHO\x10\x03\x12\r\n\tKriging_T\x10\x04\x12\x0e\n\nKriging_UV\x10\x05*\x9d\x01\n\x13Mesh_facet_topology\x12\x1d\n\x19\x46\x41\x43\x45T_VERTICES_ON_SURFACE\x10\x00\x12(\n$FACET_VERTICES_ON_SAME_SURFACE_PATCH\x10\x01\x12=\n9FACET_VERTICES_ON_SAME_SURFACE_PATCH_WITH_ADJACENCY_CHECK\x10\x02*P\n\x12OptManifoldRequest\x12\x0c\n\x08manifold\x10\x00\x12\x1a\n\x16manifold_with_boundary\x10\x01\x12\x10\n\x0cnon_manifold\x10\x02*L\n\nSiteType3D\x12\r\n\tVRML_Site\x10\x00\x12\x0e\n\nPDF3D_Site\x10\x01\x12\x10\n\x0cPDF3D_direct\x10\x02\x12\r\n\tADOBE_PRC\x10\x03*r\n\x13GeomodellerDataType\x12\r\n\tStructure\x10\x01\x12\t\n\x05Model\x10\x02\x12\x0c\n\x08MeshGrid\x10\x03\x12\x0e\n\nDrillHoles\x10\x04\x12\x14\n\x10Inversion_Result\x10\x05\x12\r\n\tAll_Parts\x10\n*{\n\x11\x44istribution_Type\x12\x19\n\x15TopFormation_Gradient\x10\x01\x12\x10\n\x0cTopAndBottom\x10\x02\x12\x1b\n\x17\x44\x65pthParameter_Gradient\x10\x03\x12\x1c\n\x18\x42ottomFormation_Gradient\x10\x04*\xbc\x01\n\x08\x46oldType\x12\r\n\tAnticline\x10\x00\x12\x0c\n\x08Syncline\x10\x01\x12\x0c\n\x08\x41ntiform\x10\x02\x12\x0b\n\x07Synform\x10\x03\x12\x08\n\x04\x44ome\x10\x04\x12\t\n\x05\x42\x61sin\x10\x05\x12\r\n\tMonocline\x10\x06\x12\x0b\n\x07\x43hevron\x10\x07\x12\r\n\tRecumbent\x10\x08\x12\t\n\x05Slump\x10\t\x12\r\n\tPtygmatic\x10\n\x12\r\n\tParasitic\x10\x0b\x12\x0f\n\x0b\x44isharmonic\x10\x0c*E\n\rFoldMechanism\x12\x10\n\x0c\x46lexuralSlip\x10\x00\x12\x0c\n\x08\x42uckling\x10\x01\x12\x14\n\x10MassDisplacement\x10\x02*8\n\rFoldTightness\x12\n\n\x06Gentle\x10\x00\x12\x0c\n\x08OpenFold\x10\x01\x12\r\n\tTightFold\x10\x02*]\n\x10\x44\x65\x66ormationStyle\x12\n\n\x06\x43lass1\x10\x00\x12\x0b\n\x07\x43lass1A\x10\x01\x12\x0b\n\x07\x43lass1B\x10\x02\x12\x0b\n\x07\x43lass1C\x10\x03\x12\n\n\x06\x43lass2\x10\x04\x12\n\n\x06\x43lass3\x10\x05*0\n\rHingePolarity\x12\x0e\n\nHinge_Left\x10\x00\x12\x0f\n\x0bHinge_Right\x10\x01'
+  serialized_pb=b'\n\x11gmtaskmodel.proto\x12\x0bgmtaskmodel\x1a\x15\x63ommontaskmodel.proto\x1a\x10vtktasksup.proto\"\xfa\x03\n\rFoliation_GMT\x12*\n\x05Point\x18\x01 \x01(\x0b\x32\x1b.gmtaskmodel.AddPoint2d_GMT\x12,\n\x07Point3D\x18\x02 \x01(\x0b\x32\x1b.gmtaskmodel.AddPoint3d_GMT\x12\x0b\n\x03\x64ip\x18\x03 \x02(\x01\x12\x11\n\tdirection\x18\x04 \x01(\x01\x12\x0f\n\x07\x61zimuth\x18\x05 \x01(\x01\x12\x42\n\x0f\x44ipDistribution\x18\x0b \x01(\x0b\x32).ctm.AngleProbabilityDistributionFunction\x12H\n\x15\x44irectionDistribution\x18\x0c \x01(\x0b\x32).ctm.AngleProbabilityDistributionFunction\x12-\n\nProvenance\x18\x06 \x01(\x0e\x32\x13.ctm.ProvenanceType:\x04none\x12\x34\n\x08polarity\x18\x07 \x01(\x0e\x32\x11.ctm.PolarityType:\x0fNormal_Polarity\x12\x17\n\robservationID\x18\x08 \x01(\t:\x00\x12\x11\n\tIntensity\x18\t \x01(\x01\x12#\n\x18spherical_variance_kappa\x18\n \x01(\x01:\x01\x32\x12\x1a\n\x03log\x18\x14 \x01(\t:\rfoliation.rpt\"\x83\x02\n\x0f\x41pparentDip_GMT\x12*\n\x05Point\x18\x01 \x02(\x0b\x32\x1b.gmtaskmodel.AddPoint2d_GMT\x12\x42\n\x0f\x44ipDistribution\x18\x0b \x01(\x0b\x32).ctm.AngleProbabilityDistributionFunction\x12\x35\n\nProvenance\x18\x03 \x01(\x0e\x32\x13.ctm.ProvenanceType:\x0cseismic_pick\x12\x17\n\robservationID\x18\x04 \x01(\t:\x00\x12\x11\n\tdip_error\x18\x05 \x01(\x01\x12\x1d\n\x03log\x18\x06 \x01(\t:\x10\x61pparent_dip.rpt\"Z\n\x12SetModelBounds_GMT\x12!\n\x07\x45xtents\x18\x01 \x02(\x0b\x32\x10.ctm.BoundingBox\x12!\n\x03log\x18\x02 \x01(\t:\x14set_model_bounds.rpt\"Z\n\x12GetModelBounds_GMT\x12!\n\x07\x45xtents\x18\x01 \x01(\x0b\x32\x10.ctm.BoundingBox\x12!\n\x03log\x18\x02 \x01(\t:\x14get_model_bounds.rpt\"E\n\x12OpenProjectGUI_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x1d\n\x03log\x18\x02 \x01(\t:\x10open_project.rpt\"G\n\x14OpenProjectNoGUI_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x1d\n\x03log\x18\x02 \x01(\t:\x10open_project.rpt\"I\n\x15\x43loseProjectNoGUI_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x01(\t\x12\x1e\n\x03log\x18\x02 \x01(\t:\x11\x63lose_project.rpt\"W\n\x0fSaveProject_GMT\x12%\n\x16without_computed_model\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x03log\x18\x01 \x01(\t:\x10save_project.rpt\"n\n\x11SaveProjectAs_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12%\n\x16without_computed_model\x18\x02 \x01(\x08:\x05\x66\x61lse\x12 \n\x03log\x18\x03 \x01(\t:\x13save_project_as.rpt\"\x9f\x03\n\rCustomDTM_GMT\x12\x0c\n\x04name\x18\x02 \x02(\t\x12\x1f\n\x08\x66ilename\x18\x03 \x01(\x0b\x32\r.ctm.Grid_INT\x12 \n\ttilenames\x18\x0f \x03(\x0b\x32\r.ctm.Grid_INT\x12#\n\x07\x45xtents\x18\x04 \x01(\x0b\x32\x12.ctm.BoundingBox2D\x12\r\n\x02nx\x18\x05 \x01(\x05:\x01\x35\x12\r\n\x02ny\x18\x06 \x01(\x05:\x01\x35\x12\x12\n\x07\x64\x65gree1\x18\x07 \x01(\x05:\x01\x33\x12\x12\n\x07\x64\x65gree2\x18\x08 \x01(\x05:\x01\x35\x12\x1a\n\x0fsub_sample_rate\x18\t \x01(\x05:\x01\x31\x12\x17\n\x0f\x65levation_error\x18\n \x01(\x01\x12 \n\x12isElevationMeasure\x18\x0b \x01(\x08:\x04true\x12*\n\x05units\x18\x0c \x01(\x0e\x32\x13.ctm.Distance_Units:\x06meters\x12\x1e\n\x16spatial_location_error\x18\r \x01(\x01\x12\x12\n\nshape_file\x18\x0e \x01(\t\x12\x1b\n\x03log\x18\x14 \x01(\t:\x0e\x63ustom_dtm.rpt\"u\n\x11HorizontalDTM_GMT\x12\x0c\n\x04name\x18\x01 \x02(\t\x12\x11\n\televation\x18\x02 \x02(\x01\x12\x1e\n\x16spatial_location_error\x18\x03 \x01(\x01\x12\x1f\n\x03log\x18\x04 \x01(\t:\x12horizontal_dtm.rpt\"\xa9\x05\n\x11\x43reateProject_GMT\x12-\n\tCustomDTM\x18\x01 \x01(\x0b\x32\x1a.gmtaskmodel.CustomDTM_GMT\x12\x35\n\rHorizontalDTM\x18\x02 \x01(\x0b\x32\x1e.gmtaskmodel.HorizontalDTM_GMT\x12\x0c\n\x04name\x18\x03 \x02(\t\x12\x0e\n\x06\x61uthor\x18\x04 \x02(\t\x12!\n\x04\x64\x61te\x18\x05 \x01(\t:\x13\x30\x31/01/2012 00:00:00\x12\x15\n\x0b\x64\x65scription\x18\x06 \x01(\t:\x00\x12)\n\nprojection\x18\x07 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x12\n\x07version\x18\x08 \x01(\t:\x01\x33\x12*\n\x05units\x18\t \x01(\x0e\x32\x13.ctm.Distance_Units:\x06meters\x12\x35\n\x06Zunits\x18\n \x01(\x0e\x32\x13.ctm.Vertical_Units:\x10meters_elevation\x12\x14\n\tprecision\x18\x0c \x01(\x01:\x01\x31\x12!\n\x07\x45xtents\x18\x0e \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x38\n\x0f\x43reateFromVoxet\x18\x0f \x01(\x0b\x32\x1f.gmtaskmodel.SourceMeshGrid_GMT\x12\x1b\n\x0c\x64\x65\x66lection2d\x18\x10 \x01(\x01:\x05\x30.001\x12\x1b\n\x0c\x64\x65\x66lection3d\x18\x11 \x01(\x01:\x05\x30.001\x12\x1a\n\x0e\x64iscretisation\x18\x12 \x01(\x01:\x02\x31\x30\x12\x1e\n\x10\x64ynamicSelection\x18\x13 \x01(\x08:\x04true\x12\x1a\n\x0creferenceTop\x18\x14 \x01(\x08:\x04true\x12\x1f\n\x03log\x18\x1e \x01(\t:\x12\x63reate_project.rpt\x12\x0e\n\x03run\x18( \x01(\x05:\x01\x30\"\xc1\x02\n ModelInterpolationParameters_GMT\x12\x14\n\x05Range\x18\x01 \x01(\x01:\x05\x31\x30\x30\x30\x30\x12%\n\x16\x43ontacts_Nugget_Effect\x18\x02 \x01(\x01:\x05\x31\x65-06\x12%\n\x17Gradients_Nugget_Effect\x18\x03 \x01(\x01:\x04\x30.01\x12#\n\x18\x46\x61ultDriftEquationDegree\x18\x04 \x01(\x01:\x01\x31\x12\x37\n\nAnisotropy\x18\x05 \x01(\x0b\x32#.gmtaskmodel.Anisotropic_Effect_GMT\x12\x0e\n\x06series\x18\x06 \x02(\t\x12=\n\x12\x65xotic_constraints\x18\x07 \x03(\x0b\x32!.gmtaskmodel.ExoticConstraint_GMT\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\xad\x01\n\x16\x41nisotropic_Effect_GMT\x12\x12\n\x07\x41zimuth\x18\x01 \x01(\x01:\x01\x30\x12\x0e\n\x03\x44ip\x18\x02 \x01(\x01:\x01\x30\x12\x10\n\x05Pitch\x18\x03 \x01(\x01:\x01\x30\x12\x19\n\x0bLocalXRange\x18\x04 \x01(\x01:\x04\x31\x30\x30\x30\x12\x19\n\x0bLocalYRange\x18\x05 \x01(\x01:\x04\x31\x30\x30\x30\x12\x19\n\x0bLocalZRange\x18\x06 \x01(\x01:\x04\x31\x30\x30\x30\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"7\n\x14\x45xoticConstraint_GMT\x12\x11\n\tlithology\x18\x01 \x02(\t\x12\x0c\n\x04type\x18\x02 \x02(\r\"\xcf\x04\n\x10\x43omputeModel_GMT\x12\'\n\nSeriesList\x18\x01 \x01(\x0b\x32\x13.ctm.RepeatedString\x12(\n\x0bSectionList\x18\x02 \x01(\x0b\x32\x13.ctm.RepeatedString\x12&\n\tFaultList\x18\x03 \x01(\x0b\x32\x13.ctm.RepeatedString\x12)\n\x0c\x42oreholeList\x18\x04 \x01(\x0b\x32\x13.ctm.RepeatedString\x12!\n\x07\x45xtents\x18\x06 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x12\n\x06radius\x18\x05 \x01(\x01:\x02\x31\x30\x12\x1f\n\x14MinimumDykeThickness\x18\x07 \x01(\x01:\x01\x32\x12\x1a\n\x0b\x64ump_system\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10\x63\x61lc_uncertainty\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x66\x61ults_only\x18\n \x01(\x08:\x05\x66\x61lse\x12\x19\n\ndykes_only\x18\x0b \x01(\x08:\x05\x66\x61lse\x12T\n\x1dSeriesInterpolationParameters\x18\x0c \x03(\x0b\x32-.gmtaskmodel.ModelInterpolationParameters_GMT\x12S\n\x1c\x46\x61ultInterpolationParameters\x18\r \x03(\x0b\x32-.gmtaskmodel.ModelInterpolationParameters_GMT\x12\x1e\n\x03log\x18\x14 \x01(\t:\x11\x63ompute_model.rpt\"\x93\x04\n\x0fRenderModel_GMT\x12\n\n\x02nx\x18\x01 \x02(\x05\x12\n\n\x02ny\x18\x02 \x02(\x05\x12\n\n\x02nz\x18\x03 \x02(\x05\x12\x1f\n\x10generateSurfaces\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0fgenerateVolumes\x18\x05 \x01(\x08:\x04true\x12\x13\n\x04grid\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0f\x62uildFormations\x18\x07 \x01(\x08:\x04true\x12\x1a\n\x0b\x62uildFaults\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x19\n\nbuildDykes\x18\x16 \x01(\x08:\x05\x66\x61lse\x12\x19\n\x0b\x61\x64\x61ptToTopo\x18\t \x01(\x08:\x04true\x12\x19\n\x0btopoLimited\x18\n \x01(\x08:\x04true\x12\x15\n\x06\x61\x64\x61ptX\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06\x61\x64\x61ptY\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06\x61\x64\x61ptZ\x18\r \x01(\x08:\x05\x66\x61lse\x12 \n\x11lookForOverturned\x18\x0e \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0c\x63reateShapes\x18\x0f \x01(\x08:\x04true\x12\x16\n\x07restart\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x13smoothingIterations\x18\x11 \x01(\x05:\x01\x30\x12!\n\x07\x45xtents\x18\x12 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x1d\n\x03log\x18\x19 \x01(\t:\x10render_model.rpt\"\x8e\x02\n\x18RenderModelOnSection_GMT\x12\n\n\x02nu\x18\x01 \x02(\x05\x12\n\n\x02nv\x18\x02 \x02(\x05\x12\x0f\n\x07section\x18\x03 \x02(\t\x12\x1d\n\x08\x66ilename\x18\x04 \x02(\t:\x0bsection.png\x12-\n\x06\x46ormat\x18\x05 \x01(\x0e\x32\x11.ctm.Image_Format:\nPNG_format\x12:\n\x05Style\x18\x06 \x01(\x0e\x32\x1f.gmtaskmodel.SectionRenderStyle:\nSolid_Fill\x12\x1e\n\x13projection_distance\x18\x07 \x01(\x01:\x01\x31\x12\x1f\n\x03log\x18\x19 \x01(\t:\x12render_section.rpt\"\x8b\x01\n\x0f\x43reateFault_GMT\x12\x0c\n\x04name\x18\x01 \x02(\t\x12\x10\n\x03red\x18\x02 \x01(\x01:\x03\x32\x35\x35\x12\x12\n\x05green\x18\x03 \x01(\x01:\x03\x32\x35\x35\x12\x0f\n\x04\x62lue\x18\x04 \x01(\x01:\x01\x30\x12\x14\n\tThickness\x18\x06 \x01(\x01:\x01\x30\x12\x1d\n\x03log\x18\t \x01(\t:\x10\x63reate_fault.rpt\"\x9f\x01\n\x14Set3dFaultLimits_GMT\x12\x12\n\nFault_name\x18\x01 \x02(\t\x12\x18\n\nHorizontal\x18\x02 \x01(\x01:\x04\x31\x30\x30\x30\x12\x16\n\x08Vertical\x18\x03 \x01(\x01:\x04\x31\x30\x30\x30\x12\x1e\n\x11InfluenceDistance\x18\x04 \x01(\x01:\x03\x31\x30\x30\x12!\n\x03log\x18\x05 \x01(\t:\x14set_fault_limits.rpt\"\x80\x01\n\x0f\x46\x61ultCentre_GMT\x12\x12\n\nfault_name\x18\x01 \x02(\t\x12*\n\x04type\x18\x02 \x02(\x0e\x32\x1c.gmtaskmodel.FaultCentreType\x12-\n\x08location\x18\x03 \x01(\x0b\x32\x1b.gmtaskmodel.AddPoint3d_GMT\"\xb4\x01\n\x13\x43reateFormation_GMT\x12\x0c\n\x04name\x18\x01 \x02(\t\x12\x0e\n\x03red\x18\x02 \x01(\x01:\x01\x30\x12\x12\n\x05green\x18\x03 \x01(\x01:\x03\x31\x32\x35\x12\x11\n\x04\x62lue\x18\x04 \x01(\x01:\x03\x32\x35\x35\x12\x35\n\x11LithologyProperty\x18\x05 \x03(\x0b\x32\x1a.ctm.LithologyProperty_GMT\x12!\n\x03log\x18\n \x01(\t:\x14\x63reate_formation.rpt\"\xaa\x01\n\x0e\x43reateDyke_GMT\x12\x0c\n\x04name\x18\x01 \x02(\t\x12\x10\n\x03red\x18\x02 \x01(\x01:\x03\x31\x32\x35\x12\x12\n\x05green\x18\x03 \x01(\x01:\x03\x32\x35\x35\x12\x0f\n\x04\x62lue\x18\x04 \x01(\x01:\x01\x30\x12\x35\n\x11LithologyProperty\x18\x05 \x03(\x0b\x32\x1a.ctm.LithologyProperty_GMT\x12\x1c\n\x03log\x18\n \x01(\t:\x0f\x63reate_dyke.rpt\"W\n\x11\x45xportSection_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12\x1f\n\x03log\x18\x03 \x01(\t:\x12\x65xport_section.rpt\"\xab\x01\n\x10\x45xport2DData_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12&\n\x06\x66ormat\x18\x03 \x02(\x0e\x32\x16.gmtaskmodel.Formats2D\x12+\n\x04type\x18\x04 \x02(\x0e\x32\x14.ctm.SectionDataType:\x07\x63ontact\x12\x1f\n\x03log\x18\x05 \x01(\t:\x12\x65xport_2D_data.rpt\"H\n#CentralVerticalPotentialAndRank_GMT\x12\x0f\n\x07message\x18\x01 \x02(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\"G\n\x13GetModelSummary_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x10\n\x05level\x18\x02 \x01(\x05:\x01\x32\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\x8b\x01\n\rSetSeries_GMT\x12\x0c\n\x04name\x18\x01 \x02(\t\x12\x10\n\x08position\x18\x02 \x02(\x05\x12\x15\n\x08relation\x18\x03 \x01(\t:\x03\x61ny\x12\x36\n\terelation\x18\x05 \x01(\x0e\x32\x1e.ctm.StratigraphicRelationship:\x03\x41ny\x12\x0b\n\x03log\x18\x07 \x01(\t\"J\n\x18\x41\x64\x64\x46ormationToSeries_GMT\x12\x0e\n\x06series\x18\x01 \x02(\t\x12\x11\n\tformation\x18\x02 \x02(\t\x12\x0b\n\x03log\x18\x03 \x01(\t\"V\n\x13\x41\x64\x64\x44ykeToSeries_GMT\x12\x0e\n\x06series\x18\x01 \x02(\t\x12\x0c\n\x04\x64yke\x18\x02 \x02(\t\x12\x14\n\x06\x61sBase\x18\x03 \x01(\x08:\x04true\x12\x0b\n\x03log\x18\x04 \x01(\t\"g\n\x0e\x41\x64\x64Point3d_GMT\x12\t\n\x01x\x18\x01 \x02(\x01\x12\t\n\x01y\x18\x02 \x02(\x01\x12\x12\n\x01z\x18\x03 \x01(\x01:\x07-999999\x12\x1e\n\x16spatial_location_error\x18\x04 \x01(\x01\x12\x0b\n\x03log\x18\x05 \x01(\t\"J\n\x0fPointList3d_GMT\x12*\n\x05Point\x18\x01 \x03(\x0b\x32\x1b.gmtaskmodel.AddPoint3d_GMT\x12\x0b\n\x03log\x18\x02 \x01(\t\"S\n\x0e\x41\x64\x64Point2d_GMT\x12\t\n\x01u\x18\x01 \x02(\x01\x12\t\n\x01v\x18\x02 \x02(\x01\x12\x1e\n\x16spatial_location_error\x18\x03 \x01(\x01\x12\x0b\n\x03log\x18\x04 \x01(\t\"J\n\x0fPointList2d_GMT\x12*\n\x05Point\x18\x01 \x03(\x0b\x32\x1b.gmtaskmodel.AddPoint2d_GMT\x12\x0b\n\x03log\x18\x02 \x01(\t\"\xa3\x02\n\x11\x43reateSection_GMT\x12\x0c\n\x04name\x18\x01 \x02(\t\x12/\n\tPointList\x18\x02 \x01(\x0b\x32\x1c.gmtaskmodel.PointList3d_GMT\x12\x12\n\x07\x64\x65grees\x18\x03 \x01(\x05:\x01\x31\x12\x14\n\tdirection\x18\x04 \x01(\x01:\x01\x30\x12\x10\n\x03\x64ip\x18\x05 \x01(\x01:\x03-90\x12!\n\x07\x45xtents\x18\x06 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x15\n\rInputDataBase\x18\x0c \x01(\t\x12\x12\n\nLineNumber\x18\r \x03(\x05\x12\x1b\n\x10MaxSectionPoints\x18\x11 \x01(\x05:\x01\x35\x12\x1b\n\rClipToProject\x18\x12 \x01(\x08:\x04true\x12\x0b\n\x03log\x18\x07 \x01(\t\"l\n\x17\x43reateSegYThumbnail_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12\x1c\n\x11standarddeviation\x18\x02 \x01(\x01:\x01\x33\x12\x14\n\tcolourmap\x18\x03 \x01(\x01:\x01\x32\x12\x0b\n\x03log\x18\x04 \x01(\t\"\xa1\x03\n\x19\x41\x64\x64InterfaceToSection_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12\x14\n\x0ctopFormation\x18\x02 \x02(\t\x12\x1e\n\x0f\x62ottomFormation\x18\x03 \x01(\t:\x05\x64ummy\x12/\n\tPointList\x18\x04 \x02(\x0b\x32\x1c.gmtaskmodel.PointList2d_GMT\x12O\n\x11OrientationMethod\x18\x05 \x01(\x0e\x32).gmtaskmodel.Associated_OrientationMethod:\tUNDEFINED\x12\x0b\n\x03\x64ip\x18\x06 \x01(\x01\x12\x0f\n\x07\x61zimuth\x18\x07 \x01(\x01\x12#\n\x08polarity\x18\x08 \x01(\x0e\x32\x11.ctm.PolarityType\x12-\n\nprovenance\x18\t \x01(\x0e\x32\x13.ctm.ProvenanceType:\x04none\x12\x17\n\x08location\x18\n \x01(\x08:\x05\x66\x61lse\x12#\n\x18spherical_variance_kappa\x18\x0c \x01(\x01:\x01\x32\x12\x0b\n\x03log\x18\r \x01(\t\"{\n\x19\x41\x64\x64\x46oliationToSection_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12\x11\n\tformation\x18\x02 \x02(\t\x12-\n\tfoliation\x18\x03 \x02(\x0b\x32\x1a.gmtaskmodel.Foliation_GMT\x12\x0b\n\x03log\x18\x07 \x01(\t\"\xa5\x01\n\x1d\x41\x64\x64\x33\x44\x46oliationToFormation_GMT\x12\x11\n\tformation\x18\x02 \x02(\t\x12-\n\tfoliation\x18\x03 \x03(\x0b\x32\x1a.gmtaskmodel.Foliation_GMT\x12\x35\n\x16\x46oliation3d_projection\x18\x04 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x0b\n\x03log\x18\x07 \x01(\t\"\x95\x01\n\x1e\x41\x64\x64\x33\x44InterfacesToFormation_GMT\x12\x11\n\tformation\x18\x02 \x02(\t\x12\x1b\n\x05point\x18\x01 \x03(\x0b\x32\x0c.ctm.Point3d\x12\x36\n\x17Interfaces3d_projection\x18\x03 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x0b\n\x03log\x18\x07 \x01(\t\"\x81\x01\n\x1b\x41\x64\x64\x41pparentDipToSection_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12\x11\n\tformation\x18\x02 \x02(\t\x12\x31\n\x0b\x61pparentdip\x18\x03 \x02(\x0b\x32\x1c.gmtaskmodel.ApparentDip_GMT\x12\x0b\n\x03log\x18\x07 \x01(\t\"\xbd\x05\n\"AddDykeStructuralDataToSection_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12\x11\n\tdyke_name\x18\x02 \x02(\t\x12*\n\x05Point\x18\x03 \x02(\x0b\x32\x1b.gmtaskmodel.AddPoint2d_GMT\x12\x0b\n\x03\x64ip\x18\" \x02(\x01\x12\x11\n\tdirection\x18\x05 \x01(\x01\x12\x0e\n\x06strike\x18\x06 \x01(\x01\x12\x42\n\x0f\x44ipDistribution\x18\x0b \x01(\x0b\x32).ctm.AngleProbabilityDistributionFunction\x12H\n\x15\x44irectionDistribution\x18\x0c \x01(\x0b\x32).ctm.AngleProbabilityDistributionFunction\x12-\n\nProvenance\x18\x07 \x01(\x0e\x32\x13.ctm.ProvenanceType:\x04none\x12\x34\n\x08polarity\x18\x11 \x01(\x0e\x32\x11.ctm.PolarityType:\x0fNormal_Polarity\x12\x17\n\robservationID\x18\x08 \x01(\t:\x00\x12\x14\n\tthickness\x18\t \x01(\x01:\x01\x35\x12\x13\n\x06length\x18\n \x01(\x01:\x03\x31\x30\x30\x12\x13\n\x06height\x18\x12 \x01(\x01:\x03\x31\x30\x30\x12\x1c\n\x0esusceptibility\x18\x13 \x01(\x01:\x04\x30.01\x12\x0e\n\x03rms\x18\r \x01(\x01:\x01\x31\x12\x1a\n\x0fthickness_error\x18\x0f \x01(\x01:\x01\x35\x12#\n\x18spherical_variance_kappa\x18\x0e \x01(\x01:\x01\x32\x12O\n\x11OrientationMethod\x18\x10 \x01(\x0e\x32).gmtaskmodel.Associated_OrientationMethod:\tUNDEFINED\x12\x0b\n\x03log\x18\x14 \x01(\t\"=\n\x11\x43reate3DPoint_GMT\x12\x1b\n\x05point\x18\x01 \x03(\x0b\x32\x0c.ctm.Point3d\x12\x0b\n\x03log\x18\x04 \x01(\t\"\x86\x01\n\x19Import2dDataToSection_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12\x1e\n\x16spatial_location_error\x18\x03 \x01(\x01\x12&\n\x03log\x18\x04 \x01(\t:\x19read_import2d_section.rpt\"\xdb\x01\n!ReadAndImport2dDataToASection_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12\x10\n\x08\x66ilename\x18\x02 \x02(\t\x12+\n\x04type\x18\x03 \x01(\x0e\x32\x14.ctm.SectionDataType:\x07\x63ontact\x12&\n\tFieldList\x18\x04 \x02(\x0b\x32\x13.ctm.RepeatedString\x12\x1e\n\x16spatial_location_error\x18\x05 \x01(\x01\x12\x1e\n\x03log\x18\x06 \x01(\t:\x11read_import2d.rpt\"\x86\x04\n\x17ReadAndImport3dData_GMT\x12\x18\n\x10\x63ontact_csv_file\x18\x01 \x01(\t\x12\x1a\n\x12\x66oliation_csv_file\x18\x02 \x01(\t\x12\x17\n\x0flimits_csv_file\x18\x03 \x01(\t\x12%\n\x1a\x63ontact_header_linestoSkip\x18\x04 \x01(\x05:\x01\x33\x12\'\n\x1c\x66oliation_header_linestoSkip\x18\x05 \x01(\x05:\x01\x33\x12)\n\x1e\x66\x61ult_limit_header_linestoSkip\x18\x06 \x01(\x05:\x01\x34\x12/\n\x04type\x18\x08 \x01(\x0e\x32\x15.ctm.GeologyObsType3D:\ncontact_3D\x12\x39\n\toperation\x18\t \x01(\x0e\x32\x19.gmtaskmodel.ImportAction:\x0b\x43reateFault\x12%\n\x16Treat_Tag_As_Text_Only\x18\n \x01(\x08:\x05\x66\x61lse\x12\x32\n\x13Import3d_projection\x18\x0b \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x1e\n\x16spatial_location_error\x18\x14 \x01(\x01\x12\x1f\n\x17vertical_location_error\x18\x16 \x01(\x01\x12\x19\n\x03log\x18\x15 \x01(\t:\x0cimport3d.rpt\"\xca\x02\n\x1cImportMicroSeismicEvents_GMT\x12\x17\n\x0f\x65vents_csv_file\x18\x01 \x01(\t\x12$\n\x19\x65vents_header_linestoSkip\x18\x02 \x01(\x05:\x01\x33\x12\x15\n\rMeshGrid_Name\x18\x03 \x01(\t\x12\x14\n\x0cignoreFields\x18\x05 \x03(\t\x12\x36\n\x17MicroSeismic_projection\x18\r \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x1e\n\x16spatial_location_error\x18\x14 \x01(\x01\x12\x1f\n\x17vertical_location_error\x18\x16 \x01(\x01\x12\x1d\n\x0e\x43reateDateTime\x18\t \x01(\x08:\x05\x66\x61lse\x12&\n\x03log\x18\x15 \x01(\t:\x19import3d_microseismic.rpt\"J\n\x13SurveyDirection_GMT\x12\x0f\n\x03\x64ip\x18\x01 \x01(\x01:\x02\x39\x30\x12\x12\n\x07\x61zimuth\x18\x02 \x01(\x01:\x01\x30\x12\x0e\n\x06length\x18\x03 \x01(\x01\"B\n\x15LithologyInterval_GMT\x12\x0c\n\x04\x66rom\x18\x01 \x01(\x01\x12\n\n\x02to\x18\x02 \x01(\x01\x12\x0f\n\x07geology\x18\x03 \x01(\t\"\xef\x01\n\x13\x43reateDrillhole_GMT\x12\x0e\n\x06HoleID\x18\x01 \x02(\t\x12+\n\x06\x43ollar\x18\x02 \x02(\x0b\x32\x1b.gmtaskmodel.AddPoint3d_GMT\x12\x39\n\x0fSurveyDirection\x18\x03 \x03(\x0b\x32 .gmtaskmodel.SurveyDirection_GMT\x12=\n\x11LithologyInterval\x18\x04 \x03(\x0b\x32\".gmtaskmodel.LithologyInterval_GMT\x12!\n\x03log\x18\x05 \x01(\t:\x14\x63reate_drillhole.rpt\"\xe3\x03\n\x12LoadDrillholes_GMT\x12\x11\n\tprecision\x18\x01 \x02(\x01\x12\x12\n\ncollarFile\x18\x02 \x02(\t\x12\x12\n\nsurveyFile\x18\x03 \x02(\t\x12\x13\n\x0bgeologyFile\x18\x04 \x02(\t\x12*\n\rcollarAliases\x18\x05 \x02(\x0b\x32\x13.ctm.RepeatedString\x12*\n\rsurveyAliases\x18\x06 \x02(\x0b\x32\x13.ctm.RepeatedString\x12+\n\x0egeologyAliases\x18\x07 \x02(\x0b\x32\x13.ctm.RepeatedString\x12\x19\n\ninvertDips\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08scanOnly\x18\t \x01(\x08:\x05\x66\x61lse\x12\"\n\x17\x64ownhole_distance_error\x18\n \x01(\x01:\x01\x30\x12!\n\x16\x64ownhole_azimuth_error\x18\x0b \x01(\x01:\x01\x30\x12%\n\x1a\x64ownhole_declination_error\x18\x0c \x01(\x01:\x01\x30\x12\x34\n\x15\x64rill_hole_projection\x18\r \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12 \n\x03log\x18\x0e \x01(\t:\x13load_drillholes.rpt\"\xf4\x05\n\x17\x43ompositeDrillholes_GMT\x12\x1f\n\x10\x44oAllAssayFields\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x12\n\nAssayField\x18\x02 \x01(\t\x12\x13\n\x06Suffix\x18\x03 \x01(\t:\x03Reg\x12\x14\n\x0c\x44\x65nsityField\x18\x04 \x01(\t\x12\x19\n\x0eSupport_Length\x18\x05 \x01(\x01:\x01\x32\x12>\n\x0b\x42uild_Style\x18\x06 \x01(\x0e\x32\x1b.gmtaskmodel.CompositeStyle:\x0cStart_Collar\x12\x1f\n\x10Restart_On_Nulls\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x10restart_interval\x18\x08 \x01(\x01:\x01\x32\x12Z\n\x19internal_null_replacement\x18\t \x01(\x0e\x32&.gmtaskmodel.CompositeReplacementStyle:\x0f\x42\x61\x63kgroundValue\x12Z\n\x19\x65xternal_null_replacement\x18\n \x01(\x0e\x32&.gmtaskmodel.CompositeReplacementStyle:\x0f\x42\x61\x63kgroundValue\x12\x38\n)Enable_Trailing_Interval_Length_Threshold\x18\x0b \x01(\x08:\x05\x66\x61lse\x12!\n\x16low_trailing_threshold\x18\x0c \x01(\x01:\x01\x31\x12\"\n\x17high_trailing_threshold\x18\r \x01(\x01:\x01\x33\x12L\n\x0cWeight_Style\x18\x0e \x01(\x0e\x32$.gmtaskmodel.CompositeWeightingStyle:\x10length_weighting\x12\x17\n\x0f\x61ssayBackground\x18\x0f \x01(\x01\x12\x19\n\x11\x64\x65nsityBackground\x18\x10 \x01(\x01\x12%\n\x03log\x18\x1e \x01(\t:\x18\x63omposite_drillholes.rpt\"\xa7\x01\n\x1a\x44rillholeQueryMeshGrid_GMT\x12\x18\n\x10source_drillhole\x18\x01 \x03(\t\x12\x1a\n\x12new_drillhole_name\x18\x02 \x01(\t\x12\x16\n\x0esample_spacing\x18\x03 \x01(\x01\x12\x15\n\rmeshgrid_name\x18\x14 \x01(\t\x12\x17\n\x0fmeshgrid_fields\x18\x15 \x03(\t\x12\x0b\n\x03log\x18\x63 \x01(\t\"\xe1\x03\n\x13ImportSeismicCommon\x12\x14\n\x05InGUI\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x15\n\rInputDataFile\x18\x02 \x01(\t\x12\x18\n\x10InputProjectFile\x18\x03 \x01(\t\x12\x1d\n\x0fMaxThinningIter\x18\x05 \x01(\x05:\x04\x39\x39\x39\x39\x12\x1f\n\x10MinThinningDelta\x18\x06 \x01(\x01:\x05\x31\x65-07\x12\x1b\n\x10MaxSectionPoints\x18\x07 \x01(\x05:\x01\x35\x12\x1b\n\rClipToProject\x18\x08 \x01(\x08:\x04true\x12\x19\n\nDMSConvert\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x0c\x44MSLatFormat\x18\x0b \x01(\t:\tddmmss.ss\x12 \n\x0c\x44MSLonFormat\x18\x0c \x01(\t:\ndddmmss.ss\x12\x19\n\x0bInvertDepth\x18\r \x01(\x08:\x04true\x12\x34\n\x15SeismicNav_projection\x18\x0f \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x1d\n\x0fRunParallelCode\x18\x0e \x01(\x08:\x04true\x12\x19\n\x11OutputProjectFile\x18\x13 \x01(\t\x12 \n\x03log\x18\xff\x01 \x01(\t:\x12seismic_report.rpt\"}\n\x14ImportSeismicNav_GMT\x12\x1e\n\x13SectionSplineDegree\x18\x01 \x01(\x05:\x01\x31\x12\x37\n\rImportSeismic\x18\x02 \x02(\x0b\x32 .gmtaskmodel.ImportSeismicCommon\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\xdd\x01\n\x19ImportSeismicHorizons_GMT\x12,\n\x0fNavigationFiles\x18\x01 \x01(\x0b\x32\x13.ctm.RepeatedString\x12/\n\x12HorizonColumnNames\x18\x02 \x01(\x0b\x32\x13.ctm.RepeatedString\x12\x1a\n\x12IntersectionRadius\x18\x03 \x01(\x01\x12\x37\n\rImportSeismic\x18\x08 \x02(\x0b\x32 .gmtaskmodel.ImportSeismicCommon\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\xa8\x03\n\x11RenderSection_GMT\x12\x0f\n\x07section\x18\x01 \x01(\t\x12\x0e\n\x02nx\x18\x02 \x02(\x05:\x02\x35\x30\x12\x0e\n\x02ny\x18\x03 \x02(\x05:\x02\x35\x30\x12\x16\n\x0e\x66illFormations\x18\x04 \x03(\t\x12\x1d\n\x15lineFormationOrFaults\x18\x05 \x03(\t\x12\x13\n\x0btraceSeries\x18\x06 \x03(\t\x12\x1f\n\x11showTraceInSeries\x18\x07 \x01(\x08:\x04true\x12\"\n\x13showTraceEverywhere\x18\x08 \x01(\x08:\x05\x66\x61lse\x12#\n\x14showVarianceEnvelope\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x10\x43lipToTopography\x18\n \x01(\x08:\x04true\x12\x1e\n\x0fshowUncertainty\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rshowTriangles\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\r\n\x02\x65t\x18\r \x01(\x01:\x01\x32\x12\x1e\n\x13number_trajectories\x18\x0e \x01(\x05:\x01\x35\x12\x1f\n\x03log\x18\x0f \x01(\t:\x12render_section.rpt\"y\n\x16SaveLithologyVoxet_GMT\x12\n\n\x02nx\x18\x01 \x02(\x05\x12\n\n\x02ny\x18\x02 \x02(\x05\x12\n\n\x02nz\x18\x03 \x02(\x05\x12\x1e\n\x16LithologyVoxetFileStub\x18\x04 \x02(\t\x12\x1b\n\x03log\x18\x0f \x01(\t:\x0esave_voxet.rpt\"\xc2\x01\n\x1eSavePotentialGradientVoxet_GMT\x12\n\n\x02nx\x18\x01 \x02(\x05\x12\n\n\x02ny\x18\x02 \x02(\x05\x12\n\n\x02nz\x18\x03 \x02(\x05\x12\x1c\n\x0eJust_Gradients\x18\x05 \x01(\x08:\x04true\x12!\n\x12OneVoxet_Lithology\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x15\n\rVoxetFileStub\x18\x04 \x02(\t\x12$\n\x03log\x18\x0f \x01(\t:\x17save_potentialvoxet.rpt\"\xc3\x03\n\x13UpdateInterface_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12*\n\x05Point\x18\x02 \x02(\x0b\x32\x1b.gmtaskmodel.AddPoint2d_GMT\x12\x17\n\robservationId\x18\x03 \x02(\t:\x00\x12-\n\nprovenance\x18\x04 \x01(\x0e\x32\x13.ctm.ProvenanceType:\x04none\x12\x1a\n\x0chasFoliation\x18\x05 \x01(\x08:\x04true\x12\x1a\n\x0bhasLocation\x18\x06 \x02(\x08:\x05\x66\x61lse\x12@\n\x11orientationMethod\x18\x07 \x01(\x0e\x32\x1a.ctm.OrientationMethodType:\tundefined\x12\x12\n\x07\x61zimuth\x18\x08 \x01(\x01:\x01\x30\x12\x0e\n\x03\x64ip\x18\t \x01(\x01:\x01\x30\x12\x16\n\x0blineAzimuth\x18\n \x01(\x01:\x01\x30\x12\x12\n\x07lineDip\x18\x0b \x01(\x01:\x01\x30\x12\x15\n\x08polarity\x18\x0c \x02(\t:\x03top\x12#\n\x18spherical_variance_kappa\x18\r \x01(\x01:\x01\x35\x12!\n\x03log\x18\x0f \x01(\t:\x14update_interface.rpt\"U\n\x1f\x44\x65leteInterfacesFromSection_GMT\x12\x0f\n\x07section\x18\x01 \x02(\t\x12!\n\x03log\x18\x02 \x01(\t:\x14\x64\x65lete_interface.rpt\"C\n\x14\x46\x61ultSeriesLinks_GMT\x12\r\n\x05\x66\x61ult\x18\x01 \x02(\t\x12\x0e\n\x06series\x18\x02 \x03(\t\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"{\n\x18LinkFaultsWithSeries_GMT\x12\n\x10\x46\x61ultSeriesLinks\x18\x01 \x03(\x0b\x32!.gmtaskmodel.FaultSeriesLinks_GMT\x12\"\n\x03log\x18\x02 \x01(\t:\x15link_fault_series.rpt\"F\n\x16\x46\x61ultStopsOnFaults_GMT\x12\r\n\x05\x66\x61ult\x18\x01 \x02(\t\x12\x0f\n\x07stopson\x18\x02 \x03(\t\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"~\n\x18LinkFaultsWithFaults_GMT\x12?\n\x12\x46\x61ultStopsOnFaults\x18\x01 \x03(\x0b\x32#.gmtaskmodel.FaultStopsOnFaults_GMT\x12!\n\x03log\x18\x02 \x01(\t:\x14link_fault_fault.rpt\"\xb4\x02\n\x12WriteBatchFile_GMT\x12\x10\n\x08\x66ilename\x18\x01 \x02(\t\x12!\n\tTask_Name\x18\x02 \x01(\t:\x0emyProject.task\x12,\n\x1d\x63onvertSection_InterfacesTo3D\x18\x05 \x01(\x08:\x05\x66\x61lse\x12+\n\x1c\x63onvertSection_FoliationTo3D\x18\x06 \x01(\x08:\x05\x66\x61lse\x12#\n\x14\x65xportBoreholesToCSV\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x19\n\x08\x63sv_path\x18\x08 \x01(\t:\x07\x45XPORT/\x12.\n exportToGeomodellerTempDirectory\x18\t \x01(\x08:\x04true\x12\x1e\n\x03log\x18\x0c \x01(\t:\x11writeprotobuf.rpt\"\xe3\x02\n\x12SourceMeshGrid_GMT\x12?\n\nSourceType\x18\x01 \x01(\x0e\x32\".gmtaskmodel.GeomodellerDataSource:\x07Project\x12\x11\n\tFile_Name\x18\x02 \x01(\t\x12\x15\n\rMeshGrid_Name\x18\x03 \x01(\t\x12-\n\x08\x46ileType\x18\x04 \x01(\x0e\x32\x10.ctm.DfaFileType:\tFT_IGMESH\x12+\n\x06\x46ormat\x18\r \x01(\x0e\x32\x0f.ctm.DataFormat:\nDF_UNKNOWN\x12\x12\n\nField_Name\x18\x05 \x01(\t\x12\x19\n\x0eheader_records\x18\x06 \x01(\x11:\x01\x30\x12!\n\x03log\x18\xff\x01 \x01(\t:\x13source_meshgrid.rpt\x12 \n\x12isElevationMeasure\x18\x0b \x01(\x08:\x04true\x12\x12\n\nUBC_Header\x18\x0c \x01(\t\"\x95\x04\n\x12\x43reateMeshGrid_GMT\x12J\n\x15\x43reateDestinationType\x18\x01 \x01(\x0e\x32\".gmtaskmodel.GeomodellerDataSource:\x07Project\x12>\n\x0eOutputMeshType\x18\x14 \x01(\x0e\x32\x13.ctm.OutputMeshType:\x11ODT_RegularMesh3D\x12\x11\n\tFile_Name\x18\x02 \x01(\t\x12\x15\n\rMeshGrid_Name\x18\x03 \x01(\t\x12-\n\x08\x46ileType\x18\x04 \x01(\x0e\x32\x10.ctm.DfaFileType:\tFT_IGMESH\x12\x12\n\nField_Name\x18\x05 \x01(\t\x12\x16\n\x0e\x46ield_Variance\x18\x06 \x01(\t\x12\x0f\n\x02\x64x\x18\n \x01(\x11:\x03\x31\x30\x30\x12\x0f\n\x02\x64y\x18\x0b \x01(\x11:\x03\x31\x30\x30\x12\x0f\n\x02\x64z\x18\x0c \x01(\x11:\x03\x31\x30\x30\x12!\n\x07\x45xtents\x18\r \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x0e\n\x02nx\x18\x15 \x01(\x11:\x02\x32\x30\x12\x0e\n\x02ny\x18\x16 \x01(\x11:\x02\x32\x30\x12\x0e\n\x02nz\x18\x17 \x01(\x11:\x02\x32\x30\x12\x1e\n\x0f\x41\x64\x64GeologyField\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\'\n\nReportFile\x18\x10 \x01(\t:\x13\x63reate_meshgrid.rpt\x12\x1f\n\x03log\x18\x63 \x01(\t:\x12\x63reate a mesh grid\"\xf4\x03\n\x12\x45xportMeshGrid_GMT\x12\x38\n\x0fMeshGrid_Source\x18\x01 \x02(\x0b\x32\x1f.gmtaskmodel.SourceMeshGrid_GMT\x12>\n\x0eOutputMeshType\x18\x14 \x01(\x0e\x32\x13.ctm.OutputMeshType:\x11ODT_RegularMesh3D\x12\x13\n\x0bOutFileName\x18\x02 \x01(\t\x12\x17\n\x0fOutMeshGridName\x18\x03 \x01(\t\x12\x30\n\x0bOutFileType\x18\x04 \x01(\x0e\x32\x10.ctm.DfaFileType:\tFT_IGMESH\x12.\n\rOutDataFormat\x18\x05 \x01(\x0e\x32\x0f.ctm.DataFormat:\x06\x44\x46_VTK\x12\r\n\x05\x46ield\x18\x06 \x01(\t\x12!\n\x07\x45xtents\x18\x15 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x0e\n\x02nx\x18\x16 \x01(\x05:\x02\x32\x30\x12\x0e\n\x02ny\x18\x17 \x01(\x05:\x02\x32\x30\x12\x0e\n\x02nz\x18\x18 \x01(\x05:\x02\x32\x30\x12\x0f\n\x02\x64x\x18\x19 \x01(\x01:\x03\x31\x30\x30\x12\x0f\n\x02\x64y\x18\x1a \x01(\x01:\x03\x31\x30\x30\x12\x0f\n\x02\x64z\x18\x1b \x01(\x01:\x03\x31\x30\x30\x12\x1e\n\x0f\x41\x64\x64GeologyField\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x03log\x18\xff\x01 \x01(\t:\x11save_meshgrid.rpt\"\xa0\x03\n\x13VariogramCurves_GMT\x12\x10\n\x03lag\x18\x02 \x02(\x01:\x03\x31\x30\x30\x12&\n\tvariance1\x18\x03 \x01(\x0b\x32\x13.ctm.RepeatedDouble\x12@\n\x06which1\x18\x04 \x01(\x0e\x32#.gmtaskmodel.Kriging_WhichVariogram:\x0bKriging_RHO\x12&\n\tvariance2\x18\x05 \x01(\x0b\x32\x13.ctm.RepeatedDouble\x12>\n\x06which2\x18\x06 \x01(\x0e\x32#.gmtaskmodel.Kriging_WhichVariogram:\tKriging_V\x12&\n\tvariance3\x18\x07 \x01(\x0b\x32\x13.ctm.RepeatedDouble\x12>\n\x06which3\x18\x08 \x01(\x0e\x32#.gmtaskmodel.Kriging_WhichVariogram:\tKriging_W\x12\x1a\n\rnumber_points\x18\n \x02(\x05:\x03\x31\x30\x30\x12!\n\x03log\x18\xff\x01 \x01(\t:\x13model_variogram.rpt\"\xdf\x04\n\x14\x43omputeVariogram_GMT\x12\x38\n\x0fMeshGrid_Source\x18\x01 \x02(\x0b\x32\x1f.gmtaskmodel.SourceMeshGrid_GMT\x12\x39\n\rAnalysis_Type\x18\x03 \x01(\x0b\x32\".gmtaskmodel.VariogramAnalysisType\x12\x34\n\x06\x44omain\x18\x04 \x02(\x0e\x32\x1a.gmtaskmodel.KrigingDomain:\x08NoDomain\x12\x11\n\tData_Name\x18\x05 \x01(\t\x12\x18\n\x10Maximum_Distance\x18\x06 \x01(\x01\x12\x16\n\x0eVariogram_Name\x18\x07 \x02(\t\x12!\n\x07\x45xtents\x18\x08 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x17\n\x0cNuggetEffect\x18\n \x01(\x01:\x01\x30\x12\x10\n\x05Range\x18\x0b \x01(\x01:\x01\x31\x12\x0f\n\x04Sill\x18\x0c \x01(\x01:\x01\x31\x12\x42\n\x12VariogramModelType\x18\r \x01(\x0e\x32\x17.ctm.VariogramModelType:\rVMT_Spherical\x12\x10\n\x03lag\x18\x0e \x01(\x01:\x03\x31\x30\x30\x12\x19\n\rNumber_Points\x18\x0f \x01(\x11:\x02\x32\x30\x12!\n\nReportFile\x18\x10 \x01(\t:\rvariogram.rpt\x12\x1f\n\x10Maximum_Measures\x18\x11 \x01(\x05:\x05\x31\x30\x30\x30\x30\x12\x1d\n\rMaximum_Pairs\x18\x12 \x01(\x05:\x06\x31\x30\x30\x30\x30\x30\x12\x16\n\x0bNumber_CPUs\x18\x13 \x01(\x05:\x01\x33\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\x90\x02\n\x15VariogramAnalysisType\x12\x12\n\x07\x61zmiuth\x18\x03 \x01(\x01:\x01\x30\x12\x0f\n\x03\x64ip\x18\x04 \x01(\x01:\x02\x39\x30\x12\x11\n\x06plunge\x18\x05 \x01(\x01:\x01\x30\x12\x0c\n\x04name\x18\x06 \x01(\t\x12\x19\n\x11nameOfSerieOrUnit\x18\x07 \x01(\t\x12\x1e\n\x0fserieConstraint\x18\x08 \x01(\x08:\x05\x66\x61lse\x12.\n\x04type\x18\t \x01(\x0e\x32\x1b.gmtaskmodel.TypeOfAnalysis:\x03Rho\x12\x1d\n\x0eunitConstraint\x18\n \x01(\x08:\x05\x66\x61lse\x12\x19\n\x0eNumber_Sectors\x18\x13 \x01(\x05:\x01\x31\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\xba\x07\n InterpolateNumericalReadings_GMT\x12\x38\n\x0fMeshGrid_Source\x18\x01 \x02(\x0b\x32\x1f.gmtaskmodel.SourceMeshGrid_GMT\x12\x34\n\x06method\x18\x02 \x02(\x0e\x32\x18.ctm.InterpolationMethod:\nIM_Kriging\x12\x39\n\x0bOutputStyle\x18\x03 \x02(\x0e\x32\x1c.ctm.InterpolationOutputType:\x06IOT_D3\x12 \n\x14Maximum_Observations\x18\x05 \x01(\x11:\x02\x35\x30\x12\x1f\n\x14Minimum_Observations\x18\x06 \x01(\x11:\x01\x32\x12\x16\n\x0eMaximum_Radius\x18\x07 \x01(\x01\x12\x34\n\x06\x44omain\x18\x08 \x01(\x0e\x32\x1a.gmtaskmodel.KrigingDomain:\x08NoDomain\x12\x11\n\tData_Name\x18\t \x01(\t\x12\x37\n\rAnalysis_Type\x18\x15 \x01(\x0e\x32\x1b.gmtaskmodel.TypeOfAnalysis:\x03Rho\x12\x39\n\x0fVariogram_Model\x18\n \x01(\x0b\x32 .gmtaskmodel.VariogramCurves_GMT\x12#\n\x1b\x45xperimental_Variogram_Name\x18\x14 \x01(\t\x12\x42\n\x12VariogramModelType\x18\x1e \x01(\x0e\x32\x17.ctm.VariogramModelType:\rVMT_Spherical\x12\x39\n\tNeighbour\x18\x1f \x01(\x0e\x32\x13.ctm.NeighbourStyle:\x11NS_RegularGridBox\x12\x17\n\x0cNuggetEffect\x18  \x01(\x01:\x01\x30\x12\x10\n\x05Range\x18! \x01(\x01:\x01\x31\x12\x0f\n\x04Sill\x18\" \x01(\x01:\x01\x31\x12?\n\x05which\x18# \x01(\x0e\x32#.gmtaskmodel.Kriging_WhichVariogram:\x0bKriging_RHO\x12\x11\n\x06\x61ratio\x18\x0f \x01(\x01:\x01\x31\x12\x0f\n\x03\x64ip\x18\x11 \x01(\x01:\x02\x39\x30\x12\x12\n\x07\x61zimuth\x18\x12 \x01(\x01:\x01\x30\x12\x11\n\x06plunge\x18\x13 \x01(\x01:\x01\x30\x12\x34\n\x0bOutput_Mesh\x18\x32 \x02(\x0b\x32\x1f.gmtaskmodel.CreateMeshGrid_GMT\x12#\n\nReportFile\x18P \x01(\t:\x0finterpolate.rpt\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\xdc\x05\n\x14\x42uildTripleLines_GMT\x12\x15\n\tprecision\x18\x0c \x01(\x01:\x02\x32\x30\x12\x19\n\x0b\x63lean_lines\x18\x14 \x01(\x08:\x04true\x12\x1a\n\rpoint_spacing\x18\x18 \x01(\x01:\x03\x32\x35\x30\x12\x46\n\x0ethin_body_bias\x18\x19 \x01(\x0b\x32..gmtaskmodel.BuildTripleLines_GMT.ThinBodyBias\x12P\n\x13\x65xport_triple_lines\x18\x1b \x01(\x0b\x32\x33.gmtaskmodel.BuildTripleLines_GMT.ExportTripleLines\x12\x19\n\x0btopolimited\x18\x1c \x01(\x08:\x04true\x12\x18\n\nborderline\x18\x1d \x01(\x08:\x04true\x12\x18\n\ninsideline\x18\x1e \x01(\x08:\x04true\x12\x31\n#divide_model_using_regular_sections\x18\x1f \x01(\x08:\x04true\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x1a\x91\x02\n\x11\x45xportTripleLines\x12\x1c\n\x10output_directory\x18\x01 \x01(\t:\x02./\x12k\n\x06\x66ormat\x18\x02 \x01(\x0e\x32K.gmtaskmodel.BuildTripleLines_GMT.ExportTripleLines.TripleLine_ExportFormat:\x0eTripleLine_VTK\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"c\n\x17TripleLine_ExportFormat\x12\x19\n\x15TripleLine_ASCII_LONG\x10\x00\x12\x19\n\x15TripleLine_ASCII_CGAL\x10\x01\x12\x12\n\x0eTripleLine_VTK\x10\x02\x1a\x38\n\x0cThinBodyBias\x12\x0c\n\x01x\x18\x01 \x01(\x01:\x01\x31\x12\x0c\n\x01y\x18\x02 \x01(\x01:\x01\x31\x12\x0c\n\x01z\x18\x03 \x01(\x01:\x01\x31\"\x80\x01\n\x15ImportTripleLines_GMT\x12\"\n\x08\x66ilename\x18\x01 \x01(\t:\x10triple_lines.txt\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x12\x35\n\x16TripleLines_projection\x18\r \x01(\x0b\x32\x15.ctm.CoordinateSystem\"\xb6\x14\n\x11\x42uildMeshCGAL_GMT\x12\x42\n\rmesh_criteria\x18\x01 \x01(\x0b\x32+.gmtaskmodel.BuildMeshCGAL_GMT.MeshCriteria\x12>\n\x0brefine_mesh\x18\x02 \x01(\x0b\x32).gmtaskmodel.BuildMeshCGAL_GMT.RefineMesh\x12=\n\x12\x62uild_triple_lines\x18\x03 \x01(\x0b\x32!.gmtaskmodel.BuildTripleLines_GMT\x12?\n\x13import_triple_lines\x18\x04 \x01(\x0b\x32\".gmtaskmodel.ImportTripleLines_GMT\x12\x1c\n\rmultithreaded\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x34\n\x0b\x65xport_mesh\x18\x06 \x03(\x0b\x32\x1f.gmtaskmodel.Export3DShapes_GMT\x12L\n\x12geomodeller_output\x18\x07 \x01(\x0b\x32\x30.gmtaskmodel.BuildMeshCGAL_GMT.GeomodellerOutput\x12\x41\n\x0einitial_points\x18\x08 \x01(\x0b\x32).gmtaskmodel.BuildMeshCGAL_GMT.SeedPoints\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x1a\xe5\x04\n\nRefineMesh\x12G\n\x05lloyd\x18\x01 \x01(\x0b\x32\x38.gmtaskmodel.BuildMeshCGAL_GMT.RefineMesh.OptEnergyParms\x12\x45\n\x03odt\x18\x02 \x01(\x0b\x32\x38.gmtaskmodel.BuildMeshCGAL_GMT.RefineMesh.OptEnergyParms\x12I\n\x07perturb\x18\x03 \x01(\x0b\x32\x38.gmtaskmodel.BuildMeshCGAL_GMT.RefineMesh.OptVertexParms\x12G\n\x05\x65xude\x18\x04 \x01(\x0b\x32\x38.gmtaskmodel.BuildMeshCGAL_GMT.RefineMesh.OptVertexParms\x12\x46\n\x0fmanifold_status\x18\x05 \x01(\x0e\x32\x1f.gmtaskmodel.OptManifoldRequest:\x0cnon_manifold\x1a\x9a\x01\n\x0eOptEnergyParms\x12\x15\n\ntime_limit\x18\x01 \x01(\x01:\x01\x35\x12\x13\n\x08max_iter\x18\x02 \x01(\x05:\x01\x30\x12\x19\n\x0b\x63onvergence\x18\x03 \x01(\x01:\x04\x30.02\x12\x1a\n\x0c\x66reeze_bound\x18\x04 \x01(\x01:\x04\x30.01\x12\x17\n\tdo_freeze\x18\x05 \x01(\x08:\x04true\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x1aN\n\x0eOptVertexParms\x12\x15\n\ntime_limit\x18\x01 \x01(\x01:\x01\x35\x12\x17\n\x0csliver_bound\x18\x02 \x01(\x01:\x01\x33\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x1a\xe5\x01\n\x11GeomodellerOutput\x12\x18\n\x10output_directory\x18\x01 \x01(\t\x12\x11\n\x06smooth\x18\x02 \x01(\x05:\x01\x30\x12\x1a\n\x0b\x64raw_shapes\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x18\n\nformations\x18\x04 \x01(\x08:\x04true\x12\x14\n\x06\x66\x61ults\x18\x05 \x01(\x08:\x04true\x12\x16\n\x08surfaces\x18\x06 \x01(\x08:\x04true\x12\x15\n\x07volumes\x18\x07 \x01(\x08:\x04true\x12\x1a\n\x0ctetrahedrons\x18\x08 \x01(\x08:\x04true\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x1a\xd6\x06\n\x0cMeshCriteria\x12\x1b\n\x0fmin_facet_angle\x18\x01 \x01(\x01:\x02\x31\x30\x12\x17\n\x0fmin_facet_radii\x18\x02 \x01(\x01\x12\x1f\n\x17min_protect_ball_radius\x18\x03 \x01(\x01\x12\x38\n\x0e\x66\x61\x63\x65t_topology\x18\t \x01(\x0e\x32 .gmtaskmodel.Mesh_facet_topology\x12\x1e\n\x11radius_edge_ratio\x18\x04 \x01(\x01:\x03\x32.5\x12\x63\n\x16\x64\x65\x66\x61ult_discretization\x18\x05 \x01(\x0b\x32\x43.gmtaskmodel.BuildMeshCGAL_GMT.MeshCriteria.FormationDiscretization\x12\x65\n\x18\x66ormation_discretization\x18\x06 \x03(\x0b\x32\x43.gmtaskmodel.BuildMeshCGAL_GMT.MeshCriteria.FormationDiscretization\x12\n\x1emin_protect_ball_radius_values\x18\x07 \x01(\x0b\x32\x13.ctm.RepeatedDouble\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x1a\xfd\x02\n\x17\x46ormationDiscretization\x12\x1a\n\tformation\x18\x01 \x01(\t:\x07\x64\x65\x66\x61ult\x12\x11\n\tprecision\x18\x02 \x01(\x01\x12\x17\n\x0fmax_facet_radii\x18\x03 \x01(\x01\x12\x15\n\rmax_tet_radii\x18\x04 \x01(\x01\x12\x17\n\x0fmax_edge_length\x18\x05 \x01(\x01\x12-\n\x10precision_values\x18\x06 \x01(\x0b\x32\x13.ctm.RepeatedDouble\x12\x33\n\x16max_facet_radii_values\x18\x07 \x01(\x0b\x32\x13.ctm.RepeatedDouble\x12\x31\n\x14max_tet_radii_values\x18\x08 \x01(\x0b\x32\x13.ctm.RepeatedDouble\x12\x33\n\x16max_edge_length_values\x18\t \x01(\x0b\x32\x13.ctm.RepeatedDouble\x12\x1e\n\x16\x61\x64\x61ptive_sphere_radius\x18\n \x01(\x01\x1a\x80\x03\n\nSeedPoints\x12\x1f\n\x11use_triple_points\x18\x01 \x01(\x08:\x04true\x12Q\n\rrandom_points\x18\x02 \x01(\x0b\x32:.gmtaskmodel.BuildMeshCGAL_GMT.SeedPoints.RandomSeedPoints\x12M\n\x0bmesh_points\x18\x03 \x03(\x0b\x32\x38.gmtaskmodel.BuildMeshCGAL_GMT.SeedPoints.MeshSeedPoints\x1a\x87\x01\n\x0eMeshSeedPoints\x12\x10\n\x08\x66ilename\x18\x01 \x01(\t\x12-\n\nclean_mesh\x18\x03 \x01(\x0b\x32\x19.vtktasksup.CleanPolyData\x12\x34\n\rdecimate_mesh\x18\x04 \x01(\x0b\x32\x1d.vtktasksup.QuadricDecimation\x1a%\n\x10RandomSeedPoints\x12\x11\n\x05\x63ount\x18\x01 \x01(\x05:\x02\x31\x32\"\x83\x07\n\x0f\x45xportModel_GMT\x12%\n\x10output_directory\x18\x01 \x01(\t:\x0b\x65xport_mesh\x12\n\x08\x65xport3D\x18\x02 \x01(\x0b\x32).gmtaskmodel.ExportModel_GMT.ExportType3D\x12\n\x08\x65xport2D\x18\x03 \x01(\x0b\x32).gmtaskmodel.ExportModel_GMT.ExportType2D\x12\"\n\x08GridSize\x18\x06 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x0f\n\x02\x64x\x18\n \x01(\x11:\x03\x31\x30\x30\x12\x0f\n\x02\x64y\x18\x0b \x01(\x11:\x03\x31\x30\x30\x12\x0f\n\x02\x64z\x18\x0c \x01(\x11:\x03\x31\x30\x30\x12\x10\n\x03\x64xy\x18\r \x01(\x11:\x03\x31\x30\x30\x12\x1b\n\x10VariableZ_Factor\x18\x11 \x01(\x01:\x01\x31\x12$\n\nReportFile\x18\x10 \x01(\t:\x10\x65xport_model.rpt\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x1a\xbc\x01\n\x0c\x45xportType2D\x12\x17\n\x08Isopachs\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07Isohyps\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x19\n\nInterfaces\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tLayercake\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06Marthe\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x05Tough\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x19\n\nCataclinal\x18\x07 \x01(\x08:\x05\x66\x61lse\x1a\xd5\x02\n\x0c\x45xportType3D\x12\x1f\n\x10\x44istanceToFaults\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0e\x46\x65\x66low_Layered\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tGradients\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06Grdecl\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fKrigingVariance\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\'\n\x18KrigingStandardDeviation\x18\x05 \x01(\x08:\x05\x66\x61lse\x12!\n\x12KrigingScaledError\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cMartheVoxels\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bToughVoxels\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06Voxels\x18\t \x01(\x08:\x05\x66\x61lse\x12\x18\n\tvoxelsXYZ\x18\n \x01(\x08:\x05\x66\x61lse\"\xb9\x05\n\x12\x45xport3DShapes_GMT\x12%\n\x10output_directory\x18\x01 \x01(\t:\x0b\x65xport_mesh\x12\x12\n\nmodel_name\x18\x02 \x03(\t\x12\x42\n\tfile_type\x18\x03 \x01(\x0e\x32*.gmtaskmodel.Export3DShapes_GMT.FileType3D:\x03VTU\x12\x43\n\tmesh_type\x18\x04 \x01(\x0e\x32(.gmtaskmodel.Export3DShapes_GMT.MeshType:\x06VOLUME\x12\x39\n+filterout_triangles_from_inner_tetrahedrons\x18\x05 \x01(\x08:\x04true\x12\x1c\n\x0ewantTetrahedra\x18\x06 \x01(\x08:\x04true\x12#\n\x15\x65nvelop_surfaces_only\x18\x07 \x01(\x08:\x04true\x12%\n\x17\x46ormation_IsoPotentials\x18\x08 \x01(\x08:\x04true\x12*\n\x1c\x46ormation_GradientPotentials\x18\t \x01(\x08:\x04true\x12#\n\x08property\x18\x32 \x03(\x0e\x32\x11.ctm.PropertyType\x12!\n\x03log\x18\x63 \x01(\t:\x14\x65xport_3d_shapes.rpt\"\x95\x01\n\nFileType3D\x12\t\n\x05TSURF\x10\x00\x12\n\n\x06VULCAN\x10\x01\x12\x08\n\x04IGES\x10\x02\x12\x08\n\x04STEP\x10\x03\x12\t\n\x05\x44XF12\x10\x04\x12\t\n\x05\x44XF13\x10\x05\x12\x07\n\x03VTP\x10\x06\x12\x07\n\x03STL\x10\x07\x12\x07\n\x03VTU\x10\x08\x12\n\n\x06\x46\x45\x46LOW\x10\t\x12\t\n\x05MEDIT\x10\n\x12\x08\n\x04\x43\x33T3\x10\x0b\x12\n\n\x06\x43OMSOL\x10\x0c\".\n\x08MeshType\x12\x0b\n\x07SURFACE\x10\n\x12\t\n\x05SHELL\x10\x0b\x12\n\n\x06VOLUME\x10\x0c\"\xeb\t\n\x15\x45xportProjectSite_GMT\x12\x32\n\x08\x64\x61taType\x18\x01 \x03(\x0e\x32 .gmtaskmodel.GeomodellerDataType\x12\x37\n\nmyTypeSite\x18\x02 \x01(\x0e\x32\x17.gmtaskmodel.SiteType3D:\nPDF3D_Site\x12\x0c\n\x04Name\x18\x03 \x01(\t\x12\x15\n\rVRMLFile_Name\x18\x04 \x01(\t\x12\"\n\x14\x44oTextureEnhancement\x18\x06 \x01(\x08:\x04true\x12\x1a\n\x0b\x41\x64\x64Lighting\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x11\n\tvtp_files\x18\n \x03(\t\x12#\n\x0coutput_pdf3d\x18\x0b \x01(\t:\rmyProject.pdf\x12!\n\noutput_u3d\x18\x0c \x01(\t:\rmyProject.u3d\x12!\n\noutput_png\x18\x0e \x01(\t:\rmyProject.png\x12!\n\noutput_prc\x18\x0f \x01(\t:\rmyProject.prc\x12\x38\n\x0fMeshGrid_Source\x18\x14 \x03(\x0b\x32\x1f.gmtaskmodel.SourceMeshGrid_GMT\x12\x1a\n\x0fsolution_radius\x18\x15 \x01(\x01:\x01\x35\x12\x1f\n\x12grid_shrink_factor\x18\x16 \x01(\x01:\x03\x30.5\x12\x1d\n\x0eInversion_Case\x18\x1e \x01(\t:\x05\x43\x61se1\x12\x1b\n\rInversion_Run\x18\x1f \x01(\t:\x04Run1\x12#\n\x11Inversion_Product\x18  \x01(\t:\x08\x66inal.vo\x12\x1e\n\rInversion_AEM\x18( \x01(\t:\x07\x45M2DInv\x12\x13\n\x0bLine_Number\x18) \x03(\t\x12\x11\n\tIteration\x18* \x03(\x05\x12\x17\n\x08\x41\x64\x64Ticks\x18< \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x41\x64\x64Sections\x18= \x01(\x08:\x05\x66\x61lse\x12!\n\x07\x45xtents\x18> \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x1f\n\x14VerticalExaggeration\x18? \x01(\x01:\x01\x31\x12\x1d\n\x10PageHeightPixels\x18\x46 \x01(\x05:\x03\x37\x30\x30\x12\x1c\n\x0fPageWidthPixels\x18G \x01(\x05:\x03\x39\x32\x30\x12\x1b\n\x0e\x62\x61\x63kground_red\x18H \x01(\x01:\x03\x32\x30\x30\x12\x1d\n\x10\x62\x61\x63kground_green\x18I \x01(\x01:\x03\x32\x30\x30\x12\x1c\n\x0f\x62\x61\x63kground_blue\x18J \x01(\x01:\x03\x32\x30\x30\x12\x1e\n\tview_name\x18K \x01(\t:\x0b\x44\x65\x66\x61ultView\x12\x19\n\x0bShowToolBar\x18L \x01(\x08:\x04true\x12\"\n\x13ShowNavigationPanel\x18M \x01(\x08:\x05\x66\x61lse\x12&\n\x17SetOrthogonalProjection\x18N \x01(\x08:\x05\x66\x61lse\x12&\n\x18SetPerspectiveProjection\x18O \x01(\x08:\x04true\x12\x19\n\rfield_of_view\x18P \x01(\x01:\x02\x34\x35\x12\x16\n\x0e\x63overimagefile\x18Q \x01(\t\x12\x14\n\x05\x64\x65\x62ug\x18R \x01(\x08:\x05\x66\x61lse\x12)\n\nReportFile\x18Z \x01(\t:\x15\x45xportProjectSite.rpt\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"i\n\x10\x41xis_Control_GMT\x12\x10\n\x04step\x18\x02 \x01(\x01:\x02-1\x12\x19\n\x0e\x44\x65\x63imal_Number\x18  \x01(\x11:\x01\x31\x12\r\n\x05Title\x18\x04 \x01(\t\"\x19\n\tdirection\x12\x05\n\x01u\x10\x00\x12\x05\n\x01v\x10\x01\"\xd4\x02\n\x1bPresentation2D_Graphics_GMT\x12\x14\n\x0cSection_Name\x18\x01 \x01(\t\x12\x1c\n\rDoAllSections\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x33\n\x0eTitle_Position\x18\x03 \x01(\x0b\x32\x1b.gmtaskmodel.AddPoint2d_GMT\x12\x1d\n\x0f\x41xis_Graduation\x18\x04 \x01(\x08:\x04true\x12\x19\n\x0b\x41xis_Labels\x18\x05 \x01(\x08:\x04true\x12\x1a\n\x0b\x41xis_Titles\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x33\n\x0c\x41xis_Control\x18\x07 \x03(\x0b\x32\x1d.gmtaskmodel.Axis_Control_GMT\x12\x33\n\x19output_graphics_file_stub\x18\x08 \x01(\t:\x10section_name.png\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\xda\x01\n\x1cPrismFeFLOWTriangulation_GMT\x12\x1b\n\x13input_fem_mesh_file\x18\x01 \x02(\t\x12\x19\n\rNumber_Layers\x18\x02 \x01(\x11:\x02\x32\x30\x12\x1b\n\x10VariableZ_Factor\x18\x05 \x01(\x01:\x01\x31\x12 \n\x0boutput_mesh\x18\x03 \x01(\t:\x0bmesh_3d.fem\x12\x35\n\x12output_report_file\x18\x04 \x01(\t:\x19prism_fem_mesh_report.rpt\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\x9e\x04\n\x16GenerateMeshReport_GMT\x12\x34\n\x12output_report_file\x18\x01 \x01(\t:\x18generate_mesh_report.rpt\x12\x17\n\x0finput_mesh_file\x18\x02 \x01(\t\x12\x41\n\x0cTypeMeshGrid\x18\r \x01(\x0e\x32\x1a.ctm.MeshGrid_TypeMeshGrid:\x0fMeshGrid_VERTEX\x12\x11\n\x03vtk\x18\x03 \x01(\x08:\x04true\x12\x1d\n\x15sharp_angle_threshold\x18\x04 \x01(\x01\x12.\n\x15\x66\x61\x63\x65t_angle_threshold\x18\x05 \x01(\x0b\x32\x0f.ctm.PairDouble\x12-\n\x14\x66\x61\x63\x65t_size_threshold\x18\x06 \x01(\x0b\x32\x0f.ctm.PairDouble\x12\x12\n\x07vtp_dir\x18\x07 \x01(\t:\x01.\x12\x1e\n\x0fwrite_vtp_files\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0freport_vertices\x18\t \x01(\x08:\x04true\x12\x1a\n\x0creport_edges\x18\n \x01(\x08:\x04true\x12\x1b\n\rreport_facets\x18\x0b \x01(\x08:\x04true\x12\x19\n\ttolerance\x18\x0c \x01(\x01:\x06\x30.0001\x12,\n\x12output_mesh_report\x18\x14 \x01(\t:\x10mesh_quality.rpt\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\x95\x06\n\x16MeshUnitForGeophys_GMT\x12\x18\n\x10input_point_file\x18\x01 \x01(\t\x12\x18\n\x10output_mesh_file\x18\x02 \x01(\t\x12J\n\x0brank_radius\x18\x03 \x03(\x0b\x32\x35.gmtaskmodel.MeshUnitForGeophys_GMT.RankRadiusControl\x12\x17\n\x0bnum_samples\x18\x04 \x01(\x05:\x02\x31\x30\x12\x11\n\tdebug_dir\x18\x05 \x01(\t\x12\x14\n\x0c\x64\x65\x62ug_prefix\x18\x07 \x01(\t\x12W\n\x11thinning_function\x18\x08 \x01(\x0e\x32\x34.gmtaskmodel.MeshUnitForGeophys_GMT.ThinningFunction:\x06LINEAR\x12Z\n\rsample_method\x18\t \x01(\x0e\x32\x30.gmtaskmodel.MeshUnitForGeophys_GMT.SampleMethod:\x11INPUT_POINT_CLOUD\x12*\n\x1bthinning_radii_are_absolute\x18\n \x01(\x08:\x05\x66\x61lse\x12\x11\n\tunit_name\x18\x0b \x01(\t\x12\x11\n\tunit_rank\x18\x0c \x01(\x05\x12\x31\n\tcgalparms\x18\r \x01(\x0b\x32\x1e.gmtaskmodel.BuildMeshCGAL_GMT\x12/\n\x03log\x18\x63 \x01(\t:\"mesh_unit_for_geophysics_model.rpt\x1a\x61\n\x11RankRadiusControl\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0c\n\x04rank\x18\x02 \x01(\x05\x12\x16\n\x0btopo_radius\x18\x03 \x01(\x01:\x01\x31\x12\x18\n\x0b\x62\x61se_radius\x18\x04 \x01(\x01:\x03\x31\x30\x30\"/\n\x10ThinningFunction\x12\n\n\x06LINEAR\x10\x00\x12\x0f\n\x0b\x41NISOTROPIC\x10\x01\":\n\x0cSampleMethod\x12\x15\n\x11INPUT_POINT_CLOUD\x10\x00\x12\x13\n\x0fPOTENTIAL_FIELD\x10\x01\"}\n\x19GetComputedLithoAtXYZ_GMT\x12&\n\x08\x66ilename\x18\x01 \x02(\t:\x14ModelLitho_Query.rpt\x12*\n\x05Point\x18\x02 \x03(\x0b\x32\x1b.gmtaskmodel.AddPoint3d_GMT\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\x84\x01\n\x1cGetComputedGradientAtXYZ_GMT\x12*\n\x08\x66ilename\x18\x01 \x02(\t:\x18ModelGradients_Query.rpt\x12*\n\x05Point\x18\x02 \x03(\x0b\x32\x1b.gmtaskmodel.AddPoint3d_GMT\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\xb5\x04\n\x1d\x43omputeExternalDriftField_GMT\x12\x38\n\x0fMeshGrid_Source\x18\x01 \x02(\x0b\x32\x1f.gmtaskmodel.SourceMeshGrid_GMT\x12\x62\n\x17required_drift_function\x18\x03 \x03(\x0b\x32\x41.gmtaskmodel.ComputeExternalDriftField_GMT.Formation_Distribution\x12.\n\tDepthUnit\x18\x04 \x01(\x0e\x32\x13.ctm.Distance_Units:\x06meters\x12\x31\n\rProperty_Type\x18\x05 \x01(\x0e\x32\x11.ctm.PropertyType:\x07\x44\x65nsity\x12\x41\n\x0cTypeMeshGrid\x18\r \x01(\x0e\x32\x1a.ctm.MeshGrid_TypeMeshGrid:\x0fMeshGrid_VERTEX\x12\x39\n\x12output_report_file\x18\x63 \x01(\t:\x1d\x43omputeExternalDriftField.rpt\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\x1a\x86\x01\n\x16\x46ormation_Distribution\x12\x11\n\tformation\x18\x01 \x02(\t\x12,\n\x04Type\x18\x02 \x01(\x0e\x32\x1e.gmtaskmodel.Distribution_Type\x12\r\n\x02p1\x18\x03 \x01(\x01:\x01\x30\x12\r\n\x02p2\x18\x04 \x01(\x01:\x01\x30\x12\r\n\x02p3\x18\x05 \x01(\x01:\x01\x30\"\xe4\x01\n\x15\x43reateAxialSeries_GMT\x12\x13\n\x0b\x41xialSeries\x18\x01 \x02(\t\x12\x0e\n\x03red\x18\x03 \x01(\x01:\x01\x30\x12\x12\n\x05green\x18\x04 \x01(\x01:\x03\x31\x32\x35\x12\x11\n\x04\x62lue\x18\x05 \x01(\x01:\x03\x32\x35\x35\x12\n\tMechanism\x18\r \x01(\x0e\x32\x1a.gmtaskmodel.FoldMechanism:\x0c\x46lexuralSlip\x12\x35\n\x05style\x18\x0e \x01(\x0e\x32\x1d.gmtaskmodel.DeformationStyle:\x07\x43lass1B\x12\x0b\n\x03log\x18\x07 \x01(\t\"\x9a\x03\n\x16\x43reateAxialSurface_GMT\x12\x13\n\x0b\x41xialSeries\x18\x01 \x02(\t\x12\x14\n\x0c\x41xialSurface\x18\x02 \x02(\t\x12\x0e\n\x03red\x18\x03 \x01(\x01:\x01\x30\x12\x12\n\x05green\x18\x04 \x01(\x01:\x03\x31\x32\x35\x12\x11\n\x04\x62lue\x18\x05 \x01(\x01:\x03\x32\x35\x35\x12/\n\tPointList\x18\x06 \x01(\x0b\x32\x1c.gmtaskmodel.PointList2d_GMT\x12\x31\n\x0bPointList3D\x18\x07 \x01(\x0b\x32\x1c.gmtaskmodel.PointList3d_GMT\x12\x17\n\robservationId\x18\x08 \x01(\t:\x00\x12-\n\nprovenance\x18\t \x01(\x0e\x32\x13.ctm.ProvenanceType:\x04none\x12.\n\x04type\x18\n \x01(\x0e\x32\x15.gmtaskmodel.FoldType:\tAnticline\x12\x35\n\ttightness\x18\x0c \x01(\x0e\x32\x1a.gmtaskmodel.FoldTightness:\x06Gentle\x12\x0b\n\x03log\x18\x14 \x01(\t\"\x95\x02\n\x15\x41\x64\x64\x41xialTraceLine_GMT\x12\x13\n\x0b\x41xialSeries\x18\x01 \x01(\t\x12\x14\n\x0c\x41xialSurface\x18\x02 \x02(\t\x12\x17\n\x0f\x44\x65\x66iningSection\x18\x03 \x01(\t\x12/\n\tPointList\x18\x04 \x01(\x0b\x32\x1c.gmtaskmodel.PointList2d_GMT\x12\x31\n\x0bPointList3D\x18\x05 \x01(\x0b\x32\x1c.gmtaskmodel.PointList3d_GMT\x12\x17\n\robservationId\x18\x06 \x01(\t:\x00\x12-\n\nprovenance\x18\x07 \x01(\x0e\x32\x13.ctm.ProvenanceType:\x04none\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"\x9d\x03\n\x1e\x41\x64\x64\x41xialSurfaceOrientation_GMT\x12\x13\n\x0b\x41xialSeries\x18\x01 \x02(\t\x12\x17\n\robservationId\x18\x02 \x01(\t:\x00\x12\x17\n\x0f\x44\x65\x66iningSection\x18\x04 \x01(\t\x12*\n\x05Point\x18\x06 \x01(\x0b\x32\x1b.gmtaskmodel.AddPoint2d_GMT\x12,\n\x07Point3D\x18\x07 \x01(\x0b\x32\x1b.gmtaskmodel.AddPoint3d_GMT\x12-\n\nprovenance\x18\x05 \x01(\x0e\x32\x13.ctm.ProvenanceType:\x04none\x12\x0e\n\x03\x44ip\x18\x08 \x01(\x01:\x01\x30\x12\x17\n\x0c\x44ipDirection\x18\t \x01(\x01:\x01\x30\x12\x10\n\x05Pitch\x18\n \x01(\x01:\x01\x30\x12\x34\n\x08Polarity\x18\x11 \x01(\x0e\x32\x11.ctm.PolarityType:\x0fNormal_Polarity\x12-\n\tfoliation\x18\x14 \x01(\x0b\x32\x1a.gmtaskmodel.Foliation_GMT\x12\x0b\n\x03log\x18\x32 \x01(\t\"\xe5\x03\n\x10\x41\x64\x64HingeLine_GMT\x12\x13\n\x0b\x41xialSeries\x18\x01 \x01(\t\x12\x14\n\x0c\x41xialSurface\x18\x02 \x02(\t\x12\x11\n\tFormation\x18\x04 \x02(\t\x12/\n\tPointList\x18\x05 \x01(\x0b\x32\x1c.gmtaskmodel.PointList2d_GMT\x12\x31\n\x0bPointList3D\x18\x06 \x01(\x0b\x32\x1c.gmtaskmodel.PointList3d_GMT\x12\x17\n\robservationId\x18\x07 \x01(\t:\x00\x12-\n\nprovenance\x18\x08 \x01(\x0e\x32\x13.ctm.ProvenanceType:\x04none\x12\x1c\n\x10\x44istanceAtOrigin\x18\t \x01(\x01:\x02\x39\x30\x12 \n\x13\x44istanceAtExtremity\x18\n \x01(\x01:\x03\x31\x30\x30\x12!\n\x13\x43onstant_Fold_Shape\x18\x0b \x01(\x08:\x04true\x12\x1c\n\x10\x41pertureAtOrigin\x18\x0c \x01(\x01:\x02\x33\x30\x12\x1f\n\x13\x41pertureAtExtremity\x18\r \x01(\x01:\x02\x33\x30\x12\x38\n\x08Polarity\x18\x0e \x01(\x0e\x32\x1a.gmtaskmodel.HingePolarity:\nHinge_Left\x12\x0b\n\x03log\x18\x32 \x01(\t\"\xea\x01\n!CreateSectionFromAxialSurface_GMT\x12\x18\n\x10\x41xialSectionName\x18\x01 \x02(\t\x12\x14\n\x0c\x41xialSurface\x18\x02 \x02(\t\x12\x15\n\tGridNodes\x18\x04 \x01(\x05:\x02\x31\x30\x12!\n\x07\x45xtents\x18\x06 \x01(\x0b\x32\x10.ctm.BoundingBox\x12N\n\x17InterpotationParameters\x18\x0c \x01(\x0b\x32-.gmtaskmodel.ModelInterpolationParameters_GMT\x12\x0b\n\x03log\x18\x07 \x01(\t\"\x94)\n\x0fGeomodellerTask\x12\x35\n\rCreateProject\x18\x01 \x01(\x0b\x32\x1e.gmtaskmodel.CreateProject_GMT\x12\x37\n\x0eOpenProjectGUI\x18\x02 \x01(\x0b\x32\x1f.gmtaskmodel.OpenProjectGUI_GMT\x12\n\x10OpenProjectNoGUI\x18\x03 \x01(\x0b\x32!.gmtaskmodel.OpenProjectNoGUI_GMT\x12\x31\n\x0bSaveProject\x18\x04 \x01(\x0b\x32\x1c.gmtaskmodel.SaveProject_GMT\x12\x35\n\rSaveProjectAs\x18\x05 \x01(\x0b\x32\x1e.gmtaskmodel.SaveProjectAs_GMT\x12-\n\tCustomDTM\x18\x06 \x01(\x0b\x32\x1a.gmtaskmodel.CustomDTM_GMT\x12\x35\n\rHorizontalDTM\x18\x07 \x01(\x0b\x32\x1e.gmtaskmodel.HorizontalDTM_GMT\x12\x39\n\x0f\x43reateFormation\x18\x08 \x01(\x0b\x32 .gmtaskmodel.CreateFormation_GMT\x12\x31\n\x0b\x43reateFault\x18\t \x01(\x0b\x32\x1c.gmtaskmodel.CreateFault_GMT\x12-\n\tSetSeries\x18\n \x01(\x0b\x32\x1a.gmtaskmodel.SetSeries_GMT\x12\x43\n\x14\x41\x64\x64\x46ormationToSeries\x18\x0b \x01(\x0b\x32%.gmtaskmodel.AddFormationToSeries_GMT\x12\x39\n\x0f\x41\x64\x64\x44ykeToSeries\x18\x34 \x01(\x0b\x32 .gmtaskmodel.AddDykeToSeries_GMT\x12/\n\nAddPoint3d\x18\x0c \x01(\x0b\x32\x1b.gmtaskmodel.AddPoint3d_GMT\x12\x31\n\x0bPointList3d\x18\r \x01(\x0b\x32\x1c.gmtaskmodel.PointList3d_GMT\x12\x35\n\rCreateSection\x18\x0e \x01(\x0b\x32\x1e.gmtaskmodel.CreateSection_GMT\x12/\n\nAddPoint2d\x18\x0f \x01(\x0b\x32\x1b.gmtaskmodel.AddPoint2d_GMT\x12\x31\n\x0bPointList2d\x18\x10 \x01(\x0b\x32\x1c.gmtaskmodel.PointList2d_GMT\x12\x45\n\x15\x41\x64\x64InterfaceToSection\x18\x11 \x01(\x0b\x32&.gmtaskmodel.AddInterfaceToSection_GMT\x12\x45\n\x15\x41\x64\x64\x46oliationToSection\x18\x12 \x01(\x0b\x32&.gmtaskmodel.AddFoliationToSection_GMT\x12M\n\x19\x41\x64\x64\x33\x44\x46oliationToFormation\x18\x13 \x01(\x0b\x32*.gmtaskmodel.Add3DFoliationToFormation_GMT\x12\x45\n\x15Import2dDataToSection\x18\x14 \x01(\x0b\x32&.gmtaskmodel.Import2dDataToSection_GMT\x12Q\n\x1b\x44\x65leteInterfacesFromSection\x18\x15 \x01(\x0b\x32,.gmtaskmodel.DeleteInterfacesFromSection_GMT\x12U\n\x1dReadAndImport2dDataToASection\x18\x1e \x01(\x0b\x32..gmtaskmodel.ReadAndImport2dDataToASection_GMT\x12\x35\n\rRenderSection\x18\x1f \x01(\x0b\x32\x1e.gmtaskmodel.RenderSection_GMT\x12\x39\n\x0fUpdateInterface\x18  \x01(\x0b\x32 .gmtaskmodel.UpdateInterface_GMT\x12\x43\n\x14LinkFaultsWithSeries\x18! \x01(\x0b\x32%.gmtaskmodel.LinkFaultsWithSeries_GMT\x12\x43\n\x14LinkFaultsWithFaults\x18\x30 \x01(\x0b\x32%.gmtaskmodel.LinkFaultsWithFaults_GMT\x12/\n\nCreateDyke\x18\" \x01(\x0b\x32\x1b.gmtaskmodel.CreateDyke_GMT\x12\x35\n\rExportSection\x18# \x01(\x0b\x32\x1e.gmtaskmodel.ExportSection_GMT\x12Y\n\x1f\x43\x65ntralVerticalPotentialAndRank\x18$ \x01(\x0b\x32\x30.gmtaskmodel.CentralVerticalPotentialAndRank_GMT\x12\x39\n\x0fGetModelSummary\x18% \x01(\x0b\x32 .gmtaskmodel.GetModelSummary_GMT\x12\n\x10Set3dFaultLimits\x18\' \x01(\x0b\x32!.gmtaskmodel.Set3dFaultLimits_GMT\x12I\n\x17\x41\x64\x64\x41pparentDipToSection\x18( \x01(\x0b\x32(.gmtaskmodel.AddApparentDipToSection_GMT\x12\x33\n\x0c\x66\x61ult_centre\x18\xa0\x01 \x01(\x0b\x32\x1c.gmtaskmodel.FaultCentre_GMT\x12\x35\n\rCreate3DPoint\x18+ \x01(\x0b\x32\x1e.gmtaskmodel.Create3DPoint_GMT\x12O\n\x1a\x41\x64\x64\x33\x44InterfacesToFormation\x18, \x01(\x0b\x32+.gmtaskmodel.Add3DInterfacesToFormation_GMT\x12\x45\n\x15GetComputedLithoAtXYZ\x18- \x01(\x0b\x32&.gmtaskmodel.GetComputedLithoAtXYZ_GMT\x12K\n\x18GetComputedGradientAtXYZ\x18. \x01(\x0b\x32).gmtaskmodel.GetComputedGradientAtXYZ_GMT\x12\x41\n\x13ReadAndImport3dData\x18/ \x01(\x0b\x32$.gmtaskmodel.ReadAndImport3dData_GMT\x12W\n\x1e\x41\x64\x64\x44ykeStructuralDataToSection\x18\x33 \x01(\x0b\x32/.gmtaskmodel.AddDykeStructuralDataToSection_GMT\x12=\n\x11\x43reateAxialSeries\x18\x36 \x01(\x0b\x32\".gmtaskmodel.CreateAxialSeries_GMT\x12?\n\x12\x43reateAxialSurface\x18\x37 \x01(\x0b\x32#.gmtaskmodel.CreateAxialSurface_GMT\x12=\n\x11\x41\x64\x64\x41xialTraceLine\x18\x38 \x01(\x0b\x32\".gmtaskmodel.AddAxialTraceLine_GMT\x12\x33\n\x0c\x41\x64\x64HingeLine\x18\x39 \x01(\x0b\x32\x1d.gmtaskmodel.AddHingeLine_GMT\x12O\n\x1a\x41\x64\x64\x41xialSurfaceOrientation\x18: \x01(\x0b\x32+.gmtaskmodel.AddAxialSurfaceOrientation_GMT\x12U\n\x1d\x43reateSectionFromAxialSurface\x18 \x01(\x0b\x32..gmtaskmodel.CreateSectionFromAxialSurface_GMT\x12\x39\n\x0f\x43reateDrillhole\x18= \x01(\x0b\x32 .gmtaskmodel.CreateDrillhole_GMT\x12\x37\n\x0eLoadDrillholes\x18& \x01(\x0b\x32\x1f.gmtaskmodel.LoadDrillholes_GMT\x12\x41\n\x13\x43ompositeDrillholes\x18< \x01(\x0b\x32$.gmtaskmodel.CompositeDrillholes_GMT\x12Q\n\x1fProbabilityDistributionFunction\x18\x46 \x01(\x0b\x32(.ctm.ProbabilityDistributionFunction_GMT\x12\x35\n\x11LithologyProperty\x18G \x01(\x0b\x32\x1a.ctm.LithologyProperty_GMT\x12\x37\n\x0eSetModelBounds\x18\x62 \x01(\x0b\x32\x1f.gmtaskmodel.SetModelBounds_GMT\x12\x37\n\x0eGetModelBounds\x18\x63 \x01(\x0b\x32\x1f.gmtaskmodel.GetModelBounds_GMT\x12\x37\n\x0eWriteBatchFile\x18\x31 \x01(\x0b\x32\x1f.gmtaskmodel.WriteBatchFile_GMT\x12\x33\n\x0c\x43omputeModel\x18\x64 \x01(\x0b\x32\x1d.gmtaskmodel.ComputeModel_GMT\x12\x31\n\x0bRenderModel\x18\x65 \x01(\x0b\x32\x1c.gmtaskmodel.RenderModel_GMT\x12\x43\n\x14RenderModelOnSection\x18q \x01(\x0b\x32%.gmtaskmodel.RenderModelOnSection_GMT\x12?\n\x12SaveLithologyVoxet\x18\x66 \x01(\x0b\x32#.gmtaskmodel.SaveLithologyVoxet_GMT\x12O\n\x1aSavePotentialGradientVoxet\x18g \x01(\x0b\x32+.gmtaskmodel.SavePotentialGradientVoxet_GMT\x12S\n\x1cInterpolateNumericalReadings\x18h \x01(\x0b\x32-.gmtaskmodel.InterpolateNumericalReadings_GMT\x12\n\x10ImportSeismicNav\x18i \x01(\x0b\x32!.gmtaskmodel.ImportSeismicNav_GMT\x12\x45\n\x15ImportSeismicHorizons\x18j \x01(\x0b\x32&.gmtaskmodel.ImportSeismicHorizons_GMT\x12K\n\x18ImportMicroSeismicEvents\x18p \x01(\x0b\x32).gmtaskmodel.ImportMicroSeismicEvents_GMT\x12\x35\n\x0cLoadMeshGrid\x18k \x01(\x0b\x32\x1f.gmtaskmodel.SourceMeshGrid_GMT\x12\x37\n\x0e\x45xportMeshGrid\x18l \x01(\x0b\x32\x1f.gmtaskmodel.ExportMeshGrid_GMT\x12\x37\n\x0e\x43reateMeshGrid\x18m \x01(\x0b\x32\x1f.gmtaskmodel.CreateMeshGrid_GMT\x12?\n\x12GenerateMeshReport\x18n \x01(\x0b\x32#.gmtaskmodel.GenerateMeshReport_GMT\x12\x35\n\rBuildMeshCGAL\x18) \x01(\x0b\x32\x1e.gmtaskmodel.BuildMeshCGAL_GMT\x12\x37\n\x0e\x45xport3DShapes\x18* \x01(\x0b\x32\x1f.gmtaskmodel.Export3DShapes_GMT\x12\x31\n\x0b\x45xportModel\x18\x41 \x01(\x0b\x32\x1c.gmtaskmodel.ExportModel_GMT\x12=\n\x11\x45xportProjectSite\x18\x32 \x01(\x0b\x32\".gmtaskmodel.ExportProjectSite_GMT\x12I\n\x17Presentation2D_Graphics\x18> \x01(\x0b\x32(.gmtaskmodel.Presentation2D_Graphics_GMT\x12\n\x10\x42uildTripleLines\x18\x35 \x01(\x0b\x32!.gmtaskmodel.BuildTripleLines_GMT\x12K\n\x18PrismFeFLOWTriangulation\x18\x43 \x01(\x0b\x32).gmtaskmodel.PrismFeFLOWTriangulation_GMT\x12?\n\x12MeshUnitForGeophys\x18o \x01(\x0b\x32#.gmtaskmodel.MeshUnitForGeophys_GMT\x12M\n\x19\x43omputeExternalDriftField\x18r \x01(\x0b\x32*.gmtaskmodel.ComputeExternalDriftField_GMT\x12\n\x10\x43omputeVariogram\x18x \x01(\x0b\x32!.gmtaskmodel.ComputeVariogram_GMT\x12>\n\x11ImportTripleLines\x18\x82\x01 \x01(\x0b\x32\".gmtaskmodel.ImportTripleLines_GMT\x12>\n\x11\x43loseProjectNoGUI\x18\x8c\x01 \x01(\x0b\x32\".gmtaskmodel.CloseProjectNoGUI_GMT\x12H\n\x16\x44rillholeQueryMeshGrid\x18\x96\x01 \x01(\x0b\x32\'.gmtaskmodel.DrillholeQueryMeshGrid_GMT\x12\x34\n\x0c\x45xport2DData\x18\x97\x01 \x01(\x0b\x32\x1d.gmtaskmodel.Export2DData_GMT\x12\x42\n\x13\x43reateSegYThumbnail\x18\x98\x01 \x01(\x0b\x32$.gmtaskmodel.CreateSegYThumbnail_GMT\x12\x0c\n\x03log\x18\xff\x01 \x01(\t*.\n\x15GeomodellerDataSource\x12\x0b\n\x07Project\x10\x00\x12\x08\n\x04\x46ile\x10\x01*L\n\x12SectionRenderStyle\x12\x0e\n\nSolid_Fill\x10\x00\x12\x12\n\x0e\x42oundary_Lines\x10\x01\x12\x12\n\x0eGeology_Trends\x10\x02*P\n\x0f\x46\x61ultCentreType\x12\x11\n\rMEAN_POSITION\x10\x00\x12\x16\n\x12\x42OUNDINGBOX_CENTRE\x10\x01\x12\x12\n\x0eUSER_SPECIFIED\x10\x63*E\n\tFormats2D\x12\n\n\x06\x46T_SHP\x10\x00\x12\x0e\n\nFT_MAPINFO\x10\x01\x12\x10\n\x0c\x46T_ASCIIBRGM\x10\x02\x12\n\n\x06\x46T_CSV\x10\x04*k\n\x1c\x41ssociated_OrientationMethod\x12\r\n\tUNDEFINED\x10\x00\x12\x07\n\x03\x44IP\x10\x01\x12\x0e\n\nDIPAZIMUTH\x10\x02\x12\x13\n\x0fLINEORIENTATION\x10\x03\x12\x0e\n\nORTHOGONAL\x10\x04*|\n\x0cImportAction\x12\x0f\n\x0b\x43reateFault\x10\x00\x12\x13\n\x0f\x43reateFormation\x10\x01\x12\x0e\n\nCreateDyke\x10\x02\x12\x0e\n\nMergeFault\x10\x03\x12\x12\n\x0eMergeFormation\x10\x05\x12\x12\n\x0eImport_default\x10\x06*5\n\x0e\x43ompositeStyle\x12\x10\n\x0cStart_Collar\x10\x00\x12\x11\n\rFirst_NonNull\x10\x01*B\n\x19\x43ompositeReplacementStyle\x12\x13\n\x0f\x42\x61\x63kgroundValue\x10\x00\x12\x10\n\x0cWeightedMean\x10\x01*F\n\x17\x43ompositeWeightingStyle\x12\x14\n\x10length_weighting\x10\x00\x12\x15\n\x11\x64\x65nsity_weighting\x10\x01*L\n\x0eTypeOfAnalysis\x12\x0f\n\x0bRhoThetaPhi\x10\x00\x12\x0c\n\x08RhoTheta\x10\x01\x12\x07\n\x03Rho\x10\x02\x12\x07\n\x03UVT\x10\x03\x12\t\n\x05OnlyT\x10\x04*8\n\rKrigingDomain\x12\n\n\x06Series\x10\x00\x12\r\n\tFormation\x10\x01\x12\x0c\n\x08NoDomain\x10\x02*u\n\x16Kriging_WhichVariogram\x12\r\n\tKriging_U\x10\x00\x12\r\n\tKriging_V\x10\x01\x12\r\n\tKriging_W\x10\x02\x12\x0f\n\x0bKriging_RHO\x10\x03\x12\r\n\tKriging_T\x10\x04\x12\x0e\n\nKriging_UV\x10\x05*\x9d\x01\n\x13Mesh_facet_topology\x12\x1d\n\x19\x46\x41\x43\x45T_VERTICES_ON_SURFACE\x10\x00\x12(\n$FACET_VERTICES_ON_SAME_SURFACE_PATCH\x10\x01\x12=\n9FACET_VERTICES_ON_SAME_SURFACE_PATCH_WITH_ADJACENCY_CHECK\x10\x02*P\n\x12OptManifoldRequest\x12\x0c\n\x08manifold\x10\x00\x12\x1a\n\x16manifold_with_boundary\x10\x01\x12\x10\n\x0cnon_manifold\x10\x02*L\n\nSiteType3D\x12\r\n\tVRML_Site\x10\x00\x12\x0e\n\nPDF3D_Site\x10\x01\x12\x10\n\x0cPDF3D_direct\x10\x02\x12\r\n\tADOBE_PRC\x10\x03*r\n\x13GeomodellerDataType\x12\r\n\tStructure\x10\x01\x12\t\n\x05Model\x10\x02\x12\x0c\n\x08MeshGrid\x10\x03\x12\x0e\n\nDrillHoles\x10\x04\x12\x14\n\x10Inversion_Result\x10\x05\x12\r\n\tAll_Parts\x10\n*{\n\x11\x44istribution_Type\x12\x19\n\x15TopFormation_Gradient\x10\x01\x12\x10\n\x0cTopAndBottom\x10\x02\x12\x1b\n\x17\x44\x65pthParameter_Gradient\x10\x03\x12\x1c\n\x18\x42ottomFormation_Gradient\x10\x04*\xbc\x01\n\x08\x46oldType\x12\r\n\tAnticline\x10\x00\x12\x0c\n\x08Syncline\x10\x01\x12\x0c\n\x08\x41ntiform\x10\x02\x12\x0b\n\x07Synform\x10\x03\x12\x08\n\x04\x44ome\x10\x04\x12\t\n\x05\x42\x61sin\x10\x05\x12\r\n\tMonocline\x10\x06\x12\x0b\n\x07\x43hevron\x10\x07\x12\r\n\tRecumbent\x10\x08\x12\t\n\x05Slump\x10\t\x12\r\n\tPtygmatic\x10\n\x12\r\n\tParasitic\x10\x0b\x12\x0f\n\x0b\x44isharmonic\x10\x0c*E\n\rFoldMechanism\x12\x10\n\x0c\x46lexuralSlip\x10\x00\x12\x0c\n\x08\x42uckling\x10\x01\x12\x14\n\x10MassDisplacement\x10\x02*8\n\rFoldTightness\x12\n\n\x06Gentle\x10\x00\x12\x0c\n\x08OpenFold\x10\x01\x12\r\n\tTightFold\x10\x02*]\n\x10\x44\x65\x66ormationStyle\x12\n\n\x06\x43lass1\x10\x00\x12\x0b\n\x07\x43lass1A\x10\x01\x12\x0b\n\x07\x43lass1B\x10\x02\x12\x0b\n\x07\x43lass1C\x10\x03\x12\n\n\x06\x43lass2\x10\x04\x12\n\n\x06\x43lass3\x10\x05*0\n\rHingePolarity\x12\x0e\n\nHinge_Left\x10\x00\x12\x0f\n\x0bHinge_Right\x10\x01'
   ,
   dependencies=[commontaskmodel__pb2.DESCRIPTOR,vtktasksup__pb2.DESCRIPTOR,])
 
@@ -46,8 +46,8 @@ _GEOMODELLERDATASOURCE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=34448,
-  serialized_end=34494,
+  serialized_start=34667,
+  serialized_end=34713,
 )
 _sym_db.RegisterEnumDescriptor(_GEOMODELLERDATASOURCE)
 
@@ -77,8 +77,8 @@ _SECTIONRENDERSTYLE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=34496,
-  serialized_end=34572,
+  serialized_start=34715,
+  serialized_end=34791,
 )
 _sym_db.RegisterEnumDescriptor(_SECTIONRENDERSTYLE)
 
@@ -108,8 +108,8 @@ _FAULTCENTRETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=34574,
-  serialized_end=34654,
+  serialized_start=34793,
+  serialized_end=34873,
 )
 _sym_db.RegisterEnumDescriptor(_FAULTCENTRETYPE)
 
@@ -144,8 +144,8 @@ _FORMATS2D = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=34656,
-  serialized_end=34725,
+  serialized_start=34875,
+  serialized_end=34944,
 )
 _sym_db.RegisterEnumDescriptor(_FORMATS2D)
 
@@ -185,8 +185,8 @@ _ASSOCIATED_ORIENTATIONMETHOD = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=34727,
-  serialized_end=34834,
+  serialized_start=34946,
+  serialized_end=35053,
 )
 _sym_db.RegisterEnumDescriptor(_ASSOCIATED_ORIENTATIONMETHOD)
 
@@ -231,8 +231,8 @@ _IMPORTACTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=34836,
-  serialized_end=34960,
+  serialized_start=35055,
+  serialized_end=35179,
 )
 _sym_db.RegisterEnumDescriptor(_IMPORTACTION)
 
@@ -257,8 +257,8 @@ _COMPOSITESTYLE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=34962,
-  serialized_end=35015,
+  serialized_start=35181,
+  serialized_end=35234,
 )
 _sym_db.RegisterEnumDescriptor(_COMPOSITESTYLE)
 
@@ -283,8 +283,8 @@ _COMPOSITEREPLACEMENTSTYLE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=35017,
-  serialized_end=35083,
+  serialized_start=35236,
+  serialized_end=35302,
 )
 _sym_db.RegisterEnumDescriptor(_COMPOSITEREPLACEMENTSTYLE)
 
@@ -309,8 +309,8 @@ _COMPOSITEWEIGHTINGSTYLE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=35085,
-  serialized_end=35155,
+  serialized_start=35304,
+  serialized_end=35374,
 )
 _sym_db.RegisterEnumDescriptor(_COMPOSITEWEIGHTINGSTYLE)
 
@@ -350,8 +350,8 @@ _TYPEOFANALYSIS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=35157,
-  serialized_end=35233,
+  serialized_start=35376,
+  serialized_end=35452,
 )
 _sym_db.RegisterEnumDescriptor(_TYPEOFANALYSIS)
 
@@ -381,8 +381,8 @@ _KRIGINGDOMAIN = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=35235,
-  serialized_end=35291,
+  serialized_start=35454,
+  serialized_end=35510,
 )
 _sym_db.RegisterEnumDescriptor(_KRIGINGDOMAIN)
 
@@ -427,8 +427,8 @@ _KRIGING_WHICHVARIOGRAM = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=35293,
-  serialized_end=35410,
+  serialized_start=35512,
+  serialized_end=35629,
 )
 _sym_db.RegisterEnumDescriptor(_KRIGING_WHICHVARIOGRAM)
 
@@ -458,8 +458,8 @@ _MESH_FACET_TOPOLOGY = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=35413,
-  serialized_end=35570,
+  serialized_start=35632,
+  serialized_end=35789,
 )
 _sym_db.RegisterEnumDescriptor(_MESH_FACET_TOPOLOGY)
 
@@ -489,8 +489,8 @@ _OPTMANIFOLDREQUEST = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=35572,
-  serialized_end=35652,
+  serialized_start=35791,
+  serialized_end=35871,
 )
 _sym_db.RegisterEnumDescriptor(_OPTMANIFOLDREQUEST)
 
@@ -525,8 +525,8 @@ _SITETYPE3D = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=35654,
-  serialized_end=35730,
+  serialized_start=35873,
+  serialized_end=35949,
 )
 _sym_db.RegisterEnumDescriptor(_SITETYPE3D)
 
@@ -571,8 +571,8 @@ _GEOMODELLERDATATYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=35732,
-  serialized_end=35846,
+  serialized_start=35951,
+  serialized_end=36065,
 )
 _sym_db.RegisterEnumDescriptor(_GEOMODELLERDATATYPE)
 
@@ -607,8 +607,8 @@ _DISTRIBUTION_TYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=35848,
-  serialized_end=35971,
+  serialized_start=36067,
+  serialized_end=36190,
 )
 _sym_db.RegisterEnumDescriptor(_DISTRIBUTION_TYPE)
 
@@ -688,8 +688,8 @@ _FOLDTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=35974,
-  serialized_end=36162,
+  serialized_start=36193,
+  serialized_end=36381,
 )
 _sym_db.RegisterEnumDescriptor(_FOLDTYPE)
 
@@ -719,8 +719,8 @@ _FOLDMECHANISM = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=36164,
-  serialized_end=36233,
+  serialized_start=36383,
+  serialized_end=36452,
 )
 _sym_db.RegisterEnumDescriptor(_FOLDMECHANISM)
 
@@ -750,8 +750,8 @@ _FOLDTIGHTNESS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=36235,
-  serialized_end=36291,
+  serialized_start=36454,
+  serialized_end=36510,
 )
 _sym_db.RegisterEnumDescriptor(_FOLDTIGHTNESS)
 
@@ -796,8 +796,8 @@ _DEFORMATIONSTYLE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=36293,
-  serialized_end=36386,
+  serialized_start=36512,
+  serialized_end=36605,
 )
 _sym_db.RegisterEnumDescriptor(_DEFORMATIONSTYLE)
 
@@ -822,8 +822,8 @@ _HINGEPOLARITY = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=36388,
-  serialized_end=36436,
+  serialized_start=36607,
+  serialized_end=36655,
 )
 _sym_db.RegisterEnumDescriptor(_HINGEPOLARITY)
 
@@ -945,8 +945,8 @@ _BUILDTRIPLELINES_GMT_EXPORTTRIPLELINES_TRIPLELINE_EXPORTFORMAT = _descriptor.En
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=18381,
-  serialized_end=18480,
+  serialized_start=18722,
+  serialized_end=18821,
 )
 _sym_db.RegisterEnumDescriptor(_BUILDTRIPLELINES_GMT_EXPORTTRIPLELINES_TRIPLELINE_EXPORTFORMAT)
 
@@ -1025,8 +1025,8 @@ _EXPORT3DSHAPES_GMT_FILETYPE3D = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=22635,
-  serialized_end=22784,
+  serialized_start=23032,
+  serialized_end=23181,
 )
 _sym_db.RegisterEnumDescriptor(_EXPORT3DSHAPES_GMT_FILETYPE3D)
 
@@ -1055,8 +1055,8 @@ _EXPORT3DSHAPES_GMT_MESHTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=22786,
-  serialized_end=22832,
+  serialized_start=23183,
+  serialized_end=23229,
 )
 _sym_db.RegisterEnumDescriptor(_EXPORT3DSHAPES_GMT_MESHTYPE)
 
@@ -1080,8 +1080,8 @@ _AXIS_CONTROL_GMT_DIRECTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=24354,
-  serialized_end=24379,
+  serialized_start=24573,
+  serialized_end=24598,
 )
 _sym_db.RegisterEnumDescriptor(_AXIS_CONTROL_GMT_DIRECTION)
 
@@ -1105,8 +1105,8 @@ _MESHUNITFORGEOPHYS_GMT_THINNINGFUNCTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=26173,
-  serialized_end=26220,
+  serialized_start=26392,
+  serialized_end=26439,
 )
 _sym_db.RegisterEnumDescriptor(_MESHUNITFORGEOPHYS_GMT_THINNINGFUNCTION)
 
@@ -1130,8 +1130,8 @@ _MESHUNITFORGEOPHYS_GMT_SAMPLEMETHOD = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=26222,
-  serialized_end=26280,
+  serialized_start=26441,
+  serialized_end=26499,
 )
 _sym_db.RegisterEnumDescriptor(_MESHUNITFORGEOPHYS_GMT_SAMPLEMETHOD)
 
@@ -1608,23 +1608,23 @@ _CUSTOMDTM_GMT = _descriptor.Descriptor(
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='isGDM', full_name='gmtaskmodel.CustomDTM_GMT.isGDM', index=0,
-      number=1, type=8, cpp_type=7, label=1,
-      has_default_value=True, default_value=False,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='name', full_name='gmtaskmodel.CustomDTM_GMT.name', index=1,
+      name='name', full_name='gmtaskmodel.CustomDTM_GMT.name', index=0,
       number=2, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='filename', full_name='gmtaskmodel.CustomDTM_GMT.filename', index=2,
+      name='filename', full_name='gmtaskmodel.CustomDTM_GMT.filename', index=1,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='tilenames', full_name='gmtaskmodel.CustomDTM_GMT.tilenames', index=2,
+      number=15, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -1725,7 +1725,7 @@ _CUSTOMDTM_GMT = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=1451,
-  serialized_end=1854,
+  serialized_end=1866,
 )
 
 
@@ -1777,8 +1777,8 @@ _HORIZONTALDTM_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1856,
-  serialized_end=1973,
+  serialized_start=1868,
+  serialized_end=1985,
 )
 
 
@@ -1942,8 +1942,8 @@ _CREATEPROJECT_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1976,
-  serialized_end=2657,
+  serialized_start=1988,
+  serialized_end=2669,
 )
 
 
@@ -2023,8 +2023,8 @@ _MODELINTERPOLATIONPARAMETERS_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2660,
-  serialized_end=2981,
+  serialized_start=2672,
+  serialized_end=2993,
 )
 
 
@@ -2097,8 +2097,8 @@ _ANISOTROPIC_EFFECT_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2984,
-  serialized_end=3157,
+  serialized_start=2996,
+  serialized_end=3169,
 )
 
 
@@ -2136,8 +2136,8 @@ _EXOTICCONSTRAINT_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3159,
-  serialized_end=3214,
+  serialized_start=3171,
+  serialized_end=3226,
 )
 
 
@@ -2259,8 +2259,8 @@ _COMPUTEMODEL_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3217,
-  serialized_end=3808,
+  serialized_start=3229,
+  serialized_end=3820,
 )
 
 
@@ -2424,8 +2424,8 @@ _RENDERMODEL_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3811,
-  serialized_end=4342,
+  serialized_start=3823,
+  serialized_end=4354,
 )
 
 
@@ -2505,8 +2505,8 @@ _RENDERMODELONSECTION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4345,
-  serialized_end=4615,
+  serialized_start=4357,
+  serialized_end=4627,
 )
 
 
@@ -2572,8 +2572,8 @@ _CREATEFAULT_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4618,
-  serialized_end=4757,
+  serialized_start=4630,
+  serialized_end=4769,
 )
 
 
@@ -2632,8 +2632,8 @@ _SET3DFAULTLIMITS_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4760,
-  serialized_end=4919,
+  serialized_start=4772,
+  serialized_end=4931,
 )
 
 
@@ -2678,8 +2678,8 @@ _FAULTCENTRE_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4922,
-  serialized_end=5050,
+  serialized_start=4934,
+  serialized_end=5062,
 )
 
 
@@ -2745,8 +2745,8 @@ _CREATEFORMATION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5053,
-  serialized_end=5233,
+  serialized_start=5065,
+  serialized_end=5245,
 )
 
 
@@ -2812,8 +2812,8 @@ _CREATEDYKE_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5236,
-  serialized_end=5406,
+  serialized_start=5248,
+  serialized_end=5418,
 )
 
 
@@ -2858,8 +2858,8 @@ _EXPORTSECTION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5408,
-  serialized_end=5495,
+  serialized_start=5420,
+  serialized_end=5507,
 )
 
 
@@ -2918,8 +2918,8 @@ _EXPORT2DDATA_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5498,
-  serialized_end=5669,
+  serialized_start=5510,
+  serialized_end=5681,
 )
 
 
@@ -2957,8 +2957,8 @@ _CENTRALVERTICALPOTENTIALANDRANK_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5671,
-  serialized_end=5743,
+  serialized_start=5683,
+  serialized_end=5755,
 )
 
 
@@ -3003,8 +3003,8 @@ _GETMODELSUMMARY_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5745,
-  serialized_end=5816,
+  serialized_start=5757,
+  serialized_end=5828,
 )
 
 
@@ -3063,8 +3063,8 @@ _SETSERIES_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5819,
-  serialized_end=5958,
+  serialized_start=5831,
+  serialized_end=5970,
 )
 
 
@@ -3109,8 +3109,8 @@ _ADDFORMATIONTOSERIES_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5960,
-  serialized_end=6034,
+  serialized_start=5972,
+  serialized_end=6046,
 )
 
 
@@ -3162,8 +3162,8 @@ _ADDDYKETOSERIES_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6036,
-  serialized_end=6122,
+  serialized_start=6048,
+  serialized_end=6134,
 )
 
 
@@ -3222,8 +3222,8 @@ _ADDPOINT3D_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6124,
-  serialized_end=6227,
+  serialized_start=6136,
+  serialized_end=6239,
 )
 
 
@@ -3261,8 +3261,8 @@ _POINTLIST3D_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6229,
-  serialized_end=6303,
+  serialized_start=6241,
+  serialized_end=6315,
 )
 
 
@@ -3314,8 +3314,8 @@ _ADDPOINT2D_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6305,
-  serialized_end=6388,
+  serialized_start=6317,
+  serialized_end=6400,
 )
 
 
@@ -3353,8 +3353,8 @@ _POINTLIST2D_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6390,
-  serialized_end=6464,
+  serialized_start=6402,
+  serialized_end=6476,
 )
 
 
@@ -3455,8 +3455,8 @@ _CREATESECTION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6467,
-  serialized_end=6758,
+  serialized_start=6479,
+  serialized_end=6770,
 )
 
 
@@ -3508,8 +3508,8 @@ _CREATESEGYTHUMBNAIL_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6760,
-  serialized_end=6868,
+  serialized_start=6772,
+  serialized_end=6880,
 )
 
 
@@ -3617,8 +3617,8 @@ _ADDINTERFACETOSECTION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6871,
-  serialized_end=7288,
+  serialized_start=6883,
+  serialized_end=7300,
 )
 
 
@@ -3670,8 +3670,8 @@ _ADDFOLIATIONTOSECTION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7290,
-  serialized_end=7413,
+  serialized_start=7302,
+  serialized_end=7425,
 )
 
 
@@ -3698,7 +3698,14 @@ _ADD3DFOLIATIONTOFORMATION_GMT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='log', full_name='gmtaskmodel.Add3DFoliationToFormation_GMT.log', index=2,
+      name='Foliation3d_projection', full_name='gmtaskmodel.Add3DFoliationToFormation_GMT.Foliation3d_projection', index=2,
+      number=4, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='log', full_name='gmtaskmodel.Add3DFoliationToFormation_GMT.log', index=3,
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -3716,8 +3723,8 @@ _ADD3DFOLIATIONTOFORMATION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7415,
-  serialized_end=7525,
+  serialized_start=7428,
+  serialized_end=7593,
 )
 
 
@@ -3744,7 +3751,14 @@ _ADD3DINTERFACESTOFORMATION_GMT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='log', full_name='gmtaskmodel.Add3DInterfacesToFormation_GMT.log', index=2,
+      name='Interfaces3d_projection', full_name='gmtaskmodel.Add3DInterfacesToFormation_GMT.Interfaces3d_projection', index=2,
+      number=3, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='log', full_name='gmtaskmodel.Add3DInterfacesToFormation_GMT.log', index=3,
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -3762,8 +3776,8 @@ _ADD3DINTERFACESTOFORMATION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7527,
-  serialized_end=7620,
+  serialized_start=7596,
+  serialized_end=7745,
 )
 
 
@@ -3815,8 +3829,8 @@ _ADDAPPARENTDIPTOSECTION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7623,
-  serialized_end=7752,
+  serialized_start=7748,
+  serialized_end=7877,
 )
 
 
@@ -3980,8 +3994,8 @@ _ADDDYKESTRUCTURALDATATOSECTION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7755,
-  serialized_end=8456,
+  serialized_start=7880,
+  serialized_end=8581,
 )
 
 
@@ -4019,8 +4033,8 @@ _CREATE3DPOINT_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8458,
-  serialized_end=8519,
+  serialized_start=8583,
+  serialized_end=8644,
 )
 
 
@@ -4072,8 +4086,8 @@ _IMPORT2DDATATOSECTION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8522,
-  serialized_end=8656,
+  serialized_start=8647,
+  serialized_end=8781,
 )
 
 
@@ -4139,8 +4153,8 @@ _READANDIMPORT2DDATATOASECTION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8659,
-  serialized_end=8878,
+  serialized_start=8784,
+  serialized_end=9003,
 )
 
 
@@ -4216,21 +4230,28 @@ _READANDIMPORT3DDATA_GMT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='spatial_location_error', full_name='gmtaskmodel.ReadAndImport3dData_GMT.spatial_location_error', index=9,
+      name='Import3d_projection', full_name='gmtaskmodel.ReadAndImport3dData_GMT.Import3d_projection', index=9,
+      number=11, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='spatial_location_error', full_name='gmtaskmodel.ReadAndImport3dData_GMT.spatial_location_error', index=10,
       number=20, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='vertical_location_error', full_name='gmtaskmodel.ReadAndImport3dData_GMT.vertical_location_error', index=10,
+      name='vertical_location_error', full_name='gmtaskmodel.ReadAndImport3dData_GMT.vertical_location_error', index=11,
       number=22, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='log', full_name='gmtaskmodel.ReadAndImport3dData_GMT.log', index=11,
+      name='log', full_name='gmtaskmodel.ReadAndImport3dData_GMT.log', index=12,
       number=21, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"import3d.rpt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -4248,8 +4269,8 @@ _READANDIMPORT3DDATA_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8881,
-  serialized_end=9347,
+  serialized_start=9006,
+  serialized_end=9524,
 )
 
 
@@ -4290,28 +4311,35 @@ _IMPORTMICROSEISMICEVENTS_GMT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='spatial_location_error', full_name='gmtaskmodel.ImportMicroSeismicEvents_GMT.spatial_location_error', index=4,
+      name='MicroSeismic_projection', full_name='gmtaskmodel.ImportMicroSeismicEvents_GMT.MicroSeismic_projection', index=4,
+      number=13, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='spatial_location_error', full_name='gmtaskmodel.ImportMicroSeismicEvents_GMT.spatial_location_error', index=5,
       number=20, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='vertical_location_error', full_name='gmtaskmodel.ImportMicroSeismicEvents_GMT.vertical_location_error', index=5,
+      name='vertical_location_error', full_name='gmtaskmodel.ImportMicroSeismicEvents_GMT.vertical_location_error', index=6,
       number=22, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='CreateDateTime', full_name='gmtaskmodel.ImportMicroSeismicEvents_GMT.CreateDateTime', index=6,
+      name='CreateDateTime', full_name='gmtaskmodel.ImportMicroSeismicEvents_GMT.CreateDateTime', index=7,
       number=9, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='log', full_name='gmtaskmodel.ImportMicroSeismicEvents_GMT.log', index=7,
+      name='log', full_name='gmtaskmodel.ImportMicroSeismicEvents_GMT.log', index=8,
       number=21, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"import3d_microseismic.rpt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -4329,8 +4357,8 @@ _IMPORTMICROSEISMICEVENTS_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9350,
-  serialized_end=9624,
+  serialized_start=9527,
+  serialized_end=9857,
 )
 
 
@@ -4375,8 +4403,8 @@ _SURVEYDIRECTION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9626,
-  serialized_end=9700,
+  serialized_start=9859,
+  serialized_end=9933,
 )
 
 
@@ -4421,8 +4449,8 @@ _LITHOLOGYINTERVAL_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9702,
-  serialized_end=9768,
+  serialized_start=9935,
+  serialized_end=10001,
 )
 
 
@@ -4481,8 +4509,8 @@ _CREATEDRILLHOLE_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9771,
-  serialized_end=10010,
+  serialized_start=10004,
+  serialized_end=10243,
 )
 
 
@@ -4579,8 +4607,15 @@ _LOADDRILLHOLES_GMT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='log', full_name='gmtaskmodel.LoadDrillholes_GMT.log', index=12,
-      number=13, type=9, cpp_type=9, label=1,
+      name='drill_hole_projection', full_name='gmtaskmodel.LoadDrillholes_GMT.drill_hole_projection', index=12,
+      number=13, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='log', full_name='gmtaskmodel.LoadDrillholes_GMT.log', index=13,
+      number=14, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"load_drillholes.rpt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -4597,8 +4632,8 @@ _LOADDRILLHOLES_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10013,
-  serialized_end=10442,
+  serialized_start=10246,
+  serialized_end=10729,
 )
 
 
@@ -4741,8 +4776,8 @@ _COMPOSITEDRILLHOLES_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10445,
-  serialized_end=11201,
+  serialized_start=10732,
+  serialized_end=11488,
 )
 
 
@@ -4808,8 +4843,8 @@ _DRILLHOLEQUERYMESHGRID_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=11204,
-  serialized_end=11371,
+  serialized_start=11491,
+  serialized_end=11658,
 )
 
 
@@ -4899,21 +4934,28 @@ _IMPORTSEISMICCOMMON = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='RunParallelCode', full_name='gmtaskmodel.ImportSeismicCommon.RunParallelCode', index=11,
+      name='SeismicNav_projection', full_name='gmtaskmodel.ImportSeismicCommon.SeismicNav_projection', index=11,
+      number=15, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='RunParallelCode', full_name='gmtaskmodel.ImportSeismicCommon.RunParallelCode', index=12,
       number=14, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=True,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='OutputProjectFile', full_name='gmtaskmodel.ImportSeismicCommon.OutputProjectFile', index=12,
+      name='OutputProjectFile', full_name='gmtaskmodel.ImportSeismicCommon.OutputProjectFile', index=13,
       number=19, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='log', full_name='gmtaskmodel.ImportSeismicCommon.log', index=13,
+      name='log', full_name='gmtaskmodel.ImportSeismicCommon.log', index=14,
       number=255, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=b"seismic_report.rpt".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -4931,8 +4973,8 @@ _IMPORTSEISMICCOMMON = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=11374,
-  serialized_end=11801,
+  serialized_start=11661,
+  serialized_end=12142,
 )
 
 
@@ -4977,8 +5019,8 @@ _IMPORTSEISMICNAV_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=11803,
-  serialized_end=11928,
+  serialized_start=12144,
+  serialized_end=12269,
 )
 
 
@@ -5037,8 +5079,8 @@ _IMPORTSEISMICHORIZONS_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=11931,
-  serialized_end=12152,
+  serialized_start=12272,
+  serialized_end=12493,
 )
 
 
@@ -5167,8 +5209,8 @@ _RENDERSECTION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12155,
-  serialized_end=12579,
+  serialized_start=12496,
+  serialized_end=12920,
 )
 
 
@@ -5227,8 +5269,8 @@ _SAVELITHOLOGYVOXET_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12581,
-  serialized_end=12702,
+  serialized_start=12922,
+  serialized_end=13043,
 )
 
 
@@ -5301,8 +5343,8 @@ _SAVEPOTENTIALGRADIENTVOXET_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12705,
-  serialized_end=12899,
+  serialized_start=13046,
+  serialized_end=13240,
 )
 
 
@@ -5424,8 +5466,8 @@ _UPDATEINTERFACE_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12902,
-  serialized_end=13353,
+  serialized_start=13243,
+  serialized_end=13694,
 )
 
 
@@ -5463,8 +5505,8 @@ _DELETEINTERFACESFROMSECTION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13355,
-  serialized_end=13440,
+  serialized_start=13696,
+  serialized_end=13781,
 )
 
 
@@ -5509,8 +5551,8 @@ _FAULTSERIESLINKS_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13442,
-  serialized_end=13509,
+  serialized_start=13783,
+  serialized_end=13850,
 )
 
 
@@ -5548,8 +5590,8 @@ _LINKFAULTSWITHSERIES_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13511,
-  serialized_end=13634,
+  serialized_start=13852,
+  serialized_end=13975,
 )
 
 
@@ -5594,8 +5636,8 @@ _FAULTSTOPSONFAULTS_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13636,
-  serialized_end=13706,
+  serialized_start=13977,
+  serialized_end=14047,
 )
 
 
@@ -5633,8 +5675,8 @@ _LINKFAULTSWITHFAULTS_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13708,
-  serialized_end=13834,
+  serialized_start=14049,
+  serialized_end=14175,
 )
 
 
@@ -5714,8 +5756,8 @@ _WRITEBATCHFILE_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13837,
-  serialized_end=14145,
+  serialized_start=14178,
+  serialized_end=14486,
 )
 
 
@@ -5809,8 +5851,8 @@ _SOURCEMESHGRID_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14148,
-  serialized_end=14503,
+  serialized_start=14489,
+  serialized_end=14844,
 )
 
 
@@ -5953,8 +5995,8 @@ _CREATEMESHGRID_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14506,
-  serialized_end=15039,
+  serialized_start=14847,
+  serialized_end=15380,
 )
 
 
@@ -6090,8 +6132,8 @@ _EXPORTMESHGRID_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15042,
-  serialized_end=15542,
+  serialized_start=15383,
+  serialized_end=15883,
 )
 
 
@@ -6178,8 +6220,8 @@ _VARIOGRAMCURVES_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15545,
-  serialized_end=15961,
+  serialized_start=15886,
+  serialized_end=16302,
 )
 
 
@@ -6329,8 +6371,8 @@ _COMPUTEVARIOGRAM_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15964,
-  serialized_end=16571,
+  serialized_start=16305,
+  serialized_end=16912,
 )
 
 
@@ -6424,8 +6466,8 @@ _VARIOGRAMANALYSISTYPE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16574,
-  serialized_end=16846,
+  serialized_start=16915,
+  serialized_end=17187,
 )
 
 
@@ -6617,8 +6659,8 @@ _INTERPOLATENUMERICALREADINGS_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16849,
-  serialized_end=17803,
+  serialized_start=17190,
+  serialized_end=18144,
 )
 
 
@@ -6664,8 +6706,8 @@ _BUILDTRIPLELINES_GMT_EXPORTTRIPLELINES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18207,
-  serialized_end=18480,
+  serialized_start=18548,
+  serialized_end=18821,
 )
 
 _BUILDTRIPLELINES_GMT_THINBODYBIAS = _descriptor.Descriptor(
@@ -6709,8 +6751,8 @@ _BUILDTRIPLELINES_GMT_THINBODYBIAS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18482,
-  serialized_end=18538,
+  serialized_start=18823,
+  serialized_end=18879,
 )
 
 _BUILDTRIPLELINES_GMT = _descriptor.Descriptor(
@@ -6803,8 +6845,8 @@ _BUILDTRIPLELINES_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17806,
-  serialized_end=18538,
+  serialized_start=18147,
+  serialized_end=18879,
 )
 
 
@@ -6830,6 +6872,13 @@ _IMPORTTRIPLELINES_GMT = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='TripleLines_projection', full_name='gmtaskmodel.ImportTripleLines_GMT.TripleLines_projection', index=2,
+      number=13, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -6842,8 +6891,8 @@ _IMPORTTRIPLELINES_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18540,
-  serialized_end=18613,
+  serialized_start=18882,
+  serialized_end=19010,
 )
 
 
@@ -6909,8 +6958,8 @@ _BUILDMESHCGAL_GMT_REFINEMESH_OPTENERGYPARMS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19520,
-  serialized_end=19674,
+  serialized_start=19917,
+  serialized_end=20071,
 )
 
 _BUILDMESHCGAL_GMT_REFINEMESH_OPTVERTEXPARMS = _descriptor.Descriptor(
@@ -6954,8 +7003,8 @@ _BUILDMESHCGAL_GMT_REFINEMESH_OPTVERTEXPARMS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19676,
-  serialized_end=19754,
+  serialized_start=20073,
+  serialized_end=20151,
 )
 
 _BUILDMESHCGAL_GMT_REFINEMESH = _descriptor.Descriptor(
@@ -7013,8 +7062,8 @@ _BUILDMESHCGAL_GMT_REFINEMESH = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19141,
-  serialized_end=19754,
+  serialized_start=19538,
+  serialized_end=20151,
 )
 
 _BUILDMESHCGAL_GMT_GEOMODELLEROUTPUT = _descriptor.Descriptor(
@@ -7100,8 +7149,8 @@ _BUILDMESHCGAL_GMT_GEOMODELLEROUTPUT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19757,
-  serialized_end=19986,
+  serialized_start=20154,
+  serialized_end=20383,
 )
 
 _BUILDMESHCGAL_GMT_MESHCRITERIA_FORMATIONDISCRETIZATION = _descriptor.Descriptor(
@@ -7194,8 +7243,8 @@ _BUILDMESHCGAL_GMT_MESHCRITERIA_FORMATIONDISCRETIZATION = _descriptor.Descriptor
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=20462,
-  serialized_end=20843,
+  serialized_start=20859,
+  serialized_end=21240,
 )
 
 _BUILDMESHCGAL_GMT_MESHCRITERIA = _descriptor.Descriptor(
@@ -7281,8 +7330,8 @@ _BUILDMESHCGAL_GMT_MESHCRITERIA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19989,
-  serialized_end=20843,
+  serialized_start=20386,
+  serialized_end=21240,
 )
 
 _BUILDMESHCGAL_GMT_SEEDPOINTS_MESHSEEDPOINTS = _descriptor.Descriptor(
@@ -7326,8 +7375,8 @@ _BUILDMESHCGAL_GMT_SEEDPOINTS_MESHSEEDPOINTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21056,
-  serialized_end=21191,
+  serialized_start=21453,
+  serialized_end=21588,
 )
 
 _BUILDMESHCGAL_GMT_SEEDPOINTS_RANDOMSEEDPOINTS = _descriptor.Descriptor(
@@ -7357,8 +7406,8 @@ _BUILDMESHCGAL_GMT_SEEDPOINTS_RANDOMSEEDPOINTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21193,
-  serialized_end=21230,
+  serialized_start=21590,
+  serialized_end=21627,
 )
 
 _BUILDMESHCGAL_GMT_SEEDPOINTS = _descriptor.Descriptor(
@@ -7402,8 +7451,8 @@ _BUILDMESHCGAL_GMT_SEEDPOINTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=20846,
-  serialized_end=21230,
+  serialized_start=21243,
+  serialized_end=21627,
 )
 
 _BUILDMESHCGAL_GMT = _descriptor.Descriptor(
@@ -7489,8 +7538,8 @@ _BUILDMESHCGAL_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18616,
-  serialized_end=21230,
+  serialized_start=19013,
+  serialized_end=21627,
 )
 
 
@@ -7563,8 +7612,8 @@ _EXPORTMODEL_GMT_EXPORTTYPE2D = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21600,
-  serialized_end=21788,
+  serialized_start=21997,
+  serialized_end=22185,
 )
 
 _EXPORTMODEL_GMT_EXPORTTYPE3D = _descriptor.Descriptor(
@@ -7664,8 +7713,8 @@ _EXPORTMODEL_GMT_EXPORTTYPE3D = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21791,
-  serialized_end=22132,
+  serialized_start=22188,
+  serialized_end=22529,
 )
 
 _EXPORTMODEL_GMT = _descriptor.Descriptor(
@@ -7765,8 +7814,8 @@ _EXPORTMODEL_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21233,
-  serialized_end=22132,
+  serialized_start=21630,
+  serialized_end=22529,
 )
 
 
@@ -7869,89 +7918,8 @@ _EXPORT3DSHAPES_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=22135,
-  serialized_end=22832,
-)
-
-
-_EXPORTAEMTOPDF_GMT = _descriptor.Descriptor(
-  name='ExportAEMToPDF_GMT',
-  full_name='gmtaskmodel.ExportAEMToPDF_GMT',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  create_key=_descriptor._internal_create_key,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='file', full_name='gmtaskmodel.ExportAEMToPDF_GMT.file', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='components', full_name='gmtaskmodel.ExportAEMToPDF_GMT.components', index=1,
-      number=2, type=9, cpp_type=9, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='noiseTypes', full_name='gmtaskmodel.ExportAEMToPDF_GMT.noiseTypes', index=2,
-      number=3, type=9, cpp_type=9, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='products', full_name='gmtaskmodel.ExportAEMToPDF_GMT.products', index=3,
-      number=4, type=9, cpp_type=9, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='fields', full_name='gmtaskmodel.ExportAEMToPDF_GMT.fields', index=4,
-      number=5, type=9, cpp_type=9, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='sections', full_name='gmtaskmodel.ExportAEMToPDF_GMT.sections', index=5,
-      number=6, type=9, cpp_type=9, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='docWidth', full_name='gmtaskmodel.ExportAEMToPDF_GMT.docWidth', index=6,
-      number=7, type=5, cpp_type=1, label=1,
-      has_default_value=True, default_value=1000,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='docHeight', full_name='gmtaskmodel.ExportAEMToPDF_GMT.docHeight', index=7,
-      number=8, type=5, cpp_type=1, label=1,
-      has_default_value=True, default_value=1200,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto2',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=22835,
-  serialized_end=23010,
+  serialized_start=22532,
+  serialized_end=23229,
 )
 
 
@@ -8248,8 +8216,8 @@ _EXPORTPROJECTSITE_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=23013,
-  serialized_end=24272,
+  serialized_start=23232,
+  serialized_end=24491,
 )
 
 
@@ -8295,8 +8263,8 @@ _AXIS_CONTROL_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=24274,
-  serialized_end=24379,
+  serialized_start=24493,
+  serialized_end=24598,
 )
 
 
@@ -8383,8 +8351,8 @@ _PRESENTATION2D_GRAPHICS_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=24382,
-  serialized_end=24722,
+  serialized_start=24601,
+  serialized_end=24941,
 )
 
 
@@ -8450,8 +8418,8 @@ _PRISMFEFLOWTRIANGULATION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=24725,
-  serialized_end=24943,
+  serialized_start=24944,
+  serialized_end=25162,
 )
 
 
@@ -8580,8 +8548,8 @@ _GENERATEMESHREPORT_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=24946,
-  serialized_end=25488,
+  serialized_start=25165,
+  serialized_end=25707,
 )
 
 
@@ -8633,8 +8601,8 @@ _MESHUNITFORGEOPHYS_GMT_RANKRADIUSCONTROL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=26074,
-  serialized_end=26171,
+  serialized_start=26293,
+  serialized_end=26390,
 )
 
 _MESHUNITFORGEOPHYS_GMT = _descriptor.Descriptor(
@@ -8750,8 +8718,8 @@ _MESHUNITFORGEOPHYS_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=25491,
-  serialized_end=26280,
+  serialized_start=25710,
+  serialized_end=26499,
 )
 
 
@@ -8796,8 +8764,8 @@ _GETCOMPUTEDLITHOATXYZ_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=26282,
-  serialized_end=26407,
+  serialized_start=26501,
+  serialized_end=26626,
 )
 
 
@@ -8842,8 +8810,8 @@ _GETCOMPUTEDGRADIENTATXYZ_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=26410,
-  serialized_end=26542,
+  serialized_start=26629,
+  serialized_end=26761,
 )
 
 
@@ -8902,8 +8870,8 @@ _COMPUTEEXTERNALDRIFTFIELD_GMT_FORMATION_DISTRIBUTION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=26976,
-  serialized_end=27110,
+  serialized_start=27195,
+  serialized_end=27329,
 )
 
 _COMPUTEEXTERNALDRIFTFIELD_GMT = _descriptor.Descriptor(
@@ -8975,8 +8943,8 @@ _COMPUTEEXTERNALDRIFTFIELD_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=26545,
-  serialized_end=27110,
+  serialized_start=26764,
+  serialized_end=27329,
 )
 
 
@@ -9049,8 +9017,8 @@ _CREATEAXIALSERIES_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=27113,
-  serialized_end=27341,
+  serialized_start=27332,
+  serialized_end=27560,
 )
 
 
@@ -9158,8 +9126,8 @@ _CREATEAXIALSURFACE_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=27344,
-  serialized_end=27754,
+  serialized_start=27563,
+  serialized_end=27973,
 )
 
 
@@ -9239,8 +9207,8 @@ _ADDAXIALTRACELINE_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=27757,
-  serialized_end=28034,
+  serialized_start=27976,
+  serialized_end=28253,
 )
 
 
@@ -9348,8 +9316,8 @@ _ADDAXIALSURFACEORIENTATION_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=28037,
-  serialized_end=28450,
+  serialized_start=28256,
+  serialized_end=28669,
 )
 
 
@@ -9471,8 +9439,8 @@ _ADDHINGELINE_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=28453,
-  serialized_end=28938,
+  serialized_start=28672,
+  serialized_end=29157,
 )
 
 
@@ -9538,8 +9506,8 @@ _CREATESECTIONFROMAXIALSURFACE_GMT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=28941,
-  serialized_end=29175,
+  serialized_start=29160,
+  serialized_end=29394,
 )
 
 
@@ -10144,8 +10112,8 @@ _GEOMODELLERTASK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=29178,
-  serialized_end=34446,
+  serialized_start=29397,
+  serialized_end=34665,
 )
 
 _FOLIATION_GMT.fields_by_name['Point'].message_type = _ADDPOINT2D_GMT
@@ -10160,6 +10128,7 @@ _APPARENTDIP_GMT.fields_by_name['Provenance'].enum_type = commontaskmodel__pb2._
 _SETMODELBOUNDS_GMT.fields_by_name['Extents'].message_type = commontaskmodel__pb2._BOUNDINGBOX
 _GETMODELBOUNDS_GMT.fields_by_name['Extents'].message_type = commontaskmodel__pb2._BOUNDINGBOX
 _CUSTOMDTM_GMT.fields_by_name['filename'].message_type = commontaskmodel__pb2._GRID_INT
+_CUSTOMDTM_GMT.fields_by_name['tilenames'].message_type = commontaskmodel__pb2._GRID_INT
 _CUSTOMDTM_GMT.fields_by_name['Extents'].message_type = commontaskmodel__pb2._BOUNDINGBOX2D
 _CUSTOMDTM_GMT.fields_by_name['units'].enum_type = commontaskmodel__pb2._DISTANCE_UNITS
 _CREATEPROJECT_GMT.fields_by_name['CustomDTM'].message_type = _CUSTOMDTM_GMT
@@ -10198,7 +10167,9 @@ _ADDINTERFACETOSECTION_GMT.fields_by_name['polarity'].enum_type = commontaskmode
 _ADDINTERFACETOSECTION_GMT.fields_by_name['provenance'].enum_type = commontaskmodel__pb2._PROVENANCETYPE
 _ADDFOLIATIONTOSECTION_GMT.fields_by_name['foliation'].message_type = _FOLIATION_GMT
 _ADD3DFOLIATIONTOFORMATION_GMT.fields_by_name['foliation'].message_type = _FOLIATION_GMT
+_ADD3DFOLIATIONTOFORMATION_GMT.fields_by_name['Foliation3d_projection'].message_type = commontaskmodel__pb2._COORDINATESYSTEM
 _ADD3DINTERFACESTOFORMATION_GMT.fields_by_name['point'].message_type = commontaskmodel__pb2._POINT3D
+_ADD3DINTERFACESTOFORMATION_GMT.fields_by_name['Interfaces3d_projection'].message_type = commontaskmodel__pb2._COORDINATESYSTEM
 _ADDAPPARENTDIPTOSECTION_GMT.fields_by_name['apparentdip'].message_type = _APPARENTDIP_GMT
 _ADDDYKESTRUCTURALDATATOSECTION_GMT.fields_by_name['Point'].message_type = _ADDPOINT2D_GMT
 _ADDDYKESTRUCTURALDATATOSECTION_GMT.fields_by_name['DipDistribution'].message_type = commontaskmodel__pb2._ANGLEPROBABILITYDISTRIBUTIONFUNCTION
@@ -10211,16 +10182,20 @@ _READANDIMPORT2DDATATOASECTION_GMT.fields_by_name['type'].enum_type = commontask
 _READANDIMPORT2DDATATOASECTION_GMT.fields_by_name['FieldList'].message_type = commontaskmodel__pb2._REPEATEDSTRING
 _READANDIMPORT3DDATA_GMT.fields_by_name['type'].enum_type = commontaskmodel__pb2._GEOLOGYOBSTYPE3D
 _READANDIMPORT3DDATA_GMT.fields_by_name['operation'].enum_type = _IMPORTACTION
+_READANDIMPORT3DDATA_GMT.fields_by_name['Import3d_projection'].message_type = commontaskmodel__pb2._COORDINATESYSTEM
+_IMPORTMICROSEISMICEVENTS_GMT.fields_by_name['MicroSeismic_projection'].message_type = commontaskmodel__pb2._COORDINATESYSTEM
 _CREATEDRILLHOLE_GMT.fields_by_name['Collar'].message_type = _ADDPOINT3D_GMT
 _CREATEDRILLHOLE_GMT.fields_by_name['SurveyDirection'].message_type = _SURVEYDIRECTION_GMT
 _CREATEDRILLHOLE_GMT.fields_by_name['LithologyInterval'].message_type = _LITHOLOGYINTERVAL_GMT
 _LOADDRILLHOLES_GMT.fields_by_name['collarAliases'].message_type = commontaskmodel__pb2._REPEATEDSTRING
 _LOADDRILLHOLES_GMT.fields_by_name['surveyAliases'].message_type = commontaskmodel__pb2._REPEATEDSTRING
 _LOADDRILLHOLES_GMT.fields_by_name['geologyAliases'].message_type = commontaskmodel__pb2._REPEATEDSTRING
+_LOADDRILLHOLES_GMT.fields_by_name['drill_hole_projection'].message_type = commontaskmodel__pb2._COORDINATESYSTEM
 _COMPOSITEDRILLHOLES_GMT.fields_by_name['Build_Style'].enum_type = _COMPOSITESTYLE
 _COMPOSITEDRILLHOLES_GMT.fields_by_name['internal_null_replacement'].enum_type = _COMPOSITEREPLACEMENTSTYLE
 _COMPOSITEDRILLHOLES_GMT.fields_by_name['external_null_replacement'].enum_type = _COMPOSITEREPLACEMENTSTYLE
 _COMPOSITEDRILLHOLES_GMT.fields_by_name['Weight_Style'].enum_type = _COMPOSITEWEIGHTINGSTYLE
+_IMPORTSEISMICCOMMON.fields_by_name['SeismicNav_projection'].message_type = commontaskmodel__pb2._COORDINATESYSTEM
 _IMPORTSEISMICNAV_GMT.fields_by_name['ImportSeismic'].message_type = _IMPORTSEISMICCOMMON
 _IMPORTSEISMICHORIZONS_GMT.fields_by_name['NavigationFiles'].message_type = commontaskmodel__pb2._REPEATEDSTRING
 _IMPORTSEISMICHORIZONS_GMT.fields_by_name['HorizonColumnNames'].message_type = commontaskmodel__pb2._REPEATEDSTRING
@@ -10270,6 +10245,7 @@ _BUILDTRIPLELINES_GMT_EXPORTTRIPLELINES_TRIPLELINE_EXPORTFORMAT.containing_type 
 _BUILDTRIPLELINES_GMT_THINBODYBIAS.containing_type = _BUILDTRIPLELINES_GMT
 _BUILDTRIPLELINES_GMT.fields_by_name['thin_body_bias'].message_type = _BUILDTRIPLELINES_GMT_THINBODYBIAS
 _BUILDTRIPLELINES_GMT.fields_by_name['export_triple_lines'].message_type = _BUILDTRIPLELINES_GMT_EXPORTTRIPLELINES
+_IMPORTTRIPLELINES_GMT.fields_by_name['TripleLines_projection'].message_type = commontaskmodel__pb2._COORDINATESYSTEM
 _BUILDMESHCGAL_GMT_REFINEMESH_OPTENERGYPARMS.containing_type = _BUILDMESHCGAL_GMT_REFINEMESH
 _BUILDMESHCGAL_GMT_REFINEMESH_OPTVERTEXPARMS.containing_type = _BUILDMESHCGAL_GMT_REFINEMESH
 _BUILDMESHCGAL_GMT_REFINEMESH.fields_by_name['lloyd'].message_type = _BUILDMESHCGAL_GMT_REFINEMESH_OPTENERGYPARMS
@@ -10520,7 +10496,6 @@ DESCRIPTOR.message_types_by_name['ImportTripleLines_GMT'] = _IMPORTTRIPLELINES_G
 DESCRIPTOR.message_types_by_name['BuildMeshCGAL_GMT'] = _BUILDMESHCGAL_GMT
 DESCRIPTOR.message_types_by_name['ExportModel_GMT'] = _EXPORTMODEL_GMT
 DESCRIPTOR.message_types_by_name['Export3DShapes_GMT'] = _EXPORT3DSHAPES_GMT
-DESCRIPTOR.message_types_by_name['ExportAEMToPDF_GMT'] = _EXPORTAEMTOPDF_GMT
 DESCRIPTOR.message_types_by_name['ExportProjectSite_GMT'] = _EXPORTPROJECTSITE_GMT
 DESCRIPTOR.message_types_by_name['Axis_Control_GMT'] = _AXIS_CONTROL_GMT
 DESCRIPTOR.message_types_by_name['Presentation2D_Graphics_GMT'] = _PRESENTATION2D_GRAPHICS_GMT
@@ -11210,13 +11185,6 @@ Export3DShapes_GMT = _reflection.GeneratedProtocolMessageType('Export3DShapes_GM
   # @@protoc_insertion_point(class_scope:gmtaskmodel.Export3DShapes_GMT)
   })
 _sym_db.RegisterMessage(Export3DShapes_GMT)
-
-ExportAEMToPDF_GMT = _reflection.GeneratedProtocolMessageType('ExportAEMToPDF_GMT', (_message.Message,), {
-  'DESCRIPTOR' : _EXPORTAEMTOPDF_GMT,
-  '__module__' : 'gmtaskmodel_pb2'
-  # @@protoc_insertion_point(class_scope:gmtaskmodel.ExportAEMToPDF_GMT)
-  })
-_sym_db.RegisterMessage(ExportAEMToPDF_GMT)
 
 ExportProjectSite_GMT = _reflection.GeneratedProtocolMessageType('ExportProjectSite_GMT', (_message.Message,), {
   'DESCRIPTOR' : _EXPORTPROJECTSITE_GMT,

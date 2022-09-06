@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="intrepid-protobuf",
-    version="6.2.0",
+    version="6.2.2",
     author="Intrepid Geophysics",
     author_email="developers@intrepid-geophysics.com",
     description="Protobuf bindings for Intrepid products",
@@ -14,11 +14,11 @@ setup(
     include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
     ],
     install_requires=[
-        'protobuf==3.15.0',
+        'protobuf==3.15.8',
     ],
     python_requires='>=3.6',
 )

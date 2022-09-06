@@ -24,7 +24,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto2',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0fjetstream.proto\x12\x03jet\x1a\x15\x63ommontaskmodel.proto\x1a$geoscience_australia_standards.proto\x1a\x14intrepid_tasks.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"\x9d\x1a\n\x16Site_Configuration_JET\x12R\n\rADMINISTRATOR\x18\x01 \x01(\t:george@intrepid-geophysics.comdifu@intrepid-geophysics.com\x12\x0e\n\x06\x41SSETS\x18\x02 \x03(\t\x12\x43\n\x07\x43\x41TALOG\x18\x03 \x01(\t:2http://localhost:8080/gadds/servlet/csv/JETCAT.dat\x12\x1f\n\x0b\x43\x41TALOGFILE\x18\x04 \x01(\t:\nJETCAT.dat\x12 \n\x15\x43LEANER_INTERVAL_DAYS\x18\x05 \x01(\x05:\x01\x31\x12+\n CLEANER_TIME_LIMIT_BEFORE_DELETE\x18\x06 \x01(\x05:\x01\x32\x12)\n\nCS_default\x18\x07 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x11\n\x02\x43S\x18\x08 \x01(\t:\x05WGS84\x12\x0f\n\x07\x44\x41TADIR\x18\x0f \x03(\t\x12@\n\x07\x44\x41TAURL\x18\x10 \x01(\t:/http://localhost:8280/gadds/servlet/jetstreamDB\x12\x18\n\x07\x44\x46\x41\x32PNG\x18\x11 \x01(\t:\x07\x64\x66\x61\x32png\x12\x18\n\x07\x44\x46\x41\x32GIF\x18\x12 \x01(\t:\x07\x64\x66\x61\x32gif\x12\"\n\nDISCLAIMER\x18\x13 \x01(\t:\x0e\x64isclaimer.txt\x12\x32\n*ELECTRO_Magnetic_DELIVERED_FILE_EXTENSIONS\x18\x14 \x03(\t\x12-\n\x15\x45XTRA_DELIVERED_FILES\x18\x16 \x01(\t:\x0e\x44ISCLAIMER.txt\x12\'\n\x1f\x45XTRA_DELIVERED_FILE_EXTENSIONS\x18\x17 \x03(\t\x12\x34\n\x15\x45XTRA_CATALOG_COLUMNS\x18\x18 \x03(\x0b\x32\x15.jet.CatalogField_JET\x12&\n\x1e\x46ILE_DELIVERED_FILE_EXTENSIONS\x18\x1d \x03(\t\x12!\n\x08\x46MANAGER\x18\x1e \x01(\t:\x0f\x66manager -batch\x12/\n\'GEOLOGY_MODEL_DELIVERED_FILE_EXTENSIONS\x18\x1c \x03(\t\x12\x13\n\x06GIFEXT\x18\x1f \x01(\t:\x03png\x12&\n\x1eGRID_DELIVERED_FILE_EXTENSIONS\x18  \x03(\t\x12\x36\n\x0fHELP_DESK_EMAIL\x18! \x01(\t:\x1d\x61\x64min@intrepid-geophysics.com\x12#\n\x04HOME\x18\" \x01(\t:\x15http://localhost:8280\x12\x31\n\x0cHOST_APPNAME\x18& \x01(\t:\x1bGADDS JetStream Application\x12:\n\x08JDBCBASE\x18# \x01(\t:(http://localhost:8280/gadds/servlet/none\x12\x42\n\tJETSTREAM\x18$ \x01(\t:/http://localhost:8280/gadds/servlet/jetstreamDB\x12\'\n\x07LOGFILE\x18% \x01(\t:\x16\x64\x65livery/jetstream.log\x12\x9b\x01\n\x13LicenceBlocksFields\x18( \x01(\t:~BlockIdCoordinateReferenceSystemBlockNamePercentageOperatorAreaLastUpdatedBlueMarbleQCCheckedWorstPositioningConfidence\x12\'\n\tMAPCONFIG\x18) \x01(\t:\x14\x63onfig/MapConfig.cfg\x12#\n\x0eMAP_PROJECTION\x18\x30 \x01(\t:\x0b\x45PSG:900913\x12\x15\n\x07METADIR\x18\x38 \x01(\t:\x04\x64\x61ta\x12\x44\n\x0bMETADATAURL\x18\x39 \x01(\t:/http://localhost:8280/gadds/servlet/jetstreamDB\x12\x11\n\tMAX_KSIZE\x18* \x03(\x05\x12,\n\x14NEW_THEME_SELECTIONS\x18+ \x03(\x0e\x32\x0e.jet.JET_Theme\x12\x15\n\x07NOCLEAN\x18, \x01(\x08:\x04true\x12\x17\n\tPICKUPDIR\x18- \x01(\t:\x04\x64\x61ta\x12\x33\n\tPICKUPURL\x18. \x01(\t: http://billy:8280/gadds/delivery\x12\x31\n\tPIPELINES\x18/ \x01(\t:\x1ejetstream.v2.shop.QueueExtract\x12\x14\n\x08PRIORITY\x18\x32 \x01(\x05:\x02\x33\x30\x12!\n\x07PROCLOG\x18\x33 \x01(\t:\x10temp/JETPROC.log\x12\x10\n\x08PROFILES\x18\x34 \x03(\t\x12\x1e\n\x16QUERYABLE_COLUMN_NAMES\x18\x35 \x03(\t\x12\x11\n\x06RECENT\x18\x36 \x01(\x05:\x01\x34\x12\x39\n\x0eREPORTTEMPLATE\x18\x37 \x01(\t:!config/master_export_template.cfg\x12\x1b\n\x0cUUID_RECORDS\x18: \x01(\x08:\x05\x66\x61lse\x12\x36\n\x04SITE\x18< \x01(\t:(http://localhost:8280/gadds/servlet/site\x12)\n!SEISMIC_DELIVERED_FILE_EXTENSIONS\x18\x43 \x03(\t\x12\x45\n\tSERVERLOG\x18= \x01(\t:2apps/Tomcat6.0 Sandpit/logs/tomcat6wsandpit-stdout\x12\x33\n\x0eSERVERLOGADMIN\x18> \x01(\t:\x1b\x61pps/Tomcat 6.0/logs/stdout\x12,\n\x08SMTPHOST\x18? \x01(\t:\x1awww1.jetstream-namibia.com\x12.\n\x0fSPEED_PER_KBYTE\x18@ \x01(\x01:\x15\x30.0022090454598302522\x12(\n\x1bSurveyFieldNavigationFields\x18\x41 \x01(\t:\x03\x41B\x12\x31\n\x08INDEXGIF\x18\x42 \x01(\t:\x1f$(intrepid)/config/intrepid.tif\x12\x18\n\x10THEME_SELECTIONS\x18\x46 \x03(\t\x12\'\n\x1fMODEL_DELIVERED_FILE_EXTENSIONS\x18H \x03(\t\x12(\n VECTOR_DELIVERED_FILE_EXTENSIONS\x18G \x03(\t\x12\x14\n\x0cMAPINDEXFILE\x18\x66 \x01(\t\x12\x14\n\x0cMAPINDEXNAME\x18g \x01(\t\x12\x14\n\x06WEBDIR\x18O \x01(\t:\x04\x64\x61ta\x12.\n\x06WEBLOG\x18I \x01(\t:\x1e\x61pps/Tomcat6.0/logs/weblog.txt\x12\x41\n\x0bWEBTEMPLATE\x18K \x01(\t:,webapps/gadds/WEB-INF/jetstream_template.xml\x12\x13\n\x0bWellsFields\x18L \x03(\t\x12\x1d\n\x0fWEB_APP_VERSION\x18J \x01(\x08:\x04true\x12\x15\n\x07WORKDIR\x18M \x01(\t:\x04\x64\x61ta\x12\x31\n\x07WORKURL\x18N \x01(\t: http://billy:8280/gadds/delivery\x12\x33\n\x0c\x43omms_Option\x18P \x01(\x0e\x32\x17.jet.JET_Communications:\x04\x44ODS\x12\x13\n\x0bTREE_LAYOUT\x18[ \x03(\t\x12\x17\n\x0f\x41NZLIC_TEMPLATE\x18\x65 \x01(\t\x12\'\n\x05\x42lock\x18] \x03(\x0b\x32\x18.jet.Block_Configuration\x12\x1f\n\x11Remove_Duplicates\x18n \x01(\x08:\x04true\x12\x1c\n\rFirstCreation\x18o \x01(\x08:\x05\x66\x61lse\x12\"\n\x13\x46orceCompleteReview\x18r \x01(\x08:\x05\x66\x61lse\x12$\n\x15\x43reate_DODS_Artefacts\x18p \x01(\x08:\x05\x66\x61lse\x12\x32\n#ReportExtentsOfGeodeticDatasetsOnly\x18q \x01(\x08:\x05\x66\x61lse\x12\x34\n%ReportExtentsOfGeolocatedDatasetsOnly\x18s \x01(\x08:\x05\x66\x61lse\x12&\n\x17\x43reate_NewStyle_Catalog\x18t \x01(\x08:\x05\x66\x61lse\x12/\n Check_Asset_Team_forJSON_Catalog\x18u \x01(\x08:\x05\x66\x61lse\x12%\n\x16\x44istances_Flown_Detail\x18v \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rUse_EPSG_Code\x18w \x01(\x08:\x05\x66\x61lse\"n\n\x13\x42lock_Configuration\x12\x1a\n\x07\x43ountry\x18\x01 \x01(\t:\taustralia\x12\x11\n\tBlockName\x18\x02 \x03(\t\x12\r\n\x05OutCS\x18\x03 \x03(\t\x12\x19\n\rJuristriction\x18\x05 \x01(\t:\x02SA\"\x86\x02\n\x10\x43\x61talogField_JET\x12\x11\n\tFieldName\x18\x01 \x01(\t\x12\x1f\n\x08\x44\x41TATYPE\x18\x02 \x01(\x0e\x32\r.ctm.DataType\x12\x30\n\x05\x41lias\x18\x03 \x01(\x0e\x32\x17.jet.CatalogField_Alias:\x08NO_ALIAS\x12\x1d\n\x0c\x44\x65\x66\x61ultValue\x18\x04 \x01(\t:\x07Unknown\x12\x19\n\rDisplay_width\x18\x05 \x01(\x05:\x02\x31\x30\x12\x1b\n\x10\x44isplay_decimals\x18\x06 \x01(\x05:\x01\x30\x12\x18\n\tQueryable\x18\x19 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0fInternal_Buffer\x18\x08 \x01(\x05:\x02-1\"2\n\x14\x43ustomFieldEntry_JET\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\t\"\xa7\x02\n\x14\x43\x61talogEntryBase_JET\x12\x10\n\x08\x64\x61taName\x18\x01 \x01(\t\x12\x0f\n\x07\x66ileExt\x18\x02 \x01(\t\x12\x33\n\x0cSignalFormat\x18\x03 \x01(\x0e\x32\x17.jet.JET_DATASET_FORMAT:\x04LINE\x12\x10\n\x08\x44\x41TA_URL\x18\x04 \x01(\t\x12 \n\x06\x45xtent\x18\x07 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x1f\n\x08\x44\x41TATYPE\x18\t \x01(\x0e\x32\r.ctm.DataType\x12!\n\x02\x43S\x18\r \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12!\n\tNew_Theme\x18\x0e \x01(\x0e\x32\x0e.jet.JET_Theme\x12\r\n\x05Theme\x18\x10 \x01(\t\x12\r\n\x05ksize\x18\x0f \x01(\x05\"\xe7\x06\n\x10\x43\x61talogEntry_JET\x12\x10\n\x08\x64\x61taName\x18\x01 \x01(\t\x12\x0f\n\x07\x66ileExt\x18\x02 \x01(\t\x12\x33\n\x0cSignalFormat\x18\x03 \x01(\x0e\x32\x17.jet.JET_DATASET_FORMAT:\x04LINE\x12\x10\n\x08\x44\x41TA_URL\x18\x04 \x01(\t\x12 \n\x06\x45xtent\x18\x07 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x11\n\tdirectory\x18\x08 \x01(\t\x12!\n\x02\x43S\x18\r \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12!\n\tNew_Theme\x18\x0e \x01(\x0e\x32\x0e.jet.JET_Theme\x12\r\n\x05Theme\x18& \x01(\t\x12\r\n\x05ksize\x18\x0f \x01(\x03\x12\x0c\n\x04UUID\x18\x10 \x01(\t\x12\r\n\x05LABEL\x18\x11 \x01(\t\x12/\n\x0bSurvey_Date\x18\x12 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12-\n\tDATEADDED\x18\x13 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12%\n\x06\x43SDATA\x18\x14 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x10\n\x08\x43\x45LLSIZE\x18\x15 \x01(\x01\x12\x12\n\nASSET_TEAM\x18\x16 \x01(\t\x12\x0b\n\x03VWC\x18\x1f \x01(\t\x12/\n\tPUBLISHED\x18\x17 \x01(\x0e\x32\x1c.jet.CatalogPublished_Status\x12\x13\n\x0bLINESPACING\x18\x18 \x01(\x01\x12\x13\n\x0bLINEAZMIUTH\x18\" \x01(\x01\x12\x16\n\x0eLINEKILOMETERS\x18$ \x01(\x01\x12\x10\n\x08\x41LTITUDE\x18% \x01(\x01\x12\x1f\n\x10MeasuredAltitude\x18\' \x01(\x08:\x05\x66\x61lse\x12\x10\n\x08MAPSHEET\x18\x19 \x01(\t\x12\x1c\n\rNATIONAL_GRID\x18\x1a \x01(\x08:\x05\x66\x61lse\x12\x0f\n\x07Subject\x18\x1b \x01(\t\x12\x10\n\x08\x41\x62stract\x18\x1c \x01(\t\x12\x0e\n\x06Source\x18\x1d \x01(\t\x12\x13\n\x0b\x41ssociation\x18\x1e \x01(\t\x12\x13\n\x0bRenderStyle\x18  \x01(\t\x12\x14\n\x0cReportFormat\x18! \x01(\t\x12\x30\n\rcustomEntries\x18# \x03(\x0b\x32\x19.jet.CustomFieldEntry_JET\"@\n\x17\x41\x63tualCatalogFields_JET\x12%\n\x06\x46ields\x18\x16 \x03(\x0b\x32\x15.jet.CatalogField_JET\"s\n\x0f\x46ieldRecord_JET\x12\x0b\n\x03str\x18\x01 \x01(\t\x12\x0c\n\x04\x64val\x18\x02 \x01(\x01\x12(\n\x04\x64\x61te\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x0c\n\x04ival\x18\x04 \x01(\x05\x12\r\n\x05state\x18\x05 \x01(\x08\"8\n\x10\x41\x63tualRecord_JET\x12$\n\x06\x43olumn\x18\x16 \x03(\x0b\x32\x14.jet.FieldRecord_JET\"\xde\x02\n\x0c\x43riteria_JET\x12\x14\n\x0cMapSheetName\x18\x02 \x01(\t\x12\x18\n\x10LicenseBlockName\x18\x03 \x01(\t\x12\x12\n\nSurveyName\x18\x04 \x01(\t\x12 \n\x06\x65xtent\x18\x07 \x01(\x0b\x32\x10.ctm.BoundingBox\x12,\n\tNew_Theme\x18\x08 \x01(\x0e\x32\x0e.jet.JET_Theme:\tANY_Theme\x12\r\n\x05Theme\x18\t \x01(\t\x12!\n\x02\x43S\x18\r \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x41\n\x0cSignalFormat\x18\x0e \x01(\x0e\x32\x17.jet.JET_DATASET_FORMAT:\x12\x41NY_DATASET_FORMAT\x12\x1b\n\x13SimpleSQLExpression\x18\x0f \x01(\t\x12\x14\n\x0cRecordNumber\x18\x10 \x01(\x05\x12\x12\n\nASSET_TEAM\x18\x16 \x01(\t\"\xa1\x01\n\x10SelectedItem_JET\x12\'\n\x04item\x18\x01 \x01(\x0b\x32\x19.jet.CatalogEntryBase_JET\x12\x1e\n\x04\x61rea\x18\x02 \x01(\x0b\x32\x10.ctm.BoundingBox\x12#\n\x08\x63riteria\x18\x03 \x01(\x0b\x32\x11.jet.Criteria_JET\x12\x1f\n\x04keys\x18\x05 \x03(\x0b\x32\x11.ctm.KeywordValue\"\xb6\x01\n\x08\x43\x61rt_JET\x12,\n\rselectedItems\x18\x01 \x03(\x0b\x32\x15.jet.SelectedItem_JET\x12\r\n\x05\x65mail\x18\x02 \x01(\t\x12\x0f\n\x07message\x18\x03 \x03(\t\x12\x15\n\x0bzipPassword\x18\x04 \x01(\t:\x00\x12\x13\n\tsessionID\x18\x05 \x01(\t:\x00\x12\x30\n\x07process\x18\x06 \x01(\x0e\x32\x11.jet.CART_PROCESS:\x0c\x45xtract_DATA\"\x90\x02\n\x0eQueueEntry_JET\x12\x11\n\tsessionID\x18\x01 \x01(\t\x12\x0f\n\x07workdir\x18\x02 \x01(\t\x12\x0f\n\x07zipfile\x18\x03 \x01(\t\x12\x10\n\x08sizehint\x18\x04 \x01(\x05\x12,\n\x08ibi_flag\x18\x05 \x01(\x0e\x32\r.jet.IBI_FLAG:\x0bIBI_FLAG_V5\x12\x1b\n\x0c\x65mail_notify\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x15\n\remail_address\x18\x07 \x01(\t\x12\x15\n\remail_subject\x18\x08 \x01(\t\x12\x12\n\nemail_body\x18\t \x01(\t\x12*\n\x0bprocessList\x18\n \x03(\x0b\x32\x15.jet.SelectedItem_JET\"\x8d\x03\n\x11QueueResponse_JET\x12,\n\x08ibi_flag\x18\x01 \x01(\x0e\x32\r.jet.IBI_FLAG:\x0bIBI_FLAG_V5\x12\x16\n\x08ibi_swap\x18\x02 \x01(\x08:\x04true\x12\x19\n\x0eibi_type_query\x18\x03 \x01(\x05:\x01\x31\x12\x1d\n\x0cPipelineName\x18\x04 \x01(\t:\x07\x45xtract\x12\x1e\n\x0f\x66inished_status\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x13processed_list_size\x18\x06 \x01(\x05:\x01\x30\x12*\n\x0bprocessList\x18\x07 \x03(\x0b\x32\x15.jet.SelectedItem_JET\x12\x1b\n\x0c\x65mail_notify\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x15\n\remail_address\x18\x11 \x01(\t\x12\x15\n\remail_subject\x18\x12 \x01(\t\x12\x12\n\nemail_body\x18\x13 \x01(\t\x12-\n\ttimeStamp\x18\x14 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\"\xe8\x03\n\x15\x45xtractStreamDemo_JET\x12\x11\n\tSite_File\x18\x01 \x01(\t\x12\x43\n\tOperation\x18\x05 \x01(\x0e\x32\x1e.jet.Jetstream_Operation_Tasks:\x10ProcessQueryCart\x12 \n\x05Query\x18\x02 \x01(\x0b\x32\x11.jet.Criteria_JET\x12\x1b\n\x13Output_Zip_Filename\x18\x03 \x01(\t\x12\x14\n\x0cIBI_Filename\x18\x04 \x01(\t\x12+\n\x07IbiFlag\x18\x0f \x01(\x0e\x32\r.jet.IBI_FLAG:\x0bIBI_FLAG_V5\x12\x1b\n\x0c\x65mail_notify\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x17\n\remail_address\x18\x07 \x01(\t:\x00\x12\x17\n\remail_subject\x18\x08 \x01(\t:\x00\x12\x14\n\nemail_body\x18\t \x01(\t:\x00\x12\x14\n\nqueue_name\x18\n \x01(\t:\x00\x12\x14\n\tPickupDir\x18\x0b \x01(\t:\x01.\x12\x1a\n\x0cRunLocalOnly\x18\x0c \x01(\x08:\x04true\x12\'\n\nReportFile\x18  \x01(\t:\x13JetBatchTesting.rpt\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08jetBatch\"\x98\x03\n\x0eisiManager_JET\x12\x11\n\tSite_File\x18\x01 \x01(\t\x12$\n\nisi_action\x18\x02 \x03(\x0e\x32\x10.jet.ISI_ACTIONS\x12\x1d\n\x0fWeb_App_Version\x18\x03 \x01(\x08:\x04true\x12\x1b\n\x10Target_Directory\x18\n \x01(\t:\x01.\x12\x16\n\x0eTarget_Dataset\x18\x0b \x03(\t\x12!\n\tNew_Theme\x18\x0c \x03(\x0e\x32\x0e.jet.JET_Theme\x12\r\n\x05Theme\x18\x11 \x03(\t\x12\x17\n\x0f\x43oodinateSystem\x18\r \x01(\t\x12\x17\n\x0f\x43\x61taloging_Date\x18\x0e \x01(\t\x12/\n\nSiteConfig\x18\x0f \x01(\x0b\x32\x1b.jet.Site_Configuration_JET\x12\x1f\n\x10Generated_By_GUI\x18\x32 \x01(\x08:\x05\x66\x61lse\x12\"\n\nReportFile\x18  \x01(\t:\x0eisimanager.rpt\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08\x66manager\"\xf7\x01\n\x14\x44\x61taVolumeBasics_JET\x12\x1b\n\x10Target_Directory\x18\n \x01(\t:\x01.\x12)\n\x11\x44\x65\x66\x61ult_New_Theme\x18\x0c \x01(\x0e\x32\x0e.jet.JET_Theme\x12\x15\n\rDefault_Theme\x18\r \x01(\t\x12\'\n\x0eXalias_default\x18\x10 \x01(\t:\x0flongitude_GDA94\x12&\n\x0eYalias_default\x18\x11 \x01(\t:\x0elatitude_GDA94\x12/\n\x0eSignal_default\x18\x12 \x01(\t:\x17mag_magmap2019_levelled\"\xb7\t\n\x13\x41\x63quire_Catalog_JET\x12\x11\n\tSite_File\x18\x01 \x01(\t\x12#\n\x14\x43onsider_Geomodeller\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fMake_SheetIndex\x18\x03 \x01(\x08:\x05\x66\x61lse\x12&\n\x16RequiredScale_MapSheet\x18\x06 \x01(\x01:\x06\x32\x35\x30\x30\x30\x30\x12\x1b\n\x0cSort_Catalog\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x11Remove_Duplicates\x18\x05 \x01(\x08:\x04true\x12*\n\x07Volumes\x18\x07 \x03(\x0b\x32\x19.jet.DataVolumeBasics_JET\x12#\n\x14Tag_Auxilary_Reports\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1c\n\x12Starting_Directory\x18\n \x01(\t:\x00\x12\x1c\n\rFirstCreation\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\"\n\x13\x46orceCompleteReview\x18\x0f \x01(\x08:\x05\x66\x61lse\x12$\n\x15\x43reate_DODS_Artefacts\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x32\n#ReportExtentsOfGeodeticDatasetsOnly\x18\r \x01(\x08:\x05\x66\x61lse\x12\x34\n%ReportExtentsOfGeolocatedDatasetsOnly\x18! \x01(\x08:\x05\x66\x61lse\x12+\n\x06\x42locks\x18\x0e \x03(\x0b\x32\x1b.intrepid.Vector_Subset_INT\x12\x46\n\x1cUPDATED_MODEL_Catalog_Format\x18\x14 \x01(\x0e\x32\x13.jet.CATALOG_FORMAT:\x0bINTREPID_DB\x12&\n\x17\x43reate_NewStyle_Catalog\x18\x15 \x01(\x08:\x05\x66\x61lse\x12%\n\x06\x46ields\x18\x16 \x03(\x0b\x32\x15.jet.CatalogField_JET\x12\'\n\x0fOutputCatalogDB\x18\x17 \x01(\t:\x0enewCatalog.csv\x12.\n Check_Asset_Team_forJSON_Catalog\x18\x18 \x01(\x08:\x04true\x12%\n\x16\x44istances_Flown_Detail\x18\x19 \x01(\x08:\x05\x66\x61lse\x12\'\n\x18Gather_HeadingStatistics\x18\x1a \x01(\x08:\x05\x66\x61lse\x12$\n\x18PrincipalFlightDirection\x18I \x01(\x05:\x02\x39\x30\x12#\n\x17\x46lightLine_AngularRange\x18J \x01(\x05:\x02\x31\x35\x12K\n\x1fTRADITIONAL_MODE_Catalog_Format\x18\x1e \x01(\x0e\x32\x13.jet.CATALOG_FORMAT:\rFLAT_FILE_CSV\x12\x1a\n\x12\x43ORE_CATALOG_NAMES\x18\x1f \x03(\t\x12\x30\n\x19\x43ORE_CATALOG_COLUMN_TYPES\x18  \x03(\x0e\x32\r.ctm.DataType\x12&\n\nReportFile\x18# \x01(\t:\x12\x61\x63quireCatalog.rpt\x12&\n\rBatchToolName\x18\x63 \x01(\t:\x0f\x61\x63quire_catalog\"\xf8\x08\n\x13Process_Catalog_JET\x12\x11\n\tSite_File\x18\x01 \x01(\t\x12#\n\x14\x43onsider_Geomodeller\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fMake_SheetIndex\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cSort_Catalog\x18\x04 \x01(\x08:\x05\x66\x61lse\x12 \n\x11Remove_Duplicates\x18\x05 \x01(\x08:\x05\x66\x61lse\x12 \n\x11\x43reate_ShapeFiles\x18\x06 \x01(\x08:\x05\x66\x61lse\x12:\n\x0e\x43\x61talog_Format\x18\x08 \x01(\x0e\x32\x13.jet.CATALOG_FORMAT:\rFLAT_FILE_CSV\x12%\n\x06\x46ields\x18\x10 \x03(\x0b\x32\x15.jet.CatalogField_JET\x12)\n\x15JV_Partner_ASSET_LIST\x18\t \x01(\t:\nuserdb.dat\x12\x17\n\x08\x64o_wells\x18\n \x01(\x08:\x05\x66\x61lse\x12\x11\n\tthe_wells\x18\x0b \x01(\t\x12\x15\n\x06\x64o_kml\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x18\n\tdo_kmlall\x18\r \x01(\x08:\x05\x66\x61lse\x12\x14\n\x07the_kml\x18\x0e \x01(\t:\x03kml\x12\x11\n\tkml_asset\x18\x0f \x01(\t\x12#\n\x14\x64o_seismic_thumbnail\x18\x19 \x01(\x08:\x05\x66\x61lse\x12&\n\x17\x64o_seismic_thumbnailall\x18\x1a \x01(\x08:\x05\x66\x61lse\x12\x15\n\rthe_thumbnail\x18\x1b \x01(\t\x12\x17\n\x0fthumbnail_asset\x18\x1c \x01(\t\x12\x17\n\x08\x64o_links\x18\x1d \x01(\x08:\x05\x66\x61lse\x12\x16\n\x0ethe_linksAsset\x18\x1e \x01(\t\x12\x15\n\x07\x64o_urls\x18( \x01(\x08:\x04true\x12\x1f\n\x10\x64o_grid_outlines\x18) \x01(\x08:\x05\x66\x61lse\x12\x19\n\ndo_partner\x18* \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0f\x64o_partner_only\x18+ \x01(\x08:\x05\x66\x61lse\x12!\n\x12\x63reate_catalog_shp\x18\x37 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rdo_sheetindex\x18\x38 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07\x64o_sort\x18\x39 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x08the_urls\x18, \x03(\t\x12\x11\n\tthe_grids\x18- \x03(\t\x12\x12\n\ngrid_asset\x18/ \x01(\t\x12!\n\x12\x64o_installproducts\x18. \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x15installproducts_asset\x18\x30 \x01(\t\x12\x15\n\x06\x64o_all\x18\x32 \x01(\x08:\x05\x66\x61lse\x12\x19\n\ndo_convert\x18\x33 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x12Starting_Directory\x18\x34 \x01(\t:\x01.\x12&\n\nReportFile\x18\x36 \x01(\t:\x12ProcessCatalog.rpt\x12&\n\rBatchToolName\x18\x63 \x01(\t:\x0fprocess_catalog\"\xee\x01\n\x12Modify_Catalog_JET\x12\x11\n\tSite_File\x18\x01 \x01(\t\x12=\n\toperation\x18\x02 \x01(\x0e\x32\x1b.jet.Modify_Catalog_OPTIONS:\radd_attribute\x12\x15\n\rthe_attribute\x18\x05 \x01(\t\x12\x11\n\tthe_value\x18\x06 \x01(\t\x12\x0f\n\x07\x64\x61taset\x18\x07 \x03(\t\x12%\n\nReportFile\x18  \x01(\t:\x11ModifyCatalog.rpt\x12$\n\rBatchToolName\x18\x63 \x01(\t:\rModifyCatalog\"\xa9\x02\n\x0f\x41\x64\x64\x32\x43\x61talog_JET\x12\x11\n\tSite_File\x18\x01 \x01(\t\x12\x14\n\x0c\x64\x61taset_file\x18\x02 \x03(\t\x12!\n\tNew_Theme\x18\x03 \x01(\x0e\x32\x0e.jet.JET_Theme\x12\r\n\x05Theme\x18\x05 \x01(\t\x12\x33\n\x0cSignalFormat\x18\x04 \x01(\x0e\x32\x17.jet.JET_DATASET_FORMAT:\x04LINE\x12!\n\x05llbox\x18\t \x01(\x0b\x32\x12.ctm.GeodeticBox2D\x12\x1a\n\x12\x63\x61talogued_dataset\x18\x0e \x01(\t\x12#\n\nReportFile\x18  \x01(\t:\x0f\x41\x64\x64\x32\x43\x61talog.rpt\x12\"\n\rBatchToolName\x18\x63 \x01(\t:\x0b\x41\x64\x64\x32\x43\x61talog\"w\n\x0cSetTheme_JET\x12\x11\n\tdirectory\x18\x01 \x01(\t\x12\x10\n\x08newvalue\x18\x02 \x01(\t\x12!\n\tNew_Theme\x18\x03 \x01(\x0e\x32\x0e.jet.JET_Theme\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08settheme\"S\n\x0cSetAsset_JET\x12\x11\n\tdirectory\x18\x01 \x01(\t\x12\x10\n\x08newvalue\x18\x02 \x01(\t\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07setattr\"3\n\x0fSetGoodName_JET\x12\x0f\n\x07oldname\x18\x01 \x01(\t\x12\x0f\n\x07newname\x18\x02 \x01(\t\"\x87\x01\n\x11SetAttributes_JET\x12\x16\n\x0estartdirectory\x18\x01 \x01(\t\x12\x11\n\tattribute\x18\x02 \x01(\t\x12\x10\n\x08newvalue\x18\x03 \x01(\t\x12\x15\n\rdirectorylist\x18\x04 \x03(\t\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07setattr\"3\n\x0eSetCatalog_JET\x12\x0f\n\x07keyword\x18\x01 \x01(\t\x12\x10\n\x08newvalue\x18\x03 \x01(\t\"W\n\x0cSetUnits_JET\x12\x13\n\x0b\x64\x61tasetname\x18\x01 \x01(\t\x12\x11\n\tunitsName\x18\x03 \x01(\t\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08setunits\"\xc1\x03\n\x0b\x43\x61t2KML_JET\x12\x11\n\tSite_File\x18\x01 \x01(\t\x12\x19\n\ndo_vectors\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x18\n\x10output_directory\x18\x0e \x01(\t\x12\x11\n\tthe_asset\x18\x0f \x01(\t\x12\x1c\n\rdo_standalone\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x12\n\noutput_kml\x18\x11 \x01(\t\x12\x17\n\x08\x64o_grids\x18\x14 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eMake_Map_Files\x18\x1b \x01(\x08:\x05\x66\x61lse\x12!\n\x12\x64o_installproducts\x18\x19 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x15installproducts_asset\x18\x1a \x01(\t\x12\x15\n\rGeodeticDatum\x18\x1e \x01(\t\x12$\n\x15\x43reateJSONDescriptors\x18\x1f \x01(\x08:\x05\x66\x61lse\x12\x10\n\x08the_urls\x18, \x03(\t\x12\x17\n\x08thinning\x18- \x01(\x01:\x05\x30.001\x12#\n\nReportFile\x18# \x01(\t:\x0f\x43\x61talog2KML.rpt\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07\x63\x61t2kml\"\x94\x02\n\rShape2KML_JET\x12\x11\n\tlayername\x18\x01 \x01(\t\x12\x12\n\noutputname\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x61tasetlist\x18\x04 \x03(\t\x12\x10\n\x08listroot\x18\x05 \x01(\t\x12#\n\x14\x63reateKMLHelperFiles\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08thinning\x18\x0e \x01(\x01:\x05\x30.001\x12\x18\n\tdoingSegy\x18\x19 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x64oing3DSegy\x18\x1a \x01(\x08:\x05\x66\x61lse\x12!\n\nReportFile\x18  \x01(\t:\rShape2KML.rpt\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07shp2kml\"\xbc\x01\n\x0cGrid2KML_JET\x12\x14\n\x06\x64o_kml\x18\x0c \x01(\x08:\x04true\x12\x0f\n\x07the_kml\x18\x0e \x01(\t\x12\x16\n\x07\x64o_grid\x18\x14 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x08the_grid\x18\x17 \x01(\t\x12\x18\n\tgreyscale\x18\x18 \x01(\x08:\x05\x66\x61lse\x12 \n\nReportFile\x18  \x01(\t:\x0cGrid2KML.rpt\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08grid2kml\"\xcd\x01\n\x0fGrid2Netcdf_JET\x12\x11\n\tinputname\x18\x02 \x01(\t\x12\x12\n\noutputname\x18\x05 \x01(\t\x12 \n\x11Use_HDF5_Chunking\x18\x0c \x01(\x08:\x05\x66\x61lse\x12,\n\nNetCDFGrid\x18\x13 \x01(\x0b\x32\x18.intrepid.NetCDFGrid_INT\x12#\n\nReportFile\x18  \x01(\t:\x0fGrid2NetCDF.rpt\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07grid2nc\"\x92\x03\n\x0eSegY2Voxet_JET\x12\x1c\n\noutputname\x18\x02 \x01(\t:\x08voxet.vo\x12\x14\n\x0csegy_dataset\x18\x05 \x01(\t\x12\x0f\n\x04xmin\x18\x06 \x01(\x01:\x01\x30\x12\x0f\n\x04ymin\x18\x07 \x01(\x01:\x01\x30\x12\x0f\n\x04zmin\x18\x08 \x01(\x01:\x01\x30\x12\x14\n\x06\x64\x65ltax\x18\t \x01(\x01:\x04\x31\x30\x30\x30\x12\x14\n\x06\x64\x65ltay\x18\n \x01(\x01:\x04\x31\x30\x30\x30\x12\x12\n\x06\x64\x65ltaz\x18\x0b \x01(\x01:\x02\x35\x30\x12\x0f\n\x02nx\x18\x0c \x01(\x05:\x03\x31\x30\x30\x12\x0f\n\x02ny\x18\r \x01(\x05:\x03\x31\x30\x30\x12\x0f\n\x02nz\x18\x0e \x01(\x05:\x03\x31\x30\x30\x12\x12\n\x07\x63hannel\x18\x0f \x01(\x05:\x01\x30\x12\x17\n\nFieldAlias\x18\x10 \x01(\t:\x03twt\x12\x1b\n\tFieldName\x18\x11 \x01(\t:\x08Velocity\x12\x18\n\tNullValue\x18\x12 \x01(\x01:\x05-9999\x12\"\n\nReportFile\x18  \x01(\t:\x0eSegY2Voxet.rpt\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07sgy2vox\"\xff\x04\n\rExtractDS_JET\x12#\n\x06Inputs\x18\x01 \x01(\x0b\x32\x13.ctm.RepeatedString\x12#\n\x06\x46ields\x18\x02 \x01(\x0b\x32\x13.ctm.RepeatedString\x12$\n\x05gadds\x18\x03 \x01(\x0b\x32\x15.ga_std.DatabaseField\x12\x13\n\x0bSignalTheme\x18\x07 \x02(\t\x12\x33\n\x0cSignalFormat\x18\x08 \x01(\x0e\x32\x17.jet.JET_DATASET_FORMAT:\x04LINE\x12\x19\n\x11Jetstream_Catalog\x18\x04 \x01(\t\x12+\n\x0eIntermediateDS\x18\x05 \x01(\t:\x13IntermediateDS..DIR\x12\'\n\rcellsampledDS\x18\x06 \x01(\t:\x10\x43\x65ll_Points..DIR\x12)\n\x08Sampling\x18\t \x02(\x0b\x32\x17.jet.Local_Sampling_JET\x12\x1c\n\rReportXYStats\x18\x0f \x01(\x08:\x05\x66\x61lse\x12\x10\n\x08OutputCS\x18\x0e \x01(\t\x12\x1b\n\rExportResults\x18\x12 \x01(\x08:\x04true\x12\x1b\n\rOutputPattern\x18\x11 \x02(\t:\x04.csv\x12\x19\n\nMaxRecords\x18\x13 \x01(\x03:\x05\x31\x30\x30\x30\x30\x12-\n\x10Orig_Pts_Dataset\x18\x14 \x01(\t:\x13OriginalPoints..DIR\x12\x1f\n\x10Generated_By_GUI\x18\x32 \x01(\x08:\x05\x66\x61lse\x12!\n\nReportFile\x18  \x01(\t:\rextractDS.rpt\x12 \n\rBatchToolName\x18\x63 \x01(\t:\textractds\"\x9e\x05\n\x12Local_Sampling_JET\x12?\n\x0f\x43\x65ll_Assignment\x18\x01 \x01(\x0e\x32\x1d.intrepid.Cell_Assignment_INT:\x07\x41verage\x12\x35\n\x0bWeight_Type\x18\x02 \x01(\x0e\x32\x19.intrepid.Weight_Type_INT:\x05Unity\x12!\n\x13\x45\x61rliest_SurveyYear\x18\x03 \x01(\x05:\x04\x31\x39\x39\x35\x12\x1f\n\x11Latest_SurveyYear\x18\x04 \x01(\x05:\x04\x32\x30\x32\x30\x12\'\n\rprojected_box\x18\x05 \x01(\x0b\x32\x10.ctm.BoundingBox\x12(\n\x0cgeodetic_box\x18\x06 \x01(\x0b\x32\x12.ctm.GeodeticBox2D\x12\x19\n\x11\x45SRI_ShapeFileBox\x18\x63 \x01(\t\x12\x42\n\x13\x64\x65\x63imation_strategy\x18\x14 \x01(\x0e\x32\x18.jet.Decimation_Strategy:\x0bNO_THINNING\x12\x18\n\x0b\x43\x65ll_Size_X\x18\x07 \x01(\x01:\x03\x31\x30\x30\x12\x18\n\x0b\x43\x65ll_Size_Y\x18\x08 \x01(\x01:\x03\x31\x30\x30\x12\x1d\n\x12SubsampleIncrement\x18\t \x01(\x05:\x01\x31\x12+\n\x1f\x43lipCoincidentMinimumSeparation\x18\x0b \x01(\x01:\x02\x31\x30\x12\x19\n\x11Maximum_Clearance\x18\x0c \x01(\x01\x12J\n\x17Minimum_Detector_Volume\x18\x0e \x01(\x0e\x32\x1e.intrepid.GammaDetector_Volume:\tlitres_32\x12\x1b\n\rTraverseLines\x18\x0f \x01(\x08:\x04true\x12\x16\n\x08TieLines\x18\x10 \x01(\x08:\x04true\"\xa0\x05\n\rJetstreamTask\x12\x30\n\x0e\x41\x63quireCatalog\x18\x01 \x01(\x0b\x32\x18.jet.Acquire_Catalog_JET\x12\'\n\nIsiManager\x18\x02 \x01(\x0b\x32\x13.jet.isiManager_JET\x12\x31\n\x0fProcess_Catalog\x18\x03 \x01(\x0b\x32\x18.jet.Process_Catalog_JET\x12!\n\x07\x43\x61t2KML\x18\x06 \x01(\x0b\x32\x10.jet.Cat2KML_JET\x12%\n\tShape2KML\x18\x07 \x01(\x0b\x32\x12.jet.Shape2KML_JET\x12#\n\x08Grid2KML\x18\x08 \x01(\x0b\x32\x11.jet.Grid2KML_JET\x12)\n\x0bGrid2Netcdf\x18\t \x01(\x0b\x32\x14.jet.Grid2Netcdf_JET\x12#\n\x08SetTheme\x18\x0b \x01(\x0b\x32\x11.jet.SetTheme_JET\x12#\n\x08SetAsset\x18\x0c \x01(\x0b\x32\x11.jet.SetAsset_JET\x12-\n\rSetAttributes\x18\x0e \x01(\x0b\x32\x16.jet.SetAttributes_JET\x12#\n\x08SetUnits\x18\x10 \x01(\x0b\x32\x11.jet.SetUnits_JET\x12\'\n\nSegY2Voxet\x18\x11 \x01(\x0b\x32\x13.jet.SegY2Voxet_JET\x12%\n\tExtractDS\x18\x14 \x01(\x0b\x32\x12.jet.ExtractDS_JET\x12:\n\x16\x45xtractStreamJetstream\x18\x15 \x01(\x0b\x32\x1a.jet.ExtractStreamDemo_JET\x12/\n\nSiteConfig\x18\x19 \x01(\x0b\x32\x1b.jet.Site_Configuration_JET\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"C\n\x08Site_JET\x12\n\n\x02id\x18\x01 \x01(\t\x12+\n\x06\x63onfig\x18\x02 \x01(\x0b\x32\x1b.jet.Site_Configuration_JET*6\n\x12JET_Communications\x12\x08\n\x04\x44ODS\x10\x01\x12\x0c\n\x08Protobuf\x10\x02\x12\x08\n\x04gRPC\x10\x03*\x82\x03\n\tJET_Theme\x12\x0f\n\x0bUNSET_THEME\x10\x00\x12\x10\n\x0cRADIOMETRICS\x10\x01\x12\r\n\tMAGNETICS\x10\x02\x12\x0b\n\x07GRAVITY\x10\x03\x12\x06\n\x02MT\x10\x04\x12\x06\n\x02\x45M\x10\x05\x12\x0b\n\x07SEISMIC\x10\x06\x12\x0e\n\nNAVIGATION\x10\x07\x12\x0c\n\x08RADIANCE\x10\x08\x12\x07\n\x03\x44\x45M\x10\t\x12\r\n\tELEVATION\x10\n\x12\x17\n\x13GRAVITY_GRADIOMETRY\x10\x0e\x12\x12\n\x0eLICENSE_BLOCKS\x10\x0f\x12\t\n\x05WELLS\x10\x10\x12\x19\n\x15SurveyFieldNavigation\x10\x11\x12\x16\n\x12SurveyGeotechnical\x10\x12\x12\x13\n\x0fSurveyFieldData\x10\x13\x12\x16\n\x12\x45xploration_Target\x10\x14\x12\x12\n\x0eSurvey_Reports\x10\x15\x12\x18\n\x14SurveySeismicVolumes\x10\x17\x12\x0e\n\nGEOLOGY_3D\x10\x1e\x12\r\n\tANY_Theme\x10\x63*\xfc\x01\n\x12JET_DATASET_FORMAT\x12\x16\n\x12\x41NY_DATASET_FORMAT\x10\x00\x12\x08\n\x04GRID\x10\x01\x12\x0b\n\x07GRID_2D\x10\x02\x12\n\n\x06VECTOR\x10\x03\x12\x08\n\x04LINE\x10\x04\x12\t\n\x05POINT\x10\x05\x12\x0b\n\x07GRID_3D\x10\x06\x12\x11\n\rGEOLOGY_MODEL\x10\x07\x12\x12\n\x0ePROPERTY_MODEL\x10\x08\x12\t\n\x05TABLE\x10\t\x12\x0e\n\nOTHER_FILE\x10\n\x12\t\n\x05IMAGE\x10\x0b\x12\x12\n\x0eSEISMIC_FORMAT\x10\x0c\x12\x0e\n\nAEM_FORMAT\x10\r\x12\x18\n\x14TRIANGULATED_SURFACE\x10\x0e*\xb3\x05\n\x12\x43\x61talogField_Alias\x12\t\n\x05Title\x10\x64\x12\x12\n\x0ePROCESSED_DATE\x10\x65\x12\x0e\n\nDATE_ADDED\x10\x66\x12\x0f\n\x0bSURVEY_DATE\x10y\x12\x15\n\x11MINIMUM_LONGITUDE\x10g\x12\x14\n\x10MINIMUM_LATITUDE\x10h\x12\x15\n\x11MAXIMUM_LONGITUDE\x10i\x12\x14\n\x10MAXIMUM_LATITUDE\x10j\x12\t\n\x05\x42LOCK\x10k\x12\x08\n\x04UUID\x10l\x12\t\n\x05THEME\x10m\x12\x0e\n\tNEW_THEME\x10\x8e\x01\x12\x12\n\x0e\x44\x41TASET_FORMAT\x10n\x12\r\n\tFILE_SIZE\x10o\x12\x0c\n\x08\x44\x41TA_URL\x10p\x12\x0c\n\x08\x43\x45LLSIZE\x10q\x12\x10\n\x0c\x43OORD_SYSTEM\x10r\x12\x12\n\x0e\x46LIGHT_SPACING\x10s\x12\x11\n\rNATIONAL_GRID\x10t\x12\x0e\n\nASSET_TEAM\x10u\x12\x07\n\x03VWC\x10v\x12\r\n\tPUBLISHED\x10w\x12\x0b\n\x07Subject\x10{\x12\x0c\n\x08\x41\x62stract\x10|\x12\x0b\n\x06Source\x10\x80\x01\x12\x10\n\x0b\x41ssociation\x10\x81\x01\x12\x11\n\x0cReportFormat\x10\x82\x01\x12\x10\n\x0bRenderStyle\x10\x83\x01\x12\r\n\x08MAPSHEET\x10\x84\x01\x12\x0e\n\tDIRECTORY\x10\x85\x01\x12\x12\n\rJURISTRICTION\x10\x87\x01\x12\x18\n\x13SURVEY_LINE_AZIMUTH\x10\x88\x01\x12\x19\n\x14SURVEY_LINE_DISTANCE\x10\x89\x01\x12\x15\n\x10\x46LIGHT_CLEARANCE\x10\x8a\x01\x12\x16\n\x11HAS_LINE_ALTITUDE\x10\x8b\x01\x12\x16\n\x11MINIMUM_ELEVATION\x10\x8c\x01\x12\x16\n\x11MAXIMUM_ELEVATION\x10\x8d\x01\x12\r\n\x08NO_ALIAS\x10\xc7\x01*d\n\x17\x43\x61talogPublished_Status\x12\x11\n\rRAW_UNCHECKED\x10\x00\x12\x14\n\x10SANDPIT_CHECKING\x10\x01\x12\n\n\x06PUBLIC\x10\x02\x12\x0b\n\x07PRIVATE\x10\x03\x12\x07\n\x03YES\x10\x04*@\n\x0c\x43\x41RT_PROCESS\x12\x10\n\x0c\x45xtract_DATA\x10\x00\x12\x0f\n\x0bMap_COMPOSE\x10\x01\x12\r\n\tGrid_DATA\x10\x02*_\n\x08IBI_FLAG\x12\x0f\n\x0bIBI_FLAG_V1\x10\x36\x12\x0f\n\x0bIBI_FLAG_V3\x10\x37\x12\x0f\n\x0bIBI_FLAG_V4\x10\x38\x12\x0f\n\x0bIBI_FLAG_V5\x10\x39\x12\x0f\n\x0bIBI_FLAG_V6\x10:*\xbe\x01\n\x14\x41\x64ministration_Tasks\x12\x0c\n\x08savesite\x10\x00\x12\x0f\n\x0bscheduleIBI\x10\x01\x12\x0c\n\x08setSpeed\x10\x02\x12\x06\n\x02up\x10\x03\x12\x08\n\x04\x64own\x10\x04\x12\x0b\n\x07\x61\x63quire\x10\x05\x12\x10\n\x0c\x63heckCatalog\x10\x06\x12\x11\n\rreloadCatalog\x10\x07\x12\x0f\n\x0bsaveCatalog\x10\x08\x12\x12\n\x0ereloadSiteFile\x10\t\x12\x10\n\x0csaveSiteFile\x10\n*\x8f\x01\n\x19Jetstream_Operation_Tasks\x12\x13\n\x0fQueryAndProcess\x10\x00\x12\x10\n\x0cQueryCatalog\x10\x01\x12\x14\n\x10ProcessQueryCart\x10\x02\x12\x13\n\x0fProcessQueryIBI\x10\x03\x12\x13\n\x0fGetCapabilities\x10\x04\x12\x0b\n\x07readIBI\x10\x05*\x93\x03\n\x0bISI_ACTIONS\x12\x1c\n\x18Load_Jetstream_Site_File\x10\x00\x12\x1c\n\x18Show_Jetstream_Site_File\x10\x01\x12-\n)Run_Acquire_Catalog_In_Selected_Directory\x10\x02\x12+\n\'Run_Acquire_Catalog_In_Selected_Dataset\x10\x03\x12)\n%Geolocate_Files_In_Selected_Directory\x10\x04\x12\x31\n-SetAttributes_For_Files_In_Selected_Directory\x10\x05\x12-\n)SetANZLIC_For_Files_In_Selected_Directory\x10\x06\x12\x1e\n\x1a\x43reate_Jetstream_Site_File\x10\x07\x12\x17\n\x13Set_Cataloging_Date\x10\x08\x12\x17\n\x13Set_ProjectionDatum\x10\t\x12\r\n\tSet_Theme\x10\n*\x7f\n\x0e\x43\x41TALOG_FORMAT\x12\x11\n\rFLAT_FILE_CSV\x10\x00\x12\n\n\x06OGC_V3\x10\x01\x12\x08\n\x04JDBC\x10\n\x12\x0e\n\nESRI_SHAPE\x10\x0b\x12\x0f\n\x0bJSON_FORMAT\x10\x0c\x12\x0f\n\x0bINTREPID_DB\x10\r\x12\x12\n\x0eGOOGLE_MESSAGE\x10\x0e*U\n\x16Modify_Catalog_OPTIONS\x12\x11\n\radd_attribute\x10\x00\x12\x14\n\x10remove_attribute\x10\x01\x12\x12\n\x0e\x65\x64it_attribute\x10\x02*\\\n\x13\x44\x65\x63imation_Strategy\x12\x0f\n\x0bNO_THINNING\x10\x00\x12\x10\n\x0cSUB_SAMPLING\x10\x03\x12\x13\n\x0f\x43LIP_COINCIDENT\x10\x01\x12\r\n\tGRID_CELL\x10\x02'
+  serialized_pb=b'\n\x0fjetstream.proto\x12\x03jet\x1a\x15\x63ommontaskmodel.proto\x1a$geoscience_australia_standards.proto\x1a\x14intrepid_tasks.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"\x9d\x1a\n\x16Site_Configuration_JET\x12R\n\rADMINISTRATOR\x18\x01 \x01(\t:george@intrepid-geophysics.comdifu@intrepid-geophysics.com\x12\x0e\n\x06\x41SSETS\x18\x02 \x03(\t\x12\x43\n\x07\x43\x41TALOG\x18\x03 \x01(\t:2http://localhost:8080/gadds/servlet/csv/JETCAT.dat\x12\x1f\n\x0b\x43\x41TALOGFILE\x18\x04 \x01(\t:\nJETCAT.dat\x12 \n\x15\x43LEANER_INTERVAL_DAYS\x18\x05 \x01(\x05:\x01\x31\x12+\n CLEANER_TIME_LIMIT_BEFORE_DELETE\x18\x06 \x01(\x05:\x01\x32\x12)\n\nCS_default\x18\x07 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x11\n\x02\x43S\x18\x08 \x01(\t:\x05WGS84\x12\x0f\n\x07\x44\x41TADIR\x18\x0f \x03(\t\x12@\n\x07\x44\x41TAURL\x18\x10 \x01(\t:/http://localhost:8280/gadds/servlet/jetstreamDB\x12\x18\n\x07\x44\x46\x41\x32PNG\x18\x11 \x01(\t:\x07\x64\x66\x61\x32png\x12\x18\n\x07\x44\x46\x41\x32GIF\x18\x12 \x01(\t:\x07\x64\x66\x61\x32gif\x12\"\n\nDISCLAIMER\x18\x13 \x01(\t:\x0e\x64isclaimer.txt\x12\x32\n*ELECTRO_Magnetic_DELIVERED_FILE_EXTENSIONS\x18\x14 \x03(\t\x12-\n\x15\x45XTRA_DELIVERED_FILES\x18\x16 \x01(\t:\x0e\x44ISCLAIMER.txt\x12\'\n\x1f\x45XTRA_DELIVERED_FILE_EXTENSIONS\x18\x17 \x03(\t\x12\x34\n\x15\x45XTRA_CATALOG_COLUMNS\x18\x18 \x03(\x0b\x32\x15.jet.CatalogField_JET\x12&\n\x1e\x46ILE_DELIVERED_FILE_EXTENSIONS\x18\x1d \x03(\t\x12!\n\x08\x46MANAGER\x18\x1e \x01(\t:\x0f\x66manager -batch\x12/\n\'GEOLOGY_MODEL_DELIVERED_FILE_EXTENSIONS\x18\x1c \x03(\t\x12\x13\n\x06GIFEXT\x18\x1f \x01(\t:\x03png\x12&\n\x1eGRID_DELIVERED_FILE_EXTENSIONS\x18  \x03(\t\x12\x36\n\x0fHELP_DESK_EMAIL\x18! \x01(\t:\x1d\x61\x64min@intrepid-geophysics.com\x12#\n\x04HOME\x18\" \x01(\t:\x15http://localhost:8280\x12\x31\n\x0cHOST_APPNAME\x18& \x01(\t:\x1bGADDS JetStream Application\x12:\n\x08JDBCBASE\x18# \x01(\t:(http://localhost:8280/gadds/servlet/none\x12\x42\n\tJETSTREAM\x18$ \x01(\t:/http://localhost:8280/gadds/servlet/jetstreamDB\x12\'\n\x07LOGFILE\x18% \x01(\t:\x16\x64\x65livery/jetstream.log\x12\x9b\x01\n\x13LicenceBlocksFields\x18( \x01(\t:~BlockIdCoordinateReferenceSystemBlockNamePercentageOperatorAreaLastUpdatedBlueMarbleQCCheckedWorstPositioningConfidence\x12\'\n\tMAPCONFIG\x18) \x01(\t:\x14\x63onfig/MapConfig.cfg\x12#\n\x0eMAP_PROJECTION\x18\x30 \x01(\t:\x0b\x45PSG:900913\x12\x15\n\x07METADIR\x18\x38 \x01(\t:\x04\x64\x61ta\x12\x44\n\x0bMETADATAURL\x18\x39 \x01(\t:/http://localhost:8280/gadds/servlet/jetstreamDB\x12\x11\n\tMAX_KSIZE\x18* \x03(\x05\x12,\n\x14NEW_THEME_SELECTIONS\x18+ \x03(\x0e\x32\x0e.jet.JET_Theme\x12\x15\n\x07NOCLEAN\x18, \x01(\x08:\x04true\x12\x17\n\tPICKUPDIR\x18- \x01(\t:\x04\x64\x61ta\x12\x33\n\tPICKUPURL\x18. \x01(\t: http://billy:8280/gadds/delivery\x12\x31\n\tPIPELINES\x18/ \x01(\t:\x1ejetstream.v2.shop.QueueExtract\x12\x14\n\x08PRIORITY\x18\x32 \x01(\x05:\x02\x33\x30\x12!\n\x07PROCLOG\x18\x33 \x01(\t:\x10temp/JETPROC.log\x12\x10\n\x08PROFILES\x18\x34 \x03(\t\x12\x1e\n\x16QUERYABLE_COLUMN_NAMES\x18\x35 \x03(\t\x12\x11\n\x06RECENT\x18\x36 \x01(\x05:\x01\x34\x12\x39\n\x0eREPORTTEMPLATE\x18\x37 \x01(\t:!config/master_export_template.cfg\x12\x1b\n\x0cUUID_RECORDS\x18: \x01(\x08:\x05\x66\x61lse\x12\x36\n\x04SITE\x18< \x01(\t:(http://localhost:8280/gadds/servlet/site\x12)\n!SEISMIC_DELIVERED_FILE_EXTENSIONS\x18\x43 \x03(\t\x12\x45\n\tSERVERLOG\x18= \x01(\t:2apps/Tomcat6.0 Sandpit/logs/tomcat6wsandpit-stdout\x12\x33\n\x0eSERVERLOGADMIN\x18> \x01(\t:\x1b\x61pps/Tomcat 6.0/logs/stdout\x12,\n\x08SMTPHOST\x18? \x01(\t:\x1awww1.jetstream-namibia.com\x12.\n\x0fSPEED_PER_KBYTE\x18@ \x01(\x01:\x15\x30.0022090454598302522\x12(\n\x1bSurveyFieldNavigationFields\x18\x41 \x01(\t:\x03\x41B\x12\x31\n\x08INDEXGIF\x18\x42 \x01(\t:\x1f$(intrepid)/config/intrepid.tif\x12\x18\n\x10THEME_SELECTIONS\x18\x46 \x03(\t\x12\'\n\x1fMODEL_DELIVERED_FILE_EXTENSIONS\x18H \x03(\t\x12(\n VECTOR_DELIVERED_FILE_EXTENSIONS\x18G \x03(\t\x12\x14\n\x0cMAPINDEXFILE\x18\x66 \x01(\t\x12\x14\n\x0cMAPINDEXNAME\x18g \x01(\t\x12\x14\n\x06WEBDIR\x18O \x01(\t:\x04\x64\x61ta\x12.\n\x06WEBLOG\x18I \x01(\t:\x1e\x61pps/Tomcat6.0/logs/weblog.txt\x12\x41\n\x0bWEBTEMPLATE\x18K \x01(\t:,webapps/gadds/WEB-INF/jetstream_template.xml\x12\x13\n\x0bWellsFields\x18L \x03(\t\x12\x1d\n\x0fWEB_APP_VERSION\x18J \x01(\x08:\x04true\x12\x15\n\x07WORKDIR\x18M \x01(\t:\x04\x64\x61ta\x12\x31\n\x07WORKURL\x18N \x01(\t: http://billy:8280/gadds/delivery\x12\x33\n\x0c\x43omms_Option\x18P \x01(\x0e\x32\x17.jet.JET_Communications:\x04\x44ODS\x12\x13\n\x0bTREE_LAYOUT\x18[ \x03(\t\x12\x17\n\x0f\x41NZLIC_TEMPLATE\x18\x65 \x01(\t\x12\'\n\x05\x42lock\x18] \x03(\x0b\x32\x18.jet.Block_Configuration\x12\x1f\n\x11Remove_Duplicates\x18n \x01(\x08:\x04true\x12\x1c\n\rFirstCreation\x18o \x01(\x08:\x05\x66\x61lse\x12\"\n\x13\x46orceCompleteReview\x18r \x01(\x08:\x05\x66\x61lse\x12$\n\x15\x43reate_DODS_Artefacts\x18p \x01(\x08:\x05\x66\x61lse\x12\x32\n#ReportExtentsOfGeodeticDatasetsOnly\x18q \x01(\x08:\x05\x66\x61lse\x12\x34\n%ReportExtentsOfGeolocatedDatasetsOnly\x18s \x01(\x08:\x05\x66\x61lse\x12&\n\x17\x43reate_NewStyle_Catalog\x18t \x01(\x08:\x05\x66\x61lse\x12/\n Check_Asset_Team_forJSON_Catalog\x18u \x01(\x08:\x05\x66\x61lse\x12%\n\x16\x44istances_Flown_Detail\x18v \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rUse_EPSG_Code\x18w \x01(\x08:\x05\x66\x61lse\"n\n\x13\x42lock_Configuration\x12\x1a\n\x07\x43ountry\x18\x01 \x01(\t:\taustralia\x12\x11\n\tBlockName\x18\x02 \x03(\t\x12\r\n\x05OutCS\x18\x03 \x03(\t\x12\x19\n\rJuristriction\x18\x05 \x01(\t:\x02SA\"\x86\x02\n\x10\x43\x61talogField_JET\x12\x11\n\tFieldName\x18\x01 \x01(\t\x12\x1f\n\x08\x44\x41TATYPE\x18\x02 \x01(\x0e\x32\r.ctm.DataType\x12\x30\n\x05\x41lias\x18\x03 \x01(\x0e\x32\x17.jet.CatalogField_Alias:\x08NO_ALIAS\x12\x1d\n\x0c\x44\x65\x66\x61ultValue\x18\x04 \x01(\t:\x07Unknown\x12\x19\n\rDisplay_width\x18\x05 \x01(\x05:\x02\x31\x30\x12\x1b\n\x10\x44isplay_decimals\x18\x06 \x01(\x05:\x01\x30\x12\x18\n\tQueryable\x18\x19 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0fInternal_Buffer\x18\x08 \x01(\x05:\x02-1\"2\n\x14\x43ustomFieldEntry_JET\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\t\"\xa7\x02\n\x14\x43\x61talogEntryBase_JET\x12\x10\n\x08\x64\x61taName\x18\x01 \x01(\t\x12\x0f\n\x07\x66ileExt\x18\x02 \x01(\t\x12\x33\n\x0cSignalFormat\x18\x03 \x01(\x0e\x32\x17.jet.JET_DATASET_FORMAT:\x04LINE\x12\x10\n\x08\x44\x41TA_URL\x18\x04 \x01(\t\x12 \n\x06\x45xtent\x18\x07 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x1f\n\x08\x44\x41TATYPE\x18\t \x01(\x0e\x32\r.ctm.DataType\x12!\n\x02\x43S\x18\r \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12!\n\tNew_Theme\x18\x0e \x01(\x0e\x32\x0e.jet.JET_Theme\x12\r\n\x05Theme\x18\x10 \x01(\t\x12\r\n\x05ksize\x18\x0f \x01(\x05\"\xe7\x06\n\x10\x43\x61talogEntry_JET\x12\x10\n\x08\x64\x61taName\x18\x01 \x01(\t\x12\x0f\n\x07\x66ileExt\x18\x02 \x01(\t\x12\x33\n\x0cSignalFormat\x18\x03 \x01(\x0e\x32\x17.jet.JET_DATASET_FORMAT:\x04LINE\x12\x10\n\x08\x44\x41TA_URL\x18\x04 \x01(\t\x12 \n\x06\x45xtent\x18\x07 \x01(\x0b\x32\x10.ctm.BoundingBox\x12\x11\n\tdirectory\x18\x08 \x01(\t\x12!\n\x02\x43S\x18\r \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12!\n\tNew_Theme\x18\x0e \x01(\x0e\x32\x0e.jet.JET_Theme\x12\r\n\x05Theme\x18& \x01(\t\x12\r\n\x05ksize\x18\x0f \x01(\x03\x12\x0c\n\x04UUID\x18\x10 \x01(\t\x12\r\n\x05LABEL\x18\x11 \x01(\t\x12/\n\x0bSurvey_Date\x18\x12 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12-\n\tDATEADDED\x18\x13 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12%\n\x06\x43SDATA\x18\x14 \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x10\n\x08\x43\x45LLSIZE\x18\x15 \x01(\x01\x12\x12\n\nASSET_TEAM\x18\x16 \x01(\t\x12\x0b\n\x03VWC\x18\x1f \x01(\t\x12/\n\tPUBLISHED\x18\x17 \x01(\x0e\x32\x1c.jet.CatalogPublished_Status\x12\x13\n\x0bLINESPACING\x18\x18 \x01(\x01\x12\x13\n\x0bLINEAZMIUTH\x18\" \x01(\x01\x12\x16\n\x0eLINEKILOMETERS\x18$ \x01(\x01\x12\x10\n\x08\x41LTITUDE\x18% \x01(\x01\x12\x1f\n\x10MeasuredAltitude\x18\' \x01(\x08:\x05\x66\x61lse\x12\x10\n\x08MAPSHEET\x18\x19 \x01(\t\x12\x1c\n\rNATIONAL_GRID\x18\x1a \x01(\x08:\x05\x66\x61lse\x12\x0f\n\x07Subject\x18\x1b \x01(\t\x12\x10\n\x08\x41\x62stract\x18\x1c \x01(\t\x12\x0e\n\x06Source\x18\x1d \x01(\t\x12\x13\n\x0b\x41ssociation\x18\x1e \x01(\t\x12\x13\n\x0bRenderStyle\x18  \x01(\t\x12\x14\n\x0cReportFormat\x18! \x01(\t\x12\x30\n\rcustomEntries\x18# \x03(\x0b\x32\x19.jet.CustomFieldEntry_JET\"@\n\x17\x41\x63tualCatalogFields_JET\x12%\n\x06\x46ields\x18\x16 \x03(\x0b\x32\x15.jet.CatalogField_JET\"s\n\x0f\x46ieldRecord_JET\x12\x0b\n\x03str\x18\x01 \x01(\t\x12\x0c\n\x04\x64val\x18\x02 \x01(\x01\x12(\n\x04\x64\x61te\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x0c\n\x04ival\x18\x04 \x01(\x05\x12\r\n\x05state\x18\x05 \x01(\x08\"8\n\x10\x41\x63tualRecord_JET\x12$\n\x06\x43olumn\x18\x16 \x03(\x0b\x32\x14.jet.FieldRecord_JET\"\xde\x02\n\x0c\x43riteria_JET\x12\x14\n\x0cMapSheetName\x18\x02 \x01(\t\x12\x18\n\x10LicenseBlockName\x18\x03 \x01(\t\x12\x12\n\nSurveyName\x18\x04 \x01(\t\x12 \n\x06\x65xtent\x18\x07 \x01(\x0b\x32\x10.ctm.BoundingBox\x12,\n\tNew_Theme\x18\x08 \x01(\x0e\x32\x0e.jet.JET_Theme:\tANY_Theme\x12\r\n\x05Theme\x18\t \x01(\t\x12!\n\x02\x43S\x18\r \x01(\x0b\x32\x15.ctm.CoordinateSystem\x12\x41\n\x0cSignalFormat\x18\x0e \x01(\x0e\x32\x17.jet.JET_DATASET_FORMAT:\x12\x41NY_DATASET_FORMAT\x12\x1b\n\x13SimpleSQLExpression\x18\x0f \x01(\t\x12\x14\n\x0cRecordNumber\x18\x10 \x01(\x05\x12\x12\n\nASSET_TEAM\x18\x16 \x01(\t\"\xa1\x01\n\x10SelectedItem_JET\x12\'\n\x04item\x18\x01 \x01(\x0b\x32\x19.jet.CatalogEntryBase_JET\x12\x1e\n\x04\x61rea\x18\x02 \x01(\x0b\x32\x10.ctm.BoundingBox\x12#\n\x08\x63riteria\x18\x03 \x01(\x0b\x32\x11.jet.Criteria_JET\x12\x1f\n\x04keys\x18\x05 \x03(\x0b\x32\x11.ctm.KeywordValue\"\xb6\x01\n\x08\x43\x61rt_JET\x12,\n\rselectedItems\x18\x01 \x03(\x0b\x32\x15.jet.SelectedItem_JET\x12\r\n\x05\x65mail\x18\x02 \x01(\t\x12\x0f\n\x07message\x18\x03 \x03(\t\x12\x15\n\x0bzipPassword\x18\x04 \x01(\t:\x00\x12\x13\n\tsessionID\x18\x05 \x01(\t:\x00\x12\x30\n\x07process\x18\x06 \x01(\x0e\x32\x11.jet.CART_PROCESS:\x0c\x45xtract_DATA\"\x90\x02\n\x0eQueueEntry_JET\x12\x11\n\tsessionID\x18\x01 \x01(\t\x12\x0f\n\x07workdir\x18\x02 \x01(\t\x12\x0f\n\x07zipfile\x18\x03 \x01(\t\x12\x10\n\x08sizehint\x18\x04 \x01(\x05\x12,\n\x08ibi_flag\x18\x05 \x01(\x0e\x32\r.jet.IBI_FLAG:\x0bIBI_FLAG_V5\x12\x1b\n\x0c\x65mail_notify\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x15\n\remail_address\x18\x07 \x01(\t\x12\x15\n\remail_subject\x18\x08 \x01(\t\x12\x12\n\nemail_body\x18\t \x01(\t\x12*\n\x0bprocessList\x18\n \x03(\x0b\x32\x15.jet.SelectedItem_JET\"\x8d\x03\n\x11QueueResponse_JET\x12,\n\x08ibi_flag\x18\x01 \x01(\x0e\x32\r.jet.IBI_FLAG:\x0bIBI_FLAG_V5\x12\x16\n\x08ibi_swap\x18\x02 \x01(\x08:\x04true\x12\x19\n\x0eibi_type_query\x18\x03 \x01(\x05:\x01\x31\x12\x1d\n\x0cPipelineName\x18\x04 \x01(\t:\x07\x45xtract\x12\x1e\n\x0f\x66inished_status\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x13processed_list_size\x18\x06 \x01(\x05:\x01\x30\x12*\n\x0bprocessList\x18\x07 \x03(\x0b\x32\x15.jet.SelectedItem_JET\x12\x1b\n\x0c\x65mail_notify\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x15\n\remail_address\x18\x11 \x01(\t\x12\x15\n\remail_subject\x18\x12 \x01(\t\x12\x12\n\nemail_body\x18\x13 \x01(\t\x12-\n\ttimeStamp\x18\x14 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\"\xe8\x03\n\x15\x45xtractStreamDemo_JET\x12\x11\n\tSite_File\x18\x01 \x01(\t\x12\x43\n\tOperation\x18\x05 \x01(\x0e\x32\x1e.jet.Jetstream_Operation_Tasks:\x10ProcessQueryCart\x12 \n\x05Query\x18\x02 \x01(\x0b\x32\x11.jet.Criteria_JET\x12\x1b\n\x13Output_Zip_Filename\x18\x03 \x01(\t\x12\x14\n\x0cIBI_Filename\x18\x04 \x01(\t\x12+\n\x07IbiFlag\x18\x0f \x01(\x0e\x32\r.jet.IBI_FLAG:\x0bIBI_FLAG_V5\x12\x1b\n\x0c\x65mail_notify\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x17\n\remail_address\x18\x07 \x01(\t:\x00\x12\x17\n\remail_subject\x18\x08 \x01(\t:\x00\x12\x14\n\nemail_body\x18\t \x01(\t:\x00\x12\x14\n\nqueue_name\x18\n \x01(\t:\x00\x12\x14\n\tPickupDir\x18\x0b \x01(\t:\x01.\x12\x1a\n\x0cRunLocalOnly\x18\x0c \x01(\x08:\x04true\x12\'\n\nReportFile\x18  \x01(\t:\x13JetBatchTesting.rpt\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08jetBatch\"\x98\x03\n\x0eisiManager_JET\x12\x11\n\tSite_File\x18\x01 \x01(\t\x12$\n\nisi_action\x18\x02 \x03(\x0e\x32\x10.jet.ISI_ACTIONS\x12\x1d\n\x0fWeb_App_Version\x18\x03 \x01(\x08:\x04true\x12\x1b\n\x10Target_Directory\x18\n \x01(\t:\x01.\x12\x16\n\x0eTarget_Dataset\x18\x0b \x03(\t\x12!\n\tNew_Theme\x18\x0c \x03(\x0e\x32\x0e.jet.JET_Theme\x12\r\n\x05Theme\x18\x11 \x03(\t\x12\x17\n\x0f\x43oodinateSystem\x18\r \x01(\t\x12\x17\n\x0f\x43\x61taloging_Date\x18\x0e \x01(\t\x12/\n\nSiteConfig\x18\x0f \x01(\x0b\x32\x1b.jet.Site_Configuration_JET\x12\x1f\n\x10Generated_By_GUI\x18\x32 \x01(\x08:\x05\x66\x61lse\x12\"\n\nReportFile\x18  \x01(\t:\x0eisimanager.rpt\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08\x66manager\"\xf7\x01\n\x14\x44\x61taVolumeBasics_JET\x12\x1b\n\x10Target_Directory\x18\n \x01(\t:\x01.\x12)\n\x11\x44\x65\x66\x61ult_New_Theme\x18\x0c \x01(\x0e\x32\x0e.jet.JET_Theme\x12\x15\n\rDefault_Theme\x18\r \x01(\t\x12\'\n\x0eXalias_default\x18\x10 \x01(\t:\x0flongitude_GDA94\x12&\n\x0eYalias_default\x18\x11 \x01(\t:\x0elatitude_GDA94\x12/\n\x0eSignal_default\x18\x12 \x01(\t:\x17mag_magmap2019_levelled\"\xb7\t\n\x13\x41\x63quire_Catalog_JET\x12\x11\n\tSite_File\x18\x01 \x01(\t\x12#\n\x14\x43onsider_Geomodeller\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fMake_SheetIndex\x18\x03 \x01(\x08:\x05\x66\x61lse\x12&\n\x16RequiredScale_MapSheet\x18\x06 \x01(\x01:\x06\x32\x35\x30\x30\x30\x30\x12\x1b\n\x0cSort_Catalog\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x11Remove_Duplicates\x18\x05 \x01(\x08:\x04true\x12*\n\x07Volumes\x18\x07 \x03(\x0b\x32\x19.jet.DataVolumeBasics_JET\x12#\n\x14Tag_Auxilary_Reports\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1c\n\x12Starting_Directory\x18\n \x01(\t:\x00\x12\x1c\n\rFirstCreation\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\"\n\x13\x46orceCompleteReview\x18\x0f \x01(\x08:\x05\x66\x61lse\x12$\n\x15\x43reate_DODS_Artefacts\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x32\n#ReportExtentsOfGeodeticDatasetsOnly\x18\r \x01(\x08:\x05\x66\x61lse\x12\x34\n%ReportExtentsOfGeolocatedDatasetsOnly\x18! \x01(\x08:\x05\x66\x61lse\x12+\n\x06\x42locks\x18\x0e \x03(\x0b\x32\x1b.intrepid.Vector_Subset_INT\x12\x46\n\x1cUPDATED_MODEL_Catalog_Format\x18\x14 \x01(\x0e\x32\x13.jet.CATALOG_FORMAT:\x0bINTREPID_DB\x12&\n\x17\x43reate_NewStyle_Catalog\x18\x15 \x01(\x08:\x05\x66\x61lse\x12%\n\x06\x46ields\x18\x16 \x03(\x0b\x32\x15.jet.CatalogField_JET\x12\'\n\x0fOutputCatalogDB\x18\x17 \x01(\t:\x0enewCatalog.csv\x12.\n Check_Asset_Team_forJSON_Catalog\x18\x18 \x01(\x08:\x04true\x12%\n\x16\x44istances_Flown_Detail\x18\x19 \x01(\x08:\x05\x66\x61lse\x12\'\n\x18Gather_HeadingStatistics\x18\x1a \x01(\x08:\x05\x66\x61lse\x12$\n\x18PrincipalFlightDirection\x18I \x01(\x05:\x02\x39\x30\x12#\n\x17\x46lightLine_AngularRange\x18J \x01(\x05:\x02\x31\x35\x12K\n\x1fTRADITIONAL_MODE_Catalog_Format\x18\x1e \x01(\x0e\x32\x13.jet.CATALOG_FORMAT:\rFLAT_FILE_CSV\x12\x1a\n\x12\x43ORE_CATALOG_NAMES\x18\x1f \x03(\t\x12\x30\n\x19\x43ORE_CATALOG_COLUMN_TYPES\x18  \x03(\x0e\x32\r.ctm.DataType\x12&\n\nReportFile\x18# \x01(\t:\x12\x61\x63quireCatalog.rpt\x12&\n\rBatchToolName\x18\x63 \x01(\t:\x0f\x61\x63quire_catalog\"\xf8\x08\n\x13Process_Catalog_JET\x12\x11\n\tSite_File\x18\x01 \x01(\t\x12#\n\x14\x43onsider_Geomodeller\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0fMake_SheetIndex\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cSort_Catalog\x18\x04 \x01(\x08:\x05\x66\x61lse\x12 \n\x11Remove_Duplicates\x18\x05 \x01(\x08:\x05\x66\x61lse\x12 \n\x11\x43reate_ShapeFiles\x18\x06 \x01(\x08:\x05\x66\x61lse\x12:\n\x0e\x43\x61talog_Format\x18\x08 \x01(\x0e\x32\x13.jet.CATALOG_FORMAT:\rFLAT_FILE_CSV\x12%\n\x06\x46ields\x18\x10 \x03(\x0b\x32\x15.jet.CatalogField_JET\x12)\n\x15JV_Partner_ASSET_LIST\x18\t \x01(\t:\nuserdb.dat\x12\x17\n\x08\x64o_wells\x18\n \x01(\x08:\x05\x66\x61lse\x12\x11\n\tthe_wells\x18\x0b \x01(\t\x12\x15\n\x06\x64o_kml\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x18\n\tdo_kmlall\x18\r \x01(\x08:\x05\x66\x61lse\x12\x14\n\x07the_kml\x18\x0e \x01(\t:\x03kml\x12\x11\n\tkml_asset\x18\x0f \x01(\t\x12#\n\x14\x64o_seismic_thumbnail\x18\x19 \x01(\x08:\x05\x66\x61lse\x12&\n\x17\x64o_seismic_thumbnailall\x18\x1a \x01(\x08:\x05\x66\x61lse\x12\x15\n\rthe_thumbnail\x18\x1b \x01(\t\x12\x17\n\x0fthumbnail_asset\x18\x1c \x01(\t\x12\x17\n\x08\x64o_links\x18\x1d \x01(\x08:\x05\x66\x61lse\x12\x16\n\x0ethe_linksAsset\x18\x1e \x01(\t\x12\x15\n\x07\x64o_urls\x18( \x01(\x08:\x04true\x12\x1f\n\x10\x64o_grid_outlines\x18) \x01(\x08:\x05\x66\x61lse\x12\x19\n\ndo_partner\x18* \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0f\x64o_partner_only\x18+ \x01(\x08:\x05\x66\x61lse\x12!\n\x12\x63reate_catalog_shp\x18\x37 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rdo_sheetindex\x18\x38 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07\x64o_sort\x18\x39 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x08the_urls\x18, \x03(\t\x12\x11\n\tthe_grids\x18- \x03(\t\x12\x12\n\ngrid_asset\x18/ \x01(\t\x12!\n\x12\x64o_installproducts\x18. \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x15installproducts_asset\x18\x30 \x01(\t\x12\x15\n\x06\x64o_all\x18\x32 \x01(\x08:\x05\x66\x61lse\x12\x19\n\ndo_convert\x18\x33 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x12Starting_Directory\x18\x34 \x01(\t:\x01.\x12&\n\nReportFile\x18\x36 \x01(\t:\x12ProcessCatalog.rpt\x12&\n\rBatchToolName\x18\x63 \x01(\t:\x0fprocess_catalog\"\xee\x01\n\x12Modify_Catalog_JET\x12\x11\n\tSite_File\x18\x01 \x01(\t\x12=\n\toperation\x18\x02 \x01(\x0e\x32\x1b.jet.Modify_Catalog_OPTIONS:\radd_attribute\x12\x15\n\rthe_attribute\x18\x05 \x01(\t\x12\x11\n\tthe_value\x18\x06 \x01(\t\x12\x0f\n\x07\x64\x61taset\x18\x07 \x03(\t\x12%\n\nReportFile\x18  \x01(\t:\x11ModifyCatalog.rpt\x12$\n\rBatchToolName\x18\x63 \x01(\t:\rModifyCatalog\"\xa9\x02\n\x0f\x41\x64\x64\x32\x43\x61talog_JET\x12\x11\n\tSite_File\x18\x01 \x01(\t\x12\x14\n\x0c\x64\x61taset_file\x18\x02 \x03(\t\x12!\n\tNew_Theme\x18\x03 \x01(\x0e\x32\x0e.jet.JET_Theme\x12\r\n\x05Theme\x18\x05 \x01(\t\x12\x33\n\x0cSignalFormat\x18\x04 \x01(\x0e\x32\x17.jet.JET_DATASET_FORMAT:\x04LINE\x12!\n\x05llbox\x18\t \x01(\x0b\x32\x12.ctm.GeodeticBox2D\x12\x1a\n\x12\x63\x61talogued_dataset\x18\x0e \x01(\t\x12#\n\nReportFile\x18  \x01(\t:\x0f\x41\x64\x64\x32\x43\x61talog.rpt\x12\"\n\rBatchToolName\x18\x63 \x01(\t:\x0b\x41\x64\x64\x32\x43\x61talog\"w\n\x0cSetTheme_JET\x12\x11\n\tdirectory\x18\x01 \x01(\t\x12\x10\n\x08newvalue\x18\x02 \x01(\t\x12!\n\tNew_Theme\x18\x03 \x01(\x0e\x32\x0e.jet.JET_Theme\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08settheme\"S\n\x0cSetAsset_JET\x12\x11\n\tdirectory\x18\x01 \x01(\t\x12\x10\n\x08newvalue\x18\x02 \x01(\t\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07setattr\"3\n\x0fSetGoodName_JET\x12\x0f\n\x07oldname\x18\x01 \x01(\t\x12\x0f\n\x07newname\x18\x02 \x01(\t\"\x87\x01\n\x11SetAttributes_JET\x12\x16\n\x0estartdirectory\x18\x01 \x01(\t\x12\x11\n\tattribute\x18\x02 \x01(\t\x12\x10\n\x08newvalue\x18\x03 \x01(\t\x12\x15\n\rdirectorylist\x18\x04 \x03(\t\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07setattr\"3\n\x0eSetCatalog_JET\x12\x0f\n\x07keyword\x18\x01 \x01(\t\x12\x10\n\x08newvalue\x18\x03 \x01(\t\"W\n\x0cSetUnits_JET\x12\x13\n\x0b\x64\x61tasetname\x18\x01 \x01(\t\x12\x11\n\tunitsName\x18\x03 \x01(\t\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08setunits\"\xc1\x03\n\x0b\x43\x61t2KML_JET\x12\x11\n\tSite_File\x18\x01 \x01(\t\x12\x19\n\ndo_vectors\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x18\n\x10output_directory\x18\x0e \x01(\t\x12\x11\n\tthe_asset\x18\x0f \x01(\t\x12\x1c\n\rdo_standalone\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x12\n\noutput_kml\x18\x11 \x01(\t\x12\x17\n\x08\x64o_grids\x18\x14 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0eMake_Map_Files\x18\x1b \x01(\x08:\x05\x66\x61lse\x12!\n\x12\x64o_installproducts\x18\x19 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x15installproducts_asset\x18\x1a \x01(\t\x12\x15\n\rGeodeticDatum\x18\x1e \x01(\t\x12$\n\x15\x43reateJSONDescriptors\x18\x1f \x01(\x08:\x05\x66\x61lse\x12\x10\n\x08the_urls\x18, \x03(\t\x12\x17\n\x08thinning\x18- \x01(\x01:\x05\x30.001\x12#\n\nReportFile\x18# \x01(\t:\x0f\x43\x61talog2KML.rpt\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07\x63\x61t2kml\"\x94\x02\n\rShape2KML_JET\x12\x11\n\tlayername\x18\x01 \x01(\t\x12\x12\n\noutputname\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x61tasetlist\x18\x04 \x03(\t\x12\x10\n\x08listroot\x18\x05 \x01(\t\x12#\n\x14\x63reateKMLHelperFiles\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08thinning\x18\x0e \x01(\x01:\x05\x30.001\x12\x18\n\tdoingSegy\x18\x19 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x64oing3DSegy\x18\x1a \x01(\x08:\x05\x66\x61lse\x12!\n\nReportFile\x18  \x01(\t:\rShape2KML.rpt\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07shp2kml\"\xbc\x01\n\x0cGrid2KML_JET\x12\x14\n\x06\x64o_kml\x18\x0c \x01(\x08:\x04true\x12\x0f\n\x07the_kml\x18\x0e \x01(\t\x12\x16\n\x07\x64o_grid\x18\x14 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x08the_grid\x18\x17 \x01(\t\x12\x18\n\tgreyscale\x18\x18 \x01(\x08:\x05\x66\x61lse\x12 \n\nReportFile\x18  \x01(\t:\x0cGrid2KML.rpt\x12\x1f\n\rBatchToolName\x18\x63 \x01(\t:\x08grid2kml\"\xcd\x01\n\x0fGrid2Netcdf_JET\x12\x11\n\tinputname\x18\x02 \x01(\t\x12\x12\n\noutputname\x18\x05 \x01(\t\x12 \n\x11Use_HDF5_Chunking\x18\x0c \x01(\x08:\x05\x66\x61lse\x12,\n\nNetCDFGrid\x18\x13 \x01(\x0b\x32\x18.intrepid.NetCDFGrid_INT\x12#\n\nReportFile\x18  \x01(\t:\x0fGrid2NetCDF.rpt\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07grid2nc\"\x92\x03\n\x0eSegY2Voxet_JET\x12\x1c\n\noutputname\x18\x02 \x01(\t:\x08voxet.vo\x12\x14\n\x0csegy_dataset\x18\x05 \x01(\t\x12\x0f\n\x04xmin\x18\x06 \x01(\x01:\x01\x30\x12\x0f\n\x04ymin\x18\x07 \x01(\x01:\x01\x30\x12\x0f\n\x04zmin\x18\x08 \x01(\x01:\x01\x30\x12\x14\n\x06\x64\x65ltax\x18\t \x01(\x01:\x04\x31\x30\x30\x30\x12\x14\n\x06\x64\x65ltay\x18\n \x01(\x01:\x04\x31\x30\x30\x30\x12\x12\n\x06\x64\x65ltaz\x18\x0b \x01(\x01:\x02\x35\x30\x12\x0f\n\x02nx\x18\x0c \x01(\x05:\x03\x31\x30\x30\x12\x0f\n\x02ny\x18\r \x01(\x05:\x03\x31\x30\x30\x12\x0f\n\x02nz\x18\x0e \x01(\x05:\x03\x31\x30\x30\x12\x12\n\x07\x63hannel\x18\x0f \x01(\x05:\x01\x30\x12\x17\n\nFieldAlias\x18\x10 \x01(\t:\x03twt\x12\x1b\n\tFieldName\x18\x11 \x01(\t:\x08Velocity\x12\x18\n\tNullValue\x18\x12 \x01(\x01:\x05-9999\x12\"\n\nReportFile\x18  \x01(\t:\x0eSegY2Voxet.rpt\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07sgy2vox\"\xff\x04\n\rExtractDS_JET\x12#\n\x06Inputs\x18\x01 \x01(\x0b\x32\x13.ctm.RepeatedString\x12#\n\x06\x46ields\x18\x02 \x01(\x0b\x32\x13.ctm.RepeatedString\x12$\n\x05gadds\x18\x03 \x01(\x0b\x32\x15.ga_std.DatabaseField\x12\x13\n\x0bSignalTheme\x18\x07 \x02(\t\x12\x33\n\x0cSignalFormat\x18\x08 \x01(\x0e\x32\x17.jet.JET_DATASET_FORMAT:\x04LINE\x12\x19\n\x11Jetstream_Catalog\x18\x04 \x01(\t\x12+\n\x0eIntermediateDS\x18\x05 \x01(\t:\x13IntermediateDS..DIR\x12\'\n\rcellsampledDS\x18\x06 \x01(\t:\x10\x43\x65ll_Points..DIR\x12)\n\x08Sampling\x18\t \x02(\x0b\x32\x17.jet.Local_Sampling_JET\x12\x1c\n\rReportXYStats\x18\x0f \x01(\x08:\x05\x66\x61lse\x12\x10\n\x08OutputCS\x18\x0e \x01(\t\x12\x1b\n\rExportResults\x18\x12 \x01(\x08:\x04true\x12\x1b\n\rOutputPattern\x18\x11 \x02(\t:\x04.csv\x12\x19\n\nMaxRecords\x18\x13 \x01(\x03:\x05\x31\x30\x30\x30\x30\x12-\n\x10Orig_Pts_Dataset\x18\x14 \x01(\t:\x13OriginalPoints..DIR\x12\x1f\n\x10Generated_By_GUI\x18\x32 \x01(\x08:\x05\x66\x61lse\x12!\n\nReportFile\x18  \x01(\t:\rextractDS.rpt\x12 \n\rBatchToolName\x18\x63 \x01(\t:\textractds\"\x9e\x05\n\x12Local_Sampling_JET\x12?\n\x0f\x43\x65ll_Assignment\x18\x01 \x01(\x0e\x32\x1d.intrepid.Cell_Assignment_INT:\x07\x41verage\x12\x35\n\x0bWeight_Type\x18\x02 \x01(\x0e\x32\x19.intrepid.Weight_Type_INT:\x05Unity\x12!\n\x13\x45\x61rliest_SurveyYear\x18\x03 \x01(\x05:\x04\x31\x39\x39\x35\x12\x1f\n\x11Latest_SurveyYear\x18\x04 \x01(\x05:\x04\x32\x30\x32\x30\x12\'\n\rprojected_box\x18\x05 \x01(\x0b\x32\x10.ctm.BoundingBox\x12(\n\x0cgeodetic_box\x18\x06 \x01(\x0b\x32\x12.ctm.GeodeticBox2D\x12\x19\n\x11\x45SRI_ShapeFileBox\x18\x63 \x01(\t\x12\x42\n\x13\x64\x65\x63imation_strategy\x18\x14 \x01(\x0e\x32\x18.jet.Decimation_Strategy:\x0bNO_THINNING\x12\x18\n\x0b\x43\x65ll_Size_X\x18\x07 \x01(\x01:\x03\x31\x30\x30\x12\x18\n\x0b\x43\x65ll_Size_Y\x18\x08 \x01(\x01:\x03\x31\x30\x30\x12\x1d\n\x12SubsampleIncrement\x18\t \x01(\x05:\x01\x31\x12+\n\x1f\x43lipCoincidentMinimumSeparation\x18\x0b \x01(\x01:\x02\x31\x30\x12\x19\n\x11Maximum_Clearance\x18\x0c \x01(\x01\x12J\n\x17Minimum_Detector_Volume\x18\x0e \x01(\x0e\x32\x1e.intrepid.GammaDetector_Volume:\tlitres_32\x12\x1b\n\rTraverseLines\x18\x0f \x01(\x08:\x04true\x12\x16\n\x08TieLines\x18\x10 \x01(\x08:\x04true\"S\n\x0cUMMColumnMap\x12\x10\n\x08UMM_Name\x18\x01 \x01(\t\x12\x0f\n\x07\x43\x61talog\x18\x02 \x01(\t\x12\x11\n\tUMM_Block\x18\x03 \x01(\t\x12\r\n\x05Index\x18\x04 \x01(\x05\"\x81\x07\n\x0b\x43\x61t2CMR_JET\x12\x11\n\tSite_File\x18\x01 \x01(\t\x12)\n\x11Metadata_Endpoint\x18\x02 \x01(\t:\x0elocalhost:3001\x12\'\n\x0fIngest_Endpoint\x18\x03 \x01(\t:\x0elocalhost:3002\x12\'\n\x0fSearch_Endpoint\x18\x04 \x01(\t:\x0elocalhost:3003\x12\x12\n\nEcho_Token\x18\x05 \x01(\t\x12\x1e\n\x03Map\x18\x06 \x03(\x0b\x32\x11.jet.UMMColumnMap\x12\x10\n\x08Provider\x18\x07 \x01(\t\x12\x1a\n\x12\x44\x65\x66\x61ult_Collection\x18\x08 \x01(\t\x12\x1a\n\x0cGenerate_PNG\x18\t \x01(\x08:\x04true\x12\x1a\n\x0cGenerate_ZIP\x18\n \x01(\x08:\x04true\x12\x34\n\x1a\x44\x65rivative_Files_Directory\x18\x0b \x01(\t:\x10\x64\x65rivative_files\x12:\n\x16\x44\x61ta_Delivery_Endpoint\x18\x0c \x01(\t:\x1ahttp://localhost:8081/data\x12$\n\x12Metadata_Directory\x18\r \x01(\t:\x08metadata\x12!\n\x12Overwrite_Metadata\x18\x0e \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0c\x42ounding_Box\x18\x0f \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x10Generate_Outline\x18\x14 \x01(\x08:\x04true\x12\x1d\n\x0fGenerate_Points\x18\x1e \x01(\x08:\x04true\x12\x1b\n\x0eMaximum_Points\x18\x1f \x01(\x05:\x03\x33\x30\x30\x12\x1c\n\x0eGenerate_Lines\x18( \x01(\x08:\x04true\x12\x1a\n\rMaximum_Lines\x18) \x01(\x05:\x03\x33\x30\x30\x12\n\tOperation\x18\x32 \x01(\x0e\x32\x17.jet.Cat2CMR_Operations:\x0fGenerate_Ingest\x12,\n\x1dOverwrite_Collection_Metadata\x18< \x01(\x08:\x05\x66\x61lse\x12*\n\x1bUpdate_Existing_Collections\x18= \x01(\x08:\x05\x66\x61lse\x12#\n\nReportFile\x18Y \x01(\t:\x0f\x43\x61talog2CMR.rpt\x12\x1e\n\rBatchToolName\x18\x63 \x01(\t:\x07\x63\x61t2cmr\"\xc3\x05\n\rJetstreamTask\x12\x30\n\x0e\x41\x63quireCatalog\x18\x01 \x01(\x0b\x32\x18.jet.Acquire_Catalog_JET\x12\'\n\nIsiManager\x18\x02 \x01(\x0b\x32\x13.jet.isiManager_JET\x12\x31\n\x0fProcess_Catalog\x18\x03 \x01(\x0b\x32\x18.jet.Process_Catalog_JET\x12!\n\x07\x43\x61t2KML\x18\x06 \x01(\x0b\x32\x10.jet.Cat2KML_JET\x12%\n\tShape2KML\x18\x07 \x01(\x0b\x32\x12.jet.Shape2KML_JET\x12#\n\x08Grid2KML\x18\x08 \x01(\x0b\x32\x11.jet.Grid2KML_JET\x12)\n\x0bGrid2Netcdf\x18\t \x01(\x0b\x32\x14.jet.Grid2Netcdf_JET\x12#\n\x08SetTheme\x18\x0b \x01(\x0b\x32\x11.jet.SetTheme_JET\x12#\n\x08SetAsset\x18\x0c \x01(\x0b\x32\x11.jet.SetAsset_JET\x12-\n\rSetAttributes\x18\x0e \x01(\x0b\x32\x16.jet.SetAttributes_JET\x12#\n\x08SetUnits\x18\x10 \x01(\x0b\x32\x11.jet.SetUnits_JET\x12\'\n\nSegY2Voxet\x18\x11 \x01(\x0b\x32\x13.jet.SegY2Voxet_JET\x12%\n\tExtractDS\x18\x14 \x01(\x0b\x32\x12.jet.ExtractDS_JET\x12:\n\x16\x45xtractStreamJetstream\x18\x15 \x01(\x0b\x32\x1a.jet.ExtractStreamDemo_JET\x12/\n\nSiteConfig\x18\x19 \x01(\x0b\x32\x1b.jet.Site_Configuration_JET\x12!\n\x07\x43\x61t2CMR\x18\x1a \x01(\x0b\x32\x10.jet.Cat2CMR_JET\x12\x0c\n\x03log\x18\xff\x01 \x01(\t\"C\n\x08Site_JET\x12\n\n\x02id\x18\x01 \x01(\t\x12+\n\x06\x63onfig\x18\x02 \x01(\x0b\x32\x1b.jet.Site_Configuration_JET*6\n\x12JET_Communications\x12\x08\n\x04\x44ODS\x10\x01\x12\x0c\n\x08Protobuf\x10\x02\x12\x08\n\x04gRPC\x10\x03*\x82\x03\n\tJET_Theme\x12\x0f\n\x0bUNSET_THEME\x10\x00\x12\x10\n\x0cRADIOMETRICS\x10\x01\x12\r\n\tMAGNETICS\x10\x02\x12\x0b\n\x07GRAVITY\x10\x03\x12\x06\n\x02MT\x10\x04\x12\x06\n\x02\x45M\x10\x05\x12\x0b\n\x07SEISMIC\x10\x06\x12\x0e\n\nNAVIGATION\x10\x07\x12\x0c\n\x08RADIANCE\x10\x08\x12\x07\n\x03\x44\x45M\x10\t\x12\r\n\tELEVATION\x10\n\x12\x17\n\x13GRAVITY_GRADIOMETRY\x10\x0e\x12\x12\n\x0eLICENSE_BLOCKS\x10\x0f\x12\t\n\x05WELLS\x10\x10\x12\x19\n\x15SurveyFieldNavigation\x10\x11\x12\x16\n\x12SurveyGeotechnical\x10\x12\x12\x13\n\x0fSurveyFieldData\x10\x13\x12\x16\n\x12\x45xploration_Target\x10\x14\x12\x12\n\x0eSurvey_Reports\x10\x15\x12\x18\n\x14SurveySeismicVolumes\x10\x17\x12\x0e\n\nGEOLOGY_3D\x10\x1e\x12\r\n\tANY_Theme\x10\x63*\xfc\x01\n\x12JET_DATASET_FORMAT\x12\x16\n\x12\x41NY_DATASET_FORMAT\x10\x00\x12\x08\n\x04GRID\x10\x01\x12\x0b\n\x07GRID_2D\x10\x02\x12\n\n\x06VECTOR\x10\x03\x12\x08\n\x04LINE\x10\x04\x12\t\n\x05POINT\x10\x05\x12\x0b\n\x07GRID_3D\x10\x06\x12\x11\n\rGEOLOGY_MODEL\x10\x07\x12\x12\n\x0ePROPERTY_MODEL\x10\x08\x12\t\n\x05TABLE\x10\t\x12\x0e\n\nOTHER_FILE\x10\n\x12\t\n\x05IMAGE\x10\x0b\x12\x12\n\x0eSEISMIC_FORMAT\x10\x0c\x12\x0e\n\nAEM_FORMAT\x10\r\x12\x18\n\x14TRIANGULATED_SURFACE\x10\x0e*\xb3\x05\n\x12\x43\x61talogField_Alias\x12\t\n\x05Title\x10\x64\x12\x12\n\x0ePROCESSED_DATE\x10\x65\x12\x0e\n\nDATE_ADDED\x10\x66\x12\x0f\n\x0bSURVEY_DATE\x10y\x12\x15\n\x11MINIMUM_LONGITUDE\x10g\x12\x14\n\x10MINIMUM_LATITUDE\x10h\x12\x15\n\x11MAXIMUM_LONGITUDE\x10i\x12\x14\n\x10MAXIMUM_LATITUDE\x10j\x12\t\n\x05\x42LOCK\x10k\x12\x08\n\x04UUID\x10l\x12\t\n\x05THEME\x10m\x12\x0e\n\tNEW_THEME\x10\x8e\x01\x12\x12\n\x0e\x44\x41TASET_FORMAT\x10n\x12\r\n\tFILE_SIZE\x10o\x12\x0c\n\x08\x44\x41TA_URL\x10p\x12\x0c\n\x08\x43\x45LLSIZE\x10q\x12\x10\n\x0c\x43OORD_SYSTEM\x10r\x12\x12\n\x0e\x46LIGHT_SPACING\x10s\x12\x11\n\rNATIONAL_GRID\x10t\x12\x0e\n\nASSET_TEAM\x10u\x12\x07\n\x03VWC\x10v\x12\r\n\tPUBLISHED\x10w\x12\x0b\n\x07Subject\x10{\x12\x0c\n\x08\x41\x62stract\x10|\x12\x0b\n\x06Source\x10\x80\x01\x12\x10\n\x0b\x41ssociation\x10\x81\x01\x12\x11\n\x0cReportFormat\x10\x82\x01\x12\x10\n\x0bRenderStyle\x10\x83\x01\x12\r\n\x08MAPSHEET\x10\x84\x01\x12\x0e\n\tDIRECTORY\x10\x85\x01\x12\x12\n\rJURISTRICTION\x10\x87\x01\x12\x18\n\x13SURVEY_LINE_AZIMUTH\x10\x88\x01\x12\x19\n\x14SURVEY_LINE_DISTANCE\x10\x89\x01\x12\x15\n\x10\x46LIGHT_CLEARANCE\x10\x8a\x01\x12\x16\n\x11HAS_LINE_ALTITUDE\x10\x8b\x01\x12\x16\n\x11MINIMUM_ELEVATION\x10\x8c\x01\x12\x16\n\x11MAXIMUM_ELEVATION\x10\x8d\x01\x12\r\n\x08NO_ALIAS\x10\xc7\x01*d\n\x17\x43\x61talogPublished_Status\x12\x11\n\rRAW_UNCHECKED\x10\x00\x12\x14\n\x10SANDPIT_CHECKING\x10\x01\x12\n\n\x06PUBLIC\x10\x02\x12\x0b\n\x07PRIVATE\x10\x03\x12\x07\n\x03YES\x10\x04*@\n\x0c\x43\x41RT_PROCESS\x12\x10\n\x0c\x45xtract_DATA\x10\x00\x12\x0f\n\x0bMap_COMPOSE\x10\x01\x12\r\n\tGrid_DATA\x10\x02*_\n\x08IBI_FLAG\x12\x0f\n\x0bIBI_FLAG_V1\x10\x36\x12\x0f\n\x0bIBI_FLAG_V3\x10\x37\x12\x0f\n\x0bIBI_FLAG_V4\x10\x38\x12\x0f\n\x0bIBI_FLAG_V5\x10\x39\x12\x0f\n\x0bIBI_FLAG_V6\x10:*\xbe\x01\n\x14\x41\x64ministration_Tasks\x12\x0c\n\x08savesite\x10\x00\x12\x0f\n\x0bscheduleIBI\x10\x01\x12\x0c\n\x08setSpeed\x10\x02\x12\x06\n\x02up\x10\x03\x12\x08\n\x04\x64own\x10\x04\x12\x0b\n\x07\x61\x63quire\x10\x05\x12\x10\n\x0c\x63heckCatalog\x10\x06\x12\x11\n\rreloadCatalog\x10\x07\x12\x0f\n\x0bsaveCatalog\x10\x08\x12\x12\n\x0ereloadSiteFile\x10\t\x12\x10\n\x0csaveSiteFile\x10\n*\x8f\x01\n\x19Jetstream_Operation_Tasks\x12\x13\n\x0fQueryAndProcess\x10\x00\x12\x10\n\x0cQueryCatalog\x10\x01\x12\x14\n\x10ProcessQueryCart\x10\x02\x12\x13\n\x0fProcessQueryIBI\x10\x03\x12\x13\n\x0fGetCapabilities\x10\x04\x12\x0b\n\x07readIBI\x10\x05*\x93\x03\n\x0bISI_ACTIONS\x12\x1c\n\x18Load_Jetstream_Site_File\x10\x00\x12\x1c\n\x18Show_Jetstream_Site_File\x10\x01\x12-\n)Run_Acquire_Catalog_In_Selected_Directory\x10\x02\x12+\n\'Run_Acquire_Catalog_In_Selected_Dataset\x10\x03\x12)\n%Geolocate_Files_In_Selected_Directory\x10\x04\x12\x31\n-SetAttributes_For_Files_In_Selected_Directory\x10\x05\x12-\n)SetANZLIC_For_Files_In_Selected_Directory\x10\x06\x12\x1e\n\x1a\x43reate_Jetstream_Site_File\x10\x07\x12\x17\n\x13Set_Cataloging_Date\x10\x08\x12\x17\n\x13Set_ProjectionDatum\x10\t\x12\r\n\tSet_Theme\x10\n*\x7f\n\x0e\x43\x41TALOG_FORMAT\x12\x11\n\rFLAT_FILE_CSV\x10\x00\x12\n\n\x06OGC_V3\x10\x01\x12\x08\n\x04JDBC\x10\n\x12\x0e\n\nESRI_SHAPE\x10\x0b\x12\x0f\n\x0bJSON_FORMAT\x10\x0c\x12\x0f\n\x0bINTREPID_DB\x10\r\x12\x12\n\x0eGOOGLE_MESSAGE\x10\x0e*U\n\x16Modify_Catalog_OPTIONS\x12\x11\n\radd_attribute\x10\x00\x12\x14\n\x10remove_attribute\x10\x01\x12\x12\n\x0e\x65\x64it_attribute\x10\x02*\\\n\x13\x44\x65\x63imation_Strategy\x12\x0f\n\x0bNO_THINNING\x10\x00\x12\x10\n\x0cSUB_SAMPLING\x10\x03\x12\x13\n\x0f\x43LIP_COINCIDENT\x10\x01\x12\r\n\tGRID_CELL\x10\x02*M\n\x12\x43\x61t2CMR_Operations\x12\x13\n\x0fGenerate_Ingest\x10\x00\x12\x11\n\rGenerate_Only\x10\x01\x12\x0f\n\x0bIngest_Only\x10\x02'
   ,
   dependencies=[commontaskmodel__pb2.DESCRIPTOR,geoscience__australia__standards__pb2.DESCRIPTOR,intrepid__tasks__pb2.DESCRIPTOR,google_dot_protobuf_dot_timestamp__pb2.DESCRIPTOR,])
 
@@ -53,8 +53,8 @@ _JET_COMMUNICATIONS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=14902,
-  serialized_end=14956,
+  serialized_start=15922,
+  serialized_end=15976,
 )
 _sym_db.RegisterEnumDescriptor(_JET_COMMUNICATIONS)
 
@@ -179,8 +179,8 @@ _JET_THEME = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=14959,
-  serialized_end=15345,
+  serialized_start=15979,
+  serialized_end=16365,
 )
 _sym_db.RegisterEnumDescriptor(_JET_THEME)
 
@@ -270,8 +270,8 @@ _JET_DATASET_FORMAT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=15348,
-  serialized_end=15600,
+  serialized_start=16368,
+  serialized_end=16620,
 )
 _sym_db.RegisterEnumDescriptor(_JET_DATASET_FORMAT)
 
@@ -476,8 +476,8 @@ _CATALOGFIELD_ALIAS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=15603,
-  serialized_end=16294,
+  serialized_start=16623,
+  serialized_end=17314,
 )
 _sym_db.RegisterEnumDescriptor(_CATALOGFIELD_ALIAS)
 
@@ -517,8 +517,8 @@ _CATALOGPUBLISHED_STATUS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=16296,
-  serialized_end=16396,
+  serialized_start=17316,
+  serialized_end=17416,
 )
 _sym_db.RegisterEnumDescriptor(_CATALOGPUBLISHED_STATUS)
 
@@ -548,8 +548,8 @@ _CART_PROCESS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=16398,
-  serialized_end=16462,
+  serialized_start=17418,
+  serialized_end=17482,
 )
 _sym_db.RegisterEnumDescriptor(_CART_PROCESS)
 
@@ -589,8 +589,8 @@ _IBI_FLAG = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=16464,
-  serialized_end=16559,
+  serialized_start=17484,
+  serialized_end=17579,
 )
 _sym_db.RegisterEnumDescriptor(_IBI_FLAG)
 
@@ -660,8 +660,8 @@ _ADMINISTRATION_TASKS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=16562,
-  serialized_end=16752,
+  serialized_start=17582,
+  serialized_end=17772,
 )
 _sym_db.RegisterEnumDescriptor(_ADMINISTRATION_TASKS)
 
@@ -706,8 +706,8 @@ _JETSTREAM_OPERATION_TASKS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=16755,
-  serialized_end=16898,
+  serialized_start=17775,
+  serialized_end=17918,
 )
 _sym_db.RegisterEnumDescriptor(_JETSTREAM_OPERATION_TASKS)
 
@@ -777,8 +777,8 @@ _ISI_ACTIONS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=16901,
-  serialized_end=17304,
+  serialized_start=17921,
+  serialized_end=18324,
 )
 _sym_db.RegisterEnumDescriptor(_ISI_ACTIONS)
 
@@ -828,8 +828,8 @@ _CATALOG_FORMAT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=17306,
-  serialized_end=17433,
+  serialized_start=18326,
+  serialized_end=18453,
 )
 _sym_db.RegisterEnumDescriptor(_CATALOG_FORMAT)
 
@@ -859,8 +859,8 @@ _MODIFY_CATALOG_OPTIONS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=17435,
-  serialized_end=17520,
+  serialized_start=18455,
+  serialized_end=18540,
 )
 _sym_db.RegisterEnumDescriptor(_MODIFY_CATALOG_OPTIONS)
 
@@ -895,12 +895,43 @@ _DECIMATION_STRATEGY = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=17522,
-  serialized_end=17614,
+  serialized_start=18542,
+  serialized_end=18634,
 )
 _sym_db.RegisterEnumDescriptor(_DECIMATION_STRATEGY)
 
 Decimation_Strategy = enum_type_wrapper.EnumTypeWrapper(_DECIMATION_STRATEGY)
+_CAT2CMR_OPERATIONS = _descriptor.EnumDescriptor(
+  name='Cat2CMR_Operations',
+  full_name='jet.Cat2CMR_Operations',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Generate_Ingest', index=0, number=0,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='Generate_Only', index=1, number=1,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='Ingest_Only', index=2, number=2,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=18636,
+  serialized_end=18713,
+)
+_sym_db.RegisterEnumDescriptor(_CAT2CMR_OPERATIONS)
+
+Cat2CMR_Operations = enum_type_wrapper.EnumTypeWrapper(_CAT2CMR_OPERATIONS)
 DODS = 1
 Protobuf = 2
 gRPC = 3
@@ -1034,6 +1065,9 @@ NO_THINNING = 0
 SUB_SAMPLING = 3
 CLIP_COINCIDENT = 1
 GRID_CELL = 2
+Generate_Ingest = 0
+Generate_Only = 1
+Ingest_Only = 2
 
 
 
@@ -4778,6 +4812,259 @@ _LOCAL_SAMPLING_JET = _descriptor.Descriptor(
 )
 
 
+_UMMCOLUMNMAP = _descriptor.Descriptor(
+  name='UMMColumnMap',
+  full_name='jet.UMMColumnMap',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='UMM_Name', full_name='jet.UMMColumnMap.UMM_Name', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Catalog', full_name='jet.UMMColumnMap.Catalog', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='UMM_Block', full_name='jet.UMMColumnMap.UMM_Block', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Index', full_name='jet.UMMColumnMap.Index', index=3,
+      number=4, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=14158,
+  serialized_end=14241,
+)
+
+
+_CAT2CMR_JET = _descriptor.Descriptor(
+  name='Cat2CMR_JET',
+  full_name='jet.Cat2CMR_JET',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='Site_File', full_name='jet.Cat2CMR_JET.Site_File', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Metadata_Endpoint', full_name='jet.Cat2CMR_JET.Metadata_Endpoint', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=b"localhost:3001".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Ingest_Endpoint', full_name='jet.Cat2CMR_JET.Ingest_Endpoint', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=b"localhost:3002".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Search_Endpoint', full_name='jet.Cat2CMR_JET.Search_Endpoint', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=b"localhost:3003".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Echo_Token', full_name='jet.Cat2CMR_JET.Echo_Token', index=4,
+      number=5, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Map', full_name='jet.Cat2CMR_JET.Map', index=5,
+      number=6, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Provider', full_name='jet.Cat2CMR_JET.Provider', index=6,
+      number=7, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Default_Collection', full_name='jet.Cat2CMR_JET.Default_Collection', index=7,
+      number=8, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Generate_PNG', full_name='jet.Cat2CMR_JET.Generate_PNG', index=8,
+      number=9, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=True,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Generate_ZIP', full_name='jet.Cat2CMR_JET.Generate_ZIP', index=9,
+      number=10, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=True,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Derivative_Files_Directory', full_name='jet.Cat2CMR_JET.Derivative_Files_Directory', index=10,
+      number=11, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=b"derivative_files".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Data_Delivery_Endpoint', full_name='jet.Cat2CMR_JET.Data_Delivery_Endpoint', index=11,
+      number=12, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=b"http://localhost:8081/data".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Metadata_Directory', full_name='jet.Cat2CMR_JET.Metadata_Directory', index=12,
+      number=13, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=b"metadata".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Overwrite_Metadata', full_name='jet.Cat2CMR_JET.Overwrite_Metadata', index=13,
+      number=14, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Bounding_Box', full_name='jet.Cat2CMR_JET.Bounding_Box', index=14,
+      number=15, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Generate_Outline', full_name='jet.Cat2CMR_JET.Generate_Outline', index=15,
+      number=20, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=True,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Generate_Points', full_name='jet.Cat2CMR_JET.Generate_Points', index=16,
+      number=30, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=True,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Maximum_Points', full_name='jet.Cat2CMR_JET.Maximum_Points', index=17,
+      number=31, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=300,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Generate_Lines', full_name='jet.Cat2CMR_JET.Generate_Lines', index=18,
+      number=40, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=True,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Maximum_Lines', full_name='jet.Cat2CMR_JET.Maximum_Lines', index=19,
+      number=41, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=300,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Operation', full_name='jet.Cat2CMR_JET.Operation', index=20,
+      number=50, type=14, cpp_type=8, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Overwrite_Collection_Metadata', full_name='jet.Cat2CMR_JET.Overwrite_Collection_Metadata', index=21,
+      number=60, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Update_Existing_Collections', full_name='jet.Cat2CMR_JET.Update_Existing_Collections', index=22,
+      number=61, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ReportFile', full_name='jet.Cat2CMR_JET.ReportFile', index=23,
+      number=89, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=b"Catalog2CMR.rpt".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='BatchToolName', full_name='jet.Cat2CMR_JET.BatchToolName', index=24,
+      number=99, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=b"cat2cmr".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=14244,
+  serialized_end=15141,
+)
+
+
 _JETSTREAMTASK = _descriptor.Descriptor(
   name='JetstreamTask',
   full_name='jet.JetstreamTask',
@@ -4892,7 +5179,14 @@ _JETSTREAMTASK = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='log', full_name='jet.JetstreamTask.log', index=15,
+      name='Cat2CMR', full_name='jet.JetstreamTask.Cat2CMR', index=15,
+      number=26, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='log', full_name='jet.JetstreamTask.log', index=16,
       number=255, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -4910,8 +5204,8 @@ _JETSTREAMTASK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14159,
-  serialized_end=14831,
+  serialized_start=15144,
+  serialized_end=15851,
 )
 
 
@@ -4949,8 +5243,8 @@ _SITE_JET = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14833,
-  serialized_end=14900,
+  serialized_start=15853,
+  serialized_end=15920,
 )
 
 _SITE_CONFIGURATION_JET.fields_by_name['CS_default'].message_type = commontaskmodel__pb2._COORDINATESYSTEM
@@ -5024,6 +5318,8 @@ _LOCAL_SAMPLING_JET.fields_by_name['projected_box'].message_type = commontaskmod
 _LOCAL_SAMPLING_JET.fields_by_name['geodetic_box'].message_type = commontaskmodel__pb2._GEODETICBOX2D
 _LOCAL_SAMPLING_JET.fields_by_name['decimation_strategy'].enum_type = _DECIMATION_STRATEGY
 _LOCAL_SAMPLING_JET.fields_by_name['Minimum_Detector_Volume'].enum_type = intrepid__tasks__pb2._GAMMADETECTOR_VOLUME
+_CAT2CMR_JET.fields_by_name['Map'].message_type = _UMMCOLUMNMAP
+_CAT2CMR_JET.fields_by_name['Operation'].enum_type = _CAT2CMR_OPERATIONS
 _JETSTREAMTASK.fields_by_name['AcquireCatalog'].message_type = _ACQUIRE_CATALOG_JET
 _JETSTREAMTASK.fields_by_name['IsiManager'].message_type = _ISIMANAGER_JET
 _JETSTREAMTASK.fields_by_name['Process_Catalog'].message_type = _PROCESS_CATALOG_JET
@@ -5039,6 +5335,7 @@ _JETSTREAMTASK.fields_by_name['SegY2Voxet'].message_type = _SEGY2VOXET_JET
 _JETSTREAMTASK.fields_by_name['ExtractDS'].message_type = _EXTRACTDS_JET
 _JETSTREAMTASK.fields_by_name['ExtractStreamJetstream'].message_type = _EXTRACTSTREAMDEMO_JET
 _JETSTREAMTASK.fields_by_name['SiteConfig'].message_type = _SITE_CONFIGURATION_JET
+_JETSTREAMTASK.fields_by_name['Cat2CMR'].message_type = _CAT2CMR_JET
 _SITE_JET.fields_by_name['config'].message_type = _SITE_CONFIGURATION_JET
 DESCRIPTOR.message_types_by_name['Site_Configuration_JET'] = _SITE_CONFIGURATION_JET
 DESCRIPTOR.message_types_by_name['Block_Configuration'] = _BLOCK_CONFIGURATION
@@ -5074,6 +5371,8 @@ DESCRIPTOR.message_types_by_name['Grid2Netcdf_JET'] = _GRID2NETCDF_JET
 DESCRIPTOR.message_types_by_name['SegY2Voxet_JET'] = _SEGY2VOXET_JET
 DESCRIPTOR.message_types_by_name['ExtractDS_JET'] = _EXTRACTDS_JET
 DESCRIPTOR.message_types_by_name['Local_Sampling_JET'] = _LOCAL_SAMPLING_JET
+DESCRIPTOR.message_types_by_name['UMMColumnMap'] = _UMMCOLUMNMAP
+DESCRIPTOR.message_types_by_name['Cat2CMR_JET'] = _CAT2CMR_JET
 DESCRIPTOR.message_types_by_name['JetstreamTask'] = _JETSTREAMTASK
 DESCRIPTOR.message_types_by_name['Site_JET'] = _SITE_JET
 DESCRIPTOR.enum_types_by_name['JET_Communications'] = _JET_COMMUNICATIONS
@@ -5089,6 +5388,7 @@ DESCRIPTOR.enum_types_by_name['ISI_ACTIONS'] = _ISI_ACTIONS
 DESCRIPTOR.enum_types_by_name['CATALOG_FORMAT'] = _CATALOG_FORMAT
 DESCRIPTOR.enum_types_by_name['Modify_Catalog_OPTIONS'] = _MODIFY_CATALOG_OPTIONS
 DESCRIPTOR.enum_types_by_name['Decimation_Strategy'] = _DECIMATION_STRATEGY
+DESCRIPTOR.enum_types_by_name['Cat2CMR_Operations'] = _CAT2CMR_OPERATIONS
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Site_Configuration_JET = _reflection.GeneratedProtocolMessageType('Site_Configuration_JET', (_message.Message,), {
@@ -5328,6 +5628,20 @@ Local_Sampling_JET = _reflection.GeneratedProtocolMessageType('Local_Sampling_JE
   # @@protoc_insertion_point(class_scope:jet.Local_Sampling_JET)
   })
 _sym_db.RegisterMessage(Local_Sampling_JET)
+
+UMMColumnMap = _reflection.GeneratedProtocolMessageType('UMMColumnMap', (_message.Message,), {
+  'DESCRIPTOR' : _UMMCOLUMNMAP,
+  '__module__' : 'jetstream_pb2'
+  # @@protoc_insertion_point(class_scope:jet.UMMColumnMap)
+  })
+_sym_db.RegisterMessage(UMMColumnMap)
+
+Cat2CMR_JET = _reflection.GeneratedProtocolMessageType('Cat2CMR_JET', (_message.Message,), {
+  'DESCRIPTOR' : _CAT2CMR_JET,
+  '__module__' : 'jetstream_pb2'
+  # @@protoc_insertion_point(class_scope:jet.Cat2CMR_JET)
+  })
+_sym_db.RegisterMessage(Cat2CMR_JET)
 
 JetstreamTask = _reflection.GeneratedProtocolMessageType('JetstreamTask', (_message.Message,), {
   'DESCRIPTOR' : _JETSTREAMTASK,
