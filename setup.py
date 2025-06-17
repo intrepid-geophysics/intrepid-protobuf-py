@@ -18,7 +18,7 @@ setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-        'protobuf==3.15.8',
+        'protobuf==4.25.8',
     ],
     python_requires='>=3.6',
 )
